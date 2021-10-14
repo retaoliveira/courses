@@ -65,11 +65,11 @@
   hasChildren = true
   weight = 60
   
-[[main]]
-  parent = "Disciplinas"
-  name = "Logística - 2021/1"
-  url = "disciplinas/log/"
-  weight = 10
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Logística - 2021/1"
+#  url = "disciplinas/log/"
+#  weight = 10
 
 [[main]]
   parent = "Disciplinas"
@@ -96,11 +96,11 @@
   url = "disciplinas/sdss/"
   weight = 30
   
-[[main]]
-  parent = "Disciplinas"
-  name = "Análise de Dados para gestão organizacional - 2021/1"
-  url = "disciplinas/dados_grad/"
-  weight = 10
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Análise de Dados para gestão organizacional - 2021/1"
+#  url = "disciplinas/dados_grad/"
+#  weight = 10
 
 #[[main]]
 #  parent = "Disciplinas"

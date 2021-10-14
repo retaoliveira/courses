@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/places/</link>
+    <description>Recent content on Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/places/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://retaoliveira.github.io/places/talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Courses</title>
+      <link>https://retaoliveira.github.io/places/disciplinas/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/disciplinas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://retaoliveira.github.io/places/post/</link>
+      <pubDate>Fri, 10 Sep 2021 09:37:49 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cursos</title>
+      <link>https://retaoliveira.github.io/places/cursos/</link>
+      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/cursos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://retaoliveira.github.io/places/project/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publicações</title>
+      <link>https://retaoliveira.github.io/places/publication/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://retaoliveira.github.io/places/slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/slides/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
