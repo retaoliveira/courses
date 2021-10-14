@@ -1,11 +1,12 @@
 title: Renata Oliveira
-baseURL: https://retacourses.netlify.app/
+baseURL: https://testereta.netlify.app
 copyright: Renata Oliveira {year}
 googleAnalytics: ''
 disqusShortname: ''
 theme: academia-hugo
 enableGitInfo: no
 defaultContentLanguage: en
+preserveTaxonomyNames: false
 hasCJKLanguage: no
 defaultContentLanguageInSubdir: no
 removePathAccents: yes
