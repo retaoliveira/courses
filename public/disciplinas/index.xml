@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on Renata Oliveira</title>
-    <link>retacourses.netlify.app/disciplinas/</link>
+    <link>https://retacourses.netlify.app/disciplinas/</link>
     <description>Recent content in Courses on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="retacourses.netlify.app/disciplinas/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/disciplinas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Logística</title>
-      <link>retacourses.netlify.app/disciplinas/log_adm/</link>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/log_adm/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;estudos autônomos&lt;/code&gt; para apreensão do conhecimento e &lt;code&gt;projetos integradores&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -312,10 +312,10 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
     
     <item>
       <title>Logística</title>
-      <link>retacourses.netlify.app/disciplinas/log/</link>
+      <link>https://retacourses.netlify.app/disciplinas/log/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/log/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/log/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;estudos autônomos&lt;/code&gt; para apreensão do conhecimento e &lt;code&gt;projetos integradores&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -610,10 +610,10 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
     
     <item>
       <title>Logística</title>
-      <link>retacourses.netlify.app/disciplinas/log_epc/</link>
+      <link>https://retacourses.netlify.app/disciplinas/log_epc/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/log_epc/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/log_epc/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;estudos autônomos&lt;/code&gt; para apreensão do conhecimento e &lt;code&gt;projetos integradores&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -903,10 +903,10 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
     
     <item>
       <title>Análise de dados aplicada ao processo decisório</title>
-      <link>retacourses.netlify.app/disciplinas/urban_analytics/</link>
+      <link>https://retacourses.netlify.app/disciplinas/urban_analytics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/urban_analytics/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/urban_analytics/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;projetos incrementais&lt;/code&gt; para apreensão do conhecimento e um &lt;code&gt;projeto integrador&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -1091,17 +1091,35 @@ Os softwares a serem instalados são:&lt;/p&gt;
 &lt;p&gt;Os estudantes e professores têm a responsabilidade de manter um ambiente de aprendizagem adequado e motivante. Aqueles que não aderirem a tais padrões de comportamento podem estar sujeitos ao regime disciplinar da instituição. A cortesia profissional e a sensibilidade são especialmente importantes no que diz respeito a indivíduos e discussões que lidam com diferenças de raça, cor, cultura, religião, credo, política, status de veterano, orientação sexual, gênero, identidade e expressão de gênero, idade, deficiência e nacionalidades. As listas de classes são fornecidas ao instrutor com o nome legal do aluno. Terei prazer em honrar seu pedido de dirigir-se a você por um nome alternativo ou pronome de gênero. Por favor, me informe essa preferência no início do semestre para que eu possa fazer as mudanças apropriadas em seus registros.&lt;/p&gt;
 &lt;p&gt;Não serão tolerados atos de discriminação ou assédio contra ou por qualquer funcionário ou estudante.&lt;/p&gt;
 &lt;p&gt;Honestidade acadêmica é um princípio fundamental desta disciplina. Desonestidade acadêmica configura-se por: cópias literais de textos ou ideias sem citação de fonte, fabricações e falsificações de qualquer natureza, plágio, mentira, suborno, comportamento ameaçador ou cumplicidade com desonestidade acadêmica em qualquer nível. Os estudantes que forem considerados em violação da política de integridade acadêmica estarão sujeitos tanto a sanções acadêmicas do membro docente quanto a sanções não acadêmicas. Se você tiver alguma dúvida sobre citações adequadas, configuração de plágio, etc., por favor, não hesite em perguntar!&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
 </description>
     </item>
     
     <item>
       <title>Análise de dados para gestão organizacional</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;projetos incrementais&lt;/code&gt; para apreensão do conhecimento e um &lt;code&gt;projeto integrador&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -1363,10 +1381,10 @@ Os softwares a serem instalados são:&lt;/p&gt;
     
     <item>
       <title>Análise de dados para gestão organizacional</title>
-      <link>retacourses.netlify.app/disciplinas/intror_master/</link>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/intror_master/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;projetos incrementais&lt;/code&gt; para apreensão do conhecimento e um &lt;code&gt;projeto integrador&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;
@@ -1628,10 +1646,10 @@ Os softwares a serem instalados são:&lt;/p&gt;
     
     <item>
       <title>Análise de dados para gestão organizacional</title>
-      <link>retacourses.netlify.app/disciplinas/sdss/</link>
+      <link>https://retacourses.netlify.app/disciplinas/sdss/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/sdss/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/sdss/</guid>
       <description>&lt;h2 id=&#34;proposta-pedagógica&#34;&gt;Proposta pedagógica&lt;/h2&gt;
 &lt;p&gt;A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.&lt;/p&gt;
 &lt;p&gt;A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de &lt;code&gt;Aprendizagem Baseada em Projetos&lt;/code&gt;. São propostos &lt;code&gt;projetos incrementais&lt;/code&gt; para apreensão do conhecimento e um &lt;code&gt;projeto integrador&lt;/code&gt; para consolidação e perspectiva integrada da disciplina.&lt;/p&gt;

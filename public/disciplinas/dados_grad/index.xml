@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Análise de dados para gestão organizacional on Renata Oliveira</title>
-    <link>retacourses.netlify.app/disciplinas/dados_grad/</link>
+    <link>https://retacourses.netlify.app/disciplinas/dados_grad/</link>
     <description>Recent content in Análise de dados para gestão organizacional on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="retacourses.netlify.app/disciplinas/dados_grad/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/disciplinas/dados_grad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Padlet da disciplina</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/padlet/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/padlet/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/padlet/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/padlet/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div class=&#34;padlet-embed&#34; style=&#34;border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:480px;height:352px;max-width:100%&#34;&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Projeto Integrador</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/projects/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/projects/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/projects/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/projects/</guid>
       <description>&lt;p&gt;Os projetos integradores são parte estruturante do curso e, portanto, visam promover a sistematização e a consolidação da aprendizagem. Ainda, tem como objetivo proporcionar aos estudantes a capacidade de implementação do conhecimento adquirido ao longo deste curso de maneira aplicada e em uma situação-problema real.&lt;/p&gt;
 &lt;p&gt;Este projeto será desenvolvido ao longo de toda a disciplina e deve ser relacionado com cada unidade de ensino. Seu conteúdo deve ser estruturado seguindo normas cultas de linguagem, clareza em relação ao problema em investigação e aos objetivos propostos.&lt;/p&gt;
 &lt;p&gt;Consideraremos três dimensões para construção do projeto integrador:&lt;/p&gt;
@@ -373,12 +373,12 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Projeto 1</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/project1/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/project1/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/project1/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/project1/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 
@@ -532,13 +532,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Encontro Síncrono 1</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc1/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc1/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc1/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc1/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class01_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -551,13 +551,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Encontro Síncrono 2</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc2/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc2/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc2/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc2/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class02_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -570,13 +570,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Encontro Síncrono 3</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc3/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc3/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc3/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc3/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class03_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -589,13 +589,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Encontros Síncronos 4, 5 e 6</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc4/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc4/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc4/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc4/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class04_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -612,13 +612,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Mais sobre gráficos</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc8/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc8/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc8/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc8/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class05_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -629,13 +629,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Tutorial 1</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial1/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial1/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial1/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial1/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
@@ -693,13 +693,13 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     
     <item>
       <title>Tutorial 2</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial2/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial2/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial2/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial2/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
@@ -770,13 +770,13 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
     
     <item>
       <title>Encontros Síncronos 7 e 8</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc5/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc5/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc5/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc5/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class08_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -791,13 +791,13 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
     
     <item>
       <title>Tutorial 3</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial3/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial3/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial3/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial3/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
@@ -836,7 +836,7 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
        aes(x = height, y = mass, color = gender, size = birth_year)) +
   geom_point(color = &amp;quot;#30509C&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/disciplinas/dados_grad/tutorial3_files/figure-html/scatterplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/dados_grad/tutorial3_files/figure-html/scatterplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;adicione-texto-no-título-eixos-x-e-y-e-tamanho-dos-pontos.-remova-o-comentário-para-ver-o-efeito.&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/h3&gt;
@@ -850,7 +850,7 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
     #___
     )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/disciplinas/dados_grad/tutorial3_files/figure-html/scatterplot-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/dados_grad/tutorial3_files/figure-html/scatterplot-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;escolha-uma-única-variável-categórica-do-conjunto-de-dados-e-faça-um-gráfico-de-barras-de-sua-distribuição.&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/h3&gt;
@@ -877,13 +877,13 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
     
     <item>
       <title>Tutorial 4</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial4/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial4/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial4/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial4/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;p&gt;A poluição por plástico é um problema importante e crescente, afetando negativamente a saúde dos oceanos e da vida selvagem.
@@ -945,7 +945,7 @@ View(plastic_waste)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
   geom_histogram(binwidth = 0.2)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing non-finite values (stat_bin).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/disciplinas/dados_grad/tutorial4_files/figure-html/plastic_waste_per_cap-hist-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/dados_grad/tutorial4_files/figure-html/plastic_waste_per_cap-hist-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Um país se destaca como uma observação incomum no topo da distribuição.&lt;/p&gt;
 &lt;p&gt;Uma maneira de identificar este país é filtrar os dados para países onde os resíduos plásticos per capita são maiores que 3,5 kg/pessoa.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plastic_waste %&amp;gt;%
@@ -1017,20 +1017,20 @@ Você deve encontrar um tempo para se reunir com sua equipe e completá-los apó
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Recrie o seguinte gráfico e interprete o que você vê no contexto dos dados.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/disciplinas/dados_grad/tutorial4_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/dados_grad/tutorial4_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Tutorial 5</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial5/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial5/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial5/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial5/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
@@ -1050,7 +1050,7 @@ hotels_no_usa_cancelled &amp;lt;- select(hotels_no_usa, hotel, is_canceled)
 
 ggplot(hotels_no_usa, aes(x = arrival_date_year)) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/disciplinas/dados_grad/tutorial5_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/dados_grad/tutorial5_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotels_no_usa_pipe &amp;lt;- hotels %&amp;gt;% 
   filter(country != &amp;quot;USA&amp;quot; &amp;amp; lead_time &amp;lt; 100) %&amp;gt;% 
   select(hotel, is_canceled, lead_time) %&amp;gt;% 
@@ -1370,13 +1370,13 @@ Note que é longo (há muitas variáveis nos dados), mas utilizamos um conjunto 
     
     <item>
       <title>Tutorial 6</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/tutorial6/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial6/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/tutorial6/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/tutorial6/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;div id=&#34;bibliotecas&#34; class=&#34;section level2&#34;&gt;
@@ -1431,13 +1431,13 @@ data2 &amp;lt;- survey %&amp;gt;%
     
     <item>
       <title>Encontros Síncronos 9 e 10</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc9/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc9/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc9/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc9/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class09_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -1450,13 +1450,13 @@ data2 &amp;lt;- survey %&amp;gt;%
     
     <item>
       <title>Encontros Síncronos 11 e 12</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc12/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc12/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc12/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc12/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
 &lt;iframe src=&#34;https://places-research.github.io/class10_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
@@ -1469,12 +1469,12 @@ data2 &amp;lt;- survey %&amp;gt;%
     
     <item>
       <title>Encontros Síncronos 13</title>
-      <link>retacourses.netlify.app/disciplinas/dados_grad/sinc13/</link>
+      <link>https://retacourses.netlify.app/disciplinas/dados_grad/sinc13/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/disciplinas/dados_grad/sinc13/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/dados_grad/sinc13/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
   &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 

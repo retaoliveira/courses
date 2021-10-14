@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Renata Oliveira</title>
-    <link>retacourses.netlify.app/categories/</link>
+    <link>https://retacourses.netlify.app/categories/</link>
     <description>Recent content in Categories on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="retacourses.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Comunicação</title>
-      <link>retacourses.netlify.app/categories/comunicacao/</link>
+      <link>https://retacourses.netlify.app/categories/comunicacao/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/categories/comunicacao/</guid>
+      <guid>https://retacourses.netlify.app/categories/comunicacao/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>retacourses.netlify.app/categories/r/</link>
+      <link>https://retacourses.netlify.app/categories/r/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/categories/r/</guid>
+      <guid>https://retacourses.netlify.app/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>retacourses.netlify.app/categories/git/</link>
+      <link>https://retacourses.netlify.app/categories/git/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/categories/git/</guid>
+      <guid>https://retacourses.netlify.app/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FeliCIDADE</title>
-      <link>retacourses.netlify.app/categories/felicidade/</link>
+      <link>https://retacourses.netlify.app/categories/felicidade/</link>
       <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
       
-      <guid>retacourses.netlify.app/categories/felicidade/</guid>
+      <guid>https://retacourses.netlify.app/categories/felicidade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Análise de dados</title>
-      <link>retacourses.netlify.app/categories/analise-de-dados/</link>
+      <link>https://retacourses.netlify.app/categories/analise-de-dados/</link>
       <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/categories/analise-de-dados/</guid>
+      <guid>https://retacourses.netlify.app/categories/analise-de-dados/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Geografia</title>
-      <link>retacourses.netlify.app/categories/geografia/</link>
+      <link>https://retacourses.netlify.app/categories/geografia/</link>
       <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
       
-      <guid>retacourses.netlify.app/categories/geografia/</guid>
+      <guid>https://retacourses.netlify.app/categories/geografia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fun</title>
-      <link>retacourses.netlify.app/categories/fun/</link>
+      <link>https://retacourses.netlify.app/categories/fun/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>retacourses.netlify.app/categories/fun/</guid>
+      <guid>https://retacourses.netlify.app/categories/fun/</guid>
       <description></description>
     </item>
     

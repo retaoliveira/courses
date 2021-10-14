@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logística on Renata Oliveira</title>
-    <link>retacourses.netlify.app/cursos/log_all/</link>
+    <link>https://retacourses.netlify.app/cursos/log_all/</link>
     <description>Recent content in Logística on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="retacourses.netlify.app/cursos/log_all/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/cursos/log_all/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Afinal, o que é Logística?</title>
-      <link>retacourses.netlify.app/cursos/log_all/definir_log/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/definir_log/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/definir_log/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/definir_log/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Definir Logística é um grande desafio. Vários autores fizeram diferentes propostas de definições ao longo do tempo. Penso que o logística é muito mais um conjunto de princípios do que uma operação. “Fazer” logística relaciona-se à promover o acesso a bens de consumo e serviços, essenciais à vida humana e promovidos pelo consumo, destinados ao consumidor final da maneira mais eficiente e responsiva possível.&lt;/p&gt;
@@ -47,12 +47,12 @@
     
     <item>
       <title>Gestão da cadeia de suprimentos</title>
-      <link>retacourses.netlify.app/cursos/log_all/gcs/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/gcs/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/gcs/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/gcs/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -174,12 +174,12 @@
     
     <item>
       <title>Logística 4.0</title>
-      <link>retacourses.netlify.app/cursos/log_all/40/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/40/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/40/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/40/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho.&lt;/p&gt;
@@ -195,12 +195,12 @@
     
     <item>
       <title>Tecnologia da Informação aplicada à Logística</title>
-      <link>retacourses.netlify.app/cursos/log_all/ti/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/ti/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/ti/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/ti/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho.&lt;/p&gt;
@@ -218,12 +218,12 @@ funciona mesmo?&lt;/p&gt;
     
     <item>
       <title>Transportes</title>
-      <link>retacourses.netlify.app/cursos/log_all/transportes/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/transportes/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/transportes/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/transportes/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -932,12 +932,12 @@ Sabe-se que a imobilização de veículos é, em média, 10% da frota total e a 
     
     <item>
       <title>Impactos da pandemia COVID-19 nos transportes</title>
-      <link>retacourses.netlify.app/cursos/log_all/transportes_covid/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/transportes_covid/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/transportes_covid/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/transportes_covid/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Algumas notícias interessantes sobre os impactos da pandemia COVID-19 na movimentação internacional de cargas:&lt;/p&gt;
@@ -956,12 +956,12 @@ Sabe-se que a imobilização de veículos é, em média, 10% da frota total e a 
     
     <item>
       <title>Gestão de estoques</title>
-      <link>retacourses.netlify.app/cursos/log_all/estoques/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/estoques/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/estoques/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/estoques/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1126,12 +1126,12 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     
     <item>
       <title>Omnichannel</title>
-      <link>retacourses.netlify.app/cursos/log_all/omnichannel/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/omnichannel/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/omnichannel/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/omnichannel/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Omnichannel é uma estratégia de uso simultâneo e interligado de diferentes canais de comunicação, com o objetivo de estreitar a relação entre online e offline, aprimorando, assim, a experiência do cliente. Essa tendência do varejo permite a convergência do virtual e do físico.&lt;/p&gt;
@@ -1141,12 +1141,12 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     
     <item>
       <title>Armazenagem</title>
-      <link>retacourses.netlify.app/cursos/log_all/armazenagem/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/armazenagem/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/armazenagem/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/armazenagem/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1219,12 +1219,12 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     
     <item>
       <title>Sourcing</title>
-      <link>retacourses.netlify.app/cursos/log_all/compras/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/compras/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/compras/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/compras/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1248,12 +1248,12 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     
     <item>
       <title>Redes logísticas</title>
-      <link>retacourses.netlify.app/cursos/log_all/redes/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/redes/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/redes/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/redes/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1289,12 +1289,12 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     
     <item>
       <title>Custos Logísticos</title>
-      <link>retacourses.netlify.app/cursos/log_all/custos/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/custos/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/custos/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/custos/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1424,12 +1424,12 @@ interrompidos etc.&lt;/p&gt;
     
     <item>
       <title>Desafios contemporâneos</title>
-      <link>retacourses.netlify.app/cursos/log_all/log_atual/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/log_atual/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/log_atual/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/log_atual/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1521,12 +1521,12 @@ interrompidos etc.&lt;/p&gt;
     
     <item>
       <title>Desempenho Logístico</title>
-      <link>retacourses.netlify.app/cursos/log_all/kpi/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/kpi/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/kpi/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/kpi/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1751,12 +1751,12 @@ Cada uma dessas ações, no entanto, tem um custo. Assim, cada cadeia de suprime
     
     <item>
       <title>Logística Urbana - definições</title>
-      <link>retacourses.netlify.app/cursos/log_all/log_urb/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/log_urb/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/log_urb/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/log_urb/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://podeditora.com.br/wp-content/uploads/2019/04/Livro-A-logistca-urbana-no-Brasil-site.pdf&#34;&gt;Livro&lt;/a&gt;&lt;/p&gt;
@@ -1766,12 +1766,12 @@ Cada uma dessas ações, no entanto, tem um custo. Assim, cada cadeia de suprime
     
     <item>
       <title>Matemática Financeira</title>
-      <link>retacourses.netlify.app/cursos/log_all/mat_fin/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/mat_fin/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/mat_fin/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/mat_fin/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1897,12 +1897,12 @@ Determine a quantia que deve ser investida, hoje, a fim de acumular R$ 100.000,0
     
     <item>
       <title>Nível de Serviço</title>
-      <link>retacourses.netlify.app/cursos/log_all/nivel_servico/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/nivel_servico/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/nivel_servico/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/nivel_servico/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1985,12 +1985,12 @@ Essa nova perspectiva enxerga o consumidor, não no fim da cadeia de suprimentos
     
     <item>
       <title>Consumer Centric Supply Chain Framework</title>
-      <link>retacourses.netlify.app/cursos/log_all/ccscf/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/ccscf/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/ccscf/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/ccscf/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -2011,12 +2011,12 @@ orientado por uma visão centrada no consumidor e discutida a forma de usá-lo p
     
     <item>
       <title>Logística verde, reversa e sustentável</title>
-      <link>retacourses.netlify.app/cursos/log_all/sustentavel/</link>
+      <link>https://retacourses.netlify.app/cursos/log_all/sustentavel/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/log_all/sustentavel/</guid>
+      <guid>https://retacourses.netlify.app/cursos/log_all/sustentavel/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;

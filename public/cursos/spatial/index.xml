@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geocomputing e Análise Espacial on Renata Oliveira</title>
-    <link>retacourses.netlify.app/cursos/spatial/</link>
+    <link>https://retacourses.netlify.app/cursos/spatial/</link>
     <description>Recent content in Geocomputing e Análise Espacial on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="retacourses.netlify.app/cursos/spatial/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/cursos/spatial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Construindo mapas e representações</title>
-      <link>retacourses.netlify.app/cursos/spatial/map/</link>
+      <link>https://retacourses.netlify.app/cursos/spatial/map/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>retacourses.netlify.app/cursos/spatial/map/</guid>
+      <guid>https://retacourses.netlify.app/cursos/spatial/map/</guid>
       <description>
-&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -121,11 +121,11 @@ ls()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Finalmente, crie o mapa expresso utilizando:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tmap)
 qtm(georgia, fill=&amp;quot;red&amp;quot;, style = &amp;quot;natural&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;O uso do parâmetro &lt;code&gt;style&lt;/code&gt; permite configurações rápidas de mapas por meio do package &lt;code&gt;tmap&lt;/code&gt;. Explore a função &lt;code&gt;qtm&lt;/code&gt; para entender os demais temas possíveis.&lt;/p&gt;
 &lt;p&gt;O parâmetro &lt;code&gt;fill&lt;/code&gt; pode ser utilizado para especificar uma cor ou a variável a ser mapeada.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;qtm(georgia_sf, fill = &amp;quot;MedInc&amp;quot;, text =&amp;quot;Name&amp;quot;, text.size=0.5, format = &amp;quot;World_wide&amp;quot;, style = &amp;quot;classic&amp;quot;, text.root = 5, fill.title = &amp;quot;Median Income&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;mapa-completo-por-meio-do-tmap&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Mapa completo por meio do &lt;code&gt;tmap&lt;/code&gt;&lt;/h3&gt;
@@ -137,14 +137,14 @@ g &amp;lt;- st_union(georgia_sf)
 tm_shape(georgia_sf) + 
   tm_fill(&amp;quot;tomato&amp;quot;) +
   tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Incluir alguns estilos:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# plotar as camadas espaciais
 tm_shape(georgia_sf) + 
   tm_fill(&amp;quot;tomato&amp;quot;) +
   tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;) +
   tm_style(&amp;quot;natural&amp;quot;, bg.color = &amp;quot;grey90&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Incluir limite estadual. Repare que a função &lt;code&gt;tm_shape&lt;/code&gt; vai ser chamada novamente uma vez que outro objeto será incluído no mapa.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) + 
   tm_fill(&amp;quot;tomato&amp;quot;) +
@@ -152,7 +152,7 @@ tm_shape(georgia_sf) +
   tm_style(&amp;quot;natural&amp;quot;, bg.color = &amp;quot;grey90&amp;quot;) +
   tm_shape(g) + 
   tm_borders(lwd=2) # lwd - line width - espessura da linha&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Incluindo todos os parâmetros juntos:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) + 
   tm_fill(&amp;quot;tomato&amp;quot;) +
@@ -163,35 +163,35 @@ tm_shape(georgia_sf) +
   tm_layout(title = &amp;quot;O estado da Georgia&amp;quot;,
             title.size = 1,
             title.position = c(0.55, &amp;quot;top&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Experimente esses outros parâmetros da função &lt;code&gt;qtm&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(World, rivers, metro, land)
 
 # just the map
 qtm(World)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# choropleth
 qtm(World, fill = &amp;quot;economy&amp;quot;, format = &amp;quot;World&amp;quot;, style = &amp;quot;col_blind&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# choropleth with more specifications
 qtm(World, fill=&amp;quot;HPI&amp;quot;, fill.n = 9, fill.palette = &amp;quot;div&amp;quot;,
     fill.title = &amp;quot;Happy Planet Index&amp;quot;, fill.id = &amp;quot;name&amp;quot;, 
     style = &amp;quot;gray&amp;quot;, format = &amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Alternative to previous map - RECOMENDED
 tm_shape(World) +
     tm_polygons(&amp;quot;HPI&amp;quot;, n = 9, palette = &amp;quot;div&amp;quot;,
         title = &amp;quot;Happy Planet Index&amp;quot;, id = &amp;quot;name&amp;quot;) +
     tm_style(&amp;quot;gray&amp;quot;) +
     tm_format(&amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Bubble map
 qtm(World, borders = NULL) + 
 qtm(metro, symbols.size = &amp;quot;pop2010&amp;quot;, 
     symbols.title.size= &amp;quot;Metropolitan Areas&amp;quot;, 
     symbols.id= &amp;quot;name&amp;quot;,
     format = &amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-5.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-12-5.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Para plotar dois mapas juntos com dados diferentes, experimente o seguinte código:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tmap)
 
@@ -205,9 +205,9 @@ t2 &amp;lt;- tm_shape(georgia2) +
               tm_borders() +
               tm_layout(asp=0.86, bg.color = &amp;quot;grey95&amp;quot;) #alinhar a segunda figura
 t1&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Para especificar o layout da figura combinando os mapas:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(grid)
 
@@ -220,7 +220,7 @@ pushViewport(viewport(layout = grid.layout(1,2)))
 #  Plotar usando o comando print
 print(t1, vp=viewport(layout.pos.col = 1, height = 5))
 print(t2, vp=viewport(layout.pos.col = 2, height = 5))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;
 Repare que t1 é um objeto &lt;code&gt;sf&lt;/code&gt; e t2 é um objeto &lt;code&gt;sp&lt;/code&gt; e apresentam sistemas de referência diferentes.&lt;/p&gt;
 &lt;p&gt;Para consultar os diferentes sistemas de projeção, verifique utilizando a função &lt;code&gt;crs&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
@@ -282,7 +282,7 @@ data.frame(georgia_sf)[,13]&lt;/code&gt;&lt;/pre&gt;
               tm_borders() +
               tm_text(&amp;quot;Name&amp;quot;, size=0.3) +
               tm_layout(frame = FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
 Para criar um subconjunto dos dados, é possível fazer uma seleção criando uma camada com o subconjunto por meio dos índices:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;index &amp;lt;- c(81, 82, 83, 150, 62, 53, 21, 16, 124, 121, 17)
 georgia_sub &amp;lt;- georgia_sf[index, ]&lt;/code&gt;&lt;/pre&gt;
@@ -296,7 +296,7 @@ tm_shape(georgia_sub) +
               tm_fill(&amp;quot;lightblue&amp;quot;) +
               tm_borders() +
               tm_layout(frame = TRUE, title = &amp;quot;Georgia com subconjunto&amp;quot;, title.size=1, title.position = c(0.02, &amp;quot;bottom&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -459,7 +459,7 @@ MyMap &amp;lt;- openmap(ul,lr)
 par(mar = c(0,0,0,0))
 plot(MyMap, removeMargin=FALSE)
 plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/map_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;visualização-de-fenômenos-sociais-no-espaço&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
 &lt;h2&gt;Visualização de fenômenos sociais no espaço&lt;/h2&gt;
