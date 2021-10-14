@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Renata Oliveira</title>
-    <link>https://testereta.netlify.app/post/</link>
+    <link>https://retacourses.netlify.app/post/</link>
     <description>Recent content in Posts on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Fri, 10 Sep 2021 09:37:49 -0300</lastBuildDate>
     
-	    <atom:link href="https://testereta.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://retacourses.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pacotes para Análise Exploratória de Dados no R</title>
-      <link>https://testereta.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</link>
+      <link>https://retacourses.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</link>
       <pubDate>Fri, 10 Sep 2021 09:37:49 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/easystats/see&#34;&gt;https://github.com/easystats/see&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/interactions/vignettes/interactions.html&#34;&gt;https://cran.r-project.org/web/packages/interactions/vignettes/interactions.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://ssc.wisc.edu/sscc/pubs/DWE/book/preface.html&#34;&gt;https://ssc.wisc.edu/sscc/pubs/DWE/book/preface.html&lt;/a&gt;&lt;/p&gt;
@@ -26,12 +26,12 @@
     
     <item>
       <title>Blogdown</title>
-      <link>https://testereta.netlify.app/post/blogdown/</link>
+      <link>https://retacourses.netlify.app/post/blogdown/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/blogdown/</guid>
+      <guid>https://retacourses.netlify.app/post/blogdown/</guid>
       <description>
-&lt;script src=&#34;https://testereta.netlify.app/post/blogdown/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://retacourses.netlify.app/post/blogdown/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://portfolio.peter-baumgartner.net/#about&#34; class=&#34;uri&#34;&gt;https://portfolio.peter-baumgartner.net/#about&lt;/a&gt;&lt;/p&gt;
@@ -44,20 +44,20 @@
     
     <item>
       <title>Curso Sensacional em Métodos de Análise Espacial</title>
-      <link>https://testereta.netlify.app/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</link>
+      <link>https://retacourses.netlify.app/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</link>
       <pubDate>Thu, 09 Sep 2021 12:34:12 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://darribas.org/gds_course/content/bA/concepts_A.html&#34;&gt;http://darribas.org/gds_course/content/bA/concepts_A.html&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Dados e Ética Podem Caminhar Juntos?</title>
-      <link>https://testereta.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</link>
+      <link>https://retacourses.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</link>
       <pubDate>Fri, 03 Sep 2021 15:47:26 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</guid>
       <description>&lt;p&gt;Com cada vez mais pessoas usando produtos digitais, termos como &lt;em&gt;rastreamento&lt;/em&gt; ou &lt;em&gt;coleta de dados&lt;/em&gt;, &lt;em&gt;GDPR&lt;/em&gt;, &lt;em&gt;preferências de cookies&lt;/em&gt;, &lt;em&gt;criptografia&lt;/em&gt;, &lt;em&gt;autenticação multi-fator&lt;/em&gt; tornaram-se parte de nosso vocabulário cotidiano. Existe um território digital onde nós existimos e que precisamos navegar. Isto não apenas implica que temos identidades digitais, mas também significa que precisamos aprender a cuidar e proteger essas identidades.&lt;/p&gt;
 &lt;p&gt;As empresas que criam os produtos digitais que usamos todos os dias devem ter a responsabilidade de projetar produtos que respeitem e protejam as identidades, dados e informações sensíveis dos usuários. Dessa discussão deriva a &lt;strong&gt;Ética dos Dados&lt;/strong&gt;, definida pelos professores e filósofos de Oxford Luciano Floridi e Mariarosaria Taddeo como:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -122,10 +122,10 @@
     
     <item>
       <title>Usando o Github Desktop - Git sem coding</title>
-      <link>https://testereta.netlify.app/post/usando-o-github-desktop-git-sem-coding/</link>
+      <link>https://retacourses.netlify.app/post/usando-o-github-desktop-git-sem-coding/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/usando-o-github-desktop-git-sem-coding/</guid>
+      <guid>https://retacourses.netlify.app/post/usando-o-github-desktop-git-sem-coding/</guid>
       <description>&lt;p&gt;Algumas dicas de como utilizar o Github Desktop para fazer uso do Git e do Github sem a necessidade de aprender as linhas de comando.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -151,20 +151,20 @@
     
     <item>
       <title>A farra dos preços baixos no Uber e no Airbnb está próxima do fim</title>
-      <link>https://testereta.netlify.app/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</link>
+      <link>https://retacourses.netlify.app/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</link>
       <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.terra.com.br/noticias/tecnologia/a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim,1859fe282da8d13c5d7a416e6afe6529g19nwc79.html&#34;&gt;A farra dos preços baixos no Uber e no Airbnb está próxima&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Principais comandos do Git</title>
-      <link>https://testereta.netlify.app/post/principais-comandos-do-git/</link>
+      <link>https://retacourses.netlify.app/post/principais-comandos-do-git/</link>
       <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/principais-comandos-do-git/</guid>
+      <guid>https://retacourses.netlify.app/post/principais-comandos-do-git/</guid>
       <description>&lt;h1 id=&#34;o-que-é-sistema-de-controle-de-versão&#34;&gt;O que é Sistema de Controle de Versão?&lt;/h1&gt;
 &lt;p&gt;O sistema de controle de versão é uma estrutura que nos permite acrescentar e supervisionar várias entregas e fases de um item de produto sem realmente manter diferentes documentos ou pastas. Além disso, eles tornam a melhoria dentro de um grupo mais sensata e menos estressante, pois os desenvolvedores não precisam trocar pastas, mas, em vez disso, falam com uma fonte solitária onde cada uma das progressões está acontecendo e tudo é salvo.&lt;/p&gt;
 &lt;h2 id=&#34;o-que-é-git&#34;&gt;O que é Git?&lt;/h2&gt;
@@ -206,20 +206,20 @@
     
     <item>
       <title>Atuação Do Mercado Imobiliário Sobre a Estrutura Urbana</title>
-      <link>https://testereta.netlify.app/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</link>
+      <link>https://retacourses.netlify.app/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</link>
       <pubDate>Tue, 27 Apr 2021 15:30:38 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www1.folha.uol.com.br/cotidiano/2021/04/moradia-se-aproxima-do-transporte-em-sp-e-arranha-ceus-surgem-em-areas-de-casas-na-periferia.shtml&#34;&gt;Link para reportagem sobre as transformações urbanas em relação à proximdidade ao transporte em SP e arranha-céus surgem em áreas de casas na periferia&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Tutoriais interativos</title>
-      <link>https://testereta.netlify.app/post/tutoriais-interativos/</link>
+      <link>https://retacourses.netlify.app/post/tutoriais-interativos/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/tutoriais-interativos/</guid>
+      <guid>https://retacourses.netlify.app/post/tutoriais-interativos/</guid>
       <description>&lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o &amp;ldquo;oráculo&amp;rdquo; universal Google.&lt;/p&gt;
 &lt;p&gt;Os estudantes um procedimento breve para conseguirem abrir o tutorial:&lt;/p&gt;
 &lt;ol&gt;
@@ -250,10 +250,10 @@ swirl()
     
     <item>
       <title>Dicas de R e glossário de termos mais comuns</title>
-      <link>https://testereta.netlify.app/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</link>
+      <link>https://retacourses.netlify.app/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</link>
       <pubDate>Tue, 05 Jan 2021 20:05:57 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/business-science/free_r_tips&#34;&gt;Free R Tips - Business Science&lt;/a&gt;&lt;/p&gt;
@@ -267,10 +267,10 @@ swirl()
     
     <item>
       <title>Uso de Inteligência Artificial na Gestão Pública</title>
-      <link>https://testereta.netlify.app/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</link>
+      <link>https://retacourses.netlify.app/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</link>
       <pubDate>Tue, 05 Jan 2021 20:00:17 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://news.cision.com/fi/city-of-helsinki/r/helsinki-and-amsterdam-first-cities-in-the-world-to-launch-open-ai-register,c3204076&#34;&gt;Ai Register&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1uLTBnKBrbMBp1w7vSO_GdLtP9ev7GM_W/view?usp=sharing&#34;&gt;Artificial Intelligence as a Public Service: Learning from Amsterdam and Helsinki by Luciano Floridi&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -278,10 +278,10 @@ swirl()
     
     <item>
       <title>Cores Em Visualização De Dados</title>
-      <link>https://testereta.netlify.app/post/2021-01-05-cores-em-visualizacao-de-dados/</link>
+      <link>https://retacourses.netlify.app/post/2021-01-05-cores-em-visualizacao-de-dados/</link>
       <pubDate>Tue, 05 Jan 2021 11:08:32 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-01-05-cores-em-visualizacao-de-dados/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-01-05-cores-em-visualizacao-de-dados/</guid>
       <description>&lt;p&gt;The objective of data visualization is to communicate key results from the data analysis workflow. And while a chart must look aesthetically appealing, its primary objective is not to ‘look pretty’.&lt;/p&gt;
 &lt;p&gt;Use of color in a visualisation should be to help disseminate key findings instead of being part of some sort of artistic endeavor&lt;/p&gt;
 &lt;h3 id=&#34;rule-1--use-color-when-you-should-not-when-you-can&#34;&gt;Rule 1 : Use color when you should, not when you can&lt;/h3&gt;
@@ -342,10 +342,10 @@ Tools for selecting colour combinations.&lt;/p&gt;
     
     <item>
       <title>Podcasts De Logística</title>
-      <link>https://testereta.netlify.app/post/2021-01-05-podcasts-de-logistica/</link>
+      <link>https://retacourses.netlify.app/post/2021-01-05-podcasts-de-logistica/</link>
       <pubDate>Tue, 05 Jan 2021 11:04:29 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-01-05-podcasts-de-logistica/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-01-05-podcasts-de-logistica/</guid>
       <description>&lt;p&gt;PODCASTS sobre logística:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8zODk1MDYucnNz?sa=X&amp;amp;ved=0CAYQrrcFahcKEwj4lr6S8oTuAhUAAAAAHQAAAAAQOA&#34;&gt;GuiaKast&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xMjQzYzA5NC9wb2RjYXN0L3Jzcw?sa=X&amp;amp;ved=0CAMQ4aUDahgKEwj4lr6S8oTuAhUAAAAAHQAAAAAQsQE&#34;&gt;Café com Logística&lt;/a&gt;&lt;/p&gt;
@@ -354,20 +354,20 @@ Tools for selecting colour combinations.&lt;/p&gt;
     
     <item>
       <title>Markdown Ou Rmarkdown</title>
-      <link>https://testereta.netlify.app/post/2021-01-02-markdown-ou-rmarkdown/</link>
+      <link>https://retacourses.netlify.app/post/2021-01-02-markdown-ou-rmarkdown/</link>
       <pubDate>Sat, 02 Jan 2021 14:31:19 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2021-01-02-markdown-ou-rmarkdown/</guid>
+      <guid>https://retacourses.netlify.app/post/2021-01-02-markdown-ou-rmarkdown/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.markdowntutorial.com/lesson/1/&#34;&gt;https://www.markdowntutorial.com/lesson/1/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Fundamentos De Estatística</title>
-      <link>https://testereta.netlify.app/post/2020-12-31-fundamentos-de-estatistica/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-31-fundamentos-de-estatistica/</link>
       <pubDate>Thu, 31 Dec 2020 13:30:05 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-31-fundamentos-de-estatistica/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-31-fundamentos-de-estatistica/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://beta.rstudioconnect.com/content/3350/dplyr_tutorial.html&#34;&gt;Univariate and bivariate descriptive analysis by Gert Janssenswillen&lt;/a&gt;&lt;/p&gt;
@@ -387,10 +387,10 @@ Tools for selecting colour combinations.&lt;/p&gt;
     
     <item>
       <title>Dicas Sobre Rmarkdown</title>
-      <link>https://testereta.netlify.app/post/2020-12-30-dicas-sobre-rmarkdown/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-30-dicas-sobre-rmarkdown/</link>
       <pubDate>Wed, 30 Dec 2020 20:47:37 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-30-dicas-sobre-rmarkdown/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-30-dicas-sobre-rmarkdown/</guid>
       <description>&lt;p&gt;O site &lt;a href=&#34;https://holtzy.github.io/Pimp-my-rmd/#hide_code&#34;&gt;Pimp my rmd&lt;/a&gt; traz uma série de dicas interessantes para construção de arquivos com linguagem RMarkdown.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;R Markdown - The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund&lt;/a&gt;&lt;/li&gt;
@@ -402,10 +402,10 @@ Tools for selecting colour combinations.&lt;/p&gt;
     
     <item>
       <title>Usando Git e Github</title>
-      <link>https://testereta.netlify.app/post/usando-git-e-github/</link>
+      <link>https://retacourses.netlify.app/post/usando-git-e-github/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/usando-git-e-github/</guid>
+      <guid>https://retacourses.netlify.app/post/usando-git-e-github/</guid>
       <description>&lt;h2 id=&#34;definições&#34;&gt;Definições&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Git&lt;/code&gt; é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, &lt;code&gt;Git&lt;/code&gt; não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer &amp;ldquo;alguma besteira&amp;rdquo;, você pode voltar para a última versão salva. É como chegar a um &amp;ldquo;ponto de salvamento&amp;rdquo; em um videogame no qual você pode voltar se seu personagem morrer.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;GitHub&lt;/code&gt; é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.&lt;/p&gt;
@@ -453,10 +453,10 @@ Na página dos seus repositórios, crie um repositório e faça uso desse espaç
     
     <item>
       <title>Acesso à API do Twitter</title>
-      <link>https://testereta.netlify.app/post/2020-12-27-acesso-a-api-do-twitter/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-27-acesso-a-api-do-twitter/</link>
       <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-27-acesso-a-api-do-twitter/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-27-acesso-a-api-do-twitter/</guid>
       <description>&lt;h2 id=&#34;como-obter-e-usar-tokens-de-acesso-à-api-do-twitter-para-uso-no-pacote-rtweet&#34;&gt;Como obter e usar tokens de acesso à &lt;code&gt;API&lt;/code&gt; do &lt;code&gt;Twitter&lt;/code&gt; para uso no pacote &lt;code&gt;rtweet&lt;/code&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;criando-um-aplicativo-no-twitter&#34;&gt;Criando um aplicativo no Twitter&lt;/h3&gt;
 &lt;p&gt;Para criar um aplicativo no Twitter, você precisará primeiro solicitar uma conta de desenvolvedor. Este processo, juntamente com uma explicação detalhada pode ser encontrado em &lt;a href=&#34;developer.twitter.com&#34;&gt;developer.twitter.com&lt;/a&gt;.&lt;/p&gt;
@@ -475,10 +475,10 @@ Na página dos seus repositórios, crie um repositório e faça uso desse espaç
     
     <item>
       <title>Mineração de Texto</title>
-      <link>https://testereta.netlify.app/post/2020-12-27-mineracao-de-texto/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-27-mineracao-de-texto/</link>
       <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-27-mineracao-de-texto/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-27-mineracao-de-texto/</guid>
       <description>&lt;h2 id=&#34;dicionário-de-dados-do-twitter&#34;&gt;Dicionário de dados do Twitter&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://developer.twitter.com/en/docs/twitter-api/data-dictionary/introduction&#34;&gt;Data dictionary&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;sentimentos-no-twitter-para-csv&#34;&gt;Sentimentos no Twitter para CSV&lt;/h2&gt;
@@ -526,10 +526,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>E-books sobre R</title>
-      <link>https://testereta.netlify.app/post/e-books-sobre-r/</link>
+      <link>https://retacourses.netlify.app/post/e-books-sobre-r/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/e-books-sobre-r/</guid>
+      <guid>https://retacourses.netlify.app/post/e-books-sobre-r/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cdr.ibpad.com.br/&#34;&gt;Oliveira, Paulo Felipe de; Guerra, Saulo; McDonell, Robert. Ciência de Dados com R – Introdução. Brasília: Editora IBPAD, 2018&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.tidytextmining.com/&#34;&gt;Text Mining with R by Julia Silge and David Robinson&lt;/a&gt;&lt;/li&gt;
@@ -543,10 +543,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Segmentação de Mercado</title>
-      <link>https://testereta.netlify.app/post/2020-12-26-segmentacao-de-mercado/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-26-segmentacao-de-mercado/</link>
       <pubDate>Sat, 26 Dec 2020 20:35:22 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-26-segmentacao-de-mercado/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-26-segmentacao-de-mercado/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://diegousai.io/2019/05/a-gentle-introduction-to-customer-segmentation/&#34;&gt;A gentle Introduction to Customer Segmentation - Using K-Means Clustering to Understand Marketing Response&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/DiegoUsaiUK/Customer_Segmentation&#34;&gt;Using K-Means Clustering to Understand Marketing Response&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -554,10 +554,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
-      <link>https://testereta.netlify.app/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
       <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
@@ -566,10 +566,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Blogs sobre R em Português</title>
-      <link>https://testereta.netlify.app/post/2020-12-26-blogs-sobre-r-em-portugues/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-26-blogs-sobre-r-em-portugues/</link>
       <pubDate>Sat, 26 Dec 2020 17:34:50 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-26-blogs-sobre-r-em-portugues/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-26-blogs-sobre-r-em-portugues/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/marcosvital&#34;&gt;Marcos Vital&lt;/a&gt; nos presenteou com a organização de uma &lt;a href=&#34;https://github.com/marcosvital/blogs-de-R-no-Brasil&#34;&gt;lista de blogs&lt;/a&gt;  sobre R no Brasil.&lt;/p&gt;
 &lt;p&gt;Outras dicas!!!&lt;/p&gt;
 &lt;ul&gt;
@@ -580,10 +580,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Packages interessantes do R para Análise de dados e espacial</title>
-      <link>https://testereta.netlify.app/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</link>
       <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/thengl/GeoMLA&#34;&gt;RFsp — Random Forest for spatial data (R tutorial) by Hengl, T., Nussbaum, M., and Wright, M.N.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -592,10 +592,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>R Para Análise Espacial</title>
-      <link>https://testereta.netlify.app/post/2020-12-26-r-para-analise-espacial/</link>
+      <link>https://retacourses.netlify.app/post/2020-12-26-r-para-analise-espacial/</link>
       <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
       
-      <guid>https://testereta.netlify.app/post/2020-12-26-r-para-analise-espacial/</guid>
+      <guid>https://retacourses.netlify.app/post/2020-12-26-r-para-analise-espacial/</guid>
       <description>&lt;p&gt;A comunidade acadêmica tem caminhado para abertura de licença de uso e reprodução de material didático, bases de dados, e conteúdo que pode ajudar a construção de competências e a aprendizagem em diferentes contextos. A universalização da informação é responsabilidade do docente que acredita na mudança por meio da educação. A Internet tem possibilitado tanto a publicação como o acesso a diferentes formas de apresentação de conteúdo que, em conjunto, contribuem para a formação de profissionais e outros acadêmicos. Infelizmente vivemos em um país onde a desigualdade ainda diferencia as pessoas, também em relação ao acesso à Internet. Nesse contexto, a abertura pública de conteúdo faz-se ainda mais necessária e eficaz, contribuindo para pequenas ações que podem mudar o mundo.&lt;/p&gt;
 &lt;p&gt;Trago aqui algumas dicas de sites, livros e material para implementações práticas que foram generosamente publicados por seus autores.&lt;/p&gt;
 &lt;h3 id=&#34;em-português&#34;&gt;Em português&lt;/h3&gt;
@@ -699,10 +699,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Como deixar o R com a minha cara</title>
-      <link>https://testereta.netlify.app/post/como-deixar-o-r-com-a-minha-cara/</link>
+      <link>https://retacourses.netlify.app/post/como-deixar-o-r-com-a-minha-cara/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/como-deixar-o-r-com-a-minha-cara/</guid>
+      <guid>https://retacourses.netlify.app/post/como-deixar-o-r-com-a-minha-cara/</guid>
       <description>&lt;p&gt;Para trocar o tema, basta fazer o download do tema favorito (ou criar o seu) e carrega no RStudio. Para isso:&lt;/p&gt;
 &lt;p&gt;Tools -&amp;gt; Global Options -&amp;gt; Appearance -&amp;gt; Add&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
@@ -713,10 +713,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Tutoriais de R</title>
-      <link>https://testereta.netlify.app/post/tutoriais-de-r/</link>
+      <link>https://retacourses.netlify.app/post/tutoriais-de-r/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/tutoriais-de-r/</guid>
+      <guid>https://retacourses.netlify.app/post/tutoriais-de-r/</guid>
       <description>&lt;p&gt;Em inglês&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for data Science by Hadley Wickham and Garret Grolemund&lt;/a&gt;&lt;/li&gt;
@@ -735,10 +735,10 @@ SentimentAnalysis package.&lt;/p&gt;
     
     <item>
       <title>Tutoriais para QGIS</title>
-      <link>https://testereta.netlify.app/post/tutoriais-para-qgis/</link>
+      <link>https://retacourses.netlify.app/post/tutoriais-para-qgis/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://testereta.netlify.app/post/tutoriais-para-qgis/</guid>
+      <guid>https://retacourses.netlify.app/post/tutoriais-para-qgis/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.qgistutorials.com/pt_BR/&#34;&gt;QGIS Tutorials and Tips by Ujaval Gandhi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://spatialthoughts.com/&#34;&gt;Spatial Thoughts by Ujaval Gandhi&lt;/a&gt;&lt;/li&gt;

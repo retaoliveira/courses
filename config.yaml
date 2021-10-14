@@ -1,5 +1,5 @@
 title: Renata Oliveira
-baseURL: https://testereta.netlify.app
+baseURL: https://retacourses.netlify.app
 copyright: Renata Oliveira {year}
 googleAnalytics: ''
 disqusShortname: ''
@@ -9,7 +9,7 @@ defaultContentLanguage: en
 preserveTaxonomyNames: false
 hasCJKLanguage: no
 defaultContentLanguageInSubdir: no
-removePathAccents: yes
+removePathAccents: true
 paginate: 10
 enableEmoji: yes
 footnotereturnlinkcontents: <sup>^</sup>
