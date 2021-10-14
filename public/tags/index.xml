@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Academia</title>
+    <link>https://examplesite.org/tags/</link>
+    <description>Recent content in Tags on Academia</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://examplesite.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogdown</title>
+      <link>https://examplesite.org/tags/blogdown/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://examplesite.org/tags/git/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://examplesite.org/tags/github/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Acessibilidade</title>
+      <link>https://examplesite.org/tags/acessibilidade/</link>
+      <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/acessibilidade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Planejamento Urbano</title>
+      <link>https://examplesite.org/tags/planejamento-urbano/</link>
+      <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/planejamento-urbano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análise textual</title>
+      <link>https://examplesite.org/tags/analise-textual/</link>
+      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/analise-textual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://examplesite.org/tags/r/</link>
+      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>https://examplesite.org/tags/twitter/</link>
+      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Limpeza de dados</title>
+      <link>https://examplesite.org/tags/limpeza-de-dados/</link>
+      <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/limpeza-de-dados/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manipulação de dados</title>
+      <link>https://examplesite.org/tags/manipulacao-de-dados/</link>
+      <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/manipulacao-de-dados/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://examplesite.org/tags/hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RMarkdown</title>
+      <link>https://examplesite.org/tags/rmarkdown/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>https://examplesite.org/tags/packages/</link>
+      <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análise espacial</title>
+      <link>https://examplesite.org/tags/analise-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
+      
+      <guid>https://examplesite.org/tags/analise-espacial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Source Themes</title>
+      <link>https://examplesite.org/tags/source-themes/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/source-themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://examplesite.org/tags/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://examplesite.org/tags/demo/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>human</title>
+      <link>https://examplesite.org/tags/human/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/human/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robotics</title>
+      <link>https://examplesite.org/tags/robotics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>academia</title>
+      <link>https://examplesite.org/tags/academia/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/tags/academia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

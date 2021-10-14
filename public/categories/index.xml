@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Academia</title>
+    <link>https://examplesite.org/categories/</link>
+    <description>Recent content in Categories on Academia</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://examplesite.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comunicação</title>
+      <link>https://examplesite.org/categories/comunicacao/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/categories/comunicacao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://examplesite.org/categories/r/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://examplesite.org/categories/git/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FeliCIDADE</title>
+      <link>https://examplesite.org/categories/felicidade/</link>
+      <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
+      
+      <guid>https://examplesite.org/categories/felicidade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análise de dados</title>
+      <link>https://examplesite.org/categories/analise-de-dados/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/categories/analise-de-dados/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geografia</title>
+      <link>https://examplesite.org/categories/geografia/</link>
+      <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
+      
+      <guid>https://examplesite.org/categories/geografia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fun</title>
+      <link>https://examplesite.org/categories/fun/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.org/categories/fun/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
