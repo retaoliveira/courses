@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Urban Analytics on Renata Oliveira</title>
-    <link>https://upbeat-payne-5a0119.netlify.app/cursos/urban/</link>
+    <link>retacourses.netlify.app/cursos/urban/</link>
     <description>Recent content in Urban Analytics on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     
-	    <atom:link href="https://upbeat-payne-5a0119.netlify.app/cursos/urban/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="retacourses.netlify.app/cursos/urban/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

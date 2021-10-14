@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 on Renata Oliveira</title>
-    <link>https://upbeat-payne-5a0119.netlify.app/publication_types/1/</link>
+    <link>retacourses.netlify.app/publication_types/1/</link>
     <description>Recent content in 1 on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://upbeat-payne-5a0119.netlify.app/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="retacourses.netlify.app/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An example conference paper</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/publication/books/</link>
+      <link>retacourses.netlify.app/publication/books/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/publication/books/</guid>
+      <guid>retacourses.netlify.app/publication/books/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>An example conference paper</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/publication/conference-paper/</link>
+      <link>retacourses.netlify.app/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/publication/conference-paper/</guid>
+      <guid>retacourses.netlify.app/publication/conference-paper/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;

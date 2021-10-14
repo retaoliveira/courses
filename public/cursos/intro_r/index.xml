@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Renata Oliveira</title>
-    <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/</link>
+    <link>retacourses.netlify.app/cursos/intro_r/</link>
     <description>Recent content in R on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="retacourses.netlify.app/cursos/intro_r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Abrindo dados no R</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/abrindo_dados/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/abrindo_dados/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/abrindo_dados/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/abrindo_dados/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://upbeat-payne-5a0119.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -157,10 +157,10 @@ transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Instalação de R, RStudio e Git</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/install/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/install/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/install/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/install/</guid>
       <description>&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;Baixar e instalar o R&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
@@ -191,12 +191,12 @@ transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Conhecendo o R</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_r/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/intro_r/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_r/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/intro_r/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1107,12 +1107,12 @@ O conteúdo deste documento é, em parte, originalmente produzido por Leonardo S
     
     <item>
       <title>Git e Github</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/git_r/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/git_r/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/git_r/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/git_r/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1157,12 +1157,12 @@ Na página dos seus repositórios, crie um repositório e faça uso desse espaç
     
     <item>
       <title>Introdução à Análise de Dados</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_dataana/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/intro_dataana/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_dataana/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/intro_dataana/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1195,12 +1195,12 @@ Na página dos seus repositórios, crie um repositório e faça uso desse espaç
     
     <item>
       <title>Como coletar, manipular e representar dados de Tweets</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/twitter/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/twitter/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/twitter/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/twitter/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1343,22 +1343,22 @@ users %&amp;gt;%
     
     <item>
       <title>Introdução ao RMarkdown</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_rmarkdown/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/intro_rmarkdown/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_rmarkdown/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/intro_rmarkdown/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://upbeat-payne-5a0119.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;retacourses.netlify.app/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;retacourses.netlify.app/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;retacourses.netlify.app/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;retacourses.netlify.app/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1664,10 +1664,10 @@ x&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;visualização&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Visualização&lt;/h3&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Também podemos fazer um histograma dessa variável simulada&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(x)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;metadados---cabeçalho&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Metadados - Cabeçalho&lt;/h3&gt;
@@ -1727,12 +1727,12 @@ Na janela de pré-visualização, clique no botão &lt;code&gt;Publicar&lt;/code
     
     <item>
       <title>Como acessar o tutorial da disciplina no swirl</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/swirl/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/swirl/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/swirl/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/swirl/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o “oráculo” universal Google.&lt;/p&gt;
@@ -1766,10 +1766,10 @@ swirl()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Introdução à estatística descritiva</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/estatistica/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/estatistica/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/estatistica/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/estatistica/</guid>
       <description>&lt;h2 id=&#34;estatística-descritiva-para-sumarização-de-dados-com-o-r&#34;&gt;Estatística descritiva para sumarização de dados com o R&lt;/h2&gt;
 &lt;p&gt;Já apresentamos os operadores relativos às estatísticas descritivas básicas. Segue uma síntese:&lt;/p&gt;
 &lt;h3 id=&#34;operadores-aritméticos-r&#34;&gt;Operadores aritméticos R&lt;/h3&gt;
@@ -1990,12 +1990,12 @@ c. Por meio das funções &lt;code&gt;hist()&lt;/code&gt; e &lt;code&gt;boxplot(
     
     <item>
       <title>Overview - Tidyverse</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/tidyverse/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/tidyverse/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/tidyverse/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/tidyverse/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -2100,12 +2100,12 @@ c. Por meio das funções &lt;code&gt;hist()&lt;/code&gt; e &lt;code&gt;boxplot(
     
     <item>
       <title>Tipos de dados, objetos e operadores no R</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/estrutura_dados/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/estrutura_dados/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/estrutura_dados/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/estrutura_dados/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -2284,12 +2284,12 @@ rbind() # - Empilha duas tabelas.&lt;/p&gt;
     
     <item>
       <title>Visualização de dados</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/ggplot/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/ggplot/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -2316,20 +2316,20 @@ rbind() # - Empilha duas tabelas.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x1 &amp;lt;- rnorm(100)
 y1 &amp;lt;- rnorm(100)
 plot(x1,y1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x1,y1,pch=16, col=&amp;#39;red&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x2 &amp;lt;- seq(0,2*pi,len=100)
 y2 &amp;lt;- sin(x2)
 
 plot(x2,y2,type=&amp;#39;l&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x2,y2,type=&amp;#39;l&amp;#39;, lwd=3, col=&amp;#39;darkgreen&amp;#39;) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x2,y2,type=&amp;#39;l&amp;#39;, col=&amp;#39;darkgreen&amp;#39;, lwd=3, ylim=c(-1.2,1.2));
 y2r &amp;lt;- y2 + rnorm(100,0,0.1)
 points(x2,y2r, pch=16, col=&amp;#39;darkred&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;carregando-mapas-no-r&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Carregando mapas no R&lt;/h4&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install.packages(&amp;quot;GISTools&amp;quot;, depend = T)
@@ -2346,7 +2346,7 @@ plot(appling, asp=1, type=&amp;#39;n&amp;#39;, xlab=&amp;quot;Easting&amp;quot;,
 
 # plot the selected features with hatching
 polygon(appling, density=14, angle=135) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2388,7 +2388,7 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;Queremos conhecer a distribuição de preferências de candidato à presidência na amostra de cidadãos de Fakeland. Veja como apresentar essa informação com o pacote &lt;em&gt;ggplot2&lt;/em&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = candidato)) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Bastante estranho, não? Vamos olhar cada uma de suas partes.&lt;/p&gt;
 &lt;p&gt;Comecemos pela primeira linha. A principal função do código é, como era de se esperar, &lt;em&gt;ggplot&lt;/em&gt; (sem o 2 mesmo). Note que não estamos fazendo uma atribuição, por enquanto, pois queremos apenas “imprimir” o gráfico, e não guardá-lo como objeto (algo perfeitamente possível!).&lt;/p&gt;
 &lt;p&gt;O primeiro argumento da função &lt;em&gt;ggplot&lt;/em&gt; é “data”, ou seja, o objeto que contém os dados a serem visualizados. No nosso caso, o data frame &lt;em&gt;fake&lt;/em&gt;. Diremos que um código de gráfico se compõem de várias camadas, e a primeira delas corresponde aos dados.&lt;/p&gt;
@@ -2397,12 +2397,12 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;Para adicionar uma geometria, colocamos um símbolo de “+” após fechar o parêntesis da função &lt;em&gt;ggplot&lt;/em&gt; e, na mesma linha, ou, convencionalmente, na linha seguinte, utilizarmos a função da geometria correspondente. Vamos repetir o gráfico para examinar o código novamente, agora prestando atenção às suas partes:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = candidato)) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Vamos trocar rapidamente para uma variável contínua, idade, (alterando o valor de “x” dentro de “aesthetics”) e a geometria para histograma (adequado para representar variávels numéricas):&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
   geom_histogram()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Não avance. Compare os dois códigos com calma e compreenda as diferenças. Note que o tipo de variável que demanda uma(s) geometria(s) específica(s), e não contrário. Pergunte, caso tenha dúvidas.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;variações-de-histograma-e-gráfico-de-densidade&#34; class=&#34;section level2&#34;&gt;
@@ -2410,11 +2410,11 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;As geometrias, cada uma com sua função, também têm parâmetros que podem ser alterados. Por exemplo, as barras do histograma que acabamos de produzir são muito “fininhas”. Vamos aumentar sua largura, ou seja, vamos representar mais valores do eixo “x” em cada barra do histograma:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
   geom_histogram(binwidth = 2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;O gráfico está muito cinza. Vamos mudar algumas cores:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
   geom_histogram(binwidth = 2, colour = &amp;quot;darkred&amp;quot;, fill = &amp;quot;green&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Melhor, não? Certamente não. Mas note que podemo trocar a contornos dos contornos das barras e seu preenchimento. Em geral, os argumentos “colour” e “fill” servem a várias geometrias (e, como veremos abaixo, podemos usá-los também em “aesthetics”).&lt;/p&gt;
 &lt;p&gt;Curiosidade: R aceita as duas grafias em inglês para a palavra cor, “colour” (britânico) e “color” (americano).&lt;/p&gt;
 &lt;p&gt;Histogramas são normalmente bastante adequados par variáveis numéricas com valores bastante espaçados, como é o caso de variáveis discretas numéricas (valores inteiros apenas, não podendo assumir valores doidos como pi ou raiz de 2).&lt;/p&gt;
@@ -2422,26 +2422,26 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;Nota: a partir de agora vamos omitir o nome do parâmetro “data” logo no início do código.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
   geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Lindo, mas ainda cinza demais. Vamos adicionar cor à borda:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
   geom_density(colour = &amp;quot;blue&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Melhor (melhor?), mas ainda muito branco. Vamos adicionar cor ao interior da curva:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
   geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Muito pior. E se deixássemos a curva mais “transparente”?&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
   geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;, alpha = 0.2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Agora sim melhorou. Mas nos falta uma referência para facilitar a leitura do gráfico. Por exemplo, seria legal adicionar uma linha vertical que indicasse onde está a média da distribuição. Vamos calcular a média da idade:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;media_idade &amp;lt;- mean(fake$idade)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Mas estamos tratando de curvas de densidade, não estamos? Nessa geometria não há possibilidade de representar valores com uma linha vertical. Vamos, então, adicionar uma nova geometria, com uma “aesthetics” própria, com novos dados (no caso, um valor único), ao gráfico que já havíamos construído:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
   geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;, alpha = 0.2) +
   geom_vline(aes(xintercept = media_idade))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Veja que, com &lt;em&gt;ggplot2&lt;/em&gt; podemos adicionar novas geometrias e dados sempre que precisarmos. É por esta razão que a estrutura do código deste pacote difere tanto da estrutura para gráficos no pacote base. A flexibilidade adicionar geometrias (usando ou não os dados inicialmente apontados) é uma das vantagens do &lt;em&gt;ggplot2&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Para tornar o gráfico mais interessante, vamos alterar a forma e a cor da linha adicionada no gráfico anterior:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
@@ -2449,35 +2449,35 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
   geom_vline(aes(xintercept = media_idade),
              linetype=&amp;quot;dashed&amp;quot;,
              colour=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;“linetype” é outro parâmetro comum a diversas geometrias (obviamente, as geometrias de linhas).&lt;/p&gt;
 &lt;p&gt;Vamos dar alguns passos para traz e retornar aos histogramas. E se quisermos comparar as distribuições de idade por sexo, por exemplo? Precisamos filtrar os dados e fazer um gráfico para cada categoria de sexo?&lt;/p&gt;
 &lt;p&gt;Poderíamos. Mas mais interessante é compara as distribuições em um mesmo gráfico. Como estamos separando uma distribuição de uma variável contínua (idade) em duas, a partir de uma segunda variável (sexo), precisamos adicionar essa nova variável à “aesthetics”. Veja como:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
   geom_histogram(binwidth = 2, position = &amp;quot;identity&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Observe que adicionamos o parâmetro “fill” à “aesthetics”. Isso significa que a variável sexo separará as distribuições de idade em cores de preenchimento diferentes. Conseguem ver as duas distribuições, uma atrás da outra? Note que agora temos uma legenda.&lt;/p&gt;
 &lt;p&gt;“position” é o que determina como as barras ficarão dispotas uma em relação à outra. Vamos ver outras opções para o mesmo parâmetro (novamente, comum a várias geometrias) para buscar uma opção mais adequada de visualizar os mesmos dados:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x=idade, fill = sexo)) + 
   geom_histogram(binwidth = 2, position = &amp;quot;dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Um pouco melhor?&lt;/p&gt;
 &lt;p&gt;Vamos tentar algo semelhante com as curvas de densidade. Em vez de “fill”, vamos usar a variável sexo em “colour” na “aesthetics” e separa as distribuições por cores de borda:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, colour = sexo)) + 
   geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Agora sim está melhor. Vamos adicionar tentar o mesmo com “fill”:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
   geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Não ficou muito bom. Mas pode melhorar. Com o parâmetro “alpha”, que já usamos no passado, podemos deixar as distribuições mais “transparentes” e observar as áreas nas quais se sobrepôe:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
   geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Finalmente, podemos usar “fill” e “colour” juntos na “aesthetics”&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo, colour = sexo)) + 
   geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Que belezura de gráfico! A comparação de distribuições de uma variável dependente por uma variável binária (duas categorias) é uma das mais úteis em ciência, pois é exatamente a forma gráfica de testes de hipóteses. Qual grupo tem, na média, mais idade em Fakeland? Com os gráficos fica fácil responder&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;curva-de-densidade-ou-boxplot&#34; class=&#34;section level2&#34;&gt;
@@ -2485,20 +2485,20 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;Vamos repetir o gráfico acima, mas, em vez de separar as distribuições por sexo, vamos separar por uma variável com mais categorias: ‘educ’, que representa nível educacional mais alto obtido pelo indivíduo em Fakeland.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = educ, colour = educ)) + 
   geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Dá par comparar as distribuições de idade por grupo? Certamente não. Podemos ter alguma ideia de que não há muita diferença, mas o gráfico é poluído demais.&lt;/p&gt;
 &lt;p&gt;Uma alternativa mais sintética, ou seja, que contém menos informações,
 para representar distribuições de variáveis numéricas é utilizar boxplot. Vamos ver um exemplo que serve de alternativa ao gráfico anterior.&lt;/p&gt;
 &lt;p&gt;Nota: na nova “aesthetics” temos agora “x” (eixo horizontal) e “y”, eixo vertical.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = educ, y = idade)) + 
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Importante: se você não tem familiaridade com boxplots, me peça uma rápida explicação.&lt;/p&gt;
 &lt;p&gt;Ainda que com perda de informação, conseguimos compara as distribuições de idade por nível educacional de forma bastante rápida. As médias são próximas e as distribuições mais à esqueda são ligeiramente mais concentradas em torno da média do que as distribuições mais à direita.&lt;/p&gt;
 &lt;p&gt;Para colocar um pouco de cor nos boxplots, podemos usar “fill” novamente:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = educ, y = idade, fill = educ)) + 
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Gráfico de barras, para variáveis categóricas, e histogramas, curvas de densidade e boxplot são os melhores gráficos para explorarmos as distribuição de variáveis quando queremos conhecer os dados que recém coletamos ou obtemos.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;duas-variáveis-contínuas-e-gráfico-de-dispersão&#34; class=&#34;section level2&#34;&gt;
@@ -2507,7 +2507,7 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
 &lt;p&gt;Vamos ver agora como relacionar graficamente duas variáveis contínuas. O padrão é usarmos a geometria de gráfico de dispersão, que presenta cada par de informações como uma coordenada no espaço bidimensional. Vamos ver um exemplo com idade (eixo horizontal) e renda (eixo vertical):&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Você consegue ler este gráfico? Cada ponto representa um indivíduo, ou seja, posiciona no espaço o par (idade, renda) daquela(e) indivíduo.&lt;/p&gt;
 &lt;p&gt;Note que há uma certa tendência nos dados: quanto mais velha a pessoa, maior sua renda. Podemos representar essa relação com modelos lineares e não lineares. A geometria &lt;em&gt;geom_smooth&lt;/em&gt; cumpre esse papel.&lt;/p&gt;
 &lt;p&gt;Para utilizá-la, precisamos definir qual é o método (parâmetro “method”) de ajuste aos dados. O mais convencional é representar a relação entre as variáveis como reta. Veja o exemplo (ignore o parâmetro “se” por enquanto):&lt;/p&gt;
@@ -2515,44 +2515,44 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
   geom_point() +
   geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Legal, não? Se retirarmos o parâmetro “se”, ou voltarmos seu valor para o padrão “TRUE”, obteremos também o intervalo de confiança da reta que inserimos.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
   geom_point() +
   geom_smooth(method = &amp;quot;lm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Modelos de regressão, linear ou não, estão bastante fora do escopo deste curso. Mas podemos falar sobre isso individualmente se você quiser. Tente apenas interpretar o resultado gráfico.&lt;/p&gt;
 &lt;p&gt;A alternativa não linear para representar a relação ao dados mais utilizada com essa geometria é o método “loess”. Veja o resultado:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
   geom_point() +
   geom_smooth(method = &amp;quot;loess&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;E se quisermos inserir informações de outras variáveis no gráfico? É possível?&lt;/p&gt;
 &lt;p&gt;Sim, é. Se, por exemplo, queremos representar uma terceira variável numérica, podemos colocá-la como o tamanho dos pontos (raio do círculo). Por exemplo, o número de filhos, variável que vai de 1 a 10 nos nossos dados, poderia ser adicionada da seguinte forma:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, size = filhos)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Se, em vez de alterar o tamanho dos pontos por uma variável numérica, quisermos alterar sua cor ou forma dos pontos com base em uma variável categória (sexo, por exemplo), fazemos, respectivamente:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ou:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, shape = sexo)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Nota: cada símbolo é representado por um número e você encontra facilmente na documentação a tabela de códigos dos diferentes símbolos.&lt;/p&gt;
 &lt;p&gt;Alterando simultaneamente cor e forma:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo, shape = sexo)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Adicionando uma reta de regressão para cada categoria de sexo:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
   geom_point() +
   geom_smooth(method = &amp;quot;lm&amp;quot;, se = F)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Lindo, não?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;aspectos-não-relacionados-à-geometria&#34; class=&#34;section level2&#34;&gt;
@@ -2564,7 +2564,7 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
   geom_smooth(method = &amp;quot;lm&amp;quot;) + 
   ggtitle(&amp;quot;Renda por idade, separado por sexo&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-38-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-38-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;A seguir, vamos modificar os nomes dos rótulos dos eixos:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
   geom_point() +
@@ -2573,7 +2573,7 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
   xlab(&amp;quot;Idade (em anos inteiros)&amp;quot;) +
   ylab(&amp;quot;FM$ (Fake Money)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-39-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-39-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Também podemos modificar as legendas. Há um conjunto de comandos “scale”, que variam de acordo com o elemento da “aesthetics” que definem a legenda e com o tipo de variável, que podem ser usadas para tanto. No nosso caso, usamos uma variável discreta (sexo) como “colour”, e, por tanto, precisamos usar a função &lt;em&gt;scale_colour_discrete&lt;/em&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
   geom_point() +
@@ -2585,7 +2585,7 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
                          breaks=c(&amp;quot;Female&amp;quot;, &amp;quot;Male&amp;quot;),
                          labels=c(&amp;quot;Mulher&amp;quot;, &amp;quot;Homem&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-40-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-40-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Excelente!&lt;/p&gt;
 &lt;p&gt;Vamos complicar um pouco mais. Vamos supor que queremos separar agora nossos dados em múltiplos gráficos diferentes, um para cada nível de educação. Como fazer isso? Com &lt;em&gt;face_grid&lt;/em&gt; ou &lt;em&gt;facet_wrap&lt;/em&gt;. Veja um exemplo com o último:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
@@ -2599,7 +2599,7 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
                          labels = c(&amp;quot;Mulher&amp;quot;, &amp;quot;Homem&amp;quot;)) + 
   facet_wrap( ~ educ, ncol = 2)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-41-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-41-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ufa! Quanta coisa em um só gráfico!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2608,10 +2608,10 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
     
     <item>
       <title>Documentos parametrizados</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/reprodutibility/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/reprodutibility/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/reprodutibility/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/reprodutibility/</guid>
       <description>&lt;p&gt;Um dos muitos benefícios de trabalhar com R Markdown é que você pode reproduzir análises com o clique de um botão. Isto torna muito fácil atualizar qualquer trabalho e alterar qualquer parâmetro de entrada dentro do relatório. Relatórios parametrizados estendem esse benefício e permitem aos usuários especificar um ou mais parâmetros para personalizar a análise. Isto é útil se você quiser criar um modelo de relatório que possa ser reutilizado em vários cenários similares. Como exemplos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -2733,12 +2733,12 @@ password	passwordInput&lt;/p&gt;
     
     <item>
       <title>Segmentação de mercado</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg/</link>
+      <link>retacourses.netlify.app/cursos/intro_r/mkt_seg/</link>
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg/</guid>
+      <guid>retacourses.netlify.app/cursos/intro_r/mkt_seg/</guid>
       <description>
-&lt;script src=&#34;https://upbeat-payne-5a0119.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -2911,7 +2911,7 @@ ggplot(customer_data, aes(x = Genre)) +
   ggtitle(&amp;quot;Usando o BarPlot para exibir a comparação de gênero&amp;quot;) +
   theme_ipsum() +
   labs(x = &amp;quot;Gênero&amp;quot;, y = &amp;quot;Número de ocorrências&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Pelo gráfico acima, observamos que o número de mulheres é maior do que o de homens.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;visualização-da-distribuição-etária&#34; class=&#34;section level1&#34;&gt;
@@ -2923,15 +2923,15 @@ ggplot(customer_data, aes(x = Genre)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(customer_data, aes(x = Age)) +
   geom_histogram(binwidth = 5) +
   theme_ipsum() &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;boxplot(customer_data$Age,
        col=&amp;quot;#ff0066&amp;quot;,
        main=&amp;quot;Boxplot for Descriptive Analysis of Age&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(customer_data, aes(y = Age)) +
   geom_boxplot(fill=&amp;quot;#ff0066&amp;quot;) +
   theme_ipsum() &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;A partir das duas visualizações acima, concluímos que a idade mediana do cliente está entre 30 e 35 anos. A idade mínima dos clientes é 18 anos, enquanto que a idade máxima é 70 anos.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;análise-da-renda-anual-dos-clientes&#34; class=&#34;section level1&#34;&gt;
@@ -2944,12 +2944,12 @@ ggplot(customer_data, aes(x = Genre)) +
   geom_histogram(aes(x = `Annual Income (k$)`), binwidth = 10, fill = &amp;quot;#660033&amp;quot;) +
   theme_ipsum() +
   ggtitle(&amp;quot;Histogram for Annual Income&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(customer_data) +
   geom_density(aes(x = `Annual Income (k$)`), fill=&amp;quot;#69b3a2&amp;quot;, color=&amp;quot;#e9ecef&amp;quot;, alpha=0.8) +
   theme_ipsum() +
   ggtitle(&amp;quot;Histogram for Annual Income&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Da análise descritiva acima, concluímos que a renda mínima anual dos clientes é de 15 e a máxima renda é de 137 mil $ anuais. As pessoas que ganham uma renda média de 70 têm a maior contagem de freqüência em nossa distribuição de histogramas. O salário médio de todos os clientes é de 60,56.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;análise-da-pontuação-de-gastos-dos-clientes&#34; class=&#34;section level1&#34;&gt;
@@ -2960,12 +2960,12 @@ ggplot(customer_data, aes(x = Genre)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(customer_data, aes(y = `Spending Score (1-100)`)) +
   geom_boxplot(fill=&amp;quot;#ff0066&amp;quot;) +
   theme_ipsum() &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(customer_data) +
   geom_histogram(aes(x = `Spending Score (1-100)`), binwidth = 10, fill = &amp;quot;#660033&amp;quot;) +
   theme_ipsum() +
   ggtitle(&amp;quot;HistoGgram for Spending Score&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos ver que a Análise Descritiva da Pontuação de Gastos é que Min é 1, Max é 99 e a média é 50,20. Pelo histograma, concluímos que os clientes entre as classes 40 e 50 são os mais frequentes entre todas as classes.&lt;/p&gt;
 &lt;div id=&#34;k-means-cluster-para-segmentação-de-mercado&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;K-Means Cluster para segmentação de mercado&lt;/h2&gt;
@@ -2983,14 +2983,14 @@ ggplot(customer_data, aes(x = Genre)) +
   
 fviz_nbclust(df, kmeans, method = &amp;quot;wss&amp;quot;)+
   geom_vline(xintercept = 6, linetype = 2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Do gráfico acima, concluímos que 6 é um número apropriado de clusters.&lt;/p&gt;
 &lt;p&gt;Usando a função &lt;code&gt;fviz_nbclust()&lt;/code&gt;, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(NbClust)
 library(factoextra)
 
 fviz_nbclust(customer_data[,3:5], kmeans, method = &amp;quot;silhouette&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Agora, tomemos k = 6 como nosso número de clusters inicial.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(12345)
 km.res &amp;lt;- kmeans(df, 6, nstart=25)
@@ -3068,7 +3068,7 @@ km.res$centers&lt;/code&gt;&lt;/pre&gt;
              repel=TRUE)
 
 a + theme_ipsum()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;relacionando-as-variáveis&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Relacionando as variáveis:&lt;/h2&gt;
@@ -3078,7 +3078,7 @@ a + theme_ipsum()&lt;/code&gt;&lt;/pre&gt;
               breaks=c(&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;,&amp;quot;6&amp;quot;),
               labels=c(&amp;quot;Cluster 1&amp;quot;, &amp;quot;Cluster 2&amp;quot;, &amp;quot;Cluster 3&amp;quot;, &amp;quot;Cluster 4&amp;quot;, &amp;quot;Cluster 5&amp;quot;,&amp;quot;Cluster 6&amp;quot;)) +
   ggtitle(&amp;quot;Segments of Mall Customers&amp;quot;, subtitle = &amp;quot;Using K-means Clustering&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://upbeat-payne-5a0119.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;retacourses.netlify.app/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Complete a análise a seguir identificando os agrupamentos:&lt;/p&gt;
 &lt;/blockquote&gt;

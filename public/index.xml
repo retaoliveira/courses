@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Renata Oliveira</title>
-    <link>https://upbeat-payne-5a0119.netlify.app/</link>
+    <link>retacourses.netlify.app/</link>
     <description>Recent content on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
     <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://upbeat-payne-5a0119.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="retacourses.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/talk/</link>
+      <link>retacourses.netlify.app/talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/talk/</guid>
+      <guid>retacourses.netlify.app/talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Courses</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/disciplinas/</link>
+      <link>retacourses.netlify.app/disciplinas/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/disciplinas/</guid>
+      <guid>retacourses.netlify.app/disciplinas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/post/</link>
+      <link>retacourses.netlify.app/post/</link>
       <pubDate>Fri, 10 Sep 2021 09:37:49 -0300</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/post/</guid>
+      <guid>retacourses.netlify.app/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cursos</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/cursos/</link>
+      <link>retacourses.netlify.app/cursos/</link>
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/cursos/</guid>
+      <guid>retacourses.netlify.app/cursos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/project/</link>
+      <link>retacourses.netlify.app/project/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/project/</guid>
+      <guid>retacourses.netlify.app/project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publicações</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/publication/</link>
+      <link>retacourses.netlify.app/publication/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/publication/</guid>
+      <guid>retacourses.netlify.app/publication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://upbeat-payne-5a0119.netlify.app/slides/</link>
+      <link>retacourses.netlify.app/slides/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://upbeat-payne-5a0119.netlify.app/slides/</guid>
+      <guid>retacourses.netlify.app/slides/</guid>
       <description></description>
     </item>
     
