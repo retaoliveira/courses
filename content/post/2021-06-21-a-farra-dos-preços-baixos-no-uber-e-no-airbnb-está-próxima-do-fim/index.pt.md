@@ -5,8 +5,11 @@ title: "A farra dos preços baixos no Uber e no Airbnb está próxima do fim"
 subtitle: ""
 summary: ""
 authors: [Kevin Roose]
-tags: [Planejamento urbano, Acessibilidade]
-categories: [feliCIDADE]
+tags: 
+   - Planejamento urbano
+   - Acessibilidade
+categories: 
+   - feliCIDADE
 date: 2021-06-21T17:10:58-03:00
 lastmod: 2021-06-21T17:10:58-03:00
 featured: false

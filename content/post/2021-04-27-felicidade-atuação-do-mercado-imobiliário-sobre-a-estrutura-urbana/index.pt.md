@@ -5,8 +5,10 @@ title: "Atuação Do Mercado Imobiliário Sobre a Estrutura Urbana"
 subtitle: ""
 summary: ""
 authors: []
-tags: [Planejamento Urbano]
-categories: [FeliCIDADE]
+tags: 
+   - Planejamento Urbano
+categories: 
+   - FeliCIDADE
 date: 2021-04-27T15:30:38-03:00
 lastmod: 2021-04-27T15:30:38-03:00
 featured: false

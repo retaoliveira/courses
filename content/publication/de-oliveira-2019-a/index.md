@@ -15,7 +15,7 @@ featured: false
 
 publication: "*Urbe*"
 
-tags: ["Accessibility", "Urban Logistics", "Collection and delivery points", "E-commerce", "Last-mile"]
+tags: []
 
 doi: "10.1590/2175-3369.011.e20190048"
 

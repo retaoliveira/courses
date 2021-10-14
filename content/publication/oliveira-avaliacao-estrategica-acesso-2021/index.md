@@ -7,7 +7,7 @@ publication_types: ["2"]
 abstract: ""
 featured: false
 publication: "*Revista Brasileira de Transportes*"
-tags: ["⛔ No DOI found"]
+tags: []
 url_pdf: "http://bibliotecadigital.fgv.br/ojs/index.php/rbt/article/view/83086"
 ---
 

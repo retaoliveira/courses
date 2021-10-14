@@ -7,7 +7,7 @@ publication_types: ["2"]
 abstract: ""
 featured: false
 publication: ""
-tags: ["#nosource", "buildings under construc7on", "freight trip genera7on model"]
+tags: []
 doi: "10.14295/transportes.v28i5.1885"
 ---
 
