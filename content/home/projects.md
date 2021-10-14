@@ -26,20 +26,28 @@ subtitle = "ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY"
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "Accessibility"
+    tag = "accessibility"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Spatial Analysis"
+    tag = "spatial analysis"
   
   [[content.filter_button]]
-    name = "Human"
-    tag = "human"
+    name = "Urban and Regional Planning"
+    tag = "urban planning"
   
   [[content.filter_button]]
-    name = "Robotics"
-    tag = "robotics"
+    name = "Data Science"
+    tag = "data science"
+    
+  [[content.filter_button]]
+    name = "Urban Logistics"
+    tag = "urban logistics"
+    
+  [[content.filter_button]]
+    name = "Railroads"
+    tag = "rail"    
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -49,7 +57,7 @@ subtitle = "ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY"
   #   1 = List
   #   3 = Card
   #   5 = Showcase
-  view = 3
+  view = "5"
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false

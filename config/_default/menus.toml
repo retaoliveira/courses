@@ -9,48 +9,116 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
+  name = "Blog"
   url = "#posts"
   weight = 20
-
+  
 [[main]]
-  name = "Projects"
+  name = "Projetos"
   url = "#projects"
   weight = 30
 
 [[main]]
-  name = "Publications"
+  name = "Publicações"
   url = "#publications"
   weight = 40
 
 [[main]]
-  name = "Courses"
-  url = "courses/"
+  name = "Cursos"
+  url = "#"
+  hasChildren = true
+  weight = 50
+  
+[[main]]
+  parent = "Cursos"
+  name = "Logística"
+  url = "cursos/log_all/"
+  weight = 10
+  
+[[main]]
+  parent = "Cursos"
+  name = "Logística Urbana"
+  url = "cursos/log_urb/"
+  weight = 20
+  
+[[main]]
+  parent = "Cursos"
+  name = "Introdução ao R"
+  url = "cursos/intro_r/"
+  weight = 30
+  
+[[main]]
+  parent = "Cursos"
+  name = "Sistemas de Suporte à Decisão Espacial"
+  url = "cursos/spatial/"
+  weight = 40
+  
+[[main]]
+  parent = "Cursos"
+  name = "Urban Analytics"
+  url = "cursos/urban/"
   weight = 50
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 60
-
-[[main]]
-  name = "dropdown"
+  name = "Disciplinas"
   url = "#"
   hasChildren = true
+  weight = 60
+  
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística - 2021/1"
+  url = "disciplinas/log/"
+  weight = 10
 
 [[main]]
-  parent = "dropdown"
-  name = "dropdown 1"
-  url = "#"
+  parent = "Disciplinas"
+  name = "Logística - Eng. Produção Civil - 2021/2"
+  url = "disciplinas/log_epc/"
+  weight = 25
+  
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística - Administração - 2021/2"
+  url = "disciplinas/log_adm/"
+  weight = 20
+
 
 [[main]]
-  parent = "dropdown"
-  name = "dropdown 2"
-  url = "#!"
+  parent = "Disciplinas"
+  name = "Introdução ao R - 2021/2"
+  url = "disciplinas/intror_master/"
+  weight = 30
+
+[[main]]
+  parent = "Disciplinas"
+  name = "Sistemas de Suporte à Decisão Espacial - 2021/2"
+  url = "disciplinas/sdss/"
+  weight = 30
+  
+[[main]]
+  parent = "Disciplinas"
+  name = "Análise de Dados para gestão organizacional - 2021/1"
+  url = "disciplinas/dados_grad/"
+  weight = 10
+
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Análise de Dados aplicada ao processo decisório - 2020/2"
+#  url = "courses/dados_pos/"
+#  weight = 70
+  
+
+[[main]]
+  name = "Contato"
+  url = "#contact"
+  weight = 90
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 70
+[[main]]
+    name = "CV"
+    url = "files/cv.pdf"
+    weight = 80
+

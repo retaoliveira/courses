@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Skills"
-subtitle = "I AM REALLY GOOD AT THE FOLLOWING TECHNICAL SKILLS"
+subtitle = "Lifetime learning..."
 
 # Showcase personal skills or business features.
 # 
@@ -17,25 +17,26 @@ subtitle = "I AM REALLY GOOD AT THE FOLLOWING TECHNICAL SKILLS"
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Analysis"
-  parcent = "90%"
+  name = "Data Science"
+  parcent = "50%"
   
 [[feature]]
-  icon = "user-secret"
-  icon_pack = "fas"
-  name = "Leadership"
+  icon = "users"
+  icon_pack = "fa"
+  name = "Team Work"
   parcent = "80%"  
   
 [[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  parcent = "70%"
+  icon = "globe"
+  icon_pack = "fa"
+  name = "Spatial Analysis"
+  parcent = "90%"
   
 [[feature]]
   icon = "searchengin"
   icon_pack = "fab"
-  name = "Research"
-  parcent = "95%"
+  name = "Critical thinking"
+  parcent = "80%"
+
 
 +++

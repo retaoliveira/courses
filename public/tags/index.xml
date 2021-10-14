@@ -1,194 +1,617 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Academia</title>
-    <link>https://examplesite.org/tags/</link>
-    <description>Recent content in Tags on Academia</description>
+    <title>Tags on Renata Oliveira</title>
+    <link>https://upbeat-payne-5a0119.netlify.app/tags/</link>
+    <description>Recent content in Tags on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; {year}</copyright>
     <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://examplesite.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://upbeat-payne-5a0119.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blogdown</title>
-      <link>https://examplesite.org/tags/blogdown/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/blogdown/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/blogdown/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://examplesite.org/tags/git/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/git/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/git/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://examplesite.org/tags/github/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/github/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/github/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Acessibilidade</title>
-      <link>https://examplesite.org/tags/acessibilidade/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/acessibilidade/</link>
       <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/acessibilidade/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/acessibilidade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Planejamento Urbano</title>
-      <link>https://examplesite.org/tags/planejamento-urbano/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/planejamento-urbano/</link>
       <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/planejamento-urbano/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/planejamento-urbano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>accessibility</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/accessibility/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/accessibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rail</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/rail/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/rail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban planning</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-planning/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spatial analysis</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/spatial-analysis/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/spatial-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban logistics</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-logistics/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-logistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>⛔ No DOI found</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/no-doi-found/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/no-doi-found/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logistics real estate</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/logistics-real-estate/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/logistics-real-estate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logistics sprawl</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/logistics-sprawl/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/logistics-sprawl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban spatial structure</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-spatial-structure/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-spatial-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>warehouses</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/warehouses/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/warehouses/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Análise textual</title>
-      <link>https://examplesite.org/tags/analise-textual/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/analise-textual/</link>
       <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/analise-textual/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/analise-textual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://examplesite.org/tags/r/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/r/</link>
       <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/r/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twitter</title>
-      <link>https://examplesite.org/tags/twitter/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/twitter/</link>
       <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/twitter/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/twitter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Limpeza de dados</title>
-      <link>https://examplesite.org/tags/limpeza-de-dados/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/limpeza-de-dados/</link>
       <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/limpeza-de-dados/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/limpeza-de-dados/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manipulação de dados</title>
-      <link>https://examplesite.org/tags/manipulacao-de-dados/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/manipulacao-de-dados/</link>
       <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/manipulacao-de-dados/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/manipulacao-de-dados/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://examplesite.org/tags/hugo/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/hugo/</link>
       <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/hugo/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RMarkdown</title>
-      <link>https://examplesite.org/tags/rmarkdown/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/rmarkdown/</link>
       <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/rmarkdown/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/rmarkdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Packages</title>
-      <link>https://examplesite.org/tags/packages/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/packages/</link>
       <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/packages/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Análise espacial</title>
-      <link>https://examplesite.org/tags/analise-espacial/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/analise-espacial/</link>
       <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
       
-      <guid>https://examplesite.org/tags/analise-espacial/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/analise-espacial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>#nosource</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/#nosource/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/#nosource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buildings under construc7on</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/buildings-under-construc7on/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/buildings-under-construc7on/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DEA</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/dea/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/dea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freight trip genera7on model</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-genera7on-model/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-genera7on-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operational efficiency</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/operational-efficiency/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/operational-efficiency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Source Themes</title>
-      <link>https://examplesite.org/tags/source-themes/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/source-themes/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/source-themes/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/source-themes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>https://examplesite.org/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Active modes</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/active-modes/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/deep-learning/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/active-modes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Demo</title>
-      <link>https://examplesite.org/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Collection and delivery points</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/collection-and-delivery-points/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/demo/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/collection-and-delivery-points/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>human</title>
-      <link>https://examplesite.org/tags/human/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>E-commerce</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/e-commerce/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/human/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/e-commerce/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>robotics</title>
-      <link>https://examplesite.org/tags/robotics/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Historical cities</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/historical-cities/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/robotics/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/historical-cities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Last-mile</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/last-mile/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/last-mile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urban Distribution Centre</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-distribution-centre/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-distribution-centre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/1/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>advantage in urban goods</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/advantage-in-urban-goods/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/advantage-in-urban-goods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>and given that warehouses</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/and-given-that-warehouses/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/and-given-that-warehouses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>are the origin or</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/are-the-origin-or/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/are-the-origin-or/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brazil</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/brazil/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/brazil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>can generate a competitive</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/can-generate-a-competitive/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/can-generate-a-competitive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>City logistics</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/city-logistics/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/city-logistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster analysis</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/cluster-analysis/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/cluster-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distribution</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/distribution/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>frequency seong problem</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/frequency-seong-problem/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/frequency-seong-problem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>in cities</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/in-cities/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/in-cities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>introduction and background</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/introduction-and-background/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/introduction-and-background/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logistics facilities</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/logistics-facilities/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/logistics-facilities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Method of successive intervals</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/method-of-successive-intervals/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/method-of-successive-intervals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Problems</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/problems/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/problems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retailers&#39; perceptions</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/retailers-perceptions/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/retailers-perceptions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>since it directly impacts</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/since-it-directly-impacts/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/since-it-directly-impacts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solutions</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/solutions/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/solutions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>the flow of cargo</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/the-flow-of-cargo/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/the-flow-of-cargo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>the location of warehouses</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/the-location-of-warehouses/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/the-location-of-warehouses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transit network design</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/transit-network-design/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/transit-network-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>urban freight transport</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-freight-transport/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-freight-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urban network hierarchy</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/urban-network-hierarchy/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/urban-network-hierarchy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freight Trip Generation Models</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-generation-models/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-generation-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Home delivery</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/home-delivery/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/home-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Last mile problem</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/last-mile-problem/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/last-mile-problem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pick-up points</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/pick-up-points/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/pick-up-points/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stated preference survey</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/stated-preference-survey/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/stated-preference-survey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>academia</title>
-      <link>https://examplesite.org/tags/academia/</link>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/academia/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/tags/academia/</guid>
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/academia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freight Trip Generation Model</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-generation-model/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/freight-trip-generation-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transport Planning</title>
+      <link>https://upbeat-payne-5a0119.netlify.app/tags/transport-planning/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://upbeat-payne-5a0119.netlify.app/tags/transport-planning/</guid>
       <description></description>
     </item>
     
