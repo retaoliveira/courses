@@ -41,8 +41,8 @@ Os encontros síncronos acontecerão nas **terças-feiras**, de **08:00 às 12:0
 | 19/10| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R; RMarkdown.|
 | 26/10| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. |
 | 09/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
-| 16/11| Unidade 4: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados|
-| 23/11| Unidade 5: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos| 
+| 16/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados|
+| 23/11| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos| 
 | **Total de Horas** | 30 horas    |
 
 ## Proposta de avaliação da aprendizagem
