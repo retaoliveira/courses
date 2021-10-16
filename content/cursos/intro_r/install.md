@@ -40,26 +40,7 @@ No link acima é apresentado o processo de instalação do Git. Atenção às di
 
 Nesse [site](https://www.curso-r.com/material/instalacao/) você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R. 
 
-----
-
-### Os vídeos são um suporte bacana para começarem a utilizarem o R.
+<iframe width="1218" height="645" src="https://www.youtube.com/embed/QCV0EaUMtxM?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-#### Instalar o R e o RStudio
-
-
-
-#### Instalar o Git
-
-
-
-#### Criar uma conta no Github
-
-
-
-#### Instalar e carregar pacotes no R
-
-
-
-#### Instalar pacotes no R a partir do Github
 

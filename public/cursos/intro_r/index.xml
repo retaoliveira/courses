@@ -176,13 +176,7 @@ transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Nesse &lt;a href=&#34;https://www.curso-r.com/material/instalacao/&#34;&gt;site&lt;/a&gt; você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;os-vídeos-são-um-suporte-bacana-para-começarem-a-utilizarem-o-r&#34;&gt;Os vídeos são um suporte bacana para começarem a utilizarem o R.&lt;/h3&gt;
-&lt;h4 id=&#34;instalar-o-r-e-o-rstudio&#34;&gt;Instalar o R e o RStudio&lt;/h4&gt;
-&lt;h4 id=&#34;instalar-o-git&#34;&gt;Instalar o Git&lt;/h4&gt;
-&lt;h4 id=&#34;criar-uma-conta-no-github&#34;&gt;Criar uma conta no Github&lt;/h4&gt;
-&lt;h4 id=&#34;instalar-e-carregar-pacotes-no-r&#34;&gt;Instalar e carregar pacotes no R&lt;/h4&gt;
-&lt;h4 id=&#34;instalar-pacotes-no-r-a-partir-do-github&#34;&gt;Instalar pacotes no R a partir do Github&lt;/h4&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/QCV0EaUMtxM?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
@@ -209,7 +203,10 @@ transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;como-instalar-o-git-no-seu-computador&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Como instalar o Git no seu computador&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git&#34;&gt;Informações gerais e sistemas operacionais&lt;/a&gt;
+&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/gHq5V9NZ2Do?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
 &lt;hr /&gt;
 &lt;p&gt;Fonte interessante: &lt;a href=&#34;https://happygitwithr.com/&#34;&gt;Happy Git with R&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -256,6 +253,8 @@ transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
 Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.&lt;/p&gt;
 &lt;p&gt;Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios &lt;code&gt;local&lt;/code&gt; e &lt;code&gt;remoto&lt;/code&gt;. O próprio &lt;code&gt;Github&lt;/code&gt; tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o &lt;a href=&#34;https://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ainda tenho que me acostumar a utilizar o &lt;code&gt;RStudio&lt;/code&gt; para gerenciar versão no &lt;code&gt;Github&lt;/code&gt;. Sim, é possível. Mas também estão disponíveis os aplicativos &lt;code&gt;desktop&lt;/code&gt; como &lt;code&gt;GitHub Desktop&lt;/code&gt; e o &lt;code&gt;GitKraken&lt;/code&gt;.&lt;/p&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/DL6BkIFxL9Q?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
 &lt;hr /&gt;
 &lt;p&gt;Créditos: &lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34; class=&#34;uri&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;

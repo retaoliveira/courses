@@ -25,7 +25,11 @@ weight: 13
 
 ## Como instalar o Git no seu computador
 
-[Link](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+[Informações gerais e sistemas operacionais](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+[Download](https://git-scm.com/download/win)
+
+<iframe width="1218" height="645" src="https://www.youtube.com/embed/gHq5V9NZ2Do?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ----
 

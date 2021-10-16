@@ -48,6 +48,7 @@ Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo t
 
 Ainda tenho que me acostumar a utilizar o `RStudio` para gerenciar versão no `Github`. Sim, é possível. Mas também estão disponíveis os aplicativos `desktop` como `GitHub Desktop` e o `GitKraken`. 
 
+<iframe width="1218" height="645" src="https://www.youtube.com/embed/DL6BkIFxL9Q?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ----
 
