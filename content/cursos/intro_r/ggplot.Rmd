@@ -1,6 +1,6 @@
 ---
 date: "2021-05-05T00:00:00+01:00"
-draft: false
+draft: true
 menu:
   intro_r:
     parent: 4 - Estatística descritiva e mineração de dados

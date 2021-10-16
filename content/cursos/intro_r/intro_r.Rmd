@@ -106,3 +106,4 @@ install.packages(c("rmarkdown", "knitr", "dsbox", "tidyverse", "coronavirus", "l
 
 Ao longo do curso chamaremos as bibliotecas para que possamos implementar as funções. 
 
+<iframe width="1197" height="645" src="https://www.youtube.com/embed/dOasm9dKjKE?list=PLqDTVtdD-5aPagWJB6_0IaKN3IpIGhFU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
