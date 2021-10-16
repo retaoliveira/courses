@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Análise de dados para gestão organizacional on Renata Oliveira</title>
+    <title>Introdução ao R on Renata Oliveira</title>
     <link>https://retacourses.netlify.app/disciplinas/intror_master/</link>
-    <description>Recent content in Análise de dados para gestão organizacional on Renata Oliveira</description>
+    <description>Recent content in Introdução ao R on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Renata Oliveira {year}</copyright>
@@ -11,6 +11,62 @@
     
 	    <atom:link href="https://retacourses.netlify.app/disciplinas/intror_master/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atividade 1</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/atividade1/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/atividade1/</guid>
+      <description>&lt;h2 id=&#34;a-unidade-1-é-estruturada-considerando-os-seguintes-tópicos&#34;&gt;A &lt;strong&gt;Unidade 1&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalação do R e do RStudio&lt;/li&gt;
+&lt;li&gt;Como instalar o Git&lt;/li&gt;
+&lt;li&gt;Criando uma conta no Github&lt;/li&gt;
+&lt;li&gt;Instalar e carregar pacotes no R&lt;/li&gt;
+&lt;li&gt;Instalar pacotes no R a partir do Github&lt;/li&gt;
+&lt;li&gt;E aí, R? Entendendo o ambiente de trabalho&lt;/li&gt;
+&lt;li&gt;Primeiros documentos no R - RMarkdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;esta-atividade-deverá-ser-realizada-até-dia-1910-quando-teremos-nosso-primeiro-encontro-síncrono-são-propostas-as-seguintes-atividades&#34;&gt;Esta atividade deverá ser realizada até dia &lt;strong&gt;19/10&lt;/strong&gt;, quando teremos nosso primeiro encontro síncrono. São propostas as seguintes atividades:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Instale o R, o RStudio e o Git no seu computador - &lt;a href=&#34;https://www.places.education/cursos/intro_r/install/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Crie uma conta no Github, caso ainda não tenha - &lt;a href=&#34;https://www.places.education/cursos/intro_r/github/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Faça o tutorial - &lt;a href=&#34;https://www.places.education/cursos/intro_r/swirl/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Faça o tutorial de Markdown desenvolvido pelas R-Ladies Beatriz Milz e Haydée Svab -  &lt;a href=&#34;https://beatriz-milz.shinyapps.io/tutorial_markdown/#section-introdu%C3%A7%C3%A3o&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Crie o seu primeiro documento RMarkdown. Para tanto, escolha o tipo de output que quer gerar. Não se preocupe com o conteúdo por enquanto. Apenas explore as diferentes possibilidades de outputs! Lembre-se que a extensão desse arquivo é &lt;code&gt;.Rmd&lt;/code&gt; -  &lt;a href=&#34;https://www.places.education/cursos/intro_r/intro_rmarkdown/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No &lt;a href=&#34;https://rmarkdown.rstudio.com/gallery.html&#34;&gt;site do RStudio&lt;/a&gt; há uma série de modelos de arquivos que podem ser gerados a partir do RMarkdown.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;as-entregas-seráão&#34;&gt;A(s) entrega(s) será(ão):&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arquivo .Rmd&lt;/strong&gt; referente à &lt;strong&gt;tarefa 5&lt;/strong&gt; desta atividade pela tarefa no SIGAA.&lt;/li&gt;
+&lt;li&gt;Explorar toda a documentação, tentar solucionar dúvidas com os colegas e &lt;strong&gt;trazer dúvidas para nosso encontro&lt;/strong&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;&lt;/hr&gt;
+&lt;h2 id=&#34;algumas-dicas-adicionais-para-a-tarefa-5&#34;&gt;Algumas dicas adicionais para a tarefa 5.&lt;/h2&gt;
+&lt;p&gt;No RStudio, crie um novo documento &lt;code&gt;R Markdown&lt;/code&gt; escolhendo &lt;code&gt;Arquivo | Novo | R Markdown&lt;/code&gt;.
+Clique no botão &lt;code&gt;Knit HTML&lt;/code&gt; na barra de ferramentas do doc para visualizar seu documento.&lt;/p&gt;
+&lt;p&gt;Se você quiser tornar o seu documento público, recomendo, inicialmente, utilizar o &lt;code&gt;RPubs&lt;/code&gt;. Alguns passos para isso:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Na janela de pré-visualização, clique no botão &lt;code&gt;Publicar&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta &lt;code&gt;RPubs&lt;/code&gt; ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca).&lt;/li&gt;
+&lt;li&gt;Uma vez terminado e clicando no botão &lt;code&gt;Continue&lt;/code&gt; na parte inferior, você irá diretamente para o artigo publicado.&lt;/li&gt;
+&lt;li&gt;Você pode optar por atualizar seu conteúdo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;&lt;/hr&gt;
+&lt;h2 id=&#34;bônus-rode-o-seu-primeiro-documento-em-rmarkdown&#34;&gt;BÔNUS: Rode o seu primeiro documento em RMarkdown!&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Salve o &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ&#34;&gt;arquivo&lt;/a&gt; em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade.&lt;/li&gt;
+&lt;li&gt;Abra o arquivo no RStudio: &lt;code&gt;File | Open File&lt;/code&gt; e navegue até o arquivo &lt;code&gt;01-covid.Rmd&lt;/code&gt; selecionando-o.&lt;/li&gt;
+&lt;li&gt;Você identificará o arquivo por meio do &lt;code&gt;YAML&lt;/code&gt; com &lt;code&gt;title: &amp;quot;Mortes por COVID-19&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do &lt;code&gt;RMarkdown&lt;/code&gt; para que sejam instalados &lt;code&gt;packages&lt;/code&gt; necessários para rodar esse &lt;code&gt;.Rmd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Clique no botão de &lt;code&gt;knitr&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Aprecie o seu documento BÔNUS!&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

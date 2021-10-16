@@ -1,9 +1,9 @@
 ---
-date: "2020-12-26T00:00:00+01:00"
+date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 1 - Análise de dados para gestão
+    parent: 1 - Primeiros passos
     weight: 9
 title: Instalação de R, RStudio e Git
 toc: true
@@ -44,19 +44,22 @@ Nesse [site](https://www.curso-r.com/material/instalacao/) você encontra detalh
 
 ### Os vídeos são um suporte bacana para começarem a utilizarem o R.
 
-#### Introdução conceitual ao R
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/iBgtV3oJYv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#### Instalar o R e o RStudio
 
-#### Instalar o R
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/G03TwotgPQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Instalar o RStudio
+#### Instalar o Git
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/aeK6-kPhofk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Instalar pacotes no R
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/lfwMneERUEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#### Criar uma conta no Github
+
+
+
+#### Instalar e carregar pacotes no R
+
+
+
+#### Instalar pacotes no R a partir do Github
 

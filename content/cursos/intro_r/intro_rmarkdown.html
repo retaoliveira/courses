@@ -1,5 +1,5 @@
 ---
-date: 2021-05-05T00:00:00+01:00
+date: 2021-10-15T00:00:00+01:00
 draft: false
 menu:
   intro_r:
@@ -39,14 +39,12 @@ type: docs
 <li><a href="#formatação-de-texto">Formatação de texto</a></li>
 <li><a href="#incluindo-tabelas">Incluindo tabelas</a></li>
 <li><a href="#incluindo-figuras">Incluindo figuras</a></li>
-<li><a href="#chunks"><code>chunks</code></a></li>
+<li><a href="#chunks">chunks</a></li>
 <li><a href="#visualização">Visualização</a></li>
 <li><a href="#metadados---cabeçalho">Metadados - Cabeçalho</a></li>
 <li><a href="#formatos-de-output">Formatos de output</a></li>
-<li><a href="#divulgando">Divulgando</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#rode-o-seu-primeiro-documento-em-rmarkdown">Rode o seu primeiro documento em RMarkdown!</a></li>
 </ul>
 </div>
 
@@ -55,7 +53,7 @@ type: docs
 </iframe>
 <div id="tldr" class="section level1">
 <h1>TL;DR</h1>
-<p>RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do <a href="https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP">link</a></p>
+<p>RMarkdown é uma estrutura de documento para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do <a href="https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP">link</a></p>
 <div id="o-que-é-markdown" class="section level2">
 <h2>O que é Markdown?</h2>
 <p>Segundo o criador da linguagem:</p>
@@ -67,6 +65,7 @@ type: docs
 <ul>
 <li><a href="https://blog.da2k.com.br/2015/02/08/aprenda-markdown/">Sintaxe</a></li>
 <li><a href="https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md">Tutorial</a></li>
+<li><a href="https://beatriz-milz.shinyapps.io/tutorial_markdown/#section-introdu%C3%A7%C3%A3o">Tutorial interativo</a></li>
 </ul>
 </div>
 <div id="rmarkdown" class="section level2">
@@ -304,13 +303,14 @@ setosa
 </div>
 <div id="incluindo-figuras" class="section level3">
 <h3>Incluindo figuras</h3>
-<p><img src="https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png" alt="Figura 1: RMarkdown" />
-Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrização do <code>chunk</code> permite configurar a figura:</p>
+<p>Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrização do <code>chunk</code> permite configurar a figura:</p>
 <pre class="r"><code>knitr::include_graphics(img1_path)</code></pre>
-<p><a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Dicas:</a></p>
+<blockquote>
+<p><a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Dicas!</a></p>
+</blockquote>
 </div>
 <div id="chunks" class="section level3">
-<h3><code>chunks</code></h3>
+<h3>chunks</h3>
 <p><code>chunks</code> são blocos de código que podem ser incluídos e rodados em um documento <code>.Rmd</code>. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em <code>R</code> é o atalho <code>Ctrl + Alt + i</code>.</p>
 <p>O <code>chunk</code> deve ser iniciado por ```<code>{r }</code> e alguns parâmetros definem opções para os <code>chunks</code>.</p>
 <ul>
@@ -322,21 +322,21 @@ Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrizaç�
 </ul>
 <pre class="r"><code>x &lt;- rnorm(30)
 x</code></pre>
-<pre><code>##  [1]  0.14803206 -0.80182130  1.30823053  0.49864877 -0.37812672 -0.07960225
-##  [7] -0.21774428  0.06344947 -0.28262517  0.94676098 -1.89652140 -1.30611478
-## [13] -1.86249364  0.94989171  1.25946395 -0.76292588 -0.02601089  0.10083131
-## [19]  0.54598566  0.84715129 -1.04075844 -0.07322072  0.04217790  2.14210779
-## [25] -0.31883628  0.76617495  2.14726107 -1.05935226  0.63289167  1.20052902</code></pre>
+<pre><code>##  [1] -0.5878313 -1.4521976  0.5750835 -0.2987956  0.4165600 -0.3902487
+##  [7] -1.1094081 -0.3210904  0.7436865 -0.1467920  0.2717827  0.9617800
+## [13]  0.5585891 -1.3341949  1.0840123 -0.5790425  0.7378818  0.8991879
+## [19] -0.1981331 -0.7647287  1.8711137 -0.6267479 -2.0978060 -0.4591893
+## [25] -0.4921043  0.2930523 -1.2658577  0.1682746  0.6312195 -1.5925606</code></pre>
 <p>Para definir uma opção da mesma maneira para todos os <code>chunks</code> do documento, é possível criar um <code>chunk</code> com o código <code>knitr::opts_chunk$set()</code>, como no exemplo abaixo:</p>
 <p>As opções gerais de <code>chunks</code> podem ser encontradas no <a href="https://yihui.org/knitr/options/">link</a>.</p>
 </div>
 <div id="visualização" class="section level3">
 <h3>Visualização</h3>
 <pre class="r"><code>plot(x)</code></pre>
-<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 <p>Também podemos fazer um histograma dessa variável simulada</p>
 <pre class="r"><code>hist(x)</code></pre>
-<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
 <div id="metadados---cabeçalho" class="section level3">
 <h3>Metadados - Cabeçalho</h3>
@@ -368,26 +368,5 @@ x</code></pre>
   pdf_document:
     keep_tex: true</code></pre>
 </div>
-<div id="divulgando" class="section level3">
-<h3>Divulgando</h3>
-<p>No RStudio, crie um novo documento <code>R Markdown</code> escolhendo <code>Arquivo | Novo | R Markdown</code>.
-Clique no botão <code>Knit HTML</code> na barra de ferramentas do doc para visualizar seu documento.
-Na janela de pré-visualização, clique no botão <code>Publicar</code>.</p>
-<p>É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta <code>RPubs</code> ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca).</p>
-<p>Uma vez terminado e clicando no botão <code>Continue</code> na parte inferior, você irá diretamente para o artigo publicado.</p>
-<p>Você pode optar por atualizar seu conteúdo.</p>
-<hr />
 </div>
-</div>
-</div>
-<div id="rode-o-seu-primeiro-documento-em-rmarkdown" class="section level1">
-<h1>Rode o seu primeiro documento em RMarkdown!</h1>
-<ol style="list-style-type: decimal">
-<li><p>Salve o <a href="https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ">arquivo</a> em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade.</p></li>
-<li><p>Abra o arquivo no RStudio: <code>File | Open File</code> e navegue até o arquivo <code>01-covid.Rmd</code> selecionando-o.</p></li>
-<li><p>Você identificará o arquivo por meio do <code>YAML</code> com <code>title: "Mortes por COVID-19"</code></p></li>
-<li><p>Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do <code>RMarkdown</code> para que sejam instalados <code>packages</code> necessários para rodar esse <code>.Rmd</code></p></li>
-<li><p>Clique no botão de <code>knitr</code>.</p></li>
-</ol>
-<p>Aprecie o seu primeiro documento!</p>
 </div>

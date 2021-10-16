@@ -22,9 +22,18 @@
     </item>
     
     <item>
+      <title>Cursos</title>
+      <link>https://retacourses.netlify.app/cursos/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Courses</title>
       <link>https://retacourses.netlify.app/disciplinas/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
       
       <guid>https://retacourses.netlify.app/disciplinas/</guid>
       <description></description>
@@ -36,15 +45,6 @@
       <pubDate>Fri, 10 Sep 2021 09:37:49 -0300</pubDate>
       
       <guid>https://retacourses.netlify.app/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cursos</title>
-      <link>https://retacourses.netlify.app/cursos/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://retacourses.netlify.app/cursos/</guid>
       <description></description>
     </item>
     

@@ -25,8 +25,11 @@
     <loc>https://retacourses.netlify.app/disciplinas/log/est_3/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade1/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/install/</loc>
-    <lastmod>2020-12-26T00:00:00+01:00</lastmod>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_urb/desafios/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
@@ -37,11 +40,11 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/intror_master/</loc>
-    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/sdss/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/intror_master/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/definir_log/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
@@ -73,14 +76,17 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/armazenagem/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_r/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/git_r/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/compras/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/github/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_dataana/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/est_4/</loc>
     <lastmod>2021-07-20T00:00:00+01:00</lastmod>
@@ -98,9 +104,6 @@
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc3/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_dataana/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/est_5/</loc>
@@ -133,6 +136,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc4/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_rmarkdown/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/custos/</loc>
     <lastmod>2021-08-25T00:00:00+01:00</lastmod>
   </url><url>
@@ -155,9 +161,6 @@
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/kpi/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_rmarkdown/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/log_urb/</loc>
@@ -201,18 +204,15 @@
     <lastmod>2021-06-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/</loc>
-    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/tidyverse/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/ccscf/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/estatistica/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/cursos/intro_r/tidyverse/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc9/</loc>
@@ -223,6 +223,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc13/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
@@ -239,13 +242,16 @@
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/reprodutibility/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/mkt_seg/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/sustentavel/</loc>
     <lastmod>2021-08-25T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/intro_r/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/talk/coding/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
@@ -262,8 +268,11 @@
     <loc>https://retacourses.netlify.app/talk/synthesizing/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/</loc>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</loc>
     <lastmod>2021-09-10T09:37:49-03:00</lastmod>
@@ -294,9 +303,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</loc>
     <lastmod>2021-09-03T15:47:26-03:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/cursos/</loc>
-    <lastmod>2021-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/tags/git/</loc>
     <lastmod>2021-07-09T16:27:39-03:00</lastmod>
