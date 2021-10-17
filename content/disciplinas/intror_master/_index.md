@@ -91,6 +91,7 @@ A turma virtual do SIGAA será utilizada para postagens de conteúdos e outras c
 - TROSSET, Michael W. An introduction to statistical inference and its applications with R. Boca Raton: Chapman and Hall/CRC, 2009.
 - PARADIS, Emanuel. R for Beginners. Monpellier: Institut des Sciences de l’Evolution, 2005. Disponível em: https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf. Acesso em: 12 nov. 2019.  
 - TEETOR, Paul. R cookbook: Proven recipes for data analysis, statistics, and graphics. Sebastopol: O'Reilly Media, Inc., 2011.
+- Zen do R - https://curso-r.github.io/zen-do-r/index.html
 
 
 ## Material adicional

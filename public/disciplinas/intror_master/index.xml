@@ -69,6 +69,108 @@ Clique no botão &lt;code&gt;Knit HTML&lt;/code&gt; na barra de ferramentas do d
     </item>
     
     <item>
+      <title>Lab 1</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab1/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab1/</guid>
+      <description>&lt;h2 id=&#34;a-unidade-1-é-estruturada-considerando-os-seguintes-tópicos&#34;&gt;A &lt;strong&gt;Unidade 1&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalação do R e do RStudio&lt;/li&gt;
+&lt;li&gt;Como instalar o Git&lt;/li&gt;
+&lt;li&gt;Criando uma conta no Github&lt;/li&gt;
+&lt;li&gt;Instalar e carregar pacotes no R&lt;/li&gt;
+&lt;li&gt;Instalar pacotes no R a partir do Github&lt;/li&gt;
+&lt;li&gt;E aí, R? Entendendo o ambiente de trabalho&lt;/li&gt;
+&lt;li&gt;Primeiros documentos no R - RMarkdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;diretrizes-gerais&#34;&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0&#34;&gt;Arquivo&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Instale os pacotes:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;tidyverse&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;tinytex&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;knitr&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;flexdashboard&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;xaringan&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;xaringanthemer&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Chame as bibliotecas dos pacotes instalados&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;tidyverse&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;tinytex&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;knitr&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;flexdashboard&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;xaringan&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&amp;quot;xaringanthemer&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Corrija os problemas de códigos nos respectivos chunks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Salve o .Rmd e &lt;strong&gt;submeta-o por meio da tarefa no Sigaa&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;preparação-para-o-exercício&#34;&gt;Preparação para o exercício:&lt;/h2&gt;
+&lt;p&gt;Carregue o &lt;em&gt;data frame&lt;/em&gt; &lt;em&gt;mtcars&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;data(mtcars)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script&#34;&gt;Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:&lt;/h2&gt;
+&lt;p&gt;Q1)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;Head(mtcars)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q2)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;str(Mtcars)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q3)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;dim[mtcars]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q4)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;nomes(mtcars)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q5)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;head(mtcars, x = 10)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q6)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- (&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q7)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v2 &amp;lt;- c(&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;)
+v1 + 42
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q8)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q9)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v3 &amp;lt;- c(33 31 40 25 27 40)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q10)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(pato, cachorro, minhoca, lagarto)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q11)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot; &amp;quot;cachorro&amp;quot; &amp;quot;minhoca&amp;quot; &amp;quot;lagarto&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q12)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v3 &amp;lt;- C(33, 31, 40, 25, 27, 40)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q13)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+v3 &amp;lt;- c(33, 31, 40, 25, 27, 40)
+myData &amp;lt;- data.frame(v1, v3)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q14)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+v4 &amp;lt;- c(33, 31, 40, 25)
+myData &amp;lt;- data.frame(v1 = animal, v4 = idade)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q15)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;ls
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q16)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+sum(v1)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
       <title>Encontro Síncrono 1</title>
       <link>https://retacourses.netlify.app/disciplinas/intror_master/sinc1/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
