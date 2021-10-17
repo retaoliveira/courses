@@ -24,7 +24,7 @@ weight: 10
 
 1. Baixe o arquivo .Rmd e abra no RStudio. 
 
-[Arquivo](https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0)
+[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EdTjtwRl5F5DjFDlgrOB6BgB4fqdODik9Jkp0cA_sB696Q?e=jdqlwW)
 
 2. Instale os pacotes: 
   - `"tidyverse"`
@@ -161,7 +161,3 @@ Q16)
 v1 <- c("pato", "cachorro", "minhoca", "lagarto")
 sum(v1)
 ```
-
-
-
-
