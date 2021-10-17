@@ -100,12 +100,14 @@ TOTAL:| |	100 pontos
 
 Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.
 
-Os softwares a serem instalados são: 
 Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.
 
 Os alunos deverão ter uma conta gratuita na plataforma `Teams`.
 
 Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
+
+Acesso ao Moodle/AVA institucional.
+
 
 ## Bibliografia recomendada
 
@@ -133,9 +135,13 @@ Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 22.	Taylor, D. A. Logística na Cadeia de Suprimentos. Pearson. Addison Wesley. 2005.
 23.	Wanke, P. F. Introdução ao Planejamento de Redes Logísticas. Editora Atlas. 2009
 
-## Grupos de trabalho
+## Organização das atividades em grupos
 
-Os grupos de trabalho deverão ser os mesmos ao longo de todas as atividades e deverão ser compostos por **4 estudantes**.
+1. **Composição dos grupos de trabalho:** Cada grupo será composto por **três a quatro alunos**. Esse grupo deve se manter para realização de todos os projetos. 
+
+2. **Planejamento da execução dos trabalhos:** Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução. 
+
+3. As atividades devem, necessariamente, acontecer de **forma colaborativa**. Para tanto, será criada uma **wiki** para cada grupo/atividade no **Moodle/AVA** institucional. Assim, será possível acompanhar a contribuição de cada estudante no desenvolvimento de cada trabalho. 
 
 ## Comunicação
 

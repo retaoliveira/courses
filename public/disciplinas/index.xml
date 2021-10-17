@@ -88,7 +88,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;planejamento-de-encontros-síncronos&#34;&gt;Planejamento de encontros síncronos&lt;/h2&gt;
-&lt;p&gt;Os encontros síncronos acontecerão nas &lt;strong&gt;segundas-feiras&lt;/strong&gt;, de &lt;strong&gt;20:40 às 22:30&lt;/strong&gt;. Os encontros síncronos acontecerão na plataforma &lt;code&gt;Teams&lt;/code&gt;. Vocês poderão acessar o servidor da disciplina pelo &lt;a href=&#34;https://teams.microsoft.com/l/team/19%3aiWJRMuk-g676YbdL85v7jm_Up-mNfI8vxF3ymvO2uRE1%40thread.tacv2/conversations?groupId=13230d26-a870-45e8-86c8-ad9f6b0fd90b&amp;amp;tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Os encontros síncronos acontecerão nas &lt;strong&gt;segundas-feiras&lt;/strong&gt;, de &lt;strong&gt;20:40 às 22:10&lt;/strong&gt;. Os encontros síncronos acontecerão na plataforma &lt;code&gt;Teams&lt;/code&gt;. Vocês poderão acessar o servidor da disciplina pelo &lt;a href=&#34;https://teams.microsoft.com/l/team/19%3aiWJRMuk-g676YbdL85v7jm_Up-mNfI8vxF3ymvO2uRE1%40thread.tacv2/conversations?groupId=13230d26-a870-45e8-86c8-ad9f6b0fd90b&amp;amp;tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -255,10 +255,10 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;recursos-necessários&#34;&gt;Recursos necessários&lt;/h2&gt;
 &lt;p&gt;Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.&lt;/p&gt;
-&lt;p&gt;Os softwares a serem instalados são: 
-Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.&lt;/p&gt;
+&lt;p&gt;Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.&lt;/p&gt;
 &lt;p&gt;Os alunos deverão ter uma conta gratuita na plataforma &lt;code&gt;Teams&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.&lt;/p&gt;
+&lt;p&gt;Acesso ao Moodle/AVA institucional.&lt;/p&gt;
 &lt;h2 id=&#34;bibliografia-recomendada&#34;&gt;Bibliografia recomendada&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Ballou, R. H. Gerenciamento da Cadeia de Suprimentos. Ed. Bookman. 2001.&lt;/li&gt;
@@ -285,8 +285,18 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
 &lt;li&gt;Taylor, D. A. Logística na Cadeia de Suprimentos. Pearson. Addison Wesley. 2005.&lt;/li&gt;
 &lt;li&gt;Wanke, P. F. Introdução ao Planejamento de Redes Logísticas. Editora Atlas. 2009&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;grupos-de-trabalho&#34;&gt;Grupos de trabalho&lt;/h2&gt;
-&lt;p&gt;Os grupos de trabalho deverão ser os mesmos ao longo de todas as atividades e deverão ser compostos por &lt;strong&gt;3 estudantes&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;organização-das-atividades-em-grupos&#34;&gt;Organização das atividades em grupos&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Composição dos grupos de trabalho:&lt;/strong&gt; Cada grupo será composto por &lt;strong&gt;três a quatro alunos&lt;/strong&gt;. Esse grupo deve se manter para realização de todos os projetos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Planejamento da execução dos trabalhos:&lt;/strong&gt; Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As atividades devem, necessariamente, acontecer de &lt;strong&gt;forma colaborativa&lt;/strong&gt;. Para tanto, será criada uma &lt;strong&gt;wiki&lt;/strong&gt; para cada grupo/atividade no &lt;strong&gt;Moodle/AVA&lt;/strong&gt; institucional. Assim, será possível acompanhar a contribuição de cada estudante no desenvolvimento de cada trabalho.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;comunicação&#34;&gt;Comunicação&lt;/h2&gt;
 &lt;p&gt;Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo &amp;ldquo;assunto&amp;rdquo; o texto &lt;code&gt;&amp;lt;Log-adm&amp;gt;&lt;/code&gt; e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: &lt;a href=&#34;mailto:renataoliveira@cefetmg.br&#34;&gt;renataoliveira@cefetmg.br&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:&lt;/p&gt;
@@ -846,10 +856,10 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
 &lt;/table&gt;
 &lt;h2 id=&#34;recursos-necessários&#34;&gt;Recursos necessários&lt;/h2&gt;
 &lt;p&gt;Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.&lt;/p&gt;
-&lt;p&gt;Os softwares a serem instalados são: 
-Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.&lt;/p&gt;
+&lt;p&gt;Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.&lt;/p&gt;
 &lt;p&gt;Os alunos deverão ter uma conta gratuita na plataforma &lt;code&gt;Teams&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.&lt;/p&gt;
+&lt;p&gt;Acesso ao Moodle/AVA institucional.&lt;/p&gt;
 &lt;h2 id=&#34;bibliografia-recomendada&#34;&gt;Bibliografia recomendada&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Ballou, R. H. Gerenciamento da Cadeia de Suprimentos. Ed. Bookman. 2001.&lt;/li&gt;
@@ -876,8 +886,18 @@ Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolh
 &lt;li&gt;Taylor, D. A. Logística na Cadeia de Suprimentos. Pearson. Addison Wesley. 2005.&lt;/li&gt;
 &lt;li&gt;Wanke, P. F. Introdução ao Planejamento de Redes Logísticas. Editora Atlas. 2009&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;grupos-de-trabalho&#34;&gt;Grupos de trabalho&lt;/h2&gt;
-&lt;p&gt;Os grupos de trabalho deverão ser os mesmos ao longo de todas as atividades e deverão ser compostos por &lt;strong&gt;4 estudantes&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;organização-das-atividades-em-grupos&#34;&gt;Organização das atividades em grupos&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Composição dos grupos de trabalho:&lt;/strong&gt; Cada grupo será composto por &lt;strong&gt;três a quatro alunos&lt;/strong&gt;. Esse grupo deve se manter para realização de todos os projetos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Planejamento da execução dos trabalhos:&lt;/strong&gt; Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As atividades devem, necessariamente, acontecer de &lt;strong&gt;forma colaborativa&lt;/strong&gt;. Para tanto, será criada uma &lt;strong&gt;wiki&lt;/strong&gt; para cada grupo/atividade no &lt;strong&gt;Moodle/AVA&lt;/strong&gt; institucional. Assim, será possível acompanhar a contribuição de cada estudante no desenvolvimento de cada trabalho.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;comunicação&#34;&gt;Comunicação&lt;/h2&gt;
 &lt;p&gt;Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo &amp;ldquo;assunto&amp;rdquo; o texto &lt;code&gt;&amp;lt;Log-epc&amp;gt;&lt;/code&gt; e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: &lt;a href=&#34;mailto:renataoliveira@cefetmg.br&#34;&gt;renataoliveira@cefetmg.br&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:&lt;/p&gt;
