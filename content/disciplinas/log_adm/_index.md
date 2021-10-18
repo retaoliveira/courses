@@ -58,7 +58,7 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros síncronos acontecerão nas **segundas-feiras**, de **20:40 às 22:10**. Os encontros síncronos acontecerão na plataforma `Teams`. Vocês poderão acessar o servidor da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3aiWJRMuk-g676YbdL85v7jm_Up-mNfI8vxF3ymvO2uRE1%40thread.tacv2/conversations?groupId=13230d26-a870-45e8-86c8-ad9f6b0fd90b&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+Os encontros síncronos acontecerão nas **segundas-feiras**, de **20:50 às 22:10**. Os encontros síncronos acontecerão na plataforma `Teams`. Vocês poderão acessar o servidor da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3aiWJRMuk-g676YbdL85v7jm_Up-mNfI8vxF3ymvO2uRE1%40thread.tacv2/conversations?groupId=13230d26-a870-45e8-86c8-ad9f6b0fd90b&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
