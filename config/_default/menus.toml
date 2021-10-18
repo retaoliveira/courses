@@ -48,17 +48,17 @@
   url = "cursos/log_all/"
   weight = 30
   
-[[main]]
-  parent = "Cursos"
-  name = "Logística Urbana"
-  url = "cursos/log_urb/"
-  weight = 40
+#[[main]]
+#  parent = "Cursos"
+#  name = "Logística Urbana"
+##  url = "cursos/log_urb/"
+#  weight = 40
   
-[[main]]
-  parent = "Cursos"
-  name = "Urban Analytics"
-  url = "cursos/urban/"
-  weight = 50
+#[[main]]
+#  parent = "Cursos"
+#  name = "Urban Analytics"
+#  url = "cursos/urban/"
+#  weight = 50
 
 [[main]]
   name = "Disciplinas"
