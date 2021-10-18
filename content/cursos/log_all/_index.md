@@ -77,7 +77,7 @@ Clique o [link](https://www.posgrado.net.br/ambiente/multiplas-inteligencias/tes
 
 <hr></hr>
 
-## Educação e a 4a Revolução Industrial
+## Educação no século XXI
 
 Caros estudantes!
 
@@ -113,6 +113,8 @@ sustentam essa discussão com pesquisa já transformada em livro. E também Klau
 
 
 ## 4a Revolução industrial
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/Il0frfdhPbg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 O que acontecerá com os empregos que conhecemos nos próximos 10, 20 ou 30 anos? Além do que já foi mostrado na página sobre educação, outras fontes de informação que corroboram a questão chave de se modernizar: a forma de se estudar, como estudar, como aprender, como trabalhar. Mais uma vez as múltiplas inteligências se mostram valiosas num futuro em que muitos empregos ainda não foram criados e, obviamente, nós não estamos prontos, necessariamente, para assumi-los.
 
