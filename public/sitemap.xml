@@ -17,10 +17,16 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_adm/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/tidyverse/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/padlet/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/padlet/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/abrindo_dados/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/est_3/</loc>
@@ -219,6 +225,12 @@
     <loc>https://retacourses.netlify.app/cursos/spatial/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/estrutura_dados/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/ggplot/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -238,6 +250,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/sustentavel/</loc>
     <lastmod>2021-08-25T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/estatistica/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/intro_r/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
