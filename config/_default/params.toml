@@ -54,9 +54,9 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "renataoliveira@gmail.com"
-phone = "+55 31 9 8866 2226"
-address = "Av. Amazonas, 7675 - Nova Gameleira - Belo Horizonte, Minas Gerais, Brazil"
+email = ""
+phone = ""
+address = ""
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 #office_hours = """Monday 10:00 to 13:00<br>
@@ -183,7 +183,7 @@ sharing = true
   #   0: No search engine
   #   1: academia (built-in)
   #   2: Algolia (https://www.algolia.com)
-  engine = 2
+  engine = 1
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
