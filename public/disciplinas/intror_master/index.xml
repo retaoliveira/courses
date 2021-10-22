@@ -225,13 +225,19 @@ sum(v1)
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;&lt;/hr&gt;
-&lt;h3 id=&#34;dê-uma-olhada-no-dataframe-starwars&#34;&gt;Dê uma olhada no dataframe Starwars.&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Dê uma olhada no dataframe Starwars.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;glimpse(starwars)
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;modifique-o-seguinte-gráfico-para-que-a-cor-de-todos-os-pontos-seja-rosa&#34;&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
        aes(x = height, y = mass, color = gender, size = birth_year)) +
   geom_point(color = &amp;quot;pink&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adicione-texto-no-título-eixos-x-e-y-e-tamanho-dos-pontos-remova-o-comentário-para-ver-o-efeito&#34;&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
        aes(x = height, y = mass, color = as.factor(gender), size = birth_year)) +
   geom_point() +
@@ -241,18 +247,28 @@ sum(v1)
     y = &amp;quot;WOW&amp;quot;,
     size = &amp;quot;Idade&amp;quot;
     )
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-única-variável-categórica-do-conjunto-de-dados-e-faça-um-gráfico-de-barras-de-sua-distribuição&#34;&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com &lt;code&gt;eval = FALSE&lt;/code&gt; porque o código atual ali não é válido e, portanto, o documento não permitia o &lt;code&gt;knit&lt;/code&gt;. Uma vez substituído o código por um código válido, defina a opção &amp;ldquo;eval = TRUE&amp;rdquo;, ou remova a opção &amp;ldquo;eval&amp;rdquo; por completo, uma vez que está definida como &amp;ldquo;TRUE&amp;rdquo; por padrão).&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, aes(___)) +
   geom___
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-única-variável-numérica-e-faça-um-histograma-dela&#34;&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;(Desta vez nenhum código inicial é fornecido, você está por sua conta!)&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-variável-numérica-e-uma-variável-categórica-e-faça-uma-visualização-você-escolhe-o-tipo-para-visualizar-a-relação-entre-as-duas-variáveis-junto-com-seu-código-e-sua-saída-forneça-uma-interpretação-da-visualização&#34;&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-duas-variáveis-categóricas-e-faça-uma-visualização-para-entender-visualmente-a-relação-entre-as-duas-variáveis-junto-com-seu-código-e-saída-forneça-uma-interpretação-da-visualização&#34;&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-duas-variáveis-numéricas-e-duas-variáveis-categóricas-e-faça-uma-visualização-que-incorpore-todas-elas-e-forneça-uma-interpretação-com-sua-resposta&#34;&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
