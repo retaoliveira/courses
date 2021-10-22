@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Estudos autônomos
     weight: 5
-title: 2. Nível de Serviço Logístico
+title: 1. Nível de Serviço Logístico
 editor_options: 
   markdown: 
     wrap: 70
