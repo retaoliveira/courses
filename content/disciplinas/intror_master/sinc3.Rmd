@@ -4,9 +4,9 @@ draft: true
 menu:
   intror_master:
     parent: Encontros
-    weight: 56
+    weight: 60
 title: Encontro Síncrono 3
-weight: 56
+weight: 60
 editor_options: 
   markdown: 
     wrap: 72

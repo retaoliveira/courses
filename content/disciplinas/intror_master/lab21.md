@@ -5,22 +5,22 @@ menu:
   intror_master:
     parent: Unidade 2
     weight: 11
-title: Lab 2
+title: Lab 2.1 - `ggplot`
 toc: true
 type: docs
 weight: 11
 ---
 
-## A **Unidade 2** é estruturada considerando os seguintes tópicos:
+A **Unidade 2** é estruturada considerando os seguintes tópicos:
 - Estrutura de dados no R; 
 - Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;
 - Visualização de dados no R.
 
-## Diretrizes gerais:
+## **Diretrizes gerais**
 
 1. Baixe o arquivo .Rmd e abra no RStudio. 
 
-[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EaxhyRuokWpEh4zqsr8cQwcBIPKqhRIfamfKhpiV0gOoQQ?e=2MNddJ)
+[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EQRGYbjqPK9PpLiRI6M2SBUBsfh__B4NfDOM5EvLeYG_wg?e=z7pDKM)
 
 2. Siga as diretrizes da atividade. 
 
@@ -30,7 +30,7 @@ weight: 11
 
 <hr></hr>
 
-## Atividade:
+## **Atividade**
 
 1. Dê uma olhada no dataframe Starwars.
 
