@@ -75,8 +75,9 @@ Clique no botão &lt;code&gt;Knit HTML&lt;/code&gt; na barra de ferramentas do d
       <guid>https://retacourses.netlify.app/disciplinas/intror_master/atividade2/</guid>
       <description>&lt;h2 id=&#34;a-unidade-2-é-estruturada-considerando-os-seguintes-tópicos&#34;&gt;A &lt;strong&gt;Unidade 2&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos.&lt;/li&gt;
-&lt;li&gt;Visualização de informações gerenciais e científicas.&lt;/li&gt;
+&lt;li&gt;Estrutura de dados no R;&lt;/li&gt;
+&lt;li&gt;Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;&lt;/li&gt;
+&lt;li&gt;Visualização de dados no R.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;esta-atividade-deverá-ser-realizada-até-dia-2610-quando-teremos-nosso-segundo-encontro-síncrono-são-propostas-as-seguintes-atividades&#34;&gt;Esta atividade deverá ser realizada até dia &lt;strong&gt;26/10&lt;/strong&gt;, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:&lt;/h2&gt;
 &lt;ol&gt;
@@ -192,6 +193,67 @@ myData &amp;lt;- data.frame(v1 = animal, v4 = idade)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q16)&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
 sum(v1)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lab 2</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab2/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab2/</guid>
+      <description>&lt;h2 id=&#34;a-unidade-2-é-estruturada-considerando-os-seguintes-tópicos&#34;&gt;A &lt;strong&gt;Unidade 2&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de dados no R;&lt;/li&gt;
+&lt;li&gt;Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;&lt;/li&gt;
+&lt;li&gt;Visualização de dados no R.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;diretrizes-gerais&#34;&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EaxhyRuokWpEh4zqsr8cQwcBIPKqhRIfamfKhpiV0gOoQQ?e=2MNddJ&#34;&gt;Arquivo&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Salve o .Rmd e &lt;strong&gt;submeta-o por meio da tarefa no Sigaa&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;&lt;/hr&gt;
+&lt;h3 id=&#34;dê-uma-olhada-no-dataframe-starwars&#34;&gt;Dê uma olhada no dataframe Starwars.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;glimpse(starwars)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;modifique-o-seguinte-gráfico-para-que-a-cor-de-todos-os-pontos-seja-rosa&#34;&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = &amp;quot;pink&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adicione-texto-no-título-eixos-x-e-y-e-tamanho-dos-pontos-remova-o-comentário-para-ver-o-efeito&#34;&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = as.factor(gender), size = birth_year)) +
+  geom_point() +
+  labs(
+    title = &amp;quot;TEste&amp;quot;,
+    x = &amp;quot;Adoro&amp;quot;, 
+    y = &amp;quot;WOW&amp;quot;,
+    size = &amp;quot;Idade&amp;quot;
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-única-variável-categórica-do-conjunto-de-dados-e-faça-um-gráfico-de-barras-de-sua-distribuição&#34;&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/h3&gt;
+&lt;p&gt;(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com &lt;code&gt;eval = FALSE&lt;/code&gt; porque o código atual ali não é válido e, portanto, o documento não permitia o &lt;code&gt;knit&lt;/code&gt;. Uma vez substituído o código por um código válido, defina a opção &amp;ldquo;eval = TRUE&amp;rdquo;, ou remova a opção &amp;ldquo;eval&amp;rdquo; por completo, uma vez que está definida como &amp;ldquo;TRUE&amp;rdquo; por padrão).&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, aes(___)) +
+  geom___
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-única-variável-numérica-e-faça-um-histograma-dela&#34;&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/h3&gt;
+&lt;p&gt;(Desta vez nenhum código inicial é fornecido, você está por sua conta!)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-uma-variável-numérica-e-uma-variável-categórica-e-faça-uma-visualização-você-escolhe-o-tipo-para-visualizar-a-relação-entre-as-duas-variáveis-junto-com-seu-código-e-sua-saída-forneça-uma-interpretação-da-visualização&#34;&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-duas-variáveis-categóricas-e-faça-uma-visualização-para-entender-visualmente-a-relação-entre-as-duas-variáveis-junto-com-seu-código-e-saída-forneça-uma-interpretação-da-visualização&#34;&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;escolha-duas-variáveis-numéricas-e-duas-variáveis-categóricas-e-faça-uma-visualização-que-incorpore-todas-elas-e-forneça-uma-interpretação-com-sua-resposta&#34;&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

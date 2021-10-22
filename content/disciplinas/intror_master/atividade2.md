@@ -13,8 +13,9 @@ weight: 10
 
 ## A **Unidade 2** é estruturada considerando os seguintes tópicos:
 
-- Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos.
-- Visualização de informações gerenciais e científicas.
+- Estrutura de dados no R; 
+- Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;
+- Visualização de dados no R.
 
 
 ## Esta atividade deverá ser realizada até dia **26/10**, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:
