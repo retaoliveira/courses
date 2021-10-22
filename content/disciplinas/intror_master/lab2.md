@@ -30,6 +30,8 @@ weight: 11
 
 <hr></hr>
 
+## Atividade:
+
 1. Dê uma olhada no dataframe Starwars.
 
 ```{r glimpse-starwars}
