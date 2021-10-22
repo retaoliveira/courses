@@ -24,3 +24,4 @@ knitr::include_url('https://logADM2021.github.io/class01/', height = "500px")
 
 [LINK](https://logADM2021.github.io/class01/)
 
+<iframe width="1730" height="692" src="https://www.youtube.com/embed/LC6U9Sv-ou8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

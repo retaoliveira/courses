@@ -104,6 +104,12 @@
     <loc>https://retacourses.netlify.app/disciplinas/log/ver_1/</loc>
     <lastmod>2021-06-24T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/ver_1/</loc>
+    <lastmod>2021-06-24T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/ver_1/</loc>
+    <lastmod>2021-06-24T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc1/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -123,6 +129,12 @@
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/project1/</loc>
+    <lastmod>2021-06-09T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project1/</loc>
+    <lastmod>2021-06-09T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/project1/</loc>
     <lastmod>2021-06-09T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/sinc2/</loc>
@@ -184,6 +196,10 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_urb/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/est_1/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/est_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log/est_2/</loc>
   </url><url>
@@ -247,6 +263,12 @@
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/sinc2/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/sinc2/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/map/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
