@@ -18,6 +18,8 @@ weight: 20
 
 Leia do artigo [Logística e Serviço ao Cliente: como Aumentar a satisfação do cliente através de uma cadeia de abastecimento eficaz](https://github.com/retaoliveira/relements/raw/main/texto/servico_log.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
 
+Data de entrega: 22/11/2021
+
 ## 1. Varejo tradicional em uma cadeia de suprimentos
 
 a. Como um comerciante de alimentos (mercearia ou pequeno supermercado) poderia usar o inventário (produtos em estoque no estabelecimento) para aumentar a capacidade responsividade da cadeia de suprimentos da empresa? Quais as consequências dessa decisão?
