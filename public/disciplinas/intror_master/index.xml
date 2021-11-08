@@ -632,11 +632,11 @@ library(tidyverse)
     </item>
     
     <item>
-      <title>Lab 3</title>
-      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab3/</link>
+      <title>Lab 3.1</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab31/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab3/</guid>
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab31/</guid>
       <description>&lt;p&gt;A &lt;strong&gt;Unidade 3&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.&lt;/li&gt;
@@ -646,7 +646,7 @@ library(tidyverse)
 &lt;ol&gt;
 &lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EcU3lYCIuexHvd6r57WRh8kBI8DepOiAIe1rWevMHgT-nA?e=XIBRZD&#34;&gt;Arquivo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=6mPEvi&#34;&gt;Arquivo&lt;/a&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;
@@ -996,6 +996,61 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
 
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lab 3.2</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab32/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab32/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Unidade 3&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.&lt;/li&gt;
+&lt;li&gt;Estatística descritiva e mineração de dados&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;diretrizes-gerais&#34;&gt;&lt;strong&gt;Diretrizes gerais:&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/%E2%9D%8C/g/personal/renataoliveira_cefetmg_br/EfOboEtruQNLnK1Iz2RynCcBNxYE6pz_gBbjOIUWRSodpw?e=y0igVw&#34;&gt;Dados_1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/%E2%9D%8C/g/personal/renataoliveira_cefetmg_br/EZBh8qqZVJVFsZu3pfmdbPYBH-4XbbGRkrkpybi0pTSObA?e=4koetd&#34;&gt;Dados_2&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Salve o .Rmd e &lt;strong&gt;submeta-o por meio da tarefa no Sigaa&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;&lt;/hr&gt;
+&lt;h2 id=&#34;manipulação-de-dados&#34;&gt;&lt;strong&gt;Manipulação de dados&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;exercício-1&#34;&gt;Exercício 1.&lt;/h3&gt;
+&lt;p&gt;Carregue os dados no seu ambiente.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
+dados1 &amp;lt;- read_csv(&amp;quot;&amp;quot;)
+dados2 &amp;lt;- read_csv(&amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-2&#34;&gt;Exercício 2.&lt;/h3&gt;
+&lt;p&gt;Responda as seguintes perguntas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Qual país historicamente ganhou mais medalhas nas olimpíadas de verão? Quantas foram? E qual a representação das mulheres nessa quantidade?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demonstre o ranking de medalhas por país por ano olímpico separando os dados em olimpíadas de verão e de inverno.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Considere as olimpíadas de verão: para o país com o maior número de medalhas, demonstre o número de medalhas conquistadas por mulheres e o número de medalhas conquistadas por homens (considere as medalhas totais, levando em conta os atletas (medalhas) em esportes coletivos).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Qual país ganhou mais medalhas no volei masculino? Qual país ganhou mais medalhas no volei feminino?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
