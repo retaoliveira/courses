@@ -18,9 +18,7 @@ type: docs
 ---
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://intror2021.github.io/class03/', height = "500px")
-```
+<iframe src="https://intror2021.github.io/class03/" width="672" height="500px" data-external="1"></iframe>
 
 [LINK](https://intror2021.github.io/class03/)
 
