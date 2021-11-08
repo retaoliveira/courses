@@ -25,7 +25,7 @@ weight: 11
 
 
 ## A(s) entrega(s) será(ão):
-- **Arquivos** referentes à **tarefa 4** desta atividade.
+- **Arquivos** referentes à **tarefa 3** desta atividade.
 
 <hr></hr>
 
@@ -35,6 +35,8 @@ A poluição por plástico é um problema importante e crescente, afetando negat
 Para este laboratório, nos concentramos nos dados de 2010.
 
 Além disso, a National Geographic realizou um concurso de comunicação de visualização de dados sobre resíduos plásticos, como visto [aqui](https://www.nationalgeographic.org/funding-opportunities/innovation-challenges/plastic/dataviz/).
+
+Os dados estão no [Link](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/ESK2oL3BBs1FgbPSB8LbpbEBQVLJX5MmsHnTKqFkFJbYPA?e=fbprgc)
 
 # Objetivos de aprendizagem
 
