@@ -1290,6 +1290,422 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
     </item>
     
     <item>
+      <title>Manipulação e limpeza de dados</title>
+      <link>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</guid>
+      <description>&lt;h1 id=&#34;introdução-ao-pacote-dplyr&#34;&gt;Introdução ao pacote dplyr&lt;/h1&gt;
+&lt;p&gt;Começando pelo meio: data frames
+Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.&lt;/p&gt;
+&lt;p&gt;Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia.&lt;/p&gt;
+&lt;p&gt;As principais características de um data frame são: (1) cada coluna representa uma variável (ou característica) de um conjunto de observações; (2) cada linha representa uma observação e contém os valores de cada variável para tal observação. Vejamos um exemplo:&lt;/p&gt;
+&lt;p&gt;Candidato	Partido	Votos
+Beatriz	PMDB	350
+Danilo	SOL	1598
+Pedro	PTB	784
+Davi	PSD	580
+Mateus	PV	2
+Note que em uma linha os elementos são de tipos de diferentes: na primeira coluna há uma nome (texto), na segunda uma sigla de partido (texto, mas limitado a um conjunto de siglas) e na terceira votos (número inteiros).&lt;/p&gt;
+&lt;p&gt;Por outro lado, em cada coluna há somente elementos de um tipo. Por exemplo, há apenas números inteiros na coluna votos. Colunas são variáveis e por isso aceitam registros de um único tipo. Se você já fez um curso de estatísticas básica ou de métodos quantitativos deve se lembrar que as variáveis são classificadas da seguinte maneira:&lt;/p&gt;
+&lt;p&gt;1- Discretas&lt;/p&gt;
+&lt;p&gt;Nominais, que são categorias (normalmente texto) não ordenadas&lt;/p&gt;
+&lt;p&gt;Ordinais, que são categorias (normalmente texto) ordenadas&lt;/p&gt;
+&lt;p&gt;Inteiros, ou seja, o conjunto dos números inteiros&lt;/p&gt;
+&lt;p&gt;2- Contínuas, números que podem assumir valores não inteiros&lt;/p&gt;
+&lt;p&gt;Se destacamos uma coluna do nosso data frame, temos um vetor. Por exemplo, a variável &amp;ldquo;Votos&amp;rdquo; pode ser presentado da seguinte maneira: {350, 1598, 784, 580, 2}. Um data frame é um conjunto de variáveis (vetores!) dispostos na vertical e combinados um ao lado do outro.&lt;/p&gt;
+&lt;p&gt;Data frame e vetores são objetos na linguagem R.&lt;/p&gt;
+&lt;p&gt;Vamos ver como o R representa vetores e data frames na tela. Antes disso, é preciso &amp;ldquo;abrir&amp;rdquo; um data frame.&lt;/p&gt;
+&lt;p&gt;Cadastro de Escolas
+Neste tutorial vamos trabalhar com as bases de dados da educação municipal da cidade de São Paulo. Em particular, vamos começar trabalhando com o cadastro de escolas da Prefeitura de São Paulo.&lt;/p&gt;
+&lt;p&gt;A página na qual você encontrará o cadastro de escolas é essa aqui aqui. Comece baixando o dicionário de dados e os dados mais atuais.&lt;/p&gt;
+&lt;p&gt;Abrindo dados em R com botão (aaaaaaargh!)
+Se você decidiu aprender a programar em R, provavelmente quer substituir a análise de dados com cliques no mouse que fazemos no editor de planilhas pela construção de scripts que documentam o passo a passo da análise. Daqui em diante estaremos num mundo sem botões. Exceto um, por enquanto, aí no canto direito superior chamado &amp;ldquo;Import Dataset&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Clique no botão (aaaaaaargh!). Veja que temos a opção de importar arquivos de texto com duas bibliotecas diferentes, base e readr (que é o pacote de abertura de dados do tidyverse) e dados em alguns outros formatos, como MS Excel e outros softwares de análise estatística.&lt;/p&gt;
+&lt;p&gt;Use a primeira opção, &amp;ldquo;From Text (base)&amp;rdquo; para carregar os dados do cadastro de escola.&lt;/p&gt;
+&lt;p&gt;Abrindo dados em R (com script)
+(Lembre-se de carregar o pacote tidyverse antes de prosseguir)&lt;/p&gt;
+&lt;p&gt;library(tidyverse)
+Use o recurso &amp;ldquo;Import Dataset&amp;rdquo; enquanto não se sentir confortável com a linguagem. Mas, aos poucos, vá abandonando. Abrir dados em R é muito simples.&lt;/p&gt;
+&lt;p&gt;Repetindo o procedimento, para abrir o cadastro de escola basta fazer:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(&amp;ldquo;&lt;a href=&#34;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22&#34;&gt;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&amp;quot;&lt;/a&gt;)
+Em R, as funções &amp;ldquo;read.&amp;rdquo; são as funções de abertura de dados do base e as funções &amp;ldquo;read_&amp;rdquo; são as análogas do pacote readr, parte do tidyverse. Há funções &amp;ldquo;read&amp;rdquo; para abrir todos os tipos de dados, de arquivos de texto a páginas em HTML.&lt;/p&gt;
+&lt;p&gt;No nosso caso, utilizamos a função read_csv2 para abrir um arquivo de texto cujos valores das colunas são separados por vírgula. Infelizmente, não há tempo para aprender sobre as variedades das funções de abertura de dados, mas você pode aprender um pouco mais aqui ou aqui.&lt;/p&gt;
+&lt;p&gt;Note que utilizamos o URL dos dados diretamente. Não precisamos fazer download para uma pasta local para, depois, abrir os dados.&lt;/p&gt;
+&lt;p&gt;Um jeito mais confortável, na mina opinião, de fazer a abertura de dados com um URL é guardar o URL em um objeto de texto e, depois, utilizar esse objeto como input da função:&lt;/p&gt;
+&lt;p&gt;url_escolas &amp;lt;- &amp;ldquo;&lt;a href=&#34;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22&#34;&gt;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&amp;quot;&lt;/a&gt;
+escolas &amp;lt;- read_csv2(url_escolas)
+Note que, pela segunda vez, utilizamos o símbolo &amp;ldquo;&amp;lt;-&amp;rdquo;. Ele é um símbolo de atribuição, e é um das marcas mais importantes da linguagem. Atribuir, significa &amp;ldquo;guardar na memória com um nome&amp;rdquo;. O nome, é o que vai do lado esquerdo. A parte do lado direito da equação de atribuição é o objeto a ser guardado.&lt;/p&gt;
+&lt;p&gt;Você pode usar &amp;ldquo;=&amp;rdquo; no lugar de &amp;ldquo;&amp;lt;-&amp;rdquo;. Mas, avisamos desde já, há casos em que há ambiguidade e os símbolos não funcionam como esperado.&lt;/p&gt;
+&lt;p&gt;Vamos avançar.&lt;/p&gt;
+&lt;p&gt;Explorando sem olhar para a matriz de dados
+No editor de planilhas estamos acostumados a ver os dados, célula a célula. Mas será que é realmente útil ficar olhando para os dados? Você perceberá com o tempo que olhar os dados é desnecessário e até contraproducente.&lt;/p&gt;
+&lt;p&gt;Você pode ver os dados clicando (aaaaaaargh!) no nome do objeto que está no &amp;ldquo;Environment&amp;rdquo; ou utilizando a função View (cuidado, o &amp;ldquo;V&amp;rdquo; é maiúsculo, algo raro em nomes de funções de R).&lt;/p&gt;
+&lt;p&gt;View(escolas)
+Agora que carregamos o cadastro de escolas na memória, vamos conhecer um pouco sobre estes dados sem olhar para a matriz de dados.&lt;/p&gt;
+&lt;p&gt;Podemos rapidamente olhar para uma &amp;ldquo;amostra&amp;rdquo; dos dados com a função head, que nos apresenta as 6 primeiras linhas do conjunto de dados.&lt;/p&gt;
+&lt;p&gt;head(escolas)
+Com apenas as 6 primeiras linhas do data frame temos noção de todo o conjunto. Sabemos rapidamente que existem informações sobre o nome das escolas, seus códigos de cadastro, de que tipo de escola se trata, à qual diretoria regional de ensino (DRE) pertence, etc.&lt;/p&gt;
+&lt;p&gt;Quantas escolas há? Há tantas escolas quantas linhas nos dados. Com nrow descobrimos quantas são.&lt;/p&gt;
+&lt;p&gt;nrow(escolas)
+Quantas informações temos disponíveis para cada escola? Ou seja, quantas variáveis há no conjunto de dados?&lt;/p&gt;
+&lt;p&gt;ncol(escolas)
+Qual é o nome das variáveis?&lt;/p&gt;
+&lt;p&gt;names(escolas)
+Pausa para um comentário
+Podemos fazer comentários no meio do código. Basta usar # e tudo que seguir até o final da linha não será interpertado pelo R como código. Por exemplo:&lt;/p&gt;
+&lt;h1 id=&#34;imprime-o-nome-das-variaveis-do-data-frame-cadastro&#34;&gt;Imprime o nome das variaveis do data frame cadastro&lt;/h1&gt;
+&lt;p&gt;names(escolas)&lt;/p&gt;
+&lt;p&gt;names(escolas) # Repetindo o comando acima com comentario em outro lugar
+Comentários são extremamente úteis para documentar seu código. Documentar é parte de programar e você deve pensar nas pessoas com as quais vai compartilhar o código e no fato de que com certeza não se lembrará do que fez em pouco tempo (garanto, você vai esquecer).&lt;/p&gt;
+&lt;p&gt;Argumentos ou parâmetros das funções
+Note que em todas as funções que utilizamos até agora, escolas está dentro do parênteses que segue o nome da função. Essa sintaxe é característica das funções de R. O que vai entre parêntesis são os argumentos ou parâmetros da função, ou seja, os &amp;ldquo;inputs&amp;rdquo; que serão transformados.&lt;/p&gt;
+&lt;p&gt;Uma função pode receber mais de um argumento. Pode também haver argumentos não obrigatórios, ou seja, para os quais não é necessário informar nada se você não quiser alterar os valores pré-definidos. Por exemplo, a função head contém o argumento n, que se refere ao número de linhas a serem impressas na tela, pré-estabelecido em 6 (você pode conhecer os argumentos da função na documentação do R usando ? antes do nome da função). Para alterar o parâmetro n para 10, por exemplo, basta fazer:&lt;/p&gt;
+&lt;p&gt;head(x = escolas, n = 10)
+x é o argumento que já havíamos utilizado anteriormente e indica em que objeto a função head será aplicada. Dica: você pode omitir tanto &amp;ldquo;x =&amp;rdquo; quanto &amp;ldquo;n =&amp;rdquo; se você já conhecer a ordem de cada argumento no uso da função.&lt;/p&gt;
+&lt;p&gt;Mais funções para explorar os dados
+Todos os objetos em R tem uma estrutura. Você pode investigar essa estrutura utilizando a função str. No caso de data frames, o output é legível (para outras classes de objeto isso não é verdade necessariamente):&lt;/p&gt;
+&lt;p&gt;str(escolas)
+Há informações sobre o nome das variáveis, dispostas na vertical, tipo de dados (texto &amp;ndash; char &amp;ndash; ou números &amp;ndash; num ou int) e uma amostra das primeiras observações.&lt;/p&gt;
+&lt;p&gt;Uma função semelhante, e com resultado um pouco mais &amp;ldquo;limpo&amp;rdquo;, é glimpse, parte do dplyr:&lt;/p&gt;
+&lt;p&gt;glimpse(escolas)
+Vamos agora renomear os dados.&lt;/p&gt;
+&lt;p&gt;Renomeando variáveis
+Quando trabalhamos com dados que não coletamos, em geral, não vamos gostar dos nomes das variáveis que quem produziu os dados escolheu. Mais ainda, com certa frequência, obtemos dados cujos nomes das colunas são compostos ou contêm acentuação, cecedilha e demais caracteres especiais. Dá um tremendo trabalho usar nomes com tais característica, apesar de possível. O ideal é termos nomes sem espaço (você pode usar ponto ou subscrito para separar palavras em um nome composto) e que contenham preferencialmente letras minísculas sem acento e números.&lt;/p&gt;
+&lt;p&gt;Vamos começar renomeando algumas variáveis no nosso banco de dados, cujos nomes vemos com o comando abaixo:&lt;/p&gt;
+&lt;p&gt;names(escolas)
+O primeiro argumento da função rename deve ser a base de dados cujos nomes das variáveis serão renomeados. Depois da primeira vírgula, inserimos todos as modificações de nomes, novamente separadas por vírgulas, e da seguinte maneira. Exemplo: nome_novo = nome_velho. Exemplo: nome_novo = Nome_Velho. Veja o exemplo, em que damos novos nomes às variáveis &amp;ldquo;tipoesc&amp;rdquo;, &amp;ldquo;latitute&amp;rdquo; e &amp;ldquo;longitude&amp;rdquo;:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Simples, não?&lt;/p&gt;
+&lt;p&gt;Uma gramática, duas formas
+No tidyverse, existe uma outra sintaxe para executar a mesma tarefa de (re)nomeação. Vamos olhar para ela (lembre-se de carregar novamente os dados, pois os nomes velhos já não existem mais e não existe Ctrl+Z em R):&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+rename(tipo = tipoesc,
+lat = latitude,
+lon = longitude)
+Usando o operador %&amp;gt;%, denominado pipe, retiramos de dentro da função rename o banco de dados cujas variáveis serão renomeadas. As quebras de linha depois do %&amp;gt;% e dentro da função rename são opcionais. Porém, o pardão é &amp;lsquo;verticalizar o código&amp;rsquo; e colcar os &amp;lsquo;verbos&amp;rsquo; à esquerda, o que torna sua leitura mais confortável.&lt;/p&gt;
+&lt;p&gt;Compare com o código que havíamos executado anteriormente:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Essa outra sintaxe tem uma vantagem grande sobre a anterior: ela permite emendar uma operação de transformação do banco de dados na outra. Veremos adiante como fazer isso. Por enquanto, tenha em mente que o resultado é o mesmo para qualquer uma das duas formas.&lt;/p&gt;
+&lt;p&gt;Vamos trabalhar com várias variáveis (sic) de uma única vez. Reabra o banco de dados:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)
+Renomeie as variáveis &amp;ldquo;dre&amp;rdquo;, &amp;ldquo;codesc&amp;rdquo;, &amp;ldquo;tipoesc&amp;rdquo;, &amp;ldquo;nomesc&amp;rdquo;, &amp;ldquo;diretoria&amp;rdquo;, &amp;ldquo;latitude&amp;rdquo;, &amp;ldquo;longitude&amp;rdquo; e &amp;ldquo;codinep&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)
+Selecionando colunas
+Algumas colunas podem ser dispensáveis em nosso banco de dados a depender da análise. Por exemplo, pode ser que nos interessem apenas as variáveis que já renomeamos. Para selecionar um conjunto de variáveis, utilizaremos o segundo verbo do dplyr que aprenderemos: select&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- select(escolas, dre_abreviatura, codigo, tipo, nome, dre, lat, lon, codigo_inep)
+ou usando o operador %&amp;gt;%, chamado pipe,&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Operador %&amp;gt;% para &amp;ldquo;emendar&amp;rdquo; tarefas
+O que o operador pipe faz é simplesmente colocar o primeiro argumento da função (no caso acima, o data frame), fora e antes da própria função. Ele permite lermos o código, informalmente, da seguinte maneira: &amp;ldquo;pegue o data frame x e aplique a ele esta função&amp;rdquo;. Veremos abaixo que podemos fazer uma cadeia de operações (&amp;ldquo;pipeline&amp;rdquo;), que pode ser lida informalmente como: &amp;ldquo;pegue o data frame x e aplique a ele esta função, e depois essa, e depois essa outra, etc&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;A grande vantagem de trabalharmos com o operador %&amp;gt;% é não precisar repetir o nome do data frame diversas vezes ao aplicarmos a ele um conjunto de operações.&lt;/p&gt;
+&lt;p&gt;Vejamos agora como usamos o operador %&amp;gt;% para &amp;ldquo;emendar&amp;rdquo; tarefas, começando da abertura desde dados. Note que o primeiro input é o url da base de dados e, que, uma vez carregados, vai sendo transformado a cada novo verbo.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas) %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Em uma única sequência de operações, abrimos os dados, alteramos os nomes das variáveis e selecionamos as que permaneceriam no banco de dados. Esta forma de programa, tenha certeza, é bastante mais econômica e mais fácil de ler, para que possamos identificar erros mais facilmente.&lt;/p&gt;
+&lt;p&gt;Transformando variáveis
+Usaremos a função mutate para operar transformações nas variáveis existentes e criar variáveis novas. Há inúmeras transformações possíveis e elas lembram bastante as funções de outros softwares, como MS Excel. Vamos ver algumas das mais importantes.&lt;/p&gt;
+&lt;p&gt;No nosso caso, o formato dos valores de latitude e longitude estão em formato diferente do convenional. Latitudes são representadas por números entre -90 e 90, com 8 casas decimais, e Longitudes por números entre -180 e 180, também com 8 casas decimais. Em nosso par de variáveis, latitude está sem separador de decimal está omitido. Faremos a correção divindo latitude por 1 milhão.&lt;/p&gt;
+&lt;p&gt;No caso de longitude, a situação é ainda pior. Há vários separadores e a variável foi lida como texto. Teremos que limpar todos os separadores, transformar a variável em número e, ao final, dividir por 1 milhão para colocar o separador no lugar certo.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) 
+Como utilizamos os nomes das próprias variáveis à esquerda da operação de transformação, produziremos uma substituição e não haverá novas colunas na base de dados.&lt;/p&gt;
+&lt;p&gt;Voltaremos ao verbo mutate no próximo tutorial e no exemplos abaixo.&lt;/p&gt;
+&lt;p&gt;Filtrando linhas
+Por vezes, queremos trabalhar apenas com um conjunto de linhas do nosso banco de dados. Por exemplo, se quisermos selecionar apenas escolas municipais de educação infantil, utilizamos o verbo &amp;lsquo;filter&amp;rsquo; com a condição desejada. Note que estamos criando um novo data frame (ou seja, um novo objeto) que contém a seleção de linhas produzida:&lt;/p&gt;
+&lt;p&gt;emeis &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;EMEI&amp;rdquo;)
+Além da igualdade, poderíamos usar outros símbolos: maior (&amp;gt;). maior ou igual (&amp;gt;=), menor (&amp;lt;), menor ou igual (&amp;lt;=) e diferente (!=) para selecionar casos. Para casos de NA, podemos usar a função is.na(), pois a igualdade &amp;lsquo;== NA&amp;rsquo; é inválida em R.&lt;/p&gt;
+&lt;p&gt;Vamos supor agora que todos centros de educação infantil (creche) da rede direta, indireta e conveniada. Como combinar condições?&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)
+Note que, para dizer que para combinarmos as condições de seleção de linha, utilizamos uma barra vertical. A barra é o símbolo &amp;ldquo;ou&amp;rdquo;, e indica que todas as observações que atenderem a uma ou outra condição serão incluídas.&lt;/p&gt;
+&lt;p&gt;Vamos supor que queremos estabelecer agora condições para a seleção de linhas a partir de duas variáveis. Por exemplo, queremos incluir as mesmas escolas já escolhidas e que também sejam da Diretoria Regional do Ipiranga. O símbolo da conjunção &amp;ldquo;e&amp;rdquo; é &amp;ldquo;&amp;amp;&amp;rdquo;. Veja como utilizá-lo:&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;Ao usar duas variáveis diferentes para filter e a conjunção &amp;ldquo;e&amp;rdquo;, podemos escrever o comando separando as condições por vírgula e dispensar o operador &amp;ldquo;&amp;amp;&amp;quot;:&lt;/p&gt;
+&lt;p&gt;creches_ipiranga &amp;lt;- escolas %&amp;gt;% 
+filter((tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;),
+dre == &amp;ldquo;DIRETORIA REGIONAL DE EDUCACAO IPIRANGA&amp;rdquo;)
+Você pode combinar quantas condições precisar. Se houver ambiguidade quanto à ordem das condições, use parênteses, como fizemos acima.&lt;/p&gt;
+&lt;p&gt;Vamos uma aplicação interessante dos dados com os quais trabalhamos.&lt;/p&gt;
+&lt;p&gt;Produzindo mapas no R
+Criamos acima um data frame que contém apenas centros de educação infantil com a informação de latitude e longitude já corrigida. Conseguimos &amp;ldquo;reduzir&amp;rdquo; e alterar os dados usando quatro &amp;ldquo;verbos&amp;rdquo; (funções) fundamentais de manipulação de dados: rename, select, mutate e filter.&lt;/p&gt;
+&lt;p&gt;Precisaremos do pacote ggmap e osmdata para &amp;ldquo;importar&amp;rdquo; mapas de rua de serviços da web (Google e Open Street Maps, por exemplo) para, depois, fazer a combinação dos mapas com os pontos (escolas, a partir da latitude e longitude).&lt;/p&gt;
+&lt;h1 id=&#34;installpackagesosmdata&#34;&gt;install.packages(&amp;lsquo;osmdata&amp;rsquo;)&lt;/h1&gt;
+&lt;h1 id=&#34;installpackagesggmap&#34;&gt;install.packages(&amp;lsquo;ggmap&amp;rsquo;)&lt;/h1&gt;
+&lt;p&gt;library(ggmap)
+library(osmdata)
+Sem entrar em detalhes, vamos utilizar as funções get_map e getbb para obter um mapa sobre o qual inseriremos nossos pontos.&lt;/p&gt;
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+maptype = &amp;ldquo;toner-background&amp;rdquo;,
+zoom = 13)
+Podemos plotar o mapa que baixamos com a função plot:&lt;/p&gt;
+&lt;p&gt;plot(map_sp)
+Mas ainda não é isso que queremos. Precisamos sobrepor ao mapa que baixamos os pontos correspondentes a cada uma dos CEIS. Veja como:&lt;/p&gt;
+&lt;p&gt;ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)
+Legal, não? Não muito bonito, mas estamos no caminho.&lt;/p&gt;
+&lt;p&gt;O código acima tem uma estrutura bastante diferente do que havíamos visto. Ele é parte de outra &amp;ldquo;gramática&amp;rdquo; do R, a &amp;ldquo;grammar o graphics&amp;rdquo; do pacote ggplot2. Veremos um pouco sobre ela em outro tutorial, mas vamos tentar destrinchar o código do mapa acima desde já.&lt;/p&gt;
+&lt;p&gt;Começamos plotando o mapa de São Paulo obtido nas APIs do Open Street Maps e Google com a função ggmap. Criamos, assim, a primeira camada do mapa e &amp;ldquo;organizará&amp;rdquo; o sistema de coordenadas. Com geom_point, adicionaremos pontos ao mapa. Os pontos vem do data frame &amp;ldquo;creches&amp;rdquo; &amp;ndash; por isso &amp;ldquo;data = creches&amp;rdquo; &amp;ndash; e a informação utilizada, &amp;ldquo;lat&amp;rdquo; e &amp;ldquo;lon&amp;rdquo;, faz parte da &amp;ldquo;aesthetics&amp;rdquo; do mapa &amp;ndash; por isso dentro do parênteses &amp;ldquo;aes&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Se você quiser aprender um pouco mais sobre mapas no R (e fazer mapas mais bonitos) aqui.&lt;/p&gt;
+&lt;p&gt;Fim
+Espero que com este tutorial você tenha se familiarizado com a linguagem R e compreendido como utilizá-la trabalhar com os dados abertos da educação municipal. Organizando o que fizemos em um único &amp;ldquo;bloco&amp;rdquo; de cógido, vemos que é preciso pouco código para fazer algo relevante:&lt;/p&gt;
+&lt;p&gt;library(tidyverse)
+library(ggmap)
+library(osmdata)&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- read_csv2(url_escolas) %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep) %&amp;gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+maptype = &amp;ldquo;toner-background&amp;rdquo;,
+zoom = 13)&lt;/p&gt;
+&lt;p&gt;ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)&lt;/p&gt;
+&lt;h1 id=&#34;group-by-summarise-arrange-e-slice&#34;&gt;Group by, Summarise, Arrange e Slice&lt;/h1&gt;
+&lt;h2 id=&#34;novos-verbos-e-dados-de-survey&#34;&gt;Novos verbos e dados de survey&lt;/h2&gt;
+&lt;p&gt;No tutorial passado vimos 4 dos principais verbos do &lt;em&gt;dplyr&lt;/em&gt;: &lt;em&gt;rename&lt;/em&gt;, &lt;em&gt;select&lt;/em&gt;, &lt;em&gt;mutate&lt;/em&gt; (para operações de colunas) e &lt;em&gt;filter&lt;/em&gt; (para seleção de casos). Não produzimos, entretanto, uma das operações mais importantes na manipulação de &lt;em&gt;data_frames&lt;/em&gt;: o agrupamento de casos a partir de uma ou mais variáveis. O agrupamento de casos em uma base de dados convencional é bastante simples, como veremos a seguir.&lt;/p&gt;
+&lt;h2 id=&#34;fake-data&#34;&gt;Fake data&lt;/h2&gt;
+&lt;p&gt;Para esta atividade, vamos trabalhar com um banco de dados falso criado para a atividade.&lt;/p&gt;
+&lt;p&gt;Abra o banco de dados usando &lt;em&gt;read_delim&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(tidyverse)
+url_fake_data &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/fake_data.csv&amp;quot;
+fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_names = T)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fakeland é uma democracia muito estável que realiza eleições presidenciais a cada 4 anos. Vamos trabalhar com o conjunto de dados falso de cidadãos individuais de Fakeland que contém informações sobre suas características básicas e opiniões / posições políticas (falsas). A descrição das variáveis está abaixo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;age&lt;/em&gt;: idade&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;sex&lt;/em&gt;: sexo&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;educ&lt;/em&gt;: nível educacional&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;income&lt;/em&gt;: renda mensal medida em dinheiro falso (FM \ $)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;savings&lt;/em&gt;: Dinheiro falso total (FM \ $) na conta de poupança&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;marriage&lt;/em&gt;: estado civil (sim = casado)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;kids&lt;/em&gt;: número de filhos&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;party&lt;/em&gt;: afiliação partidária&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;turnout&lt;/em&gt;: intenção de votar nas próximas eleições&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vote_history&lt;/em&gt;: número de eleições presidenciais votou desde as eleições de 2002&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;economy&lt;/em&gt;: opinião sobre o desempenho da economia nacional&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;incumbent&lt;/em&gt;: opinião sobre o desempenho do presidente&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;candidate&lt;/em&gt;: candidato preferido&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;agrupando-com-_filter_-e-_pull_&#34;&gt;Agrupando com &lt;em&gt;filter&lt;/em&gt; e &lt;em&gt;pull&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Vamos supor que nos interessa comparar a renda entre grupos de sexo. Poderíamos, rapidamente selecionar as linhas de um dos grupos de sexo com o verbo &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Female&amp;quot;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Com o comando &lt;em&gt;pull&lt;/em&gt;, podemos &amp;lsquo;retirar&amp;rsquo; de um data frame uma coluna e tratá-la como um vetor destacado. &lt;em&gt;pull&lt;/em&gt; é mais um (de vários) verbos do &lt;em&gt;dplyr&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  pull(income)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E, se adicionarmos à &amp;lsquo;pipeline&amp;rsquo; um comando simples de estatística descritiva &amp;ndash; média, por exemplo &amp;ndash; calculamos uma estatística para o grupo para o qual selecionamos com &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  pull(income) %&amp;gt;%
+  mean()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que não utilizamos o símbolo de atribuição &amp;lsquo;&amp;lt;-&amp;rsquo; e, portanto, não armazenamos o resultado em nenhum objeto.&lt;/p&gt;
+&lt;p&gt;Note também que podemos adicionar à pipeline qualquer função que não seja &amp;lsquo;verbo&amp;rsquo; do &lt;em&gt;dplyr&lt;/em&gt;, como comando &lt;em&gt;mean&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Essa estratégia funciona para calcular uma medida qualquer para um grupo. Mas, em geral, interessa &amp;lsquo;sumarizar&amp;rsquo; um variável &amp;ndash; como renda &amp;ndash; por uma variável de grupo &amp;ndash; como sexo &amp;ndash; sem destacar cada uma das categorias. Vamos ver como fazer isso.&lt;/p&gt;
+&lt;h2 id=&#34;_summarise_&#34;&gt;&lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Uma maneira altenartiva ao que acabamos de realizar é utilizar o verbo &lt;em&gt;summarise&lt;/em&gt;. Com ele, não precisamos extrair a variável do data frame para gerar um sumário estatístico. Veja como é simples:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  summarise(media_homens = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Female&amp;quot;) %&amp;gt;%
+  summarise(media_mulheres = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;agrupando-com-_group_by_-by-e-_summarise_&#34;&gt;Agrupando com &lt;em&gt;group_by&lt;/em&gt; by e &lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Para agrupar os dados por uma ou mais variáveis na &amp;lsquo;gramática&amp;rsquo; do &lt;em&gt;dplyr&lt;/em&gt; utilizamos o verbo &lt;em&gt;group_by&lt;/em&gt; em combinação com &lt;em&gt;summarise&lt;/em&gt;. Veja um exemplo antes de detalharmos seu uso:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que o resultado é uma tabela de duas linhas que contém a média de renda para grupo de sexo. O primeiro passo é justamente indicar qual é a variável &amp;ndash; discreta &amp;ndash; pela qual queremos agrupar os dados. Fazemos isso com &lt;em&gt;group_by&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Na sequência, utilizamos &lt;em&gt;summarise&lt;/em&gt; para criar uma lista das operações que faremos em outras variáveis ao agrupar os dados. Por exemplo, estamos calculando a média da renda, que aparecerá com o nome &amp;lsquo;media_renda&amp;rsquo;, para cada um dos grupos de sexo.&lt;/p&gt;
+&lt;p&gt;Execute novamente o código acima e observe atentamente sua estrutura antes de avançar.&lt;/p&gt;
+&lt;p&gt;O verbo &lt;em&gt;summarise&lt;/em&gt; permite mais de uma operação por agrupamento. Por exemplo, podemos calcular o desvio padrao da renda, a media da idade (&amp;lsquo;age&amp;rsquo;) e a soma do número de eleições nas quais votou (&amp;lsquo;vote_history&amp;rsquo;):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media_renda = mean(income),
+            stdev_renda = sd(income),
+            media_idade = mean(age),
+            soma_eleicoes = sum(vote_history))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Simples, não? O comando &lt;em&gt;summarise&lt;/em&gt; é bastante flexível e aceita diversas operações. Veremos as mais comuns adiante.&lt;/p&gt;
+&lt;p&gt;E se quisermos, agora, utilizar mais de uma variável para agrupar os dados? Por exemplo, e se quisermos agrupar por sexo e candidato de preferência, como fazemos?&lt;/p&gt;
+&lt;p&gt;Basta adicionar outra variável dentro do comando &lt;em&gt;group_by&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observe bem a estrutura dos resultados que obtivemos. Em primeiro lugar, o resultado é sempre um data frame. Sempre que estivermos preparando os dados para gerar tabelas ou com gráficos, como veremos no tutorial seguinte, produziremos um data frame para servir de &amp;lsquo;input&amp;rsquo; para o gráfico ou tabela.&lt;/p&gt;
+&lt;p&gt;Em segundo, cada variável utilizada para agrupamento aparece como uma coluna diferente no novo data frame. Os dados estão &amp;lsquo;colapsados&amp;rsquo; ou &amp;lsquo;achatados&amp;rsquo; em um número de linhas que corresponde ao total de combinações de categorias das variáveis de agrupamento (por exemplo, &amp;ldquo;Female e Rilari&amp;rdquo;, &amp;ldquo;Female e Trampi&amp;rdquo;, etc).&lt;/p&gt;
+&lt;p&gt;Se pararmos para pensar, o data frame resultante do último comando tem exatamente o número de células de uma tabela de duas entradas (&amp;lsquo;crosstab&amp;rsquo;), mas as informações das margens da tabela estão como variáveis. Veremos como modificar isso adiante.&lt;/p&gt;
+&lt;p&gt;Finalmente, cada nova variável gerada com &lt;em&gt;summarise&lt;/em&gt; em nosso data frame &amp;lsquo;achatado&amp;rsquo; recebe uma coluna. Para &amp;lsquo;sumarizar&amp;rsquo; uma variável &amp;ndash; tirar média, somatória, contar, etc &amp;ndash; precisamos sempre de uma função de sumário.&lt;/p&gt;
+&lt;h2 id=&#34;funções-de-sumário-estatístico&#34;&gt;Funções de sumário estatístico&lt;/h2&gt;
+&lt;p&gt;Vamos ver exemplos das funções de sumário estatístico mais utilizadas dentro do verbo &lt;em&gt;summarise&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;1- Média&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2- Desvio padrão&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(desvpad = sd(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3- Mediana&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(mediana = median(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4- Quantis (no exemplo, quantis 10%, 25%, 75%, 90%)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(quantil_10 = quantile(income, probs = 0.1),
+            quantil_25 = quantile(income, probs = 0.25),
+            quantil_75 = quantile(income, probs = 0.75),
+            quantil_90 = quantile(income, probs = 0.9))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5- Mínimo e máximo&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(minimo = min(income),
+            maximo = max(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;6- Contagem e soma&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(contagem = n(),
+            soma = sum(age))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Importante: quando houver algum &amp;ldquo;NA&amp;rdquo; (missing value) em uma variável numérica, é preciso utilizar o argumento &amp;ldquo;na.rm = TRUE&amp;rdquo; dentro da função de sumário. Veja como ficaria o código caso houvesse algum &amp;ldquo;NA&amp;rdquo;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media = mean(income, na.rm = TRUE))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A sessão Useful &lt;a href=&#34;https://r4ds.had.co.nz/transform.html#summarise-funs&#34;&gt;Summary Functions&lt;/a&gt; do livro R for Data Science traz uma relação mais completa de funçoes que podem ser usandas com summarise. O &lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf&#34;&gt;“cheatsheet” da RStudio&lt;/a&gt; oferece uma lista para uso rápido.&lt;/p&gt;
+&lt;h2 id=&#34;transformando-um-agrupamento-em-um-crosstab-e-exportando&#34;&gt;Transformando um agrupamento em um &amp;ldquo;crosstab&amp;rdquo; e exportando&lt;/h2&gt;
+&lt;p&gt;Vamos retomar o exemplo do agrupamento por duas variáveis, sexo e candidato de preferência:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Esse formato não costuma ser o usual em apresentação de dados. O mais comum é termos a informação que consta em nossas duas primeiras colunas como margens em uma tabela de duas entradas.&lt;/p&gt;
+&lt;p&gt;Na linguagem de manipulação de dados, o resultado acima está no formato &amp;ldquo;long&amp;rdquo; e todas as variáveis são representadas como colunas. Uma tabela de 2 entradas corresponde ao formato &amp;ldquo;wide&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Há dois verbos no &lt;em&gt;dplyr&lt;/em&gt; que transformam &amp;ldquo;long&amp;rdquo; em &amp;ldquo;wide&amp;rdquo; e vice-versa: &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt;. Como &lt;em&gt;spread&lt;/em&gt;, tranformamos o nosso resultado acima na tabela desejada:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  spread(sex, media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;spread&lt;/em&gt; precisa de 2 argumentos: a &amp;ldquo;key&amp;rdquo;, que a variável que irá para a margem superior da tabela, e &amp;ldquo;value&amp;rdquo;, que é a variável que ficará em seu conteúdo.&lt;/p&gt;
+&lt;p&gt;É fácil, inclusive, exportá-la para um editor de planilhas com a função &lt;em&gt;write_csv&lt;/em&gt; (do pacote &lt;em&gt;readr&lt;/em&gt;) ao final do pipeline:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  spread(sex, media_renda) %&amp;gt;%
+  write_csv(&amp;quot;tabela_candidato_sexo_renda.csv&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vá à sua pasta de trabalho e verifique que sua tabela está lá.&lt;/p&gt;
+&lt;p&gt;Veja que, como introduzimos um comando de exportação ao final do pipelina, não geramos nenhum objeto. Não há símbolo de atribuição em nosso código. Esse é um dos objetivo do uso do pipe (%&amp;gt;%): reduzir o número de objetos intermediários gerados.&lt;/p&gt;
+&lt;h3 id=&#34;spread-e-gather-caindo-em-desuso&#34;&gt;Spread e Gather caindo em desuso&lt;/h3&gt;
+&lt;p&gt;Há notícias de que os verbos &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt; cairão em desuso. Seus substituos serão &lt;em&gt;pivot_wider&lt;/em&gt; e &lt;em&gt;pivot_longer&lt;/em&gt;. As 4 funções são parte do pacote &lt;em&gt;tidyr&lt;/em&gt;, componente do &lt;em&gt;tidyverse&lt;/em&gt;. O uso das novas funções é bem similar ao das antigas, e veja como fica a substituição de &lt;em&gt;spread&lt;/em&gt; por &lt;em&gt;pivot_wider&lt;/em&gt; no código que produzimos. É possível que sua instalação do &lt;em&gt;tidyverse&lt;/em&gt; não contenha as novas funções e que o código abaixo não funcione.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  pivot_wider(names_from = sex,
+              values_from = media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mutate-com-group-by&#34;&gt;Mutate com Group By&lt;/h2&gt;
+&lt;p&gt;Vamos supor que queremos manter os dados no mesmo formato, ou seja, sem &amp;lsquo;achatá-los&amp;rsquo; por uma variável discreta, mas queremos uma nova coluna que represente a soma de uma variável por grupo &amp;ndash; para calcular percentuais de renda dentro de cada grupo de sexo, por exemplo. Vamos observar o resultado do uso conjunto de &lt;em&gt;group_by&lt;/em&gt; e &lt;em&gt;mutate&lt;/em&gt;. Para podermos observar o resultado, vamos armazenar os novos dados em um objeto chamado &amp;lsquo;fake2&amp;rsquo; e utilizar o comando &lt;em&gt;View&lt;/em&gt;. A última coluna de nossos dados agora é a soma da renda dentro de cada grupo.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+  group_by(sex) %&amp;gt;%
+  mutate(renda_grupo = mean(income))
+
+View(fake2)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando utilizarmos &lt;em&gt;group_by&lt;/em&gt; sem o &lt;em&gt;summarise&lt;/em&gt;, é importante &amp;ldquo;desagrupar&amp;rdquo; os data frame, ou &amp;ldquo;desligar o agrupamento&amp;rdquo;. Caso contrário, o agrupamento continuará ativo e afetando todas as operações seguintes. Repetindo o código com o desagrupamento:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+  group_by(sex) %&amp;gt;%
+  mutate(renda_grupo = mean(income)) %&amp;gt;%
+  ungroup()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mais-verbos-do-_dplyr_-_arrange_-e-_slice_&#34;&gt;Mais verbos do &lt;em&gt;dplyr&lt;/em&gt;: &lt;em&gt;arrange&lt;/em&gt; e &lt;em&gt;slice&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Se quisermos ordenar, de forma crescente, nossos dados por idade, por exemplo, basta usar o comando &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Em ordem decrescente teríamos:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(-age)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisermos &amp;lsquo;desempatar&amp;rsquo; o ordenamento por idade por uma segunda variável, basta adicioná-la ao &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(-age, vote_history)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando trabalhamos com bases de dados de survey faz pouco sentido ordená-las. Entretanto, quando trabalhamos numa escala menor, com poucas linhas, ou com a produção de tabelas, como nos exemplos acima, convém ordenar a tabela (veja que, neste ponto, faz pouco sentido diferenciar tabela de data frame, pois se tornam sinônimos) por alguma variável de interesse.&lt;/p&gt;
+&lt;p&gt;Por exemplo, podemos ordenar os grupos de candidato de preferência por média de renda:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  group_by(candidate) %&amp;gt;% 
+  summarise(media_renda = mean(income)) %&amp;gt;% 
+  arrange(media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fácil e útil.&lt;/p&gt;
+&lt;p&gt;Finalmente, vamos supor que queremos extrair da base de dados apenas os 10 indivíduos de menor idade Como &amp;ldquo;recortar&amp;rdquo; linhas dos dados pela posição das linhas?&lt;/p&gt;
+&lt;p&gt;Em primeiro lugar, vamos ordenar os dados por idade. A seguir, vamos aplicar o verbo &lt;em&gt;slice&lt;/em&gt; para recortar as 10 primeiras linhas:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age) %&amp;gt;% 
+  slice(1:10)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisessemos recortar do 25, por exemplo, ao último, sem precisar especificar qual é o número da última posição, utilizamos &lt;em&gt;n()&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age) %&amp;gt;% 
+  slice(25:n())
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que a aplicação de &lt;em&gt;slice&lt;/em&gt; não afeta em nada as colunas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Documentos parametrizados</title>
       <link>https://retacourses.netlify.app/cursos/intro_r/reprodutibility/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>

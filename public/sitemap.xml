@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://retacourses.netlify.app/disciplinas/st/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,8 +15,6 @@
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/urban_analytics/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/st/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_adm/</loc>
   </url><url>
@@ -271,12 +272,21 @@
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/sinc1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/st/sinc1/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</loc>
+    <lastmod>2021-05-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/sinc2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/sinc2/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/map/</loc>
