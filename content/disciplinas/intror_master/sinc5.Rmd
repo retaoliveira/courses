@@ -17,7 +17,6 @@ output:
 type: docs
 ---
 
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_url('https://intror2021.github.io/class05/', height = "500px")
 ```
