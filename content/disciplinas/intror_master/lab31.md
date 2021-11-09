@@ -19,7 +19,7 @@ A **Unidade 3** é estruturada considerando os seguintes tópicos:
 
 1. Baixe o arquivo .Rmd e abra no RStudio. 
 
-[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=6mPEvi)
+[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EcU3lYCIuexHvd6r57WRh8kBI8DepOiAIe1rWevMHgT-nA)
 
 2. Siga as diretrizes da atividade. 
 
