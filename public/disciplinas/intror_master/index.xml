@@ -535,7 +535,49 @@ plastic_waste %&amp;gt;%
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
       
       <guid>https://retacourses.netlify.app/disciplinas/intror_master/atividade4/</guid>
-      <description></description>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;introdução-ao-r---processamento-com-matrizes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Introdução ao R - Processamento com Matrizes&lt;/h1&gt;
+&lt;p&gt;Lucélia Vaz&lt;/p&gt;
+&lt;div id=&#34;retrospecto-e-agenda&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Retrospecto e agenda&lt;/h2&gt;
+&lt;p&gt;1 - O que é o ambiente R e para que serve?&lt;/p&gt;
+&lt;p&gt;2 - Tipos básicos de dados no R.&lt;/p&gt;
+&lt;p&gt;3 - Criando e nomeando vetores no R.&lt;/p&gt;
+&lt;p&gt;4 - Subconjuntos de vetores no R.&lt;/p&gt;
+&lt;p&gt;5 - Como criar e nomear matrizes no R.&lt;/p&gt;
+&lt;p&gt;6 - Operações aritméticas com matrizes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;recursos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Recursos&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/SWxoJqTqo08&#34;&gt;Vídeos DataCamp&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercício&lt;/h2&gt;
+&lt;p&gt;Os dados abaixo correspondem às observações sobre Despesa de Consumo Pessoal e Produto Interno Bruto em bilhões de dólares de 2000, para os Estados Unidos. Os dados foram obtidos no livro do Gujarati, intitulado Econometria básica. Existe uma teoria que estabelece uma relação entre o consumo e a renda de um país (medida em termos do Produto Interno Bruto). Partindo do pressuposto que, esta é uma relação linear, temos que o a Despesa de consumo pessoal (Y) guarda a seguinte relação com o Produto Interno Bruto (X).&lt;/p&gt;
+&lt;p&gt;Y= β0 + β1X&lt;/p&gt;
+&lt;p&gt;Com base no exposto acima, siga as orientações abaixo para obter os valores de β0 e β1 e, assim, determinar a equação da reta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;base-de-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Base de dados&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;as.matrix(RendaConsumo)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;atividade&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Atividade&lt;/h2&gt;
+&lt;p&gt;a - Crie um vetor de uns que tenha um número de entradas igual ao número de linhas da matriz acima. Pode denominá-lo “uns”.&lt;/p&gt;
+&lt;p&gt;b - Crie uma matriz juntando o vetor de “uns” e a terceira coluna da matriz acima. Pode denominá-la X.&lt;/p&gt;
+&lt;p&gt;c - Crie um vetor a partir da segunda coluna da matriz acima. Pode denominá-lo Y.&lt;/p&gt;
+&lt;p&gt;d - Realize o seguinte cálculo: (X&lt;sup&gt;T&lt;/sup&gt;X)&lt;sup&gt;−1&lt;/sup&gt; X&lt;sup&gt;T&lt;/sup&gt;Y.&lt;/p&gt;
+&lt;p&gt;e - Identifique o β&lt;sub&gt;0&lt;/sub&gt; e o β&lt;sub&gt;1&lt;/sub&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
