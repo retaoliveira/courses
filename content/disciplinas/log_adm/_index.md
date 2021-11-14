@@ -67,7 +67,7 @@ Os encontros síncronos acontecerão nas **segundas-feiras**, de **20:50 às 22:
 | 03/11              |2h|KPIs em gestão de processos de produção e suprimento   
 | 10/11              |2h|Nível de serviço logístico
 | 22/11              |2h|Logística urbana.
-| 29/11              |2h|Logística urbana.
+| **01/12** (quarta-feira)              |2h|Logística urbana.
 | 06/12              |2h|Integração logística e sistemas de informação (ICT)
 | 15/12              |2h|Transportes e distribuição física.   
 | 05/01              |2h|Transportes e distribuição física.   
@@ -76,9 +76,7 @@ Os encontros síncronos acontecerão nas **segundas-feiras**, de **20:50 às 22:
 | 24/01              |2h|Localizações logísticas
 | 31/01              |2h|Localizações logísticas
 | 07/02              |2h|Custos logísticos.
-| 14/02              |2h|Custos logísticos.
-| 21/02              |2h|Logística reversa, verde e sustentável.
-| 28/02              | |Exame especial. 
+| 14/02              |2h|Logística reversa, verde e sustentável.
 | **Total de Horas** |        |34 horas             |
 
 ## Proposta de avaliação da aprendizagem
@@ -92,9 +90,9 @@ Pontos|	Entrega|	Atividade
 10| 22/12 | Estudos Autônomos 4 - Gestão de Transportes
 10| 19/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
 10| 16/02 | Estudos Autônomos 6 - Redes Logísticas e Custos
-10| 23/02 | Estudos Autônomos 7 - Multivarejo e Omnichannel
+10| 14/02 | Estudos Autônomos 7 - Multivarejo e Omnichannel
 20|	01/12	| Projeto incremental 1
-20|	23/02 |	Projeto incremental 2
+20|	14/02 |	Projeto incremental 2
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
