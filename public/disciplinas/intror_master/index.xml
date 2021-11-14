@@ -561,7 +561,7 @@ plastic_waste %&amp;gt;%
 &lt;div id=&#34;exercício&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exercício&lt;/h2&gt;
 &lt;p&gt;Os dados abaixo correspondem às observações sobre Despesa de Consumo Pessoal e Produto Interno Bruto em bilhões de dólares de 2000, para os Estados Unidos. Os dados foram obtidos no livro do Gujarati, intitulado Econometria básica. Existe uma teoria que estabelece uma relação entre o consumo e a renda de um país (medida em termos do Produto Interno Bruto). Partindo do pressuposto que, esta é uma relação linear, temos que o a Despesa de consumo pessoal (Y) guarda a seguinte relação com o Produto Interno Bruto (X).&lt;/p&gt;
-&lt;p&gt;Y= β0 + β1X&lt;/p&gt;
+&lt;p&gt;Y= β&lt;sub&gt;0&lt;/sub&gt; + β&lt;sub&gt;1&lt;/sub&gt;X&lt;/p&gt;
 &lt;p&gt;Com base no exposto acima, siga as orientações abaixo para obter os valores de β0 e β1 e, assim, determinar a equação da reta.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;base-de-dados&#34; class=&#34;section level2&#34;&gt;
@@ -1111,6 +1111,570 @@ dados2 &amp;lt;- read_csv(&amp;quot;&amp;quot;)
 &lt;p&gt;Qual país ganhou mais medalhas no volei masculino? Qual país ganhou mais medalhas no volei feminino?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab 4.1</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab41/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab41/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;juntando-dados&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Juntando dados&lt;/h1&gt;
+&lt;p&gt;Nessa atividade você aprenderá a fazer a união e a junção (cruzamento) de dois dataframes usando o &lt;code&gt;tidyverse&lt;/code&gt; e o pacote &lt;code&gt;nycflights13&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;união de dados&lt;/strong&gt; é mais intuitiva. Basta ter a mesma quantidade de campos e que estes estejam “alinhados”. A função mais usada para isso é o famoso &lt;code&gt;rbind()&lt;/code&gt; (Row Bind). Caso os campos tenham exatamente os mesmos nomes e tipo, o &lt;code&gt;rbind()&lt;/code&gt; consegue fazer a união perfeitamente.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;cruzamento de dados (junção)&lt;/strong&gt; é um pouco mais complexo, mas nem por isso chega a ser algo difícil.&lt;/p&gt;
+&lt;p&gt;Para entender-se como fazer “joins” (cruzamentos), é preciso compreender-se o conceito de chave. Entenda chave como uma coluna que está presente da mesma forma em dois conjuntos de dados distintos. O conceito completo de chave é bem mais complexo que isto, mas, para começarmos a entender e usar os joins, basta usar essa intuição.&lt;/p&gt;
+&lt;p&gt;Tendo esse conceito simplificado de chave em mente, a primeira coisa que se deve fazer quando for preciso cruzar dois conjuntos de dados é tentar identificar quais os campos chaves, ou seja, quais campos estão presentes nos dois grupos.&lt;/p&gt;
+&lt;p&gt;O que acontece quando nem todos os códigos de um grupo estão no outro? E quando um grupo tem códigos repetidos em várias linhas? Para responder a essas e outras perguntas precisamos conhecer os diferentes tipos de joins. Existe pelo menos uma dezena de tipos de &lt;em&gt;joins&lt;/em&gt;, mas 90% das vezes você precisará apenas dos tipos básicos que explicaremos a seguir. Usaremos o pacote dplyr para aplicar os &lt;em&gt;joins.&lt;/em&gt; O R base possui a função &lt;code&gt;merge()&lt;/code&gt; para &lt;em&gt;joins&lt;/em&gt;, se tiver curiosidade procure mais sobre ela depois.&lt;/p&gt;
+&lt;div id=&#34;inner-join-ou-apenas-join&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inner Join (ou apenas Join)&lt;/h2&gt;
+&lt;p&gt;Trata-se do &lt;em&gt;join&lt;/em&gt; mais simples, mais básico e mais usado dentre todos os outros tipos. O seu comportamento mantém no resultado apenas as linhas presentes nos dois conjuntos de dados que estão sendo cruzados. O inner join funciona da seguinte forma:&lt;/p&gt;
+&lt;p&gt;A tabela final, após o cruzamento, conterá as linhas com as chaves que estiverem em AMBOS os conjuntos de dados. As linhas com chaves que não estão em ambos serão descartadas. Esta característica torna o &lt;em&gt;inner join&lt;/em&gt; muito útil para fazer-se filtros.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;left-outer-join&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Left Outer Join&lt;/h2&gt;
+&lt;p&gt;Chama-se &lt;em&gt;left outer join&lt;/em&gt; pois todos os registros do “conjunto à esquerda” estarão presentes no resultado final, além dos registros à direita que coincidirem na chave.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;right-outer-join&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Right Outer Join&lt;/h2&gt;
+&lt;p&gt;O princípio é EXATAMENTE o mesmo do left join. A única diferença é a permanência dos registros do conjunto à direita. Podemos chegar ao mesmo resultado anterior apenas mudando os data frames de posição na manipulação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;full-outer-join&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Full Outer Join&lt;/h2&gt;
+&lt;p&gt;Existem, ainda, as situações em que é necessário preservar todos os registros de ambos os conjuntos de dados. O full join tem essa característica. Nenhum dos conjuntos de dados perderá registros no resultado final, isto é, quando as chaves forem iguais, todos os campos estarão preenchidos. Quando não houver ocorrência das chaves em ambos os lados, será informado &lt;code&gt;NA&lt;/code&gt; em qualquer um deles.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercícios&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercícios&lt;/h2&gt;
+&lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;Diretrizes gerais:&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Salve o .Rmd e &lt;strong&gt;submeta-o por meio do email &lt;a href=&#34;mailto:renataoliveira@gmail.com&#34; class=&#34;email&#34;&gt;renataoliveira@gmail.com&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;/hr&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-1.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 1.&lt;/h3&gt;
+&lt;p&gt;Utilizando os dataframes abaixo, gere:
+a) um dataframe com os participantes
+b) um dataframe com os aprovados
+c) um dataframe com os eliminados&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;participantes &amp;lt;- data.frame(
+  Nome = c(&amp;#39;Carlos&amp;#39;, &amp;#39;Maurício&amp;#39;, &amp;#39;Ana Maria&amp;#39;, &amp;#39;Rebeca&amp;#39;, &amp;#39;Patrícia&amp;#39;),
+  Estado = c(&amp;#39;Brasília&amp;#39;, &amp;#39;Minas Gerais&amp;#39;, &amp;#39;Goiás&amp;#39;, &amp;#39;São Paulo&amp;#39;, &amp;#39;Ceará&amp;#39;),
+  Idade = c(23, 24, 22, 29, 28)
+)
+
+aprovados &amp;lt;- data.frame(
+  Nome = c(&amp;#39;Carlos&amp;#39;, &amp;#39;Patrícia&amp;#39;),
+  Pontuacao = c(61, 62)
+)
+
+eliminados &amp;lt;- data.frame(
+  Nome = c(&amp;#39;Maurício&amp;#39;, &amp;#39;Ana Maria&amp;#39;, &amp;#39;Rebeca&amp;#39;),
+  Pontuacao = c(49, 48, 48)
+)
+
+participantes&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##        Nome       Estado Idade
+## 1    Carlos     Brasília    23
+## 2  Maurício Minas Gerais    24
+## 3 Ana Maria        Goiás    22
+## 4    Rebeca    São Paulo    29
+## 5  Patrícia        Ceará    28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Créditos da atividade:
+&lt;a href=&#34;https://cdr.ibpad.com.br/juntando-dados.html&#34;&gt;Ciência de Dados com R - Introdução. Autores: Saulo Guerra, Paulo Felipe de Oliveira, Robert McDonnell e Sillas Gonzaga&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab 4.3</title>
+      <link>https://retacourses.netlify.app/disciplinas/intror_master/lab43/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/intror_master/lab43/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;recuperando-ambiente-da-sessão-anterior&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Recuperando ambiente da sessão anterior&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;            #---
+    getwd() # O diretório de trabalho é ...
+            #---
+
+    #---
+    # se necessário use o comando ...
+    #
+    #       setwd   [ver exemplo de uso no help]
+    #
+    # ... para mudar ou definir o diretorio de trabalho
+    #---
+
+    #---
+    #
+    #   carga de variaveis, funções, etc, da sessão anterior,
+    #   que havíamos armazenado no ARQUIVO ProjetoIniAmbiente.RData
+    #
+    #---
+
+      load(&amp;quot;ProjetoIniAmbiente.RData&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;matrizes-vetores-especiais&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Matrizes: vetores especiais&lt;/h1&gt;
+&lt;div id=&#34;basics&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Basics&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        matrix( data= 1:20, nrow= 4)
+        matrix( data= 1:20, nrow= 5)
+        matrix( data= 1:20, 4)
+        matrix( data= 1:20, ncol= 4)
+        matrix( data= 1:20, , 4)
+  
+      #---
+      # OBS IMPORTANTE: ordem DEFAULT de preenchimento: por coluna 
+      #---
+  
+        mA= matrix( data= 1:20, nrow= 4, byrow= T)
+          mA
+  
+      #---
+      # Reconciliando: a operação transposição 
+      #---
+  
+        t(mA)
+  
+      #---
+      # Matrizes de caracteres  ... 
+      #---
+      
+        mChar= matrix( data= month.abb, nrow= 4)
+      
+      #---
+      # ... ou de logicos 
+      #---
+      
+        vTemp= ((1:12)%%4) == 1
+          mLog= matrix( vTemp, nrow= 4)
+          mLog
+      
+          #---
+          # + direto: 
+          #---
+          
+            matrix( ((1:12)%%4) == 1,  4)
+  
+      #---
+      #
+      #   OBS Elementos de uma matriz sempre têm mesmo tipo. 
+      #       Se não for assim são modificados! 
+      #       Na marra e na surdina.
+      #
+      #---
+  
+        matrix( c(1:10,T,T),  4)
+        matrix( c(1:10,&amp;quot;T&amp;quot;,T),  4)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operações-elementares-i-matrizes-e-escalares&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Operações elementares I: Matrizes e Escalares&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;  mA
+        2*mA
+        sqrt(mA)
+        mA^(1/3)
+        2^mA
+        mA&amp;gt;5
+        paste(mA, &amp;quot;1&amp;quot;)
+        c(mA, &amp;quot;1&amp;quot;)
+        c(mA, 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operações-elementares-ii-matrizes-e-vetores&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Operações elementares II: Matrizes e Vetores&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        mA= t(mA)
+        mA
+                    #---
+        mA + 1:20   # Business as usual
+                    #---
+  
+                    #---
+        mA + 1:10   # 2 {length(mA) / length(1:10) } Ciclos
+                    #---
+  
+                    #---
+        mA + 1:16   # Numero não inteiro de ciclos
+                    #---
+          1:20+1:16
+          matrix( 1:20+1:16, 5 )
+  
+      #---
+      # outro exemplo de ciclo
+      #---
+        mB= matrix( 1:12, 4 )
+        (1:3)^mB&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operações-elementares-iii-matrizes-e-matrizes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Operações elementares III: Matrizes e Matrizes&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        mB
+        mA
+        mA + mB
+    
+        mA= matrix(1:16, 4)
+        mC= matrix(1:8, 4)
+          mA+mC
+  
+      #---
+      # Produto matricial
+      #---
+    
+        dim(mA)
+        dim(mB)
+          mA%*%mB
+  
+      #---
+      # Inversa
+      #---
+  
+        solve(mA)
+        set.seed(1)
+          mD= matrix(runif(16), 4)
+          solve(mD)
+        mD %*% solve(mD)
+        round(mD %*% solve(mD), digits=6)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;submatrizes-etc&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submatrizes , etc&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        mA
+            mA[1,3]         # elemento [1,3]
+            mA[2,]          # segunda linha
+            mA[1:2,]        # primeira e segunda linhas
+            mA[,c(1,3)]     # primeira e terceira colunas
+            mA[1:2,c(1,3)]  # Uma SubMatriz
+  
+      #---
+      # Lembrando subvetores
+      #---
+        y= 10*(1:11)
+          length(y)
+          y
+          ehPar= c(F, T, F, T, F, T, F, T, F, T, F)
+          y[ehPar]
+          ehPar= ((1:length(y))%%2 == 0)
+  
+      #---
+      # Análogo pra formação de submatrizes
+      #---
+        mD= round(100*mD, 0)
+            row(mD)
+            col(mD)
+          LinMaiorQCol= row(mD)&amp;gt;col(mD)
+        mD[LinMaiorQCol]
+        mD
+        mD[row(mD)==col(mD)]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;documentando-vetores&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Documentando vetores&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        y=1:12
+        names(y)= month.abb
+        y
+        y[c(2,4)]
+        y[c(&amp;quot;Jan&amp;quot;, &amp;quot;Feb&amp;quot;, &amp;quot;Jul&amp;quot;)]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;documentando-matrizes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Documentando matrizes&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;        mA= matrix(1:20, 5)
+        dimnames(mA)= list(letters[1:5],month.abb[1:4])
+        mA
+        
+        summary(matrix(1:20, 5))
+        summary(mA)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;listas-uma-estrutura-mais-geral&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Listas: uma estrutura mais geral&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;  dadosDeGB= 
+    list( nome=&amp;quot;Giordanno Bruno&amp;quot;,
+          idade= 48,
+          ehCasado= F,
+          numerosPreferidos= c(pi, log(10)))
+
+    #---
+    # Obs:  Ao contrário de vetores e matrizes, 
+    #       NÃO é necessário que todas as componentes 
+    #       sejam de mesmo tipo
+    #---
+
+  #---
+  # recuperando componentes
+  #---
+
+    dadosDeGB[[2]] 
+    dadosDeGB$nome 
+    dadosDeGB[&amp;quot;nome&amp;quot;] 
+    dadosDeGB[c(&amp;quot;nome&amp;quot;,&amp;quot;idade&amp;quot;)] 
+
+                      #---
+    dadosDeGB[[1:2]]  # &amp;lt;=== Isso não dá pra fazer
+                      #---
+
+  #---
+  # incorporando componentes
+  #---
+    names(dadosDeGB)
+    dadosDeGB$anosDeEstudo= 40
+    names(dadosDeGB)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lgn-tcl-exercícios-de-simulação-e-a-função-apply&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;LGN &amp;amp; TCL : exercícios de simulação e a função apply&lt;/h2&gt;
+&lt;div id=&#34;ex-1-ybarra-converge-para-valor-esperado-de-y&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EX 1: yBarra converge para Valor Esperado de Y&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    set.seed(1)
+    smpSize= 50000
+    y= rpois(smpSize, lambda=.8)
+    vyBarra= cumsum(y)/1:smpSize
+
+    plot(1:smpSize, vyBarra, ylim= c(.75,.85),
+         type= &amp;quot;b&amp;quot;, pch=15, cex=.5,
+         xlab= &amp;quot;tamanho de amostra&amp;quot;,
+         main= paste(&amp;quot;Evolução das médias aritméticas de Poi(.8)\n&amp;quot;,
+                     &amp;quot;com o tamanho da amostra&amp;quot;) )
+      abline(h=.8, col=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ex-2-ybarra-não-converge-para-valor-esperado-de-y&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EX 2: yBarra não converge para Valor Esperado de Y&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    set.seed(2)
+    smpSize= 50000
+    y= rcauchy(smpSize)
+    vyBarra= cumsum(y)/(1:smpSize)
+    
+    plot(1:smpSize, vyBarra,  #ylim= c(.75,.85),
+         type= &amp;quot;b&amp;quot;, pch=15, cex=.5,
+         main= paste(&amp;quot;Evolução das médias aritméticas de Cauchys\n&amp;quot;,
+                     &amp;quot;com o tamanho da amostra&amp;quot;),
+         xlab=&amp;quot;tamanho de amostra&amp;quot;)
+    abline(h=0, col=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ex-3-n12ybarra---musigma-converge-em-distribuição-para-z&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EX 3: n^(1/2)(yBarra - mu)/sigma converge em distribuição para Z&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    set.seed(1)
+      smpSize= 500
+      nReplic= 400
+
+    mYs= matrix( rexp(smpSize*nReplic), smpSize)
+    vDeYbarras= apply(mYs, 2, mean)
+
+    plot(density(sqrt(smpSize)*(vDeYbarras-1), bw=&amp;quot;SJ&amp;quot;), 
+         main=&amp;quot;Densidade Estimada vs Normal&amp;quot;)
+      lines( seq(-3,3,,50), dnorm(seq(-3,3,,50)),
+             col=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ex-4-n12ybarra---mus-converge-em-distribuição-para-z&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EX 4: n^(1/2)(yBarra - mu)/s converge em distribuição para Z&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    set.seed(1)
+      smpSize= 800
+      nReplic= 2000
+    
+    mYs= matrix( rexp(smpSize*nReplic), smpSize)
+      vDeYbarras= apply(mYs, 2, mean)
+    #---
+    # Equivalente mas mais lento:
+    #   
+    #   vDeYbarras= rep(0, ncol(mYs)) 
+    #   for(j in 1:ncol(mYs)) {
+    #     vDeYbarras[j]= mean(mYs[,j])   
+    #   }
+    #---
+      vDeSs= apply(mYs, 2, sd)
+    
+    plot(density(sqrt(smpSize)*(vDeYbarras-1)/vDeSs, bw=&amp;quot;SJ&amp;quot;), 
+         main=&amp;quot;Densidade Estimada vs Normal&amp;quot;)
+    lines( seq(-3,3,,50), dnorm(seq(-3,3,,50)),
+           col=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ex-5-just-for-fun&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EX 5: Just for fun&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;     lix=   seq(-pi,pi,,2^13)
+      plot(  2^.5*cos(lix)/(1 + sin(lix)^2),
+             2^.5*sin(lix)*cos(lix)/(1 + sin(lix)^2),
+             type=&amp;quot;l&amp;quot;, xlab=&amp;quot;&amp;quot;, ylab=&amp;quot;&amp;quot;,
+             main= &amp;quot;A Lemniscata de Jacobo Bernoulli&amp;quot;,
+             col= rgb( .95, .55, .55),
+             col.main=&amp;quot;blue&amp;quot;, axes=F)
+      nCurv= 16
+      escala= seq(1, .95, , nCurv)
+      for(   knd in 2:nCurv  ) {
+        lines( escala[knd]*2^.5*cos(lix)/(1 + sin(lix)^2),
+               escala[knd]*2^.5*cos(lix)*sin(lix)/(1 + sin(lix)^2),
+               col=
+                 rgb( .95,
+                      .3+.25*knd/(1+nCurv),
+                      .3+.25*knd/(1+nCurv) ),
+               lwd=3) }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dataframes-meio-listas-e-meio-matrizes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dataframes: meio listas e meio matrizes&lt;/h2&gt;
+&lt;div id=&#34;importando-dados&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Importando dados&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    #---
+    #   Um exemplo
+    #
+    #
+    #   1.  dados usados em Stock &amp;amp; Watson
+    #
+    #   2.  http://wps.aw.com/aw_stock_ie_2/50/13016/3332253.cw/index.html
+    #
+    #   3.  Baixar os dois arquivos relativos a
+    #
+    #           &amp;quot;California Test Score Data Used in Chapters 4-9&amp;quot;
+    #
+    #       no diretório do projeto em q vc está trabalhando.
+    #
+    #   4.  Um deles: formato= XL [extensão= .xls]; 
+    #           o outro: formato = STATA [extensão= .dta]
+    #
+    #   5.  Edite o caschool.xls e salve como formato csv
+    #---
+
+    dFCaschool= read.csv2(file=&amp;quot;caschool.csv&amp;quot;)
+      head(dFCaschool)
+      tail(dFCaschool)
+
+    #--- Equivalente: Lendo direto no formato do STATA 
+    #
+    # dFCaschool= read.dta(&amp;quot;caschool.dta&amp;quot;)
+    #
+    #--- 
+
+    is.matrix(dFCaschool)
+    is.list(dFCaschool)
+
+    is.data.frame(dFCaschool)
+      names(dFCaschool)
+
+    dFNerlove= read.csv2(&amp;quot;nerlove.csv&amp;quot;)
+      head(dFNerlove)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-de-simulação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercício de simulação&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#   i.    modelo: Y = beta1 + beta2*X + Eps com xNobs observações
+#
+#   ii.   simulo: xB realizações do processo acima
+#
+#   iii.  para cada uma das realizações estime beta via OLS.
+#         use a função lsfit
+#
+#   iv.   estime a densidade de beta2Hat e a variância de beta2Hat
+# 
+#   v.    faça boxplot dos beta2Hat&amp;#39;s
+#
+#   vi.   Considere o estimador:
+#            
+#         beta2Til= Média Aritmética ponderada de
+#
+#           { (Y1-YBarra)/(X1-XBarra), ..., (Yn-YBarra)/(Xn-XBarra)}, 
+#
+#               com pesos
+#
+#           { |X1-XBarra|, ..., |Xn-XBarra|}, 
+#
+#         beta1Til= YBarra - beta2Til * XBarra
+#
+#   vii.  estime a densidade de beta2Til e a variância de beta2Til
+#
+#---
+
+#---
+# atribuo parametros
+#---
+  vBeta= c(1, .3)
+  xNobs= 32
+  xB=500
+  set.seed(1)
+
+#---
+# a simulação ...
+#---
+  vRegX=  matrix(rnorm(xB*xNobs, mean= 4, sd=.5), 32)
+  vEps=   matrix(rnorm(xB*xNobs, mean= 0, sd=.1), 32)
+    vY= vBeta[1] + vBeta[2]*vRegX + vEps
+
+#---
+# só pra checar ...
+#---
+  plot(vRegX[,1], vY[,1])
+  lsfit(vRegX[,1], vY[,1])
+    lsfit(vRegX[,1], vY[,1])$coefficients
+
+#---
+# acumulo em mBetaHats os estimadores de OLS: 
+#
+#     primeiro reservo espaço pros estimadores ... 
+#---
+  mBetaHats= matrix(0, 2, 500)
+    dimnames(mBetaHats)= 
+        list( paste(&amp;quot;BetaHat&amp;quot;, 1:2, sep= &amp;quot;&amp;quot;),
+              paste(&amp;quot;Smpl&amp;quot;, 1:500, sep= &amp;quot;&amp;quot;))
+
+#---
+#     a estimação propriamente dita ... 
+#---
+  for(n in 1:xB){
+    mBetaHats[,n]= lsfit(vRegX[,n], vY[,n])$coefficients
+  }
+  boxplot(mBetaHats[&amp;quot;BetaHat2&amp;quot;,])  
+  sd(mBetaHats[&amp;quot;BetaHat2&amp;quot;,])
+
+#---
+# acumulo em mBetaTildas os estimadores alternativos: 
+#
+#     primeiro reservo espaço pros estimadores ... 
+#---
+  mBetaTildas= matrix(0, 2, 500)
+  dimnames(mBetaTildas)= 
+    list( paste(&amp;quot;BetaTilda&amp;quot;, 1:2, sep= &amp;quot;&amp;quot;),
+          paste(&amp;quot;Smpl&amp;quot;, 1:500, sep= &amp;quot;&amp;quot;))
+
+#---
+#     a estimação propriamente dita ... 
+#---
+  for(n in 1:xB){
+    ybarTmp= mean(vY[,n])
+    xbarTmp= mean(vRegX[,n])
+    mBetaTildas[2,n]= 
+      weighted.mean((vY[,n]-ybarTmp)/(vRegX[,n]-xbarTmp),
+                    abs(vRegX[,n]-xbarTmp) )
+    mBetaTildas[1,n]=
+      ybarTmp - mBetaTildas[2,n]*xbarTmp
+  }
+
+  boxplot(mBetaTildas[&amp;quot;BetaTilda2&amp;quot;,])  
+  sd(mBetaTildas[&amp;quot;BetaTilda2&amp;quot;,])&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;salvando-o-ambiente&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Salvando o ambiente&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    save.image(file=&amp;quot;EnvironmentPrjt1.RData&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
