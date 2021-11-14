@@ -19,7 +19,7 @@ weight: 15
 
 <div id="juntando-dados" class="section level1">
 <h1>Juntando dados</h1>
-<p>Nessa atividade você aprenderá a fazer a união e a junção (cruzamento) de dois dataframes usando o <code>tidyverse</code> e o pacote <code>nycflights13</code>.</p>
+<p>Nessa atividade você aprenderá a fazer a união e a junção (cruzamento) de dois dataframes usando o <code>tidyverse</code>.</p>
 <p>A <strong>união de dados</strong> é mais intuitiva. Basta ter a mesma quantidade de campos e que estes estejam “alinhados”. A função mais usada para isso é o famoso <code>rbind()</code> (Row Bind). Caso os campos tenham exatamente os mesmos nomes e tipo, o <code>rbind()</code> consegue fazer a união perfeitamente.</p>
 <p>O <strong>cruzamento de dados (junção)</strong> é um pouco mais complexo, mas nem por isso chega a ser algo difícil.</p>
 <p>Para entender-se como fazer “joins” (cruzamentos), é preciso compreender-se o conceito de chave. Entenda chave como uma coluna que está presente da mesma forma em dois conjuntos de dados distintos. O conceito completo de chave é bem mais complexo que isto, mas, para começarmos a entender e usar os joins, basta usar essa intuição.</p>
@@ -78,15 +78,7 @@ aprovados &lt;- data.frame(
 eliminados &lt;- data.frame(
   Nome = c(&#39;Maurício&#39;, &#39;Ana Maria&#39;, &#39;Rebeca&#39;),
   Pontuacao = c(49, 48, 48)
-)
-
-participantes</code></pre>
-<pre><code>##        Nome       Estado Idade
-## 1    Carlos     Brasília    23
-## 2  Maurício Minas Gerais    24
-## 3 Ana Maria        Goiás    22
-## 4    Rebeca    São Paulo    29
-## 5  Patrícia        Ceará    28</code></pre>
+)</code></pre>
 <p>Créditos da atividade:
 <a href="https://cdr.ibpad.com.br/juntando-dados.html">Ciência de Dados com R - Introdução. Autores: Saulo Guerra, Paulo Felipe de Oliveira, Robert McDonnell e Sillas Gonzaga</a></p>
 </div>

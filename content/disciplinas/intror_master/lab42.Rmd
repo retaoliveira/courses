@@ -11,3 +11,104 @@ type: docs
 weight: 19
 ---
 
+
+
+
+# Dados _wide_ x _long_
+
+
+
+## Exercícios
+
+### **Diretrizes gerais:**
+
+1. Instale o pacote `reshape2`
+
+```{r}
+install.packages("reshape2")
+```
+
+
+2. Baixe o arquivo .Rmd e o .csvb e abra no RStudio. 
+
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
+
+
+3. Siga as diretrizes da atividade. 
+
+4. Rode o arquivo .Rmd por meio do ícone `knitr` 
+
+5. Salve o .Rmd e **submeta-o por meio do email renataoliveira@gmail.com**. 
+
+<hr></hr>
+
+
+### Exercício 1.
+
+Rode o código para gerar o histograma a seguir: 
+
+```{r}
+# library
+library(tidyverse)
+library(reshape2)
+
+
+# Build dataset with different distributions
+data <- data.frame(
+  type = c( rep("variable 1", 1000), rep("variable 2", 1000) ),
+  value = c( rnorm(1000), rnorm(1000, mean=4) )
+)
+
+# Represent it
+p <- data %>%
+  ggplot( aes(x=value, fill=type)) +
+    geom_histogram( color="#e9ecef", alpha=0.6, position = 'identity') +
+    scale_fill_manual(values=c("#69b3a2", "#404080")) +
+    theme_minimal() +
+    labs(fill="")
+
+p
+```
+
+## Transformando dados de wide para long para representar dois dados iguais de recortes distintos no mesmo gráfico
+
+```{r}
+
+dados_bh <- read_delim("content/disciplinas/intror_master/data/dados_bh.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+
+internet_antes <- dados_bh %>% 
+  select(internet_compras_antes) %>% 
+  mutate(dado = "antes") %>% 
+  rename("internet" = "internet_compras_antes")
+
+
+internet_depois <- dados_bh %>% 
+  select(internet_compras_depois) %>% 
+  mutate(dado = "durante") %>% 
+  rename("internet" = "internet_compras_depois")
+
+
+data_plot <- data.frame(rbind(internet_antes, internet_depois))
+
+data_plot_long <- data_plot %>% 
+  melt(id.vars = c("dado"), value.name = "freq", na.rm = TRUE, factorsAsStrings = FALSE) %>% 
+  select(!variable)
+
+```
+
+```{r}
+ggplot(data_plot_long) + 
+  geom_bar(aes(x = freq, fill = dado), position = "dodge") +
+  coord_flip() +
+  labs(x = "", y = "", fill = "Período") +
+  xlab("") +
+  ylab("") +
+  guides(fill = guide_legend(reverse=T)) +
+  theme(legend.position = "bottom", axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank()) +
+  scale_fill_brewer(palette = "Set1") 
+
+```

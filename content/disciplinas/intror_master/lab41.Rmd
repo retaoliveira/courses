@@ -5,15 +5,15 @@ date: '2021-10-15T00:00:00+01:00'
 menu:
   intror_master:
     parent: Unidade 4
-    weight: 15
+    weight: 16
 toc: yes
 type: docs
-weight: 15
+weight: 16
 ---
 
 # Juntando dados
 
-Nessa atividade você aprenderá a fazer a união e a junção (cruzamento) de dois dataframes usando o `tidyverse` e o pacote `nycflights13`.
+Nessa atividade você aprenderá a fazer a união e a junção (cruzamento) de dois dataframes usando o `tidyverse`.
 
 A **união de dados** é mais intuitiva. Basta ter a mesma quantidade de campos e que estes estejam “alinhados”. A função mais usada para isso é o famoso `rbind()` (Row Bind). Caso os campos tenham exatamente os mesmos nomes e tipo, o `rbind()` consegue fazer a união perfeitamente.
 
@@ -81,7 +81,6 @@ eliminados <- data.frame(
   Pontuacao = c(49, 48, 48)
 )
 
-participantes
 ```
 
 
