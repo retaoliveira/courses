@@ -35,7 +35,7 @@ Uma das especialidades do computador é verificar se proposições simples são 
 
 Vamos começar com alguns exemplos simples:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 42 == 41
 42 != 41
 (2 + 2) == (3 + 1)
@@ -52,7 +52,7 @@ Antes de avançar, tenha certeza que entendeu os exemplos acima.
 
 Operadores relacionais também vale para textos:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 "texto" == "texto"
 "texto" == "texTo"
 "texto" != "texto"
@@ -62,7 +62,7 @@ Note no segundo exemplo que o R é "case sensitive", ou seja, diferencia maiúsc
 
 Textos também podem ser ordenados (lexicograficamente, isto é, alfabeticamente):
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 "a" > "b"
 "a" < "b"
 "A" < "b"
@@ -71,14 +71,14 @@ Textos também podem ser ordenados (lexicograficamente, isto é, alfabeticamente
 
 Inclusive palavras inteiras e sentenças:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 "cachorro" < "cachorro quente"
 "churrasco de gato" > "cachorro quente"
 ```
 
 E valores lógicos? Veja se entende o que acontece nos exemplos abaixo:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 TRUE == 1
 FALSE == 0
 TRUE > FALSE
@@ -86,7 +86,7 @@ TRUE > FALSE
 
 Podemos comparar valores armazenados em variáveis da mesma maneira que fizemos nos exemplos até aqui:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 x <- 5
 y <- 10
 x > y
@@ -96,14 +96,14 @@ x > y
 
 É possível comparar um vetor com um valor. Neste caso, cada elemento do vetor é comparado individualmente ao valor e o resultado é um vetor lógico de tamanho igual ao vetor comparado.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 votos16 <- c(1030, 551, 992, 345, 203, 2037)
 votos16 >= 1000
 ```
 
 Vamos usar o vetor "votos16", que contém votos de candidatos fictícios em 2016, com os votos dos mesmo candidatos em 2012:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 votos12 <- c(890, 354, 950, 400, 50, 3416)
 votos16 > votos12
 ```
@@ -122,7 +122,7 @@ Veja que, na comparação entre dois vetores, os elementos são comparados par a
   
 Por exemplo, se queremos verificar todos os candidatos que obtiveram acima de 500 (exclusive) __E__ abaixo de 1500 (inclusive) votos, fazemos:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 votos16 > 500 & votos16 <= 1500
 ```
 
@@ -139,7 +139,7 @@ Se o valor atende às duas condições, então o resultado é TRUE. Se ao menos 
 
 Com o operador "Ou", a combinação de proposições é verdadeira se pelo menos uma delas for verdadeira.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 votos16 < 500 | votos12 > 1500
 ```
 
@@ -154,7 +154,7 @@ Veja a tabela de possibilidades de combinação de duas proposições com a conj
   
 Finalmente, o operador lógico "não" tem a função de reverter um proposição:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 !TRUE
 !(5 > 3)
 !(votos16 > 500 & votos16 <= 1500)
@@ -162,7 +162,7 @@ Finalmente, o operador lógico "não" tem a função de reverter um proposição
 
 Lembre-se que, quando trabalhamos com vetores lógicos, podemos tratá-los como se fossem zeros e uns, tal qual no exemplo:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 sum(votos16 > votos12)
 ```
 
@@ -170,7 +170,7 @@ sum(votos16 > votos12)
 
 Um dos usos mais importantes dos operadores relacionais e lógicos é na construção de __cláusulas condicionais__, "if", "else" e "else if". Elas são fundamentais para a construção de funções e algoritmos. Veja um uso simples do condicional _if_, para o cálculo do valor absoluto de uma variável:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # exemplo com x negativo
 x <- -23
 
@@ -195,7 +195,7 @@ A condição que o _if_ deve atender vem entre parênteses. A instrução a ser 
 
 Vamos supor que um candidato teve determinada quantia de votos. Ele precisava de 700 para ser eleito. Vamos criar uma nova variável, "status", que receberá valor "eleito" se "votos" for maior que 700. Supondo que o candidato recebeu 800 votos, fazemos:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 votos <- 800
 
 if (votos > 700){
@@ -208,7 +208,7 @@ print(status)
 
 Mas e se quisermos dar o valor "nao eleito" a "status" caso ele não tenha recebido mais de 700 votos? Usamos _else_ para indicar o que fazer em todos os casos em que a condição em _if_ não foi atendida.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 if (votos > 700){
   status <- "eleito"
 } else {
@@ -222,7 +222,7 @@ Por fim, vamos imaginar um regra mais complexa. Se o total de "votos" do candida
 
 Veja como traduzir a regra acima em código usando _if_, _else if_ e _else_.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 if (votos > 1200){
   status <- "eleito"
 } else if (votos > 700  & votos <= 1200){
@@ -236,7 +236,7 @@ print(status)
 
 Outro exemplos simples do uso de condicionais, agora com uma variável de textos
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 partido <- "PMDB"
 
 if (partido == "PMDB" | partido == "PSD" | partido == "DEM") {
@@ -259,7 +259,7 @@ Uma das vantagens dos computadores em relação aos seres humanos é a capacidad
 
 Em nosso caso, a instrução será: imprima o número "atual" (você já entenderá isso), armazenado na variável "contador", e some mais um. A condição será: enquanto a variável "contador" for menor ou igual a 42. Se vamos começar a contar a partir do 1, nosso estado inicial será igualar o "contador" a 1. Veja como fica o código:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 contador <- 1
 
 while (contador <= 42) {
@@ -279,7 +279,7 @@ Vamos complicar. Seguiremos contando até 42, mas todas as vezes em que o númer
 
 Dica: para saber se um número é divisível por outro, basta usar o resto da divisão (consulte o tutorial anterior %%) e checar se é igual a zero.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 contador <- 1
 
 while (contador <= 42) {
@@ -298,7 +298,7 @@ Veja que temos agora um código "aninhado", pois colocamos um condicional dentro
 
 E se em vez de repetir uma tarefa até atingir uma condição já soubermos quantas vezes queremos repetí-la? Neste caso, podemos usar o _for_ loop. O loop não será mais do tipo "enquanto x faça y" mas "para todo i 'em' a até b". Veja como o exemplo de contar até 42 ficaria com _for_ loop:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 for (i in 1:42){
   print(i)
 }
@@ -306,7 +306,7 @@ for (i in 1:42){
 
 Neste caso, lemos "para cada i 'em' 1 até 42, faça". O que o _for_ loop faz é variar o i a cada iteração de acordo com a sequência estabelecida. Outro exemplo, agora na ordem reversa:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 for (i in 10:-10){
   print(i)
 }
@@ -314,7 +314,7 @@ for (i in 10:-10){
 
 Agora com a condição de não imprimir os pares:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 for (i in 1:42){
   if((i %% 2) != 0){
     print(i)
@@ -324,7 +324,7 @@ for (i in 1:42){
 
 _for_ loops não precisam ser apenas com números. Na verdade, você pode colocar após o "in" qualquer vetor. Por exemplo, um vetor das regiões brasileiras (ou UFs, se você tiver paciência de escrever todas):
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 vetor_regioes <- c("norte", "nordeste", "sudeste","sul", "centro-oeste")
 
 for (regiao in vetor_regioes){
@@ -340,7 +340,7 @@ Vamos parar por aqui com _loops_ e voltaremos a eles para fazermos exercícios.
 
 Ao longo dos três tutorais que fizemos usamos diversas funções e já estamos acostumados com elas. Vamos agora aprender a construir funções simples. Vamos do exemplo à aplicação. E nosso exemplo será, novamente, um conversor de farenheit para celsius:
   
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 conversor <- function(farenheit){
   celsius <- ((farenheit - 32) / 9) * 5
   return(celsius)
@@ -360,7 +360,7 @@ Crie uma função chamada "quadrado" que recebe um número "x" e retorna o quadr
 
 ## Reposta
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 quadrado <- function(x){
   resultado <- x * x
   return(resultado)
@@ -379,5 +379,4 @@ quadrado(17)
 ### Dica de Leitura
 
 Uma boa leitura para acompanhar esta parte do curso são as partes II e III do livro _Hands-on Programming With R_, de Garret Grolemund.
-
 

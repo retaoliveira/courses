@@ -19,7 +19,7 @@ weight: 25
 
 1. Instale o pacote `cepespR`
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 devtools::install_github("Cepesp-Fgv/cepesp-r")
 ```
 
@@ -52,7 +52,7 @@ Estes exemplos servirão de norte para que você leia, em sala, os capítulos [1
 
 Imagine que você precisa organizar dados dos candidatos à presidência de diversos anos (2006 a 2014) e vai utilizar a API do CEPESP Data. Utilizando a função _candidates_ do pacote _cepespR_ podemos obter os dados:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(cepespR)
 candidatos06 <- get_candidates(year = 2006, position = "President")
 candidatos10 <- get_candidates(year = 2010, position = "President")
@@ -61,7 +61,7 @@ candidatos14 <- get_candidates(year = 2014, position = "President")
 
 e, a seguir, podemos juntar todos em um único data_frame:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 candidatos <- rbind(candidatos06, candidatos10, candidatos14)
 ```
 
@@ -73,7 +73,7 @@ Neste tutorial vamos rever dois tópicos que são fundamentais para tornar o seu
 
 No exemplo acima, um simples _for loop_ resolveria nosso problema de repetição de código. Veja abaixo e tente entender sozinha(o) o que está acontencendo:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(dplyr)
 vetor_anos <- c(2006, 2010, 2014)
 candidatos <- data.frame()
@@ -87,7 +87,7 @@ Simples, não? Se quiséssemos utilizar mais anos em nossa análise, bastaria mu
 
 Vamos supor agora que não queremos juntar todos os anos, apenas contar o número de linhas (que é o número de candidatos) em cada um dos anos e armazenar o resultado em um vetor. Veja como fazemos isso com um _for loop_:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 n_candidatos <- c()
 for (ano in vetor_anos){
   n_candidatos <- c(n_candidatos, nrow(get_candidates(year = ano, position = "President")))
@@ -104,14 +104,14 @@ A principal variável da base de dados é um indicador de grau de democracia que
 
 Comece abrindo os dados que estão no repositório do curso e criando uma cópia, 'p4', que será modificada.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 p4_raw <- read.csv2("https://raw.githubusercontent.com/leobarone/FLS6397_2018/master/data/p4v2016.csv")
 p4 <- p4_raw
 ```
 
 Como as variáveis contêm alguns códigos numéricos cujas distâncias matemáticas não fazem nenhum sentido (-66, -77 e -88), precisamos transformá-los em NA para podermos calcular qualquer estatística descritiva com a variável. Vamos realizar a transformação nas variáveis 'xconst', 'xrreg', 'xropen', 'xconst' e aprender um novo operador, _%in%_. Todas as variáveis se referem sobre características da competição pelo poder Executivo em um país em um ano:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 p4$xrcomp[p4$xrcomp %in% c(-66, -77, -88)] <- NA
 p4$xrreg[p4$xrreg %in% c(-66, -77, -88)] <- NA
 p4$xropen[p4$xropen %in% c(-66, -77, -88)] <- NA
@@ -120,7 +120,7 @@ p4$xconst[p4$xconst %in% c(-66, -77, -88)] <- NA
 
 Como vamos repetir a mesma transformação de variáveis diversas vezes, convém escrever uma função para tal transformação. Observe com cuidado o código abaixo: 
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 limpa_var <- function(x) {
   x[x %in% c(-66, -77, -88)] <- NA
   return(x)
@@ -129,7 +129,7 @@ limpa_var <- function(x) {
 
 Vamos refazer o código acima utilizando a função que acabamos de criar (lembre-se criar um novo objeto 'p4', pois as variáveis foram transformadas no código anterior):
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 p4 <- p4_raw
 p4$xrcomp <- limpa_var(p4$xrcomp)
 p4$xrreg <- limpa_var(p4$xrreg)
@@ -142,7 +142,7 @@ Melhor. Temos linhas mais enxutas. Se estívessemos aplicando transformações m
 
 Ainda assim, temos muitas repetições de linha. O que muda de uma linha à outra é apenas o nome da variável. Como vimos no caso anterior, podemos realizar tarefas repetidas em loop. Vamos, dessa forma, aplicar a função que criamos em loop:
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 p4 <- p4_raw
 vetor_var <- c('xrcomp', 'xrreg', 'xropen', 'xconst')
 for (var in vetor_var){
@@ -154,7 +154,7 @@ Se estívessemos utilizando todas as variáveis do banco de dados codificadas da
 
 Obs: uma forma alternativa de selecionar variáveis de um data frame utilizando colchetes é aplicando colchetes duplo (em vez de separar linhas e colunas dentro do colchetes por vírgula). O estilo de código abaixo, encontrado com frequência no livro "R for Data Science", é equivalente ao que acabamos de ver.
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 for (var in vetor_var){
   p4[[var]] <- limpa_var(p4[[var]])
 }

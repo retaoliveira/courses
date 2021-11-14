@@ -27,9 +27,6 @@ weight: 25
 <li>Instale o pacote <code>cepespR</code></li>
 </ol>
 <pre class="r"><code>devtools::install_github(&quot;Cepesp-Fgv/cepesp-r&quot;)</code></pre>
-<pre><code>## Using github PAT from envvar GITHUB_PAT</code></pre>
-<pre><code>## Skipping install of &#39;cepespR&#39; from a github remote, the SHA1 (7253b4af) has not changed since last install.
-##   Use `force = TRUE` to force installation</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Baixe o arquivo .Rmd e o .csvb e abra no RStudio.</li>
 </ol>
@@ -56,63 +53,28 @@ weight: 25
 <h2>Exemplo 1 - substituindo repetição de código por loops</h2>
 <p>Imagine que você precisa organizar dados dos candidatos à presidência de diversos anos (2006 a 2014) e vai utilizar a API do CEPESP Data. Utilizando a função <em>candidates</em> do pacote <em>cepespR</em> podemos obter os dados:</p>
 <pre class="r"><code>library(cepespR)
-candidatos06 &lt;- get_candidates(year = 2006, position = &quot;President&quot;)</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
-<pre class="r"><code>candidatos10 &lt;- get_candidates(year = 2010, position = &quot;President&quot;)</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s
-## 
-## Parsing downloaded csv...</code></pre>
-<pre class="r"><code>candidatos14 &lt;- get_candidates(year = 2014, position = &quot;President&quot;)</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s
-## 
-## Parsing downloaded csv...</code></pre>
+candidatos06 &lt;- get_candidates(year = 2006, position = &quot;President&quot;)
+candidatos10 &lt;- get_candidates(year = 2010, position = &quot;President&quot;)
+candidatos14 &lt;- get_candidates(year = 2014, position = &quot;President&quot;)</code></pre>
 <p>e, a seguir, podemos juntar todos em um único data_frame:</p>
 <pre class="r"><code>candidatos &lt;- rbind(candidatos06, candidatos10, candidatos14)</code></pre>
 <p>Simples, não? Imagine agora que você quer repetir mesma tarefa não 4, mas centenas de vezes. O código deixaria de ser simples e passaria a ter centenas de linhas.</p>
 <p>Essa centena de linhas seria pura repetição de código. No nosso exemplo, a obtenção dos dados para candidatos à presidência em 2006 e em 2010 são idênticas, exceto por 2 números. Como podemos evitar a repetição de códigos?</p>
 <p>Neste tutorial vamos rever dois tópicos que são fundamentais para tornar o seu código mais enxuto e eficiente: funções e iterações (loops e similares).</p>
 <p>No exemplo acima, um simples <em>for loop</em> resolveria nosso problema de repetição de código. Veja abaixo e tente entender sozinha(o) o que está acontencendo:</p>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>vetor_anos &lt;- c(2006, 2010, 2014)
+<pre class="r"><code>library(dplyr)
+vetor_anos &lt;- c(2006, 2010, 2014)
 candidatos &lt;- data.frame()
 for (ano in vetor_anos){
   candidatos &lt;- bind_rows(candidatos, 
                       get_candidates(year = ano, position = &quot;President&quot;))
 }</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
 <p>Simples, não? Se quiséssemos utilizar mais anos em nossa análise, bastaria mudar o vetor “percorrido” pelo loop que contém o número de anos.</p>
 <p>Vamos supor agora que não queremos juntar todos os anos, apenas contar o número de linhas (que é o número de candidatos) em cada um dos anos e armazenar o resultado em um vetor. Veja como fazemos isso com um <em>for loop</em>:</p>
 <pre class="r"><code>n_candidatos &lt;- c()
 for (ano in vetor_anos){
   n_candidatos &lt;- c(n_candidatos, nrow(get_candidates(year = ano, position = &quot;President&quot;)))
 }</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
-<pre><code>## status: SUCCEEDED, elapsed: 1s</code></pre>
-<pre><code>## 
-## Parsing downloaded csv...</code></pre>
 <p>Igualmente simples. Há outras maneiras de produzir o mesmo resultado em R sem utilizar <em>for loops</em>. Note que podemos pensar um <em>for loop</em> como uma função que recebe como argumento um vetor e realiza a mesma tarefa para cada elemento do vetor.</p>
 </div>
 <div id="exemplo-2---combinando-loops-e-funções" class="section level2">

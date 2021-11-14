@@ -1097,7 +1097,7 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;/table&gt;
 &lt;p&gt;Não discutiremos todas as regras de comparação de objetos, mas passaremos por um conjunto grande de exemplos a partir do qual elas podem ser inferidas.&lt;/p&gt;
 &lt;p&gt;Vamos começar com alguns exemplos simples:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;42 == 41
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;42 == 41
 42 != 41
 (2 + 2) == (3 + 1)
 (2 + 2) != (3 + 1)
@@ -1109,32 +1109,32 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 42 &amp;lt;= 41
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Antes de avançar, tenha certeza que entendeu os exemplos acima.&lt;/p&gt;
 &lt;p&gt;Operadores relacionais também vale para textos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;&amp;quot;texto&amp;quot; == &amp;quot;texto&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;texto&amp;quot; == &amp;quot;texto&amp;quot;
 &amp;quot;texto&amp;quot; == &amp;quot;texTo&amp;quot;
 &amp;quot;texto&amp;quot; != &amp;quot;texto&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note no segundo exemplo que o R é &amp;ldquo;case sensitive&amp;rdquo;, ou seja, diferencia maiúsculas de minúsculas ao comparar textos.&lt;/p&gt;
 &lt;p&gt;Textos também podem ser ordenados (lexicograficamente, isto é, alfabeticamente):&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;&amp;quot;a&amp;quot; &amp;gt; &amp;quot;b&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;a&amp;quot; &amp;gt; &amp;quot;b&amp;quot;
 &amp;quot;a&amp;quot; &amp;lt; &amp;quot;b&amp;quot;
 &amp;quot;A&amp;quot; &amp;lt; &amp;quot;b&amp;quot;
 &amp;quot;A&amp;quot; &amp;gt; &amp;quot;a&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inclusive palavras inteiras e sentenças:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;&amp;quot;cachorro&amp;quot; &amp;lt; &amp;quot;cachorro quente&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;cachorro&amp;quot; &amp;lt; &amp;quot;cachorro quente&amp;quot;
 &amp;quot;churrasco de gato&amp;quot; &amp;gt; &amp;quot;cachorro quente&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E valores lógicos? Veja se entende o que acontece nos exemplos abaixo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;TRUE == 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;TRUE == 1
 FALSE == 0
 TRUE &amp;gt; FALSE
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Podemos comparar valores armazenados em variáveis da mesma maneira que fizemos nos exemplos até aqui:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;x &amp;lt;- 5
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;x &amp;lt;- 5
 y &amp;lt;- 10
 x &amp;gt; y
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;operadores-relacionais-e-vetores&#34;&gt;Operadores relacionais e vetores&lt;/h2&gt;
 &lt;p&gt;É possível comparar um vetor com um valor. Neste caso, cada elemento do vetor é comparado individualmente ao valor e o resultado é um vetor lógico de tamanho igual ao vetor comparado.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;votos16 &amp;lt;- c(1030, 551, 992, 345, 203, 2037)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;lt;- c(1030, 551, 992, 345, 203, 2037)
 votos16 &amp;gt;= 1000
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vamos usar o vetor &amp;ldquo;votos16&amp;rdquo;, que contém votos de candidatos fictícios em 2016, com os votos dos mesmo candidatos em 2012:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;votos12 &amp;lt;- c(890, 354, 950, 400, 50, 3416)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos12 &amp;lt;- c(890, 354, 950, 400, 50, 3416)
 votos16 &amp;gt; votos12
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que, na comparação entre dois vetores, os elementos são comparados par a par de acordo com a sua posição no vetor. O vetor lógico resultante tem o mesmo tamanho dos vetores comparados.&lt;/p&gt;
 &lt;h2 id=&#34;operadores-lógicos-booleanos&#34;&gt;Operadores Lógicos (Booleanos)&lt;/h2&gt;
@@ -1162,7 +1162,7 @@ votos16 &amp;gt; votos12
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Por exemplo, se queremos verificar todos os candidatos que obtiveram acima de 500 (exclusive) &lt;strong&gt;E&lt;/strong&gt; abaixo de 1500 (inclusive) votos, fazemos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja a tabela de possibilidades de combinação de duas proposições com a conjunção &amp;ldquo;e&amp;rdquo;:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1197,7 +1197,7 @@ votos16 &amp;gt; votos12
 &lt;/table&gt;
 &lt;p&gt;Se o valor atende às duas condições, então o resultado é TRUE. Se ao menos uma proposição é falsa, sob a conjunção &amp;ldquo;e&amp;rdquo;, então a combinação das proposições também é.&lt;/p&gt;
 &lt;p&gt;Com o operador &amp;ldquo;Ou&amp;rdquo;, a combinação de proposições é verdadeira se pelo menos uma delas for verdadeira.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;votos16 &amp;lt; 500 | votos12 &amp;gt; 1500
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;lt; 500 | votos12 &amp;gt; 1500
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja a tabela de possibilidades de combinação de duas proposições com a conjunção &amp;ldquo;ou&amp;rdquo;:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1231,14 +1231,14 @@ votos16 &amp;gt; votos12
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Finalmente, o operador lógico &amp;ldquo;não&amp;rdquo; tem a função de reverter um proposição:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;!TRUE
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;!TRUE
 !(5 &amp;gt; 3)
 !(votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Lembre-se que, quando trabalhamos com vetores lógicos, podemos tratá-los como se fossem zeros e uns, tal qual no exemplo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;sum(votos16 &amp;gt; votos12)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;sum(votos16 &amp;gt; votos12)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;cláusulas-condicionais&#34;&gt;Cláusulas condicionais&lt;/h2&gt;
 &lt;p&gt;Um dos usos mais importantes dos operadores relacionais e lógicos é na construção de &lt;strong&gt;cláusulas condicionais&lt;/strong&gt;, &amp;ldquo;if&amp;rdquo;, &amp;ldquo;else&amp;rdquo; e &amp;ldquo;else if&amp;rdquo;. Elas são fundamentais para a construção de funções e algoritmos. Veja um uso simples do condicional &lt;em&gt;if&lt;/em&gt;, para o cálculo do valor absoluto de uma variável:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;# exemplo com x negativo
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# exemplo com x negativo
 x &amp;lt;- -23
 
 if (x &amp;lt; 0){
@@ -1258,7 +1258,7 @@ print(x)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A condição que o &lt;em&gt;if&lt;/em&gt; deve atender vem entre parênteses. A instrução a ser atendida caso a cláusula seja verdadeira vem dentro das chaves. Aliás, é boa prática (na maioria dos casos) abrir as chaves em uma linha, escrever as instruções em outra, e fechar as chaves na linha seguinte ao final das instruções, como no exemplo. Também é boa prática &amp;ldquo;identar&amp;rdquo;, ou seja, desalinhar as instruções do restante do código. Falaremos sobre &amp;ldquo;estilo&amp;rdquo; em algum momento do curso. Por enquanto, apenas observe e não se assuste. Diferentemente de outras linguagens, R não requer identação para funcionar.&lt;/p&gt;
 &lt;p&gt;Vamos supor que um candidato teve determinada quantia de votos. Ele precisava de 700 para ser eleito. Vamos criar uma nova variável, &amp;ldquo;status&amp;rdquo;, que receberá valor &amp;ldquo;eleito&amp;rdquo; se &amp;ldquo;votos&amp;rdquo; for maior que 700. Supondo que o candidato recebeu 800 votos, fazemos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;votos &amp;lt;- 800
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos &amp;lt;- 800
 
 if (votos &amp;gt; 700){
   status &amp;lt;- &amp;quot;eleito&amp;quot;
@@ -1267,7 +1267,7 @@ if (votos &amp;gt; 700){
 print(status)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mas e se quisermos dar o valor &amp;ldquo;nao eleito&amp;rdquo; a &amp;ldquo;status&amp;rdquo; caso ele não tenha recebido mais de 700 votos? Usamos &lt;em&gt;else&lt;/em&gt; para indicar o que fazer em todos os casos em que a condição em &lt;em&gt;if&lt;/em&gt; não foi atendida.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;if (votos &amp;gt; 700){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;if (votos &amp;gt; 700){
   status &amp;lt;- &amp;quot;eleito&amp;quot;
 } else {
   status &amp;lt;- &amp;quot;nao eleito&amp;quot;
@@ -1276,7 +1276,7 @@ print(status)
 print(status)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Por fim, vamos imaginar um regra mais complexa. Se o total de &amp;ldquo;votos&amp;rdquo; do candidato for maior que 1200, então ele está eleito. Se a votação tiver ficado entre 700 (exclusive) e 1200 (inclusive), ele recebe &amp;ldquo;status&amp;rdquo; igual a &amp;ldquo;suplente&amp;rdquo;. Com 700 votos ou menos, o &amp;ldquo;status&amp;rdquo; é não eleito.&lt;/p&gt;
 &lt;p&gt;Veja como traduzir a regra acima em código usando &lt;em&gt;if&lt;/em&gt;, &lt;em&gt;else if&lt;/em&gt; e &lt;em&gt;else&lt;/em&gt;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;if (votos &amp;gt; 1200){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;if (votos &amp;gt; 1200){
   status &amp;lt;- &amp;quot;eleito&amp;quot;
 } else if (votos &amp;gt; 700  &amp;amp; votos &amp;lt;= 1200){
   status &amp;lt;- &amp;quot;suplente&amp;quot;
@@ -1286,7 +1286,7 @@ print(status)
 
 print(status)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Outro exemplos simples do uso de condicionais, agora com uma variável de textos&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;partido &amp;lt;- &amp;quot;PMDB&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;partido &amp;lt;- &amp;quot;PMDB&amp;quot;
 
 if (partido == &amp;quot;PMDB&amp;quot; | partido == &amp;quot;PSD&amp;quot; | partido == &amp;quot;DEM&amp;quot;) {
   print(&amp;quot;governo&amp;quot;)
@@ -1302,7 +1302,7 @@ if (partido == &amp;quot;PMDB&amp;quot; | partido == &amp;quot;PSD&amp;quot; | p
 &lt;h2 id=&#34;repetindo-tarefas---while-loop&#34;&gt;Repetindo tarefas - while loop&lt;/h2&gt;
 &lt;p&gt;Uma das vantagens dos computadores em relação aos seres humanos é a capacidade de repetir tarefas a um custo baixo. Vamos ver um exemplo simples: con  tar até 42. Usaremos como recurso um &lt;em&gt;while&lt;/em&gt; loop, ou seja, daremos um estado inicial, uma condição e uma instrução para o computador e pediremos para ele repetir a instrução &lt;strong&gt;enquanto&lt;/strong&gt; a condição for atendida.&lt;/p&gt;
 &lt;p&gt;Em nosso caso, a instrução será: imprima o número &amp;ldquo;atual&amp;rdquo; (você já entenderá isso), armazenado na variável &amp;ldquo;contador&amp;rdquo;, e some mais um. A condição será: enquanto a variável &amp;ldquo;contador&amp;rdquo; for menor ou igual a 42. Se vamos começar a contar a partir do 1, nosso estado inicial será igualar o &amp;ldquo;contador&amp;rdquo; a 1. Veja como fica o código:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;contador &amp;lt;- 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;contador &amp;lt;- 1
 
 while (contador &amp;lt;= 42) {
   print(contador)
@@ -1315,7 +1315,7 @@ print(contador)
 &lt;p&gt;Veja que precisamos planejar muito bem o &lt;em&gt;while&lt;/em&gt; loop. Se, por exemplo, esquecermos de pensar como a condição inicial será alterada a cada &lt;strong&gt;iteração&lt;/strong&gt; (sem o &amp;ldquo;n&amp;rdquo; mesmo, pois é diferente de &amp;ldquo;interação&amp;rdquo;), corremos o risco de criar um &amp;ldquo;loop infinito&amp;rdquo;. O critério de parada (condição entre parênteses) deve ser atendido em algum ponto do programa para que ele seja interrompido.&lt;/p&gt;
 &lt;p&gt;Vamos complicar. Seguiremos contando até 42, mas todas as vezes em que o número for par (ou seja, múltiplo de 2), deixaremos de imprimir o número. Como fazer isso? Com &lt;em&gt;if&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Dica: para saber se um número é divisível por outro, basta usar o resto da divisão (consulte o tutorial anterior %%) e checar se é igual a zero.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;contador &amp;lt;- 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;contador &amp;lt;- 1
 
 while (contador &amp;lt;= 42) {
   if ((contador %% 2) != 0){
@@ -1328,21 +1328,21 @@ print(contador)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que temos agora um código &amp;ldquo;aninhado&amp;rdquo;, pois colocamos um condicional dentro de um loop. Novamente, combinar estruturas de código é mais um problema de lógica do que de linguagem e, se você consegue fazer no papel, consegue traduzir para o R.&lt;/p&gt;
 &lt;h2 id=&#34;repetindo-tarefas---for-loop&#34;&gt;Repetindo tarefas - for loop&lt;/h2&gt;
 &lt;p&gt;E se em vez de repetir uma tarefa até atingir uma condição já soubermos quantas vezes queremos repetí-la? Neste caso, podemos usar o &lt;em&gt;for&lt;/em&gt; loop. O loop não será mais do tipo &amp;ldquo;enquanto x faça y&amp;rdquo; mas &amp;ldquo;para todo i &amp;lsquo;em&amp;rsquo; a até b&amp;rdquo;. Veja como o exemplo de contar até 42 ficaria com &lt;em&gt;for&lt;/em&gt; loop:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;for (i in 1:42){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 1:42){
   print(i)
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Neste caso, lemos &amp;ldquo;para cada i &amp;lsquo;em&amp;rsquo; 1 até 42, faça&amp;rdquo;. O que o &lt;em&gt;for&lt;/em&gt; loop faz é variar o i a cada iteração de acordo com a sequência estabelecida. Outro exemplo, agora na ordem reversa:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;for (i in 10:-10){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 10:-10){
   print(i)
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora com a condição de não imprimir os pares:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;for (i in 1:42){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 1:42){
   if((i %% 2) != 0){
     print(i)
   }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;for&lt;/em&gt; loops não precisam ser apenas com números. Na verdade, você pode colocar após o &amp;ldquo;in&amp;rdquo; qualquer vetor. Por exemplo, um vetor das regiões brasileiras (ou UFs, se você tiver paciência de escrever todas):&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;vetor_regioes &amp;lt;- c(&amp;quot;norte&amp;quot;, &amp;quot;nordeste&amp;quot;, &amp;quot;sudeste&amp;quot;,&amp;quot;sul&amp;quot;, &amp;quot;centro-oeste&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;vetor_regioes &amp;lt;- c(&amp;quot;norte&amp;quot;, &amp;quot;nordeste&amp;quot;, &amp;quot;sudeste&amp;quot;,&amp;quot;sul&amp;quot;, &amp;quot;centro-oeste&amp;quot;)
 
 for (regiao in vetor_regioes){
   print(regiao)
@@ -1351,7 +1351,7 @@ for (regiao in vetor_regioes){
 &lt;p&gt;Vamos parar por aqui com &lt;em&gt;loops&lt;/em&gt; e voltaremos a eles para fazermos exercícios.&lt;/p&gt;
 &lt;h2 id=&#34;escrevendo-funções&#34;&gt;Escrevendo funções&lt;/h2&gt;
 &lt;p&gt;Ao longo dos três tutorais que fizemos usamos diversas funções e já estamos acostumados com elas. Vamos agora aprender a construir funções simples. Vamos do exemplo à aplicação. E nosso exemplo será, novamente, um conversor de farenheit para celsius:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;conversor &amp;lt;- function(farenheit){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;conversor &amp;lt;- function(farenheit){
   celsius &amp;lt;- ((farenheit - 32) / 9) * 5
   return(celsius)
 }
@@ -1363,7 +1363,7 @@ conversor(32)
 &lt;h2 id=&#34;exercício-1&#34;&gt;Exercício&lt;/h2&gt;
 &lt;p&gt;Crie uma função chamada &amp;ldquo;quadrado&amp;rdquo; que recebe um número &amp;ldquo;x&amp;rdquo; e retorna o quadrado de x.&lt;/p&gt;
 &lt;h2 id=&#34;reposta&#34;&gt;Reposta&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;quadrado &amp;lt;- function(x){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;quadrado &amp;lt;- function(x){
   resultado &amp;lt;- x * x
   return(resultado)
 }
@@ -2020,8 +2020,8 @@ eliminados &amp;lt;- data.frame(
 
 &lt;/div&gt;
 
-&lt;div id=&#34;dados-wide-x-long&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Dados &lt;em&gt;wide&lt;/em&gt; x &lt;em&gt;long&lt;/em&gt;&lt;/h1&gt;
+&lt;div id=&#34;funções-e-programação-de-interações-no-r&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Funções e programação de interações no R&lt;/h1&gt;
 &lt;div id=&#34;exercícios&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exercícios&lt;/h2&gt;
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level3&#34;&gt;
@@ -2030,9 +2030,6 @@ eliminados &amp;lt;- data.frame(
 &lt;li&gt;Instale o pacote &lt;code&gt;cepespR&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;Cepesp-Fgv/cepesp-r&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Using github PAT from envvar GITHUB_PAT&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Skipping install of &amp;#39;cepespR&amp;#39; from a github remote, the SHA1 (7253b4af) has not changed since last install.
-##   Use `force = TRUE` to force installation&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Baixe o arquivo .Rmd e o .csvb e abra no RStudio.&lt;/li&gt;
 &lt;/ol&gt;
@@ -2059,63 +2056,28 @@ eliminados &amp;lt;- data.frame(
 &lt;h2&gt;Exemplo 1 - substituindo repetição de código por loops&lt;/h2&gt;
 &lt;p&gt;Imagine que você precisa organizar dados dos candidatos à presidência de diversos anos (2006 a 2014) e vai utilizar a API do CEPESP Data. Utilizando a função &lt;em&gt;candidates&lt;/em&gt; do pacote &lt;em&gt;cepespR&lt;/em&gt; podemos obter os dados:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(cepespR)
-candidatos06 &amp;lt;- get_candidates(year = 2006, position = &amp;quot;President&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;candidatos10 &amp;lt;- get_candidates(year = 2010, position = &amp;quot;President&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s
-## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;candidatos14 &amp;lt;- get_candidates(year = 2014, position = &amp;quot;President&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s
-## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
+candidatos06 &amp;lt;- get_candidates(year = 2006, position = &amp;quot;President&amp;quot;)
+candidatos10 &amp;lt;- get_candidates(year = 2010, position = &amp;quot;President&amp;quot;)
+candidatos14 &amp;lt;- get_candidates(year = 2014, position = &amp;quot;President&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;e, a seguir, podemos juntar todos em um único data_frame:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;candidatos &amp;lt;- rbind(candidatos06, candidatos10, candidatos14)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Simples, não? Imagine agora que você quer repetir mesma tarefa não 4, mas centenas de vezes. O código deixaria de ser simples e passaria a ter centenas de linhas.&lt;/p&gt;
 &lt;p&gt;Essa centena de linhas seria pura repetição de código. No nosso exemplo, a obtenção dos dados para candidatos à presidência em 2006 e em 2010 são idênticas, exceto por 2 números. Como podemos evitar a repetição de códigos?&lt;/p&gt;
 &lt;p&gt;Neste tutorial vamos rever dois tópicos que são fundamentais para tornar o seu código mais enxuto e eficiente: funções e iterações (loops e similares).&lt;/p&gt;
 &lt;p&gt;No exemplo acima, um simples &lt;em&gt;for loop&lt;/em&gt; resolveria nosso problema de repetição de código. Veja abaixo e tente entender sozinha(o) o que está acontencendo:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;dplyr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
-## 
-##     filter, lag&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
-## 
-##     intersect, setdiff, setequal, union&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vetor_anos &amp;lt;- c(2006, 2010, 2014)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+vetor_anos &amp;lt;- c(2006, 2010, 2014)
 candidatos &amp;lt;- data.frame()
 for (ano in vetor_anos){
   candidatos &amp;lt;- bind_rows(candidatos, 
                       get_candidates(year = ano, position = &amp;quot;President&amp;quot;))
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Simples, não? Se quiséssemos utilizar mais anos em nossa análise, bastaria mudar o vetor “percorrido” pelo loop que contém o número de anos.&lt;/p&gt;
 &lt;p&gt;Vamos supor agora que não queremos juntar todos os anos, apenas contar o número de linhas (que é o número de candidatos) em cada um dos anos e armazenar o resultado em um vetor. Veja como fazemos isso com um &lt;em&gt;for loop&lt;/em&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_candidatos &amp;lt;- c()
 for (ano in vetor_anos){
   n_candidatos &amp;lt;- c(n_candidatos, nrow(get_candidates(year = ano, position = &amp;quot;President&amp;quot;)))
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## status: SUCCEEDED, elapsed: 1s&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Parsing downloaded csv...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Igualmente simples. Há outras maneiras de produzir o mesmo resultado em R sem utilizar &lt;em&gt;for loops&lt;/em&gt;. Note que podemos pensar um &lt;em&gt;for loop&lt;/em&gt; como uma função que recebe como argumento um vetor e realiza a mesma tarefa para cada elemento do vetor.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exemplo-2---combinando-loops-e-funções&#34; class=&#34;section level2&#34;&gt;
