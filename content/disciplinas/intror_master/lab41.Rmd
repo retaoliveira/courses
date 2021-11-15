@@ -45,7 +45,7 @@ Existem, ainda, as situações em que é necessário preservar todos os registro
 
 1. Baixe o arquivo .Rmd e abra no RStudio. 
 
-[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EZ_UXta-KEZJhsy-TOyqJmMBBh3IW0DHw11PffzU4s9N5Q?e=C04dsD)
 
 
 2. Siga as diretrizes da atividade. 

@@ -19,15 +19,14 @@ weight: 25
 
 1. Instale o pacote `cepespR`
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+```{r}
 devtools::install_github("Cepesp-Fgv/cepesp-r")
 ```
 
 
 2. Baixe o arquivo .Rmd e o .csvb e abra no RStudio. 
 
-[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
-
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETeYkh2-WipAmE0p9htIqBcBJ-bArZ06Oce43hAV5507nA?e=DuQfI3)
 
 3. Siga as diretrizes da atividade. 
 

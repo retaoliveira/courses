@@ -11,6 +11,24 @@ type: docs
 weight: 13
 ---
 
+## Esta atividade deverá ser realizada até dia **22/11**. São propostas as seguintes atividades:
+
+1. Instale o pacote `cepespR`
+
+```{r}
+devtools::install_github("Cepesp-Fgv/cepesp-r")
+```
+
+2. Baixe o arquivo .Rmd e o .csvb e abra no RStudio. 
+
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETeYkh2-WipAmE0p9htIqBcBJ-bArZ06Oce43hAV5507nA?e=DuQfI3)
+
+3. Resolva as questões.
+
+4. Gere um tipo de documento .Rmd de sua preferência. 
+
+5. Envie por email (renataoliveira@gmail.com ou renataoliveira@cefetmg.br) o arquivo .Rmd e o arquivo gerado.
+
 
 **Agradecimento: Leo Barone pelo maravilhoso tutorial!**
 

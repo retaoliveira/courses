@@ -24,7 +24,7 @@ weight: 19
 
 1. Instale o pacote `reshape2`
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 install.packages("reshape2")
 ```
 
@@ -33,6 +33,7 @@ install.packages("reshape2")
 
 [Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
 
+[Arquivo .csv](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/Eblw9IdTPpFOqpXLRznx-dwBtRBV-w230jYFTNim3dVl4A?e=94UnUY)
 
 3. Siga as diretrizes da atividade. 
 
@@ -72,13 +73,13 @@ p
 
 ## Transformando dados de wide para long para representar dois dados iguais de recortes distintos no mesmo gráfico
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 
-dados_bh <- read_delim("content/disciplinas/intror_master/data/dados_bh.csv", 
+dados_bh <- read_delim("data/dados_bh.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 ```
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 
 internet_antes <- dados_bh %>% 
   select(internet_compras_antes) %>% 
@@ -100,7 +101,7 @@ data_plot_long <- data_plot %>%
 
 ```
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 ggplot(data_plot_long) + 
   geom_bar(aes(x = freq, fill = dado), position = "dodge") +
   coord_flip() +
