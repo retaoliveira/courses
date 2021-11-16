@@ -60,9 +60,14 @@ Existem, ainda, as situações em que é necessário preservar todos os registro
 ### Exercício 1.
 
 Utilizando os dataframes abaixo, gere:
+
 a) um dataframe com os participantes
+
 b) um dataframe com os aprovados
+
 c) um dataframe com os eliminados
+
+Faça a junção de todos os tres dataframes em um único objeto. 
 
 ```{r}
 participantes <- data.frame(
