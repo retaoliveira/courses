@@ -31,9 +31,9 @@ install.packages("reshape2")
 
 2. Baixe o arquivo .Rmd e o .csvb e abra no RStudio. 
 
-[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETClwID9i2xEsL-nCHXHWKcBgjVDEDdpagtNo21zvAtr9g?e=Edsje8)
 
-[Arquivo .csv](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EVHWeyy072lFknBr6lRrlQQBRq2xLKWI0TA6SUB7KUvnHQ?e=LsnD1h)
+[Arquivo .csv](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EVHWeyy072lFknBr6lRrlQQBRq2xLKWI0TA6SUB7KUvnHQ?e=20Ca7n)
 
 3. Siga as diretrizes da atividade. 
 
