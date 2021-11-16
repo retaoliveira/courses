@@ -1558,15 +1558,11 @@ eliminados &amp;lt;- data.frame(
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;strong&gt;Diretrizes gerais:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Instale o pacote &lt;code&gt;reshape2&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;reshape2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Baixe o arquivo .Rmd e o .csvb e abra no RStudio.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/❌/g/personal/renataoliveira_cefetmg_br/EVHWeyy072lFknBr6lRrlQQBRq2xLKWI0TA6SUB7KUvnHQ?e=LsnD1h&#34;&gt;Arquivo .csv&lt;/a&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EYmurCXsRpdFukK0xyqRN_kBbANT34n3CeMjjoUxNvhUTQ?e=5o9BbT&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/❌/g/personal/renataoliveira_cefetmg_br/Ednh1eJllo9DjZR5u6J6Q1YBMDz7KXzoF1XtdYdrZpo8MA?e=6NEs85&#34;&gt;Arquivo .csv&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Salve o .Rmd e &lt;strong&gt;submeta-o por meio do email &lt;a href=&#34;mailto:renataoliveira@gmail.com&#34; class=&#34;email&#34;&gt;renataoliveira@gmail.com&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
@@ -1587,21 +1583,15 @@ library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(reshape2)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;reshape2&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:tidyr&amp;#39;:
-## 
-##     smiths&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Build dataset with different distributions
 data &amp;lt;- data.frame(
-  type = c( rep(&amp;quot;variable 1&amp;quot;, 1000), rep(&amp;quot;variable 2&amp;quot;, 1000) ),
-  value = c( rnorm(1000), rnorm(1000, mean=4) )
+  type = c(rep(&amp;quot;variable 1&amp;quot;, 1000), rep(&amp;quot;variable 2&amp;quot;, 1000)),
+  value = c(rnorm(1000), rnorm(1000, mean = 0, sd = 5))
 )
 
 # Represent it
 p &amp;lt;- data %&amp;gt;%
-  ggplot( aes(x=value, fill=type)) +
+  ggplot(aes(x=value, fill=type)) +
     geom_histogram( color=&amp;quot;#e9ecef&amp;quot;, alpha=0.6, position = &amp;#39;identity&amp;#39;) +
     scale_fill_manual(values=c(&amp;quot;#69b3a2&amp;quot;, &amp;quot;#404080&amp;quot;)) +
     theme_minimal() +
@@ -1609,39 +1599,73 @@ p &amp;lt;- data %&amp;gt;%
 
 p&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/intror_master/lab42_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/intror_master/lab42_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;transformando-dados-de-wide-para-long-para-representar-dois-dados-iguais-de-recortes-distintos-no-mesmo-gráfico&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Transformando dados de wide para long para representar dois dados iguais de recortes distintos no mesmo gráfico&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados_bh &amp;lt;- read_delim(&amp;quot;data/dados_bh.csv&amp;quot;, 
+&lt;div id=&#34;transformação-com-dados-numéricos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Transformação com dados numéricos&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get first observation for each Species in iris data -- base R
+mini_iris &amp;lt;- iris[c(1, 51, 101), ]
+
+mini_iris %&amp;gt;% gather(key = &amp;quot;flower_att&amp;quot;, value = &amp;quot;measurement&amp;quot;, -Species)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       Species   flower_att measurement
+## 1      setosa Sepal.Length         5.1
+## 2  versicolor Sepal.Length         7.0
+## 3   virginica Sepal.Length         6.3
+## 4      setosa  Sepal.Width         3.5
+## 5  versicolor  Sepal.Width         3.2
+## 6   virginica  Sepal.Width         3.3
+## 7      setosa Petal.Length         1.4
+## 8  versicolor Petal.Length         4.7
+## 9   virginica Petal.Length         6.0
+## 10     setosa  Petal.Width         0.2
+## 11 versicolor  Petal.Width         1.4
+## 12  virginica  Petal.Width         2.5&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transformando-dados-de-wide-para-long-para-representar-dois-dados-iguais-de-recortes-distintos-no-mesmo-gráfico---dados-categóricos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Transformando dados de wide para long para representar dois dados iguais de recortes distintos no mesmo gráfico - dados categóricos&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados_bh &amp;lt;- read_delim(&amp;quot;dados_aluno.csv&amp;quot;, 
     delim = &amp;quot;;&amp;quot;, escape_double = FALSE, trim_ws = TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;internet_antes &amp;lt;- dados_bh %&amp;gt;% 
-  select(internet_compras_antes) %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# &amp;quot;Na unha!!!!&amp;quot;
+antes &amp;lt;- dados_bh %&amp;gt;% 
+  select(internet_compras_antes, genero, escolaridade) %&amp;gt;% 
   mutate(dado = &amp;quot;antes&amp;quot;) %&amp;gt;% 
   rename(&amp;quot;internet&amp;quot; = &amp;quot;internet_compras_antes&amp;quot;)
 
-
-internet_depois &amp;lt;- dados_bh %&amp;gt;% 
-  select(internet_compras_depois) %&amp;gt;% 
+depois &amp;lt;- dados_bh %&amp;gt;% 
+  select(internet_compras_depois, genero, escolaridade) %&amp;gt;% 
   mutate(dado = &amp;quot;durante&amp;quot;) %&amp;gt;% 
   rename(&amp;quot;internet&amp;quot; = &amp;quot;internet_compras_depois&amp;quot;)
 
+data_plot &amp;lt;- data.frame(rbind(antes, depois))
 
-data_plot &amp;lt;- data.frame(rbind(internet_antes, internet_depois))
-
-data_plot_long &amp;lt;- data_plot %&amp;gt;% 
-  melt(id.vars = c(&amp;quot;dado&amp;quot;), value.name = &amp;quot;freq&amp;quot;, na.rm = TRUE, factorsAsStrings = FALSE) %&amp;gt;% 
-  select(!variable)&lt;/code&gt;&lt;/pre&gt;
+##### Alternativa usando a função gather para gerar o data_plot - &amp;quot;elegante&amp;quot;
+data_plot_long &amp;lt;- dados_bh %&amp;gt;% 
+  gather(key = &amp;quot;dado&amp;quot;, value = &amp;quot;antes_depois&amp;quot;, -genero, -escolaridade)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;gráficos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gráficos&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data_plot_long) + 
-  geom_bar(aes(x = freq, fill = dado), position = &amp;quot;dodge&amp;quot;) +
+  geom_bar(aes(x = antes_depois, fill = dado), position = &amp;quot;dodge&amp;quot;) +
   coord_flip() +
-  labs(x = &amp;quot;&amp;quot;, y = &amp;quot;&amp;quot;, fill = &amp;quot;Período&amp;quot;) +
-  xlab(&amp;quot;&amp;quot;) +
-  ylab(&amp;quot;&amp;quot;) +
-  guides(fill = guide_legend(reverse=T)) +
-  theme(legend.position = &amp;quot;bottom&amp;quot;, axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank()) +
-  scale_fill_brewer(palette = &amp;quot;Set1&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+  facet_wrap(~ genero)
+
+ggplot(data_plot_long) + 
+  geom_bar(aes(x = antes_depois, fill = dado), position = &amp;quot;dodge&amp;quot;) +
+  coord_flip() +
+  facet_grid(escolaridade ~ genero)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;extra-função-case_when-dentro-do-mutate&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Extra: função “case_when” dentro do mutate&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_plot_long &amp;lt;- dados_bh %&amp;gt;% 
+  gather(key = &amp;quot;dado&amp;quot;, value = &amp;quot;antes_depois&amp;quot;, -genero, -escolaridade) %&amp;gt;% 
+  mutate(dado = case_when(dado == &amp;#39;internet_compras_antes&amp;#39; ~ &amp;#39;antes&amp;#39;,
+                          dado == &amp;#39;internet_compras_depois&amp;#39; ~ &amp;#39;depois&amp;#39;))   
+ggplot(data_plot_long) + 
+  geom_bar(aes(x = antes_depois, fill = dado), position = &amp;quot;dodge&amp;quot;) +
+  coord_flip() +
+  facet_wrap(~ genero)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/disciplinas/intror_master/lab42_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
