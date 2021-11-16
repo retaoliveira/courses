@@ -33,7 +33,7 @@ install.packages("reshape2")
 
 [Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
 
-[Arquivo .csv](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/Eblw9IdTPpFOqpXLRznx-dwBtRBV-w230jYFTNim3dVl4A?e=94UnUY)
+[Arquivo .csv](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EVHWeyy072lFknBr6lRrlQQBRq2xLKWI0TA6SUB7KUvnHQ?e=LsnD1h)
 
 3. Siga as diretrizes da atividade. 
 

@@ -18,34 +18,11 @@ weight: 20
 </div>
 
 <pre class="r"><code>library(tidyverse)</code></pre>
-<div id="recuperando-ambiente-da-sessão-anterior" class="section level1">
-<h1>Recuperando ambiente da sessão anterior</h1>
-<pre class="r"><code>            #---
-    getwd() # O diretório de trabalho é ...
-            #---
-
-    #---
-    # se necessário use o comando ...
+<pre class="r"><code>    #---
+    # +++ Matrix Basics ----
     #
-    #       setwd   [ver exemplo de uso no help]
-    #
-    # ... para mudar ou definir o diretorio de trabalho
-    #---
-
-    #---
-    #
-    #   carga de variaveis, funções, etc, da sessão anterior,
-    #   que havíamos armazenado no ARQUIVO ProjetoIniAmbiente.RData
-    #
-    #---
-
-      load(&quot;ProjetoIniAmbiente.RData&quot;) </code></pre>
-</div>
-<div id="matrizes-vetores-especiais" class="section level1">
-<h1>Matrizes: vetores especiais</h1>
-<div id="basics" class="section level2">
-<h2>Basics</h2>
-<pre class="r"><code>        matrix( data= 1:20, nrow= 4)
+  
+        matrix( data= 1:20, nrow= 4)
         matrix( data= 1:20, nrow= 5)
         matrix( data= 1:20, 4)
         matrix( data= 1:20, ncol= 4)
@@ -59,7 +36,7 @@ weight: 20
           mA
   
       #---
-      # Reconciliando: a operação transposição 
+      # Transposi��o
       #---
   
         t(mA)
@@ -93,11 +70,17 @@ weight: 20
       #---
   
         matrix( c(1:10,T,T),  4)
-        matrix( c(1:10,&quot;T&quot;,T),  4)</code></pre>
-</div>
-<div id="operações-elementares-i-matrizes-e-escalares" class="section level2">
-<h2>Operações elementares I: Matrizes e Escalares</h2>
-<pre class="r"><code>  mA
+        matrix( c(1:10,&quot;T&quot;,T),  4)
+  
+    #
+    # +++ END Basics ----
+    #---
+  
+    #---
+    # +++ BEG Operações elementares I: Matrizes e Escalares ----
+    #
+  
+        mA
         2*mA
         sqrt(mA)
         mA^(1/3)
@@ -105,11 +88,17 @@ weight: 20
         mA&gt;5
         paste(mA, &quot;1&quot;)
         c(mA, &quot;1&quot;)
-        c(mA, 1)</code></pre>
-</div>
-<div id="operações-elementares-ii-matrizes-e-vetores" class="section level2">
-<h2>Operações elementares II: Matrizes e Vetores</h2>
-<pre class="r"><code>        mA= t(mA)
+        c(mA, 1)
+  
+    #
+    # +++ END Operações elementares I: Matrizes e Escalares ----
+    #---
+        
+    #---
+    # +++ BEG Operações elementares II: Matrizes e Vetores ----
+    #
+    
+        mA= t(mA)
         mA
                     #---
         mA + 1:20   # Business as usual
@@ -129,11 +118,16 @@ weight: 20
       # outro exemplo de ciclo
       #---
         mB= matrix( 1:12, 4 )
-        (1:3)^mB</code></pre>
-</div>
-<div id="operações-elementares-iii-matrizes-e-matrizes" class="section level2">
-<h2>Operações elementares III: Matrizes e Matrizes</h2>
-<pre class="r"><code>        mB
+        (1:3)^mB
+    
+    #
+    # +++ END Operações elementares II: Matrizes e Vetores ----
+    #---
+  
+    #---
+    # +++ BEG Operações elementares III: Matrizes e Matrizes ----
+    #
+        mB
         mA
         mA + mB
     
@@ -158,11 +152,18 @@ weight: 20
           mD= matrix(runif(16), 4)
           solve(mD)
         mD %*% solve(mD)
-        round(mD %*% solve(mD), digits=6)</code></pre>
-</div>
-<div id="submatrizes-etc" class="section level2">
-<h2>Submatrizes , etc</h2>
-<pre class="r"><code>        mA
+        round(mD %*% solve(mD), digits=6)
+  
+    #
+    # +++ END Operações elementares III: Matrizes e Matrizes ----
+    #---
+  
+  
+    #---
+    # +++ BEG Submatrizes , etc ----
+    #
+  
+        mA
             mA[1,3]         # elemento [1,3]
             mA[2,]          # segunda linha
             mA[1:2,]        # primeira e segunda linhas
@@ -188,28 +189,50 @@ weight: 20
           LinMaiorQCol= row(mD)&gt;col(mD)
         mD[LinMaiorQCol]
         mD
-        mD[row(mD)==col(mD)]</code></pre>
-</div>
-<div id="documentando-vetores" class="section level2">
-<h2>Documentando vetores</h2>
-<pre class="r"><code>        y=1:12
+        mD[row(mD)==col(mD)]
+  
+    #
+    # +++ END Submatrizes , etc ----
+    #---
+  
+    #---
+    # +++ BEG documentando vetores ----
+    #
+    
+        y=1:12
         names(y)= month.abb
         y
         y[c(2,4)]
-        y[c(&quot;Jan&quot;, &quot;Feb&quot;, &quot;Jul&quot;)]</code></pre>
-</div>
-<div id="documentando-matrizes" class="section level2">
-<h2>Documentando matrizes</h2>
-<pre class="r"><code>        mA= matrix(1:20, 5)
+        y[c(&quot;Jan&quot;, &quot;Feb&quot;, &quot;Jul&quot;)]
+    
+    #
+    # +++ END documentando vetores ----
+    #---
+
+    #---
+    # +++ BEG documentando matrizes ----
+    #---
+        
+        mA= matrix(1:20, 5)
         dimnames(mA)= list(letters[1:5],month.abb[1:4])
         mA
         
         summary(matrix(1:20, 5))
-        summary(mA)</code></pre>
-</div>
-<div id="listas-uma-estrutura-mais-geral" class="section level2">
-<h2>Listas: uma estrutura mais geral</h2>
-<pre class="r"><code>  dadosDeGB= 
+        summary(mA)
+        
+    #---
+    # +++ END documentando matrizes ----
+    #---
+        
+#---
+#   END matrizes: vetores especiais ----
+#---
+
+#---
+#   BEG listas: uma estrutura mais geral ----
+#---
+
+  dadosDeGB= 
     list( nome=&quot;Giordanno Bruno&quot;,
           idade= 48,
           ehCasado= F,
@@ -239,238 +262,10 @@ weight: 20
   #---
     names(dadosDeGB)
     dadosDeGB$anosDeEstudo= 40
-    names(dadosDeGB)</code></pre>
-</div>
-<div id="lgn-tcl-exercícios-de-simulação-e-a-função-apply" class="section level2">
-<h2>LGN &amp; TCL : exercícios de simulação e a função apply</h2>
-<div id="ex-1-ybarra-converge-para-valor-esperado-de-y" class="section level3">
-<h3>EX 1: yBarra converge para Valor Esperado de Y</h3>
-<pre class="r"><code>    set.seed(1)
-    smpSize= 50000
-    y= rpois(smpSize, lambda=.8)
-    vyBarra= cumsum(y)/1:smpSize
+    names(dadosDeGB)
 
-    plot(1:smpSize, vyBarra, ylim= c(.75,.85),
-         type= &quot;b&quot;, pch=15, cex=.5,
-         xlab= &quot;tamanho de amostra&quot;,
-         main= paste(&quot;Evolução das médias aritméticas de Poi(.8)\n&quot;,
-                     &quot;com o tamanho da amostra&quot;) )
-      abline(h=.8, col=&quot;red&quot;)</code></pre>
-</div>
-<div id="ex-2-ybarra-não-converge-para-valor-esperado-de-y" class="section level3">
-<h3>EX 2: yBarra não converge para Valor Esperado de Y</h3>
-<pre class="r"><code>    set.seed(2)
-    smpSize= 50000
-    y= rcauchy(smpSize)
-    vyBarra= cumsum(y)/(1:smpSize)
-    
-    plot(1:smpSize, vyBarra,  #ylim= c(.75,.85),
-         type= &quot;b&quot;, pch=15, cex=.5,
-         main= paste(&quot;Evolução das médias aritméticas de Cauchys\n&quot;,
-                     &quot;com o tamanho da amostra&quot;),
-         xlab=&quot;tamanho de amostra&quot;)
-    abline(h=0, col=&quot;red&quot;)</code></pre>
-</div>
-<div id="ex-3-n12ybarra---musigma-converge-em-distribuição-para-z" class="section level3">
-<h3>EX 3: n^(1/2)(yBarra - mu)/sigma converge em distribuição para Z</h3>
-<pre class="r"><code>    set.seed(1)
-      smpSize= 500
-      nReplic= 400
 
-    mYs= matrix( rexp(smpSize*nReplic), smpSize)
-    vDeYbarras= apply(mYs, 2, mean)
-
-    plot(density(sqrt(smpSize)*(vDeYbarras-1), bw=&quot;SJ&quot;), 
-         main=&quot;Densidade Estimada vs Normal&quot;)
-      lines( seq(-3,3,,50), dnorm(seq(-3,3,,50)),
-             col=&quot;red&quot;)</code></pre>
-</div>
-<div id="ex-4-n12ybarra---mus-converge-em-distribuição-para-z" class="section level3">
-<h3>EX 4: n^(1/2)(yBarra - mu)/s converge em distribuição para Z</h3>
-<pre class="r"><code>    set.seed(1)
-      smpSize= 800
-      nReplic= 2000
-    
-    mYs= matrix( rexp(smpSize*nReplic), smpSize)
-      vDeYbarras= apply(mYs, 2, mean)
-    #---
-    # Equivalente mas mais lento:
-    #   
-    #   vDeYbarras= rep(0, ncol(mYs)) 
-    #   for(j in 1:ncol(mYs)) {
-    #     vDeYbarras[j]= mean(mYs[,j])   
-    #   }
-    #---
-      vDeSs= apply(mYs, 2, sd)
-    
-    plot(density(sqrt(smpSize)*(vDeYbarras-1)/vDeSs, bw=&quot;SJ&quot;), 
-         main=&quot;Densidade Estimada vs Normal&quot;)
-    lines( seq(-3,3,,50), dnorm(seq(-3,3,,50)),
-           col=&quot;red&quot;)</code></pre>
-</div>
-<div id="ex-5-just-for-fun" class="section level3">
-<h3>EX 5: Just for fun</h3>
-<pre class="r"><code>     lix=   seq(-pi,pi,,2^13)
-      plot(  2^.5*cos(lix)/(1 + sin(lix)^2),
-             2^.5*sin(lix)*cos(lix)/(1 + sin(lix)^2),
-             type=&quot;l&quot;, xlab=&quot;&quot;, ylab=&quot;&quot;,
-             main= &quot;A Lemniscata de Jacobo Bernoulli&quot;,
-             col= rgb( .95, .55, .55),
-             col.main=&quot;blue&quot;, axes=F)
-      nCurv= 16
-      escala= seq(1, .95, , nCurv)
-      for(   knd in 2:nCurv  ) {
-        lines( escala[knd]*2^.5*cos(lix)/(1 + sin(lix)^2),
-               escala[knd]*2^.5*cos(lix)*sin(lix)/(1 + sin(lix)^2),
-               col=
-                 rgb( .95,
-                      .3+.25*knd/(1+nCurv),
-                      .3+.25*knd/(1+nCurv) ),
-               lwd=3) }</code></pre>
-</div>
-</div>
-<div id="dataframes-meio-listas-e-meio-matrizes" class="section level2">
-<h2>Dataframes: meio listas e meio matrizes</h2>
-<div id="importando-dados" class="section level3">
-<h3>Importando dados</h3>
-<pre class="r"><code>    #---
-    #   Um exemplo
-    #
-    #
-    #   1.  dados usados em Stock &amp; Watson
-    #
-    #   2.  http://wps.aw.com/aw_stock_ie_2/50/13016/3332253.cw/index.html
-    #
-    #   3.  Baixar os dois arquivos relativos a
-    #
-    #           &quot;California Test Score Data Used in Chapters 4-9&quot;
-    #
-    #       no diretório do projeto em q vc está trabalhando.
-    #
-    #   4.  Um deles: formato= XL [extensão= .xls]; 
-    #           o outro: formato = STATA [extensão= .dta]
-    #
-    #   5.  Edite o caschool.xls e salve como formato csv
-    #---
-
-    dFCaschool= read.csv2(file=&quot;caschool.csv&quot;)
-      head(dFCaschool)
-      tail(dFCaschool)
-
-    #--- Equivalente: Lendo direto no formato do STATA 
-    #
-    # dFCaschool= read.dta(&quot;caschool.dta&quot;)
-    #
-    #--- 
-
-    is.matrix(dFCaschool)
-    is.list(dFCaschool)
-
-    is.data.frame(dFCaschool)
-      names(dFCaschool)
-
-    dFNerlove= read.csv2(&quot;nerlove.csv&quot;)
-      head(dFNerlove)</code></pre>
-</div>
-</div>
-<div id="exercício-de-simulação" class="section level2">
-<h2>Exercício de simulação</h2>
-<pre class="r"><code>#   i.    modelo: Y = beta1 + beta2*X + Eps com xNobs observações
+  
 #
-#   ii.   simulo: xB realizações do processo acima
-#
-#   iii.  para cada uma das realizações estime beta via OLS.
-#         use a função lsfit
-#
-#   iv.   estime a densidade de beta2Hat e a variância de beta2Hat
-# 
-#   v.    faça boxplot dos beta2Hat&#39;s
-#
-#   vi.   Considere o estimador:
-#            
-#         beta2Til= Média Aritmética ponderada de
-#
-#           { (Y1-YBarra)/(X1-XBarra), ..., (Yn-YBarra)/(Xn-XBarra)}, 
-#
-#               com pesos
-#
-#           { |X1-XBarra|, ..., |Xn-XBarra|}, 
-#
-#         beta1Til= YBarra - beta2Til * XBarra
-#
-#   vii.  estime a densidade de beta2Til e a variância de beta2Til
-#
-#---
-
-#---
-# atribuo parametros
-#---
-  vBeta= c(1, .3)
-  xNobs= 32
-  xB=500
-  set.seed(1)
-
-#---
-# a simulação ...
-#---
-  vRegX=  matrix(rnorm(xB*xNobs, mean= 4, sd=.5), 32)
-  vEps=   matrix(rnorm(xB*xNobs, mean= 0, sd=.1), 32)
-    vY= vBeta[1] + vBeta[2]*vRegX + vEps
-
-#---
-# só pra checar ...
-#---
-  plot(vRegX[,1], vY[,1])
-  lsfit(vRegX[,1], vY[,1])
-    lsfit(vRegX[,1], vY[,1])$coefficients
-
-#---
-# acumulo em mBetaHats os estimadores de OLS: 
-#
-#     primeiro reservo espaço pros estimadores ... 
-#---
-  mBetaHats= matrix(0, 2, 500)
-    dimnames(mBetaHats)= 
-        list( paste(&quot;BetaHat&quot;, 1:2, sep= &quot;&quot;),
-              paste(&quot;Smpl&quot;, 1:500, sep= &quot;&quot;))
-
-#---
-#     a estimação propriamente dita ... 
-#---
-  for(n in 1:xB){
-    mBetaHats[,n]= lsfit(vRegX[,n], vY[,n])$coefficients
-  }
-  boxplot(mBetaHats[&quot;BetaHat2&quot;,])  
-  sd(mBetaHats[&quot;BetaHat2&quot;,])
-
-#---
-# acumulo em mBetaTildas os estimadores alternativos: 
-#
-#     primeiro reservo espaço pros estimadores ... 
-#---
-  mBetaTildas= matrix(0, 2, 500)
-  dimnames(mBetaTildas)= 
-    list( paste(&quot;BetaTilda&quot;, 1:2, sep= &quot;&quot;),
-          paste(&quot;Smpl&quot;, 1:500, sep= &quot;&quot;))
-
-#---
-#     a estimação propriamente dita ... 
-#---
-  for(n in 1:xB){
-    ybarTmp= mean(vY[,n])
-    xbarTmp= mean(vRegX[,n])
-    mBetaTildas[2,n]= 
-      weighted.mean((vY[,n]-ybarTmp)/(vRegX[,n]-xbarTmp),
-                    abs(vRegX[,n]-xbarTmp) )
-    mBetaTildas[1,n]=
-      ybarTmp - mBetaTildas[2,n]*xbarTmp
-  }
-
-  boxplot(mBetaTildas[&quot;BetaTilda2&quot;,])  
-  sd(mBetaTildas[&quot;BetaTilda2&quot;,])</code></pre>
-</div>
-<div id="salvando-o-ambiente" class="section level2">
-<h2>Salvando o ambiente</h2>
-<pre class="r"><code>    save.image(file=&quot;EnvironmentPrjt1.RData&quot;)</code></pre>
-</div>
-</div>
+#   END listas: uma estrutura mais geral ----
+#---</code></pre>
