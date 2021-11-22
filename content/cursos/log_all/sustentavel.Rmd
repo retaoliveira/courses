@@ -3,7 +3,7 @@ date: "2021-08-25T00:00:00+01:00"
 draft: False
 menu:
   log_all:
-    parent: 9 - Logística e Sustentabilidade
+    parent: 8 - Logística e Sustentabilidade
     weight: 99
 title: Logística verde, reversa e sustentável
 editor_options: 

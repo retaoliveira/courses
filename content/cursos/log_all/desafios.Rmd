@@ -4,7 +4,7 @@ draft: false
 menu:
   log_urb:
     parent: 3 - Desafios da Logística Urbana
-    weight: 10
+    weight: 40
 title: Desafios da Logística Urbana
 editor_options: 
   markdown: 
@@ -13,8 +13,13 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 10
+weight: 40
 ---
+
+
+[Livro](https://podeditora.com.br/wp-content/uploads/2019/04/Livro-A-logistca-urbana-no-Brasil-site.pdf)
+
+<hr>
 
 
 <iframe width="900" height="506" src="https://www.youtube.com/embed/xQ-MuZguCK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
