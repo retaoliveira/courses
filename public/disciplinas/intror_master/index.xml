@@ -2197,23 +2197,26 @@ for (var in vetor_var){
 
 &lt;/div&gt;
 
-&lt;div id=&#34;funções-e-programação-de-interações-no-r&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Funções e programação de interações no R&lt;/h1&gt;
+&lt;div id=&#34;scrape-em-tabelas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Scrape em tabelas&lt;/h1&gt;
 &lt;div id=&#34;exercícios&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exercícios&lt;/h2&gt;
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;strong&gt;Diretrizes gerais:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Instale o pacote &lt;code&gt;cepespR&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instale o pacote &lt;code&gt;tabulizer&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;Cepesp-Fgv/cepesp-r&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(c(&amp;quot;ropensci/tabulizerjars&amp;quot;, &amp;quot;ropensci/tabulizer&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Using github PAT from envvar GITHUB_PAT&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Skipping install of &amp;#39;cepespR&amp;#39; from a github remote, the SHA1 (7253b4af) has not changed since last install.
+&lt;pre&gt;&lt;code&gt;## Skipping install of &amp;#39;tabulizerjars&amp;#39; from a github remote, the SHA1 (d1924e01) has not changed since last install.
+##   Use `force = TRUE` to force installation&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Skipping install of &amp;#39;tabulizer&amp;#39; from a github remote, the SHA1 (9f45f919) has not changed since last install.
 ##   Use `force = TRUE` to force installation&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Baixe o arquivo .Rmd e o .csvb e abra no RStudio.&lt;/li&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e o folder com os arquivos em .pdf e abra no RStudio.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETeYkh2-WipAmE0p9htIqBcBJ-bArZ06Oce43hAV5507nA?e=DuQfI3&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/3eryvmh6fx7hszg/tabulizer.Rmd?dl=0&#34;&gt;Arquivo .Rmd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/sh/06oe1s96w2d4qhp/AABretq0u92RGeuPmekbbWXva?dl=0&#34;&gt;Arquivos .pdf&lt;/a&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;Siga as diretrizes da atividade.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Rode o arquivo .Rmd por meio do ícone &lt;code&gt;knitr&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
@@ -2221,85 +2224,66 @@ for (var in vetor_var){
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;/hr&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exercício-1.&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Exercício 1.&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Agradecimento: Leo Barone pelo maravilhoso exercício!&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;funções-iteração-e-vetorialização-do-código&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Funções, iteração e vetorialização do código&lt;/h2&gt;
-&lt;p&gt;Neste breve tutorial vamos ver alguns exemplos de como criar funções e utilizar processos iterativos (loops), e sua forma vetorializada (famílias de funções &lt;em&gt;apply&lt;/em&gt; e &lt;em&gt;map&lt;/em&gt;) facilitam a organização do código, reduzem bastante o esforço de programação e tornam o programa mais eficiente.&lt;/p&gt;
-&lt;p&gt;Estes exemplos servirão de norte para que você leia, em sala, os capítulos &lt;a href=&#34;http://r4ds.had.co.nz/functions.html&#34;&gt;19 - Functions&lt;/a&gt;, &lt;a href=&#34;http://r4ds.had.co.nz/iteration.html&#34;&gt;20 - Iteration&lt;/a&gt;, e o trecho do capítulo &lt;a href=&#34;http://r4ds.had.co.nz/vectors.html#lists&#34;&gt;18 - Vectors&lt;/a&gt; que trata de listas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exemplo-1---substituindo-repetição-de-código-por-loops&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exemplo 1 - substituindo repetição de código por loops&lt;/h2&gt;
-&lt;p&gt;Imagine que você precisa organizar dados dos candidatos à presidência de diversos anos (2006 a 2014) e vai utilizar a API do CEPESP Data. Utilizando a função &lt;em&gt;candidates&lt;/em&gt; do pacote &lt;em&gt;cepespR&lt;/em&gt; podemos obter os dados:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(cepespR)
-candidatos06 &amp;lt;- get_candidates(year = 2006, position = &amp;quot;President&amp;quot;)
-candidatos10 &amp;lt;- get_candidates(year = 2010, position = &amp;quot;President&amp;quot;)
-candidatos14 &amp;lt;- get_candidates(year = 2014, position = &amp;quot;President&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;e, a seguir, podemos juntar todos em um único data_frame:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;candidatos &amp;lt;- rbind(candidatos06, candidatos10, candidatos14)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Simples, não? Imagine agora que você quer repetir mesma tarefa não 4, mas centenas de vezes. O código deixaria de ser simples e passaria a ter centenas de linhas.&lt;/p&gt;
-&lt;p&gt;Essa centena de linhas seria pura repetição de código. No nosso exemplo, a obtenção dos dados para candidatos à presidência em 2006 e em 2010 são idênticas, exceto por 2 números. Como podemos evitar a repetição de códigos?&lt;/p&gt;
-&lt;p&gt;Neste tutorial vamos rever dois tópicos que são fundamentais para tornar o seu código mais enxuto e eficiente: funções e iterações (loops e similares).&lt;/p&gt;
-&lt;p&gt;No exemplo acima, um simples &lt;em&gt;for loop&lt;/em&gt; resolveria nosso problema de repetição de código. Veja abaixo e tente entender sozinha(o) o que está acontencendo:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-vetor_anos &amp;lt;- c(2006, 2010, 2014)
-candidatos &amp;lt;- data.frame()
-for (ano in vetor_anos){
-  candidatos &amp;lt;- bind_rows(candidatos, 
-                      get_candidates(year = ano, position = &amp;quot;President&amp;quot;))
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Simples, não? Se quiséssemos utilizar mais anos em nossa análise, bastaria mudar o vetor “percorrido” pelo loop que contém o número de anos.&lt;/p&gt;
-&lt;p&gt;Vamos supor agora que não queremos juntar todos os anos, apenas contar o número de linhas (que é o número de candidatos) em cada um dos anos e armazenar o resultado em um vetor. Veja como fazemos isso com um &lt;em&gt;for loop&lt;/em&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_candidatos &amp;lt;- c()
-for (ano in vetor_anos){
-  n_candidatos &amp;lt;- c(n_candidatos, nrow(get_candidates(year = ano, position = &amp;quot;President&amp;quot;)))
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Igualmente simples. Há outras maneiras de produzir o mesmo resultado em R sem utilizar &lt;em&gt;for loops&lt;/em&gt;. Note que podemos pensar um &lt;em&gt;for loop&lt;/em&gt; como uma função que recebe como argumento um vetor e realiza a mesma tarefa para cada elemento do vetor.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exemplo-2---combinando-loops-e-funções&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exemplo 2 - combinando loops e funções&lt;/h2&gt;
-&lt;p&gt;Uma das bases mais estudadas em política comparada e estudos empíricos sobre é a Polity IV, que contém varáveis sobre diversas características de um conjunto grande de países e em vários anos. Quem quiser conhecer mais sobre os dados pode acessar &lt;a href=&#34;http://www.systemicpeace.org/inscrdata.html&#34;&gt;aqui&lt;/a&gt; ou ler a documentação &lt;a href=&#34;http://www.systemicpeace.org/inscr/p4manualv2016.pdf&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A principal variável da base de dados é um indicador de grau de democracia que resulta da combinação de um conjunto variáveis componentes codificadas diretamente a partir da observação dos casos. Vamos ignorar seus significados e apenas observar que essas variáveis componentes recebem valores de 0 a 7, se o caso for uma democracia, ou os códigos -66, -77 e -88 em períodos autoritários ou de transição.&lt;/p&gt;
-&lt;p&gt;Comece abrindo os dados que estão no repositório do curso e criando uma cópia, ‘p4’, que será modificada.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p4_raw &amp;lt;- read.csv2(&amp;quot;https://raw.githubusercontent.com/leobarone/FLS6397_2018/master/data/p4v2016.csv&amp;quot;)
-p4 &amp;lt;- p4_raw&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Como as variáveis contêm alguns códigos numéricos cujas distâncias matemáticas não fazem nenhum sentido (-66, -77 e -88), precisamos transformá-los em NA para podermos calcular qualquer estatística descritiva com a variável. Vamos realizar a transformação nas variáveis ‘xconst’, ‘xrreg’, ‘xropen’, ‘xconst’ e aprender um novo operador, &lt;em&gt;%in%&lt;/em&gt;. Todas as variáveis se referem sobre características da competição pelo poder Executivo em um país em um ano:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p4$xrcomp[p4$xrcomp %in% c(-66, -77, -88)] &amp;lt;- NA
-p4$xrreg[p4$xrreg %in% c(-66, -77, -88)] &amp;lt;- NA
-p4$xropen[p4$xropen %in% c(-66, -77, -88)] &amp;lt;- NA
-p4$xconst[p4$xconst %in% c(-66, -77, -88)] &amp;lt;- NA&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Como vamos repetir a mesma transformação de variáveis diversas vezes, convém escrever uma função para tal transformação. Observe com cuidado o código abaixo:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;limpa_var &amp;lt;- function(x) {
-  x[x %in% c(-66, -77, -88)] &amp;lt;- NA
-  return(x)
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Vamos refazer o código acima utilizando a função que acabamos de criar (lembre-se criar um novo objeto ‘p4’, pois as variáveis foram transformadas no código anterior):&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p4 &amp;lt;- p4_raw
-p4$xrcomp &amp;lt;- limpa_var(p4$xrcomp)
-p4$xrreg &amp;lt;- limpa_var(p4$xrreg)
-p4$xropen &amp;lt;- limpa_var(p4$xropen)
-p4$xconst &amp;lt;- limpa_var(p4$xconst)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Melhor. Temos linhas mais enxutas. Se estívessemos aplicando transformações mais complexas às variáveis, encurtaríamos bastante o código.&lt;/p&gt;
-&lt;p&gt;Ainda assim, temos muitas repetições de linha. O que muda de uma linha à outra é apenas o nome da variável. Como vimos no caso anterior, podemos realizar tarefas repetidas em loop. Vamos, dessa forma, aplicar a função que criamos em loop:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p4 &amp;lt;- p4_raw
-vetor_var &amp;lt;- c(&amp;#39;xrcomp&amp;#39;, &amp;#39;xrreg&amp;#39;, &amp;#39;xropen&amp;#39;, &amp;#39;xconst&amp;#39;)
-for (var in vetor_var){
-  p4[, var] &amp;lt;- limpa_var(p4[, var])
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Se estívessemos utilizando todas as variáveis do banco de dados codificadas da mesma maneira (são várias) teríamos uma economia bastante importante de código.&lt;/p&gt;
-&lt;p&gt;Obs: uma forma alternativa de selecionar variáveis de um data frame utilizando colchetes é aplicando colchetes duplo (em vez de separar linhas e colunas dentro do colchetes por vírgula). O estilo de código abaixo, encontrado com frequência no livro “R for Data Science”, é equivalente ao que acabamos de ver.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;for (var in vetor_var){
-  p4[[var]] &amp;lt;- limpa_var(p4[[var]])
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(hrbrthemes)
+library(ggplot2)
+library(Cairo)
+library(extrafont)
+library(rJava)      # Needed for tabulizer
+library(tabulizer)  # Handy tool for PDF Scraping
+library(tidyverse)  # Core data manipulation and visualization libraries
+library(janitor)
+
+extrafont::loadfonts()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Este chunk serve para fazer a leitura dos arquivos&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# PDF Scrape Tables
+
+#Store folder of pdf to be loaded
+folder &amp;lt;- &amp;quot;pdf/&amp;quot;
+
+# Number of files in folder
+num_files &amp;lt;- length(dir(folder, pattern=&amp;quot;*.pdf&amp;quot;))
+
+# Generate file list of shapefiles
+files &amp;lt;- as.data.frame(dir(folder, pattern=&amp;quot;*.pdf&amp;quot;))
+names(files) &amp;lt;- &amp;quot;data&amp;quot;
+
+## Generate static maps 
+
+tmp &amp;lt;- data.frame(bairro = NA , sg = NA, srag = NA, obitos = NA, data = NA)
+
+for (i in 1:num_files) {
+   file_name &amp;lt;- files[i,1]
+   data &amp;lt;- print(str_sub(files[i,1], -14, -7))
+   scrape &amp;lt;- tabulizer::extract_tables(file = paste0(&amp;quot;pdf/&amp;quot;, files[i,1]), output = &amp;quot;data.frame&amp;quot;, page = 2, guess = TRUE, method = &amp;quot;stream&amp;quot;)
+   scrape1 &amp;lt;- as.data.frame(scrape[[1]])
+   scrape1 &amp;lt;- scrape1 %&amp;gt;% 
+      separate(col = &amp;#39;Síndrome.Respiratória.Aguda.Grave&amp;#39;, into = c(&amp;quot;total de casos&amp;quot;, &amp;quot;óbitos&amp;quot;), sep = &amp;#39; &amp;#39;) %&amp;gt;% 
+      slice(-1)
+   scrape1 &amp;lt;- scrape1[,c(1,3,5,6)] 
+   names(scrape1) &amp;lt;- c(&amp;quot;bairro&amp;quot;, &amp;quot;sg&amp;quot;, &amp;quot;srag&amp;quot;, &amp;quot;obitos&amp;quot;)
+   if (length(scrape) != 1) {
+      scrape2 &amp;lt;- as.data.frame(scrape[[2]])
+      scrape2[5,] &amp;lt;- colnames(scrape2)
+      names(scrape2) &amp;lt;- c(&amp;quot;bairro&amp;quot;, &amp;quot;sg&amp;quot;, &amp;quot;srag&amp;quot;, &amp;quot;obitos&amp;quot;)
+      scrape2 &amp;lt;- scrape2 %&amp;gt;% 
+         filter(bairro != &amp;quot;TOTAL&amp;quot;) 
+      scrape2 &amp;lt;- scrape2 %&amp;gt;% 
+         mutate(bairro = str_replace_all(bairro, &amp;quot;\\.&amp;quot;, &amp;quot; &amp;quot;), sg = str_replace(sg, &amp;quot;X&amp;quot;, &amp;quot;&amp;quot;), srag = str_replace(srag, &amp;quot;X&amp;quot;, &amp;quot;&amp;quot;), obitos = str_replace(obitos, &amp;quot;X&amp;quot;, &amp;quot;&amp;quot;))
+      tmp_dia &amp;lt;- rbind(scrape1, scrape2)
+      tmp_dia[,5] &amp;lt;- data
+      names(tmp_dia) &amp;lt;- c(&amp;quot;bairro&amp;quot;, &amp;quot;sg&amp;quot;, &amp;quot;srag&amp;quot;, &amp;quot;obitos&amp;quot;, &amp;quot;data&amp;quot;)
+   } else {
+      tmp_dia &amp;lt;- scrape1
+      tmp_dia[,5] &amp;lt;- data
+      names(tmp_dia) &amp;lt;- c(&amp;quot;bairro&amp;quot;, &amp;quot;sg&amp;quot;, &amp;quot;srag&amp;quot;, &amp;quot;obitos&amp;quot;, &amp;quot;data&amp;quot;)
+   }   
+   
+   tmp &amp;lt;- tmp %&amp;gt;% 
+      bind_rows(tmp, tmp_dia) %&amp;gt;% 
+      filter(!is.na(sg))
+   
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;exercício&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exercício&lt;/h2&gt;
-&lt;p&gt;Refere-se os dados de ‘Polity’ baixados anteriormente (&lt;em&gt;p4_raw&lt;/em&gt;).
-1. Use um &lt;em&gt;for loop&lt;/em&gt; para identificar o valor máximo na tabela das três variáveis: &lt;em&gt;parcomp&lt;/em&gt; (a competitividade da participação), &lt;em&gt;polcomp&lt;/em&gt; (a competitividade da política) e &lt;em&gt;polity2&lt;/em&gt; (o indicador geral da democracia).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
