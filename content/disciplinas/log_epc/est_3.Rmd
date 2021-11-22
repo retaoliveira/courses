@@ -2,7 +2,7 @@
 date: "2021-06-30T00:00:00+01:00"
 draft: false
 menu:
-  log_adm:
+  log_epc:
     parent: Estudos autônomos
     weight: 10
 title: 3. Logística Urbana
@@ -16,7 +16,7 @@ type: docs
 weight: 10
 ---
 
-Assita os vídeos constantes em [Desafios da Logística Urbana](https://retaoliveira.github.io/places/conteudo/log_urb/desafios) e responda as questões que seguem na tarefa postada no SIGAA:
+Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa postada no SIGAA:
 
 1. Defina Logística Urbana
 
