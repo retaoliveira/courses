@@ -33,6 +33,9 @@ Lucélia Vaz
 
 [Vídeos DataCamp](https://youtu.be/SWxoJqTqo08)
 
+[Dados](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EXg-lGMviChHstCtTLP8d9AB62Z00cdNFQTrbsFJPDMAlA?e=JZ0gIm)
+
+
 ## Exercício
 
 Os dados abaixo correspondem às observações sobre Despesa de Consumo Pessoal e Produto Interno Bruto em bilhões de dólares de 2000, para os Estados Unidos. Os dados foram obtidos no livro do Gujarati, intitulado Econometria básica. Existe uma teoria que estabelece uma relação entre o consumo e a renda de um país (medida em termos do Produto Interno Bruto). Partindo do pressuposto que, esta é uma relação linear, temos que o a Despesa de consumo pessoal (Y) guarda a seguinte relação com o Produto Interno Bruto (X).

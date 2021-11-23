@@ -21,7 +21,7 @@ devtools::install_github("Cepesp-Fgv/cepesp-r")
 
 2. Baixe o arquivo .Rmd e o .csvb e abra no RStudio. 
 
-[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETeYkh2-WipAmE0p9htIqBcBJ-bArZ06Oce43hAV5507nA?e=DuQfI3)
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ETG7uY5TF9ZHlNv70InRlLwBtCYguNA9Sw-QtdIX0qSLwA?e=wTD4jf)
 
 3. Resolva as questões.
 
