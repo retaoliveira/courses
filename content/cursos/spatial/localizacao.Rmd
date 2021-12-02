@@ -2,7 +2,7 @@
 date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
-  log_all:
+  spatial:
     parent: 6 - Localização e redes logísticas
     weight: 12
 title: Localização
@@ -17,7 +17,7 @@ weight: 15
 ---
 
 # Competências a serem desenvolvidas
-Ao final desse mini-curso, os alunos deverão ser capazes de discutir os seguintes conceitos:  
+Ao final deste curso, os alunos deverão ser capazes de discutir os seguintes conceitos:  
 
 - Pensamento espacial     
 - Introdução à cartografia   
