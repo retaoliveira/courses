@@ -63,7 +63,7 @@ Ao final deste curso, os alunos deverão ser capazes de discutir os seguintes co
 
 
 ```{r echo=FALSE, out.width='50%'}
-knitr::include_graphics('img/pensamento_espacial.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/pensamento_espacial.png')
 ```
 
 # Representações: sistemas geodésicos, modelos e datum    
@@ -72,7 +72,7 @@ knitr::include_graphics('img/pensamento_espacial.png')
 Forma irregular, com ondulações e depressões
 
 ```{r echo=FALSE, out.width='50%'}
-knitr::include_graphics('img/gravidade_terra.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/gravidade_terra.png')
 ```
    
 É preciso buscar um modelo mais simples para representar a Terra.   
@@ -82,7 +82,7 @@ knitr::include_graphics('img/gravidade_terra.png')
 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/geoide.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/geoide.png')
 ```
 
 ### Elipsóide de revolução    
@@ -97,11 +97,11 @@ Em geral, cada país ou grupo de países adotou um elipsóide de referência par
 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/elipsoi_1.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/elipsoi_1.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/elipsoide_2.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/elipsoide_2.png')
 ```
 
 ## Sistemas geodésicos
@@ -115,16 +115,16 @@ Marco geodésico, horizontal ou vertical, usado como ponto de origem do sistema 
 
 - Datum Vertical ou Altimétrico: referência para altitude (marco “zero” – 0 m)   
 ```{r echo=FALSE, out.width='50%'}
-knitr::include_graphics('img/datum.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/datum.png')
 ```
 
 - Datum Horizontal ou Planimétrico: referência para coordenadas planimétricas   
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/geoide_geocentrico.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/geoide_geocentrico.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/geoide_topocentrico.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/geoide_topocentrico.png')
 ```
 
 SIRGAS 2000 - Sistema de Referência Geocêntrico para as Américas   
@@ -149,7 +149,7 @@ Considerando que esta superfície seja curvilínea (elipsóide ou esfera), cada 
 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/graus.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/graus.png')
 ```
 
 **Meridianos**   
@@ -175,7 +175,7 @@ knitr::include_graphics('img/graus.png')
 - Latitude (letra grega phi ϕ): É a distância angular entre o lugar e o plano do Equador, contada sobre o plano do meridiano que passa no lugar. 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/lat_long.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/lat_long.png')
 ```
 
 ### Sistemas de coordenadas projetadas - projeções cartográficas   
@@ -184,27 +184,27 @@ Para confeccionar um mapa, precisamos de um método segundo o qual a cada ponto 
 A projeção cartográfica **transforma** uma posição sobre a superfície terrestre, identificada por latitude e longitude em uma posição em coordenadas cartesianas/planas (x,y).  
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/projecao.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/projecao.png')
 ```
 
 Sistemas de coordenadas planas devem ser utilizados para representação de pequenas porções da superfície terrestre (mapas de grande escala). Coordenadas planas não são utilizadas para mapas de pequenas escalas pelo seu potencial de distorção.   
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/laranja1.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/laranja1.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/laranja 2.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/laranja 2.png')
 ```
 
 Representar uma superfície curva (a Terra) em um plano sempre envolve deformações. **Não existe projeção ideal**.     
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/erro_proj1.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/erro_proj1.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/proj.jpg')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/proj.jpg')
 ```
 
 As projeções podem ser:     
@@ -224,13 +224,13 @@ Quanto ao Tipo de Contato:
 - Tangente   
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/planotangente.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/planotangente.png')
 ```
 
 - Secante
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/planosecante.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/planosecante.png')
 ```
 
 
@@ -241,7 +241,7 @@ Cada fuso possui um meridiano central, com 3 graus para cada lado. Os 60 fusos s
 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/mercartor.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/mercartor.png')
 ```
 
 
@@ -255,23 +255,23 @@ As Coordenadas UTM definem posições bi-dimensionais e horizontais.
 
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/utm.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/utm.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/utm_br.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/utm_br.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/utm1.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/utm1.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/utm2.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/utm2.png')
 ```
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/utm5.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/utm5.png')
 ```
 
 
@@ -316,7 +316,7 @@ A escolha das unidades espaciais dependende tanto da disponibilidade de dados co
 Dados espaciais podem apresentar diferentes formatos e comporem diferentes estruturas. Por agora, utilizaremos apenas o formato criado pela ESRI denominado `shapefile`.    
 
 ```{r echo=FALSE, out.width='30%'}
-knitr::include_graphics('img/vector-vs-raster.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/vector-vs-raster.png')
 ```
 
 ## Estrutura do shapefile   
@@ -345,13 +345,13 @@ A distância em rede é aquela equivalente ao deslocamento real no ambiente cons
 **1. Ambiente geral**   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q1.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q1.png')
 ```
 
 **2. Complementos**   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q2.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q2.png')
 ```
 
 **3. Acesso aos dados espaciais**   
@@ -359,11 +359,11 @@ knitr::include_graphics('img/q2.png')
 Vamos trabalhar com dados na estrutura `shapefile` - camadas vetoriais   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q3.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q3.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q4.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q4.png')
 ```
 
 **4. Mudança de atributos dos shapefiles**   
@@ -373,19 +373,19 @@ Mudança de cores das camadas
 - acesso às propriedades da camada   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q7.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q7.png')
 ```
 
 - Recursos para alteração da representação das feições nas camadas    
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q5.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q5.png')
 ```
 
 > Pode haver incompatibilidade entre feições causadas pela qualidade do dado vetorial ou por uso de diferentes projeções. Isso não inviabiliza o uso do dado espacial, mas podem ser necessárias conversões de sistemas de referência ou mesmo tratamento da geometria das feições.   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q8.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q8.png')
 ```
 
 
@@ -398,19 +398,19 @@ O mecanismo de transformações `on-the-fly` realiza reprojeções automáticas 
 São reprojeções dinâmicas, que não afetam o dado original   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q9.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q9.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q10.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q10.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q11.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q11.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q12.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q12.png')
 ```
 
 **Reprojetar ou converter**   
@@ -419,11 +419,11 @@ Salvar a camada com o novo sistema de referência/formato
 Botão direito sobre a camada > Save as... 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q13.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q13.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q14.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q14.png')
 ```
 
 **6. Tabela de atributos**    
@@ -431,12 +431,12 @@ knitr::include_graphics('img/q14.png')
 A `tabela de atributos` pode ser acessada pelo mesmo menu da camada. Na `tabela de atributos` são apresentadas as observações e os atributos de cada feição geométrica gerreferenciada. É análoga a uma planilha ou a um data.frame (`R`). É importante lembrar que só é possível associar um banco de dados (tabela de atributos) a um dado vetorial. Cada observação é uma feição geométrica desse dado.    
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q17.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q17.png')
 ```
 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q18.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q18.png')
 ```
 
 **7. Geocodificação**   
@@ -452,7 +452,7 @@ O arquivo a ser organizado e importado no `QGIS` para geocodificação é no for
 Na primeira coluna colocamos o endereço completo sem as informações de cidade, estado e país.   
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q16.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q16.png')
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qvUgWpidJ5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -466,44 +466,44 @@ knitr::include_graphics('img/q16.png')
 Mapas temáticos são representações em feições geométricas do atributo de interesse utilizando elementos visuais para visualização da estrutura espacial desses dados. 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q22.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q22.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q23.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q23.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q24.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q24.png')
 ```
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q25.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q25.png')
 ```
 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q26.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q26.png')
 ```
 
 **9. Geração de Layout de impressão**   
 Para gerarmos o layout de impressão dos mapas, é necessário acessar o ambiente de edição do layout. 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q19.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q19.png')
 ```
 
 O ambiente de edição de layout tem a seguinte estrutura:
 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q20.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q20.png')
 ```
 
 Para inserir os elementos gráficos e textuais no layout, você deve acessar o menu à esquerda da página em branco e incluir mapas, legendas, indicador de norte, escala, dentre outros elementos. 
 
 ```{r echo=FALSE, out.width='60%'}
-knitr::include_graphics('img/q21.png')
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/q21.png')
 ```
 
 **10. Manipulação de dados**   
