@@ -22,7 +22,6 @@
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#competências-a-serem-desenvolvidas&#34;&gt;Competências a serem desenvolvidas&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#pensamento-espacial&#34;&gt;Pensamento espacial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#representações-sistemas-geodésicos-modelos-e-datum&#34;&gt;Representações: sistemas geodésicos, modelos e datum&lt;/a&gt;
 &lt;ul&gt;
@@ -57,63 +56,6 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&#34;competências-a-serem-desenvolvidas&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Competências a serem desenvolvidas&lt;/h1&gt;
-&lt;p&gt;Ao final deste curso, os alunos deverão ser capazes de discutir os seguintes conceitos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pensamento espacial&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Introdução à cartografia
-&lt;ul&gt;
-&lt;li&gt;forma e dimensões terrestres&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;representações: sistemas geodésicos, modelos e datum&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;sistemas de coordenadas geográficas e projetadas&lt;br /&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Sistemas de Informações Geográficas (&lt;em&gt;Geographic Information Systems&lt;/em&gt;)&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Unidades espaciais e representação de fenômenos espaciais&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Distâncias&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;QGIS
-&lt;ul&gt;
-&lt;li&gt;Ambiente e funcionalidades básicas do QGIS&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Complementos: instalação e para que servem&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Mudança de datum e sistemas de coordenadas&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Tabela de atributos&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Estruturas de dados espaciais
-&lt;ul&gt;
-&lt;li&gt;classificação: vetoriais e matriciais&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;interoperabilidade&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;geocodificação&lt;br /&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Funções básicas em GIS
-&lt;ul&gt;
-&lt;li&gt;seleção por atributo e por localização&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;join por código e join espacial&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;mapas temáticos&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;geração de centroides e agregação de variaveis&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;conceito de redes&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;layout de impressão&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 &lt;div id=&#34;pensamento-espacial&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Pensamento espacial&lt;/h1&gt;
 &lt;blockquote&gt;

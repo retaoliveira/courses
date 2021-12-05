@@ -215,7 +215,46 @@ Sim, um pouco (muito?) de filosofia e psicologia sempre foram e serão essenciai
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://retacourses.netlify.app/cursos/spatial/</guid>
-      <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+      <description>&lt;h1 id=&#34;competências-a-serem-desenvolvidas&#34;&gt;Competências a serem desenvolvidas&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Pensamento espacial&lt;/li&gt;
+&lt;li&gt;Introdução à cartografia
+&lt;ul&gt;
+&lt;li&gt;forma e dimensões terrestres&lt;/li&gt;
+&lt;li&gt;representações: sistemas geodésicos, modelos e datum&lt;/li&gt;
+&lt;li&gt;sistemas de coordenadas geográficas e projetadas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sistemas de Informações Geográficas (&lt;em&gt;Geographic Information Systems&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Unidades espaciais e representação de fenômenos espaciais&lt;/li&gt;
+&lt;li&gt;Distâncias&lt;/li&gt;
+&lt;li&gt;QGIS
+&lt;ul&gt;
+&lt;li&gt;Ambiente e funcionalidades básicas do QGIS&lt;/li&gt;
+&lt;li&gt;Complementos: instalação e para que servem&lt;/li&gt;
+&lt;li&gt;Mudança de datum e sistemas de coordenadas&lt;/li&gt;
+&lt;li&gt;Tabela de atributos&lt;/li&gt;
+&lt;li&gt;Estruturas de dados espaciais
+&lt;ul&gt;
+&lt;li&gt;classificação: vetoriais e matriciais&lt;/li&gt;
+&lt;li&gt;interoperabilidade&lt;/li&gt;
+&lt;li&gt;geocodificação&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Funções básicas em GIS
+&lt;ul&gt;
+&lt;li&gt;seleção por atributo e por localização&lt;/li&gt;
+&lt;li&gt;join por código e join espacial&lt;/li&gt;
+&lt;li&gt;mapas temáticos&lt;/li&gt;
+&lt;li&gt;geração de centroides e agregação de variaveis&lt;/li&gt;
+&lt;li&gt;conceito de redes&lt;/li&gt;
+&lt;li&gt;layout de impressão&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

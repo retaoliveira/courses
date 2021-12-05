@@ -3,7 +3,7 @@ date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
   spatial:
-    parent: 6 - Localização e redes logísticas
+    parent: Localização como atributo de suporte à decisão
     weight: 12
 title: Localização
 editor_options: 
@@ -16,33 +16,6 @@ type: docs
 weight: 15
 ---
 
-# Competências a serem desenvolvidas
-Ao final deste curso, os alunos deverão ser capazes de discutir os seguintes conceitos:  
-
-- Pensamento espacial     
-- Introdução à cartografia   
-  - forma e dimensões terrestres   
-  - representações: sistemas geodésicos, modelos e datum    
-  - sistemas de coordenadas geográficas e projetadas   
-- Sistemas de Informações Geográficas (_Geographic Information Systems_)   
-- Unidades espaciais e representação de fenômenos espaciais   
-- Distâncias   
-- QGIS   
-  - Ambiente e funcionalidades básicas do QGIS   
-  - Complementos: instalação e para que servem  
-  - Mudança de datum e sistemas de coordenadas   
-  - Tabela de atributos   
-  - Estruturas de dados espaciais  
-    - classificação: vetoriais e matriciais   
-    - interoperabilidade   
-    - geocodificação   
-  - Funções básicas em GIS   
-      - seleção por atributo e por localização    
-      - join por código e join espacial   
-      - mapas temáticos   
-      - geração de centroides e agregação de variaveis  
-      - conceito de redes   
-      - layout de impressão   
 
 
 # Pensamento espacial
