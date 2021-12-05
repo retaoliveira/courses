@@ -11,5 +11,72 @@
 	    <atom:link href="https://retacourses.netlify.app/disciplinas/sdss/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Atividade 1</title>
+      <link>https://retacourses.netlify.app/disciplinas/sdss/atividade1/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/sdss/atividade1/</guid>
+      <description>&lt;h2 id=&#34;a-unidade-5-é-estruturada-considerando-os-seguintes-tópicos&#34;&gt;A &lt;strong&gt;Unidade 5&lt;/strong&gt; é estruturada considerando os seguintes tópicos:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Representação de fenômenos no espaço&lt;/li&gt;
+&lt;li&gt;Sistemas de coordenadas geográficas&lt;/li&gt;
+&lt;li&gt;Sistemas de coordenadas projetadas&lt;/li&gt;
+&lt;li&gt;Cartografia temática&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;esta-atividade-deverá-ser-realizada-até-dia-0912-são-propostas-as-seguintes-atividades&#34;&gt;Esta atividade deverá ser realizada até dia &lt;strong&gt;09/12&lt;/strong&gt;. São propostas as seguintes atividades:&lt;/h2&gt;
+&lt;h3 id=&#34;1-faça-o-download-do-shapefile-referente-às-regionais-de-bh-atividades-econômicas-formais-e-autônomos-formais-e-informais-no-site-bhmaphttpsbhmappbhgovbrv2mapaidebhgeozoom4lat77968930925lon6092509075baselayerbase-ou-pelo-link&#34;&gt;1. Faça o download do shapefile referente às regionais de BH, atividades econômicas formais e autônomos (formais e informais) no site &lt;a href=&#34;https://bhmap.pbh.gov.br/v2/mapa/idebhgeo?#zoom=4&amp;amp;lat=7796893.0925&amp;amp;lon=609250.9075&amp;amp;baselayer=base&#34;&gt;BHMAP&lt;/a&gt; ou pelo &lt;a href=&#34;&#34;&gt;link&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;2-instale-os-pacotes&#34;&gt;2. Instale os pacotes:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;install.packages(&amp;quot;sf&amp;quot;)
+install.packages(&amp;quot;terra&amp;quot;)
+install.packages(&amp;quot;spData&amp;quot;)
+install.packages(&amp;quot;spDataLarge&amp;quot;, repos = &amp;quot;https://nowosad.r-universe.dev&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-explore-a-documentação-do-pacote-sf&#34;&gt;3. Explore a documentação do pacote &lt;code&gt;sf&lt;/code&gt;&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;vignette(package = &amp;quot;sf&amp;quot;) # see which vignettes are available
+vignette(&amp;quot;sf1&amp;quot;)          # an introduction to the package
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-siga-os-comandos-a-seguir-para-explorar-o-pacote-sf&#34;&gt;4. Siga os comandos a seguir para explorar o pacote &lt;code&gt;sf&lt;/code&gt;:&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;world&lt;/code&gt; é um &lt;code&gt;sf data frame&lt;/code&gt; contendo colunas espaciais e de atributos, cujos nomes são retornados pela função &lt;code&gt;names()&lt;/code&gt;(a última coluna deste exemplo contém as informações geográficas).&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(sf)
+library(terra)
+library(spData)
+library(spDataLarge) 
+class(world)
+names(world)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja o que acontece quando você roda o comando &lt;code&gt;plot&lt;/code&gt; sobre esse dataframe:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;plot(world)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Copie o código abaixo e rode-o no seu &lt;code&gt;.Rmd&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;plot(world[&amp;quot;continent&amp;quot;], reset = FALSE)
+cex = sqrt(world$pop) / 10000
+world_cents = st_centroid(world, of_largest = TRUE)
+plot(st_geometry(world_cents), add = TRUE, cex = cex)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O que quer dizer a representação gerada por você?&lt;/p&gt;
+&lt;p&gt;Os objetos sf podem armazenar informações adicionais sobre os sistemas de referência de coordenadas (CRS). O valor padrão é NA (Não Disponível), como pode ser verificado com st_crs():&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;st_crs(world)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;https://epsg.io/&#34;&gt;EPSG&lt;/a&gt; simplifica a exploração de sistemas de referência de coordenadas utilizados em todo o mundo para a criação de mapas e geodados e para a identificação da geo-posição. É uma ferramenta prática para qualquer pessoa interessada em cartografia e elaboração de mapas digitais, que precisa conhecer os valores exatos de latitude e longitude para coordenadas numéricas em diferentes sistemas de referência espacial.&lt;/p&gt;
+&lt;p&gt;Quando um sistema de referência de coordenadas (CRS) está faltando ou o CRS errado está configurado, a função &lt;code&gt;st_set_crs()&lt;/code&gt; pode ser usada:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;new_vector = st_set_crs(new_vector, &amp;quot;EPSG:4326&amp;quot;) # set CRS
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Caso você queira carregar um shapefile para o ambiente R/RStudio, utilize a função:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;shapefile &amp;lt;- st_read(&#39;caminho do arquivo&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-responda-para-você-mesmo-as-seguintes-perguntas-que-seguem&#34;&gt;5. Responda, para você mesmo, as seguintes perguntas que seguem:&lt;/h3&gt;
+&lt;p&gt;a. Qual a diferença entre dados espaciais e dados não-espaciais? 
+b. Qual a diferença entre dados vetoriais e raster? 
+c. Quais os cuidados necessários para representação geográfica em diferentes sistemas de projeção geográfica?
+d. Quais os tipos de geometria de dados vetoriais são representados por meio do pacote &lt;code&gt;sf&lt;/code&gt;?
+e. Qual o EPGS para estudos em BH que precisem de um sistema de projeção de coordenadas?&lt;/p&gt;
+&lt;h3 id=&#34;6-realize-as-questões-a-seguir&#34;&gt;6. Realize as questões a seguir:&lt;/h3&gt;
+&lt;p&gt;a. Crie um documento &lt;code&gt;.Rmd&lt;/code&gt; para que você armazene o código gerado. 
+b. Carregue os shapefiles referentes às atividades econômicas e autônomos.
+c. Carregue o shapefile referente às regionais de BH. 
+d. Verifique os CRS e se necessário, altere os sistemas de coordenadas. 
+e. Represente os shapefiles por meio do pacote &lt;a href=&#34;https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html&#34;&gt;&lt;code&gt;tmap&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: tm_shape(objeto_sf) + tm_borders() para polígonos e tm_shape(objeto_sf) + tm_symbols(col = &amp;ldquo;red&amp;rdquo;, scale = .05) para pontos. Veja a seguir o código onde regional são as feições geométricas poligonais e econ são os pontos referentes às atividades econômicas formais.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;tm_shape(regional) + tm_borders() + tm_shape(econ) + tm_symbols(col = &amp;quot;red&amp;quot;, scale = .05)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
   </channel>
 </rss>

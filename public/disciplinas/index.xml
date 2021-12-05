@@ -6,7 +6,7 @@
     <description>Recent content in Courses on Renata Oliveira e Lucélia Vaz</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://retacourses.netlify.app/disciplinas/index.xml" rel="self" type="application/rss+xml" />
     
@@ -1564,33 +1564,54 @@ Os softwares a serem instalados são:&lt;/p&gt;
 &lt;h1 id=&#34;objetivos&#34;&gt;Objetivos&lt;/h1&gt;
 &lt;p&gt;Esta disciplina tem por objetivo formar estudantes aptos a:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Utilizar o R para manipulação de dados, geração de instrumentos de comunicação e representação de dados.&lt;/li&gt;
-&lt;li&gt;Discutir conceitos, princípios e fundamentos do tratamento da informação espacial de maneira argumentativa;&lt;/li&gt;
-&lt;li&gt;Identificar, selecionar e implementar ferramentas de tratamento e representação de dados espaciais em níveis estratégico e tático;&lt;/li&gt;
-&lt;li&gt;Utilizar Sistemas de Suporte à Decisão Espacial por meio de (i) visualização de dados espaciais; (ii) geocodificação; (iii) mineração de dados espaciais; (iv) estatística descritiva espacial.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilizar o R para manipulação de dados, geração de instrumentos de comunicação e representação de dados.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discutir conceitos, princípios e fundamentos do tratamento da informação espacial de maneira argumentativa;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Identificar, selecionar e implementar ferramentas de tratamento e representação de dados espaciais em níveis estratégico e tático;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilizar Sistemas de Suporte à Decisão Espacial por meio de (i) visualização de dados espaciais; (ii) geocodificação; (iii) mineração de dados espaciais; (iv) estatística descritiva espacial.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;programação-de-encontros&#34;&gt;Programação de encontros&lt;/h1&gt;
-&lt;p&gt;Unidade 1: Comunicação por meio do R Ambientação no R, RStudio, Git-Github e Rpubs. Hello R RMarkdown 
-Unidade 2: Visualização de dados no R; Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos.
-Unidade 3: Manipulação e transformação de dados no R; Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.	
-Unidade 4: Argumentos lógicos ifelse, which, igual, maior, menor que, join; Subconjuntos com argumentos lógicos
-Unidade 5: Cartografia básica; Representação de fenômenos no espaço; Sistemas de coordenadas geográficas; Sistemas de coordenadas projetadas; Cartografia temática
-Unidade 6: Dados espaciais e geocodificação; Estrutura de dados espaciais; Como transformar dados não espaciais em espaciais
-Unidade 7: Manipulação de dados espaciais; Funções de manipulação de dados espaciais; Pacotes no R para tratamento da informação espacial
-Unidade 8: Representação de dados espaciais; Construção de mapas temáticos no R em diferentes unidades espaciais. 
-Unidade 9: Mineração de dados espaciais; Identificação de padrões espaciais; Recursos do R para implementação de análises de padrões espaciais.
-Unidade 10: Estatística espacial descritiva; Medidas espaciais de tendência central e dispersão; Como implementar medidas de estatística espacial descritiva no R. 
-Unidade 11: Sistemas de Suporte à Decisão Espacial; Desenvolvimento do projeto da disciplina e apresentação.&lt;/p&gt;
+&lt;p&gt;Unidade 1: Comunicação por meio do R Ambientação no R, RStudio, Git-Github e Rpubs. Hello R RMarkdown&lt;/p&gt;
+&lt;p&gt;Unidade 2: Visualização de dados no R; Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos.&lt;/p&gt;
+&lt;p&gt;Unidade 3: Manipulação e transformação de dados no R; Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.&lt;/p&gt;
+&lt;p&gt;Unidade 4: Argumentos lógicos ifelse, which, igual, maior, menor que, join; Subconjuntos com argumentos lógicos&lt;/p&gt;
+&lt;p&gt;Unidade 5: Cartografia básica; Representação de fenômenos no espaço; Sistemas de coordenadas geográficas; Sistemas de coordenadas projetadas; Cartografia temática&lt;/p&gt;
+&lt;p&gt;Unidade 6: Dados espaciais e geocodificação; Estrutura de dados espaciais; Como transformar dados não espaciais em espaciais&lt;/p&gt;
+&lt;p&gt;Unidade 7: Manipulação de dados espaciais; Funções de manipulação de dados espaciais; Pacotes no R para tratamento da informação espacial&lt;/p&gt;
+&lt;p&gt;Unidade 8: Representação de dados espaciais; Construção de mapas temáticos no R em diferentes unidades espaciais.&lt;/p&gt;
+&lt;p&gt;Unidade 9: Mineração de dados espaciais; Identificação de padrões espaciais; Recursos do R para implementação de análises de padrões espaciais.&lt;/p&gt;
+&lt;p&gt;Unidade 10: Estatística espacial descritiva; Medidas espaciais de tendência central e dispersão; Como implementar medidas de estatística espacial descritiva no R.&lt;/p&gt;
+&lt;p&gt;Unidade 11: Sistemas de Suporte à Decisão Espacial; Desenvolvimento do projeto da disciplina e apresentação.&lt;/p&gt;
 &lt;h1 id=&#34;critério-de-avaliação&#34;&gt;Critério de avaliação&lt;/h1&gt;
 &lt;p&gt;Entregas para produção do artigo&lt;/p&gt;
 &lt;h1 id=&#34;equipamentos-e-recursos-necessários&#34;&gt;Equipamentos e recursos necessários&lt;/h1&gt;
 &lt;p&gt;Serão necessários:
-•	Computador com conexão à internet para acompanhar as etapas síncronas e assíncronas.
-•	Instalação de aplicativos FOSS R, RStudio, QGIS e GeoDa. As instruções serão encaminhadas pelo SIGAA e postadas no site da disciplina. 
-•	Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
-•	Site da disciplina: &lt;a href=&#34;https://places.education/sdss&#34;&gt;https://places.education/sdss&lt;/a&gt;
-•	Acesso ao Microsoft Teams para a maioria das aulas e, caso indicado, à RNP. O link será encaminhado pelo SIGAA.
+•	Computador com conexão à internet para acompanhar as etapas síncronas e assíncronas.&lt;br&gt;
+•	Instalação de aplicativos FOSS R, RStudio, QGIS e GeoDa. As instruções serão encaminhadas pelo SIGAA e postadas no site da disciplina. &lt;br&gt;
+•	Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.&lt;br&gt;
+•	Site da disciplina: &lt;a href=&#34;https://places.education/sdss&#34;&gt;https://places.education/sdss&lt;/a&gt;&lt;br&gt;
+•	Acesso ao Microsoft Teams para a maioria das aulas e, caso indicado, à RNP. O link será encaminhado pelo SIGAA.&lt;br&gt;
 •	Outros recursos que serão previamente solicitados na Turma Virtual do SIGAA.&lt;/p&gt;
+&lt;h1 id=&#34;bibliografia&#34;&gt;Bibliografia&lt;/h1&gt;
+&lt;p&gt;1	TSAY, Ruey S. Multivariate time series analysis: with R and financial applications. New Jersey: John Wiley &amp;amp; Sons, 2014.&lt;/p&gt;
+&lt;p&gt;2	TROSSET, Michael W. An introduction to statistical inference and its applications with R. Boca Raton: Chapman and Hall/CRC, 2009.&lt;/p&gt;
+&lt;p&gt;3	PARADIS, Emanuel. R for Beginners. Disponível em: &lt;a href=&#34;https://www.nceas.ucsb.edu/files/&#34;&gt;https://www.nceas.ucsb.edu/files/&lt;/a&gt; scicomp/ Dloads/RProgramming/BestFirstRTutorial.pdf . Acesso em: 12/11/2019.&lt;/p&gt;
+&lt;p&gt;4	TEETOR, Paul. R cookbook: Proven recipes for data analysis, statistics, and graphics. Sebastopol: O&amp;rsquo;Reilly Media, Inc., 2011.&lt;/p&gt;
+&lt;p&gt;5	Singleton, A. D.; Spielman, S. E.; Folch, D. C. Urban Analytics. London: Sage, 2018. (&lt;a href=&#34;https://github.com/alexsingleton/urban_analytics&#34;&gt;https://github.com/alexsingleton/urban_analytics&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;6	Lovelace, Robin; Nowosad, Jakub; Muenchow, Jannes. Geocomputation with R. London: CRC Press, 2019. (&lt;a href=&#34;https://geocompr.robinlovelace.net/&#34;&gt;https://geocompr.robinlovelace.net/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;7	Lansley, G.; Cheshire, J. An Introduction to Spatial Data Analysis and Visualization in R. London: Consumer Data Research Center, 2016.
+(&lt;a href=&#34;https://data.cdrc.ac.uk/dataset/introduction-spatial-data-analysis-and-visualisation-r&#34;&gt;https://data.cdrc.ac.uk/dataset/introduction-spatial-data-analysis-and-visualisation-r&lt;/a&gt;)
+8	FITZ, Paulo Roberto.Cartografia básica. São Paulo: Oficina de Textos, c2008.&lt;/p&gt;
+&lt;p&gt;9	Wikle, Christopher K.; Zammit-Mangion, Andrew Spatio-Temporal Statistics with R. London: Chapman and Hall/CRC, 2019. (&lt;a href=&#34;https://spacetimewithr.org/&#34;&gt;https://spacetimewithr.org/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;10	Bivand, Roger S.; Pebesma, Edzer; Gomez-Rubio, Virgilio Applied Spatial Data Analysis with R. Verlag: Springer, 2013. (&lt;a href=&#34;https://asdar-book.org/&#34;&gt;https://asdar-book.org/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;11	Comber, L.; Brunsdon, C. An Introduction to R for Spatial Analysis and Mapping. London: Sage, 2019. (&lt;a href=&#34;https://bookdown.org/lexcomber/brunsdoncomber2e/&#34;&gt;https://bookdown.org/lexcomber/brunsdoncomber2e/&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     
