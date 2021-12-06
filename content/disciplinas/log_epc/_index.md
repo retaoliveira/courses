@@ -67,7 +67,7 @@ Os encontros síncronos acontecerão nas **segundas-feiras**, de **19:00 às 20:
 | 08/11              |2h|KPIs em gestão de processos de produção e suprimento   
 | 22/11              |2h|Nível de serviço logístico
 | 06/12              |2h|Logística urbana.
-| 13/12              |2h|Integração logística e sistemas de informação (ICT)
+| 13/12              |2h|Logística urbana.
 | 20/12              |2h|Transportes e distribuição física.   
 | 10/01              |2h|Transportes e distribuição física.   
 | 17/01              |2h|Gestão de estoques e armazenagem.
