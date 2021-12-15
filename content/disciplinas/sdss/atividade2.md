@@ -4,11 +4,11 @@ draft: false
 menu:
   sdss:
     parent: Unidade 2
-    weight: 9
-title: Atividade 2
+    weight: 13
+title: Atividade 2.2
 toc: false
 type: docs
-weight: 9
+weight: 13
 ---
 
 ## A **Unidade 6** é estruturada considerando os seguintes tópicos:
@@ -20,94 +20,148 @@ weight: 9
 
 ## Esta atividade deverá ser realizada até dia **06/01**. São propostas as seguintes atividades:
 
-### 1. Chame os pacotes:
+### 1. Faça uma pesquisa e defina:    
+- Geocodificação   
+- Geocodificação reversa
+
+### 2. O que o OpenStreetMap? E o Nominatim? 
+
+### 3. Instale e chame os pacotes:
 
 ```{r}
-library(sf)      # vector data package
-library(dplyr)   # tidyverse package for data frame manipulation
-library(spData)  # spatial data package
-```
-Os conjuntos de dados vetoriais geográficos são estruturados no R graças à classe `sf`, que estende o data.frame da base R. Como os data.frames, os objetos `sf` têm uma coluna por variável (como 'nome') e uma linha por observação ou característica (por exemplo, por estação de ônibus). Os objetos `sf` diferem dos data.frame básicos porque têm uma coluna geométrica de classe `sfc` que pode conter uma gama de entidades geográficas (ponto único e 'multi', linha e características de polígono) por linha. 
-
-### 2. Siga os comandos a seguir para explorar e manipular dados geográficos com o pacote `sf`:
-
-`world` é um `sf data frame` contendo colunas espaciais e de atributos, cujos nomes são retornados pela função `names()`(a última coluna deste exemplo contém as informações geográficas).
-
-```{r}
-class(world)
-names(world)
-```
-
-Veja o que acontece quando você roda o código a seguir:
-
-```{r}
-world_agg1 = world %>%
-  group_by(continent) %>%
-  summarize(pop = sum(pop, na.rm = TRUE))
-```
-Copie o código abaixo e rode-o no seu `.Rmd`:
-
-```{r}
-world_agg2  = world %>% 
-  group_by(continent) %>%
-  summarize(pop = sum(pop, na.rm = TRUE), `area (sqkm)` = sum(area_km2), n = n())
+devtools::install_github("hrbrmstr/nominatim")
+install.packages("ggmap")
+install.packages("RCurl")
+install.packages("jsonlite")
+install.packages("tmaptools")
+install.packages("leaflet")
+install.packages("RgoogleMaps")
 ```
 
-O que quer dizer a representação gerada por você?
-
-### 3. Junção de atributos vetoriais
-
 ```{r}
-world_coffee = left_join(world, coffee_data)
-class(world_coffee)
-plot(world_coffee["coffee_production_2017"])
+library(nominatim)
+library(ggmap)
+library(tmaptools)
+library(RCurl)
+library(jsonlite)
+library(tidyverse)
+library(leaflet)
+library(RgoogleMaps)
 
 ```
 
-E agora? O que aconteceu? 
+### 4. Geocodificação com o OSM
 
-O que mudou quando você rodou o código a seguir? 
-
-```{r}
-coffee_renamed = rename(coffee_data, nm = name_long)
-world_coffee2 = left_join(world, coffee_renamed, by = c(name_long = "nm"))
-plot(world_coffee2["coffee_production_2017"])
-```
-
-### 4. Realize as atividades a seguir e responda as questões: 
-
-a. Crie um documento `.Rmd` para que você armazene o código gerado. 
-b. Carregue os dados e os pacotes
+#### Usando o pacote `nominatim`:
 
 ```{r}
-library(sf)
-library(dplyr)
-library(terra)
-library(spData)
-data(us_states)
-data(us_states_df)
+b1 <- osm_geocode("Berlin, Germany")
+b1[c("lat", "lon")]
 ```
 
-c. Crie um novo objeto chamado `us_states_name` que contenha apenas a coluna `NAME` do objeto `us_states` usando a sintaxe do tidyverse (select()). Qual é a classe do novo objeto e o que o torna geográfico?
+#### Usando o pacote `tmaptools`
 
-d. Selecione colunas do objeto `us_states` que contenham dados da população e crie um novo objeto.
+```{r}
+# modifying some search requests
+pubs_m <- pubs
+pubs_m[pubs_m=="The Crown and Sugar Loaf, Fleet Street"] <- "The Crown and Sugar Loaf"
+pubs_m[pubs_m=="Ye Olde Mitre, Hatton Garden"] <- "Ye Olde Mitre"
+pubs_m_df <- data.frame(Pubs = pubs_m, stringsAsFactors = FALSE)
 
-e. Encontre e plot (salve a figura) todos os estados com as seguintes características:
+# geocoding the London pubs
+# "bar" is special phrase added to limit the search
+pubs_tmaptools <- geocode_OSM(paste(pubs_m, "bar", sep = " "),
+                              details = TRUE, as.data.frame = TRUE)
 
-   - Pertencem à região Centro-Oeste.   
-   - Pertence à região Oeste, têm uma área abaixo de 250.000 km2 e em 2015 uma população maior que 5.000.000 de residentes (dica: você pode precisar usar as unidades funcionais::set_units() ou as.numeric()).   
-   - Pertencente à região Sul, tinha uma área maior que 150.000 km2 ou uma população total em 2015 maior que 7.000.000 de residentes.
+# extracting from the result only coordinates and address
+pubs_tmaptools <- pubs_tmaptools[, c("lat", "lon", "display_name")]
+pubs_tmaptools <- cbind(Pubs = pubs_m_df[-10, ], pubs_tmaptools)
 
-f. Qual era a população total em 2015 no conjunto de dados us_states? Qual era a população total, mínima e máxima em 2015?
+# print the results
+pubs_tmaptools
+```
 
-g. Quantos estados existem em cada região?
+### 5. Geocodificação com o Google
 
-h. Qual era a população total mínima e máxima em 2015 em cada região? Qual era a população total em 2015 em cada região?
+Para usar o Google, cadastre-se na plataforma Cloud e substitua no código a seguir a sua API
 
-i. Adicione variáveis de `us_states_df` aos `us_states`, e crie um novo objeto chamado `us_states_stats`. Qual função foi utilizada e por quê? Qual variável é a chave em ambos os conjuntos de dados? Qual é a classe do novo objeto?
+```{r}
+register_google(key = api_key)
+```
 
-j. Qual era a densidade populacional em 2015 em cada estado? Qual foi a densidade de população em 2010 em cada estado?
+#### Rode o código a seguir e veja o que acontece:
+```{r}
+library(ggmap)  
+geocode("Berlin, Germany", source="google")
+```
 
-k. Quanto a densidade populacional mudou entre 2010 e 2015 em cada estado? Calcule a mudança nas porcentagens e mapeie-as.
+#### Outro exemplo: 
 
-**VOCÊ ESTÁ MANIPULANDO DADOS ESPACIAIS. MAS AINDA PRECISAMOS EVOLUIR PARA A ANÁLISE ESPACIAL DE DADOS, OK?**
+```{r}
+# create a list of London pubs
+pubs <- c("The Angel, Bermondsey", "The Churchill Arms, Notting Hill", "The Auld Shillelagh, Stoke Newington", "The Sekforde, Clerkenwell", "The Dove, Hammersmith", "The Crown and Sugar Loaf, Fleet Street", "The Lamb, Holborn", "Prince of Greenwich, Greenwich", "Ye Olde Mitre, Hatton Garden", "The Glory, Haggerston", "The Blue Posts, Soho", "The Old Bank of England, Fleet Street")
+pubs_df <- data.frame(Pubs = pubs, stringsAsFactors = FALSE)
+
+# run the geocode function from ggmap package
+pubs_ggmap <- geocode(location = pubs, output = "more", source = "google")
+pubs_ggmap <- cbind(pubs_df, pubs_ggmap)
+
+# print the results
+pubs_ggmap[, 1:6]
+```
+
+#### Mais uma opção usando o `RgoogleMaps`:
+
+Crie o dataframe:
+
+```{r}
+cidades <- c("Belo Horizonte MG","Contagem MG", "Juiz de Fora MG",
+             "Uberlandia MG", "Montes Claros MG", "Uberaba MG",
+             "Varginha MG", "Governador Valadares MG", "Salto da Divisa MG",
+             "Para de Minas MG", "Bom Despacho MG", "Manhuacu MG",
+             "Rio Casca MG", "Tres Coracoes MG", "Tres Pontas MG",
+             "Sao Sebastiao do Paraiso MG", "Iturama MG", "Joaima MG",
+             "Vicosa MG", "Montalvania MG", "Frutal MG", "Ipatinga MG",
+             "Aimores MG", "Muriae MG", "Januaria MG")
+DF <- data.frame(cidade=cidades, lat=NA, lon=NA)
+```
+
+Rode os chunks de código:
+
+```{r}
+getGeoCode("Belo Horizonte, Minas Gerais, Brazil")
+```
+```{r}
+DF <- with(DF,data.frame(cidade=cidade, t(sapply(DF$cidade, getGeoCode))))
+knitr::kable(DF, format="markdown", digits=4)
+```
+Plote os pontos
+
+```{r}
+box <- make_bbox(lon, lat, data = DF)
+map <-
+  ggmap(
+    get_map(location = box, maptype="toner", source="stamen")
+    ) +
+  geom_point(data=DF, x=DF$lon, y=DF$lat, color="red")
+map
+```
+
+```{r}
+maptype = c("terrain", "satellite", "roadmap", "hybrid", "toner", "watercolor")
+source = c("google", "osm", "stamen", "cloudmade")
+```
+
+```{r}
+map <-
+  ggmap(
+    get_map(location = box, maptype="terrain", source="google", color="bw")
+    ) +
+  geom_point(data=DF, x=DF$lon, y=DF$lat, color="red")
+```
+
+```{r}
+map
+```
+
+Créditos: https://rstudio-pubs-static.s3.amazonaws.com/27602_ac1f676e281d4b0dbd21ceb29017c2ca.html
