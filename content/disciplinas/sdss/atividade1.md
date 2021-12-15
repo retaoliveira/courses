@@ -89,9 +89,13 @@ shapefile <- st_read('caminho do arquivo')
 ### 5. Responda, para você mesmo, as seguintes perguntas que seguem:
 
 a. Qual a diferença entre dados espaciais e dados não-espaciais? 
+
 b. Qual a diferença entre dados vetoriais e raster? 
+
 c. Quais os cuidados necessários para representação geográfica em diferentes sistemas de projeção geográfica?
+
 d. Quais os tipos de geometria de dados vetoriais são representados por meio do pacote `sf`?
+
 e. Qual o EPGS para estudos em BH que precisem de um sistema de projeção de coordenadas? 
 
 

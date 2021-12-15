@@ -94,11 +94,9 @@ d. Selecione colunas do objeto `us_states` que contenham dados da população e 
 
 e. Encontre e plot (salve a figura) todos os estados com as seguintes características:
 
-- Pertencem à região Centro-Oeste.
-
-- Pertence à região Oeste, têm uma área abaixo de 250.000 km2 e em 2015 uma população maior que 5.000.000 de residentes (dica: você pode precisar usar as unidades funcionais::set_units() ou as.numeric()).
-
-- Pertencente à região Sul, tinha uma área maior que 150.000 km2 ou uma população total em 2015 maior que 7.000.000 de residentes.
+   - Pertencem à região Centro-Oeste.   
+   - Pertence à região Oeste, têm uma área abaixo de 250.000 km2 e em 2015 uma população maior que 5.000.000 de residentes (dica: você pode precisar usar as unidades funcionais::set_units() ou as.numeric()).   
+   - Pertencente à região Sul, tinha uma área maior que 150.000 km2 ou uma população total em 2015 maior que 7.000.000 de residentes.
 
 f. Qual era a população total em 2015 no conjunto de dados us_states? Qual era a população total, mínima e máxima em 2015?
 
