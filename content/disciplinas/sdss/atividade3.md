@@ -111,3 +111,5 @@ j. Qual era a densidade populacional em 2015 em cada estado? Qual foi a densidad
 k. Quanto a densidade populacional mudou entre 2010 e 2015 em cada estado? Calcule a mudança nas porcentagens e mapeie-as.
 
 **VOCÊ ESTÁ MANIPULANDO DADOS ESPACIAIS. MAS AINDA PRECISAMOS EVOLUIR PARA A ANÁLISE ESPACIAL DE DADOS, OK?**
+
+Créditos: Lovelace - Geocomputing. 
