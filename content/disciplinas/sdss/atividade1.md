@@ -18,7 +18,7 @@ weight: 9
 - Cartografia temática
 
 
-## Esta atividade deverá ser realizada até dia **09/12**. São propostas as seguintes atividades:
+## Esta atividade deverá ser realizada até dia **16/12**. São propostas as seguintes atividades:
 
 ### 1. Faça o download do shapefile referente às regionais de BH, atividades econômicas formais e autônomos (formais e informais) no site [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo?#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base) ou pelo [link]()
 
@@ -97,11 +97,16 @@ e. Qual o EPGS para estudos em BH que precisem de um sistema de projeção de co
 
 ### 6. Realize as questões a seguir: 
 
-a. Crie um documento `.Rmd` para que você armazene o código gerado. 
+a. Crie um documento `.Rmd` para que você armazene o código gerado.    
+
 b. Carregue os shapefiles referentes às atividades econômicas e autônomos.
+
 c. Carregue o shapefile referente às regionais de BH. 
+
 d. Verifique os CRS e se necessário, altere os sistemas de coordenadas. 
-e. Represente os shapefiles por meio do pacote [`tmap`](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html). 
+
+e. Represente os shapefiles por meio do pacote
+[`tmap`](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html). 
 
 >> Dica: tm_shape(objeto_sf) + tm_borders() para polígonos e tm_shape(objeto_sf) + tm_symbols(col = "red", scale = .05) para pontos. Veja a seguir o código onde regional são as feições geométricas poligonais e econ são os pontos referentes às atividades econômicas formais. 
 
