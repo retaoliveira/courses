@@ -20,9 +20,7 @@ weight: 9
 
 ## Esta atividade deverá ser realizada até dia **06/01**. São propostas as seguintes atividades:
 
-### 1. Faça o download do shapefile referente às regionais de BH, atividades econômicas formais e autônomos (formais e informais) no site [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo?#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base) ou pelo [link]()
-
-### 2. Chame os pacotes:
+### 1. Chame os pacotes:
 
 ```{r}
 library(sf)      # vector data package
@@ -31,7 +29,7 @@ library(spData)  # spatial data package
 ```
 Os conjuntos de dados vetoriais geográficos são estruturados no R graças à classe `sf`, que estende o data.frame da base R. Como os data.frames, os objetos `sf` têm uma coluna por variável (como 'nome') e uma linha por observação ou característica (por exemplo, por estação de ônibus). Os objetos `sf` diferem dos data.frame básicos porque têm uma coluna geométrica de classe `sfc` que pode conter uma gama de entidades geográficas (ponto único e 'multi', linha e características de polígono) por linha. 
 
-### 3. Siga os comandos a seguir para explorar e manipular dados geográficos com o pacote `sf`:
+### 2. Siga os comandos a seguir para explorar e manipular dados geográficos com o pacote `sf`:
 
 `world` é um `sf data frame` contendo colunas espaciais e de atributos, cujos nomes são retornados pela função `names()`(a última coluna deste exemplo contém as informações geográficas).
 
@@ -57,7 +55,7 @@ world_agg2  = world %>%
 
 O que quer dizer a representação gerada por você?
 
-### 4. Junção de atributos vetoriais
+### 3. Junção de atributos vetoriais
 
 ```{r}
 world_coffee = left_join(world, coffee_data)
@@ -76,7 +74,7 @@ world_coffee2 = left_join(world, coffee_renamed, by = c(name_long = "nm"))
 plot(world_coffee2["coffee_production_2017"])
 ```
 
-### 5. Realize as atividades a seguir e responda as questões: 
+### 4. Realize as atividades a seguir e responda as questões: 
 
 a. Crie um documento `.Rmd` para que você armazene o código gerado. 
 b. Carregue os dados e os pacotes
@@ -113,3 +111,5 @@ i. Adicione variáveis de `us_states_df` aos `us_states`, e crie um novo objeto 
 j. Qual era a densidade populacional em 2015 em cada estado? Qual foi a densidade de população em 2010 em cada estado?
 
 k. Quanto a densidade populacional mudou entre 2010 e 2015 em cada estado? Calcule a mudança nas porcentagens e mapeie-as.
+
+**VOCÊ ESTÁ MANIPULANDO DADOS ESPACIAIS. MAS AINDA PRECISAMOS EVOLUIR PARA A ANÁLISE ESPACIAL DE DADOS, OK?**
