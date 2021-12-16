@@ -112,4 +112,4 @@ k. Quanto a densidade populacional mudou entre 2010 e 2015 em cada estado? Calcu
 
 **VOCÊ ESTÁ MANIPULANDO DADOS ESPACIAIS. MAS AINDA PRECISAMOS EVOLUIR PARA A ANÁLISE ESPACIAL DE DADOS, OK?**
 
-Créditos: Lovelace - Geocomputing. 
+Créditos: Lovelace - Geocomputing (https://geocompr.robinlovelace.net/attr.html#exercises-1). Best book ever! 
