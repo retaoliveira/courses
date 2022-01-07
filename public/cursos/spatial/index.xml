@@ -718,6 +718,89 @@ writeOGR(obj=georgia, dsn=&amp;quot;./shapefiles&amp;quot;, layer=&amp;quot;geor
     </item>
     
     <item>
+      <title>Operações espaciais</title>
+      <link>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#instalação-dos-packages-para-manipulação-de-dados-espaciais-no-r&#34;&gt;Instalação dos packages para manipulação de dados espaciais no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#operações-em-dados-espaciais&#34;&gt;Operações em dados espaciais&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#relações-topológicas&#34;&gt;Relações topológicas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;instalação-dos-packages-para-manipulação-de-dados-espaciais-no-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Instalação dos packages para manipulação de dados espaciais no R&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operações-em-dados-espaciais&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Operações em dados espaciais&lt;/h1&gt;
+&lt;p&gt;As operações espaciais, incluindo as uniões espaciais entre conjuntos de dados vetoriais, são uma parte vital da geocomputação. A idéia é que objetos espaciais podem ser modificados de várias maneiras, com base em sua localização e forma. Muitas operações espaciais têm um equivalente não espacial (atributo), portanto conceitos como subconjunto e junção de conjuntos de dados são aplicáveis também para operações espaciais.&lt;/p&gt;
+&lt;div id=&#34;relações-topológicas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Relações topológicas&lt;/h2&gt;
+&lt;p&gt;As relações topológicas descrevem as relações espaciais entre objetos. “Relações topológicas binárias”, para dar-lhes seu nome completo, são afirmações lógicas (no sentido de que a resposta só pode ser VERDADEIRA ou FALSA) sobre as relações espaciais entre dois objetos definidos por conjuntos ordenados de pontos (tipicamente formando pontos, linhas e polígonos) em duas ou mais dimensões (Egenhofer e Herring 1990). Isso pode parecer bastante abstrato e, de fato, a definição e classificação das relações topológicas é baseada em fundamentos matemáticos publicados pela primeira vez em forma de livro em 1966 (Spanier 1995), com o campo da topologia algébrica continuando no século XXI (Dieck 2008).&lt;/p&gt;
+&lt;p&gt;Apesar de suas origens matemáticas, as relações topológicas podem ser entendidas intuitivamente com referência a visualizações de funções comumente utilizadas que testam tipos comuns de relações espaciais. A Figura 4.2 mostra uma variedade de pares geométricos e seus associados&lt;/p&gt;
+&lt;p&gt;Várias relações topológicas podem ser usadas para o subconjunto espacial que determina o tipo de relação espacial que as características do objeto-alvo devem ter com o objeto a ser selecionado. Estas incluem toques, cruzamentos ou dentro, como veremos em breve na seção 4.2.2. A configuração padrão st_intersects é uma relação topológica ‘catch all’ que retornará características no alvo que tocam, cruzam ou estão dentro do objeto ‘sub-conjunto’ de origem. Como indicado acima, operadores espaciais alternativos podem ser especificados com o argumento op =, como demonstrado no seguinte comando que retorna o oposto de st_intersects(), pontos que não se cruzam com Canterbury (ver Seção 4.2.2):&lt;/p&gt;
+&lt;p&gt;Para muitas aplicações, isto é tudo o que você precisará saber sobre o subconjunto espacial para dados vetoriais: ele simplesmente funciona. Se você estiver impaciente para aprender mais sobre relações topológicas, além de st_intersects() e st_disjoint(), pule para a próxima seção (4.2.2). Se você estiver interessado nos detalhes, incluindo outras formas de sub-configuração, continue lendo.
+*** Translated with www.DeepL.com/Translator (free version) ***&lt;/p&gt;
+&lt;p&gt;Geometric operations on vector data&lt;/p&gt;
+&lt;p&gt;Simplificação de dados espaciais&lt;/p&gt;
+&lt;p&gt;Centroids&lt;/p&gt;
+&lt;p&gt;Buffers&lt;/p&gt;
+&lt;p&gt;Clip&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/cortar_1.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cortar_1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Interseção espacial&lt;/p&gt;
+&lt;p&gt;Spatial subsetting
+Spatial subsetting is the process of taking a spatial object and returning a new object containing only features that relate in space to another object. Analogous to attribute subsetting (covered in Section 3.2.1), subsets of sf data frames can be created with square bracket ([) operator using the syntax x[y, , op = st_intersects], where x is an sf object from which a subset of rows will be returned, y is the ‘subsetting object’ and , op = st_intersects is an optional argument that specifies the topological relation (also known as the binary predicate) used to do the subsetting. The default topological relation used when an op argument is not provided is st_intersects(): the command x[y, ] is identical to x[y, , op = st_intersects] shown above but not x[y, , op = st_disjoint] (the meaning of these and other topological relations is described in the next section). The filter() function from the tidyverse can also be used but this approach more verbose, as we will see in the examples below.
+- Clip
+- Inteseção&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/4_intersecao.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/4_intersecao.png&#34; /&gt;&lt;!-- --&gt;
+- Diferença&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/5_diferenca.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/5_diferenca.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Agregação (dissolve)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/1_agregacao.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/1_agregacao.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;União&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/2_uniao.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/2_uniao.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Junção espacial
+Joining two feature sets based on attributes&lt;/p&gt;
+&lt;p&gt;Joining two feature sets based on geometries&lt;/p&gt;
+&lt;p&gt;Ponto em polígono&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;https://retaoliveira.github.io/relements/figures/spatial_join.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/spatial_join.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Distâncias&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Construindo mapas e representações</title>
       <link>https://retacourses.netlify.app/cursos/spatial/map/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
@@ -929,11 +1012,32 @@ print(t2, vp=viewport(layout.pos.col = 2, height = 5))&lt;/code&gt;&lt;/pre&gt;
 Repare que t1 é um objeto &lt;code&gt;sf&lt;/code&gt; e t2 é um objeto &lt;code&gt;sp&lt;/code&gt; e apresentam sistemas de referência diferentes.&lt;/p&gt;
 &lt;p&gt;Para consultar os diferentes sistemas de projeção, verifique utilizando a função &lt;code&gt;crs&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Coordinate Reference System:
+## Deprecated Proj.4 representation: +proj=longlat +ellps=WGS84 +no_defs 
+## WKT2 2019 representation:
+## GEOGCRS[&amp;quot;unknown&amp;quot;,
+##     DATUM[&amp;quot;Unknown based on WGS84 ellipsoid&amp;quot;,
+##         ELLIPSOID[&amp;quot;WGS 84&amp;quot;,6378137,298.257223563,
+##             LENGTHUNIT[&amp;quot;metre&amp;quot;,1],
+##             ID[&amp;quot;EPSG&amp;quot;,7030]]],
+##     PRIMEM[&amp;quot;Greenwich&amp;quot;,0,
+##         ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433],
+##         ID[&amp;quot;EPSG&amp;quot;,8901]],
+##     CS[ellipsoidal,2],
+##         AXIS[&amp;quot;longitude&amp;quot;,east,
+##             ORDER[1],
+##             ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433,
+##                 ID[&amp;quot;EPSG&amp;quot;,9122]]],
+##         AXIS[&amp;quot;latitude&amp;quot;,north,
+##             ORDER[2],
+##             ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433,
+##                 ID[&amp;quot;EPSG&amp;quot;,9122]]]]&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia2)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## CRS arguments:
+&lt;pre&gt;&lt;code&gt;## Coordinate Reference System:
+## Deprecated Proj.4 representation:
 ##  +proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0.0
 ## +y_0=0.0 +ellps=GRS80 +units=m +datum=NAD83 +no_defs +towgs84=0,0,0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in wkt(x): CRS object has no comment&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Para nomear os atributos, verifique o data.frame do objeto &lt;code&gt;georgia_sf&lt;/code&gt;. Utilize a função &lt;code&gt;names()&lt;/code&gt; para ter acesso a uma lista de nomes de todos os atributos.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Latitude&amp;quot; &amp;quot;Longitud&amp;quot; &amp;quot;TotPop90&amp;quot; &amp;quot;PctRural&amp;quot; &amp;quot;PctBach&amp;quot;  &amp;quot;PctEld&amp;quot;  
@@ -1201,6 +1305,294 @@ plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)&lt;/code&gt;&lt;/pre&
 &lt;/div&gt;
 &lt;div id=&#34;plotar-pontos-a-partir-de-coordenadas&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Plotar pontos a partir de coordenadas&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GIS e QGIS</title>
+      <link>https://retacourses.netlify.app/cursos/spatial/material/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/spatial/material/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#material-adicional&#34;&gt;Material adicional&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#videos-para-incrementar-a-aprendizagem&#34;&gt;Videos para incrementar a aprendizagem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;material-adicional&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Material adicional&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://mgimond.github.io/Spatial/index.html&#34;&gt;Livro sobre introdução a GIS e análise espacial&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://docs.qgis.org/3.10/en/docs/training_manual/assessment/index.html&#34;&gt;Site sobre uso de QGIS&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.qgistutorials.com/&#34;&gt;Tutoriais sobre QGIS e análise espacial&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://plugins.qgis.org/&#34;&gt;Plugins QGIS&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;videos-para-incrementar-a-aprendizagem&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Videos para incrementar a aprendizagem&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Formas e dimensões terrestres&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/aW-qbx04gS4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ecZIluGHOW4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Representações: sistemas geodésicos, modelos, datum, coordenadas geográficas e projetadas&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YW8lwn8L6rA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xKGlMp__jog&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/AcBlPMGwLdU&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NhUgYgH53l0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Escalas e distâncias&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Km9ZVmZsoDo&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Interface gráfica do QGIS&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3ii17pnlpTs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Complementos: instalação e para que servem&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mudança de datum e sistemas de coordenadas no QGIS&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Como criar um shapefile no QGIS&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vbaU7Rm0o1A&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;8&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Classificação de dados geográficos: vetoriais e matriciais&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/crS7iLxq-ZM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;9&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Tabela de atributos&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/P97ae67rad4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PJQKkRpvkTI&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;10&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Geocodificação&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Divisão, união e dissolução de camadas vetoriais&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/kYKcKAKzooM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/UpDPEhGfREE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VrchasljjyQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;12&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Seleção por atributos e por localização&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Join por código e join espacial&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mapas temáticos&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Geração de centroides&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Layout de impressão&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/DDh4xEy3UTU&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D4_gwgAoVzM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D4_gwgAoVzM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/E7YFlqpFgbY&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/y__Uf-6Mmik&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ol start=&#34;17&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Fontes de dados&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxIRfZ1hYt0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wFiYf3XT3Lg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/uVe1HoACzbc&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Construindo mapas e representações</title>
+      <link>https://retacourses.netlify.app/cursos/spatial/referencias/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/spatial/referencias/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#links-interessantes&#34;&gt;Links interessantes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;links-interessantes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Links interessantes&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.overshootday.org/&#34;&gt;Overshoot day + Covid-19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/ondemand/urbanized2&#34;&gt;Urbanized&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/mo65rwtzafrsa5w/analise%20espacial.pdf?dl=0&#34;&gt;Livro sobre Análise espacial no R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://material.curso-r.com/&#34;&gt;Curso de R em português&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mgimond.github.io/Spatial/spatial-autocorrelation-in-r.html&#34;&gt;R e Análise espacial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rspatial.org/raster/analysis/index.html&#34;&gt;Análise espacial no R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.curso-de-programacao-em-r-para-jornalistas.com/2019/10/27/saiba-mais-sobre-o-r/&#34;&gt;Referências de links de consulta para R e R para Jornalistas&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GIS e QGIS</title>
+      <link>https://retacourses.netlify.app/cursos/spatial/atividades/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/spatial/atividades/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#competências-a-serem-desenvolvidas&#34;&gt;Competências a serem desenvolvidas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mão-na-massa---qgis---01072020&#34;&gt;&lt;strong&gt;Mão na massa - QGIS&lt;/strong&gt; - 01/07/2020&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#bases-de-dados&#34;&gt;Bases de dados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dados-espaciais-e-sistemas-de-referência&#34;&gt;Dados espaciais e sistemas de referência&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tabela-de-atributos-e-manipulação-de-dados-espaciais&#34;&gt;Tabela de atributos e manipulação de dados espaciais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mapas-temáticos&#34;&gt;Mapas temáticos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#geocodificação&#34;&gt;Geocodificação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#layout-de-impressão&#34;&gt;Layout de impressão&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;competências-a-serem-desenvolvidas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Competências a serem desenvolvidas&lt;/h1&gt;
+&lt;p&gt;Ao final desse mini-curso, os alunos deverão ser capazes de discutir os seguintes conceitos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pensamento espacial&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Introdução à cartografia
+&lt;ul&gt;
+&lt;li&gt;forma e dimensões terrestres&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;representações: sistemas geodésicos, modelos e datum&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;sistemas de coordenadas geográficas e projetadas&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Sistemas de Informações Geográficas (&lt;em&gt;Geographic Information Systems&lt;/em&gt;)&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Unidades espaciais e representação de fenômenos espaciais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Distâncias&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;QGIS
+&lt;ul&gt;
+&lt;li&gt;Ambiente e funcionalidades básicas do QGIS&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Complementos: instalação e para que servem&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Mudança de datum e sistemas de coordenadas&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tabela de atributos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Estruturas de dados espaciais
+&lt;ul&gt;
+&lt;li&gt;classificação: vetoriais e matriciais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;interoperabilidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;geocodificação&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Funções básicas em GIS
+&lt;ul&gt;
+&lt;li&gt;seleção por atributo e por localização&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;join por código e join espacial&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;mapas temáticos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;geração de centroides e agregação de variaveis&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;conceito de redes&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;layout de impressão&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mão-na-massa---qgis---01072020&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;strong&gt;Mão na massa - QGIS&lt;/strong&gt; - 01/07/2020&lt;/h1&gt;
+&lt;div id=&#34;bases-de-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bases de dados&lt;/h2&gt;
+&lt;p&gt;Belo Horizonte
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1bZmcOwZLvs9op7kQYAHshvCELk4M35o4?usp=sharing&#34;&gt;&lt;code&gt;shapefiles&lt;/code&gt; - BHMaps&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1gRQ3pM__jGSPq-dk35hVlLS4S5hzlRWc?usp=sharing&#34;&gt;Setores censitários sem renda&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1twMTRnrSY0ugLwC7xJq7LzuuPiXDYmRX?usp=sharing&#34;&gt;Setores censitários com renda&lt;/a&gt;
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1gDOdMb3elvcolWgV_3jBOV_xfwo7A08e?usp=sharing&#34;&gt;Bairros&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1ZVoVW7QG7uyxkHOAJLu1p9ViTm9TK5jW?usp=sharing&#34;&gt;Estabelecimentos comerciais&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;https://drive.google.com/drive/folders/1i3Ax_Z6J93utrAkpRTMG13rF50u_WND6?usp=sharing&#34;&gt;Áreas de presevação permanente&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dados-espaciais-e-sistemas-de-referência&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dados espaciais e sistemas de referência&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Abrir o &lt;code&gt;shapefile&lt;/code&gt; e verificar qual o sistema de coordenadas ativo.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Transformar o sistema de coordenadas em &lt;code&gt;WGS84&lt;/code&gt; e salvar como um novo shapefile&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Transformar todos os &lt;code&gt;shapefiles&lt;/code&gt; para coordenadas projetadas &lt;code&gt;SIRGAS 2000 - UTM 23 S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mudar a cor dos dados vetoriais para apresentações que permitam a análise da sobreposição de camadas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tabela-de-atributos-e-manipulação-de-dados-espaciais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tabela de atributos e manipulação de dados espaciais&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Verificar o número de observações e o número de atributos na &lt;code&gt;tabela de atributos&lt;/code&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Selecionar setores censitários com população menor do que 400 habitantes.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Exportar apenas os dados selecionados como um novo shapefile.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Abrir os dados referentes à renda em cada setor censitário e importar os dados para o shapefile original.&lt;/li&gt;
+&lt;li&gt;Abrir os dados de empresas no município de Belo Horizonte.&lt;/li&gt;
+&lt;li&gt;Selecionar os pontos que estão localizados em setores censitários com mais de 500 habitantes.&lt;/li&gt;
+&lt;li&gt;Contar o número de pontos em cada unidade espacial&lt;/li&gt;
+&lt;li&gt;Agregar dados de população dos setores censitários em bairros&lt;/li&gt;
+&lt;li&gt;Agregar dados de população de bairros para regionais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Elaborar mapas temáticos de renda, população, áreas de preservação&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Gerar centroides dos setores censitários&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mapas-temáticos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Mapas temáticos&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Elaborar mapas temáticos&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;geocodificação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Geocodificação&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Geocodificar o parque onde será instalado o empreendimento em análise.&lt;/li&gt;
+&lt;li&gt;Colocar a informação no QGIS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;layout-de-impressão&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Layout de impressão&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Gerar layout de impressão contendo legenda, indicação de norte, escala.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

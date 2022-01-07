@@ -1,0 +1,91 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  spatial:
+    parent: Fundamentos da análise espacial
+    weight: 40
+title: Operações espaciais
+editor_options: 
+  markdown: 
+    wrap: 30
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 40
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#instalação-dos-packages-para-manipulação-de-dados-espaciais-no-r">Instalação dos packages para manipulação de dados espaciais no R</a></li>
+<li><a href="#operações-em-dados-espaciais">Operações em dados espaciais</a>
+<ul>
+<li><a href="#relações-topológicas">Relações topológicas</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="instalação-dos-packages-para-manipulação-de-dados-espaciais-no-r" class="section level2">
+<h2>Instalação dos packages para manipulação de dados espaciais no R</h2>
+<pre class="r"><code>library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)</code></pre>
+<hr>
+</div>
+<div id="operações-em-dados-espaciais" class="section level1">
+<h1>Operações em dados espaciais</h1>
+<p>As operações espaciais, incluindo as uniões espaciais entre conjuntos de dados vetoriais, são uma parte vital da geocomputação. A idéia é que objetos espaciais podem ser modificados de várias maneiras, com base em sua localização e forma. Muitas operações espaciais têm um equivalente não espacial (atributo), portanto conceitos como subconjunto e junção de conjuntos de dados são aplicáveis também para operações espaciais.</p>
+<div id="relações-topológicas" class="section level2">
+<h2>Relações topológicas</h2>
+<p>As relações topológicas descrevem as relações espaciais entre objetos. “Relações topológicas binárias”, para dar-lhes seu nome completo, são afirmações lógicas (no sentido de que a resposta só pode ser VERDADEIRA ou FALSA) sobre as relações espaciais entre dois objetos definidos por conjuntos ordenados de pontos (tipicamente formando pontos, linhas e polígonos) em duas ou mais dimensões (Egenhofer e Herring 1990). Isso pode parecer bastante abstrato e, de fato, a definição e classificação das relações topológicas é baseada em fundamentos matemáticos publicados pela primeira vez em forma de livro em 1966 (Spanier 1995), com o campo da topologia algébrica continuando no século XXI (Dieck 2008).</p>
+<p>Apesar de suas origens matemáticas, as relações topológicas podem ser entendidas intuitivamente com referência a visualizações de funções comumente utilizadas que testam tipos comuns de relações espaciais. A Figura 4.2 mostra uma variedade de pares geométricos e seus associados</p>
+<p>Várias relações topológicas podem ser usadas para o subconjunto espacial que determina o tipo de relação espacial que as características do objeto-alvo devem ter com o objeto a ser selecionado. Estas incluem toques, cruzamentos ou dentro, como veremos em breve na seção 4.2.2. A configuração padrão st_intersects é uma relação topológica ‘catch all’ que retornará características no alvo que tocam, cruzam ou estão dentro do objeto ‘sub-conjunto’ de origem. Como indicado acima, operadores espaciais alternativos podem ser especificados com o argumento op =, como demonstrado no seguinte comando que retorna o oposto de st_intersects(), pontos que não se cruzam com Canterbury (ver Seção 4.2.2):</p>
+<p>Para muitas aplicações, isto é tudo o que você precisará saber sobre o subconjunto espacial para dados vetoriais: ele simplesmente funciona. Se você estiver impaciente para aprender mais sobre relações topológicas, além de st_intersects() e st_disjoint(), pule para a próxima seção (4.2.2). Se você estiver interessado nos detalhes, incluindo outras formas de sub-configuração, continue lendo.
+*** Translated with www.DeepL.com/Translator (free version) ***</p>
+<p>Geometric operations on vector data</p>
+<p>Simplificação de dados espaciais</p>
+<p>Centroids</p>
+<p>Buffers</p>
+<p>Clip</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/cortar_1.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/cortar_1.png" /><!-- --></p>
+<p>Interseção espacial</p>
+<p>Spatial subsetting
+Spatial subsetting is the process of taking a spatial object and returning a new object containing only features that relate in space to another object. Analogous to attribute subsetting (covered in Section 3.2.1), subsets of sf data frames can be created with square bracket ([) operator using the syntax x[y, , op = st_intersects], where x is an sf object from which a subset of rows will be returned, y is the ‘subsetting object’ and , op = st_intersects is an optional argument that specifies the topological relation (also known as the binary predicate) used to do the subsetting. The default topological relation used when an op argument is not provided is st_intersects(): the command x[y, ] is identical to x[y, , op = st_intersects] shown above but not x[y, , op = st_disjoint] (the meaning of these and other topological relations is described in the next section). The filter() function from the tidyverse can also be used but this approach more verbose, as we will see in the examples below.
+- Clip
+- Inteseção</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/4_intersecao.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/4_intersecao.png" /><!-- -->
+- Diferença</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/5_diferenca.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/5_diferenca.png" /><!-- --></p>
+<p>Agregação (dissolve)</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/1_agregacao.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/1_agregacao.png" /><!-- --></p>
+<p>União</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/2_uniao.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/2_uniao.png" /><!-- --></p>
+<p>Junção espacial
+Joining two feature sets based on attributes</p>
+<p>Joining two feature sets based on geometries</p>
+<p>Ponto em polígono</p>
+<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/spatial_join.png&quot;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/spatial_join.png" /><!-- --></p>
+<p>Distâncias</p>
+</div>
+</div>

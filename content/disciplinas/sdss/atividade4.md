@@ -3,59 +3,54 @@ date: "2021-12-05T00:00:00+01:00"
 draft: false
 menu:
   sdss:
-    parent: Unidade 2
-    weight: 10
-title: Atividade 2.1
+    parent: Unidade 3
+    weight: 11
+title: Atividade 3.1
 toc: false
 type: docs
-weight: 10
+weight: 11
 ---
 
-## A **Unidade 6** é estruturada considerando os seguintes tópicos:
+## A **Unidade 7** é estruturada considerando os seguintes tópicos:
 
-- Dados espaciais e geocodificação;    
-- Estrutura de dados espaciais;   
-- Como transformar dados não espaciais em espaciais
+- Funções de manipulação de dados espaciais e operações espaciais
+- Pacotes no R para tratamento da informação espacial
 
 
-## Esta atividade deverá ser realizada até dia **06/01**. São propostas as seguintes atividades:
+## Esta atividade deverá ser realizada até dia **13/01**. São propostas as seguintes atividades:
 
-### 1. Chame os pacotes:
+### 1. Explore o conteúdo no [link]()
+### 2. Chame os pacotes:
 
 ```{r}
 library(sf)      # vector data package
 library(dplyr)   # tidyverse package for data frame manipulation
 library(spData)  # spatial data package
 ```
-Os conjuntos de dados vetoriais geográficos são estruturados no R graças à classe `sf`, que estende o data.frame da base R. Como os data.frames, os objetos `sf` têm uma coluna por variável (como 'nome') e uma linha por observação ou característica (por exemplo, por estação de ônibus). Os objetos `sf` diferem dos data.frame básicos porque têm uma coluna geométrica de classe `sfc` que pode conter uma gama de entidades geográficas (ponto único e 'multi', linha e características de polígono) por linha. 
 
-### 2. Siga os comandos a seguir para explorar e manipular dados geográficos com o pacote `sf`:
 
-`world` é um `sf data frame` contendo colunas espaciais e de atributos, cujos nomes são retornados pela função `names()`(a última coluna deste exemplo contém as informações geográficas).
+### 3. Como ler e escrever (salvar) arquivos com dados espaciais no R (objetos `sf`)
 
-```{r}
-class(world)
-names(world)
+O package `sf` também tem funções que permitem ler e escrever dados espaciais. As funções para isso são `st_read()` e `st_write()`. Escolha um arquivo com a estrutura da ESRI shapefile e defina o seu diretório. Depois, leia o arquivo:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+ setwd("./shapefiles_diretorio/")
+ objeto <- st_read("arquivo.shp")
 ```
 
-Veja o que acontece quando você roda o código a seguir:
+O diretório deve ser especificado para que os dados espaciais sejam varridos de forma efetiva pelas funções. Para escrever utilizando a função `st_write()` são necessários dois parâmetros: o objeto e o nome do arquivo. 
 
-```{r}
-world_agg1 = world %>%
-  group_by(continent) %>%
-  summarize(pop = sum(pop, na.rm = TRUE))
-```
-Copie o código abaixo e rode-o no seu `.Rmd`:
-
-```{r}
-world_agg2  = world %>% 
-  group_by(continent) %>%
-  summarize(pop = sum(pop, na.rm = TRUE), `area (sqkm)` = sum(area_km2), n = n())
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+ st_write(objeto, "arquivo.shp", delete_layer = TRUE)
 ```
 
-O que quer dizer a representação gerada por você?
+Esse comando é igual a:
 
-### 3. Junção de atributos vetoriais
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# st_write(objeto, dsn="arquivo.shp", layer="arquivo.shp", driver = "ESRI Shapefile", delete_layer = TRUE)
+```
+
+### 4. Junção de atributos vetoriais
 
 ```{r}
 world_coffee = left_join(world, coffee_data)

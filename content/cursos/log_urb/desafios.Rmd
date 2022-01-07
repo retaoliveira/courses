@@ -3,8 +3,8 @@ date: "2021-06-30T00:00:00+01:00"
 draft: false
 menu:
   log_urb:
-    parent: 3 - Desafios da Logística Urbana
-    weight: 10
+    parent: 3 - Desafios da Logística Urbano
+    weight: 11
 title: Desafios da Logística Urbana
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 10
+weight: 11
 ---
 
 

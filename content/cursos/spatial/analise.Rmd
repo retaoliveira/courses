@@ -1,0 +1,103 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: true
+menu:
+  spatial:
+    parent: Fundamentos da análise espacial
+    weight: 50
+title: Operações espaciais
+editor_options: 
+  markdown: 
+    wrap: 30
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 50
+---
+
+
+
+
+
+: fundamentos e relevância
+
+- Análise espacial: aplicações
+
+
+---
+# Análise espacial: aplicações
+
+dimensão estrutural
+densidade: 
+oportunidades de trabalho?
+empregos?
+comércio?
+educação - escolas ?
+unidades de saúde e leitos hospitalares?
+lazer?
+unidades residenciais?
+diversidade
+índices uso misto do solo
+em referência a um padrão desejado
+
+dimensão estrutural
+
+IV. Desenho
+indicadores topológicos
+straightness
+closeness
+betweeness
+métricas de forma urbana
+cobertura (tamanho)
+policentricidade (simetria, estrutura e importância)
+entropia (proporção de empregos em um centro em relação a todos os empregos em todos os centros e o número de centros).
+proporção de residentes em centros urbanos
+número de centros
+discontinuidade do tecido urbano 
+proporção de área dos clusters em relação à toda a área construída
+compactness
+índice gravitacional médio de todos as zonas
+expandability
+off-set of built area
+land-use mix
+
+dimensão de acessibilidade
+distance to transit
+distância/tempo à estação de acesso a sistemas de TP troncais
+distância/tempo de acesso ao PED mais próximo 
+acessibilidade aos locais de interesse
+índice gravitacional
+número de oportunidades na área de influência
+---
+# Processo decisório por meio de ferramentas de geoprocessamento para dados vetoriais
+
+Estatística descritiva espacial 
+Análise de estrutura espacial
+Análise de Cluster 
+Análise de rede (topologia e morfologia)
+Indicadores de acessibilidade
+Indicadores de desigualdade espacial
+
+
+---
+# Processo decisório: suitability analysis
+Álgebra de mapas 
+Interpolação
+Álgebra de mapas 
+Tranformar dados vetoriais em raster
+Determinar pesos
+Álgebra de Mapas
+
+---
+Análise de estrutura espacial 
+Moran I Global 
+Average Nearest Neighbour
+
+
+---
+Análise de Cluster 
+Getis-Ord Gi*
+Moran Local
+---
+

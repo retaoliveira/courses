@@ -1,0 +1,33 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  spatial:
+    parent: Referências e material adicional
+    weight: 100
+title: Construindo mapas e representações
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 100
+---
+
+# Links interessantes
+
+[Overshoot day + Covid-19](https://www.overshootday.org/)   
+
+[Urbanized](https://vimeo.com/ondemand/urbanized2)
+
+[Livro sobre Análise espacial no R](https://www.dropbox.com/s/mo65rwtzafrsa5w/analise%20espacial.pdf?dl=0)
+
+[Curso de R em português](http://material.curso-r.com/)   
+
+[R e Análise espacial](https://mgimond.github.io/Spatial/spatial-autocorrelation-in-r.html)
+
+[Análise espacial no R](https://rspatial.org/raster/analysis/index.html)
+
+[Referências de links de consulta para R e R para Jornalistas](https://www.curso-de-programacao-em-r-para-jornalistas.com/2019/10/27/saiba-mais-sobre-o-r/)

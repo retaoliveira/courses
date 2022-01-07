@@ -363,6 +363,36 @@
   </div>
   
   <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/spatial/atividades/">Atividades</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/spatial/atividades/">GIS e QGIS</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/spatial/operacoes-espaciais/">Fundamentos da análise espacial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/spatial/operacoes-espaciais/">Operações espaciais</a>
+      </li>
+      
+      <li class="active">
+        <a href="/cursos/spatial/map/">Construindo mapas e representações</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/cursos/spatial/localizacao/">Localização como atributo de suporte à decisão</a>
     <ul class="nav docs-sidenav">
       
@@ -372,10 +402,6 @@
       
       <li >
         <a href="/cursos/spatial/geodata/">Dados espaciais</a>
-      </li>
-      
-      <li class="active">
-        <a href="/cursos/spatial/map/">Construindo mapas e representações</a>
       </li>
       
     </ul>
@@ -604,11 +630,32 @@ print(t2, vp=viewport(layout.pos.col = 2, height = 5))</code></pre>
 Repare que t1 é um objeto <code>sf</code> e t2 é um objeto <code>sp</code> e apresentam sistemas de referência diferentes.</p>
 <p>Para consultar os diferentes sistemas de projeção, verifique utilizando a função <code>crs</code>.</p>
 <pre class="r"><code>crs(georgia_sf)</code></pre>
-<pre><code>## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs</code></pre>
+<pre><code>## Coordinate Reference System:
+## Deprecated Proj.4 representation: +proj=longlat +ellps=WGS84 +no_defs 
+## WKT2 2019 representation:
+## GEOGCRS[&quot;unknown&quot;,
+##     DATUM[&quot;Unknown based on WGS84 ellipsoid&quot;,
+##         ELLIPSOID[&quot;WGS 84&quot;,6378137,298.257223563,
+##             LENGTHUNIT[&quot;metre&quot;,1],
+##             ID[&quot;EPSG&quot;,7030]]],
+##     PRIMEM[&quot;Greenwich&quot;,0,
+##         ANGLEUNIT[&quot;degree&quot;,0.0174532925199433],
+##         ID[&quot;EPSG&quot;,8901]],
+##     CS[ellipsoidal,2],
+##         AXIS[&quot;longitude&quot;,east,
+##             ORDER[1],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433,
+##                 ID[&quot;EPSG&quot;,9122]]],
+##         AXIS[&quot;latitude&quot;,north,
+##             ORDER[2],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433,
+##                 ID[&quot;EPSG&quot;,9122]]]]</code></pre>
 <pre class="r"><code>crs(georgia2)</code></pre>
-<pre><code>## CRS arguments:
+<pre><code>## Coordinate Reference System:
+## Deprecated Proj.4 representation:
 ##  +proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0.0
 ## +y_0=0.0 +ellps=GRS80 +units=m +datum=NAD83 +no_defs +towgs84=0,0,0</code></pre>
+<pre><code>## Warning in wkt(x): CRS object has no comment</code></pre>
 <p>Para nomear os atributos, verifique o data.frame do objeto <code>georgia_sf</code>. Utilize a função <code>names()</code> para ter acesso a uma lista de nomes de todos os atributos.</p>
 <pre class="r"><code>names(georgia_sf)</code></pre>
 <pre><code>##  [1] &quot;Latitude&quot; &quot;Longitud&quot; &quot;TotPop90&quot; &quot;PctRural&quot; &quot;PctBach&quot;  &quot;PctEld&quot;  
@@ -894,9 +941,15 @@ plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)</code></pre>
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/cursos/spatial/geodata/" rel="next">Dados espaciais</a>
+    <a href="/cursos/spatial/operacoes-espaciais/" rel="next">Operações espaciais</a>
   </div>
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/cursos/spatial/material/" rel="prev">GIS e QGIS</a>
+  </div>
   
 </div>
 

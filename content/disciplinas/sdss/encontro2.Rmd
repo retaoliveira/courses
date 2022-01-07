@@ -11,21 +11,21 @@ type: docs
 weight: 9
 ---
 
-# Principal referência
+## Principal referência
 
 [Geocomputation with R](https://geocompr.robinlovelace.net/index.html)
 
-# Pacotes referências
+## Pacotes referências
 
 [Simple Features](https://r-spatial.github.io/sf/)
 
 [tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html)
 
-# Outras informações 
+## Outras informações 
 
 [CNAE](https://concla.ibge.gov.br/busca-online-cnae.html?subclasse=5612100&tipo=cnae&versao=8&view=subclasse)
 
-# Código para implementação de funções de representação e manipulação de dados espaciais
+## Código para implementação de funções de representação e manipulação de dados espaciais
 
 ```{r}
 vignette(package = "sf")
@@ -70,7 +70,7 @@ st_bbox(new_shape)
 ```
 
 
-# Representação
+## Representação
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 autonomos <- st_read("shapefile/autonomos.shp")
@@ -88,7 +88,7 @@ tm_shape(autonomos) +
    
 ```
 
-# Manipulação de dados espaciais
+## Manipulação de dados espaciais
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 
@@ -120,7 +120,7 @@ world_agg2  <- world %>%
   summarize(pop = sum(pop, na.rm = TRUE), `area (sqkm)` = sum(area_km2), n = n())
 ```
 
-# Junção não espacial - relaciona dados por meio de uma chave
+## Junção não espacial - relaciona dados por meio de uma chave
 
 ```{r}
 coffee_data
