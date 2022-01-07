@@ -18,7 +18,8 @@ weight: 40
 
 ## Instalação dos packages para manipulação de dados espaciais no R
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 library(sf)
 library(terra)
 library(dplyr)
@@ -42,12 +43,11 @@ Várias relações topológicas podem ser usadas para o subconjunto espacial que
 
 ### Simplificação de dados espaciais
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/simplify.png")
-```
+![](https://retaoliveira.github.io/relements/figures/simplify.png)<!-- -->
 
 - Experimente
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 seine <- seine
 
 plot(seine)
@@ -56,7 +56,8 @@ seine_simp = st_simplify(seine, dTolerance = 2000)  # 2000 m
 plot(seine_simp)
 ```
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 object.size(seine)
 
 object.size(seine_simp)
@@ -68,17 +69,17 @@ object.size(seine_simp)
 
 Os `centroids` identificam o centro dos objetos geográficos. Como as medidas estatísticas de tendência central (incluindo médias e medianas), há muitas maneiras de definir o centro geográfico de um objeto. Todas elas criam representações de pontos únicos de objetos vetoriais mais complexos.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/centroid.png")
-```
+![](https://retaoliveira.github.io/relements/figures/centroid.png)<!-- -->
 
 - Experimente
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 nz_centroid = st_centroid(nz)
 seine_centroid = st_centroid(seine)
 ```
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 nz_pos = st_point_on_surface(nz)
 seine_pos = st_point_on_surface(seine)
 ```
@@ -88,12 +89,11 @@ seine_pos = st_point_on_surface(seine)
 
 Buffers são polígonos que representam a área dentro de uma determinada distância de uma feição geométrica: independentemente de a entrada ser um ponto, linha ou polígono, a saída é um polígono. 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/buffer.png")
-```
+![](https://retaoliveira.github.io/relements/figures/buffer.png)<!-- -->
 
 - Experimente
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 seine_buff_5km = st_buffer(seine, dist = 5000)
 seine_buff_50km = st_buffer(seine, dist = 50000)
 ```
@@ -104,13 +104,12 @@ seine_buff_50km = st_buffer(seine, dist = 50000)
 
 A agregação espacial pode dissolver as geometrias dos polígonos em contato no mesmo grupo. 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/1_agregacao.png")
-```
+![](https://retaoliveira.github.io/relements/figures/1_agregacao.png)<!-- -->
 
 - Experimente
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 regions = aggregate(x = us_states[, "total_pop_15"], by = list(us_states$REGION),
                     FUN = sum, na.rm = TRUE)
 
@@ -124,22 +123,19 @@ plot(regions)
 
 **Sobreposição Espacial** é um processo que permite identificar as relações entre feições de dois polígonos que compartilham a totalidade ou parte da mesma área
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/overlay.png")
-```
+![](https://retaoliveira.github.io/relements/figures/overlay.png)<!-- -->
 
 
 ### União
 
 União: a camada de saída contém todas as áreas das duas camadas de entrada combinadas.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/2_uniao.png")
-```
+![](https://retaoliveira.github.io/relements/figures/2_uniao.png)<!-- -->
 
 - Experimente
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 us_west = us_states[us_states$REGION == "West", ]
 us_west_union = st_union(us_west)
 
@@ -153,15 +149,14 @@ texas_union = st_union(us_west_union, texas)
 
 O recorte espacial (clip) é uma forma de subconjunto espacial que envolve mudanças nas colunas geométricas de pelo menos algumas das características afetadas quando são recortadas linhas e polígonos.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/cortar_1.png")
-```
+![](https://retaoliveira.github.io/relements/figures/cortar_1.png)<!-- -->
 
 O recorte de objetos espaciais pode mudar sua geometria, mas também pode gerar subconjuntos de objetos, retornando apenas características que se cruzam (ou se cruzam parcialmente) com um objeto de clipagem/substituição. 
 
 - Experimente
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 clip <- st_intersection(us_states, texas)
 
 plot(clip)
@@ -171,13 +166,12 @@ plot(clip)
 
 A camada de saída contém todas as áreas em que ambas as camadas se sobrepõem (intersecção).
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/4_intersecao.png")
-```
+![](https://retaoliveira.github.io/relements/figures/4_intersecao.png)<!-- -->
 
 - Códigos
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 st_intersection(x, y, ...)
 
 st_intersects(x, y, sparse = TRUE, ...)
@@ -211,7 +205,8 @@ st_is_within_distance(x, y = x, dist, sparse = TRUE, ...)
 
 - Experimente 
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 # create square
 s <- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %>% 
   list %>% 
@@ -232,26 +227,24 @@ plot(r, add= TRUE, lty = 2)
 i <- st_intersection(s, r)
 
 plot(i, add = TRUE, lty = 2, col = "red")
-
-
 ```
 
 
 ### Diferença
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/5_diferenca.png")
-```
+![](https://retaoliveira.github.io/relements/figures/5_diferenca.png)<!-- -->
 
 - Função
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 st_difference(x, y, ...)
 ```
 
 - Experimente
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 # create square
 s <- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %>% 
   list %>% 
@@ -272,7 +265,6 @@ plot(r, add= TRUE, lty = 2)
 i <- st_difference(s, r)
 
 plot(i, add = TRUE, lty = 2, col = "red")
-
 ```
 
 ### Junção espacial
@@ -281,16 +273,16 @@ plot(i, add = TRUE, lty = 2, col = "red")
 
 Esta primeira abordagem seleciona apenas pontos contidos em polígonos.  
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/spatial_join.png")
-```
+![](https://retaoliveira.github.io/relements/figures/spatial_join.png)<!-- -->
 
 - Experimente
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 st_join()
 ```
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 a = st_sf(a = 1:3,
  geom = st_sfc(st_point(c(1,1)), st_point(c(2,2)), st_point(c(3,3))))
 b = st_sf(a = 11:14,
@@ -306,13 +298,11 @@ c
 
 ### Transformação
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/transform.png")
-```
+![](https://retaoliveira.github.io/relements/figures/transform.png)<!-- -->
 
 - Experimente
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 
+```r
 multipoint = st_multipoint(matrix(c(1, 3, 5, 1, 3, 1), ncol = 2))
 linestring = st_cast(multipoint, "LINESTRING")
 polyg = st_cast(multipoint, "POLYGON")
@@ -343,13 +333,12 @@ A **Distância Euclidiana** seria o segmento de uma reta que conceta dois pontos
 
 A **distância em rede** é aquela equivalente ao deslocamento real no ambiente construído e se aproxima mais da realidade. Entretanto, o esforço computacional e a demanda por dados é sempre maior.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/distancia.png")
-```
+![](https://retaoliveira.github.io/relements/figures/distancia.png)<!-- -->
 
 - Funções
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 st_area() 
 st_length() 
 st_distance()
@@ -357,7 +346,5 @@ st_distance()
 
 ## Resumo
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/geometric.png")
-```
+![](https://retaoliveira.github.io/relements/figures/geometric.png)<!-- -->
 

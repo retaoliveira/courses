@@ -63,19 +63,17 @@ library(spDataLarge)</code></pre>
 <h3>Simplificação de dados espaciais</h3>
 <p><img src="https://retaoliveira.github.io/relements/figures/simplify.png" /><!-- --></p>
 <ul>
-<li>Exemplo</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>seine &lt;- seine
 
-plot(seine)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<pre class="r"><code>seine_simp = st_simplify(seine, dTolerance = 2000)  # 2000 m
+plot(seine)
+
+seine_simp = st_simplify(seine, dTolerance = 2000)  # 2000 m
 plot(seine_simp)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
-<pre class="r"><code>object.size(seine)</code></pre>
-<pre><code>## 18096 bytes</code></pre>
-<pre class="r"><code>object.size(seine_simp)</code></pre>
-<pre><code>## 9112 bytes</code></pre>
+<pre class="r"><code>object.size(seine)
+
+object.size(seine_simp)</code></pre>
 <blockquote>
 <p>Compare a diferença entre os objetos.</p>
 </blockquote>
@@ -85,20 +83,12 @@ plot(seine_simp)</code></pre>
 <p>Os <code>centroids</code> identificam o centro dos objetos geográficos. Como as medidas estatísticas de tendência central (incluindo médias e medianas), há muitas maneiras de definir o centro geográfico de um objeto. Todas elas criam representações de pontos únicos de objetos vetoriais mais complexos.</p>
 <p><img src="https://retaoliveira.github.io/relements/figures/centroid.png" /><!-- --></p>
 <ul>
-<li>Exemplo</li>
+<li>Experimente</li>
 </ul>
-<pre class="r"><code>nz_centroid = st_centroid(nz)</code></pre>
-<pre><code>## Warning in st_centroid.sf(nz): st_centroid assumes attributes are constant over
-## geometries of x</code></pre>
-<pre class="r"><code>seine_centroid = st_centroid(seine)</code></pre>
-<pre><code>## Warning in st_centroid.sf(seine): st_centroid assumes attributes are constant
-## over geometries of x</code></pre>
-<pre class="r"><code>nz_pos = st_point_on_surface(nz)</code></pre>
-<pre><code>## Warning in st_point_on_surface.sf(nz): st_point_on_surface assumes attributes
-## are constant over geometries of x</code></pre>
-<pre class="r"><code>seine_pos = st_point_on_surface(seine)</code></pre>
-<pre><code>## Warning in st_point_on_surface.sf(seine): st_point_on_surface assumes attributes
-## are constant over geometries of x</code></pre>
+<pre class="r"><code>nz_centroid = st_centroid(nz)
+seine_centroid = st_centroid(seine)</code></pre>
+<pre class="r"><code>nz_pos = st_point_on_surface(nz)
+seine_pos = st_point_on_surface(seine)</code></pre>
 <blockquote>
 <p>Qual a diferença das funções <code>st_centroid</code> e <code>st_point_on_surface</code>?</p>
 </blockquote>
@@ -108,7 +98,7 @@ plot(seine_simp)</code></pre>
 <p>Buffers são polígonos que representam a área dentro de uma determinada distância de uma feição geométrica: independentemente de a entrada ser um ponto, linha ou polígono, a saída é um polígono.</p>
 <p><img src="https://retaoliveira.github.io/relements/figures/buffer.png" /><!-- --></p>
 <ul>
-<li>Exemplos</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>seine_buff_5km = st_buffer(seine, dist = 5000)
 seine_buff_50km = st_buffer(seine, dist = 50000)</code></pre>
@@ -121,15 +111,13 @@ seine_buff_50km = st_buffer(seine, dist = 50000)</code></pre>
 <p>A agregação espacial pode dissolver as geometrias dos polígonos em contato no mesmo grupo.</p>
 <p><img src="https://retaoliveira.github.io/relements/figures/1_agregacao.png" /><!-- --></p>
 <ul>
-<li>Exemplo</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>regions = aggregate(x = us_states[, &quot;total_pop_15&quot;], by = list(us_states$REGION),
                     FUN = sum, na.rm = TRUE)
 
-plot(us_states)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<pre class="r"><code>plot(regions)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+plot(us_states)
+plot(regions)</code></pre>
 <blockquote>
 <p>Como você geraria os mesmos mapas por meio das funções do pacote <code>dplyr</code>? Tente montar o código e chegar no mesmo resultado.</p>
 </blockquote>
@@ -144,7 +132,7 @@ plot(us_states)</code></pre>
 <p>União: a camada de saída contém todas as áreas das duas camadas de entrada combinadas.</p>
 <p><img src="https://retaoliveira.github.io/relements/figures/2_uniao.png" /><!-- --></p>
 <ul>
-<li>Exemplos</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>us_west = us_states[us_states$REGION == &quot;West&quot;, ]
 us_west_union = st_union(us_west)
@@ -161,9 +149,11 @@ texas_union = st_union(us_west_union, texas)</code></pre>
 <p><img src="https://retaoliveira.github.io/relements/figures/cortar_1.png" /><!-- --></p>
 <p>O recorte de objetos espaciais pode mudar sua geometria, mas também pode gerar subconjuntos de objetos, retornando apenas características que se cruzam (ou se cruzam parcialmente) com um objeto de clipagem/substituição.</p>
 <ul>
-<li>Funções</li>
+<li>Experimente</li>
 </ul>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<pre class="r"><code>clip &lt;- st_intersection(us_states, texas)
+
+plot(clip)</code></pre>
 </div>
 <div id="inteseção-espacial" class="section level3">
 <h3>Inteseção espacial</h3>
@@ -202,6 +192,9 @@ st_is_within_distance(x, y = x, dist, sparse = TRUE, ...)</code></pre>
 <blockquote>
 <p>Diferença entre <code>st_intersects</code> e <code>st_intersection</code>: Dentro da biblioteca <code>sf</code> há as operações de interseção geométrica binária, como <code>st_intersects</code>, e operações geométricas, como <code>st_intersection</code>. A função <code>st_intersects</code> prevê o retorno de uma matriz esparsa (padrão) ou densa dizendo-lhe com que geometria de y se sobrepõe a x. Enquanto que as operações (por exemplo, <code>st_intersection</code>) computarão a interseção, e retornarão novas geometrias. Se você usar o <code>st_join</code>, ele retornará as geometrias (originais) que se cruzam, ao invés da matriz esparsa.</p>
 </blockquote>
+<ul>
+<li>Experimente</li>
+</ul>
 <pre class="r"><code># create square
 s &lt;- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %&gt;% 
   list %&gt;% 
@@ -222,7 +215,6 @@ plot(r, add= TRUE, lty = 2)
 i &lt;- st_intersection(s, r)
 
 plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 </div>
 <div id="diferença" class="section level3">
 <h3>Diferença</h3>
@@ -232,7 +224,7 @@ plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
 </ul>
 <pre class="r"><code>st_difference(x, y, ...)</code></pre>
 <ul>
-<li>Exemplo</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code># create square
 s &lt;- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %&gt;% 
@@ -254,7 +246,6 @@ plot(r, add= TRUE, lty = 2)
 i &lt;- st_difference(s, r)
 
 plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 </div>
 <div id="junção-espacial" class="section level3">
 <h3>Junção espacial</h3>
@@ -262,7 +253,7 @@ plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
 <p>Esta primeira abordagem seleciona apenas pontos contidos em polígonos.</p>
 <p><img src="https://retaoliveira.github.io/relements/figures/spatial_join.png" /><!-- --></p>
 <ul>
-<li>Exemplos</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>st_join()</code></pre>
 <pre class="r"><code>a = st_sf(a = 1:3,
@@ -272,59 +263,27 @@ b = st_sf(a = 11:14,
 
 c = st_join(a, b)
 
-a</code></pre>
-<pre><code>## Simple feature collection with 3 features and 1 field
-## Geometry type: POINT
-## Dimension:     XY
-## Bounding box:  xmin: 1 ymin: 1 xmax: 3 ymax: 3
-## CRS:           NA
-##   a        geom
-## 1 1 POINT (1 1)
-## 2 2 POINT (2 2)
-## 3 3 POINT (3 3)</code></pre>
-<pre class="r"><code>b</code></pre>
-<pre><code>## Simple feature collection with 4 features and 1 field
-## Geometry type: POINT
-## Dimension:     XY
-## Bounding box:  xmin: 2 ymin: 2 xmax: 10 ymax: 10
-## CRS:           NA
-##    a          geom
-## 1 11 POINT (10 10)
-## 2 12   POINT (2 2)
-## 3 13   POINT (2 2)
-## 4 14   POINT (3 3)</code></pre>
-<pre class="r"><code>c</code></pre>
-<pre><code>## Simple feature collection with 4 features and 2 fields
-## Geometry type: POINT
-## Dimension:     XY
-## Bounding box:  xmin: 1 ymin: 1 xmax: 3 ymax: 3
-## CRS:           NA
-##     a.x a.y        geom
-## 1     1  NA POINT (1 1)
-## 2     2  12 POINT (2 2)
-## 2.1   2  13 POINT (2 2)
-## 3     3  14 POINT (3 3)</code></pre>
+a
+b
+c</code></pre>
 </div>
 <div id="transformação" class="section level3">
 <h3>Transformação</h3>
 <p><img src="https://retaoliveira.github.io/relements/figures/transform.png" /><!-- --></p>
 <ul>
-<li>Exemplos</li>
+<li>Experimente</li>
 </ul>
 <pre class="r"><code>multipoint = st_multipoint(matrix(c(1, 3, 5, 1, 3, 1), ncol = 2))
 linestring = st_cast(multipoint, &quot;LINESTRING&quot;)
 polyg = st_cast(multipoint, &quot;POLYGON&quot;)
 
-plot(multipoint)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
-<pre class="r"><code>plot(linestring)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
-<pre class="r"><code>plot(polyg)</code></pre>
-<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
-<pre class="r"><code>multipoint_2 = st_cast(linestring, &quot;MULTIPOINT&quot;)
+plot(multipoint)
+plot(linestring)
+plot(polyg)
+
+multipoint_2 = st_cast(linestring, &quot;MULTIPOINT&quot;)
 multipoint_3 = st_cast(polyg, &quot;MULTIPOINT&quot;)
 all.equal(multipoint, multipoint_2, multipoint_3)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
 <blockquote>
 <p>Para que serve a função <code>st_cast</code>?</p>
 </blockquote>
