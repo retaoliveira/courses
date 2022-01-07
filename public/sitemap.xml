@@ -344,9 +344,6 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</loc>
     <lastmod>2021-05-15T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/cursos/spatial/map/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/material/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -388,19 +385,22 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/reprodutibility/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/spatial/map/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc5/</loc>
     <lastmod>2021-10-25T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/sustentavel/</loc>
     <lastmod>2021-08-25T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/spatial/atividades/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/estatistica/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/referencias/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/cursos/spatial/atividades/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/intro_r/</loc>

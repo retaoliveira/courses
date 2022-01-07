@@ -344,7 +344,7 @@ A **Distância Euclidiana** seria o segmento de uma reta que conceta dois pontos
 A **distância em rede** é aquela equivalente ao deslocamento real no ambiente construído e se aproxima mais da realidade. Entretanto, o esforço computacional e a demanda por dados é sempre maior.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("https://retaoliveira.github.io/relements/figures/distancia.png")
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/distancias.png")
 ```
 
 - Funções
