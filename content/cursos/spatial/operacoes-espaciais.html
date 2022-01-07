@@ -24,68 +24,330 @@ weight: 40
 <li><a href="#operações-em-dados-espaciais">Operações em dados espaciais</a>
 <ul>
 <li><a href="#relações-topológicas">Relações topológicas</a></li>
+<li><a href="#simplificação-de-dados-espaciais">Simplificação de dados espaciais</a></li>
+<li><a href="#centroids">Centroids</a></li>
+<li><a href="#buffers">Buffers</a></li>
+<li><a href="#agregação-dissolve">Agregação (dissolve)</a></li>
+<li><a href="#sobreposição-espacial">Sobreposição espacial</a></li>
+<li><a href="#união">União</a></li>
+<li><a href="#clip">Clip</a></li>
+<li><a href="#inteseção-espacial">Inteseção espacial</a></li>
+<li><a href="#diferença">Diferença</a></li>
+<li><a href="#junção-espacial">Junção espacial</a></li>
+<li><a href="#transformação">Transformação</a></li>
+<li><a href="#distâncias">Distâncias</a></li>
 </ul></li>
+<li><a href="#resumo">Resumo</a></li>
 </ul>
 </div>
 
 <div id="instalação-dos-packages-para-manipulação-de-dados-espaciais-no-r" class="section level2">
 <h2>Instalação dos packages para manipulação de dados espaciais no R</h2>
-<pre class="r"><code>library(raster)
-library(rJava)
-library(OpenStreetMap)
-library(RgoogleMaps)
-library(grid)
-library(rgdal)
-library(tidyverse)
-library(reshape2)
-library(ggmosaic)
-library(GISTools)
-library(sp)
-library(sf)
-library(tmap)
-library(tmaptools)
-library(mapview)</code></pre>
+<pre class="r"><code>library(sf)
+library(terra)
+library(dplyr)
+library(spData)
+library(spDataLarge)</code></pre>
 <hr>
 </div>
-<div id="operações-em-dados-espaciais" class="section level1">
-<h1>Operações em dados espaciais</h1>
+<div id="operações-em-dados-espaciais" class="section level2">
+<h2>Operações em dados espaciais</h2>
 <p>As operações espaciais, incluindo as uniões espaciais entre conjuntos de dados vetoriais, são uma parte vital da geocomputação. A idéia é que objetos espaciais podem ser modificados de várias maneiras, com base em sua localização e forma. Muitas operações espaciais têm um equivalente não espacial (atributo), portanto conceitos como subconjunto e junção de conjuntos de dados são aplicáveis também para operações espaciais.</p>
-<div id="relações-topológicas" class="section level2">
-<h2>Relações topológicas</h2>
+<div id="relações-topológicas" class="section level3">
+<h3>Relações topológicas</h3>
 <p>As relações topológicas descrevem as relações espaciais entre objetos. “Relações topológicas binárias”, para dar-lhes seu nome completo, são afirmações lógicas (no sentido de que a resposta só pode ser VERDADEIRA ou FALSA) sobre as relações espaciais entre dois objetos definidos por conjuntos ordenados de pontos (tipicamente formando pontos, linhas e polígonos) em duas ou mais dimensões (Egenhofer e Herring 1990). Isso pode parecer bastante abstrato e, de fato, a definição e classificação das relações topológicas é baseada em fundamentos matemáticos publicados pela primeira vez em forma de livro em 1966 (Spanier 1995), com o campo da topologia algébrica continuando no século XXI (Dieck 2008).</p>
-<p>Apesar de suas origens matemáticas, as relações topológicas podem ser entendidas intuitivamente com referência a visualizações de funções comumente utilizadas que testam tipos comuns de relações espaciais. A Figura 4.2 mostra uma variedade de pares geométricos e seus associados</p>
-<p>Várias relações topológicas podem ser usadas para o subconjunto espacial que determina o tipo de relação espacial que as características do objeto-alvo devem ter com o objeto a ser selecionado. Estas incluem toques, cruzamentos ou dentro, como veremos em breve na seção 4.2.2. A configuração padrão st_intersects é uma relação topológica ‘catch all’ que retornará características no alvo que tocam, cruzam ou estão dentro do objeto ‘sub-conjunto’ de origem. Como indicado acima, operadores espaciais alternativos podem ser especificados com o argumento op =, como demonstrado no seguinte comando que retorna o oposto de st_intersects(), pontos que não se cruzam com Canterbury (ver Seção 4.2.2):</p>
-<p>Para muitas aplicações, isto é tudo o que você precisará saber sobre o subconjunto espacial para dados vetoriais: ele simplesmente funciona. Se você estiver impaciente para aprender mais sobre relações topológicas, além de st_intersects() e st_disjoint(), pule para a próxima seção (4.2.2). Se você estiver interessado nos detalhes, incluindo outras formas de sub-configuração, continue lendo.
-*** Translated with www.DeepL.com/Translator (free version) ***</p>
-<p>Geometric operations on vector data</p>
-<p>Simplificação de dados espaciais</p>
-<p>Centroids</p>
-<p>Buffers</p>
-<p>Clip</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/cortar_1.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/cortar_1.png" /><!-- --></p>
-<p>Interseção espacial</p>
-<p>Spatial subsetting
-Spatial subsetting is the process of taking a spatial object and returning a new object containing only features that relate in space to another object. Analogous to attribute subsetting (covered in Section 3.2.1), subsets of sf data frames can be created with square bracket ([) operator using the syntax x[y, , op = st_intersects], where x is an sf object from which a subset of rows will be returned, y is the ‘subsetting object’ and , op = st_intersects is an optional argument that specifies the topological relation (also known as the binary predicate) used to do the subsetting. The default topological relation used when an op argument is not provided is st_intersects(): the command x[y, ] is identical to x[y, , op = st_intersects] shown above but not x[y, , op = st_disjoint] (the meaning of these and other topological relations is described in the next section). The filter() function from the tidyverse can also be used but this approach more verbose, as we will see in the examples below.
-- Clip
-- Inteseção</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/4_intersecao.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/4_intersecao.png" /><!-- -->
-- Diferença</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/5_diferenca.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/5_diferenca.png" /><!-- --></p>
-<p>Agregação (dissolve)</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/1_agregacao.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/1_agregacao.png" /><!-- --></p>
-<p>União</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/2_uniao.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/2_uniao.png" /><!-- --></p>
-<p>Junção espacial
-Joining two feature sets based on attributes</p>
-<p>Joining two feature sets based on geometries</p>
-<p>Ponto em polígono</p>
-<pre class="r"><code>knitr::include_graphics(&quot;https://retaoliveira.github.io/relements/figures/spatial_join.png&quot;)</code></pre>
-<p><img src="https://retaoliveira.github.io/relements/figures/spatial_join.png" /><!-- --></p>
-<p>Distâncias</p>
+<p>Apesar de suas origens matemáticas, as relações topológicas podem ser entendidas intuitivamente com referência a visualizações de funções comumente utilizadas que testam tipos comuns de relações espaciais.</p>
+<p>Várias relações topológicas podem ser usadas para o subconjunto espacial que determina o tipo de relação espacial que as características do objeto-alvo devem ter com o objeto a ser selecionado. A configuração padrão <code>st_intersects</code> é uma relação topológica ‘catch all’ que retornará características no alvo que tocam, cruzam ou estão dentro do objeto ‘sub-conjunto’ de origem. Operadores espaciais alternativos podem ser especificados com o argumento <code>op =</code>.</p>
 </div>
+<div id="simplificação-de-dados-espaciais" class="section level3">
+<h3>Simplificação de dados espaciais</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/simplify.png" /><!-- --></p>
+<ul>
+<li>Exemplo</li>
+</ul>
+<pre class="r"><code>seine &lt;- seine
+
+plot(seine)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>seine_simp = st_simplify(seine, dTolerance = 2000)  # 2000 m
+plot(seine_simp)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<pre class="r"><code>object.size(seine)</code></pre>
+<pre><code>## 18096 bytes</code></pre>
+<pre class="r"><code>object.size(seine_simp)</code></pre>
+<pre><code>## 9112 bytes</code></pre>
+<blockquote>
+<p>Compare a diferença entre os objetos.</p>
+</blockquote>
+</div>
+<div id="centroids" class="section level3">
+<h3>Centroids</h3>
+<p>Os <code>centroids</code> identificam o centro dos objetos geográficos. Como as medidas estatísticas de tendência central (incluindo médias e medianas), há muitas maneiras de definir o centro geográfico de um objeto. Todas elas criam representações de pontos únicos de objetos vetoriais mais complexos.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/centroid.png" /><!-- --></p>
+<ul>
+<li>Exemplo</li>
+</ul>
+<pre class="r"><code>nz_centroid = st_centroid(nz)</code></pre>
+<pre><code>## Warning in st_centroid.sf(nz): st_centroid assumes attributes are constant over
+## geometries of x</code></pre>
+<pre class="r"><code>seine_centroid = st_centroid(seine)</code></pre>
+<pre><code>## Warning in st_centroid.sf(seine): st_centroid assumes attributes are constant
+## over geometries of x</code></pre>
+<pre class="r"><code>nz_pos = st_point_on_surface(nz)</code></pre>
+<pre><code>## Warning in st_point_on_surface.sf(nz): st_point_on_surface assumes attributes
+## are constant over geometries of x</code></pre>
+<pre class="r"><code>seine_pos = st_point_on_surface(seine)</code></pre>
+<pre><code>## Warning in st_point_on_surface.sf(seine): st_point_on_surface assumes attributes
+## are constant over geometries of x</code></pre>
+<blockquote>
+<p>Qual a diferença das funções <code>st_centroid</code> e <code>st_point_on_surface</code>?</p>
+</blockquote>
+</div>
+<div id="buffers" class="section level3">
+<h3>Buffers</h3>
+<p>Buffers são polígonos que representam a área dentro de uma determinada distância de uma feição geométrica: independentemente de a entrada ser um ponto, linha ou polígono, a saída é um polígono.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/buffer.png" /><!-- --></p>
+<ul>
+<li>Exemplos</li>
+</ul>
+<pre class="r"><code>seine_buff_5km = st_buffer(seine, dist = 5000)
+seine_buff_50km = st_buffer(seine, dist = 50000)</code></pre>
+<blockquote>
+<p>Para que você utilizaria esse tipo de função?</p>
+</blockquote>
+</div>
+<div id="agregação-dissolve" class="section level3">
+<h3>Agregação (dissolve)</h3>
+<p>A agregação espacial pode dissolver as geometrias dos polígonos em contato no mesmo grupo.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/1_agregacao.png" /><!-- --></p>
+<ul>
+<li>Exemplo</li>
+</ul>
+<pre class="r"><code>regions = aggregate(x = us_states[, &quot;total_pop_15&quot;], by = list(us_states$REGION),
+                    FUN = sum, na.rm = TRUE)
+
+plot(us_states)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>plot(regions)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<blockquote>
+<p>Como você geraria os mesmos mapas por meio das funções do pacote <code>dplyr</code>? Tente montar o código e chegar no mesmo resultado.</p>
+</blockquote>
+</div>
+<div id="sobreposição-espacial" class="section level3">
+<h3>Sobreposição espacial</h3>
+<p><strong>Sobreposição Espacial</strong> é um processo que permite identificar as relações entre feições de dois polígonos que compartilham a totalidade ou parte da mesma área</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/overlay.png" /><!-- --></p>
+</div>
+<div id="união" class="section level3">
+<h3>União</h3>
+<p>União: a camada de saída contém todas as áreas das duas camadas de entrada combinadas.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/2_uniao.png" /><!-- --></p>
+<ul>
+<li>Exemplos</li>
+</ul>
+<pre class="r"><code>us_west = us_states[us_states$REGION == &quot;West&quot;, ]
+us_west_union = st_union(us_west)
+
+texas = us_states[us_states$NAME == &quot;Texas&quot;, ]
+texas_union = st_union(us_west_union, texas)</code></pre>
+<blockquote>
+<p>Qual a diferença das funções <code>st_union</code> e <code>aggregate</code>?</p>
+</blockquote>
+</div>
+<div id="clip" class="section level3">
+<h3>Clip</h3>
+<p>O recorte espacial (clip) é uma forma de subconjunto espacial que envolve mudanças nas colunas geométricas de pelo menos algumas das características afetadas quando são recortadas linhas e polígonos.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/cortar_1.png" /><!-- --></p>
+<p>O recorte de objetos espaciais pode mudar sua geometria, mas também pode gerar subconjuntos de objetos, retornando apenas características que se cruzam (ou se cruzam parcialmente) com um objeto de clipagem/substituição.</p>
+<ul>
+<li>Funções</li>
+</ul>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+</div>
+<div id="inteseção-espacial" class="section level3">
+<h3>Inteseção espacial</h3>
+<p>A camada de saída contém todas as áreas em que ambas as camadas se sobrepõem (intersecção).</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/4_intersecao.png" /><!-- --></p>
+<ul>
+<li>Códigos</li>
+</ul>
+<pre class="r"><code>st_intersection(x, y, ...)
+
+st_intersects(x, y, sparse = TRUE, ...)
+
+st_disjoint(x, y = x, sparse = TRUE, prepared = TRUE)
+
+st_touches(x, y, sparse = TRUE, prepared = TRUE, ...)
+
+st_crosses(x, y, sparse = TRUE, prepared = TRUE, ...)
+
+st_within(x, y, sparse = TRUE, prepared = TRUE, ...)
+
+st_contains(x, y, sparse = TRUE, prepared = TRUE, ..., model = &quot;open&quot;)
+
+st_contains_properly(x, y, sparse = TRUE, prepared = TRUE, ...)
+
+st_overlaps(x, y, sparse = TRUE, prepared = TRUE, ...)
+
+st_equals(x, y, sparse = TRUE, prepared = FALSE, ...)
+
+st_covers(x, y, sparse = TRUE, prepared = TRUE, ..., model = &quot;closed&quot;)
+
+st_covered_by(x, y = x, sparse = TRUE, prepared = TRUE, ..., model = &quot;closed&quot;)
+
+st_equals_exact(x, y, par, sparse = TRUE, prepared = FALSE, ...)
+
+st_is_within_distance(x, y = x, dist, sparse = TRUE, ...)</code></pre>
+<blockquote>
+<p>Diferença entre <code>st_intersects</code> e <code>st_intersection</code>: Dentro da biblioteca <code>sf</code> há as operações de interseção geométrica binária, como <code>st_intersects</code>, e operações geométricas, como <code>st_intersection</code>. A função <code>st_intersects</code> prevê o retorno de uma matriz esparsa (padrão) ou densa dizendo-lhe com que geometria de y se sobrepõe a x. Enquanto que as operações (por exemplo, <code>st_intersection</code>) computarão a interseção, e retornarão novas geometrias. Se você usar o <code>st_join</code>, ele retornará as geometrias (originais) que se cruzam, ao invés da matriz esparsa.</p>
+</blockquote>
+<pre class="r"><code># create square
+s &lt;- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %&gt;% 
+  list %&gt;% 
+  st_polygon %&gt;% 
+  st_sfc
+
+plot(s)
+
+# create rectangle
+r &lt;- rbind(c(-1, 2), c(11, 2), c(11, 4), c(-1, 4), c(-1, 2)) %&gt;% 
+  list %&gt;% 
+  st_polygon %&gt;% 
+  st_sfc
+
+plot(r, add= TRUE, lty = 2)
+
+# intersect points and square with st_intersection
+i &lt;- st_intersection(s, r)
+
+plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+</div>
+<div id="diferença" class="section level3">
+<h3>Diferença</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/5_diferenca.png" /><!-- --></p>
+<ul>
+<li>Função</li>
+</ul>
+<pre class="r"><code>st_difference(x, y, ...)</code></pre>
+<ul>
+<li>Exemplo</li>
+</ul>
+<pre class="r"><code># create square
+s &lt;- rbind(c(1, 1), c(10, 1), c(10, 10), c(1, 10), c(1, 1)) %&gt;% 
+  list %&gt;% 
+  st_polygon %&gt;% 
+  st_sfc
+
+plot(s)
+
+# create rectangle
+r &lt;- rbind(c(-1, 2), c(11, 2), c(11, 4), c(-1, 4), c(-1, 2)) %&gt;% 
+  list %&gt;% 
+  st_polygon %&gt;% 
+  st_sfc
+
+plot(r, add= TRUE, lty = 2)
+
+# intersect points and square with st_intersection
+i &lt;- st_difference(s, r)
+
+plot(i, add = TRUE, lty = 2, col = &quot;red&quot;)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+</div>
+<div id="junção-espacial" class="section level3">
+<h3>Junção espacial</h3>
+<p><strong>Ponto em polígono</strong></p>
+<p>Esta primeira abordagem seleciona apenas pontos contidos em polígonos.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/spatial_join.png" /><!-- --></p>
+<ul>
+<li>Exemplos</li>
+</ul>
+<pre class="r"><code>st_join()</code></pre>
+<pre class="r"><code>a = st_sf(a = 1:3,
+ geom = st_sfc(st_point(c(1,1)), st_point(c(2,2)), st_point(c(3,3))))
+b = st_sf(a = 11:14,
+ geom = st_sfc(st_point(c(10,10)), st_point(c(2,2)), st_point(c(2,2)), st_point(c(3,3))))
+
+c = st_join(a, b)
+
+a</code></pre>
+<pre><code>## Simple feature collection with 3 features and 1 field
+## Geometry type: POINT
+## Dimension:     XY
+## Bounding box:  xmin: 1 ymin: 1 xmax: 3 ymax: 3
+## CRS:           NA
+##   a        geom
+## 1 1 POINT (1 1)
+## 2 2 POINT (2 2)
+## 3 3 POINT (3 3)</code></pre>
+<pre class="r"><code>b</code></pre>
+<pre><code>## Simple feature collection with 4 features and 1 field
+## Geometry type: POINT
+## Dimension:     XY
+## Bounding box:  xmin: 2 ymin: 2 xmax: 10 ymax: 10
+## CRS:           NA
+##    a          geom
+## 1 11 POINT (10 10)
+## 2 12   POINT (2 2)
+## 3 13   POINT (2 2)
+## 4 14   POINT (3 3)</code></pre>
+<pre class="r"><code>c</code></pre>
+<pre><code>## Simple feature collection with 4 features and 2 fields
+## Geometry type: POINT
+## Dimension:     XY
+## Bounding box:  xmin: 1 ymin: 1 xmax: 3 ymax: 3
+## CRS:           NA
+##     a.x a.y        geom
+## 1     1  NA POINT (1 1)
+## 2     2  12 POINT (2 2)
+## 2.1   2  13 POINT (2 2)
+## 3     3  14 POINT (3 3)</code></pre>
+</div>
+<div id="transformação" class="section level3">
+<h3>Transformação</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/transform.png" /><!-- --></p>
+<ul>
+<li>Exemplos</li>
+</ul>
+<pre class="r"><code>multipoint = st_multipoint(matrix(c(1, 3, 5, 1, 3, 1), ncol = 2))
+linestring = st_cast(multipoint, &quot;LINESTRING&quot;)
+polyg = st_cast(multipoint, &quot;POLYGON&quot;)
+
+plot(multipoint)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<pre class="r"><code>plot(linestring)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<pre class="r"><code>plot(polyg)</code></pre>
+<p><img src="/cursos/spatial/operacoes-espaciais_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
+<pre class="r"><code>multipoint_2 = st_cast(linestring, &quot;MULTIPOINT&quot;)
+multipoint_3 = st_cast(polyg, &quot;MULTIPOINT&quot;)
+all.equal(multipoint, multipoint_2, multipoint_3)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<blockquote>
+<p>Para que serve a função <code>st_cast</code>?</p>
+</blockquote>
+</div>
+<div id="distâncias" class="section level3">
+<h3>Distâncias</h3>
+<p>Diferentes conceitos de distância podem ser utilizados no tratamento de dados espaciais visando representar a impedância entre funções/atividades urbanas (conectividade).</p>
+<p>A Distância Euclidiana é definida como a soma da raiz quadrada da diferença entre x e y em suas respectivas dimensões.
+Distância Euclideana: √((x1 – x2)² + (y1 – y2)²).</p>
+<p>A <strong>Distância Manhattan</strong> tem uma definição mais simples na qual é apenas a soma das diferenças entre x e y em cada dimensão.
+Distância Manhattan: |x1 – x2| + |y1 – y2|.</p>
+<p>A <strong>Distância Euclidiana</strong> seria o segmento de uma reta que conceta dois pontos no espaço. A Distância Manhattan seria um segmento de retas na vertical e na horizontal semelhante a uma rota veicular em áreas urbanas.</p>
+<p>A <strong>distância em rede</strong> é aquela equivalente ao deslocamento real no ambiente construído e se aproxima mais da realidade. Entretanto, o esforço computacional e a demanda por dados é sempre maior.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/distancia.png" /><!-- --></p>
+<ul>
+<li>Funções</li>
+</ul>
+<pre class="r"><code>st_area() 
+st_length() 
+st_distance()</code></pre>
+</div>
+</div>
+<div id="resumo" class="section level2">
+<h2>Resumo</h2>
+<p><img src="https://retaoliveira.github.io/relements/figures/geometric.png" /><!-- --></p>
 </div>
