@@ -14,28 +14,29 @@ weight: 9
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<div id="principal-referência" class="section level1">
-<h1>Principal referência</h1>
+<div id="principal-referência" class="section level2">
+<h2>Principal referência</h2>
 <p><a href="https://geocompr.robinlovelace.net/index.html">Geocomputation with R</a></p>
 </div>
-<div id="pacotes-referências" class="section level1">
-<h1>Pacotes referências</h1>
+<div id="pacotes-referências" class="section level2">
+<h2>Pacotes referências</h2>
 <p><a href="https://r-spatial.github.io/sf/">Simple Features</a></p>
 <p><a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html">tmap</a></p>
 </div>
-<div id="outras-informações" class="section level1">
-<h1>Outras informações</h1>
+<div id="outras-informações" class="section level2">
+<h2>Outras informações</h2>
 <p><a href="https://concla.ibge.gov.br/busca-online-cnae.html?subclasse=5612100&amp;tipo=cnae&amp;versao=8&amp;view=subclasse">CNAE</a></p>
 </div>
-<div id="código-para-implementação-de-funções-de-representação-e-manipulação-de-dados-espaciais" class="section level1">
-<h1>Código para implementação de funções de representação e manipulação de dados espaciais</h1>
+<div id="código-para-implementação-de-funções-de-representação-e-manipulação-de-dados-espaciais" class="section level2">
+<h2>Código para implementação de funções de representação e manipulação de dados espaciais</h2>
 <pre class="r"><code>vignette(package = &quot;sf&quot;)</code></pre>
 <pre class="r"><code>library(sf)</code></pre>
-<pre><code>## Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1</code></pre>
+<pre><code>## Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE</code></pre>
 <pre class="r"><code>library(terra)</code></pre>
-<pre><code>## terra version 1.4.22</code></pre>
-<pre class="r"><code>library(spData)
-library(tmap)
+<pre><code>## terra version 1.5.2</code></pre>
+<pre class="r"><code>library(spData)</code></pre>
+<pre><code>## Warning: múltiplas tabelas de métodos encontradas para &#39;approxNA&#39;</code></pre>
+<pre class="r"><code>library(tmap)
 library(tidyverse)</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
 <pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
@@ -77,8 +78,8 @@ st_crs(new_shape)
 st_bbox(autonomos)
 st_bbox(new_shape)</code></pre>
 </div>
-<div id="representação" class="section level1">
-<h1>Representação</h1>
+<div id="representação" class="section level2">
+<h2>Representação</h2>
 <pre class="r"><code>autonomos &lt;- st_read(&quot;shapefile/autonomos.shp&quot;)
 economica &lt;- st_read(&quot;shapefile/economica.shp&quot;)
 regional &lt;- st_read(&quot;shapefile/regional.shp&quot;)
@@ -92,8 +93,8 @@ tm_shape(autonomos) +
    tm_dots(col = &quot;red&quot;) +
    tm_scale_bar()</code></pre>
 </div>
-<div id="manipulação-de-dados-espaciais" class="section level1">
-<h1>Manipulação de dados espaciais</h1>
+<div id="manipulação-de-dados-espaciais" class="section level2">
+<h2>Manipulação de dados espaciais</h2>
 <pre class="r"><code>farmacias &lt;- economica %&gt;% 
    filter(CNAE_PRINC == &#39;4771701&#39; | CNAE_PRINC == &#39;4771702&#39;)
 
@@ -133,8 +134,8 @@ tm_shape(world) +
   group_by(continent) %&gt;%
   summarize(pop = sum(pop, na.rm = TRUE), `area (sqkm)` = sum(area_km2), n = n())</code></pre>
 </div>
-<div id="junção-não-espacial---relaciona-dados-por-meio-de-uma-chave" class="section level1">
-<h1>Junção não espacial - relaciona dados por meio de uma chave</h1>
+<div id="junção-não-espacial---relaciona-dados-por-meio-de-uma-chave" class="section level2">
+<h2>Junção não espacial - relaciona dados por meio de uma chave</h2>
 <pre class="r"><code>coffee_data</code></pre>
 <pre><code>## # A tibble: 47 x 3
 ##    name_long                coffee_production_2016 coffee_production_2017

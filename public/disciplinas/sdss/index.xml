@@ -89,28 +89,29 @@ plot(st_geometry(world_cents), add = TRUE, cex = cex)
 &lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div id=&#34;principal-referência&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Principal referência&lt;/h1&gt;
+&lt;div id=&#34;principal-referência&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Principal referência&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://geocompr.robinlovelace.net/index.html&#34;&gt;Geocomputation with R&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;pacotes-referências&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Pacotes referências&lt;/h1&gt;
+&lt;div id=&#34;pacotes-referências&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pacotes referências&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;Simple Features&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html&#34;&gt;tmap&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outras-informações&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Outras informações&lt;/h1&gt;
+&lt;div id=&#34;outras-informações&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Outras informações&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://concla.ibge.gov.br/busca-online-cnae.html?subclasse=5612100&amp;amp;tipo=cnae&amp;amp;versao=8&amp;amp;view=subclasse&#34;&gt;CNAE&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;código-para-implementação-de-funções-de-representação-e-manipulação-de-dados-espaciais&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Código para implementação de funções de representação e manipulação de dados espaciais&lt;/h1&gt;
+&lt;div id=&#34;código-para-implementação-de-funções-de-representação-e-manipulação-de-dados-espaciais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Código para implementação de funções de representação e manipulação de dados espaciais&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vignette(package = &amp;quot;sf&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sf)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(terra)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## terra version 1.4.22&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(spData)
-library(tmap)
+&lt;pre&gt;&lt;code&gt;## terra version 1.5.2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(spData)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: múltiplas tabelas de métodos encontradas para &amp;#39;approxNA&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tmap)
 library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## v ggplot2 3.3.5     v purrr   0.3.4
@@ -152,8 +153,8 @@ st_crs(new_shape)
 st_bbox(autonomos)
 st_bbox(new_shape)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;representação&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Representação&lt;/h1&gt;
+&lt;div id=&#34;representação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Representação&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;autonomos &amp;lt;- st_read(&amp;quot;shapefile/autonomos.shp&amp;quot;)
 economica &amp;lt;- st_read(&amp;quot;shapefile/economica.shp&amp;quot;)
 regional &amp;lt;- st_read(&amp;quot;shapefile/regional.shp&amp;quot;)
@@ -167,8 +168,8 @@ tm_shape(autonomos) +
    tm_dots(col = &amp;quot;red&amp;quot;) +
    tm_scale_bar()&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;manipulação-de-dados-espaciais&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Manipulação de dados espaciais&lt;/h1&gt;
+&lt;div id=&#34;manipulação-de-dados-espaciais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Manipulação de dados espaciais&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;farmacias &amp;lt;- economica %&amp;gt;% 
    filter(CNAE_PRINC == &amp;#39;4771701&amp;#39; | CNAE_PRINC == &amp;#39;4771702&amp;#39;)
 
@@ -208,8 +209,8 @@ tm_shape(world) +
   group_by(continent) %&amp;gt;%
   summarize(pop = sum(pop, na.rm = TRUE), `area (sqkm)` = sum(area_km2), n = n())&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;junção-não-espacial---relaciona-dados-por-meio-de-uma-chave&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Junção não espacial - relaciona dados por meio de uma chave&lt;/h1&gt;
+&lt;div id=&#34;junção-não-espacial---relaciona-dados-por-meio-de-uma-chave&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Junção não espacial - relaciona dados por meio de uma chave&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coffee_data&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 47 x 3
 ##    name_long                coffee_production_2016 coffee_production_2017
