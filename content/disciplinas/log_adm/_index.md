@@ -69,15 +69,12 @@ Os encontros síncronos acontecerão nas **segundas-feiras**, de **20:50 às 22:
 | 22/11              |2h|Nível de serviço logístico, desempenho e ICT.
 | 06/12              |2h|Logística urbana.
 | 13/12              |2h|Logística urbana.  
-| 20/12              |2h|Transportes e distribuição física.   
-| 05/01              |2h|Transportes e distribuição física.   
-| 10/01              |2h|Gestão de estoques e armazenagem.
-| 17/01              |2h|Gestão de estoques e armazenagem.
-| 24/01              |2h|Localizações logísticas
+| 10/01              |2h|Transportes e distribuição física.   
+| 17/01              |2h|Transportes e distribuição física.   
+| 24/01              |2h|Gestão de estoques e armazenagem.
 | 31/01              |2h|Localizações logísticas
 | 07/02              |2h|Custos logísticos.
 | 14/02              |2h|Logística reversa, verde e sustentável.
-| **Total de Horas** |        |34 horas             |
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
@@ -87,12 +84,12 @@ Pontos|	Entrega|	Atividade
 10| 17/11 | Estudos Autônomos 1 - Nivel de serviço logístico
 10| 24/11 | Estudos Autônomos 2 - TICs e KPIs
 10| 01/12 | Estudos Autônomos 3 – Logística Urbana
-10| 22/12 | Estudos Autônomos 4 - Gestão de Transportes
-10| 19/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
+10| 24/01 | Estudos Autônomos 4 - Gestão de Transportes
+10| 31/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
 10| 16/02 | Estudos Autônomos 6 - Redes Logísticas e Custos
 10| 14/02 | Estudos Autônomos 7 - Multivarejo e Omnichannel
-20|	01/12	| Projeto incremental 1
-20|	14/02 |	Projeto incremental 2
+20| 14/01	| Projeto incremental 1
+20| 14/02 |	Projeto incremental 2
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
