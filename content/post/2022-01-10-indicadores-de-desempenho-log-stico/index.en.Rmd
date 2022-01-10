@@ -1,0 +1,26 @@
+---
+title: Indicadores de desempenho logístico
+author: Renata Oliveira
+date: '2022-01-10'
+slug: indicadores-de-desempenho-logistico
+categories:
+  - logistics
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-01-10T17:43:56-03:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+[Principais indicadores de desempenho logístico: O que são? Para que servem? Como calcular?](https://maplink.global/blog/indicadores-desempenho-logistico/)
+
+[](http://deverhum.com.br/blog/reposicao-perfeita-ou-pedido-mais-que-prefeito/)
+
+<iframe width="852" height="479" src="https://www.youtube.com/embed/XsdBfZH-ERc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

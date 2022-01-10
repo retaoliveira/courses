@@ -42,7 +42,12 @@ taxonomies:
   category: categories
   publication_type: publication_types
   tag: tags
-
+permalinks:
+  authors: /author/:slug/
+  categories: /category/:slug/
+  event: /talk/:slug/
+  publication_types: /publication-type/:slug/
+  tags: /tag/:slug/
 markup:
   goldmark:
     renderer:

@@ -81,6 +81,9 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/definir_log/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/cursos/log_all/amazon/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/gcs/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -427,6 +430,18 @@
     <loc>https://retacourses.netlify.app/talk/synthesizing/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/categories/</loc>
+    <lastmod>2022-01-10T17:43:56-03:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/post/indicadores-de-desempenho-logistico/</loc>
+    <lastmod>2022-01-10T17:43:56-03:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/category/logistics/</loc>
+    <lastmod>2022-01-10T17:43:56-03:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/post/</loc>
+    <lastmod>2022-01-10T17:43:56-03:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -436,22 +451,16 @@
     <loc>https://retacourses.netlify.app/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</loc>
     <lastmod>2021-09-10T09:37:49-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/post/</loc>
-    <lastmod>2021-09-10T09:55:12-03:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/tags/blogdown/</loc>
+    <loc>https://retacourses.netlify.app/tag/blogdown/</loc>
     <lastmod>2021-09-10T09:55:12-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/blogdown/</loc>
     <lastmod>2021-09-10T09:55:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/</loc>
+    <loc>https://retacourses.netlify.app/category/comunicacao/</loc>
     <lastmod>2021-09-10T09:55:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/comunicacao/</loc>
-    <lastmod>2021-09-10T09:55:12-03:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/categories/r/</loc>
+    <loc>https://retacourses.netlify.app/category/r/</loc>
     <lastmod>2021-09-10T09:55:12-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/tags/</loc>
@@ -463,13 +472,13 @@
     <loc>https://retacourses.netlify.app/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</loc>
     <lastmod>2021-09-03T15:47:26-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/git/</loc>
+    <loc>https://retacourses.netlify.app/tag/git/</loc>
     <lastmod>2021-07-09T16:27:39-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/git/</loc>
+    <loc>https://retacourses.netlify.app/category/git/</loc>
     <lastmod>2021-07-09T16:27:39-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/github/</loc>
+    <loc>https://retacourses.netlify.app/tag/github/</loc>
     <lastmod>2021-07-09T16:27:39-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/usando-o-github-desktop-git-sem-coding/</loc>
@@ -478,28 +487,28 @@
     <loc>https://retacourses.netlify.app/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/acessibilidade/</loc>
+    <loc>https://retacourses.netlify.app/tag/acessibilidade/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/authors/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/felicidade/</loc>
+    <loc>https://retacourses.netlify.app/category/felicidade/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/kevin-roose/</loc>
+    <loc>https://retacourses.netlify.app/author/kevin-roose/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/planejamento-urbano/</loc>
+    <loc>https://retacourses.netlify.app/tag/planejamento-urbano/</loc>
     <lastmod>2021-06-21T17:10:58-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/analise-de-dados/</loc>
+    <loc>https://retacourses.netlify.app/category/analise-de-dados/</loc>
     <lastmod>2021-06-21T16:46:27-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/principais-comandos-do-git/</loc>
     <lastmod>2021-06-21T16:46:27-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/accessibility/</loc>
+    <loc>https://retacourses.netlify.app/tag/accessibility/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/project/acessibilidade/</loc>
@@ -508,13 +517,13 @@
     <loc>https://retacourses.netlify.app/project/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/rail/</loc>
+    <loc>https://retacourses.netlify.app/tag/rail/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/project/rail/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/urban-planning/</loc>
+    <loc>https://retacourses.netlify.app/tag/urban-planning/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</loc>
@@ -523,34 +532,34 @@
     <loc>https://retacourses.netlify.app/project/spatial/</loc>
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/spatial-analysis/</loc>
+    <loc>https://retacourses.netlify.app/tag/spatial-analysis/</loc>
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/project/urban-logistics/</loc>
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/urban-logistics/</loc>
+    <loc>https://retacourses.netlify.app/tag/urban-logistics/</loc>
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/publication_types/2/</loc>
+    <loc>https://retacourses.netlify.app/publication-type/2/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/andre-augusto-cunha-libanio/</loc>
+    <loc>https://retacourses.netlify.app/author/andre-augusto-cunha-libanio/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/andre-soares-lopes/</loc>
+    <loc>https://retacourses.netlify.app/author/andre-soares-lopes/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-avaliacao-estrategica-acesso-2021/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/camila-soares-henrique-fontenele-garcia/</loc>
+    <loc>https://retacourses.netlify.app/author/camila-soares-henrique-fontenele-garcia/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/lilian-dos-santos-fontes-pereira-bracarense/</loc>
+    <loc>https://retacourses.netlify.app/author/lilian-dos-santos-fontes-pereira-bracarense/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/lucelia-viviane-vaz-raad/</loc>
+    <loc>https://retacourses.netlify.app/author/lucelia-viviane-vaz-raad/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication_types/</loc>
@@ -559,7 +568,7 @@
     <loc>https://retacourses.netlify.app/publication/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-lucia-magalhaes-de-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-lucia-magalhaes-de-oliveira/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/tutoriais-interativos/</loc>
@@ -580,31 +589,31 @@
     <loc>https://retacourses.netlify.app/post/2021-01-02-markdown-ou-rmarkdown/</loc>
     <lastmod>2021-01-02T14:31:19-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/publication_types/4/</loc>
+    <loc>https://retacourses.netlify.app/publication-type/4/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/laetitia-dablanc/</loc>
+    <loc>https://retacourses.netlify.app/author/laetitia-dablanc/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/logistics-real-estate/</loc>
+    <loc>https://retacourses.netlify.app/tag/logistics-real-estate/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/logistics-sprawl/</loc>
+    <loc>https://retacourses.netlify.app/tag/logistics-sprawl/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/matthieu-schorung/</loc>
+    <loc>https://retacourses.netlify.app/author/matthieu-schorung/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-relationships-urban-characteristics-2021/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-oliveira/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/urban-spatial-structure/</loc>
+    <loc>https://retacourses.netlify.app/tag/urban-spatial-structure/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/warehouses/</loc>
+    <loc>https://retacourses.netlify.app/tag/warehouses/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2020-12-31-fundamentos-de-estatistica/</loc>
@@ -619,19 +628,19 @@
     <loc>https://retacourses.netlify.app/post/2020-12-27-acesso-a-api-do-twitter/</loc>
     <lastmod>2020-12-27T13:39:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/analise-textual/</loc>
+    <loc>https://retacourses.netlify.app/tag/analise-textual/</loc>
     <lastmod>2020-12-27T13:39:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/r/</loc>
+    <loc>https://retacourses.netlify.app/tag/r/</loc>
     <lastmod>2020-12-27T13:39:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/twitter/</loc>
+    <loc>https://retacourses.netlify.app/tag/twitter/</loc>
     <lastmod>2020-12-27T13:39:12-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/limpeza-de-dados/</loc>
+    <loc>https://retacourses.netlify.app/tag/limpeza-de-dados/</loc>
     <lastmod>2020-12-27T13:08:19-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/manipulacao-de-dados/</loc>
+    <loc>https://retacourses.netlify.app/tag/manipulacao-de-dados/</loc>
     <lastmod>2020-12-27T13:08:19-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2020-12-27-mineracao-de-texto/</loc>
@@ -646,25 +655,25 @@
     <loc>https://retacourses.netlify.app/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</loc>
     <lastmod>2020-12-26T19:23:01-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/hugo/</loc>
+    <loc>https://retacourses.netlify.app/tag/hugo/</loc>
     <lastmod>2020-12-26T19:23:01-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/rmarkdown/</loc>
+    <loc>https://retacourses.netlify.app/tag/rmarkdown/</loc>
     <lastmod>2020-12-26T19:23:01-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2020-12-26-blogs-sobre-r-em-portugues/</loc>
     <lastmod>2020-12-26T17:34:50-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/packages/</loc>
+    <loc>https://retacourses.netlify.app/tag/packages/</loc>
     <lastmod>2020-12-26T17:32:30-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</loc>
     <lastmod>2020-12-26T17:32:30-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/analise-espacial/</loc>
+    <loc>https://retacourses.netlify.app/tag/analise-espacial/</loc>
     <lastmod>2020-12-26T17:25:22-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/geografia/</loc>
+    <loc>https://retacourses.netlify.app/category/geografia/</loc>
     <lastmod>2020-12-26T17:25:22-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/2020-12-26-r-para-analise-espacial/</loc>
@@ -673,7 +682,7 @@
     <loc>https://retacourses.netlify.app/post/como-deixar-o-r-com-a-minha-cara/</loc>
     <lastmod>2020-12-26T18:15:04-03:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/categories/fun/</loc>
+    <loc>https://retacourses.netlify.app/category/fun/</loc>
     <lastmod>2020-12-26T18:15:04-03:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/tutoriais-de-r/</loc>
@@ -688,55 +697,55 @@
     <loc>https://retacourses.netlify.app/publication/da-silva-2020/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/bruno-vieira-bertoncini/</loc>
+    <loc>https://retacourses.netlify.app/author/bruno-vieira-bertoncini/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/dea/</loc>
+    <loc>https://retacourses.netlify.app/tag/dea/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/francisco-gildemir-ferreira-da-silva/</loc>
+    <loc>https://retacourses.netlify.app/author/francisco-gildemir-ferreira-da-silva/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-freight-trip-generation-2020/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/j.g.-vidal-vieira/</loc>
+    <loc>https://retacourses.netlify.app/author/j.g.-vidal-vieira/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/leise-kelli-de-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/leise-kelli-de-oliveira/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/marin-marinov/</loc>
+    <loc>https://retacourses.netlify.app/author/marin-marinov/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/operational-efficiency/</loc>
+    <loc>https://retacourses.netlify.app/tag/operational-efficiency/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/r.l.-magalhaes-de-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/r.l.-magalhaes-de-oliveira/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/rafael-taglia-heredia/</loc>
+    <loc>https://retacourses.netlify.app/author/rafael-taglia-heredia/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-lucia-magalhaes-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-lucia-magalhaes-oliveira/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/guedesfurquim-retailers-carriers-viewpoint-2020/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/t.s.-guedes-furquim/</loc>
+    <loc>https://retacourses.netlify.app/author/t.s.-guedes-furquim/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/admin/</loc>
+    <loc>https://retacourses.netlify.app/author/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/publication_types/3/</loc>
+    <loc>https://retacourses.netlify.app/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/source-themes/</loc>
+    <loc>https://retacourses.netlify.app/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/slides/</loc>
@@ -748,91 +757,91 @@
     <loc>https://retacourses.netlify.app/publication/de-oliveira-2019-a/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/artur-diniz-rocha-macedo/</loc>
+    <loc>https://retacourses.netlify.app/author/artur-diniz-rocha-macedo/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/carla-de-oliveira-leite-nascimento/</loc>
+    <loc>https://retacourses.netlify.app/author/carla-de-oliveira-leite-nascimento/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/de-oliveira-2019/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/ian-de-paula-caliari/</loc>
+    <loc>https://retacourses.netlify.app/author/ian-de-paula-caliari/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/jose-geraldo-vidal-vieira/</loc>
+    <loc>https://retacourses.netlify.app/author/jose-geraldo-vidal-vieira/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/julio-cesar-lobo-sampaio/</loc>
+    <loc>https://retacourses.netlify.app/author/julio-cesar-lobo-sampaio/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/luisa-tavares-muzzi-de-sousa/</loc>
+    <loc>https://retacourses.netlify.app/author/luisa-tavares-muzzi-de-sousa/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/tiago-de-paula-mendes-de-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/tiago-de-paula-mendes-de-oliveira/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-2018-a/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/betty-barraza/</loc>
+    <loc>https://retacourses.netlify.app/author/betty-barraza/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/bruno-v.-bertocini/</loc>
+    <loc>https://retacourses.netlify.app/author/bruno-v.-bertocini/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/cassiano-a.-isler/</loc>
+    <loc>https://retacourses.netlify.app/author/cassiano-a.-isler/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/dannubia-r.-pires/</loc>
+    <loc>https://retacourses.netlify.app/author/dannubia-r.-pires/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/ellen-c.n.-madalon/</loc>
+    <loc>https://retacourses.netlify.app/author/ellen-c.n.-madalon/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-2018-b/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/jose-g.v.-vieira/</loc>
+    <loc>https://retacourses.netlify.app/author/jose-g.v.-vieira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/jessica-lima/</loc>
+    <loc>https://retacourses.netlify.app/author/jessica-lima/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/leise-k.-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/leise-k.-oliveira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/leise-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/leise-oliveira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/leonardo-h.-meira/</loc>
+    <loc>https://retacourses.netlify.app/author/leonardo-h.-meira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/lilian-s.f.p.-bracarense/</loc>
+    <loc>https://retacourses.netlify.app/author/lilian-s.f.p.-bracarense/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/odirley-santos/</loc>
+    <loc>https://retacourses.netlify.app/author/odirley-santos/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-a.-bandeira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-a.-bandeira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-l.m.-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-l.m.-oliveira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/renata-magalhaes-oliveira/</loc>
+    <loc>https://retacourses.netlify.app/author/renata-magalhaes-oliveira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/furquim-2018/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/rodrigo-nobrega/</loc>
+    <loc>https://retacourses.netlify.app/author/rodrigo-nobrega/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/suellem-ferreira/</loc>
+    <loc>https://retacourses.netlify.app/author/suellem-ferreira/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/thales-stevan-guedes-furquim/</loc>
+    <loc>https://retacourses.netlify.app/author/thales-stevan-guedes-furquim/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/oliveira-2017-a/</loc>
@@ -841,43 +850,43 @@
     <loc>https://retacourses.netlify.app/publication/oliveira-2017/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/e-commerce/</loc>
+    <loc>https://retacourses.netlify.app/tag/e-commerce/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/eleonora-morganti/</loc>
+    <loc>https://retacourses.netlify.app/author/eleonora-morganti/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/home-delivery/</loc>
+    <loc>https://retacourses.netlify.app/tag/home-delivery/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/last-mile-problem/</loc>
+    <loc>https://retacourses.netlify.app/tag/last-mile-problem/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/luciana-carneiro-de-morais-stubbs/</loc>
+    <loc>https://retacourses.netlify.app/author/luciana-carneiro-de-morais-stubbs/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/nebai-tavares-gontijo/</loc>
+    <loc>https://retacourses.netlify.app/author/nebai-tavares-gontijo/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/odirley-rocha-dos-santos/</loc>
+    <loc>https://retacourses.netlify.app/author/odirley-rocha-dos-santos/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/pick-up-points/</loc>
+    <loc>https://retacourses.netlify.app/tag/pick-up-points/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/de-oliveira-2017-a/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/rodrigo-affonso-de-albuquerque-nobrega/</loc>
+    <loc>https://retacourses.netlify.app/author/rodrigo-affonso-de-albuquerque-nobrega/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/tags/stated-preference-survey/</loc>
+    <loc>https://retacourses.netlify.app/tag/stated-preference-survey/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/claudia-marcia-de-fatima-ramos/</loc>
+    <loc>https://retacourses.netlify.app/author/claudia-marcia-de-fatima-ramos/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/authors/daniel-goncalves-ebias/</loc>
+    <loc>https://retacourses.netlify.app/author/daniel-goncalves-ebias/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/publication/de-oliveira-2016/</loc>
