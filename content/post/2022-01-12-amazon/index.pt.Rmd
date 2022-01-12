@@ -1,0 +1,35 @@
+---
+title: Amazon
+author: Renata Oliveira
+date: '2022-01-12'
+slug: amazon
+categories:
+  - logistics
+tags:
+  - urban logistics
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-01-12T14:03:13-03:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Alguns links interessantes sobre a história da Amazon e seu diferencial competitivo:
+
+[5 segredos de logística da Amazon](https://cargox.com.br/blog/os-5-segredos-de-logistica-mais-incriveis-da-amazon)
+
+[Como a Amazon fez da logística o seu grande diferencial competitivo](https://revistamundologistica.com.br/blog/achiles/como-a-amazon-fez-da-logistica-seu-grande-diferencial-competitivo)
+
+[A logística da Amazon](https://saclogistica.com.br/logistica-amazon/)
+
+[FBA - Fulfillment by Amazon](https://venda.amazon.com.br/cresca/fba#elegibilidade)
+
+<iframe width="906" height="510" src="https://www.youtube.com/embed/V1yX_pd-OVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
