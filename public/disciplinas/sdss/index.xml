@@ -316,56 +316,69 @@ data(us_states_df)
 &lt;li&gt;Funções de manipulação de dados espaciais e operações espaciais&lt;/li&gt;
 &lt;li&gt;Pacotes no R para tratamento da informação espacial&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;esta-atividade-deverá-ser-realizada-até-dia-1301-são-propostas-as-seguintes-atividades&#34;&gt;Esta atividade deverá ser realizada até dia &lt;strong&gt;13/01&lt;/strong&gt;. São propostas as seguintes atividades:&lt;/h2&gt;
-&lt;h3 id=&#34;1-explore-o-conteúdo-no-link&#34;&gt;1. Explore o conteúdo no &lt;a href=&#34;&#34;&gt;link&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;esta-atividade-deverá-ser-realizada-até-dia-2001-são-propostas-as-seguintes-atividades&#34;&gt;Esta atividade deverá ser realizada até dia &lt;strong&gt;20/01&lt;/strong&gt;. São propostas as seguintes atividades:&lt;/h2&gt;
+&lt;h3 id=&#34;1-explore-o-conteúdo-no-linkhttpswwwplaceseducationcursosspatialoperacoes-espaciais-e-faça-o-download-do-projeto-no-linkhttpscefetmgbr-mysharepointcomugpersonalrenataoliveira_cefetmg_breavimhylppdplsvyrbuwvp4bx1ktoldq_jv5kze2dyixoaeb2imas&#34;&gt;1. Explore o conteúdo no &lt;a href=&#34;https://www.places.education/cursos/spatial/operacoes-espaciais/&#34;&gt;link&lt;/a&gt; e faça o download do projeto no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EaVImhYLPpdPlsVyrbuWvP4Bx1KtolDq_Jv5KZE2DYixoA?e=B2imaS&#34;&gt;link&lt;/a&gt;&lt;/h3&gt;
 &lt;h3 id=&#34;2-chame-os-pacotes&#34;&gt;2. Chame os pacotes:&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(sf)      # vector data package
 library(dplyr)   # tidyverse package for data frame manipulation
 library(spData)  # spatial data package
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-como-ler-e-escrever-salvar-arquivos-com-dados-espaciais-no-r-objetos-sf&#34;&gt;3. Como ler e escrever (salvar) arquivos com dados espaciais no R (objetos &lt;code&gt;sf&lt;/code&gt;)&lt;/h3&gt;
-&lt;p&gt;O package &lt;code&gt;sf&lt;/code&gt; também tem funções que permitem ler e escrever dados espaciais. As funções para isso são &lt;code&gt;st_read()&lt;/code&gt; e &lt;code&gt;st_write()&lt;/code&gt;. Escolha um arquivo com a estrutura da ESRI shapefile e defina o seu diretório. Depois, leia o arquivo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt; setwd(&amp;quot;./shapefiles_diretorio/&amp;quot;)
- objeto &amp;lt;- st_read(&amp;quot;arquivo.shp&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O diretório deve ser especificado para que os dados espaciais sejam varridos de forma efetiva pelas funções. Para escrever utilizando a função &lt;code&gt;st_write()&lt;/code&gt; são necessários dois parâmetros: o objeto e o nome do arquivo.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt; st_write(objeto, &amp;quot;arquivo.shp&amp;quot;, delete_layer = TRUE)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Esse comando é igual a:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# st_write(objeto, dsn=&amp;quot;arquivo.shp&amp;quot;, layer=&amp;quot;arquivo.shp&amp;quot;, driver = &amp;quot;ESRI Shapefile&amp;quot;, delete_layer = TRUE)
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-junção-de-atributos-vetoriais&#34;&gt;4. Junção de atributos vetoriais&lt;/h3&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;world_coffee = left_join(world, coffee_data)
-class(world_coffee)
-plot(world_coffee[&amp;quot;coffee_production_2017&amp;quot;])
+library(tmap)
+library(tidyverse)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;faça-as-seguintes-atividades&#34;&gt;Faça as seguintes atividades&lt;/h3&gt;
+&lt;p&gt;a. Abra e inspecione os shapefiles referentes aos estados, municípios brasileiros, aeródromos e ferrovias.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
+brasil &amp;lt;- st_read(&amp;quot;shapes/brasil/BR_UF_2020/BR_UF_2020.shp&amp;quot;)
 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E agora? O que aconteceu?&lt;/p&gt;
-&lt;p&gt;O que mudou quando você rodou o código a seguir?&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;coffee_renamed = rename(coffee_data, nm = name_long)
-world_coffee2 = left_join(world, coffee_renamed, by = c(name_long = &amp;quot;nm&amp;quot;))
-plot(world_coffee2[&amp;quot;coffee_production_2017&amp;quot;])
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-realize-as-atividades-a-seguir-e-responda-as-questões&#34;&gt;4. Realize as atividades a seguir e responda as questões:&lt;/h3&gt;
-&lt;p&gt;a. Crie um documento &lt;code&gt;.Rmd&lt;/code&gt; para que você armazene o código gerado. 
-b. Carregue os dados e os pacotes&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(sf)
-library(dplyr)
-library(terra)
-library(spData)
-data(us_states)
-data(us_states_df)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;c. Crie um novo objeto chamado &lt;code&gt;us_states_name&lt;/code&gt; que contenha apenas a coluna &lt;code&gt;NAME&lt;/code&gt; do objeto &lt;code&gt;us_states&lt;/code&gt; usando a sintaxe do tidyverse (select()). Qual é a classe do novo objeto e o que o torna geográfico?&lt;/p&gt;
-&lt;p&gt;d. Selecione colunas do objeto &lt;code&gt;us_states&lt;/code&gt; que contenham dados da população e crie um novo objeto.&lt;/p&gt;
-&lt;p&gt;e. Encontre e plot (salve a figura) todos os estados com as seguintes características:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pertencem à região Centro-Oeste.&lt;/li&gt;
-&lt;li&gt;Pertence à região Oeste, têm uma área abaixo de 250.000 km2 e em 2015 uma população maior que 5.000.000 de residentes (dica: você pode precisar usar as unidades funcionais::set_units() ou as.numeric()).&lt;/li&gt;
-&lt;li&gt;Pertencente à região Sul, tinha uma área maior que 150.000 km2 ou uma população total em 2015 maior que 7.000.000 de residentes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;f. Qual era a população total em 2015 no conjunto de dados us_states? Qual era a população total, mínima e máxima em 2015?&lt;/p&gt;
-&lt;p&gt;g. Quantos estados existem em cada região?&lt;/p&gt;
-&lt;p&gt;h. Qual era a população total mínima e máxima em 2015 em cada região? Qual era a população total em 2015 em cada região?&lt;/p&gt;
-&lt;p&gt;i. Exclua o atributo &amp;ldquo;geometry&amp;rdquo; do dataframe &lt;code&gt;us_states&lt;/code&gt; e crie um novo objeto chamado &lt;code&gt;us_states_stats&lt;/code&gt;. Qual função foi utilizada e por quê? Qual variável é a chave em ambos os conjuntos de dados? Qual é a classe do novo objeto?&lt;/p&gt;
-&lt;p&gt;j. Qual era a densidade populacional em 2015 em cada estado? Qual foi a densidade de população em 2010 em cada estado?&lt;/p&gt;
-&lt;p&gt;k. Quanto a densidade populacional mudou entre 2010 e 2015 em cada estado? Calcule a mudança nas porcentagens e mapeie-as.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VOCÊ ESTÁ MANIPULANDO DADOS ESPACIAIS. MAS AINDA PRECISAMOS EVOLUIR PARA A ANÁLISE ESPACIAL DE DADOS, OK?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Créditos: Lovelace - Geocomputing (&lt;a href=&#34;https://geocompr.robinlovelace.net/attr.html#exercises-1)&#34;&gt;https://geocompr.robinlovelace.net/attr.html#exercises-1)&lt;/a&gt;. Best book ever!&lt;/p&gt;
-</description>
+mun &amp;lt;- st_read(&amp;quot;shapes/brasil/BR_Municipios_2020/BR_Municipios_2020.shp&amp;quot;)
+
+ferro &amp;lt;- st_read(&amp;quot;shapes/ferro/Ferrovias/Ferrovias.shp&amp;quot;)
+
+aero &amp;lt;- st_read(&amp;quot;shapes/aero/Aerodromos.shp&amp;quot;)
+
+
+plot(brasil)
+plot(mun)
+plot(ferro)
+plot(aero)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;b. Verifique os sistemas de representação geográfica e faça as transformações que sejam necessárias para realização de operações espaciais.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;st_crs(brasil) == st_crs(ferro)
+st_crs(brasil) == st_crs(aero) 
+st_crs(brasil) == st_crs(mun)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;c. Crie um arquivo espacial com a feição do estado de Minas Gerais a partir do arquivo &lt;code&gt;brasil&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;mg_state &amp;lt;- brasil %&amp;gt;% 
+   filter(NM_UF == &amp;quot;Minas Gerais&amp;quot;)
+
+plot(mg_state)
+   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;d. Crie um novo objeto espacial denominado &lt;code&gt;fca&lt;/code&gt; a partir do objeto &lt;code&gt;ferro&lt;/code&gt; (SIGLA_COIN == FCA)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fca &amp;lt;- ferro %&amp;gt;% 
+   filter(SIGLA_COIN == &amp;quot;FCA&amp;quot;)
+plot(fca)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;d. Crie um buffer de 15 metros a partir dos trechos ferroviários da FCA.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;buffer_15 &amp;lt;- st_buffer(fca, dist = 15)
+plot(buffer_15)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;e. Selecione, de maneira espacial, os aeródromos que estão localizados em Minas Gerais.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;aero_mg &amp;lt;- st_intersection(aero, mg_state)
+
+plot(aero_mg)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;f. Selecione, de maneira espacial, os municípios do estado de Minas Gerais.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;tm_shape(brasil) +
+   tm_borders() +
+tm_shape(mg_state) +
+   tm_fill(&amp;quot;red&amp;quot;)
+
+mg_mun &amp;lt;- st_intersection(mun, mg_state)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;g. Faça dois mapas: (i) contendo o estado de minas, os municípios, e traçado da ferrovia; (ii) estado de minas, municípios e aeródromos. Melhore a estética dos mapas.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;tm_shape(brasil) +
+   tm_borders() +
+tm_shape(mg_mun) +
+   tm_borders() +
+tm_shape(fca) +
+   tm_lines()
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
