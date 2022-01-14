@@ -129,7 +129,7 @@ d13 &amp;lt;- gmodels::CrossTable(colours)
 &lt;p&gt;Experimente:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;table(car.type, colours)
 gmodels::CrossTable(car.type, colours)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Qual a diferença entre o uso da função &lt;code&gt;table&lt;/code&gt; com um ou argumentos? 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Qual a diferença entre o uso da função &lt;code&gt;table&lt;/code&gt; com um ou argumentos?
 Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;code&gt;table(colours, car.type)&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questão 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

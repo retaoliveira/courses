@@ -278,7 +278,7 @@ plot(world_coffee[&amp;quot;coffee_production_2017&amp;quot;])
 world_coffee2 = left_join(world, coffee_renamed, by = c(name_long = &amp;quot;nm&amp;quot;))
 plot(world_coffee2[&amp;quot;coffee_production_2017&amp;quot;])
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-realize-as-atividades-a-seguir-e-responda-as-questões&#34;&gt;4. Realize as atividades a seguir e responda as questões:&lt;/h3&gt;
-&lt;p&gt;a. Crie um documento &lt;code&gt;.Rmd&lt;/code&gt; para que você armazene o código gerado. 
+&lt;p&gt;a. Crie um documento &lt;code&gt;.Rmd&lt;/code&gt; para que você armazene o código gerado.
 b. Carregue os dados e os pacotes&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(sf)
 library(dplyr)

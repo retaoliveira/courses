@@ -66,11 +66,20 @@
     </item>
     
     <item>
-      <title>accessibility</title>
-      <link>https://retacourses.netlify.app/tag/accessibility/</link>
+      <title>Iniciação Científica</title>
+      <link>https://retacourses.netlify.app/tag/iniciacao-cientifica/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://retacourses.netlify.app/tag/accessibility/</guid>
+      <guid>https://retacourses.netlify.app/tag/iniciacao-cientifica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opportunities</title>
+      <link>https://retacourses.netlify.app/tag/opportunities/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/tag/opportunities/</guid>
       <description></description>
     </item>
     
@@ -80,6 +89,15 @@
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://retacourses.netlify.app/tag/rail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://retacourses.netlify.app/tag/research/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/tag/research/</guid>
       <description></description>
     </item>
     

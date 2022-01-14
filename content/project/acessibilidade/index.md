@@ -6,8 +6,9 @@ image:
   focal_point: Smart
 summary: Accessibility to urban functions.
 tags:
-- urban planning
-- accessibility
+- opportunities
+- research
+- "Iniciação Científica"
 title: Acessibility
 ---
 
