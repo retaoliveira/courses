@@ -21,13 +21,13 @@ subtitle = "Um pequeno passo na vida do estudante.... Mas um enorme passo para a
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-  [[content.filter_button]]
+  [[filter_button]]
     name = "All"
     tag = "*"
   
-  [[content.filter_button]]
-    name = "Iniciação científica"
-    tag = "iniciação científica"
+#  [[content.filter_button]]
+#    name = "Iniciação científica"
+#    tag = "Iniciação científica"
   
 #  [[content.filter_button]]
 #    name = "Spatial Analysis"

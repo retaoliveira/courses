@@ -8,6 +8,7 @@ summary: Vagas para bolsista e voluntário em IC
 tags:
 - opportunities
 - research
+- "Iniciação científica"
 title: Projeto 1 - Acesso Equitativo e Sustentável às Oportunidades em Belo Horizonte
 ---
 

@@ -8,7 +8,7 @@ summary: Vaga para bolsista em IC
 tags:
 - opportunities
 - research
-- "Iniciação Científica"
+- "Iniciação científica"
 title: "Projeto 2 - Implicações do fim do horário de verão de sobre as curvas diárias de carga de energia elétrica: Uma análise utilizando Componentes Principais Funcionais"
 ---
 

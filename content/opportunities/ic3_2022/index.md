@@ -8,7 +8,7 @@ summary: Vaga para voluntário em IC
 tags:
 - opportunities
 - research
-- "Iniciação Científica"
+- "Iniciação científica"
 title: Projeto 3 - Planejamento para a Acessibilidade Logística Urbana
 ---
 
