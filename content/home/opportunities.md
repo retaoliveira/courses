@@ -25,9 +25,9 @@ subtitle = "Um pequeno passo na vida do estudante.... Mas um enorme passo para a
     name = "All"
     tag = "*"
   
-  [[content.filter_button]]
-    name = "Iniciação científica"
-    tag = "iniciação científica"
+#  [[content.filter_button]]
+#    name = "Iniciação científica"
+#    tag = "iniciação científica"
   
 #  [[content.filter_button]]
 #    name = "Spatial Analysis"

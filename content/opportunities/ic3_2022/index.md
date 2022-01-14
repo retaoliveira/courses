@@ -12,6 +12,8 @@ tags:
 title: Projeto 3 - Planejamento para a Acessibilidade Logística Urbana
 ---
 
+**Orientação:** Renata Lúcia Magalhães de Oliveira
+
 A distribuição urbana de mercadorias é essencial sustentação do modo de vida urbano. Entretanto, essa atividade é raramente contemplada no planejamento das cidades no contexto brasileiro e mundial. As externalidades negativas promovem impactos significativos na sociedade e no meio ambiente que precisam ser mitigados. Para tanto, deve have coordenação entre o planejamento urbano e o planejamento da distribuição de mercadorias nesse contexto. O projeto PARCEL (PlAnejamento paRa a aCessibilidadE Logística urbana) tem como objetivo desenvolver um método visando o planejamento inovativo e estruturado da acessibilidade logística em áreas urbanas. Para tanto, serão exploradas técnicas de análise e econometria espacial, modelagem de sistemas complexos e inferência causal para desenvolvimento dos objetivos específicos: propor indicadores de acessibilidade passiva e ativa para caracterização da distribuição urbana de mercadorias; propor abordagem metodológica para identificação e qualificação de centralidades urbanas; e entender as relações de causalidade entre elementos morfológico-funcionais estruturais, as atividades que geram movimentações de carga, o uso do solo e os transportes e os níveis de acessibilidade logística no contexto urbano. Serão preconizadas ferramentas computacionais abertas e livres e serão construídos instrumentos para comunicação e compartilhamento de dados e resultados do projeto. A proposta metodológica deste projeto é inovadora e traz a adaptação de teorias e melhores práticas internacionais do planejamento orientado à acessibilidade para o contexto da Logística Urbana.
 
 ### Objetivos: 
