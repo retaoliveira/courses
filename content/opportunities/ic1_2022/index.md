@@ -60,7 +60,7 @@ Um(a) aluno(a) voluntário(a) em iniciação científica
 01/03/2022 a 28/02/2023
 
 ## Remuneração: 
-R$ 500,00 (quatrocentos reais) por mês como bolsa Fapemig e não há remuneração direta para o(a) voluntário(a), mas grande potencial de aprendizagem e crescimento profissional
+R$ 500,00 (quinhentos reais) por mês como bolsa Fapemig e não há remuneração direta para o(a) voluntário(a), mas grande potencial de aprendizagem e crescimento profissional
 
 ## Regime de trabalho: 
 20 horas semanais (presencial ou remoto)

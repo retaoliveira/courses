@@ -38,7 +38,7 @@ Um(a) aluno(a) bolsista de iniciação científica da Fapemig
 01/03/2022 a 28/02/2023
 
 ## Remuneração:
-R$ 500,00 (quatrocentos reais) por mês como bolsa Fapemig
+R$ 500,00 (quinhentos reais) por mês como bolsa Fapemig
 
 ## Regime de trabalho:
 20 horas semanais (presencial ou remoto)
