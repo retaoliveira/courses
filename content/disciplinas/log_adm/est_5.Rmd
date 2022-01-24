@@ -4,7 +4,7 @@ draft: true
 menu:
   log_adm:
     parent: Estudos autônomos
-    weight: 12
+    weight: 15
 title: Gestão de estoques e armazenagem
 editor_options: 
   markdown: 
@@ -13,10 +13,10 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 12
+weight: 15
 ---
 
-O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **06/04**
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **31/01**
 
 
 > Não se esqueçam de incluir o nome dos membros do grupo na postagem!
