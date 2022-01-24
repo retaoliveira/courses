@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Estudos autônomos
     weight: 15
-title: Gestão de estoques e armazenagem
+title: 5. Gestão de estoques e armazenagem
 editor_options: 
   markdown: 
     wrap: 70
