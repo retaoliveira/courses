@@ -1,10 +1,10 @@
 ---
 date: "2020-12-275T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_epc:
     parent: Estudos autônomos
-    weight: 15
+    weight: 20
 title: Multivarejo e omnichanel
 editor_options: 
   markdown: 
@@ -13,10 +13,10 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 15
+weight: 20
 ---
 
-O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **13/04**
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **14/02**
 
 > Não se esqueçam de incluir o nome dos membros do grupo na postagem!
 

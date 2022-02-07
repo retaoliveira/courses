@@ -83,13 +83,11 @@ Pontos|	Entrega|	Atividade
 ------|--------|-----------
 10| 17/11 | Estudos Autônomos 1 - Nivel de serviço logístico
 10| 24/11 | Estudos Autônomos 2 - TICs e KPIs
-10| 01/12 | Estudos Autônomos 3 – Logística Urbana
-10| 24/01 | Estudos Autônomos 4 - Gestão de Transportes
-10| 31/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
-10| 16/02 | Estudos Autônomos 6 - Redes Logísticas e Custos
-10| 14/02 | Estudos Autônomos 7 - Multivarejo e Omnichannel
+15| 01/12 | Estudos Autônomos 3 – Logística Urbana
+15| 24/01 | Estudos Autônomos 4 - Gestão de Transportes
+15| 31/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
+15| 14/02 | Estudos Autônomos 6 - Redes Logísticas e Custos
 20| 14/01	| Projeto incremental 1
-20| 14/02 |	Projeto incremental 2
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
