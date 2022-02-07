@@ -1,22 +1,4 @@
----
-date: "2020-12-275T00:00:00+01:00"
-draft: false
-menu:
-  log_adm:
-    parent: Estudos autônomos
-    weight: 20
-title: 6. Multivarejo e omnichanel
-editor_options: 
-  markdown: 
-    wrap: 70
-output: 
-  blogdown::html_page:
-    toc: true
-type: docs
-weight: 20
----
-
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="est_6_files/header-attrs/header-attrs.js"></script>
 
 
 <p>O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: <strong>13/02</strong></p>

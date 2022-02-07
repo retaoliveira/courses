@@ -16,7 +16,7 @@ type: docs
 weight: 20
 ---
 
-O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **07/02**
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **13/02**
 
 > Não se esqueçam de incluir o nome dos membros do grupo na postagem!
 
