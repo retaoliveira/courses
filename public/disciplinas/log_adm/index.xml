@@ -12,6 +12,25 @@
     
     
     <item>
+      <title>Introdução à logística</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/videos/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/videos/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Vídeos desenvolvidos pela turma para o Projeto 1&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ytMPBgBm5E4&amp;amp;ab_channel=CristianoMesseder&#34;&gt;Grupo 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.canva.com/design/DAE0cAc4MrI/c85Qlg9X2cJbZwy2J7oZxA/watch?utm_content=DAE0cAc4MrI&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=sharebutton&#34;&gt;Grupo 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=8dywv6VcYwU&#34;&gt;Grupo 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RmMIHYMJML8&#34;&gt;Grupo 4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/RmMIHYMJML8&#34;&gt;Grupo 5&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2. KPI e desempenho logístico</title>
       <link>https://retacourses.netlify.app/disciplinas/log_adm/est_2/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
@@ -112,7 +131,7 @@
     </item>
     
     <item>
-      <title>Gestão de estoques e armazenagem</title>
+      <title>5. Gestão de estoques e armazenagem</title>
       <link>https://retacourses.netlify.app/disciplinas/log_adm/est_5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -121,7 +140,7 @@
 &lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: &lt;strong&gt;31/01&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: &lt;strong&gt;07/02&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Não se esqueçam de incluir o nome dos membros do grupo na postagem!&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -283,6 +302,28 @@
 &lt;li&gt;Cite um indicador que você recomendaria para análise de desempenho logístico desse processo e um indicador para mensurar o nível de serviço percebido pelo cliente.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>6. Multivarejo e omnichanel</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/est_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/est_6/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: &lt;strong&gt;07/02&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Não se esqueçam de incluir o nome dos membros do grupo na postagem!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Leia do artigo &lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/omini_pao.pdf&#34;&gt;Multivarejo e omnicanal: o novo varejo alimentar do Grupo Pão de Açúcar&lt;/a&gt; e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Discuta, à luz dos conhecimentos adquiridos ao longo da disciplina, a seguinte frase: “A logística não é linear, otimizar um subsistema não significa otimizar o sistema total, é preciso olhar para os demais elos da cadeia”. Emita sua opinião quanto à concordância ou não com essa afirmativa e justifique.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Faça uma pesquisa na internet e discuta as diferenças entre uma estratégia logística multicanal e o omnichannel.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

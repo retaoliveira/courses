@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Estudos autônomos
     weight: 20
-title: Multivarejo e omnichanel
+title: 6. Multivarejo e omnichanel
 editor_options: 
   markdown: 
     wrap: 70
