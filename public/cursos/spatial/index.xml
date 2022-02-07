@@ -719,6 +719,333 @@ writeOGR(obj=georgia, dsn=&amp;quot;./shapefiles&amp;quot;, layer=&amp;quot;geor
     
     <item>
       <title>Operações espaciais</title>
+      <link>https://retacourses.netlify.app/cursos/spatial/centrography/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/spatial/centrography/</guid>
+      <description>
+&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#análise-espacial&#34;&gt;ANÁLISE ESPACIAL&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#proximidade-x-similaridade&#34;&gt;Proximidade x similaridade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#padrões-espaciais&#34;&gt;Padrões espaciais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#medidas-centrográficas&#34;&gt;Medidas centrográficas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#centro-médio&#34;&gt;Centro Médio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#distância-padrão&#34;&gt;Distância Padrão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#aplicações&#34;&gt;Aplicações&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#medidas-centrográficas-no-r&#34;&gt;Medidas centrográficas no R&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#centro-médio-e-distância-padrão&#34;&gt;Centro Médio e distância padrão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#centro-médio-e-distância-padrão-ponderados&#34;&gt;Centro Médio e Distância Padrão ponderados&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#autocorrelação-espacial&#34;&gt;Autocorrelação espacial&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#a-natureza-dos-dados-espaciais&#34;&gt;A natureza dos dados espaciais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#primeira-lei-da-geografia&#34;&gt;Primeira Lei da Geografia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#autocorrelação-espacial-1&#34;&gt;Autocorrelação espacial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#heterogeneidade-espacial&#34;&gt;Heterogeneidade Espacial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#medidas-de-autocorrelação-espacial&#34;&gt;Medidas de autocorrelação espacial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#matriz-de-vizinhança&#34;&gt;Matriz de vizinhança&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#critérios-de-vizinhança&#34;&gt;Critérios de vizinhança&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#índices-de-autocorrelação-espacial&#34;&gt;Índices de autocorrelação espacial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#teste-de-pseudo-significância&#34;&gt;Teste de Pseudo Significância&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#diagrama-de-espelhamento-de-moran&#34;&gt;Diagrama de espelhamento de Moran&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;análise-espacial&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ANÁLISE ESPACIAL&lt;/h1&gt;
+&lt;div id=&#34;proximidade-x-similaridade&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Proximidade x similaridade&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/simi_prox.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/simi_prox.png&#34; width=&#34;70%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;padrões-espaciais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Padrões espaciais&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/padroes_pontos.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/padroes_pontos.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/padroes_areas.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/padroes_areas.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;medidas-centrográficas&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Medidas centrográficas&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/Imagem1.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/Imagem1.png&#34; width=&#34;70%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;centro-médio&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Centro Médio&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/mc3.jpeg&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/mc3.jpeg&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/meancenter_stat.gif&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/meancenter_stat.gif&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;distância-padrão&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Distância Padrão&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/Imagem2.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/Imagem2.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/Imagem3.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/Imagem3.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aplicações&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Aplicações&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/india2.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/india2.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/india.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/india.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;#39;https://github.com/retaoliveira/relements/blob/main/figures/india 2.png&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/india 2.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/india3.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;medidas-centrográficas-no-r&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Medidas centrográficas no R&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(aspace)
+library(sf)
+library(tmap)
+library(cluster)
+library(geosphere)
+library(sp)
+
+data &amp;lt;- read_sf(&amp;quot;./shapefiles/ESCOLAS_PARTICULARES.shp&amp;quot;)
+bh &amp;lt;- read_sf(&amp;quot;./shapefiles/BAIRRO.shp&amp;quot;)
+
+data_sp &amp;lt;- as_Spatial(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(data) +
+   tm_dots(size = 1.5, col = &amp;quot;grey40&amp;quot;, alpha = 0.3) +
+tm_shape(bh) +
+   tm_borders(col = &amp;quot;grey40&amp;quot;, lwd = 1, lty = &amp;quot;solid&amp;quot;, alpha = 0.3)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/centrography_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(data_sp)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/centrography_files/figure-html/unnamed-chunk-14-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;centro-médio-e-distância-padrão&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Centro Médio e distância padrão&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;xy &amp;lt;- st_coordinates(data) # arquivo para calculos centrográficos
+
+xy_coord &amp;lt;- as.data.frame(st_coordinates(data)) %&amp;gt;%
+   st_as_sf(coords = c(&amp;#39;X&amp;#39;, &amp;#39;Y&amp;#39;), crs = 31983) # conversão em sf para representação espacial de coordenadas como pontos&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mc &amp;lt;- mean_centre(filename=&amp;quot;mean_center.txt&amp;quot;, weighted=FALSE, weights=NULL, points=xy)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id CENTRE.x CENTRE.y
+## 1  1   608734  7798997&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mc_sd &amp;lt;- calc_sdd(filename=&amp;quot;SDD_Output.txt&amp;quot;, centre.xy=NULL, calccentre=TRUE, weighted=FALSE, weights=NULL, points=xy, verbose=FALSE) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $id
+## [1] 1
+## 
+## $calccentre
+## [1] TRUE
+## 
+## $weighted
+## [1] FALSE
+## 
+## $CENTRE.x
+## [1] 608734
+## 
+## $CENTRE.y
+## [1] 7798997
+## 
+## $SDD.radius
+## [1] 6927.293
+## 
+## $SDD.area
+## [1] 150756836&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# usar xy - Retorna um dataframe com o centro médio e a distância padrão - raio.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://rdrr.io/cran/aspace/man/plot_sdd.html&#34;&gt;Documentação&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_sdd(plotnew=TRUE, plothv=FALSE, plotweightedpts=FALSE, plotpoints=TRUE, plotcentre=TRUE, titletxt=&amp;quot;Title&amp;quot;, points.col = &amp;quot;gray&amp;quot;, xaxis=&amp;quot;Easting (m)&amp;quot;, yaxis=&amp;quot;Northing (m)&amp;quot;, centre.col=&amp;quot;black&amp;quot;, centre.pch = 25)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/centrography_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;centro-médio-e-distância-padrão-ponderados&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Centro Médio e Distância Padrão ponderados&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wtc &amp;lt;- function(g,w){
+  if (!(is(g,&amp;quot;sf&amp;quot;)) | !(w %in% colnames(g))){
+    stop(paste(&amp;quot;requires an sf object with at a column&amp;quot;,w))
+  }
+  centers = st_coordinates(st_centroid(st_geometry(g)))
+  # crsx = st_crs(g) how could i reuse the CRS of g? do i need that?
+  out = st_point(c(weighted.mean(centers[,&amp;quot;X&amp;quot;],g[[w]]), weighted.mean(centers[,&amp;quot;Y&amp;quot;],g[[w]])))
+  return(out)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(st_geometry(data))
+plot(st_centroid(st_union(data)),col=&amp;quot;red&amp;quot;,pch=3,add=TRUE, lwd=2)
+plot(wtc(data,&amp;quot;NUMERO&amp;quot;),col=&amp;quot;blue&amp;quot;,pch=3,add=TRUE, lwd=2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retacourses.netlify.app/cursos/spatial/centrography_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;autocorrelação-espacial&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Autocorrelação espacial&lt;/h2&gt;
+&lt;div id=&#34;a-natureza-dos-dados-espaciais&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A natureza dos dados espaciais&lt;/h3&gt;
+&lt;p&gt;As questões de escala geográfica, agregação e nível de detalhamento são fundamentais para construir representações apropriadas do mundo.&lt;/p&gt;
+&lt;p&gt;Diferentes medidas obtidas do mundo real covariam, e compreender a natureza espacial da covariação pode nos ajudar a entender melhor os fenômenos.&lt;/p&gt;
+&lt;p&gt;Na representação do mundo real, é importante incorporar informações sobre como dois ou mais fatores COVARIAM espacialmente.&lt;/p&gt;
+&lt;p&gt;Análise dos impactos de investimentos no sistema público de transporte: Avaliação de como os preços dos imóveis aumentam à medida que aumenta a proximidade das estações.&lt;/p&gt;
+&lt;p&gt;Os efeitos de proximidade são fundamentais para representar e compreender a variação espacial e para reunir representações incompletas de lugares únicos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Não dá para analisar proximidade numa planilha!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;primeira-lei-da-geografia&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Primeira Lei da Geografia&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“No mundo, todas as coisas se parecem, mas coisas mais próximas são mais parecidas que aquelas mais distantes” &lt;sup&gt;1&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tobler, W. R. 1970. A computer movie simulating urban growth in the Detroit region. Economic Geography 46: 234–40.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;autocorrelação-espacial-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Autocorrelação espacial&lt;/h3&gt;
+&lt;p&gt;A relação entre eventos próximos no espaço pode ser formalizada no conceito de AUTOCORRELAÇÃO ESPACIAL&lt;/p&gt;
+&lt;p&gt;A relação entre eventos consecutivos no tempo pode ser formalizada no conceito de AUTOCORRELAÇÃO TEMPORAL&lt;/p&gt;
+&lt;p&gt;“No mundo, todas as coisas se parecem, mas coisas mais próximas são mais parecidas que aquelas mais distantes” DEFINIÇÃO SUCINTA DE AUTOCORRELAÇÃO ESPACIAL (positiva)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;heterogeneidade-espacial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Heterogeneidade Espacial&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Refere-se à variação no relacionamento entre as variáveis no espaço&lt;/li&gt;
+&lt;li&gt;Tendência de lugares de serem diferentes uns dos outros.&lt;/li&gt;
+&lt;li&gt;Heterogeneidade maior com o aumento da distância&lt;/li&gt;
+&lt;li&gt;Alguns fenômenos geográficos variam de maneira gradual através do espaço (estacionariedade), enquanto outros podem apresentar extrema irregularidade, violando a Lei de Tobler&lt;/li&gt;
+&lt;li&gt;Diz respeito a aspectos da estrutura socioeconômica no espaço&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;medidas-de-autocorrelação-espacial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Medidas de autocorrelação espacial&lt;/h3&gt;
+&lt;p&gt;As medidas de autocorrelação espacial procuram lidar simultaneamente com similaridades na localização dos objetos espaciais e de seus atributos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Autocorrelação Positiva (Lei de Tobler): Feições similares em localização também são similares em atributos&lt;/li&gt;
+&lt;li&gt;Autocorrelação Negativa (oposição à Lei de Tobler): Feições similares em localização tendem a ter atributos menos similares do que feições mais distantes&lt;/li&gt;
+&lt;li&gt;Ausência de Autocorrelação: Quando atributos são independentes da localização&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/1.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;A interrelação das várias propriedades de um local é um aspecto importante da natureza dos dados geográficas e é fundamental para o entendimento sobre o mundo real.&lt;/p&gt;
+&lt;p&gt;NO ENTANTO, ELA TAMBÉM É UMA PROPRIEDADE QUE DESAFIA A ANÁLISE DA ESTATÍSTICA CONVENCIONAL, POIS A MAIORIA DOS MÉTODOS ASSUME INDEPENDÊNCIA DAS OBSERVAÇÕES (CORRELAÇÃO ESPACIAL = ZERO)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;matriz-de-vizinhança&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Matriz de vizinhança&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Para comparar a similaridade de atributos geográficos em feições vizinhas é importante estabelecer um CRITÉRIO DE VIZINHANÇA.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Baseado neste critério, precisamos definir uma matriz de pesos W na qual cada elemento wij mede a proximidade/vizinhança entre i e j (i identificando a linha; j identificando a coluna da matriz)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Um critério de vizinhança comumente adotado: CONTIGUIDADE&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;wij = 1, se as regiões i e j são contíguas (ou seja, são vizinhas).&lt;/p&gt;
+&lt;p&gt;wij = 0, caso contrário.&lt;/p&gt;
+&lt;div id=&#34;matriz-de-pesos&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Matriz de pesos&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/3.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;critérios-de-vizinhança&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Critérios de vizinhança&lt;/h3&gt;
+&lt;p&gt;Contiguidade: Rook (torre) e Queen (rainha)
+&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/4.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ordem de contiguidade
+&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/5.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;DISTÂNCIA:
+- “n” vizinhos mais próximos;
+- distância máxima;
+- funções de distância (wij com valores contínuos)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/7.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;O critério adotado para construir uma matriz de vizinhança revela a estrutura espacial considerada na análise, e pode alterar os resultados das medidas de autocorrelação espacial.&lt;/p&gt;
+&lt;p&gt;Portanto, vale a pena testar alguns critérios alternativos para a definição de “vizinhança” (contiguidade, distância…) e, consequentemente, para a definição da matriz de vizinhança - também conhecida como matriz de pesos ou matriz de proximidade espacial.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;índices-de-autocorrelação-espacial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Índices de autocorrelação espacial&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/8.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;índices-globais-de-associação-espacial&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Índices Globais de Associação Espacial&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Apresenta uma medida única para toda a área analisada.&lt;/li&gt;
+&lt;li&gt;Índice de Moran (I)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;índice-global-de-moran&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Índice global de Moran&lt;/h4&gt;
+&lt;p&gt;É um índice global de autocorrelação espacial, que varia entre -1 e 1&lt;/p&gt;
+&lt;p&gt;I = 1&lt;br /&gt;
+Extrema Autocorrelação Positiva (Lei de Tobler): Feições similares em localização também são similares
+em atributos&lt;/p&gt;
+&lt;p&gt;I = -1&lt;br /&gt;
+Extrema Autocorrelação Negativa (oposição à Lei de Tobler): Feições similares em localização tendem a ter atributos menos similares do que feições mais distantes&lt;/p&gt;
+&lt;p&gt;I = 0&lt;br /&gt;
+Ausência de Autocorrelação: Quando atributos são independentes da localização&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/9.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;wij é o peso, wij=1 se observações i e j são vizinhas.&lt;/p&gt;
+&lt;p&gt;yi and ybarra representam o valor da variável na localização i e a média da variável, respectivamente.&lt;/p&gt;
+&lt;p&gt;n é o número total de observações&lt;/p&gt;
+&lt;p&gt;Estruturado de maneira semelhante ao coeficiente de correlação de Pearson: uma medida padronizada de covariância&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/10.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;De forma geral, o Índice de Moran presta-se a um teste cuja hipótese nula é de independência espacial. Neste caso, seu valor seria ZERO.&lt;/p&gt;
+&lt;p&gt;Valores positivos (entre 0 e +1) indicam autocorrelação positiva Valores negativos (entre 0 e -1) indicam autocorrelação negativa.&lt;/p&gt;
+&lt;p&gt;No exemplo da variável “consumo de água”, obtemos um I = 0,59 (vizinhança por contiguidade – queen). Será que este valor representa uma correlação espacial significativa estatisticamente????&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;teste-de-pseudo-significância&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Teste de Pseudo Significância&lt;/h3&gt;
+&lt;p&gt;Para estimar a significância do índice, seria preciso associar a este uma distribuição estatística, sendo mais usual relacionar a estatística teste à distribuição normal.&lt;/p&gt;
+&lt;p&gt;Porém, para evitar pressupostos em relação à distribuição, a abordagem mais comum é um TESTE DE PSEUDO-SIGNIFICÂNCIA.&lt;/p&gt;
+&lt;p&gt;No TESTE DE PSEUDO-SIGNIFICÂNCIA são geradas diferentes permutações dos valores de atributos associados às regiões.&lt;/p&gt;
+&lt;p&gt;Cada permutação produz um novo arranjo espacial, onde os valores estão redistribuídos entre as áreas.
+Como apenas um dos arranjos corresponde à situação observada, pode-se construir uma distribuição empírica de I.&lt;/p&gt;
+&lt;p&gt;No nosso exemplo, seria como se fizéssemos inúmeras permutações com os valores de consumo de água, atribuindo-os aleatoriamente para os diversos municípios e calculando o Índice de Moran para cada uma destas permutações aleatórias.&lt;/p&gt;
+&lt;p&gt;Faríamos isso, por exemplo 999 vezes! E obteríamos, portanto, 999 valores para o Índice de Moran + o valor do índice de Moran construído sobre os dados observados. Com estes 1000 valores de I, poderíamos contruir uma distribuição do índice.&lt;/p&gt;
+&lt;p&gt;Se o valor do índice I medido originalmente corresponder a um “extremo” da distribuição simulada, então trata-se de valor com significância estatística.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/11.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;H0: não há autocorrelação espacial&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;diagrama-de-espelhamento-de-moran&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Diagrama de espelhamento de Moran&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Maneira adicional de visualizar a dependência espacial&lt;/li&gt;
+&lt;li&gt;Construído com base nos valores padronizados (escore-z)&lt;/li&gt;
+&lt;li&gt;A ideia é comparar os valores padronizados do atributo numa área com a média dos seus vizinhos, construindo um gráfico bidimensional de z (valores padronizados) por wz (média dos vizinhos).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;z-score-escores-z&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Z-Score / escores-z&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/12.png&#34; width=&#34;20%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/13.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Q1 (valores positivos, médias positivas) e Q2 (valores negativos, médias negativas): indicam pontos de associação espacial positiva, no sentido que uma localização possui vizinhos com valores semelhantes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Q3 (valores positivos, médias negativas) e Q4 (valores negativos, médias positivas): indicam pontos de associação espacial negativa, no sentido que uma localização possui vizinhos com valores distintos.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/15.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Os pontos em Q3 e Q4 podem ser vistos como extremos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;afastados da reta de regressão linear&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;regiões que não seguem o mesmo processo de dependência espacial das demais observações.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Marcam regiões de transição entre regimes espaciais distintos.&lt;/p&gt;
+&lt;p&gt;O Diagrama também pode ser apresentado na forma de mapa temático, no qual cada polígono é apresentado indicando-se seu quadrante no diagrama de espalhamento&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/retaoliveira/relements/blob/main/figures/14.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Operações espaciais</title>
       <link>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
       
