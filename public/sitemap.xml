@@ -343,9 +343,6 @@
     <loc>https://retacourses.netlify.app/cursos/spatial/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/cursos/spatial/centrography/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -369,6 +366,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</loc>
     <lastmod>2021-05-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/cursos/spatial/centrography/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
   </url><url>
