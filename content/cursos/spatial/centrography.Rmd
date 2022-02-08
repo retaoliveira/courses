@@ -18,87 +18,78 @@ weight: 50
 
 # ANÁLISE ESPACIAL
 
-## Proximidade x similaridade
-
-```{r echo=TRUE, out.width='70%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/simi_prox.png')
-```
-
----
-
-## Padrões espaciais
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/padroes_pontos.png')
-```
-
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/padroes_areas.png')
-```
-
----
-
-## Medidas centrográficas {.tabset .tabset-fade .tabset-pills}
-
-```{r echo=TRUE, out.width='70%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/Imagem1.png')
-```
-
-### Centro Médio
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/mc3.jpeg')
-```
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/meancenter_stat.gif')
-```
-
----
-
-### Distância Padrão
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/Imagem2.png')
-```
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/Imagem3.png')
-```
-
----
-
-### Aplicações
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/india2.png')
-```
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/india.png')
-```
-
-```{r echo=TRUE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/india 2.png')
-```
-
-```{r echo=FALSE, out.width='100%', fig.align = 'center'}
-knitr::include_graphics('https://github.com/retaoliveira/relements/blob/main/figures/india3.png')
-```
-
----
-
-## Medidas centrográficas no R {.tabset .tabset-fade .tabset-pills}
-
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
 library(aspace)
 library(sf)
 library(tmap)
 library(cluster)
 library(geosphere)
 library(sp)
+```
 
+## Proximidade x similaridade
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/simi_prox.png')
+```
+
+
+## Padrões espaciais
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/padroes_pontos.png')
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/padroes_areas.png')
+```
+
+
+
+## Medidas centrográficas 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/Imagem1.png')
+```
+
+
+### Centro Médio
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/mc3.jpeg')
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/meancenter_stat.gif')
+```
+
+
+
+
+### Distância Padrão
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/padroes_areas.png')
+```
+
+---
+
+### Aplicações
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/india2.png')
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/india3.png')
+```
+
+
+
+
+## Medidas centrográficas no R {.tabset .tabset-fade .tabset-pills}
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 data <- read_sf("./shapefiles/ESCOLAS_PARTICULARES.shp")
 bh <- read_sf("./shapefiles/BAIRRO.shp")
 
@@ -114,30 +105,70 @@ tm_shape(bh) +
 plot(data_sp)
 ```
 
----
 
-### Centro Médio e distância padrão
+### Organização dos dados para cálculo do centro Médio e distância padrão
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=TRUE, eval = TRUE, message=FALSE, warning=FALSE}
+
 xy <- st_coordinates(data) # arquivo para calculos centrográficos
 
 xy_coord <- as.data.frame(st_coordinates(data)) %>%
    st_as_sf(coords = c('X', 'Y'), crs = 31983) # conversão em sf para representação espacial de coordenadas como pontos
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+### cálculo do centro Médio, distância padrão e elipse deviational
+
+```{r echo=TRUE,message=FALSE, warning=FALSE}
 mc <- mean_centre(filename="mean_center.txt", weighted=FALSE, weights=NULL, points=xy)
+
+mc_sd <- calc_sdd(filename="SDD_Output.txt", centre.xy=NULL, calccentre=TRUE, weighted=FALSE, weights=NULL, points=xy, verbose=FALSE) 
+# usar xy - Retorna um dataframe com o centro médio e a distância padrão - raio.
+# Create the plot but don't show the markers
+
+# Calculate and plot the first standard deviational ellipse on the existing plot
+mc_se <- calc_sde(id = 1, filename="SDE_Output.txt", calccentre = TRUE, points = xy, verbose = TRUE);
+
+```
+
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+### SDD plot
+plot_sdd(plotnew=TRUE, plotcentre=FALSE, centre.col="red", centre.pch="1", sdd.col="red",sdd.lwd=1,titletxt="", plotpoints=TRUE, points.col="black")
+
+# Label the centroid, explicitly using the hidden r.SDD object that was used in plot_sde
+text(r.SDD$CENTRE.x, r.SDD$CENTRE.y, "+", col="red")
+
 ```
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-mc_sd <- calc_sdd(filename="SDD_Output.txt", centre.xy=NULL, calccentre=TRUE, weighted=FALSE, weights=NULL, points=xy, verbose=FALSE) 
-# usar xy - Retorna um dataframe com o centro médio e a distância padrão - raio.
+## plot_sdd by default takes as input the result produced from the calc_sdd, read from the current workspace. 
+
+## SDD to shapefile 
+shp_sdd <- convert.to.shapefile(sddloc,sddatt,"id",5)
+write.shapefile(shp_sdd, "shapefiles/SDD_Shape", arcgis=T)
+
+## SDE to shapefile 
+shp_sde <- convert.to.shapefile(sdeloc,sdeatt,"id",5)
+write.shapefile(shp_sde, "shapefiles/SDE_Shape", arcgis=T)
+
 ```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+plot_sde(plotnew=TRUE, plotcentre=FALSE, centre.col="red", centre.pch="1", sde.col="red",sde.lwd=1,titletxt="", plotpoints=TRUE,points.col="black")
+
+# Label the centroid, explicitly using the hidden r.SDE object that was used in plot_sde
+text(r.SDE$CENTRE.x, r.SDE$CENTRE.y, "+", col="red")
+```
+
 
 [Documentação](https://rdrr.io/cran/aspace/man/plot_sdd.html)
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-plot_sdd(plotnew=TRUE, plothv=FALSE, plotweightedpts=FALSE, plotpoints=TRUE, plotcentre=TRUE, titletxt="Title", points.col = "gray", xaxis="Easting (m)", yaxis="Northing (m)", centre.col="black", centre.pch = 25)
+```{r echo=TRUE,  message=FALSE, warning=FALSE}
+plot_sdd(plotnew=TRUE, plothv=FALSE, plotweightedpts=FALSE, plotpoints=TRUE, plotcentre=TRUE, titletxt="Title", points.col = "gray", xaxis="Easting (m)", yaxis="Southing (m)", centre.col="black", centre.pch = 25)
+
+plot_sde(plotnew=TRUE, plothv=FALSE, plotweightedpts=FALSE, plotpoints=TRUE, plotcentre=TRUE, titletxt="Title", points.col = "gray", xaxis="Easting (m)", yaxis="Southing (m)", centre.col="black", centre.pch = 25)
+
 ```
 
 ---
@@ -156,7 +187,7 @@ wtc <- function(g,w){
 }
 ```
 
-```{r eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=TRUE,  message=FALSE, warning=FALSE}
 plot(st_geometry(data))
 plot(st_centroid(st_union(data)),col="red",pch=3,add=TRUE, lwd=2)
 plot(wtc(data,"NUMERO"),col="blue",pch=3,add=TRUE, lwd=2)
@@ -222,7 +253,7 @@ As medidas de autocorrelação espacial procuram lidar simultaneamente com simil
 - Ausência de Autocorrelação: Quando atributos são independentes da localização
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/1.png")
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/1.png")
 ```
 
 A interrelação das várias propriedades de um local é um aspecto importante da natureza dos dados geográficas e é fundamental para o entendimento sobre o mundo real.
@@ -245,12 +276,12 @@ wij = 0, caso contrário.
 
 ##### Matriz de pesos
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/2.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/2.png")
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/3.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/3.png")
 ```
 
 ---
@@ -258,13 +289,13 @@ knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/fig
 ### Critérios de vizinhança
 
 Contiguidade: Rook (torre) e Queen (rainha)
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/4.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/4.png")
 ```
 
 Ordem de contiguidade
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/5.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/5.png")
 ```
 
 DISTÂNCIA:
@@ -272,8 +303,8 @@ DISTÂNCIA:
 - distância máxima;
 - funções de distância (wij com valores contínuos)
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/7.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/7.png")
 ```
 
 O critério adotado para construir uma matriz de vizinhança revela a estrutura espacial considerada na análise, e pode alterar os resultados das medidas de autocorrelação espacial.
@@ -284,8 +315,8 @@ Portanto, vale a pena testar alguns critérios alternativos para a definição d
 
 ### Índices de autocorrelação espacial
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/8.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/8.png")
 ```
 
 ##### Índices Globais de Associação Espacial
@@ -306,8 +337,8 @@ Extrema Autocorrelação Negativa (oposição à Lei de Tobler): Feições simil
 I = 0     
 Ausência de Autocorrelação: Quando atributos são independentes da localização
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/9.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/9.png")
 ```
 
 wij é o peso, wij=1 se observações i e j são vizinhas.   
@@ -318,8 +349,8 @@ n é o número total de observações
 
 Estruturado de maneira semelhante ao coeficiente de correlação de Pearson: uma medida padronizada de covariância
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/10.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/10.png")
 ```
 
 De forma geral, o Índice de Moran presta-se a um teste cuja hipótese nula é de independência espacial. Neste caso, seu valor seria ZERO.
@@ -347,8 +378,8 @@ Faríamos isso, por exemplo 999 vezes! E obteríamos, portanto, 999 valores para
 
 Se o valor do índice I medido originalmente corresponder a um “extremo” da distribuição simulada, então trata-se de valor com significância estatística. 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/11.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/11.png")
 ```
 
 H0: não há autocorrelação espacial 
@@ -364,19 +395,19 @@ H0: não há autocorrelação espacial
 #### Z-Score / escores-z
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="20%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/12.png")
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/12.png")
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/13.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/13.png")
 ```
 
 - Q1 (valores positivos, médias positivas) e Q2 (valores negativos, médias negativas): indicam pontos de associação espacial positiva, no sentido que uma localização possui vizinhos com valores semelhantes.
 
 - Q3 (valores positivos, médias negativas) e Q4 (valores negativos, médias positivas): indicam pontos de associação espacial negativa, no sentido que uma localização possui vizinhos com valores distintos.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/15.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/15.png")
 ```
 
 Os pontos em Q3 e Q4 podem ser vistos como extremos:
@@ -389,7 +420,7 @@ Marcam regiões de transição entre regimes espaciais distintos.
 
 O Diagrama também pode ser apresentado na forma de mapa temático, no qual cada polígono é apresentado indicando-se seu quadrante no diagrama de espalhamento 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
-knitr::include_graphics("https://github.com/retaoliveira/relements/blob/main/figures/14.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="60%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/14.png")
 ```
 
