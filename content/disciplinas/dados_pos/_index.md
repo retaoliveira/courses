@@ -46,7 +46,9 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros síncronos acontecerão nas **terças-feiras**, de **09:00 às 11:00h**. Acontecerão na plataforma `Teams`. Vocês poderão acessar o canal da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3af3a710a26524425f862d3d7612018090%40thread.tacv2/conversations?groupId=ec8ed9d6-b8f4-4165-84f1-142f884c8fb9&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+Os encontros síncronos acontecerão nas **terças-feiras**, de **09:00 às 11:00h**. Acontecerão na plataforma `Teams`. Vocês poderão acessar o canal da disciplina pelo [Link]().
+
+<iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/RetaOliveira" style="height: 100%; width: 100%; border: 0px;"></iframe>
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
