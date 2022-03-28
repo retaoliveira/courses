@@ -16,9 +16,8 @@ type: docs
 weight: 20
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places.education/log2022/class01', height = "400px")
+```
 
-
-<iframe src="https://places.education/log2022/class01" width="672" height="400px" data-external="1">
-</iframe>
-<p><a href="https://places.education/log2022/class01">LINK</a></p>
+[LINK](https://places.education/log2022/class01)
