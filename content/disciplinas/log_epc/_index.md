@@ -1,7 +1,7 @@
 ---
-date: "2020-12-23T00:00:00Z"
+date: "2021-09-11T00:00:00Z"
 draft: false
-lastmod: "2021-05-15T00:00:00Z"
+lastmod: "2022-28-03T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
@@ -19,7 +19,7 @@ editor_options:
 
 A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostos `estudos autônomos` para apreensão do conhecimento e `projetos integradores` para consolidação e perspectiva integrada da disciplina. 
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
 
 ## Ementa da disciplina
 
@@ -34,60 +34,51 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 ## Objetivos de aprendizagem
 
-Por meio desta disciplina, os alunos desenvolverão competências para:
+Por meio desta disciplina, os estudantes desenvolverão competências para:
 
-1.  Desenvolvimento de um conhecimento claro dos elementos constitutivos das cadeias de suprimentos.
-2.  Elaboração de estratégias para cadeia de suprimentos.
-3.  Desenvolvimento de soluções logísticas.
-4.  Integração da cadeia de suprimentos através do sistema de informações.
-
-## Unidades de ensino
-
-| **Unidade**      | **CH** 
-|------------------|--------
-| Logística empresarial e a cadeia de suprimentos | 06
-| Planejamento e gestão da cadeia de suprimentos | 06
-| Nível de serviço logístico | 06
-| Integração logística e sistemas de informação na logística | 06
-| Transporte e distribuição física | 08
-| Custos logísticos | 08
-| Localizações logísticas | 08
-| Logística reversa | 06
-| Operadores logísticos e a Logística Internacional | 06
+1.  discutir, por meio de conhecimento teórico e prático, os elementos constitutivos das cadeias de suprimentos e suas interrelações.
+2.  Elaborar propostas estratégicas para gestão da cadeia de suprimentos.
+3.  Quantificar e comparar resultados esperados de determinadas soluções logísticas.
+4.  Integrar análise de dados à gestão da cadeia de suprimentos com foco no processo decisório.
 
 
 ## Planejamento de encontros síncronos
 
-Os encontros síncronos acontecerão nas **segundas-feiras**, de **19:00 às 20:30h**. Os encontros síncronos acontecerão na plataforma `Teams`. Vocês poderão acessar o servidor da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3a7C-HRfZ6jj8HwXf4p4T43lXROeBF2iERlTjicYOtU0E1%40thread.tacv2/conversations?groupId=5da93f1b-ae42-4d98-b553-d0b5d8b130ee&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Jitsi`. Vocês poderão acessar a sala da disciplina pelo [link](https://meet.jit.si/salaRenataOliveira).
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 18/10              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 25/10              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 03/11              |2h|KPIs em gestão de processos de produção e suprimento   
-| 10/11              |2h|Nível de serviço logístico
-| 22/11              |2h|Nível de serviço logístico, desempenho e ICT.
-| 06/12              |2h|Logística urbana.
-| 13/12              |2h|Logística urbana.  
-| 10/01              |2h|Transportes e distribuição física.   
-| 17/01              |2h|Transportes e distribuição física.   
-| 24/01              |2h|Gestão de estoques e armazenagem.
-| 31/01              |2h|Localizações logísticas
-| 07/02              |2h|Custos logísticos.
-| 14/02              |2h|Logística reversa, verde e sustentável.
+| 28/03              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 04/04              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 11/04              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 18/04              |2h|Nível de serviço logístico, desempenho e ICT.
+| 25/04              |2h|KPIs em gestão de processos de produção e suprimento 
+| 02/05              |2h|Logística urbana.
+| 09/05              |2h|Logística urbana.
+| 16/05              |2h|Transportes e distribuição física.
+| 23/05              |2h|Transportes e distribuição física.
+| 30/05              |2h|Gestão de estoques e armazenagem
+| 06/06              |2h|Localizações logísticas.
+| 13/06              |2h|Localizações logísticas.
+| 20/06              |2h|Custos logísticos.
+| 27/06              |2h|Custos logísticos.
+| 04/07              |2h|Custos logísticos.
+| 11/07              |2h|Logística reversa, verde e sustentável.
+| 18/07              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
 
 Pontos|	Entrega|	Atividade
 ------|--------|-----------
-10| 17/11 | Estudos Autônomos 1 - Nivel de serviço logístico
-10| 24/11 | Estudos Autônomos 2 - TICs e KPIs
-15| 01/12 | Estudos Autônomos 3 – Logística Urbana
-15| 24/01 | Estudos Autônomos 4 - Gestão de Transportes
-15| 31/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
-15| 14/02 | Estudos Autônomos 6 - Multivarejo e omnichanel
-20| 14/01	| Projeto incremental 1
+10| 18/04 | AA1 - Nivel de serviço logístico
+10| 25/04 | AA2 - TICs e KPIs
+10| 09/05 | AA3 – Logística Urbana
+10| 23/05 | AA4 - Gestão de Transportes
+10| 30/05 | AA5 - Gestão de estoques e armazenagem
+10| 04/07 | AA6 - Localização e custos logísticos
+10| 11/07 | AA7 - Multivarejo e omnichanel
+30| 11/07 | PI1
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
@@ -96,12 +87,9 @@ Computador com Sistema Operacional à escolha do estudante, conexão à internet
 
 Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.
 
-Os alunos deverão ter uma conta gratuita na plataforma `Teams`.
-
 Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 
-Acesso ao Moodle/AVA institucional.
-
+Site da disciplina: http://places.education
 
 ## Bibliografia recomendada
 
@@ -131,28 +119,24 @@ Acesso ao Moodle/AVA institucional.
 
 ## Organização das atividades em grupos
 
-1. **Composição dos grupos de trabalho:** Cada grupo será composto por **três a quatro alunos**. Esse grupo deve se manter para realização de todos os projetos. 
-
-2. **Planejamento da execução dos trabalhos:** Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução. 
-
-3. As atividades devem, necessariamente, acontecer de **forma colaborativa**. Para tanto, será criada uma **wiki** para cada grupo/atividade no **Moodle/AVA** institucional. Assim, será possível acompanhar a contribuição de cada estudante no desenvolvimento de cada trabalho. 
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **sete grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. A professora indicara a plataforma que permitirá o desenvolvimento das atividades/projeto de maneira colaborativa, com registro das discussões.  
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-epc>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-EPC>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
 
 Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
 
-1. Verifique se a sua dúvida já foi respondida em algum post no canal `discussão` no `Teams`.
-2. Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`. 
+1. Verifique se a sua dúvida já foi respondida em algum post no `Fórum de Dúvidas` no SIGAA.
+2. Se não houver discussões sobre o tópico em questão, faça um novo post no mesmo canal. 
 
 > Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
 ## Políticas institucionais e da disciplina
 
-O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `discussão` no `Teams`. Sua participação no Fórum será considerada para a avaliação desse curso no atributo `Engajamento`. 
+O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `Dúvidas` no `SIGAA`. Sua participação no Fórum será considerada para a avaliação do seu `Engajamento`. 
 
-1. Resposta a perguntas postadas pelos estudantes no canal `discussão` no `Teams`. 
+1. Resposta a perguntas postadas pelos estudantes no canal `Dúvidas` no `SIGAA`. 
 2. Participação em discussões e trabalhos em grupo na sala de aula. 
 3. Identificação de problemas em relação à documentação apresentada.
 

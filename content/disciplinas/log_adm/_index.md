@@ -58,7 +58,7 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas **quartas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Jitsi`. Vocês poderão acessar o servidor da disciplina pelo [link](https://meet.jit.si/salaRenataOliveira).
+Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas **quartas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Jitsi`. Vocês poderão acessar a sala da disciplina pelo [link](https://meet.jit.si/salaRenataOliveira).
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
@@ -99,15 +99,14 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Entrega|	Atividade
 ------|--------|-----------
-05| 18/04 | AA1 - Nivel de serviço logístico
-05| 27/04 | AA2 - TICs e KPIs
+10| 18/04 | AA1 - Nivel de serviço logístico
+10| 27/04 | AA2 - TICs e KPIs
 10| 09/05 | AA3 – Logística Urbana
 10| 25/05 | AA4 - Gestão de Transportes
 10| 01/06 | AA5 - Gestão de estoques e armazenagem
 10| 06/07 | AA6 - Localização e custos logísticos
 10| 13/07 | AA7 - Multivarejo e omnichanel
-20| 27/04 | PI1
-20| 13/07 | PI2
+30| 13/07 | PI1
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
@@ -152,7 +151,7 @@ Site da disciplina: http://places.education
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-ADM>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
 
 Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
 
