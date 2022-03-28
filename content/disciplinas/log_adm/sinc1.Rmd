@@ -17,7 +17,7 @@ weight: 20
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places.education/log2022/class01', height = "400px")
+knitr::include_url('https://log2022.github.io/class01/', height = "400px")
 ```
 
-[LINK](https://places.education/log2022/class01)
+[LINK](https://log2022.github.io/class01/)

@@ -2,7 +2,7 @@
 date: "2020-12-275T00:00:00+01:00"
 draft: false
 menu:
-  log_adm:
+  log_epc:
     parent: Encontros Síncronos
     weight: 2
 title: Introdução à disciplina
@@ -16,9 +16,8 @@ type: docs
 weight: 20
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://log2022.github.io/class01/', height = "400px")
+```
 
-
-<iframe src="https://log2022.github.io/class01/" width="672" height="400px" data-external="1">
-</iframe>
-<p><a href="https://log2022.github.io/class01/">LINK</a></p>
+[LINK](https://log2022.github.io/class01/)
