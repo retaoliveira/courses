@@ -162,7 +162,7 @@ Se o seu email não contempla alguma questão pessoal/individual, mas sim questi
 
 ## Políticas institucionais e da disciplina
 
-O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `Dúvidas` no `SIGAA`. Sua participação no Fórum será considerada para a avaliação do seu `Engajamento`. 
+A participação nos encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `Dúvidas` no `SIGAA`. Sua participação no Fórum será considerada para a avaliação do seu `Engajamento`. 
 
 1. Resposta a perguntas postadas pelos estudantes no canal `Dúvidas` no `SIGAA`. 
 2. Participação em discussões e trabalhos em grupo na sala de aula. 
