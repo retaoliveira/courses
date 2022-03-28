@@ -52,18 +52,18 @@ Os encontros síncronos acontecerão nas **terças-feiras**, de **09:00 às 11:0
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 12/01              |2h|Ambientação no R, RStudio, Git-Github e Rpubs. 
-| 19/01              |2h|Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
-| 26/01              |2h|RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
-| 02/02              |2h|Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. 
-| 09/02              |2h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 23/02              |2h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 02/03              |2h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 09/03              |2h|Organização dados e produção de análises textuais sob perspectiva analítica.   
-| 16/03              |2h|Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório.     
-| 30/03              |2h|Visualização e comunicação de informações gerenciais e científicas.
-| 06/04              |2h|Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
-| 13/04              |2h| Apresentação dos trabalhos finais
+| 29/03              |4h|Ambientação no R, RStudio, Git-Github e Rpubs. 
+| 05/04              |4h|Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
+| 12/04              |4h|RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
+| 19/04              |4h|Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. 
+| 26/04              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
+| 03/05              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
+| 10/05              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
+| 17/05              |4h|Organização dados e produção de análises textuais sob perspectiva analítica.   
+| 24/05              |4h|Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório.     
+| 31/05              |4h|Visualização e comunicação de informações gerenciais e científicas.
+| 07/06              |4h|Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
+| 14/06              |4h| Apresentação dos trabalhos finais
 | **Total de Horas** |        |24 horas             |
 
 ## Proposta de avaliação da aprendizagem

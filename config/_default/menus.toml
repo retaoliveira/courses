@@ -81,39 +81,39 @@
 
 [[main]]
   parent = "Disciplinas"
-  name = "Introdução ao R - PPGA - 2021/2"
-  url = "disciplinas/intror_master/"
+  name = "Análise de dados aplicada ao processo decisório - PPGA - 2022/1"
+  url = "disciplinas/dados_pos/"
+  weight = 30
+  
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Introdução ao R - ADM - 2021/2"
+#  url = "disciplinas/intror_adm/"
+#  weight = 40
+
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"
+#  url = "disciplinas/sdss/"
+#  weight = 20
+
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística - Eng. Produção Civil - 2022/1"
+  url = "disciplinas/log_epc/"
   weight = 10
   
 [[main]]
   parent = "Disciplinas"
-  name = "Introdução ao R - ADM - 2021/2"
-  url = "disciplinas/intror_adm/"
-  weight = 40
-
-[[main]]
-  parent = "Disciplinas"
-  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"
-  url = "disciplinas/sdss/"
+  name = "Logística - ADM - 2022/1"
+  url = "disciplinas/log_adm/"
   weight = 20
 
-[[main]]
-  parent = "Disciplinas"
-  name = "Logística - Eng. Produção Civil - 2021/2"
-  url = "disciplinas/log_epc/"
-  weight = 50
-  
-[[main]]
-  parent = "Disciplinas"
-  name = "Logística - ADM - 2021/2"
-  url = "disciplinas/log_adm/"
-  weight = 60
-
-[[main]]
-  parent = "Disciplinas"
-  name = "Econometria de Séries Temporais - PPGA - 2021/2"
-  url = "disciplinas/st/"
-  weight = 30
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Econometria de Séries Temporais - PPGA - 2021/2"
+#  url = "disciplinas/st/"
+#  weight = 30
   
 #[[main]]
 #  parent = "Disciplinas"
