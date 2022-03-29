@@ -1,5 +1,5 @@
 ---
-date: "2021-10-15T00:00:00+01:00"
+date: "2022-03-28T00:00:00+01:00"
 draft: false
 menu:
   dados_pos_2022:
@@ -45,8 +45,6 @@ weight: 10
 4. Corrija os problemas de códigos nos respectivos chunks. 
 
 5. Rode o arquivo .Rmd por meio do ícone `knitr` 
-
-6. Salve o .Rmd e **submeta-o por meio da tarefa no Sigaa**. 
 
 > Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
 

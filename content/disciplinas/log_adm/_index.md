@@ -58,7 +58,7 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas **quartas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Jitsi`. Vocês poderão acessar a sala da disciplina pelo [link](https://meet.jit.si/salaRenataOliveira).
+Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas **quartas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Teams`. Vocês poderão acessar a sala da disciplina pelo [link](https://teams.microsoft.com/l/channel/19%3aiWJRMuk-g676YbdL85v7jm_Up-mNfI8vxF3ymvO2uRE1%40thread.tacv2/Geral?groupId=13230d26-a870-45e8-86c8-ad9f6b0fd90b&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|

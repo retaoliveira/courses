@@ -20,7 +20,7 @@ weight: 9
 - E aí, R? Entendendo o ambiente de trabalho
 - Primeiros documentos no R - RMarkdown
 
-## Esta atividade deverá ser realizada até dia **19/10**, quando teremos nosso primeiro encontro síncrono. São propostas as seguintes atividades:
+## Esta atividade deverá ser realizada até dia **29/03**, quando teremos nosso primeiro encontro síncrono. São propostas as seguintes atividades:
 
 1. Instale o R, o RStudio e o Git no seu computador - [Link](https://www.places.education/cursos/intro_r/install/)
 2. Crie uma conta no Github, caso ainda não tenha - [Link](https://www.places.education/cursos/intro_r/github/)
@@ -30,17 +30,11 @@ weight: 9
 
 > No [site do RStudio](https://rmarkdown.rstudio.com/gallery.html) há uma série de modelos de arquivos que podem ser gerados a partir do RMarkdown.
 
-## A(s) entrega(s) será(ão):
-- **Arquivo .Rmd** referente à **tarefa 5** desta atividade pela tarefa no SIGAA.
-- Explorar toda a documentação, tentar solucionar dúvidas com os colegas e **trazer dúvidas para nosso encontro**!
-
-<hr></hr>
 
 ## Algumas dicas adicionais para a tarefa 5. 
 
 No RStudio, crie um novo documento `R Markdown` escolhendo `Arquivo | Novo | R Markdown`.
 Clique no botão `Knit HTML` na barra de ferramentas do doc para visualizar seu documento.
-
 
 Se você quiser tornar o seu documento público, recomendo, inicialmente, utilizar o `RPubs`. Alguns passos para isso:
 1. Na janela de pré-visualização, clique no botão `Publicar`.

@@ -1,26 +1,27 @@
 ---
-date: "2020-23-12T00:00:00Z"
-draft: true
-lastmod: "2020-23-12T00:00:00Z"
+title: "Análise de dados aplicada ao processo decisório"
+draft: yes
+date: '2020-23-12T00:00:00Z'
+output: pdf_document
+summary: Disciplina do PPGA
+lastmod: '2020-23-12T00:00:00Z'
+toc: yes
+type: docs
+weight: 1
+editor_options:
+  markdown:
+    wrap: sentence
 menu:
   dados_pos_2022:
     name: Organização do curso
     weight: 1
-summary: Disciplina do PPGA
-title: Análise de dados aplicada ao processo decisório
-toc: true
-type: docs
-weight: 1
-editor_options: 
-  markdown: 
-    wrap: sentence
 ---
 
 ## Proposta pedagógica
 
 A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostos `projetos incrementais` para apreensão do conhecimento e um `projeto integrador` para consolidação e perspectiva integrada da disciplina. 
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostas `Atividades de Aprendizagem` para apreensão do conhecimento e um `Projeto Integrador` para consolidação e perspectiva integrada da disciplina. 
 
 ## Ementa da disciplina
 
@@ -46,37 +47,53 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros síncronos acontecerão nas **terças-feiras**, de **09:00 às 11:00h**. Acontecerão na plataforma `Teams`. Vocês poderão acessar o canal da disciplina pelo [Link]().
+Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:15h**. Acontecerão na plataforma `Jitsi`. Vocês poderão acessar o canal da disciplina pelo [Link](https://meet.jit.si/salaRenataOliveira).
 
-<iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/RetaOliveira" style="height: 100%; width: 100%; border: 0px;"></iframe>
 
-| **Data**           | **CH** | **Assunto** |
-|--------------------|--------|-------------|
-| 29/03              |4h|Ambientação no R, RStudio, Git-Github e Rpubs. 
-| 05/04              |4h|Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
-| 12/04              |4h|RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
-| 19/04              |4h|Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. 
-| 26/04              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 03/05              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 10/05              |4h|Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-| 17/05              |4h|Organização dados e produção de análises textuais sob perspectiva analítica.   
-| 24/05              |4h|Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório.     
-| 31/05              |4h|Visualização e comunicação de informações gerenciais e científicas.
-| 07/06              |4h|Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
-| 14/06              |4h| Apresentação dos trabalhos finais
-| **Total de Horas** |        |24 horas             |
+
+| **Data**           | **Assunto** |
+|--------------------|------------|
+| 29/03   | Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R|
+| 05/04   | Unidade 2: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
+| 12/04   | Unidade 3: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
+| 19/04   | Unidade 4: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. |
+| 26/04   | Unidade 4: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas.  
+| 03/05   | Unidade 5: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
+| 10/05   | Unidade 5: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
+| 17/05   | Unidade 6: Organização dados e produção de análises textuais sob perspectiva analítica. | 
+| 24/05   | Unidade 6: Organização dados e produção de análises textuais sob perspectiva analítica. |   
+| 31/05   | Unidade 7: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |     
+| 07/06   | Projeto: Visualização e comunicação de informações gerenciais e científicas.| 
+| 14/06   | Projeto: Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
+| 21/06   | Projeto: Visualização e comunicação de informações gerenciais e científicas.| 
+| 28/06   | Projeto: Visualização e comunicação de informações gerenciais e científicas.| 
+| 05/07   | Projeto: Visualização e comunicação de informações gerenciais e científicas.| 
+| 12/07   | Projeto: Apresentação dos trabalhos finais| 
+| **Total de Horas** |        60 horas             |
 
 ## Proposta de avaliação da aprendizagem
 
-A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (projetos incrementais) e por meio da elaboração de um projeto transversal aos objetivos (projeto integrador). 
+A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (Atividades de Aprendizagem + Laboratórios) e por meio da elaboração de um projeto transversal aos objetivos (projeto integrador). 
 
-Pontos|	Entrega|	Atividade
-------|--------|-----------
-25|	09/02	|Construção de instrumentos de comunicação científica e organizacional por meio de RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
-25|	06/04|	Coleta, importação e tratamento de dados no R utilizando funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
-40|	13/04|	Projeto integrador que contemple como objetivo o entendimento de um problema e a implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
-10| 13/04| Engajamento
-TOTAL:| |	100 pontos
+## Atividades de Aprendizagem
+
+| Pontos |  Atividade de Aprendizagem
+|--------|--------------------------
+| 10 | Construção de instrumentos de comunicação científica e organizacional por meio de RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos.
+| 20 | Coleta, importação e tratamento de dados no R utilizando funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.
+| 10 | Análise textual por meio do R. Realizar a organização dados e produção de análises textuais sob perspectiva analítica.
+| 10 | Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório.   
+| 40 | Projeto transversal que contemple um objetivo gerencial e a implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.
+| 10 | Autoavaliação e Engajamento
+                                                                                                                                                                                  |
+### Laboratórios 
+
+Lab 1 – Introdução do R e IDE RStudio. RMarkdown.    
+Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2   
+Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes   
+Lab 4 – Argumentos lógicos - ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos   
+
+> Outros laboratórios serão desenvolvidos ao longo da disciplina, mas não serão avaliativos. Entretanto, são importantíssimos para aprendizagem. 
 
 ## Requisitos básicos e expectativas iniciais 
 Os participantes não precisam apresentar conhecimento prévio de computação, pacotes estatísticos ou manejo de conjuntos de dados. Se você é daquelas pessoas que, como eu há muito pouco tempo atrás, arrepia ao ver `códigos` na sua frente e tem certeza que nasceu sem a capacidade desenvolver quaisquer análises que envolvam `linha de comando`, você está no lugar certo! Fique tranquilo pois a proposta é que todos consigam acompanhar a disciplina e diferentes competências e inteligências são muito bem vindas! Vamos desconstruir essa ideia de que analistas, gestores e engenheiros não são formados para usar linguagem computacional. 
@@ -108,7 +125,7 @@ Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 [R Project](https://www.r-project.org/)   
 [Reproductible research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
 
-Diversas indicações de materiais adicionais são encontradas na seção [`Blog`](https://retaoliveira.github.io/places/post/) deste site. 
+Diversas indicações de materiais adicionais são encontradas na seção [`Blog`](https://places.education/post/) deste site. 
 
 ## Comunicação
 
@@ -116,16 +133,16 @@ Toda comunicação individual com a docente deverá acontecer por meio do email 
 
 Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
 
-1. Verifique se a sua dúvida já foi respondida em algum post no canal `discussão` no `Teams`
-2. Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`. 
+1. Verifique se a sua dúvida já foi respondida em algum post no canal `Discussão` no `SIGAA`
+2. Se não houver discussões sobre o tópico em questão, faça um novo post no canal `Discussão` no `SIGAA`
 
 > Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
 ## Políticas institucionais e da disciplina
 
-O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `discussão` no Teams. Sua participação no Fórum será considerada para a avaliação desse curso no atributo `Engajamento`. 
+A participação nos encontros faz com que os estudantes tenham melhor desempenho. E Você poderá participar das atividades remotamente usando o Fórum `Discussão` no SIGAA. Sua participação no Fórum será considerada para a avaliação desse curso no atributo `Engajamento`. 
 
-1. Resposta a perguntas postadas pelos estudantes no canal `discussão` no Teams. 
+1. Resposta a perguntas postadas pelos estudantes no canal `Discussão` no SIGAA. 
 2. Participação em discussões e trabalhos em grupo na sala de aula. 
 3. Identificação de problemas em relação à documentação apresentada.
 
