@@ -1,6 +1,6 @@
 ---
 title: "Análise de dados aplicada ao processo decisório"
-draft: yes
+draft: no
 date: '2020-23-12T00:00:00Z'
 output: pdf_document
 summary: Disciplina do PPGA

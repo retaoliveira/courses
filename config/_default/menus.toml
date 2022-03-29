@@ -82,7 +82,7 @@
 [[main]]
   parent = "Disciplinas"
   name = "Análise de dados aplicada ao processo decisório - PPGA - 2022/1"
-  url = "disciplinas/dados_pos/"
+  url = "disciplinas/dados_pos_2022/"
   weight = 30
   
 #[[main]]

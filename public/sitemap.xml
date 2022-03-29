@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/</loc>
+    <lastmod>2022-03-28T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/st/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -51,14 +54,23 @@
     <loc>https://retacourses.netlify.app/disciplinas/sdss/encontro2/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/atividade1/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/install/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/lab1/</loc>
+    <lastmod>2022-03-28T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/sdss/atividade3/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/atividade2/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -105,6 +117,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/sdss/atividade4/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/atividade3/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade3/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -123,6 +138,9 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/transportes_covid/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/atividade4/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade4/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -140,6 +158,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/sdss/atividade2/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/atividade5/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/atividade5/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -415,6 +436,9 @@
     <loc>https://retacourses.netlify.app/talk/synthesizing/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/</loc>
+    <lastmod>2022-03-28T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/post/amazon/</loc>
     <lastmod>2022-01-12T14:03:13-03:00</lastmod>
   </url><url>
@@ -435,9 +459,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/post/indicadores-de-desempenho-logistico/</loc>
     <lastmod>2022-01-10T17:43:56-03:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2021-12-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/</loc>
     <lastmod>2021-10-15T00:00:00+00:00</lastmod>
