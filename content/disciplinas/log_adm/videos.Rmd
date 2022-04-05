@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Vídeos
     weight: 5
-title: Introdução à logística
+title: "Introdução à logística"
 editor_options: 
   markdown: 
     wrap: 70

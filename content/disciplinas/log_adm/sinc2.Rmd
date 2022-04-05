@@ -22,3 +22,4 @@ knitr::include_url('https://log2022.github.io/class02/', height = "400px")
 
 [LINK](https://log2022.github.io/class02/)
 
+

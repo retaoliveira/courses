@@ -5,7 +5,7 @@ menu:
   log_all:
     parent: Contexto
     weight: 2
-title: Logística 4.0
+title: "Logística na 4a revolução industrial"
 editor_options: 
   markdown: 
     wrap: 70
