@@ -21,3 +21,5 @@ knitr::include_url('https://log2022.github.io/class01/', height = "400px")
 ```
 
 [LINK](https://log2022.github.io/class01/)
+
+<iframe width="1268" height="713" src="https://www.youtube.com/embed/XCoubQNehAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
