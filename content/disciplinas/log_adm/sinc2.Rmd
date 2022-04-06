@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Encontros Síncronos
-    weight: 2
+    weight: 3
 title: Fundamentação teórica e contexto
 editor_options: 
   markdown: 

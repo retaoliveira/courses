@@ -5,7 +5,7 @@ menu:
   dados_pos_2022:
     parent: Unidade 1
     weight: 10
-title: Lab 1
+title: Lab 1.1
 toc: false
 type: docs
 weight: 10
@@ -22,33 +22,41 @@ weight: 10
 
 ## Diretrizes gerais:
 
-1. Baixe o arquivo .Rmd e abra no RStudio. 
+1. Atualizar versões do R e do RStudio.
 
-[Arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EdTjtwRl5F5DjFDlgrOB6BgB4fqdODik9Jkp0cA_sB696Q?e=jdqlwW)
+2. Baixe o arquivo .Rmd e abra no RStudio. 
 
-2. Instale os pacotes: 
+[Arquivo](https://cefetmgbr-my.sharepoint.com/:t:/g/personal/renataoliveira_cefetmg_br/EZU9xzdlhX1Oi9ug12gdYE4B6VovNSxQtMMrHXJGslDFgA?e=2yi5Nl)
+
+3. Instale os pacotes: 
   - `"tidyverse"`
   - `"tinytex"`
   - `"knitr"`
   - `"flexdashboard"`
   - `"xaringan"`
   - `"xaringanthemer"`
+  - `"xaringanExtra"` - devtools::install_github("gadenbuie/xaringanExtra")
+  - `"bookdown"`
+  - `"blogdown"`
   
-3. Chame as bibliotecas dos pacotes instalados
+4. Chame as bibliotecas dos pacotes instalados
   - `library("tidyverse")`
   - `library("tinytex")`
   - `library("knitr")`
   - `library("flexdashboard")`
   - `library("xaringan")`
   - `library("xaringanthemer")`
+  - `library("xaringanExtra")`
+  - `library("bookdown")`
+  - `library("blogdown")`
 
-4. Corrija os problemas de códigos nos respectivos chunks. 
+5. Corrija os problemas de códigos nos respectivos `chunks`. 
 
-5. Rode o arquivo .Rmd por meio do ícone `knitr` 
+6. Rode o arquivo .Rmd por meio do ícone `knitr` 
 
 > Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
 
-## Preparação para o exercício:
+## Exercício:
 
 Carregue o *data frame* *mtcars*
 
