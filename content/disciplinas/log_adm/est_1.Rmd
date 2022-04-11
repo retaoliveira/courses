@@ -1,6 +1,6 @@
 ---
 date: "2020-12-275T00:00:00+01:00"
-draft: false
+draft: true
 menu:
   log_adm:
     parent: Estudos autônomos
@@ -18,7 +18,6 @@ weight: 20
 
 Leia do artigo [Logística e Serviço ao Cliente: como Aumentar a satisfação do cliente através de uma cadeia de abastecimento eficaz](https://github.com/retaoliveira/relements/raw/main/texto/servico_log.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
 
-Data de entrega: 06/12/2021
 
 ## 1. Varejo tradicional em uma cadeia de suprimentos
 

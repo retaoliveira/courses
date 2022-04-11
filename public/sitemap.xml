@@ -286,8 +286,6 @@
     <loc>https://retacourses.netlify.app/cursos/log_urb/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/est_1/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/est_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/est_6/</loc>
@@ -345,6 +343,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/sinc2/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc9/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
