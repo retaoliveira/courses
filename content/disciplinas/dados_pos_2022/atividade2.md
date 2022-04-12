@@ -24,10 +24,6 @@ São propostas as seguintes atividades:
 3. Gere um tipo de documento .Rmd de sua preferência. 
 4. Envie por email (renataoliveira@gmail.com ou renataoliveira@cefetmg.br) o arquivo .Rmd e o arquivo gerado. 
 
-
-## A(s) entrega(s) será(ão):
-- **Arquivos** referentes à **tarefa 4** desta atividade.
-
 <hr></hr>
 
 # Operações matemáticas e vetores
@@ -81,7 +77,6 @@ d11 <- plyr::count(colours)
 d12 <- plyr::count(mtcars, vars = "cyl")
 d13 <- gmodels::CrossTable(colours)
 ```
-
 
 **Questão 3:**
 
