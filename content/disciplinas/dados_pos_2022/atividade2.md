@@ -17,8 +17,7 @@ A **Unidade 2** é estruturada considerando os seguintes tópicos:
 - Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;
 - Visualização de dados no R.
 
-
-Esta atividade deverá ser realizada até dia **26/10**, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:
+São propostas as seguintes atividades:
 
 1. Faça o download do arquivo disponível no [link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeRUAZXugYhOqiO6lRHfbVYBYUZx8HUcj8vN538pmX0t4g?e=8UQAnq)
 2. Resolva as questões.
@@ -76,6 +75,7 @@ Utilize a função `table` para determinar a quantidade de automóveis comercial
 table(colours)
 
 ```
+
 ```{r}
 d11 <- plyr::count(colours)
 d12 <- plyr::count(mtcars, vars = "cyl")
@@ -115,7 +115,4 @@ Qual a diferença entre `table(car.type, colours)` e `table(colours, car.type)`?
 
 - Calcule sua produtividade em "palavras por Litro de café". Atribua o resultado a um novo vetor.
 
-```{r}
-
-```
 
