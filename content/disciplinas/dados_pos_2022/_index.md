@@ -50,7 +50,6 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:15h**. Acontecerão na plataforma `Jitsi`. Vocês poderão acessar o canal da disciplina pelo [Link](https://meet.jit.si/salaRenataOliveira).
 
 
-
 | **Data**           | **Assunto** |
 |--------------------|------------|
 | 29/03   | Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R|
