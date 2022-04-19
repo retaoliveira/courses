@@ -1,6 +1,6 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_pos_2022:
     parent: Unidade 3
@@ -16,7 +16,7 @@ weight: 11
 - Estatística descritiva e mineração de dados
 
 
-## Esta atividade deverá ser realizada até dia **09/11**, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:
+São propostas as seguintes atividades:
 
 1. Faça o download do arquivo disponível no [link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EX0uowQRoZZMlQnHVPmDy5sBtJt3ZVjBLNcDuNvS1qZU6Q?e=3z9FTB)
 2. Resolva as questões.

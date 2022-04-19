@@ -1,6 +1,6 @@
 ---
 title: "Lab 3.1"
-draft: true
+draft: false
 date: '2021-10-15T00:00:00+01:00'
 menu:
   dados_pos_2022:
