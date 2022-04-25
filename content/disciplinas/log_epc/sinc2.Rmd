@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Encontros Síncronos
     weight: 2
-title: Introdução à disciplina
+title: Fundamentação teórica e contexto
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 30
+weight: 40
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
