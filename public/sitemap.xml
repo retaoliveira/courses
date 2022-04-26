@@ -256,9 +256,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc1/</loc>
     <lastmod>2022-04-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc3/</loc>
-    <lastmod>2022-04-05T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc2/</loc>
     <lastmod>2022-04-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -382,6 +379,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_grad/sinc13/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc3/</loc>
+    <lastmod>2022-04-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -399,6 +399,9 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/ggplot/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc4/</loc>
+    <lastmod>2022-04-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -414,6 +417,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/sinc3/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_pos_2022/sinc5/</loc>
+    <lastmod>2022-04-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
