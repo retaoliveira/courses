@@ -1,70 +1,59 @@
 ---
-date: "2021-10-15T00:00:00+01:00"
+title: "Lab 3.2"
 draft: false
+date: '2021-10-15T00:00:00+01:00'
 menu:
   dados_pos_2022:
     parent: Unidade 3
-    weight: 15
-title: Lab 3.2 - `dados categóricos`
-toc: true
+    weight: 20
+toc: yes
 type: docs
-weight: 15
+weight: 20
 ---
 
-A **Unidade 2** é estruturada considerando os seguintes tópicos:
+A **Unidade 3** é estruturada considerando os seguintes tópicos:
+- Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. 
+- Estatística descritiva e mineração de dados
 
-- Estrutura de dados no R;   
-- Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;   
-- Visualização de dados no R.   
+## **Diretrizes gerais:**
 
-São propostas as seguintes atividades:
+1. Baixe o arquivo .Rmd e abra no RStudio. 
 
-- Faça o download do arquivo disponível no ***link***   
-- Resolva as questões.   
-- Gere um tipo de documento .Rmd de sua preferência.   
-- Envie por email (renataoliveira@gmail.com ou renataoliveira@cefetmg.br) o arquivo .Rmd e o arquivo gerado.
+[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
 
-## **Atividade**
+[Dados_1](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EfOboEtruQNLnK1Iz2RynCcBNxYE6pz_gBbjOIUWRSodpw?e=y0igVw)
 
-A base casas nos exercícios abaixo está no pacote dados:
+[Dados_2](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EZBh8qqZVJVFsZu3pfmdbPYBH-4XbbGRkrkpybi0pTSObA?e=4koetd)
 
-```{r}
-remotes::install_github("cienciadedatos/dados")
+2. Siga as diretrizes da atividade. 
+
+3. Rode o arquivo .Rmd por meio do ícone `knitr` 
+
+4. Salve o .Rmd e **submeta-o por meio da tarefa no Sigaa**. 
+
+<hr></hr>
+
+## **Manipulação de dados**
+
+### Exercício 1.
+Carregue os dados no seu ambiente. 
+
+```{r load-data, eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+dados1 <- read_csv("")
+dados2 <- read_csv("")
 ```
 
-1. Qual a diferença nos fatores criados com os códigos abaixo?
 
-```{r}
-fator1 <- as.factor(c("c", "a", "z", "B"))
-fator2 <- forcats::as_factor(c("c", "a", "z", "B"))
-```
+### Exercício 2.
 
-> A função do R base as.factor() ordena os níveis do fator em ordem alfabética. A função as_factor() do pacote forcats ordena os níveis do fator na ordem que eles aparecem no vetor.
+Responda as seguintes perguntas:
 
-2. Ordene os níveis do fator frutas conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.
+- Qual país historicamente ganhou mais medalhas nas olimpíadas de verão? Quantas foram? E qual a representação das mulheres nessa quantidade? 
 
-```{r}
-frutas <- as.factor(c("maçã", "banana", "mamão", "laranja", "melancia"))
-```
+- Demonstre o ranking de medalhas por país por ano olímpico separando os dados em olimpíadas de verão e de inverno. 
 
-> Use a função lvls_reorder()
+- Considere as olimpíadas de verão: para o país com o maior número de medalhas, demonstre o número de medalhas conquistadas por mulheres e o número de medalhas conquistadas por homens (considere as medalhas totais, levando em conta os atletas (medalhas) em esportes coletivos). 
 
-3. Com base no vetor series, resolva os itens a seguir.
+- Qual país ganhou mais medalhas no volei masculino? Qual país ganhou mais medalhas no volei feminino?
 
-```{r}
-series <- as.factor(c("Game of Thrones", "How I Met your Mother", "Friends", "Lost", "The Office", "Breaking Bad"))
-```
-
-a. Ordene os níveis do vetor series conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.
-
-b. Junte ao vetor series o vetor novas_series a seguir, reordenando os níveis para manter a sua ordem de preferência.
-
-```{r}
-novas_series <- as.factor(c("The Boys", "Stranger Things", "Queen's Gambit"))
-```
-
-> use a função fct_c() 
-  
-c. Renomeie o níveis do vetor criado no item (b) para os nomes em Português das séries. Mantenha o mesmo nome caso não haja tradução.
-
-> use a função fct_recode()

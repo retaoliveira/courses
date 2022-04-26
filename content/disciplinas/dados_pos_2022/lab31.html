@@ -4,99 +4,74 @@ draft: false
 menu:
   dados_pos_2022:
     parent: Unidade 3
-    weight: 11
-title: Lab 3.1 - `ggplot`
+    weight: 15
+title: Lab 3.1 - `dados categóricos`
+toc: true
 type: docs
-weight: 11
+weight: 15
 ---
 
 
+<div id="TOC">
 
-<p>A <strong>Unidade 2</strong> é estruturada considerando os seguintes tópicos:
-- Estrutura de dados no R;
-- Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;
-- Visualização de dados no R.</p>
-<div id="diretrizes-gerais" class="section level2">
-<h2><strong>Diretrizes gerais</strong></h2>
-<ol style="list-style-type: decimal">
-<li>Baixe o arquivo .Rmd e abra no RStudio.</li>
-</ol>
-<p><a href="https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EQRGYbjqPK9PpLiRI6M2SBUBsfh__B4NfDOM5EvLeYG_wg?e=z7pDKM">Arquivo</a></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Siga as diretrizes da atividade.</p></li>
-<li><p>Rode o arquivo .Rmd por meio do ícone <code>knitr</code></p></li>
-<li><p>Salve o .Rmd e <strong>submeta-o por meio da tarefa no Sigaa</strong>.</p></li>
-</ol>
-<hr>
-</hr>
 </div>
+
+<p>A <strong>Unidade 2</strong> é estruturada considerando os seguintes tópicos:</p>
+<ul>
+<li>Estrutura de dados no R;<br />
+</li>
+<li>Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;<br />
+</li>
+<li>Visualização de dados no R.</li>
+</ul>
+<p>São propostas as seguintes atividades:</p>
+<ul>
+<li>Faça o download do arquivo disponível no <strong><em>link</em></strong><br />
+</li>
+<li>Resolva as questões.<br />
+</li>
+<li>Gere um tipo de documento .Rmd de sua preferência.<br />
+</li>
+<li>Envie por email (<a href="mailto:renataoliveira@gmail.com" class="email">renataoliveira@gmail.com</a> ou <a href="mailto:renataoliveira@cefetmg.br" class="email">renataoliveira@cefetmg.br</a>) o arquivo .Rmd e o arquivo gerado.</li>
+</ul>
 <div id="atividade" class="section level2">
 <h2><strong>Atividade</strong></h2>
+<p>A base casas nos exercícios abaixo está no pacote dados:</p>
+<pre class="r"><code>remotes::install_github(&quot;cienciadedatos/dados&quot;)</code></pre>
+<pre><code>## Using github PAT from envvar GITHUB_PAT</code></pre>
+<pre><code>## Skipping install of &#39;dados&#39; from a github remote, the SHA1 (2d54bc8a) has not changed since last install.
+##   Use `force = TRUE` to force installation</code></pre>
 <ol style="list-style-type: decimal">
-<li>Dê uma olhada no dataframe Starwars.</li>
+<li>Qual a diferença nos fatores criados com os códigos abaixo?</li>
 </ol>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.8
-## v tidyr   1.2.0     v stringr 1.4.0
-## v readr   2.1.2     v forcats 0.5.1</code></pre>
-<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.1.3</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>glimpse(starwars)</code></pre>
-<pre><code>## Rows: 87
-## Columns: 14
-## $ name       &lt;chr&gt; &quot;Luke Skywalker&quot;, &quot;C-3PO&quot;, &quot;R2-D2&quot;, &quot;Darth Vader&quot;, &quot;Leia Or~
-## $ height     &lt;int&gt; 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180, 2~
-## $ mass       &lt;dbl&gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 84.0, 77.~
-## $ hair_color &lt;chr&gt; &quot;blond&quot;, NA, NA, &quot;none&quot;, &quot;brown&quot;, &quot;brown, grey&quot;, &quot;brown&quot;, N~
-## $ skin_color &lt;chr&gt; &quot;fair&quot;, &quot;gold&quot;, &quot;white, blue&quot;, &quot;white&quot;, &quot;light&quot;, &quot;light&quot;, &quot;~
-## $ eye_color  &lt;chr&gt; &quot;blue&quot;, &quot;yellow&quot;, &quot;red&quot;, &quot;yellow&quot;, &quot;brown&quot;, &quot;blue&quot;, &quot;blue&quot;,~
-## $ birth_year &lt;dbl&gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0, 57.0, ~
-## $ sex        &lt;chr&gt; &quot;male&quot;, &quot;none&quot;, &quot;none&quot;, &quot;male&quot;, &quot;female&quot;, &quot;male&quot;, &quot;female&quot;,~
-## $ gender     &lt;chr&gt; &quot;masculine&quot;, &quot;masculine&quot;, &quot;masculine&quot;, &quot;masculine&quot;, &quot;femini~
-## $ homeworld  &lt;chr&gt; &quot;Tatooine&quot;, &quot;Tatooine&quot;, &quot;Naboo&quot;, &quot;Tatooine&quot;, &quot;Alderaan&quot;, &quot;T~
-## $ species    &lt;chr&gt; &quot;Human&quot;, &quot;Droid&quot;, &quot;Droid&quot;, &quot;Human&quot;, &quot;Human&quot;, &quot;Human&quot;, &quot;Huma~
-## $ films      &lt;list&gt; &lt;&quot;The Empire Strikes Back&quot;, &quot;Revenge of the Sith&quot;, &quot;Return~
-## $ vehicles   &lt;list&gt; &lt;&quot;Snowspeeder&quot;, &quot;Imperial Speeder Bike&quot;&gt;, &lt;&gt;, &lt;&gt;, &lt;&gt;, &quot;Imp~
-## $ starships  &lt;list&gt; &lt;&quot;X-wing&quot;, &quot;Imperial shuttle&quot;&gt;, &lt;&gt;, &lt;&gt;, &quot;TIE Advanced x1&quot;,~</code></pre>
+<pre class="r"><code>fator1 &lt;- as.factor(c(&quot;c&quot;, &quot;a&quot;, &quot;z&quot;, &quot;B&quot;))
+fator2 &lt;- forcats::as_factor(c(&quot;c&quot;, &quot;a&quot;, &quot;z&quot;, &quot;B&quot;))</code></pre>
+<blockquote>
+<p>A função do R base as.factor() ordena os níveis do fator em ordem alfabética. A função as_factor() do pacote forcats ordena os níveis do fator na ordem que eles aparecem no vetor.</p>
+</blockquote>
 <ol start="2" style="list-style-type: decimal">
-<li>Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.</li>
+<li>Ordene os níveis do fator frutas conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.</li>
 </ol>
-<pre class="r"><code>ggplot(starwars, 
-       aes(x = height, y = mass, color = gender, size = birth_year)) +
-  geom_point(color = &quot;pink&quot;)</code></pre>
-<pre><code>## Warning: Removed 51 rows containing missing values (geom_point).</code></pre>
-<p><img src="/disciplinas/dados_pos_2022/lab31_files/figure-html/scatterplot-1.png" width="672" /></p>
+<pre class="r"><code>frutas &lt;- as.factor(c(&quot;maçã&quot;, &quot;banana&quot;, &quot;mamão&quot;, &quot;laranja&quot;, &quot;melancia&quot;))</code></pre>
+<blockquote>
+<p>Use a função lvls_reorder()</p>
+</blockquote>
 <ol start="3" style="list-style-type: decimal">
-<li>Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.</li>
+<li>Com base no vetor series, resolva os itens a seguir.</li>
 </ol>
-<pre class="r"><code>ggplot(starwars, 
-       aes(x = height, y = mass, color = as.factor(gender), size = birth_year)) +
-  geom_point() +
-  labs(
-    title = &quot;TEste&quot;,
-    x = &quot;Adoro&quot;, 
-    y = &quot;WOW&quot;,
-    size = &quot;Idade&quot;
-    )</code></pre>
-<pre><code>## Warning: Removed 51 rows containing missing values (geom_point).</code></pre>
-<p><img src="/disciplinas/dados_pos_2022/lab31_files/figure-html/scatterplot-labels-1.png" width="672" /></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.</li>
+<pre class="r"><code>series &lt;- as.factor(c(&quot;Game of Thrones&quot;, &quot;How I Met your Mother&quot;, &quot;Friends&quot;, &quot;Lost&quot;, &quot;The Office&quot;, &quot;Breaking Bad&quot;))</code></pre>
+<ol style="list-style-type: lower-alpha">
+<li><p>Ordene os níveis do vetor series conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.</p></li>
+<li><p>Junte ao vetor series o vetor novas_series a seguir, reordenando os níveis para manter a sua ordem de preferência.</p></li>
 </ol>
-<p>(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com <code>eval = FALSE</code> porque o código atual ali não é válido e, portanto, o documento não permitia o <code>knit</code>. Uma vez substituído o código por um código válido, defina a opção “eval = TRUE”, ou remova a opção “eval” por completo, uma vez que está definida como “TRUE” por padrão).</p>
-<pre class="r"><code>ggplot(starwars, aes(___)) +
-  geom___</code></pre>
-<ol start="5" style="list-style-type: decimal">
-<li>Escolha uma única variável numérica e faça um histograma dela.</li>
+<pre class="r"><code>novas_series &lt;- as.factor(c(&quot;The Boys&quot;, &quot;Stranger Things&quot;, &quot;Queen&#39;s Gambit&quot;))</code></pre>
+<blockquote>
+<p>use a função fct_c()</p>
+</blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Renomeie o níveis do vetor criado no item (b) para os nomes em Português das séries. Mantenha o mesmo nome caso não haja tradução.</li>
 </ol>
-<p>(Desta vez nenhum código inicial é fornecido, você está por sua conta!)</p>
-<ol start="6" style="list-style-type: decimal">
-<li><p>Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.</p></li>
-<li><p>Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.</p></li>
-<li><p>Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.</p></li>
-</ol>
+<blockquote>
+<p>use a função fct_recode()</p>
+</blockquote>
 </div>
