@@ -6,7 +6,6 @@ menu:
     parent: Unidade 3
     weight: 11
 title: Lab 3.1 - `ggplot`
-toc: true
 type: docs
 weight: 11
 ---
