@@ -4,8 +4,8 @@ draft: false
 menu:
   dados_pos_2022:
     parent: Encontros Síncronos
-    weight: 3
-title: Tipos de dados e objetos no R
+    weight: 5
+title: Visualizando dados
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,12 +13,12 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 30
+weight: 50
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://r-decision.github.io/class03/#1', height = "400px")
+knitr::include_url('https://r-decision.github.io/class04/#1', height = "400px")
 ```
 
-[LINK](https://r-decision.github.io/class03/#1)
+[LINK](https://r-decision.github.io/class04/#1)
 

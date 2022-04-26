@@ -1,0 +1,77 @@
+---
+date: "2021-10-15T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos_2022:
+    parent: Unidade 2
+    weight: 12
+title: Lab 2.2 - `dados categóricos`
+toc: true
+type: docs
+weight: 12
+---
+
+
+<div id="TOC">
+
+</div>
+
+<p>A <strong>Unidade 2</strong> é estruturada considerando os seguintes tópicos:</p>
+<ul>
+<li>Estrutura de dados no R;<br />
+</li>
+<li>Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;<br />
+</li>
+<li>Visualização de dados no R.</li>
+</ul>
+<p>São propostas as seguintes atividades:</p>
+<ul>
+<li>Faça o download do arquivo disponível no <strong><em>link</em></strong><br />
+</li>
+<li>Resolva as questões.<br />
+</li>
+<li>Gere um tipo de documento .Rmd de sua preferência.<br />
+</li>
+<li>Envie por email (<a href="mailto:renataoliveira@gmail.com" class="email">renataoliveira@gmail.com</a> ou <a href="mailto:renataoliveira@cefetmg.br" class="email">renataoliveira@cefetmg.br</a>) o arquivo .Rmd e o arquivo gerado.</li>
+</ul>
+<div id="atividade" class="section level2">
+<h2><strong>Atividade</strong></h2>
+<p>A base casas nos exercícios abaixo está no pacote dados:</p>
+<pre class="r"><code>remotes::install_github(&quot;cienciadedatos/dados&quot;)</code></pre>
+<pre><code>## Using github PAT from envvar GITHUB_PAT</code></pre>
+<pre><code>## Skipping install of &#39;dados&#39; from a github remote, the SHA1 (2d54bc8a) has not changed since last install.
+##   Use `force = TRUE` to force installation</code></pre>
+<ol style="list-style-type: decimal">
+<li>Qual a diferença nos fatores criados com os códigos abaixo?</li>
+</ol>
+<pre class="r"><code>fator1 &lt;- as.factor(c(&quot;c&quot;, &quot;a&quot;, &quot;z&quot;, &quot;B&quot;))
+fator2 &lt;- forcats::as_factor(c(&quot;c&quot;, &quot;a&quot;, &quot;z&quot;, &quot;B&quot;))</code></pre>
+<blockquote>
+<p>A função do R base as.factor() ordena os níveis do fator em ordem alfabética. A função as_factor() do pacote forcats ordena os níveis do fator na ordem que eles aparecem no vetor.</p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Ordene os níveis do fator frutas conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.</li>
+</ol>
+<pre class="r"><code>frutas &lt;- as.factor(c(&quot;maçã&quot;, &quot;banana&quot;, &quot;mamão&quot;, &quot;laranja&quot;, &quot;melancia&quot;))</code></pre>
+<blockquote>
+<p>Use a função lvls_reorder()</p>
+</blockquote>
+<ol start="3" style="list-style-type: decimal">
+<li>Com base no vetor series, resolva os itens a seguir.</li>
+</ol>
+<pre class="r"><code>series &lt;- as.factor(c(&quot;Game of Thrones&quot;, &quot;How I Met your Mother&quot;, &quot;Friends&quot;, &quot;Lost&quot;, &quot;The Office&quot;, &quot;Breaking Bad&quot;))</code></pre>
+<ol style="list-style-type: lower-alpha">
+<li><p>Ordene os níveis do vetor series conforme a sua preferência, isto é, as que você mais gosta primeiro e as que você menos gosta por último.</p></li>
+<li><p>Junte ao vetor series o vetor novas_series a seguir, reordenando os níveis para manter a sua ordem de preferência.</p></li>
+</ol>
+<pre class="r"><code>novas_series &lt;- as.factor(c(&quot;The Boys&quot;, &quot;Stranger Things&quot;, &quot;Queen&#39;s Gambit&quot;))</code></pre>
+<blockquote>
+<p>use a função fct_c()</p>
+</blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Renomeie o níveis do vetor criado no item (b) para os nomes em Português das séries. Mantenha o mesmo nome caso não haja tradução.</li>
+</ol>
+<blockquote>
+<p>use a função fct_recode()</p>
+</blockquote>
+</div>
