@@ -5,10 +5,10 @@ date: '2021-10-15T00:00:00+01:00'
 menu:
   dados_pos_2022:
     parent: Unidade 3
-    weight: 13
+    weight: 20
 toc: yes
 type: docs
-weight: 13
+weight: 20
 ---
 
 A **Unidade 3** é estruturada considerando os seguintes tópicos:
@@ -38,7 +38,7 @@ A **Unidade 3** é estruturada considerando os seguintes tópicos:
 ### Exercício 1.
 Carregue os dados no seu ambiente. 
 
-```{r load-data, message = FALSE}
+```{r load-data, eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 
 dados1 <- read_csv("")
 dados2 <- read_csv("")

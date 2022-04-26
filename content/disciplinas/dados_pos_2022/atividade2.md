@@ -3,15 +3,15 @@ date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
   dados_pos_2022:
-    parent: Unidade 2
-    weight: 10
-title: Atividade 2
+    parent: Unidade 3
+    weight: 15
+title: Atividade 3
 toc: true
 type: docs
-weight: 10
+weight: 15
 ---
 
-A **Unidade 2** é estruturada considerando os seguintes tópicos:
+A **Unidade 3** é estruturada considerando os seguintes tópicos:
 
 - Estrutura de dados no R; 
 - Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;
