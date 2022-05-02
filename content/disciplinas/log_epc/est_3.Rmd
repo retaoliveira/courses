@@ -1,9 +1,9 @@
 ---
 date: "2021-06-30T00:00:00+01:00"
-draft: false
+draft: true
 menu:
   log_epc:
-    parent: Estudos autônomos
+    parent: Atividade de aprendizagem
     weight: 10
 title: 3. Logística Urbana
 editor_options: 
@@ -22,5 +22,4 @@ Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.plac
 
 2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
 
-O prazo de entrega desta atividade pelo SIGAA é **13/12**. 
 

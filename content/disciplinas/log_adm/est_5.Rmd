@@ -3,7 +3,7 @@ date: "2020-12-275T00:00:00+01:00"
 draft: true
 menu:
   log_adm:
-    parent: Estudos autônomos
+    parent: Atividades de aprendizagem
     weight: 15
 title: 5. Gestão de estoques e armazenagem
 editor_options: 
@@ -15,8 +15,6 @@ output:
 type: docs
 weight: 15
 ---
-
-O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **07/02**
 
 
 > Não se esqueçam de incluir o nome dos membros do grupo na postagem!

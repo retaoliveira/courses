@@ -1,9 +1,9 @@
 ---
 date: "2021-06-30T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_adm:
-    parent: Estudos autônomos
+    parent: Atividades de aprendizagem
     weight: 10
 title: 3. Logística Urbana
 editor_options: 
@@ -16,11 +16,9 @@ type: docs
 weight: 10
 ---
 
-Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa postada no SIGAA:
+Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa do Dropbox Paper:
 
 1. Defina Logística Urbana
 
 2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
 
-
-O prazo de entrega desta atividade pelo SIGAA é **13/12**. 

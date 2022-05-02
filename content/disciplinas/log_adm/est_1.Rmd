@@ -3,7 +3,7 @@ date: "2020-12-275T00:00:00+01:00"
 draft: false
 menu:
   log_adm:
-    parent: Estudos autônomos
+    parent: Atividades de aprendizagem
     weight: 5
 title: 1. Nível de Serviço Logístico
 editor_options: 
