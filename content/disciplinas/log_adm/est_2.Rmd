@@ -1,6 +1,6 @@
 ---
 date: "2021-06-30T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 7
+weight: 21
 ---
 
 Leia os artigos: 
