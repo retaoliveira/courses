@@ -3,10 +3,10 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-#[[main]]
- # name = "Home"
-#  url = "#about"
-#  weight = 10
+[[main]]
+  name = "Home"
+  url = "#about"
+  weight = 10
 
 #[[main]]
 #  name = "Oportunidades"
@@ -19,15 +19,15 @@
   url = "#posts"
   weight = 20
   
-#[[main]]
-#  name = "Projetos"
-#  url = "#projects"
-#  weight = 30
+[[main]]
+  name = "Projetos"
+  url = "#projects"
+  weight = 30
 
-#[[main]]
-#  name = "Publicações"
-#  url = "#publications"
-#  weight = 40
+[[main]]
+  name = "Publicações"
+  url = "#publications"
+  weight = 40
 
 [[main]]
   name = "Cursos"
@@ -54,17 +54,17 @@
   url = "cursos/log_all/"
   weight = 30
   
-#[[main]]
-#  parent = "Cursos"
-#  name = "Logística Urbana"
-##  url = "cursos/log_urb/"
-#  weight = 40
+[[main]]
+  parent = "Cursos"
+  name = "Logística Urbana"
+  url = "cursos/log_urb/"
+  weight = 40
   
-#[[main]]
-#  parent = "Cursos"
-#  name = "Urban Analytics"
-#  url = "cursos/urban/"
-#  weight = 50
+[[main]]
+  parent = "Cursos"
+  name = "Urban Analytics"
+  url = "cursos/urban/"
+  weight = 50
 
 [[main]]
   name = "Disciplinas"
@@ -91,11 +91,11 @@
 #  url = "disciplinas/intror_adm/"
 #  weight = 40
 
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"
-#  url = "disciplinas/sdss/"
-#  weight = 20
+[[main]]
+  parent = "Disciplinas"
+  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"
+  url = "disciplinas/sdss/"
+  weight = 40
 
 [[main]]
   parent = "Disciplinas"
@@ -136,8 +136,8 @@
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-#[[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 80
+[[main]]
+    name = "CV"
+    url = "files/cv.pdf"
+    weight = 80
 
