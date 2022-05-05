@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-# avatar_image: avatar.png
+avatar_image: reta.jpg
 bio: My research interests include spatial analysis, city logistics and accessibility.
 btn:
 - label: Download Resume
