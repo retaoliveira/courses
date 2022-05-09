@@ -6,7 +6,7 @@
     <description>Recent content in Logística on Renata Oliveira</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://retacourses.netlify.app/disciplinas/log_adm/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,46 +30,6 @@
     </item>
     
     <item>
-      <title>2. KPI e desempenho logístico</title>
-      <link>https://retacourses.netlify.app/disciplinas/log_adm/est_2/</link>
-      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://retacourses.netlify.app/disciplinas/log_adm/est_2/</guid>
-      <description>
-&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Leia os artigos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gtqxne83suoownb/ti2013.pdf?dl=0&#34;&gt;Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4szfw6offjrpepo/ti_pratica.pdf?dl=0&#34;&gt;Logística + Tecnologia: na prática a teoria é outra&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/iverdlbcq7xu2ou/2020_varejo.pdf?dl=0&#34;&gt;Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e submeta pela respectiva tarefa do SIGAA.&lt;/p&gt;
-&lt;p&gt;O prazo de entrega desta atividade pelo SIGAA é &lt;strong&gt;06/12&lt;/strong&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Não se esqueçam de incluir o nome dos membros do grupo na postagem!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;O que são e qual a importância de KPIs para a gestão da cadeia de suprimentos?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de último quilômetro para os clientes desses três varejistas, e há escassez de mão de obra alocada para esse processo gerencial.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Assim, será possível escolher apenas três indicadores de desempenho (KPI) para todas as classes de atributos a serem monitorados:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
-&lt;li&gt;desempenho no atendimento ao cliente&lt;/li&gt;
-&lt;li&gt;desempenho na gestão de estoques&lt;/li&gt;
-&lt;li&gt;produtividade do armazém&lt;/li&gt;
-&lt;li&gt;desempenho em transportes&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Destaca-se a importância do trade-off (custo operacional x nível de serviço). Você poderá escolher, dentre aqueles indicadores apresentados nos documentos e pesquisados em conteúdo na internet, três indicadores de forma a completar a visão gerencial do seu processo. Quais são esses três indicadores e por que você os escolheu? Lembre-se que são apenas três indicadores para todas as classes de atributos a serem monitorados.&lt;/p&gt;
-&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Quais as contribuições essenciais das TICs para a gestão da cadeia de suprimentos? Existem aspectos negativos da implementação de TI quando o objetivo da gestão da cadeia de suprimentos está centrado no trade-off entre responsividade e eficiência? Há diferenças do papel das TICs quando os conceitos de sustentabilidade e resiliência são considerados como objetivos estratégicos da SCM?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Vocês acreditam que tecnologias como a Impressão 3D podem viabilizar uma gestão da cadeia de suprimentos mais responsiva e eficiente? Explique o seu ponto de vista.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Introdução à logística</title>
       <link>https://retacourses.netlify.app/disciplinas/log_adm/ver_1/</link>
       <pubDate>Thu, 24 Jun 2021 00:00:00 +0100</pubDate>
@@ -84,6 +44,45 @@
 &lt;p&gt;Não há entregas! Esta atividade é para sua verificação.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://rpubs.com/retaoliveira/log1&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projeto Integrador - Etapa 1</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/project1/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/project1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;pré-requisitos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pré-requisitos&lt;/h2&gt;
+&lt;p&gt;Entender definições e fundamentos que compõe os conceitos &lt;code&gt;Logística&lt;/code&gt; e &lt;code&gt;Gestão da Cadeia de Suprimentos&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;objetivos-de-aprendizagem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Objetivos de aprendizagem&lt;/h2&gt;
+&lt;p&gt;Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de &lt;code&gt;Logística&lt;/code&gt; e &lt;code&gt;Gestão da Cadeia de Suprimentos&lt;/code&gt; com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;iFood&lt;/code&gt; revolucionou o processo de delivery de refeições no Brasil. Em apenas seis meses da criação do aplicativo de pedidos, somente na cidade de São Paulo, a empresa já contava com cardápios de 650 restaurantes. Contudo, nos primeiros meses de atividade, os analistas da &lt;code&gt;iFood&lt;/code&gt; identificaram diversas reclamações específicas dos clientes de um desses restaurantes: o &lt;strong&gt;Sushi Liberdade&lt;/strong&gt;. Havia relatos de &lt;strong&gt;atrasos nas entregas&lt;/strong&gt;, o que ocasionava grande número de reclamações no aplicativo. A situação era complicada para o restaurante, sendo que em alguns casos havia até mesmo a necessidade de &lt;strong&gt;cancelamentos e restituição do valor financeiro aos clientes&lt;/strong&gt;. O restaurante acusava os &lt;strong&gt;colaboradores responsáveis pela entrega de não prestarem o serviço&lt;/strong&gt; adequadamente, mas a &lt;code&gt;iFood&lt;/code&gt; desconfiava dessa informação uma vez que não havia registros de reclamações de outros restaurantes.&lt;/p&gt;
+&lt;p&gt;A diretoria da &lt;code&gt;iFood&lt;/code&gt;, preocupada com as diversas reclamações e com a possibilidade de &lt;strong&gt;perder o restaurante para um concorrente&lt;/strong&gt;, decidiu que era muito importante avaliar as &lt;strong&gt;causas especiais&lt;/strong&gt; relacionadas às entregas com tempo maior do que os 120 minutos (&lt;em&gt;leadtime&lt;/em&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;) prometidos pelo aplicativo. Foi contratada uma consultoria independente, uma vez que esse fato causava também &lt;strong&gt;graves prejuízos à imagem da &lt;code&gt;iFood&lt;/code&gt;&lt;/strong&gt;. Para evitar maiores prejuízos à &lt;code&gt;iFood&lt;/code&gt;, o restaurante Sushi Liberdade foi &lt;strong&gt;cancelado da plataforma imediatamente&lt;/strong&gt; para que essa investigação apontasse os responsáveis, apesar de ter redirecionado seu funcionamento para o atendimento a pedidos para entrega recentemente.&lt;/p&gt;
+&lt;p&gt;Como uma &lt;strong&gt;empresa digital responsável em relação a seus colaboradores (restaurantes e entregadores)&lt;/strong&gt;, e visando contribuir com a manutenção do restaurante, a &lt;code&gt;iFood&lt;/code&gt; se propôs a oferecer uma consultoria &lt;strong&gt;gratuita&lt;/strong&gt; ao Sushi Liberdade, mesmo antes dos resultados da investigação imparcial promovida pela consultora. O restaurante decidiu aceitar a &lt;strong&gt;generosa oferta&lt;/strong&gt;, uma vez que estava sem outras opções no momento. Assim, o Sushi Liberdade recebeu os &lt;strong&gt;analistas da &lt;code&gt;iFood&lt;/code&gt;&lt;/strong&gt; para colocar as ideias em prática.&lt;/p&gt;
+&lt;p&gt;ETAPA 1 – COMPREENSÃO DO PROCESSO&lt;/p&gt;
+&lt;p&gt;As notações para modelagem de processos, como por exemplo a notação BPMN, utilizam formas de agrupar tarefas de um processo que são desempenhadas pelos diferentes atores. No caso da &lt;code&gt;iFood&lt;/code&gt;, possuímos quatro atores bem definidos: o Restaurante, o solicitante (consumidor), o Colaborador (responsável pela entrega) e a plataforma digital. Geralmente, as funções que cada um executa são distribuídas em raias. Os círculos identificam o início e fim do fluxo. Os retângulos identificam os processos, as setas identificam o fluxo e os losângulos identificam as decisões do processo.&lt;/p&gt;
+&lt;p&gt;A figura a seguir demonstra um exemplo de um processo de aquisição de férias construído na notação BPMN:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/Imagem1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Considerando os atores &lt;code&gt;iFood&lt;/code&gt;, restaurante, consumidor e entregador (responsável pela entrega), construa o fluxograma do processo de entrega de pedidos da &lt;code&gt;iFood&lt;/code&gt;. Considere também a situação em que o consumidor não esteja disponível no momento da entrega.&lt;/p&gt;
+&lt;p&gt;Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox.&lt;/p&gt;
+&lt;p&gt;O prazo para conclusão desta atividade será dia &lt;strong&gt;28/05&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;em&gt;O leadtime pode ser definido como o tempo entre a colocação do pedido e o efetivo recebimento dos produtos. Assim, a composição desse indicador contempla: - Recebimento do pedido com detalhes do transporte a ser realizado; - Alocação de veículos, equipe de trabalho e deslocamento para coleta dos pedidos; (Esse tempo é concomitante com aquele necessário para expedição do pedido.) - Carregamento dos veículos; -Viagem até o consumidor.&lt;/em&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -198,6 +197,41 @@
 &lt;iframe src=&#34;https://log2022.github.io/class04/&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&#34;https://log2022.github.io/class04/&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2. KPI e desempenho logístico</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/est_2/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/est_2/</guid>
+      <description>
+
+
+&lt;p&gt;Leia os artigos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gtqxne83suoownb/ti2013.pdf?dl=0&#34;&gt;Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4szfw6offjrpepo/ti_pratica.pdf?dl=0&#34;&gt;Logística + Tecnologia: na prática a teoria é outra&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/iverdlbcq7xu2ou/2020_varejo.pdf?dl=0&#34;&gt;Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e desenvolva pelo Paper/Dropbox do seu grupo.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;O que são e qual a importância de KPIs para a gestão da cadeia de suprimentos?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de último quilômetro para os clientes desses três varejistas, e há escassez de mão de obra alocada para esse processo gerencial.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Assim, será possível escolher apenas três indicadores de desempenho (KPI) para todas as classes de atributos a serem monitorados:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;desempenho no atendimento ao cliente&lt;/li&gt;
+&lt;li&gt;desempenho na gestão de estoques&lt;/li&gt;
+&lt;li&gt;produtividade do armazém&lt;/li&gt;
+&lt;li&gt;desempenho em transportes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Destaca-se a importância do trade-off (custo operacional x nível de serviço). Você poderá escolher, dentre aqueles indicadores apresentados nos documentos e pesquisados em conteúdo na internet, três indicadores de forma a completar a visão gerencial do seu processo. Quais são esses três indicadores e por que você os escolheu? Lembre-se que são apenas três indicadores para todas as classes de atributos a serem monitorados.&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Quais as contribuições essenciais das TICs para a gestão da cadeia de suprimentos? Existem aspectos negativos da implementação de TI quando o objetivo da gestão da cadeia de suprimentos está centrado no trade-off entre responsividade e eficiência? Há diferenças do papel das TICs quando os conceitos de sustentabilidade e resiliência são considerados como objetivos estratégicos da SCM?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Vocês acreditam que tecnologias como a Impressão 3D podem viabilizar uma gestão da cadeia de suprimentos mais responsiva e eficiente? Explique o seu ponto de vista.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

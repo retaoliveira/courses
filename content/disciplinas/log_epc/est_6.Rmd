@@ -3,7 +3,7 @@ date: "2020-12-275T00:00:00+01:00"
 draft: true
 menu:
   log_epc:
-    parent: Estudos autônomos
+    parent: Atividades de Aprendizagem
     weight: 20
 title: 6. Multivarejo e omnichanel
 editor_options: 
