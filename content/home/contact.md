@@ -1,14 +1,12 @@
 +++
 # Contact widget.
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = false  # This file represents a page section.
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 130  # Order that this section will appear.
+weight = 120  # Order that this section will appear.
 
 title = "Contact"
 subtitle = "Get in touch!"
-
-
 
 # Automatically link email and phone?
 autolink = true
@@ -20,9 +18,6 @@ autolink = true
 email_form = 0
 
 +++
-
-<a class="twitter-timeline" href="https://twitter.com/retaoliveira?ref_src=twsrc%5Etfw">Tweets by retaoliveira</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 <form action="https://formspree.io/xvodnapg" method="POST">
   <label for="name">Nome: </label>
