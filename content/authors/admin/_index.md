@@ -50,5 +50,5 @@ user_groups:
 - Visitors
 ---
 
-Associate Professor at the Federal Center for Technological Education of Minas Gerais. Lecturer at the Federal University of Minas Gerais. Researcher at the PLACES - PLanning for ACcESs research group with a focus on accessibility oriented planning, Urban Freight Transportation and applied spatial analysis. Member of the Network on Intelligent Urban Mobility and Accessibility Research (NIUMAR) and of the Network for Organizational Studies, Society and Subjectivity (NOSS).
+Professor at the Federal Center for Technological Education of Minas Gerais. Researcher at the PLACES - PLanning for ACcESs research group with a focus on accessibility oriented planning, Urban Freight Transportation and applied spatial analysis. Member of the Network on Intelligent Urban Mobility and Accessibility Research (NIUMAR) and of the Network for Organizational Studies, Society and Subjectivity (NOSS).
 
