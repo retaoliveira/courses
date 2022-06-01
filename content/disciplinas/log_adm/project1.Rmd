@@ -41,4 +41,4 @@ Considerando os atores `iFood`, restaurante, consumidor e entregador (responsáv
 
 Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox. 
 
-O prazo para conclusão desta atividade será dia **28/05**.
+O prazo para conclusão desta atividade será dia **05/06**.
