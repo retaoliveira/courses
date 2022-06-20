@@ -1,0 +1,24 @@
+---
+date: "2022-05-09T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Projetos
+    weight: 6
+title: Projeto Integrador - Etapa 3
+toc: true
+type: docs
+weight: 16
+---
+
+Fiquem à vontade para utilizar a ferramenta que o grupo escolher. O envio será feito pela atividade aberta no Paper Dropbox. O valor deste trabalho é 20 pontos.
+
+O prazo para conclusão desta atividade será dia **10/07**.
+
+Os grupos de trabalho deverão: 
+
+1. **Registrar** alguma situação onde atividades-chave da cadeia de suprimentos 
+
+2. **Descrever** *brevemente* o fluxo (usando a imaginação mesmo!) desde um determinado fornecedor primário, passando pelas etapas de manufatura e pelas de distribuição até a situação registrada. Indique possíveis atividades depois do que é apresentado como registro considerando a estrutura da cadeia de suprimentos. 
+
+3. 

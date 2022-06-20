@@ -4,8 +4,8 @@ draft: false
 menu:
   log_adm:
     parent: Projetos
-    weight: 4
-title: Projeto Integrador - Etapa 1
+    weight: 5
+title: Projeto Integrador - Etapa 2
 toc: true
 type: docs
 weight: 16
@@ -16,27 +16,134 @@ weight: 16
 
 </div>
 
-<div id="pré-requisitos" class="section level2">
-<h2>Pré-requisitos</h2>
-<p>Entender definições e fundamentos que compõe os conceitos <code>Logística</code> e <code>Gestão da Cadeia de Suprimentos</code>.</p>
-</div>
-<div id="objetivos-de-aprendizagem" class="section level2">
-<h2>Objetivos de aprendizagem</h2>
-<p>Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de <code>Logística</code> e <code>Gestão da Cadeia de Suprimentos</code> com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica.</p>
-<p>A <code>iFood</code> revolucionou o processo de delivery de refeições no Brasil. Em apenas seis meses da criação do aplicativo de pedidos, somente na cidade de São Paulo, a empresa já contava com cardápios de 650 restaurantes. Contudo, nos primeiros meses de atividade, os analistas da <code>iFood</code> identificaram diversas reclamações específicas dos clientes de um desses restaurantes: o <strong>Sushi Liberdade</strong>. Havia relatos de <strong>atrasos nas entregas</strong>, o que ocasionava grande número de reclamações no aplicativo. A situação era complicada para o restaurante, sendo que em alguns casos havia até mesmo a necessidade de <strong>cancelamentos e restituição do valor financeiro aos clientes</strong>. O restaurante acusava os <strong>colaboradores responsáveis pela entrega de não prestarem o serviço</strong> adequadamente, mas a <code>iFood</code> desconfiava dessa informação uma vez que não havia registros de reclamações de outros restaurantes.</p>
-<p>A diretoria da <code>iFood</code>, preocupada com as diversas reclamações e com a possibilidade de <strong>perder o restaurante para um concorrente</strong>, decidiu que era muito importante avaliar as <strong>causas especiais</strong> relacionadas às entregas com tempo maior do que os 120 minutos (<em>leadtime</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) prometidos pelo aplicativo. Foi contratada uma consultoria independente, uma vez que esse fato causava também <strong>graves prejuízos à imagem da <code>iFood</code></strong>. Para evitar maiores prejuízos à <code>iFood</code>, o restaurante Sushi Liberdade foi <strong>cancelado da plataforma imediatamente</strong> para que essa investigação apontasse os responsáveis, apesar de ter redirecionado seu funcionamento para o atendimento a pedidos para entrega recentemente.</p>
-<p>Como uma <strong>empresa digital responsável em relação a seus colaboradores (restaurantes e entregadores)</strong>, e visando contribuir com a manutenção do restaurante, a <code>iFood</code> se propôs a oferecer uma consultoria <strong>gratuita</strong> ao Sushi Liberdade, mesmo antes dos resultados da investigação imparcial promovida pela consultora. O restaurante decidiu aceitar a <strong>generosa oferta</strong>, uma vez que estava sem outras opções no momento. Assim, o Sushi Liberdade recebeu os <strong>analistas da <code>iFood</code></strong> para colocar as ideias em prática.</p>
-<p>ETAPA 1 – COMPREENSÃO DO PROCESSO</p>
-<p>As notações para modelagem de processos, como por exemplo a notação BPMN, utilizam formas de agrupar tarefas de um processo que são desempenhadas pelos diferentes atores. No caso da <code>iFood</code>, possuímos quatro atores bem definidos: o Restaurante, o solicitante (consumidor), o Colaborador (responsável pela entrega) e a plataforma digital. Geralmente, as funções que cada um executa são distribuídas em raias. Os círculos identificam o início e fim do fluxo. Os retângulos identificam os processos, as setas identificam o fluxo e os losângulos identificam as decisões do processo.</p>
-<p>A figura a seguir demonstra um exemplo de um processo de aquisição de férias construído na notação BPMN:</p>
-<p><img src="https://retaoliveira.github.io/relements/figures/Imagem1.png" /><!-- --></p>
-<p>Considerando os atores <code>iFood</code>, restaurante, consumidor e entregador (responsável pela entrega), construa o fluxograma do processo de entrega de pedidos da <code>iFood</code>. Considere também a situação em que o consumidor não esteja disponível no momento da entrega.</p>
 <p>Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox.</p>
-<p>O prazo para conclusão desta atividade será dia <strong>05/06</strong>.</p>
+<p>O prazo para conclusão desta atividade será dia <strong>10/07</strong>.</p>
+<div id="análise-preliminar-de-dados-coletados-pelo-setor-de-qualidade" class="section level1">
+<h1>Análise preliminar de dados coletados pelo setor de qualidade</h1>
+<p>Considerando a tabela de amostras disponível no link, determine estatísticas descritivas básicas e utilize sua interpretação para descrever de forma preliminar o problema.</p>
+<p>TABELA DE AMOSTRAS: <a href="https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/ETKOyyBJOl5MgcNMyq7dThUBaaQaD1w3DnNyXs6MUAFYnA?e=MOqg2W">Link para download</a></p>
 </div>
-<div class="footnotes footnotes-end-of-document">
-<hr />
-<ol>
-<li id="fn1"><p><em>O leadtime pode ser definido como o tempo entre a colocação do pedido e o efetivo recebimento dos produtos. Assim, a composição desse indicador contempla: - Recebimento do pedido com detalhes do transporte a ser realizado; - Alocação de veículos, equipe de trabalho e deslocamento para coleta dos pedidos; (Esse tempo é concomitante com aquele necessário para expedição do pedido.) - Carregamento dos veículos; -Viagem até o consumidor.</em><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<div id="identificação-das-causas-especiais" class="section level1">
+<h1>Identificação das causas especiais</h1>
+<p>A terceira etapa implementada pela área de logística/análise de dados do iFood considerou o histórico de causas especiais observadas ao longo do tempo.</p>
+<p>As situações registradas estão descritas a seguir.</p>
+<div id="descrição-das-causas-especiais" class="section level2">
+<h2>Descrição das causas especiais</h2>
+<ol style="list-style-type: lower-roman">
+<li>Atraso na entrega do produto causada por excesso da demanda na área de cobertura parametrizada no app pela iFood;</li>
+<li>Atraso na entrega do produto causada por excesso da demanda na área de cobertura definida pelo restaurante;</li>
+<li>Atraso na entrega do produto causada por falha no uso da funcionalidade de checkin/checkout da entrega no aplicativo pelo colaborador;</li>
+<li>Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerando regiões de expedição com maior periculosidade;</li>
+<li>Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerandos regiões de consumidores com maior periculosidade;</li>
+<li>Atraso na entrega do produto devido à parametrização da iFood em locais onde o asfaltamento apresenta piores níveis de pavimentação;</li>
+<li>Atraso na entrega do produto causada por meio de transporte inadequado utilizado pelo colaborador;</li>
+<li>Atraso na entrega do produto causada pelo excesso de itens transportados pelo colaborador.</li>
 </ol>
+<p>A partir desse histórico, os analistas da iFood elaboraram o diagrama de causa e efeito (espinha de peixe), conforme estrutura demonstrada a seguir:</p>
+<pre class="r"><code>knitr::include_graphics(&#39;https://retaoliveira.github.io/relements/figures/transport/espinha-peixe.png&#39;)</code></pre>
+<p><img src="https://retaoliveira.github.io/relements/figures/transport/espinha-peixe.png" /><!-- --></p>
+<p><strong>Com base na figura apresentada, reproduza o diagrama de causa e efeito (espinha de peixe) disponível pela área de qualidade da iFood, considerando o histórico de causas especiais. Identifique duas outras possíveis causas relacionadas ao problema “Atraso na entrega do produto” e categorize-as de acordo com a estrutura do diagrama.</strong></p>
+<p>QUINTA ETAPA – ESTRATIFICAÇÃO
+As fusões com outras empresas fizeram o iFood crescer rapidamente. Em 2015, a empresa alcançou o primeiro milhão de pedidos. No ano seguinte, esse número quase triplicou, impulsionados pela fusão com a Spoon Rocket. Atualmente, a empresa continua investindo em novas tecnologias e em expansão. Hoje, a iFood (FoodTech) é referência na América Latina e já está presente em dois países (Brasil e Colômbia), mas com o maior orgulho de ser uma empresa brasileira.</p>
+<p>Contudo, administrar também é resolver problemas. E como não poderia deixar de ser, os problemas continuam na iFood. Assim, na mesma medida em que o diagrama de causa e efeito cresce, ações precisam ser desenvolvidas e implementadas para correção dos desvios.
+Ainda bem que existe uma solução para tratar a maior parte desses problemas sem que se tenha que atuar em 100% dos casos. A estratégia de estratificação (princípio Pareto) afirma que, para muitos eventos, aproximadamente 80% dos efeitos vêm de 20% das causas.</p>
+<p>Os analistas da iFood recuperaram as seguintes informações sobre as causas especiais identificadas no último ano relativas aos problemas relacionados aos atrasos nas entregas:</p>
+<p>QUANTITATIVO REGISTRADO CAUSAS ESPECIAIS
+1052 Atraso na entrega do produto causada por excesso da área de cobertura parametrizada no app pela iFood;
+5271 Atraso na entrega do produto causada por excesso da área de cobertura definida pelo restaurante;
+362 Atraso na entrega do produto causada por falha no uso da funcionalidade de checkin/checkout da entrega no aplicativo pelo colaborador;
+3672 Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerando regiões de expedição com maior periculosidade;
+250 Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerandos regiões de consumidores com maior periculosidade;
+37 Atraso na entrega do produto devido à parametrização da iFood em locais onde o asfaltamento apresenta piores níveis de pavimentação;
+15 Atraso na entrega do produto causada por meio de transporte inadequado utilizado pelo colaborador;
+13 Atraso na entrega do produto causada pelo excesso de itens transportados pelo colaborador.
+257 (Preencher com a primeira causa especial identificada na atividade 5.)
+154 (Preencher com a segunda causa especial identificada na atividade 5.)</p>
+<p>ATIVIDADE 8: Construa o gráfico de pareto. Considerando a regra 80-20, quais as causas deveriam ser atacadas prioritariamente? Esse exemplo é representativo em relação ao princípio de pareto?</p>
+<p>SEXTA ETAPA – INDICADORES DE DESEMPENHO
+O Percentual de Entregas Realizadas no Prazo ou On-Time Delivery (OTD) é o indicador chave de desempenho (KPI - Key Performance Indicator) que mede especificamente o percentual de pedidos entregues no prazo, ou seja, sem atrasos. A análise deste indicador permite identificar possíveis problemas relacionados ao tempo de transporte.
+O cálculo do OTD se dá por meio da fórmula: Entregas realizadas no prazo ÷ Total de entregas realizadas no período. Para obter o percentual, basta multiplicar o resultado por 100.
+ATIVIDADE 9: Considerando os valores indicados nas amostras diárias descritas na “Primeira Etapa” deste Estudo de Caso, determine o valor do indicaror OTD da iFood. Como esse indicador de desempenho poderia ajudar a iFood?
+(Obs.: Considere as entregas realizadas no prazo aquelas que possuem o tempo menor ou igual ao Leadtime)
+INDICADOR DE DESEMPENHO
+On-Time Delivery (OTD)</p>
+<p>SÉTIMA ETAPA – RESPONSABILIDADE SOCIAL
+A iFood mantém um programa de responsabilidade social e ambiental. Nesse sentido, a partir de determinada data, foi considerada a possibilidade do aplicativo de pedidos utilizado pelos colaboradores responsáveis pela entrega disponibilizar, além dos meios tradicionais de entrega, a opção por meios de transporte menos poluentes (bicicletas elétricas, patinetes elétricas, etc.). Essa funcionalidade encontraria-se restrita para curtas distâncias e em espaços reservados para esse tipo de veículo, considerando a possibilidade de trânsito nessas condições e do baixo impacto ao leadtime.
+Baseados nessas informações, os analistas da iFood indicaram um ponto ótimo para empresa em termos de impacto no seu leadtime médio. Nesse caso, seria necessário considerar ¼ (um quarto) das entregas exclusivamente utilizando veículos considerados menos poluentes destinados às curtas distâncias e vias autorizadas para esse tipo de transporte. Os outros ¾ (três quartos) das entregas seriam realizados por veículos à combustão.
+Infelizmente, a indicação dos analistas da iFood consideraram somente o ponto ótimo relacionado ao leadtime. Contudo, seriam notados os seguintes impactos negativos dessa decisão:
+- O leadtime médio passaria de 96 minutos (se a iFood realizasse todas as entregas diárias utilizando somente veículos considerados mais poluentes) para 101 minutos (caso realizasse as entregas utilizando ambos os tipos de veículos).
+- O número de reclamações dos solicitantes em relação ao tempo das entregas teria um aumento de 0,17%, sendo que esse percentual geraria um prejuízo de $10.000 mensais para a empresa.
+- Existiria um impacto negativo na imagem da empresa devido aos atrasos.
+Por sua vez, seriam notados os seguintes impactos positivos dessa decisão:
+- Os valores repassados para os entregadores de veículos menos poluentes não seria maior do que os valores repassados para os outros entregadores.
+- A iFood melhoraria os níveis do seu inventário de emissões de Gases de Efeito Estufa (GEE). (Esse inventário soma todos os níveis de emissão, tanto os de responsabilidade direta quanto indireta da empresa.)
+- A iFood economizaria cerca de $150.000 anuais em compra de créditos de carbono da startup ambiental brasileira Moss.Earth. A compra de créditos está relacionada ao objetivo de tornar 100% dos pedidos da iFood neutros em emissão de gases do efeito estufa e compensar os gases emitidos.
+- Haveria redução no número de ações jucidiais, devido ao histórico menor em número de acidentes com os colaboradores considerando o modelo híbrido.
+- Existiria um impacto positivo na imagem da empresa</p>
+<p>ATIVIDADE 10: Você se tornou um dos Conselheiros de Administração da iFood e precisa decidir entre o modelo de entrega somente considerando veículos a combustão e o modelo de entrega híbrido. Qual seria a motivação da sua decisão considerando os impactos financeiros, sociais, ambientais e de imagem relacionados à sua escolha? Você consegue identificar outros impactos negativos ou positivos para essa situação?</p>
+<p>OITAVA ETAPA – UNIDADES DE MANUTENÇÃO DE ESTOQUE
+A iFood necessita manter no seu aplicativo as descrições dos itens que podem ser solicitados pelos seus clientes. SKU é a sigla para Stock Keeping Unit (Unidade de Manutenção de Estoque) e é uma referência ou código identificador atribuído a um item disponibilizado no aplicativo. Seu uso facilita o gerenciamento, a localização e o fluxo de produtos, já que permite identificar os itens por suas características. No caso da iFood, os SKU são gerados automaticamente a partir de uma máscara padrão obtida a partir das informações cadastradas pelos restaurantes no aplicativo.
+Na reformulação dos seus processos internos, a iFood definiu as seguintes características para definição dos SKU´s: Restaurante, Produto, Tamanho, Volume-Padrão, Temperatura, Tipo Material. (Ex.: Restaurante: Sushi Liberdade, Produto: Coca-Cola Zero, Tamanho: 300ml, Volume-Padrão e empilhamento máximo: Pequeno-03, Temperatura: Frio.)
+O seguinte modelo de dados é seguido pelo aplicativo:
+Máscara
+“RRRRR” Máscara
+“PPPPPP” Máscara
+“T” Máscara
+“VEE” Máscara
+“C”
+Restaurante Código do Restaurante
+(campo chave no aplicativo) Produto Código do Produto
+(Campo chave na tabela de produtos do restaurante) Tamanho Código Tamanho do Item Volume Padrão para transporte (V) e empilhamento Máximo (EE) Código Volume Temperatura Código da Temperatura
+Sushi Liberdade SULIB Coca-Cola Zero CCOLAZ 300ml 2 Pequeno – Empilhamento Max. 3 P03 Frio F
+Sushi Liberdade SULIB Coca-Cola Normal CCOLAN 2L 4 Grande – Empilhamento Máx. 1 G01 Frio F
+Pizzaria Itália PIITA Pizza Moda PIZMOD Média 2 Médio – Empihamento Máx. 10 M10 Quente Q
+Hamburgueria Marta HAMAR X-Salada Especial XSALAE Único U Médio – Empilhamento Máx. 5 M05 Quente Q
+Pizzaria Itália PIITA Pizza Portuguesa PIZPOR Brotinho 1 Pequeno – Empilhamento Máx 10 P10 Quente Q
+Sushi Liberdade SULIB Sashimi SASHIM 24 um. 3 Médio – Empilhamento Máx. 2 M02 Ambiente A
+Hamburgueria Marta HAMAR Batata Frita BATFRI Pequeno 1 Pequeno – Empilhamento Máx. 4 P04 Quente Q</p>
+<p>Atividade 11: Considerando que os SKU´s do aplicativo da iFood são formados utilizando a seguinte máscara padrão “RRRRRPPPPPPTVEEC”, apresente os SKU´s dos seguintes produtos abaixo:
+UNIDADES DE MANUTENÇÃO DE PRODUTOS EM ESTOQUE
+SKU referente à Coca-Cola Zero, 300ml do Sushi Liberdade<br />
+SKU referente ao X-Salada Especial da Hamburgueria Marta</p>
+<p>Atividade 12: Qual a diferença do SKU para o Código de Barras? Por que existem essas duas formas de identificação do produto?</p>
+<p>NOVA ETAPA – DETERMINAÇÃO DOS CUSTOS DE TRANSPORTE
+O aplicativo da iFood está testando formas de otimar o custo das entregas por bairros na cidade de São Paulo. No caso do bairro Guaianases, este possui 4 grandes condomínios e apenas 3 pizzarias que atendem à região. Contudo, principalmente devido a existência do parque Vila do Rodeio e de um rio nesse bairro, as vias de transporte apresentam-se heterogêneas, permitindo configurações distintas de possibilidades de entregas entre motocicletas, carros e/ou patinetes elétricas.
+Na Figura 1 é apresentada a estrutura descrita para o bairro Guaianases em São Paulo:</p>
+<p>Figura 3: Estrutura do bairro Guaianases na cidade de São Paulo</p>
+<p>Devido às diversas possibilidades de configurações de entrega, os custos de transporte para a iFood relativos aos pedidos realizados entre os restaurantes e os condomínios são bem distintos, conforme demonstra a tabela a seguir:
+CUSTOS DE TRANSPORTE (R$)
+Origem x Destino
+Condomínio 1 Condomínio 2 Condomínio 3 Condomínio 4
+Restaurante 1 2,40 2,60 1,40 0,60
+Restaurante 2 1,80 2,40 1,80 0,40
+Restaurante 3 1,60 1,20 1,00 1,60</p>
+<p>Em determinado momento do dia foram recebidos 55 pedidos, sendo: 10 para o “condomínio 1”, 20 para o “condomínio 2”, 10 para o “condomínio 3“ e 15 para o “condomínio 4”:
+DEMANDAS DE PEDIDOS DOS CLIENTES (Un.)
+Condomínio 1 Condomínio 2 Condomínio 3 Condomínio 4
+10 20 10 15</p>
+<p>Por sua vez, os pedidos serão atendidos da seguinte forma: 8 pelo “restaurante 1”, 30 pelo “restaurante 2” e 17 pelo “restaurante 3”.
+PEDIDOS A SEREM ATENDIDOS PELOS RESTAURANTES (Un.)
+Restaurante 1 Restarurante 2 Restaurante 3
+8 30 17</p>
+<p>O algoritmo do aplicativo da iFood prioriza as entregas considerando o menor custo de transporte, a partir do sistema vogel.
+Atividade 13: Quantos pedidos de cada um dos restaurantes serão entregues a cada um dos condomínios, considerando a regra de priorização definida pelo algoritmo do aplicativo iFood?
+Uma explicação sobre a aplicação do método vogel está disponível em: <a href="https://www.youtube.com/watch?v=GRTLiJL0hdQ" class="uri">https://www.youtube.com/watch?v=GRTLiJL0hdQ</a></p>
+<pre><code>PEDIDOS ENTREGUES
+Restaurante 1   Restaurante 2   Restaurante 3</code></pre>
+<p>Condomínio 1<br />
+Condomínio 2<br />
+Condomínio 3<br />
+Condomínio 4</p>
+<p>DÉCIMA ETAPA – PRECARIZAÇÃO DO TRABALHO
+A Organização Internacional do Trabalho (OIT) e especialistas elencam alguns cenários que são indicativos de precarização nas relações de trabalho. São eles:
+1 - Insegurança no mercado de trabalho por falta de oportunidade;
+2 - Insegurança no trabalho devido à falta de proteção adequada caso venha a perder o posto de trabalho;
+3 - Insegurança no trabalho devido à dificuldade de continuar a exercer a atividade por falta de qualificação;
+4 - Condições precárias de segurança ocupacional e saúde;
+5 - Falta de acesso à educação básica e treinamento vocacional;
+7 - Insegurança de renda, no presente e no futuro; e
+8 - Insegurança quanto à possibilidade de ter os direitos coletivos da categoria representados por um sindicato.
+A iFood mantém em seu site (<a href="https://news.ifood.com.br/precarizacao-ifood/" class="uri">https://news.ifood.com.br/precarizacao-ifood/</a>) a descrição de diversas ações que visam mitigar cada um dos indicativos de precarização nas relações de trabalho relacionados anteriormente.</p>
+<p>Atividade 14: As ações relatadas pela iFood são coerentes e suficientes para mitigação dos indicativos de precarização nas relações de trabalho relacionados pela OIT? Quando observamos a atuação da iFood nas nossas cidades, identificamos que essas ações são realmente aplicadas? Existe alguma ação adicional que a iFood poderia considerar?</p>
+</div>
 </div>
