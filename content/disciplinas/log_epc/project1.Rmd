@@ -20,6 +20,10 @@ Entender definições e fundamentos que compõe os conceitos `Logística` e `Ges
 
 Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de `Logística` e `Gestão da Cadeia de Suprimentos` com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica.
 
+> Esta etapa do projeto integrador vale 30 pontos
+
+O prazo para conclusão desta atividade será dia **27/06**.
+
 A `iFood` revolucionou o processo de delivery de refeições no Brasil. Em apenas seis meses da criação do aplicativo de pedidos, somente na cidade de São Paulo, a empresa já contava com cardápios de 650 restaurantes. Contudo, nos primeiros meses de atividade, os analistas da `iFood` identificaram diversas reclamações específicas dos clientes de um desses restaurantes: o **Sushi Liberdade**. Havia relatos de **atrasos nas entregas**, o que ocasionava grande número de reclamações no aplicativo. A situação era complicada para o restaurante, sendo que em alguns casos havia até mesmo a necessidade de **cancelamentos e restituição do valor financeiro aos clientes**. O restaurante acusava os **colaboradores responsáveis pela entrega de não prestarem o serviço** adequadamente, mas a `iFood` desconfiava dessa informação uma vez que não havia registros de reclamações de outros restaurantes.
 
 A diretoria da `iFood`, preocupada com as diversas reclamações e com a possibilidade de **perder o restaurante para um concorrente**, decidiu que era muito importante avaliar as **causas especiais** relacionadas às entregas com tempo maior do que os 120 minutos (*leadtime*[^1]) prometidos pelo aplicativo. Foi contratada uma consultoria independente, uma vez que esse fato causava também **graves prejuízos à imagem da `iFood`**. Para evitar maiores prejuízos à `iFood`, o restaurante Sushi Liberdade foi **cancelado da plataforma imediatamente** para que essa investigação apontasse os responsáveis, apesar de ter redirecionado seu funcionamento para o atendimento a pedidos para entrega recentemente.
