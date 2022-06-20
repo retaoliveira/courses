@@ -2,7 +2,7 @@
 date: "2022-05-09T00:00:00+01:00"
 draft: false
 menu:
-  log_adm:
+  log_epc:
     parent: Projetos
     weight: 5
 title: Projeto Integrador - Etapa 2
