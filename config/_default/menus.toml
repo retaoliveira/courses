@@ -37,16 +37,21 @@
   
 [[main]]
   parent = "Cursos"
+  name = "Open and Reproducible Science"
+  url = "cursos/open_science/"
+  weight = 10
+
+[[main]]
+  parent = "Cursos"
   name = "Introdução ao R"
   url = "cursos/intro_r/"
-  weight = 10
-  
+  weight = 20
   
 [[main]]
   parent = "Cursos"
   name = "Sistemas de Suporte à Decisão Espacial"
   url = "cursos/spatial/"
-  weight = 20
+  weight = 40
   
 [[main]]
   parent = "Cursos"
@@ -78,18 +83,23 @@
 #  url = "disciplinas/log/"
 #  weight = 10
 
-
 [[main]]
   parent = "Disciplinas"
   name = "Análise de dados aplicada ao processo decisório - PPGA - 2022/1"
   url = "disciplinas/dados_pos_2022/"
   weight = 30
   
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Introdução ao R - ADM - 2021/2"
-#  url = "disciplinas/intror_adm/"
-#  weight = 40
+[[main]]
+  parent = "Disciplinas"
+  name = "Reprodutibilidade e colaboração em ciência - PPGA - 2022/2"
+  url = "disciplinas/rc/"
+  weight = 50
+
+[[main]]
+  parent = "Disciplinas"
+  name = "Introdução ao R - PPGA - 2022/2"
+  url = "disciplinas/r_pos_2022/"
+  weight = 40
 
 [[main]]
   parent = "Disciplinas"

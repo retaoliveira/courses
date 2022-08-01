@@ -1,0 +1,24 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  open_science:
+    parent: 1 - Introdução
+    weight: 10
+title: História da Ciência
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+<iframe width="1166" height="656" src="https://www.youtube.com/embed/mXX2xS7xv1I" title="História da Ciência para o Ensino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1166" height="656" src="https://www.youtube.com/embed/o_lVf13LiMc" title="O que é História da Ciência?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1166" height="656" src="https://www.youtube.com/embed/QHxPVRdFhEw" title="Teorias da história (positivismo, marxismo, annales, micro-história e história oral)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
