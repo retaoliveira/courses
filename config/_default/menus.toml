@@ -37,7 +37,7 @@
   
 [[main]]
   parent = "Cursos"
-  name = "Open and Reproducible Science"
+  name = "Ciência aberta e reproutível"
   url = "cursos/open_science/"
   weight = 10
 
