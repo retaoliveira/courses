@@ -101,11 +101,10 @@
   url = "disciplinas/r_pos_2022/"
   weight = 30
 
-[[main]]
-  parent = "Disciplinas"
-  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"
-  url = "disciplinas/sdss/"
-  weight = 50
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"#  url = "disciplinas/sdss/"
+#  weight = 50
 
 [[main]]
   parent = "Disciplinas"

@@ -16,7 +16,7 @@ weight: 10
 
 A intenção desta disciplina é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostos `projetos incrementais` para apreensão do conhecimento.
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. É proposto um `projeto integrador` para apreensão do conhecimento.
 
 ## Ementa da disciplina
 
@@ -34,15 +34,27 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros síncronos acontecerão nas **terças-feiras**, de **08:00 às 12:00h**. Acontecerão na plataforma `Teams`. Vocês poderão acessar o servidor da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3aMP6yYq2Q8ZbGcsY-Daeh0wNcbWQ0WgNMjxk98MTFJ081%40thread.tacv2/conversations?groupId=b1d6c669-b6bb-4279-a2d4-80d00ed05efd&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:15h**.
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 19/10| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R; RMarkdown.|
-| 26/10| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. |
-| 09/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
-| 16/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados|
-| 23/11| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos| 
+| 09/08| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
+
+| 16/08| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **PI**
+
+
+| 23/08| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
+
+| 30/08| **Atividade 2**| 
+
+| 06/09| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
+
+| 13/09| Projeto integrador: base de dados| 
+
+| 20/09| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos|
+
+| 27/09| Apresentação do projeto integrador| 
+
 | **Total de Horas** | 30 horas    |
 
 ## Proposta de avaliação da aprendizagem
@@ -51,14 +63,15 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 | Pontos | Entrega | Atividade                                                                                                                                                                                                                                                    |
 |--------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 20 | 19/10 | Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
-| 20 | 26/10 | Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
-| 20 | 09/11 | Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes
-| 20 | 23/11 | Lab 4 – Argumentos lógicos - ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos
-| 5 | 19/10 | Atividade 1 
-| 5 | 26/10 | Atividade 2 
-| 5 | 09/11 | Atividade 3 
-| 5 | 23/11 | Atividade 4 
+| 10 |  Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
+| 10 |  Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
+| 10 |  Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes
+| 10 |  Lab 4 – Argumentos lógicos - ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos
+| 5 |  Atividade 1 
+| 5 |  Atividade 2 
+| 5 |  Atividade 3 
+| 5 |  Atividade 4 
+| 40 |  Projeto Integrador
 | TOTAL: |         | 100 pontos
 
 ## Requisitos básicos e expectativas iniciais
@@ -71,7 +84,7 @@ A avaliação priorizará o esforço e a criatividade apresentados em detrimento
 
 ## Recursos necessários
 
-Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone. Os softwares a serem instalados são:
+Computador com Sistema Operacional à escolha do estudante para desenvolver as atividades. Os softwares a serem instalados são:
 
 -   R (Windows) - <https://cran.r-project.org/bin/windows/base/>
 -   RStudio (Windows) - <https://rstudio.com/products/rstudio/download/>
@@ -111,12 +124,6 @@ Se o seu email não contempla alguma questão pessoal/individual, mas sim questi
 > Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
 ## Políticas institucionais e da disciplina
-
-O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `discussão` no `Teams`. 
-
-1.  Resposta a perguntas postadas pelos estudantes no canal `discussão` no `Teams`.
-2.  Participação em discussões e trabalhos em grupo na sala de aula.
-3.  Identificação de problemas em relação à documentação apresentada.
 
 Os estudantes e professores têm a responsabilidade de manter um ambiente de aprendizagem adequado e motivante. Aqueles que não aderirem a tais padrões de comportamento podem estar sujeitos ao regime disciplinar da instituição. A cortesia profissional e a sensibilidade são especialmente importantes no que diz respeito a indivíduos e discussões que lidam com diferenças de raça, cor, cultura, religião, credo, política, status de veterano, orientação sexual, gênero, identidade e expressão de gênero, idade, deficiência e nacionalidades. As listas de classes são fornecidas ao instrutor com o nome legal do aluno. Terei prazer em honrar seu pedido de dirigir-se a você por um nome alternativo ou pronome de gênero. Por favor, me informe essa preferência no início do semestre para que eu possa fazer as mudanças apropriadas em seus registros.
 

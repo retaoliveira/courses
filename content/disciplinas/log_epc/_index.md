@@ -44,50 +44,44 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**. Os encontros acontecerão na plataforma `Teams`. Vocês poderão acessar a sala da disciplina pelo [link](https://teams.microsoft.com/l/channel/19%3a7C-HRfZ6jj8HwXf4p4T43lXROeBF2iERlTjicYOtU0E1%40thread.tacv2/Geral?groupId=5da93f1b-ae42-4d98-b553-d0b5d8b130ee&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 28/03              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 04/04              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 11/04              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 18/04              |2h|Nível de serviço logístico, desempenho e ICT.
-| 25/04              |2h|KPIs em gestão de processos de produção e suprimento 
-| 02/05              |2h|Logística urbana.
-| 09/05              |2h|Logística urbana.
-| 16/05              |2h|Transportes e distribuição física.
-| 23/05              |2h|Transportes e distribuição física.
-| 30/05              |2h|Gestão de estoques e armazenagem
-| 06/06              |2h|Localizações logísticas.
-| 13/06              |2h|Localizações logísticas.
-| 20/06              |2h|Custos logísticos.
-| 27/06              |2h|Custos logísticos.
-| 04/07              |2h|Custos logísticos.
-| 11/07              |2h|Logística reversa, verde e sustentável.
-| 18/07              |2h|Exame especial
+| 22/08              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 29/08              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 05/09              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 12/09              |2h|Nível de serviço logístico, desempenho e ICT.
+| 19/09              |2h|KPIs em gestão de processos de produção e suprimento 
+| 26/09              |2h|Logística urbana.
+| 03/10              |2h|Logística urbana.
+| 10/10              |2h|Transportes e distribuição física.
+| 17/10              |2h|Transportes e distribuição física.
+| 24/10              |2h|Gestão de estoques e armazenagem
+| 31/10              |2h|Localizações logísticas.
+| 07/11              |2h|Localizações logísticas.
+| 14/11              |2h|Custos logísticos.
+| 21/11              |2h|Custos logísticos.
+| 28/11              |2h|Custos logísticos.
+| 05/12              |2h|Logística reversa, verde e sustentável.
+| 12/12              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
 
 Pontos|	Entrega|	Atividade
 ------|--------|-----------
-10| 18/04 | AA1 - Nivel de serviço logístico
-10| 25/04 | AA2 - TICs e KPIs
-10| 09/05 | AA3 – Logística Urbana
-10| 23/05 | AA4 - Gestão de Transportes
-10| 30/05 | AA5 - Gestão de estoques e armazenagem
-10| 04/07 | AA6 - Localização e custos logísticos
-10| 11/07 | AA7 - Multivarejo e omnichanel
-30| 11/07 | PI1
+10|  AA1 - Nivel de serviço logístico
+10|  AA2 - TICs e KPIs
+10|  AA3 – Logística Urbana
+10|  AA4 - Gestão de Transportes
+10|  AA5 - Gestão de estoques e armazenagem
+10|  AA6 - Localização e custos logísticos
+10|  AA7 - Multivarejo e omnichanel
+30|  PI
 TOTAL:| |	100 pontos
 
 ## Recursos necessários
-
-Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.
-
-Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.
-
-Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 
 Site da disciplina: http://places.education
 
@@ -127,18 +121,15 @@ Toda comunicação individual com a docente deverá acontecer por meio do email 
 
 Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
 
-1. Verifique se a sua dúvida já foi respondida em algum post no `Fórum de Dúvidas` no SIGAA.
-2. Se não houver discussões sobre o tópico em questão, faça um novo post no mesmo canal. 
+
+Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
+
+1.  Verifique se a sua dúvida já foi respondida em algum post no `Teams`
+2.  Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`.
 
 > Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
 ## Políticas institucionais e da disciplina
-
-O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `Dúvidas` no `SIGAA`. Sua participação no Fórum será considerada para a avaliação do seu `Engajamento`. 
-
-1. Resposta a perguntas postadas pelos estudantes no canal `Dúvidas` no `SIGAA`. 
-2. Participação em discussões e trabalhos em grupo na sala de aula. 
-3. Identificação de problemas em relação à documentação apresentada.
 
 Os estudantes e professores têm a responsabilidade de manter um ambiente de aprendizagem adequado e motivante. Aqueles que não aderirem a tais padrões de comportamento podem estar sujeitos ao regime disciplinar da instituição. A cortesia profissional e a sensibilidade são especialmente importantes no que diz respeito a indivíduos e discussões que lidam com diferenças de raça, cor, cultura, religião, credo, política, status de veterano, orientação sexual, gênero, identidade e expressão de gênero, idade, deficiência e nacionalidades. As listas de classes são fornecidas ao instrutor com o nome legal do aluno. Terei prazer em honrar seu pedido de dirigir-se a você por um nome alternativo ou pronome de gênero. Por favor, me informe essa preferência no início do semestre para que eu possa fazer as mudanças apropriadas em seus registros.
 
