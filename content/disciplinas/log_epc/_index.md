@@ -58,13 +58,14 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 | 10/10              |2h|Transportes e distribuição física.
 | 17/10              |2h|Transportes e distribuição física.
 | 24/10              |2h|Gestão de estoques e armazenagem
-| 31/10              |2h|Localizações logísticas.
+| 31/10              |2h|Gestão de estoques e armazenagem
 | 07/11              |2h|Localizações logísticas.
-| 14/11              |2h|Custos logísticos.
+| 14/11              |2h|Localizações logísticas.
 | 21/11              |2h|Custos logísticos.
 | 28/11              |2h|Custos logísticos.
-| 05/12              |2h|Logística reversa, verde e sustentável.
-| 12/12              |2h|Exame especial
+| 05/12              |2h|Custos logísticos.
+| 12/12              |2h|Logística reversa, verde e sustentável.
+| 19/12              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 

@@ -83,16 +83,16 @@
 #  url = "disciplinas/log/"
 #  weight = 10
 
-[[main]]
-  parent = "Disciplinas"
-  name = "Análise de dados aplicada ao processo decisório - PPGA - 2022/1"
-  url = "disciplinas/dados_pos_2022/"
-  weight = 60
+# [[main]]
+#   parent = "Disciplinas"
+#   name = "Análise de dados aplicada ao processo decisório - PPGA - 2022/1"
+#   url = "disciplinas/dados_pos_2022/"
+#   weight = 60
   
 [[main]]
   parent = "Disciplinas"
-  name = "Reprodutibilidade e colaboração em ciência - PPGA - 2022/2"
-  url = "disciplinas/rc/"
+  name = "Quarto: um novo sistema para publicação técnica e científica - PPGA - 2022/2"
+  url = "disciplinas/quarto/"
   weight = 40
 
 [[main]]
