@@ -52,8 +52,8 @@ Os encontros acontecerão nas **terças-feiras**, de **08:30 às 12:10h**. Serã
 
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (**Labs e atividades de aprendizagem**) e por meio da elaboração de um projeto transversal aos objetivos (**projeto integrador**).
 
-| Pontos | Entrega | Atividade
-|--------|---------|-------------|
+| Pontos |  Atividade
+|--------|--------------|
 | 10 |  Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
 | 10 |  Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
 | 10 |  Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes
