@@ -1,0 +1,26 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log_epc:
+    parent: Encontros Síncronos
+    weight: 5
+title: Logística Urbana - primeiros passos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 60
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://log2022.github.io/class05/', height = "400px")
+```
+
+[LINK](https://log2022.github.io/class05/)
+
+
+<iframe width="1166" height="656" src="https://www.youtube.com/embed/2imYjIbO8Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

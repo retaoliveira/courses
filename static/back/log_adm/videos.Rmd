@@ -1,0 +1,31 @@
+---
+date: "2021-06-24T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Vídeos
+    weight: 5
+title: "Introdução à logística"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+Vídeos desenvolvidos pela turma para o Projeto 1
+
+[Grupo 1](https://www.youtube.com/watch?v=ytMPBgBm5E4&ab_channel=CristianoMesseder)
+
+[Grupo 2](https://www.canva.com/design/DAE0cAc4MrI/c85Qlg9X2cJbZwy2J7oZxA/watch?utm_content=DAE0cAc4MrI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+
+[Grupo 3](https://www.youtube.com/watch?v=8dywv6VcYwU)
+
+[Grupo 4](https://www.youtube.com/watch?v=RmMIHYMJML8)
+
+[Grupo 5](https://youtu.be/RmMIHYMJML8)
+
+
