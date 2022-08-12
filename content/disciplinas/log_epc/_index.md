@@ -1,7 +1,7 @@
 ---
 date: "2022-28-03T00:00:00Z"
 draft: false
-lastmod: "2022-28-03T00:00:00Z"
+lastmod: "2022-08-12T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
@@ -70,8 +70,8 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
 
-Pontos|	Entrega|	Atividade
-------|--------|-----------
+Pontos|	Atividade
+------|-----------
 10|  AA1 - Nivel de serviço logístico
 10|  AA2 - TICs e KPIs
 10|  AA3 – Logística Urbana
@@ -79,8 +79,8 @@ Pontos|	Entrega|	Atividade
 10|  AA5 - Gestão de estoques e armazenagem
 10|  AA6 - Localização e custos logísticos
 10|  AA7 - Multivarejo e omnichanel
-30|  PI
-TOTAL:| |	100 pontos
+30|  Projeto Integrador
+TOTAL:| 100 pontos
 
 ## Recursos necessários
 
@@ -114,21 +114,11 @@ Site da disciplina: http://places.education
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **sete grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. A professora indicara a plataforma que permitirá o desenvolvimento das atividades/projeto de maneira colaborativa, com registro das discussões.  
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. 
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-EPC>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
-
-Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
-
-
-Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
-
-1.  Verifique se a sua dúvida já foi respondida em algum post no `Teams`
-2.  Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`.
-
-> Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-EPC>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
 
 ## Políticas institucionais e da disciplina
 

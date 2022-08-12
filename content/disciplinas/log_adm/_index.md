@@ -75,7 +75,7 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas 
 | 26/09              |2h|Logística urbana.
 | 28/09              |2h|Logística urbana.
 | 03/10              |2h|Logística urbana.
-| 5/10              |2h|Transportes e distribuição física.
+| 5/10               |2h|Transportes e distribuição física.
 | 10/10              |2h|Transportes e distribuição física.
 | 17/10              |2h|Transportes e distribuição física.
 | 19/10              |2h|Transportes e distribuição física.
@@ -106,8 +106,8 @@ Pontos|	Atividade
 10|  AA5 - Gestão de estoques e armazenagem
 10|  AA6 - Localização e custos logísticos
 10|  AA7 - Multivarejo e omnichanel
-30|  PI
-TOTAL:| |	100 pontos
+30|  Projeto Integrador
+TOTAL:| 100 pontos
 
 ## Recursos necessários
 
@@ -141,18 +141,11 @@ Site da disciplina: http://places.education
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **sete grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. A professora indicara a plataforma que permitirá o desenvolvimento das atividades/projeto de maneira colaborativa, com registro das discussões.  
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. A professora indicara a plataforma que permitirá o desenvolvimento das atividades/projeto de maneira colaborativa, com registro das discussões.  
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-ADM>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
-
-Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
-
-1. Verifique se a sua dúvida já foi respondida em algum post no `Fórum de Dúvidas` no SIGAA.
-2. Se não houver discussões sobre o tópico em questão, faça um novo post no mesmo canal. 
-
-> Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-ADM>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
 
 ## Políticas institucionais e da disciplina
 
