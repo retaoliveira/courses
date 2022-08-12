@@ -1,0 +1,24 @@
+---
+date: "2022-04-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos_2022:
+    parent: Encontros Síncronos
+    weight: 6
+title: Visualizando dados categóricos e contínuos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 60
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://r-decision.github.io/class05/#1', height = "400px")
+```
+
+[LINK](https://r-decision.github.io/class05/#1)
+

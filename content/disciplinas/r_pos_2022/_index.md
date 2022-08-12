@@ -3,7 +3,7 @@ title: "Introdução ao R"
 draft: no
 date: '2021-05-15T00:00:00Z'
 menu:
-  intror_master:
+  r_pos_2022:
     name: Organização do curso
     weight: 10
 lastmod: '2022-08-12T00:00:00Z'
