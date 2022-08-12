@@ -16,7 +16,7 @@ weight: 10
 
 A intenção desta disciplina é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. É proposto um `projeto integrador` para apreensão do conhecimento.
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos e em Problemas`. É proposto um `projeto integrador` para apreensão do conhecimento.
 
 ## Ementa da disciplina
 
@@ -37,10 +37,9 @@ Esta disciplina tem por objetivo formar estudantes aptos a:
 - Criar e editar documentos como apresentações, artigos, blogs e websites   
 - Utilizar o Rstudio + Quarto para gerar instrumentos de comunicação e representação de dados em colaboração   
 
+## Planejamento de encontros
 
-## Planejamento de encontros síncronos
-
-Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:00h**.
+Os encontros acontecerão nas **terças-feiras**, de **08:30 às 11:15h**. Serão realizados na Sala A do PPGA. 
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
@@ -49,53 +48,20 @@ Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:0
 25/10|Code chunks, Markdown, renderização.|
 01/11|Links, figuras, layout, tabelas, notas em destaque e referência cruzada.|
 08/11|Zotero, citações e lista de referências. Publicação de documentos.|
-
-
-| **Data**           | **Descrição da Atividade**   
----------------------|---------------------------
-| 16/08| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
-
-| 23/08| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **PI**
-
-
-| 30/08| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
-
-| 06/09| **Atividade 2**| 
-
-| 13/09| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
-
-| 20/09| Projeto integrador: base de dados| 
-
-| 27/09| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos|
-
-| 04/10| Apresentação do projeto integrador| 
-
-| **Total de Horas** | 30 horas    |
+| **Total de Horas** | 15 horas    |
 
 ## Proposta de avaliação da aprendizagem
 
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (projetos incrementais) e por meio da elaboração de um projeto transversal aos objetivos (projeto integrador).
 
-| Pontos | Entrega | Atividade                                                                                                                                                                                                                                                    |
-|--------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 10 |  Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
-| 10 |  Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
-| 10 |  Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes
-| 10 |  Lab 4 – Argumentos lógicos - ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos
-| 5 |  Atividade 1 
-| 5 |  Atividade 2 
-| 5 |  Atividade 3 
-| 5 |  Atividade 4 
+| Pontos | Entrega | Atividade
+|--------|---------|----------|
+| 15 |  Lab 1 – Introdução ao Quarto - primeiros passos 
+| 15 |  Lab 2 – Autoria de documentos, YAML e formatos - explorando diferentes possibilidades
+| 15 |  Lab 3 – Code chunks, Markdown, renderização. Links, figuras, layout, tabelas, notas em destaque e referência cruzada - incluindo conteúdos diversos
+| 15 |  Lab 4 – Zotero, citações e lista de referências. Publicação de documentos - documentos acadêmicos e técnicos e publicação de documentos.
 | 40 |  Projeto Integrador
-| TOTAL: |         | 100 pontos
-
-## Requisitos básicos e expectativas iniciais
-
-Os participantes não precisam apresentar conhecimento prévio de computação, pacotes estatísticos ou manejo de conjuntos de dados. Se você é daquelas pessoas que, como eu há muito pouco tempo atrás, arrepia ao ver `códigos` na sua frente e tem certeza que nasceu sem a capacidade desenvolver quaisquer análises que envolvam `linha de comando`, você está no lugar certo! Fique tranquilo pois a proposta é que todos consigam acompanhar a disciplina e diferentes competências e inteligências são muito bem vindas! Vamos desconstruir essa ideia de que analistas, gestores e engenheiros não são formados para usar linguagem computacional.
-
-Não quero que você se torne um desenvolvedor com este curso. Ele tem como proposta a ampliação das possibilidades de análise de sistemas organizacionais e suporte ao processo decisório. O `R` é uma linguagem acessível a todos.
-
-A avaliação priorizará o esforço e a criatividade apresentados em detrimento da finalização das propostas e projetos. Ou seja, para encorajar todos os estudantes, códigos com erros, mas bem elaborados, são um ótimo produto a ser entregue ao longo da disciplina, como forma de encorajar estudantes iniciantes.
+| TOTAL: | 100 pontos
 
 ## Recursos necessários
 
@@ -103,30 +69,25 @@ Computador com Sistema Operacional à escolha do estudante para desenvolver as a
 
 - R (Windows) - <https://cran.r-project.org/bin/windows/base/>
 - RStudio (Windows) - <https://rstudio.com/products/rstudio/download/>
-- Quarto CLI (Windows) - 
+- Quarto CLI (Windows) - <https://quarto.org/docs/get-started/>
 - Git - <https://git-scm.com/downloads>
 
 Os alunos deverão ter uma conta gratuita na plataforma `github.com`. Recomendamos também que se cadastrem no [Quarto Pub](https://quartopub.com/)
 
 A turma virtual do SIGAA será utilizada para postagens de conteúdos e outras comunicações.
 
-## Bibliografia recomendada sobre análise de dados aplicada a processos decisórios
+## Bibliografia recomendada sobre Quarto
 
 - ALLAIRE, J., TEAGUE, C., SCHEIDEGGER, C., XIE, Y., & DERVIEUX, C. Quarto (Version 0.3) [Computer software]. Disponível em https://doi.org/10.5281/zenodo.5960048 (www.quarto.org). Acesso em 10 ago. 2022.   
 - HORTON, Nicholas J.; KLEINMAN, Ken. Using R and RStudio for data management, statistical analysis, and graphics. Second edition. Boca Raton: CRC Press, Taylor & Francis Group, 2015.   
 - PARADIS, Emanuel. R for Beginners. Disponível em: https://www.nceas.ucsb.edu/files/ scicomp/ Dloads/RProgramming/BestFirstRTutorial.pdf . Acesso em: 12/11/2019.     
 - TEETOR, Paul. R cookbook: Proven recipes for data analysis, statistics, and graphics. Sebastopol: O'Reilly Media, Inc., 2011.   
-
-
-
-## Material adicional
-
-[R Project](https://www.r-project.org/)   
-[Reproductible research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+- [Quarto](https://quarto.org/)
+- [rstudio::conf 2022 Workshop - Getting started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) e [Github](https://github.com/jthomasmock/quarto-workshop)
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<R-PPGA>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<quarto-PPGA>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
 
 
 ## Políticas institucionais e da disciplina

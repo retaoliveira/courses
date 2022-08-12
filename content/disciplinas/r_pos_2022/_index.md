@@ -1,6 +1,6 @@
 ---
 title: "Introdução ao R"
-draft: no
+draft: false
 date: '2021-05-15T00:00:00Z'
 menu:
   r_pos_2022:
@@ -16,7 +16,7 @@ weight: 10
 
 A intenção desta disciplina é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. É proposto um `projeto integrador` para apreensão do conhecimento.
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos e em Problemas`. É proposto um `projeto integrador` para apreensão do conhecimento.
 
 ## Ementa da disciplina
 
@@ -30,36 +30,27 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 Por meio desta disciplina, os alunos desenvolverão competências para:
 
 1. Entender a linguagem básica de programação no R. 
-2. Conhecer as funções básicas para manipular bases de dados.
+2. Conhecer as funções básicas para manipular e representar dados.
 
-## Planejamento de encontros síncronos
+## Planejamento de encontros 
 
-Os encontros síncronos acontecerão nas **terças-feiras**, de **08:15 às 12:15h**.
+Os encontros acontecerão nas **terças-feiras**, de **08:30 às 12:10h**. Serão realizados na Sala A do PPGA.
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
 | 16/08| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
-
-| 23/08| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **PI**
-
-
+| 23/08| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **projeto integrador**
 | 30/08| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
-
 | 06/09| **Atividade 2**| 
-
 | 13/09| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
-
-| 20/09| Projeto integrador: base de dados| 
-
-| 27/09| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos|
-
-| 04/10| Apresentação do projeto integrador| 
-
+| 20/09| **Projeto integrador**: base de dados| 
+| 27/09| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos **Lab4**. **Atividade 4** para ser desenvolvida de maneira assíncrona.|
+| 04/10| Apresentação do **projeto integrador**| 
 | **Total de Horas** | 30 horas    |
 
 ## Proposta de avaliação da aprendizagem
 
-A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (projetos incrementais) e por meio da elaboração de um projeto transversal aos objetivos (projeto integrador).
+A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (**Labs e atividades de aprendizagem**) e por meio da elaboração de um projeto transversal aos objetivos (**projeto integrador**).
 
 | Pontos | Entrega | Atividade                                                                                                                                                                                                                                                    |
 |--------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
