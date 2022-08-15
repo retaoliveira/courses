@@ -20,7 +20,7 @@ weight: 9
 - E aí, R? Entendendo o ambiente de trabalho
 - Primeiros documentos no R - RMarkdown
 
-## Esta atividade deverá ser realizada até dia **19/10**, quando teremos nosso primeiro encontro síncrono. São propostas as seguintes atividades:
+## São propostas as seguintes atividades:
 
 1. Instale o R, o RStudio e o Git no seu computador - [Link](https://www.places.education/cursos/intro_r/install/)
 2. Crie uma conta no Github, caso ainda não tenha - [Link](https://www.places.education/cursos/intro_r/github/)
@@ -32,7 +32,7 @@ weight: 9
 
 ## A(s) entrega(s) será(ão):
 - **Arquivo .Rmd** referente à **tarefa 5** desta atividade pela tarefa no SIGAA.
-- Explorar toda a documentação, tentar solucionar dúvidas com os colegas e **trazer dúvidas para nosso encontro**!
+- Explorar toda a documentação, tentar solucionar dúvidas com os colegas e **trazer dúvidas para nosso próximo encontro**!
 
 <hr></hr>
 
