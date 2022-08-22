@@ -4,11 +4,11 @@ draft: true
 menu:
   r_pos_2022:
     parent: Unidade 3
-    weight: 11
+    weight: 8
 title: Atividade 3
 toc: true
 type: docs
-weight: 11
+weight: 8
 ---
 
 ## A **Unidade 3** é estruturada considerando os seguintes tópicos:

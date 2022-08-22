@@ -1,17 +1,16 @@
 ---
 title: "Lab 4.2"
-draft: no
+draft: true
 date: '2021-10-15T00:00:00+01:00'
 menu:
   intror_master:
     parent: Unidade 4
-    weight: 19
+    weight: 17
 toc: yes
 type: docs
-weight: 19
+weight: 17
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 <div id="TOC">
 
@@ -41,14 +40,14 @@ weight: 19
 <p>Rode o código para gerar o histograma a seguir:</p>
 <pre class="r"><code># library
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.7
-## v tidyr   1.1.4     v stringr 1.4.0
-## v readr   2.0.2     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+## ✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+## ✔ tibble  3.1.8     ✔ dplyr   1.0.9
+## ✔ tidyr   1.2.0     ✔ stringr 1.4.0
+## ✔ readr   2.1.2     ✔ forcats 0.5.1
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code># Build dataset with different distributions
 data &lt;- data.frame(
   type = c(rep(&quot;variable 1&quot;, 1000), rep(&quot;variable 2&quot;, 1000)),
@@ -65,7 +64,7 @@ p &lt;- data %&gt;%
 
 p</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/disciplinas/intror_master/lab42_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/disciplinas/r_pos_2022/lab42_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 </div>
 <div id="transformação-com-dados-numéricos" class="section level2">
@@ -131,6 +130,6 @@ ggplot(data_plot_long) +
   geom_bar(aes(x = antes_depois, fill = dado), position = &quot;dodge&quot;) +
   coord_flip() +
   facet_wrap(~ genero)</code></pre>
-<p><img src="/disciplinas/intror_master/lab42_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="/disciplinas/r_pos_2022/lab42_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 </div>
