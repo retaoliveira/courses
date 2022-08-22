@@ -18,10 +18,15 @@ weight: 10
 
 ## Grupos de trabalho
 **Grupo 1**: Artur Abreu, Pedro Lemes, Arthur Joia e Gabriel Ramos
+
 **Grupo 2**: Amanda Nascimento, Jancler Adrano, Lucas Gomes, Maria Júlia Alves e Naiara Caetano
+
 **Grupo 3:** Amanda Evelyn, Aline Lacerda, Bárbara Silva e Isadora Oliveira
+
 **Grupo 4:** Marina Caroline, Rayssa Aparecida, Thayna Assis e Yara Bertilie
+
 **Grupo 5:** Arthus Ferraz, Mathias, Sebastião e Caroline
+
 **Grupo 6:** Renata, Webert, Taynara e Leonardo
 
 ## Definição intuitiva sobre "LOGÍSTICA"
