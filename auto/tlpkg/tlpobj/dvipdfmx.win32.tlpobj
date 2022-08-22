@@ -1,0 +1,13 @@
+name dvipdfmx.win32
+category TLCore
+revision 63570
+shortdesc win32 files of dvipdfmx
+containersize 334840
+containerchecksum a13896be762942f9641615d45ba560ec7dccd3aea49b108e27d36961ed4ba046c833a23a5073cbcc053a344da73c3b18281fc85412dd1048e6c42c94a74dd20f
+binfiles arch=win32 size=240
+ bin/win32/dvipdfm.exe
+ bin/win32/dvipdfmx.dll
+ bin/win32/dvipdfmx.exe
+ bin/win32/ebb.exe
+ bin/win32/extractbb.exe
+ bin/win32/xdvipdfmx.exe

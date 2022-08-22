@@ -10,5 +10,50 @@
 	    <atom:link href="https://retacourses.netlify.app/disciplinas/log_adm/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Aula 01 - 17/08</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/aula01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/aula01/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#grupos-de-trabalho&#34; id=&#34;toc-grupos-de-trabalho&#34;&gt;Grupos de trabalho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definição-intuitiva-sobre-logística&#34; id=&#34;toc-definição-intuitiva-sobre-logística&#34;&gt;Definição intuitiva sobre “LOGÍSTICA”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#apresentação&#34; id=&#34;toc-apresentação&#34;&gt;Apresentação&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;grupos-de-trabalho&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Grupos de trabalho&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Grupo 1&lt;/strong&gt;: Artur Abreu, Pedro Lemes, Arthur Joia e Gabriel Ramos
+&lt;strong&gt;Grupo 2&lt;/strong&gt;: Amanda Nascimento, Jancler Adrano, Lucas Gomes, Maria Júlia Alves e Naiara Caetano
+&lt;strong&gt;Grupo 3:&lt;/strong&gt; Amanda Evelyn, Aline Lacerda, Bárbara Silva e Isadora Oliveira
+&lt;strong&gt;Grupo 4:&lt;/strong&gt; Marina Caroline, Rayssa Aparecida, Thayna Assis e Yara Bertilie
+&lt;strong&gt;Grupo 5:&lt;/strong&gt; Arthus Ferraz, Mathias, Sebastião e Caroline
+&lt;strong&gt;Grupo 6:&lt;/strong&gt; Renata, Webert, Taynara e Leonardo&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;definição-intuitiva-sobre-logística&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definição intuitiva sobre “LOGÍSTICA”&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Otimização de processos e métodos com o objetivo de reduzir custos e tempo e melhorar o produto ou serviço entregue.&lt;/li&gt;
+&lt;li&gt;A logística possibilita levar qualquer coisa a qualquer lugar, de maneira a satisfazer os envolvidos.&lt;/li&gt;
+&lt;li&gt;A logística é a análise e metodologias que levam em conta fatores terrestres, políticos, econômicos e tecnológicos para sua aplicação.&lt;/li&gt;
+&lt;li&gt;Logística é o modo de organizar e distribuir recursos a fim de otimizar o tempo e proporcionar qualidade dos processos.&lt;/li&gt;
+&lt;li&gt;Gestão do processo produtivo que envolve o planejamento, armazenagem, mobilidade e rastreabilidade visando uma entrega de qualidade.&lt;/li&gt;
+&lt;li&gt;Armazenamento e transporte de produtos e serviços visando a otimização de processos e a redução dos custos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;apresentação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Apresentação&lt;/h2&gt;
+&lt;iframe src=&#34;https://log2022.github.io/class01&#34; width=&#34;672&#34; height=&#34;400px&#34; data-external=&#34;1&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://log2022.github.io/class01&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
