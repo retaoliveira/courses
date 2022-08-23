@@ -11,7 +11,6 @@ type: docs
 weight: 3
 ---
 
-[]()
 
 A **Unidade 2** é estruturada considerando os seguintes tópicos:
 
