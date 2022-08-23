@@ -1,11 +1,11 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   r_pos_2022:
     parent: Encontros
     weight: 60
-title: Encontro Síncrono 2
+title: Encontro 2
 weight: 60
 editor_options: 
   markdown: 
@@ -19,8 +19,8 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://intror2021.github.io/class02/', height = "500px")
+knitr::include_url('https://intror2022.github.io/class02/', height = "500px")
 ```
 
-[LINK](https://intror2021.github.io/class02/)
+[LINK](https://intror2022.github.io/class02/)
 
