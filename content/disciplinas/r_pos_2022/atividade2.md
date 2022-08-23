@@ -1,6 +1,6 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   r_pos_2022:
     parent: Unidade 2
@@ -11,6 +11,8 @@ type: docs
 weight: 3
 ---
 
+[]()
+
 A **Unidade 2** é estruturada considerando os seguintes tópicos:
 
 - Estrutura de dados no R; 
@@ -18,7 +20,7 @@ A **Unidade 2** é estruturada considerando os seguintes tópicos:
 - Visualização de dados no R.
 
 
-Esta atividade deverá ser realizada até dia **26/10**, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:
+São propostas as seguintes atividades:
 
 1. Faça o download do arquivo disponível no [link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeRUAZXugYhOqiO6lRHfbVYBYUZx8HUcj8vN538pmX0t4g?e=8UQAnq)
 2. Resolva as questões.
