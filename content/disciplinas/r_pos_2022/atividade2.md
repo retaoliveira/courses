@@ -4,11 +4,11 @@ draft: true
 menu:
   r_pos_2022:
     parent: Unidade 2
-    weight: 14
+    weight: 3
 title: Atividade 2
 toc: true
 type: docs
-weight: 14
+weight: 3
 ---
 
 A **Unidade 2** é estruturada considerando os seguintes tópicos:

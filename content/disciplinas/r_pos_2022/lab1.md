@@ -4,11 +4,11 @@ draft: false
 menu:
   r_pos_2022:
     parent: Unidade 1
-    weight: 7
+    weight: 2
 title: Lab 1
-toc: false
+toc: true
 type: docs
-weight: 7
+weight: 2
 ---
 
 ## A **Unidade 1** é estruturada considerando os seguintes tópicos:

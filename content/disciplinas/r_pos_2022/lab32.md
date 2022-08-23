@@ -5,10 +5,10 @@ date: '2021-10-15T00:00:00+01:00'
 menu:
   r_pos_2022:
     parent: Unidade 3
-    weight: 16
+    weight: 8
 toc: yes
 type: docs
-weight: 16
+weight: 8
 ---
 
 A **Unidade 3** é estruturada considerando os seguintes tópicos:

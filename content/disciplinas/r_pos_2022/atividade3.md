@@ -4,11 +4,11 @@ draft: true
 menu:
   r_pos_2022:
     parent: Unidade 3
-    weight: 8
+    weight: 6
 title: Atividade 3
 toc: true
 type: docs
-weight: 8
+weight: 6
 ---
 
 ## A **Unidade 3** é estruturada considerando os seguintes tópicos:
@@ -16,7 +16,7 @@ weight: 8
 - Estatística descritiva e mineração de dados
 
 
-## Esta atividade deverá ser realizada até dia **09/11**, quando teremos nosso segundo encontro síncrono. São propostas as seguintes atividades:
+## Esta atividade deverá ser realizada antes do nosso próximo encontro síncrono. São propostas as seguintes atividades:
 
 1. Faça o download do arquivo disponível no [link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EX0uowQRoZZMlQnHVPmDy5sBtJt3ZVjBLNcDuNvS1qZU6Q?e=3z9FTB)
 2. Resolva as questões.

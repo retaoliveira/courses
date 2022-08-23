@@ -4,11 +4,11 @@ draft: true
 menu:
   r_pos_2022:
     parent: Unidade 2
-    weight: 13
+    weight: 5
 title: Lab 2.2 - `ggplot` e `dplyr`
 toc: true
 type: docs
-weight: 13
+weight: 5
 ---
 
 A **Unidade 2** é estruturada considerando os seguintes tópicos:

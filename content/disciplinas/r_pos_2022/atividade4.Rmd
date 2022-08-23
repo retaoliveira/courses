@@ -4,11 +4,11 @@ draft: true
 menu:
   r_pos_2022:
     parent: Unidade 4
-    weight: 12
+    weight: 9
 title: Atividade 4
 toc: true
 type: docs
-weight: 12
+weight: 9
 ---
 
 # Introdução ao R - Processamento com Matrizes
