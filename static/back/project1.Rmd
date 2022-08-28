@@ -1,0 +1,44 @@
+---
+date: "2022-05-09T00:00:00+01:00"
+draft: true
+menu:
+  log_adm:
+    parent: Projetos
+    weight: 4
+title: Projeto Integrador - Etapa 1
+toc: true
+type: docs
+weight: 16
+---
+
+## Pré-requisitos
+
+Entender definições e fundamentos que compõe os conceitos `Logística` e `Gestão da Cadeia de Suprimentos`.
+
+## Objetivos de aprendizagem
+
+Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de `Logística` e `Gestão da Cadeia de Suprimentos` com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica.
+
+A `iFood` revolucionou o processo de delivery de refeições no Brasil. Em apenas seis meses da criação do aplicativo de pedidos, somente na cidade de São Paulo, a empresa já contava com cardápios de 650 restaurantes. Contudo, nos primeiros meses de atividade, os analistas da `iFood` identificaram diversas reclamações específicas dos clientes de um desses restaurantes: o **Sushi Liberdade**. Havia relatos de **atrasos nas entregas**, o que ocasionava grande número de reclamações no aplicativo. A situação era complicada para o restaurante, sendo que em alguns casos havia até mesmo a necessidade de **cancelamentos e restituição do valor financeiro aos clientes**. O restaurante acusava os **colaboradores responsáveis pela entrega de não prestarem o serviço** adequadamente, mas a `iFood` desconfiava dessa informação uma vez que não havia registros de reclamações de outros restaurantes.
+
+A diretoria da `iFood`, preocupada com as diversas reclamações e com a possibilidade de **perder o restaurante para um concorrente**, decidiu que era muito importante avaliar as **causas especiais** relacionadas às entregas com tempo maior do que os 120 minutos (*leadtime*[^1]) prometidos pelo aplicativo. Foi contratada uma consultoria independente, uma vez que esse fato causava também **graves prejuízos à imagem da `iFood`**. Para evitar maiores prejuízos à `iFood`, o restaurante Sushi Liberdade foi **cancelado da plataforma imediatamente** para que essa investigação apontasse os responsáveis, apesar de ter redirecionado seu funcionamento para o atendimento a pedidos para entrega recentemente.
+
+[^1]: *O leadtime pode ser definido como o tempo entre a colocação do pedido e o efetivo recebimento dos produtos. Assim, a composição desse indicador contempla: - Recebimento do pedido com detalhes do transporte a ser realizado; - Alocação de veículos, equipe de trabalho e deslocamento para coleta dos pedidos; (Esse tempo é concomitante com aquele necessário para expedição do pedido.) - Carregamento dos veículos; -Viagem até o consumidor.*
+
+Como uma **empresa digital responsável em relação a seus colaboradores (restaurantes e entregadores)**, e visando contribuir com a manutenção do restaurante, a `iFood` se propôs a oferecer uma consultoria **gratuita** ao Sushi Liberdade, mesmo antes dos resultados da investigação imparcial promovida pela consultora. O restaurante decidiu aceitar a **generosa oferta**, uma vez que estava sem outras opções no momento. Assim, o Sushi Liberdade recebeu os **analistas da `iFood`** para colocar as ideias em prática.
+
+ETAPA 1 -- COMPREENSÃO DO PROCESSO
+
+As notações para modelagem de processos, como por exemplo a notação BPMN, utilizam formas de agrupar tarefas de um processo que são desempenhadas pelos diferentes atores. No caso da `iFood`, possuímos quatro atores bem definidos: o Restaurante, o solicitante (consumidor), o Colaborador (responsável pela entrega) e a plataforma digital. Geralmente, as funções que cada um executa são distribuídas em raias. Os círculos identificam o início e fim do fluxo. Os retângulos identificam os processos, as setas identificam o fluxo e os losângulos identificam as decisões do processo. 
+
+A figura a seguir demonstra um exemplo de um processo de aquisição de férias construído na notação BPMN:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/Imagem1.png')
+```
+
+Considerando os atores `iFood`, restaurante, consumidor e entregador (responsável pela entrega), construa o fluxograma do processo de entrega de pedidos da `iFood`. Considere também a situação em que o consumidor não esteja disponível no momento da entrega.
+
+Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox. 
+
+O prazo para conclusão desta atividade será dia **05/06**.
