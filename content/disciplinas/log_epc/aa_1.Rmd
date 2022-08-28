@@ -2,7 +2,7 @@
 date: "2020-12-275T00:00:00+01:00"
 draft: false
 menu:
-  log_adm:
+  log_epc:
     parent: Atividades de aprendizagem
     weight: 5
 title: 1. Logística e cadeia de suprimentos
@@ -25,17 +25,13 @@ Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos".
 5 pontos
 
 ## Grupos de trabalho
-**Grupo 1**: Artur Abreu, Pedro Lemes, Arthur Joia e Gabriel Ramos
+**Grupo 1**
 
-**Grupo 2**: Amanda Nascimento, Jancler Adrano, Lucas Gomes, Maria Júlia Alves e Naiara Caetano
+**Grupo 2** 
 
-**Grupo 3:** Amanda Evelyn, Aline Lacerda, Bárbara Silva e Isadora Oliveira
+**Grupo 3:** 
 
-**Grupo 4:** Marina Caroline, Rayssa Aparecida, Thayna Assis e Yara Bertilie
 
-**Grupo 5:** Arthus Ferraz, Mathias, Sebastião e Caroline
-
-**Grupo 6:** Renata, Webert, Taynara e Leonardo
 
 
 ## Atividades
