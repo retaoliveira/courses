@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Aulas
     weight: 11
-title: 'Aula 02 - 22/08'
+title: 'Aula 02 - Logística e Cadeia de suprimentos'
 editor_options: 
   markdown: 
     wrap: 70
