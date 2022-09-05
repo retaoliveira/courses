@@ -23,10 +23,6 @@ weight: 6
 3. Gere um tipo de documento .Rmd de sua preferência. 
 4. Envie por email (renataoliveira@gmail.com ou renataoliveira@cefetmg.br) o arquivo .Rmd e o arquivo gerado. 
 
-
-## A(s) entrega(s) será(ão):
-- **Arquivos** referentes à **tarefa 4** desta atividade.
-
 <hr></hr>
 
 A poluição por plástico é um problema importante e crescente, afetando negativamente a saúde dos oceanos e da vida selvagem.
