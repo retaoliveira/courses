@@ -1,11 +1,11 @@
 ---
 date: "2021-10-25T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   r_pos_2022:
     parent: Encontros
     weight: 70
-title: Encontro Síncrono 3
+title: Encontro 3
 weight: 70
 editor_options: 
   markdown: 
