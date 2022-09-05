@@ -21,9 +21,9 @@ A **Unidade 3** é estruturada considerando os seguintes tópicos:
 
 [Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
 
-[Dados_1](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EfDYw1DoMxxEvN0KwwO1lAkB3HM7kD0PyPkOVt7xZuYDeg?e=0MRodN)
+[Dados_1](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EfDYw1DoMxxEvN0KwwO1lAkB3HM7kD0PyPkOVt7xZuYDeg?e=0MRodN)
 
-[Dados_2](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EeQ31dgeE5tEmJx0jd8-GOIB7LcbgxELZicMQ2NH4sNbLw?e=9ZC7CL)
+[Dados_2](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeQ31dgeE5tEmJx0jd8-GOIB7LcbgxELZicMQ2NH4sNbLw?e=9ZC7CL)
 
 2. Siga as diretrizes da atividade. 
 
