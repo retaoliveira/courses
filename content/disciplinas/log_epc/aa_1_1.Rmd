@@ -1,0 +1,39 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log_epc:
+    parent: Atividades de aprendizagem
+    weight: 5
+title: 1. Logística e cadeia de suprimentos (para quem não esteve presente)
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## Objetivo de aprendizagem: 
+
+Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
+
+## Pontos
+
+5 pontos
+
+## Atividades
+
+Esta atividade será desenvolvida individualmente. E deverá ser encaminhada pela tarefa no SIGAA. 
+
+1. Assista o vídeo em [https://www.youtube.com/watch?v=E1viFYWocGU](https://www.youtube.com/watch?v=E1viFYWocGU)
+
+2. Responda: 
+    a) Que fatores na economia mundial, atualmente, poderão influenciar o desenvolvimento da _Logística_ no futuro? Mencione um exemplo.
+
+    b) De acordo com o conceito e os objetivos logísticos apresentados, em que a _Logística_ pode contribuir para que as organizações atendam, e até superem, às necessidades e expectativas do cliente final? Quais cuidados devem ser tomados? 
+
+
+
