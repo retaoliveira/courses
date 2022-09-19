@@ -5,7 +5,7 @@ menu:
   log_especial:
     parent: Aulas
     weight: 11
-title: 'Aula 06 - Gestão de Estoques e armazenagem'
+title: 'Aula 06 - Gestão de Estoques e Redes Logísticas'
 editor_options: 
   markdown: 
     wrap: 70
