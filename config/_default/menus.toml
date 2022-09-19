@@ -93,13 +93,13 @@
   parent = "Disciplinas"
   name = "Quarto: um novo sistema para publicação técnica e científica - PPGA - 2022/2"
   url = "disciplinas/quarto/"
-  weight = 40
+  weight = 50
 
 [[main]]
   parent = "Disciplinas"
   name = "Introdução ao R - PPGA - 2022/2"
   url = "disciplinas/r_pos_2022/"
-  weight = 30
+  weight = 40
 
 #[[main]]
 #  parent = "Disciplinas"
@@ -117,6 +117,12 @@
   name = "Logística - ADM - 2022/2"
   url = "disciplinas/log_adm/"
   weight = 20
+  
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística - ADM Especial - 2022/2"
+  url = "disciplinas/log_especial/"
+  weight = 30
 
 #[[main]]
 #  parent = "Disciplinas"

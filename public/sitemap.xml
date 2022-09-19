@@ -10,6 +10,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -77,6 +79,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula01/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula01/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/transportes_covid/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -84,13 +88,19 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula02/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula02/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula03/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula03/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula03/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula04/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula04/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula04/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/estoques/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
@@ -160,6 +170,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_2_1/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_1/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/</loc>
     <lastmod>2021-10-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -192,6 +204,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/centrography/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_5/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
   </url><url>

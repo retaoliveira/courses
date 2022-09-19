@@ -104,8 +104,8 @@ Pontos|	Atividade
 10|  AA3 – Logística Urbana
 10|  AA4 - Gestão de Transportes
 10|  AA5 - Gestão de estoques e armazenagem
-10|  AA6 - Localização e custos logísticos
-10|  AA7 - Multivarejo e omnichanel
+10|  AA6 - Multivarejo e omnichanel
+10|  AA7 - Sustentabilidade e Logística
 30|  Projeto Integrador
 TOTAL:| 100 pontos
 

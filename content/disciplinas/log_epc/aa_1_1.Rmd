@@ -16,6 +16,8 @@ type: docs
 weight: 20
 ---
 
+**Prazo para entrega: 03/10/2022**
+
 ## Objetivo de aprendizagem: 
 
 Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
