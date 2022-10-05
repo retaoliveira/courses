@@ -23,3 +23,5 @@ knitr::include_url('https://log2022.github.io/class05', height = "400px")
 ```
 
 [LINK](https://log2022.github.io/class05)
+
+[Download pdf](https://cefetmgbr-my.sharepoint.com/:b:/g/personal/renataoliveira_cefetmg_br/EbNvlQ4Aaw5BhkFdMkduylQB0j32V-jJ1DVaXieQBBpl5A?e=mWPFlW)
