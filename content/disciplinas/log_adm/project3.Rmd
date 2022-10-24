@@ -4,16 +4,14 @@ draft: false
 menu:
   log_adm:
     parent: Projetos
-    weight: 5
+    weight: 3
 title: Projeto Integrador 3
 toc: true
 type: docs
 weight: 16
 ---
 
-Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox. 
-
-O prazo para conclusão desta atividade será dia **10/07**.
+**Prazo para entrega: 21/11/2022**
 
 # Análise preliminar de dados coletados pelo setor de qualidade
 

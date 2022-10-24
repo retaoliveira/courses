@@ -4,12 +4,14 @@ draft: false
 menu:
   log_adm:
     parent: Projetos
-    weight: 4
+    weight: 2
 title: Projeto Integrador 2
 toc: true
 type: docs
 weight: 16
 ---
+
+**Prazo para entrega: 14/11/2022**
 
 ## Pré-requisitos
 
@@ -39,6 +41,5 @@ knitr::include_graphics('https://retaoliveira.github.io/relements/figures/Imagem
 
 Considerando os atores `iFood`, restaurante, consumidor e entregador (responsável pela entrega), construa o fluxograma do processo de entrega de pedidos da `iFood`. Considere também a situação em que o consumidor não esteja disponível no momento da entrega.
 
-Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no Paper Dropbox. 
+Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no SIGAA.
 
-O prazo para conclusão desta atividade será dia **05/06**.

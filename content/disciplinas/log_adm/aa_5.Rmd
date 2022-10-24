@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 16
-title: 5. Gestão de estoques e armazenagem
+title: 5. Gestão de estoques e armazenagem (para todos os alunos)
 editor_options: 
   markdown: 
     wrap: 70
@@ -16,6 +16,7 @@ type: docs
 weight: 50
 ---
 
+**Prazo para entrega: 07/11/2022**
 
 Leia os artigos:
 

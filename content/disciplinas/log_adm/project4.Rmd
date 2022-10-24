@@ -4,16 +4,16 @@ draft: false
 menu:
   log_adm:
     parent: Projetos
-    weight: 6
+    weight: 4
 title: Projeto Integrador 4
 toc: true
 type: docs
 weight: 16
 ---
 
-Fiquem à vontade para utilizar a ferramenta que o grupo escolher. O envio será feito pela atividade aberta no Paper Dropbox. Caso haja links, por favor, incluam no documento. O valor deste trabalho é **20 pontos**.
+**Prazo para entrega: 05/12/2022**
 
-O prazo para conclusão desta atividade será dia **10/07**.
+Fiquem à vontade para utilizar a ferramenta que o grupo escolher. O envio será feito pela atividade aberta no SIGAA. Caso haja links, por favor, incluam no documento. O valor desta etapa é **10 pontos**.
 
 Os grupos de trabalho deverão: 
 
