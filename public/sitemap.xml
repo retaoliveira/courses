@@ -158,9 +158,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/project1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_especial/project1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_especial/project/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -230,6 +227,9 @@
     <loc>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_3/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_3/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
@@ -245,6 +245,9 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/estrutura_dados/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_4/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/est_4/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
@@ -259,6 +262,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/centrography/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_5/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_5/</loc>
   </url><url>
