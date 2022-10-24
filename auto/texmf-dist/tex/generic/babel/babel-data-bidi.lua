@@ -37,7 +37,7 @@
 
 Babel = Babel or {}
 
-Babel.ranges={
+Babel.ranges = {
  {0x0590, 0x05FF, 'r'},
  {0x0600, 0x07BF, 'al'},
  {0x07C0, 0x085F, 'r'},
@@ -55,7 +55,7 @@ Babel.ranges={
  {0x100000, 0x10FFFD, 'on'} -- PUA
 }
 
-Babel.characters={
+Babel.characters = {
  [0x0]={d='bn'},
  [0x1]={d='bn'},
  [0x2]={d='bn'},

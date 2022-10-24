@@ -2,8 +2,8 @@
 date: "2021-06-30T00:00:00+01:00"
 draft: true
 menu:
-  log_epc:
-    parent: Atividades de Aprendizagem
+  log_adm:
+    parent: Atividades de aprendizagem
     weight: 10
 title: 3. Logística Urbana
 editor_options: 
@@ -13,13 +13,10 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 40
+weight: 35
 ---
 
-Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem no Dropbox Paper:
+A atividade foi desenvolvida em sala e contemplou perguntas sobre imagens apresentadas a cada grupo. 
 
-1. Defina Logística Urbana
-
-2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
 
 

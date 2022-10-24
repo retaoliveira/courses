@@ -1,6 +1,6 @@
 name luaotfload
 category Package
-revision 63611
+revision 64616
 shortdesc OpenType 'loader' for Plain TeX and LaTeX
 longdesc The package adopts the TrueType/OpenType Font loader code
 longdesc provided in ConTeXt, and adapts it to use in Plain TeX and
@@ -10,15 +10,15 @@ depend lua-alt-getopt
 depend lua-uni-algos
 depend lualibs
 depend luaotfload.ARCH
-containersize 617060
-containerchecksum 287f5158187368e674af247449b8c485d6dc12effd7e4640d96eb54b0d652ce812ab76eaa3a62062b935e4a57b865b0750422c1dd8b4ddddbbcdd817e6258622
-doccontainersize 622892
-doccontainerchecksum 6283082781eccf1f1d7e337e333eb198adad316e6fdc18bbcdcbcbbcc621c99cacddaac9c53f04a2048ef4b43e6efd00fb6bcaba623dc821695f4ad05cdfe009
+containersize 617256
+containerchecksum 70f27796fdfe61e0337239a2962052eb2896478358fca0f271287db06a1d2de2f83cd7394d0ec6c281e9a5779ec396e2993f53b8b045ed7a09cb17f100a4a477
+doccontainersize 628076
+doccontainerchecksum 9e1c223ec2589f32640aefd2692d031b8ba324da30a814eea98768443eeb76d92d2700c320e6f96006e54635d31a655cae0a27c76931e7640748889ead4fbfb4
 srccontainersize 7292
-srccontainerchecksum 5cbb29d38eb28d685f13742f1d195632021ce2885933d9d7f4d754afb55fa759e82a195cf18a7f22a8c26a73ddb9eead39cf59cd00546e0853fdaada292ff7fc
-runfiles size=1909
+srccontainerchecksum 3ed04272b887f434bfe2dd166974889318597e22c57109647946f2b255efca2fb6d1ecc1f02485a1bf387e77956c64a9f42c4af237b29f9fc7a38400d8cfbef1
+runfiles size=1908
  texmf-dist/scripts/luaotfload/luaotfload-tool.lua
- texmf-dist/tex/luatex/luaotfload/fontloader-2022-06-15.lua
+ texmf-dist/tex/luatex/luaotfload/fontloader-2022-10-03.lua
  texmf-dist/tex/luatex/luaotfload/fontloader-basics-chr.lua
  texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua
  texmf-dist/tex/luatex/luaotfload/fontloader-basics-nod.lua
@@ -94,7 +94,6 @@ runfiles size=1909
  texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-cff2.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-t2-writer.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-ttf.lua
- texmf-dist/tex/luatex/luaotfload/luaotfload-hashing.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-letterspace.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-loaders.lua
@@ -108,7 +107,6 @@ runfiles size=1909
  texmf-dist/tex/luatex/luaotfload/luaotfload-status.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-suppress.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-szss.lua
- texmf-dist/tex/luatex/luaotfload/luaotfload-t3.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-tounicode.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload-unicode.lua
  texmf-dist/tex/luatex/luaotfload/luaotfload.lua
@@ -118,4 +116,4 @@ catalogue-contact-support https://github.com/latex3/luaotfload/issues
 catalogue-ctan /macros/luatex/generic/luaotfload
 catalogue-license gpl2
 catalogue-topics font-use luatex
-catalogue-version 3.22
+catalogue-version 3.23

@@ -34,10 +34,10 @@
 %% 
 %% File: hyperref.dtx
 \ProvidesFile{hluatex.def}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hyperref driver for luaTeX]
 \Hy@VersionCheck{hluatex.def}
-%% 2022-06-20 v7.00s
+%% 2022-09-22 v7.00t
 %% force unicode encoding, see issue #101
 %% code mostly copied from hxetex.def
 \HyPsd@LoadUnicode
@@ -754,10 +754,26 @@
         \fi
       }{%
         \ifdim\stockwidth>\z@
-          \setlength{\pagewidth}{\stockwidth}%
-        \fi
-        \ifdim\stockheight>\z@
-          \setlength{\pageheight}{\stockheight}%
+          \ifdim\stockheight>\z@
+           \setlength{\pagewidth}{\stockwidth}%
+           \setlength{\pageheight}{\stockheight}%
+          \else
+            \ifdim\paperwidth>\z@
+              \ifdim\paperheight>\z@
+                \setlength{\pagewidth}{\paperwidth}%
+                \setlength{\pageheight}{\paperheight}%
+              \fi
+            \fi
+          \fi
+        \else
+          \ifdim\stockwidth=\z@
+            \ifdim\paperwidth>\z@
+              \ifdim\paperheight>\z@
+                \setlength{\pagewidth}{\paperwidth}%
+                \setlength{\pageheight}{\paperheight}%
+              \fi
+            \fi
+          \fi
         \fi
       }%
     }%

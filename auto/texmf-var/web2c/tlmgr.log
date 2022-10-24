@@ -1,0 +1,43 @@
+[Fri Oct  7 20:03:31 2022] update: babel (63948 -> 64614)
+[Fri Oct  7 20:03:32 2022] update: bibtex (62387 -> 64491)
+[Fri Oct  7 20:03:33 2022] update: graphics-def (63042 -> 64487)
+[Fri Oct  7 20:03:35 2022] update: hyperref (63665 -> 64491)
+[Fri Oct  7 20:03:39 2022] update: kpathsea (63534 -> 64475)
+[Fri Oct  7 20:03:41 2022] update: l3backend (64066 -> 64552)
+[Fri Oct  7 20:03:43 2022] update: l3kernel (64066 -> 64552)
+[Fri Oct  7 20:03:45 2022] update: latex-tools-dev (63631 -> 64533)
+[Fri Oct  7 20:03:46 2022] update: lualibs (59298 -> 64615)
+[Fri Oct  7 20:03:50 2022] update: luaotfload (63611 -> 64616)
+[Fri Oct  7 20:03:53 2022] update: texlive-scripts (64126 -> 64606)
+[Fri Oct  7 20:04:25 2022] update: tlgs.win32 (63030 -> 64483)
+[Fri Oct  7 20:04:26 2022] update: unicode-data (60516 -> 64423)
+[Fri Oct  7 20:04:26 2022] command: mktexlsr
+[Fri Oct  7 20:04:27 2022] command: updmap-sys
+[Fri Oct  7 20:04:30 2022] command: fmtutil-sys --byengine luahbtex --no-error-if-no-format --no-error-if-no-engine=luajithbtex,luajittex,mfluajit --status-file=C:\Users\user\AppData\Local\Temp\rHQdEMhRjR\kmS0a1tYzF
+[Fri Oct  7 20:04:39 2022]   OK: luahbtex.fmt/luahbtex lualatex.fmt/luahbtex
+[Fri Oct  7 20:04:39 2022] command: fmtutil-sys --byengine luatex --no-error-if-no-format --no-error-if-no-engine=luajithbtex,luajittex,mfluajit --status-file=C:\Users\user\AppData\Local\Temp\rHQdEMhRjR\kmS0a1tYzF
+[Fri Oct  7 20:04:46 2022]   OK: luahbtex.fmt/luahbtex lualatex.fmt/luahbtex luatex.fmt/luatex dvilualatex.fmt/luatex dviluatex.fmt/luatex
+[Fri Oct  7 20:04:46 2022] command: fmtutil-sys --byengine xetex --no-error-if-no-format --no-error-if-no-engine=luajithbtex,luajittex,mfluajit --status-file=C:\Users\user\AppData\Local\Temp\rHQdEMhRjR\kmS0a1tYzF
+[Fri Oct  7 20:04:51 2022]   OK: luahbtex.fmt/luahbtex lualatex.fmt/luahbtex luatex.fmt/luatex dvilualatex.fmt/luatex dviluatex.fmt/luatex xetex.fmt/xetex xelatex.fmt/xetex
+[Fri Oct  7 20:04:51 2022] command: fmtutil-sys --byfmt pdflatex --no-error-if-no-engine=luajithbtex,luajittex,mfluajit --status-file=C:\Users\user\AppData\Local\Temp\rHQdEMhRjR\kmS0a1tYzF
+[Fri Oct  7 20:04:55 2022]   OK: luahbtex.fmt/luahbtex lualatex.fmt/luahbtex luatex.fmt/luatex dvilualatex.fmt/luatex dviluatex.fmt/luatex xetex.fmt/xetex xelatex.fmt/xetex pdflatex.fmt/pdftex
+[Fri Oct  7 20:04:55 2022] command: fmtutil-sys --byfmt latex --no-error-if-no-engine=luajithbtex,luajittex,mfluajit --status-file=C:\Users\user\AppData\Local\Temp\rHQdEMhRjR\kmS0a1tYzF
+[Fri Oct  7 20:04:59 2022]   OK: luahbtex.fmt/luahbtex lualatex.fmt/luahbtex luatex.fmt/luatex dvilualatex.fmt/luatex dviluatex.fmt/luatex xetex.fmt/xetex xelatex.fmt/xetex pdflatex.fmt/pdftex latex.fmt/pdftex
+[Fri Oct  7 20:05:15 2022] install: footmisc
+[Fri Oct  7 20:05:17 2022] install: koma-script
+[Fri Oct  7 20:05:17 2022] command: mktexlsr
+[Fri Oct  7 20:05:46 2022] install: caption
+[Fri Oct  7 20:05:46 2022] command: mktexlsr
+[Fri Oct  7 20:06:09 2022] install: tcolorbox
+[Fri Oct  7 20:06:09 2022] command: mktexlsr
+[Fri Oct  7 20:06:31 2022] install: fp
+[Fri Oct  7 20:06:31 2022] install: ms
+[Fri Oct  7 20:06:33 2022] install: pgf
+[Fri Oct  7 20:06:33 2022] command: mktexlsr
+[Fri Oct  7 20:06:57 2022] install: environ
+[Fri Oct  7 20:06:58 2022] install: trimspaces
+[Fri Oct  7 20:06:58 2022] command: mktexlsr
+[Fri Oct  7 20:07:19 2022] install: pdfcol
+[Fri Oct  7 20:07:19 2022] command: mktexlsr
+[Fri Oct  7 20:07:49 2022] install: bookmark
+[Fri Oct  7 20:07:49 2022] command: mktexlsr

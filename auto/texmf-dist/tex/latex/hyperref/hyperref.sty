@@ -36,7 +36,7 @@
 %% File: hyperref.dtx
 \NeedsTeXFormat{LaTeX2e}[2020/10/01]
 \ProvidesPackage{hyperref}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hypertext links for LaTeX]
 \begingroup
   \@makeother\`%
@@ -3978,7 +3978,7 @@
 \def\HyperDestNameFilter#1{#1}
 \Hy@AtBeginDocument{%
   \begingroup
-    \edef\x{\@ifundefined{stockheight}\paperheight\stockheight}%
+    \edef\x{\ifdim\stockheight>\z@ \stockheight\else\paperheight\fi}%
     \dimen@=\x\relax
     \ifdim\dimen@>\z@
     \else
@@ -4207,6 +4207,8 @@
   }%
 \fi
 \Hy@DisableOption{implicit}
+\@ifundefined{stockwidth}{\newdimen\stockwidth}{}
+\@ifundefined{stockheight}{\newdimen\stockheight}{}
 \Hy@AtEndOfPackage{%
   \@ifpackageloaded{tex4ht}{%
     \def\Hy@driver{htex4ht}%
@@ -5161,9 +5163,10 @@
   \let\HyperDestRename\ltx@gobbletwo
 \fi
 \Hy@DisableOption{destlabel}
-\AddLineBeginAux{%
-  \string\providecommand\string\hyper@newdestlabel[2]{}%
-}
+\AddToHook{include/before}
+ {\immediate\write\@partaux{\string\providecommand\string\hyper@newdestlabel[2]{}}}
+\AddToHook{begindocument}
+ {\immediate\write\@mainaux{\string\providecommand\string\hyper@newdestlabel[2]{}}}
 \RequirePackage{bitset}
 \def\HyField@NewFlag#1#2{%
   \lowercase{\HyField@NewOption{#2}}%
@@ -8286,15 +8289,7 @@
     \fi
   \fi
 }
-\@ifpackageloaded{showkeys}{%
-  \HyRef@ShowKeysInit
-}{%
-  \Hy@AtBeginDocument{%
-    \@ifpackageloaded{showkeys}{%
-      \HyRef@ShowKeysInit
-    }{}%
-  }%
-}
+\AddToHook{package/showkeys/after}{\HyRef@ShowKeysInit}
 \providecommand*\AMSautorefname{\equationautorefname}
 \providecommand*\Hfootnoteautorefname{\footnoteautorefname}
 \providecommand*\Itemautorefname{\itemautorefname}

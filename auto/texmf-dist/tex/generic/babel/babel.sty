@@ -34,7 +34,7 @@
 %%
 
 \NeedsTeXFormat{LaTeX2e}[2005/12/01]
-\ProvidesPackage{babel}[2022/07/20 3.78 The Babel package]
+\ProvidesPackage{babel}[2022/10/04 3.81 The Babel package]
 \@ifpackagewith{babel}{debug}
   {\providecommand\bbl@trace[1]{\message{^^J[ #1 ]}}%
    \let\bbl@debug\@firstofone
@@ -62,9 +62,7 @@
 \def\bbl@infowarn#1{%
   \begingroup
     \def\\{\MessageBreak}%
-    \GenericWarning
-      {(babel) \@spaces\@spaces\@spaces}%
-      {Package babel Info: #1}%
+    \PackageNote{babel}{#1}%
   \endgroup}
 \def\bbl@info#1{%
   \begingroup
@@ -126,7 +124,7 @@
     \else
       \expandafter\@secondoftwo
     \fi}
-  \bbl@ifunset{ifcsname}% TODO. A better test?
+  \bbl@ifunset{ifcsname}%
     {}%
     {\gdef\bbl@ifunset#1{%
        \ifcsname#1\endcsname
@@ -446,7 +444,7 @@
 \fi
 \ifx\bbl@opt@safe\@undefined
   \def\bbl@opt@safe{BR}
-  % \let\bbl@opt@safe\@empty % -- By September
+  % \let\bbl@opt@safe\@empty % Pending of \cite
 \fi
 \bbl@trace{Defining IfBabelLayout}
 \ifx\bbl@opt@layout\@nnil
@@ -460,8 +458,8 @@
       \expandafter\@secondoftwo
     \fi}
 \fi
-\def\bbl@version{3.78}
-\def\bbl@date{2022/07/20}
+\def\bbl@version{3.81}
+\def\bbl@date{2022/10/04}
 \ifx\language\@undefined
   \csname newcount\endcsname\language
 \fi
@@ -685,19 +683,8 @@
   % TODO. name@map must be here?
   \bbl@provide@locale
   \bbl@iflanguage\languagename{%
-     \expandafter\ifx\csname date\languagename\endcsname\relax
-      \bbl@error
-        {Unknown language '\languagename'. Either you have\\%
-         misspelled its name, it has not been installed,\\%
-         or you requested it in a previous run. Fix its name,\\%
-         install it or just rerun the file, respectively. In\\%
-         some cases, you may need to remove the aux file}%
-        {You may proceed, but expect wrong results}%
-    \else
-      % set type
-      \let\bbl@select@type\z@
-      \expandafter\bbl@switch\expandafter{\languagename}%
-    \fi}}
+    \let\bbl@select@type\z@
+    \expandafter\bbl@switch\expandafter{\languagename}}}
 \def\babel@aux#1#2{%
   \select@language{#1}%
   \bbl@foreach\BabelContentsFiles{% \relax -> don't assume vertical mode
@@ -767,9 +754,10 @@
   \bbl@xin@{/u}{/\bbl@tempa}%
   \ifin@\else\bbl@xin@{/e}{/\bbl@tempa}\fi % elongated forms
   \ifin@\else\bbl@xin@{/k}{/\bbl@tempa}\fi % only kashida
+  \ifin@\else\bbl@xin@{/p}{/\bbl@tempa}\fi % padding (eg, Tibetan)
   \ifin@\else\bbl@xin@{/v}{/\bbl@tempa}\fi % variable font
   \ifin@
-    % unhyphenated/kashida/elongated = allow stretching
+    % unhyphenated/kashida/elongated/padding = allow stretching
     \language\l@unhyphenated
     \babel@savevariable\emergencystretch
     \emergencystretch\maxdimen
@@ -843,17 +831,6 @@
   % TODO. name@map here?
   \bbl@provide@locale
   \bbl@iflanguage\languagename{%
-    \expandafter\ifx\csname date\languagename\endcsname\relax
-      \bbl@warning   % TODO - why a warning, not an error?
-        {Unknown language '#1'. Either you have\\%
-         misspelled its name, it has not been installed,\\%
-         or you requested it in a previous run. Fix its name,\\%
-         install it or just rerun the file, respectively. In\\%
-         some cases, you may need to remove the aux file.\\%
-         I'll proceed, but expect wrong results.\\%
-         Reported}%
-    \fi
-    % set type
     \let\bbl@select@type\@ne
     \expandafter\bbl@switch\expandafter{\languagename}}}
 \def\IfBabelSelectorTF#1{%
@@ -948,11 +925,12 @@
   \@nameuse{#2}%
   \edef\bbl@tempa{#1}%
   \bbl@sreplace\bbl@tempa{name}{}%
-  \bbl@warning{% TODO.
+  \bbl@warning{%
     \@backslashchar#1 not set for '\languagename'. Please,\\%
     define it after the language has been loaded\\%
     (typically in the preamble) with:\\%
     \string\setlocalecaption{\languagename}{\bbl@tempa}{..}\\%
+    Feel free to contribute on github.com/latex3/babel.\\%
     Reported}}
 \def\bbl@tentative{\protect\bbl@tentative@i}
 \def\bbl@tentative@i#1{%
@@ -1037,7 +1015,7 @@
     \else
       \expandafter\@secondoftwo
     \fi}
-  \bbl@ifunset{ifcsname}% TODO. A better test?
+  \bbl@ifunset{ifcsname}%
     {}%
     {\gdef\bbl@ifunset#1{%
        \ifcsname#1\endcsname
@@ -1258,7 +1236,7 @@
   \bbl@foreach\bbl@evargs{\bbl@tempa#1\@@}
 \fi
 \bbl@trace{Defining babelensure}
-\newcommand\babelensure[2][]{%  TODO - revise test files
+\newcommand\babelensure[2][]{%
   \AddBabelHook{babel-ensure}{afterextras}{%
     \ifcase\bbl@select@type
       \bbl@cl{e}%
@@ -1954,15 +1932,6 @@
 \def\bbl@disc#1#2{\nobreak\discretionary{#2-}{}{#1}\bbl@allowhyphens}
 \bbl@trace{Multiencoding strings}
 \def\bbl@toglobal#1{\global\let#1#1}
-\def\bbl@recatcode#1{% TODO. Used only once?
-  \@tempcnta="7F
-  \def\bbl@tempa{%
-    \ifnum\@tempcnta>"FF\else
-      \catcode\@tempcnta=#1\relax
-      \advance\@tempcnta\@ne
-      \expandafter\bbl@tempa
-    \fi}%
-  \bbl@tempa}
 \@ifpackagewith{babel}{nocase}%
   {\let\bbl@patchuclc\relax}%
   {\def\bbl@patchuclc{%
@@ -1977,10 +1946,35 @@
       {\bbl@tolower\@empty}{\bbl@toupper\@empty}}%
     \gdef\bbl@tolower{\csname\languagename @bbl@lc\endcsname}%
     \gdef\bbl@toupper{\csname\languagename @bbl@uc\endcsname}}}
+\ifx\BabelCaseHack\@undefined
+\AtBeginDocument{%
+  \bbl@exp{%
+    \\\in@{\string\@uclclist}%
+          {\expandafter\meaning\csname MakeUppercase \endcsname}}%
+  \ifin@\else
+    \expandafter\let\expandafter\bbl@newuc\csname MakeUppercase \endcsname
+    \protected\@namedef{MakeUppercase }#1{{%
+      \def\reserved@a##1##2{\let##1##2\reserved@a}%
+      \expandafter\reserved@a\@uclclist\reserved@b{\reserved@b\@gobble}%
+      \protected@edef\reserved@a{\bbl@newuc{#1}}\reserved@a}}%
+    \expandafter\let\expandafter\bbl@newlc\csname MakeLowercase \endcsname
+    \protected\@namedef{MakeLowercase }#1{{%
+      \def\reserved@a##1##2{\let##2##1\reserved@a}%
+      \expandafter\reserved@a\@uclclist\reserved@b{\reserved@b\@gobble}%
+      \protected@edef\reserved@a{\bbl@newlc{#1}}\reserved@a}}%
+  \fi}
+\fi
 \@onlypreamble\StartBabelCommands
 \def\StartBabelCommands{%
   \begingroup
-  \bbl@recatcode{11}%
+  \@tempcnta="7F
+  \def\bbl@tempa{%
+    \ifnum\@tempcnta>"FF\else
+      \catcode\@tempcnta=11
+      \advance\@tempcnta\@ne
+      \expandafter\bbl@tempa
+    \fi}%
+  \bbl@tempa
   \def\SetStringLoop##1##2{%
     \def\bbl@templ####1{\expandafter\noexpand\csname##1\endcsname}%
     \count@\z@
@@ -2178,7 +2172,7 @@
     \bbl@xin@{,}{\bbl@language@opts}%
     \chardef\bbl@opt@hyphenmap\ifin@4\else\@ne\fi
   \fi}
-\newcommand\setlocalecaption{%  TODO. Catch typos. What about ensure?
+\newcommand\setlocalecaption{%  TODO. Catch typos.
   \@ifstar\bbl@setcaption@s\bbl@setcaption@x}
 \def\bbl@setcaption@x#1#2#3{%  language caption-name string
   \bbl@trim@def\bbl@tempa{#2}%
@@ -2452,6 +2446,19 @@
 \or
   \input xebabel.def
 \fi
+\providecommand\babelfont{%
+  \bbl@error
+    {This macro is available only in LuaLaTeX and XeLaTeX.}%
+    {Consider switching to these engines.}}
+\providecommand\babelprehyphenation{%
+  \bbl@error
+    {This macro is available only in LuaLaTeX.}%
+    {Consider switching to that engine.}}
+\ifx\babelposthyphenation\@undefined
+  \let\babelposthyphenation\babelprehyphenation
+  \let\babelpatterns\babelprehyphenation
+  \let\babelcharproperty\babelprehyphenation
+\fi
 \bbl@trace{Creating languages and reading ini files}
 \let\bbl@extend@ini\@gobble
 \newcommand\babelprovide[2][]{%
@@ -2461,38 +2468,27 @@
   \edef\languagename{#2}%
   \bbl@id@assign
   % Initialize keys
-  \let\bbl@KVP@captions\@nil
-  \let\bbl@KVP@date\@nil
-  \let\bbl@KVP@import\@nil
-  \let\bbl@KVP@main\@nil
-  \let\bbl@KVP@script\@nil
-  \let\bbl@KVP@language\@nil
-  \let\bbl@KVP@hyphenrules\@nil
-  \let\bbl@KVP@linebreaking\@nil
-  \let\bbl@KVP@justification\@nil
-  \let\bbl@KVP@mapfont\@nil
-  \let\bbl@KVP@maparabic\@nil
-  \let\bbl@KVP@mapdigits\@nil
-  \let\bbl@KVP@intraspace\@nil
-  \let\bbl@KVP@intrapenalty\@nil
-  \let\bbl@KVP@onchar\@nil
-  \let\bbl@KVP@transforms\@nil
+  \bbl@vforeach{captions,date,import,main,script,language,%
+      hyphenrules,linebreaking,justification,mapfont,maparabic,%
+      mapdigits,intraspace,intrapenalty,onchar,transforms,alph,%
+      Alph,labels,labels*,calendar,date}%
+    {\bbl@csarg\let{KVP@##1}\@nnil}%
   \global\let\bbl@release@transforms\@empty
-  \let\bbl@KVP@alph\@nil
-  \let\bbl@KVP@Alph\@nil
-  \let\bbl@KVP@labels\@nil
-  \bbl@csarg\let{KVP@labels*}\@nil
-  \let\bbl@KVP@calendar\@nil
   \let\bbl@calendars\@empty
   \global\let\bbl@inidata\@empty
   \global\let\bbl@extend@ini\@gobble
   \gdef\bbl@key@list{;}%
-  \bbl@forkv{#1}{%  TODO - error handling
+  \bbl@forkv{#1}{%
     \in@{/}{##1}%
     \ifin@
       \global\let\bbl@extend@ini\bbl@extend@ini@aux
       \bbl@renewinikey##1\@@{##2}%
     \else
+      \bbl@csarg\ifx{KVP@##1}\@nnil\else
+        \bbl@error
+          {Unknown key '##1' in \string\babelprovide}%
+          {See the manual for valid keys}%
+      \fi
       \bbl@csarg\def{KVP@##1}{##2}%
     \fi}%
   \chardef\bbl@howloaded=% 0:none; 1:ldf without ini; 2:ini
@@ -2501,20 +2497,23 @@
   \ifx\bbl@screset\@undefined
     \bbl@ldfinit
   \fi
+  % == date (as option) ==
+  % \ifx\bbl@KVP@date\@nnil\else
+  % \fi
   % ==
   \let\bbl@lbkflag\relax % \@empty = do setup linebreak
   \ifcase\bbl@howloaded
     \let\bbl@lbkflag\@empty % new
   \else
-    \ifx\bbl@KVP@hyphenrules\@nil\else
+    \ifx\bbl@KVP@hyphenrules\@nnil\else
        \let\bbl@lbkflag\@empty
     \fi
-    \ifx\bbl@KVP@import\@nil\else
+    \ifx\bbl@KVP@import\@nnil\else
       \let\bbl@lbkflag\@empty
     \fi
   \fi
   % == import, captions ==
-  \ifx\bbl@KVP@import\@nil\else
+  \ifx\bbl@KVP@import\@nnil\else
     \bbl@exp{\\\bbl@ifblank{\bbl@KVP@import}}%
       {\ifx\bbl@initoload\relax
          \begingroup
@@ -2525,12 +2524,13 @@
          \xdef\bbl@KVP@import{\bbl@initoload}%
        \fi}%
       {}%
+    \let\bbl@KVP@date\@empty
   \fi
-  \ifx\bbl@KVP@captions\@nil
+  \ifx\bbl@KVP@captions\@nnil
     \let\bbl@KVP@captions\bbl@KVP@import
   \fi
   % ==
-  \ifx\bbl@KVP@transforms\@nil\else
+  \ifx\bbl@KVP@transforms\@nnil\else
     \bbl@replace\bbl@KVP@transforms{ }{,}%
   \fi
   % == Load ini ==
@@ -2548,7 +2548,7 @@
     \bbl@extend@ini{#2}%
   \fi
   % == ensure captions ==
-  \ifx\bbl@KVP@captions\@nil\else
+  \ifx\bbl@KVP@captions\@nnil\else
     \bbl@ifunset{bbl@extracaps@#2}%
       {\bbl@exp{\\\babelensure[exclude=\\\today]{#2}}}%
       {\bbl@exp{\\\babelensure[exclude=\\\today,
@@ -2571,10 +2571,10 @@
   \bbl@load@basic{#2}%
   % == script, language ==
   % Override the values from ini or defines them
-  \ifx\bbl@KVP@script\@nil\else
+  \ifx\bbl@KVP@script\@nnil\else
     \bbl@csarg\edef{sname@#2}{\bbl@KVP@script}%
   \fi
-  \ifx\bbl@KVP@language\@nil\else
+  \ifx\bbl@KVP@language\@nnil\else
     \bbl@csarg\edef{lname@#2}{\bbl@KVP@language}%
   \fi
   \ifcase\bbl@engine\or
@@ -2583,7 +2583,7 @@
          Babel.set_chranges_b('\bbl@cl{sbcp}', '\bbl@cl{chrng}') }}%
   \fi
    % == onchar ==
-  \ifx\bbl@KVP@onchar\@nil\else
+  \ifx\bbl@KVP@onchar\@nnil\else
     \bbl@luahyphenate
     \bbl@exp{%
       \\\AddToHook{env/document/before}{{\\\select@language{#2}{}}}}%
@@ -2593,7 +2593,15 @@
         Babel.linebreaking.add_before(Babel.locale_map)
         Babel.loc_to_scr = {}
         Babel.chr_to_loc = Babel.chr_to_loc or {}
-      end}%
+      end
+      Babel.locale_props[\the\localeid].letters = false
+    }%
+    \bbl@xin@{ letters }{ \bbl@KVP@onchar\space}%
+    \ifin@
+      \directlua{
+        Babel.locale_props[\the\localeid].letters = true
+      }%
+    \fi
     \bbl@xin@{ ids }{ \bbl@KVP@onchar\space}%
     \ifin@
       \ifx\bbl@starthyphens\@undefined % Needed if no explicit selection
@@ -2643,7 +2651,7 @@
   \fi
   % == mapfont ==
   % For bidi texts, to switch the font based on direction
-  \ifx\bbl@KVP@mapfont\@nil\else
+  \ifx\bbl@KVP@mapfont\@nnil\else
     \bbl@ifsamestring{\bbl@KVP@mapfont}{direction}{}%
       {\bbl@error{Option '\bbl@KVP@mapfont' unknown for\\%
                   mapfont. Use 'direction'.%
@@ -2669,7 +2677,7 @@
   \fi
   % == Line breaking: intraspace, intrapenalty ==
   % For CJK, East Asian, Southeast Asian, if interspace in ini
-  \ifx\bbl@KVP@intraspace\@nil\else % We can override the ini or set
+  \ifx\bbl@KVP@intraspace\@nnil\else % We can override the ini or set
     \bbl@csarg\edef{intsp@#2}{\bbl@KVP@intraspace}%
   \fi
   \bbl@provide@intraspace
@@ -2692,11 +2700,12 @@
     \fi
   \fi
   % == Line breaking: justification ==
-  \ifx\bbl@KVP@justification\@nil\else
+  \ifx\bbl@KVP@justification\@nnil\else
      \let\bbl@KVP@linebreaking\bbl@KVP@justification
   \fi
-  \ifx\bbl@KVP@linebreaking\@nil\else
-    \bbl@xin@{,\bbl@KVP@linebreaking,}{,elongated,kashida,cjk,unhyphenated,}%
+  \ifx\bbl@KVP@linebreaking\@nnil\else
+    \bbl@xin@{,\bbl@KVP@linebreaking,}%
+      {,elongated,kashida,cjk,padding,unhyphenated,}%
     \ifin@
       \bbl@csarg\xdef
         {lnbrk@\languagename}{\expandafter\@car\bbl@KVP@linebreaking\@nil}%
@@ -2705,6 +2714,8 @@
   \bbl@xin@{/e}{/\bbl@cl{lnbrk}}%
   \ifin@\else\bbl@xin@{/k}{/\bbl@cl{lnbrk}}\fi
   \ifin@\bbl@arabicjust\fi
+  \bbl@xin@{/p}{/\bbl@cl{lnbrk}}%
+  \ifin@\AtBeginDocument{\bbl@tibetanjust}\fi
   % == Line breaking: hyphenate.other.(locale|script) ==
   \ifx\bbl@lbkflag\@empty
     \bbl@ifunset{bbl@hyotl@\languagename}{}%
@@ -2737,7 +2748,7 @@
       {\expandafter\ifx\csname bbl@dgnat@\languagename\endcsname\@empty\else
         \expandafter\expandafter\expandafter
         \bbl@setdigits\csname bbl@dgnat@\languagename\endcsname
-        \ifx\bbl@KVP@maparabic\@nil\else
+        \ifx\bbl@KVP@maparabic\@nnil\else
           \ifx\bbl@latinarabic\@undefined
             \expandafter\let\expandafter\@arabic
               \csname bbl@counter@\languagename\endcsname
@@ -2751,7 +2762,7 @@
   % == Counters: mapdigits ==
   % Native digits (lua level).
   \ifodd\bbl@engine
-    \ifx\bbl@KVP@mapdigits\@nil\else
+    \ifx\bbl@KVP@mapdigits\@nnil\else
       \bbl@ifunset{bbl@dgnat@\languagename}{}%
         {\RequirePackage{luatexbase}%
          \bbl@activate@preotf
@@ -2789,7 +2800,7 @@
   % What if extras<lang> contains a \babel@save\@alph? It won't be
   % restored correctly when exiting the language, so we ignore
   % this change with the \bbl@alph@saved trick.
-  \ifx\bbl@KVP@alph\@nil\else
+  \ifx\bbl@KVP@alph\@nnil\else
     \bbl@extras@wrap{\\\bbl@alph@saved}%
       {\let\bbl@alph@saved\@alph}%
       {\let\@alph\bbl@alph@saved
@@ -2798,7 +2809,7 @@
       \\\bbl@add\<extras\languagename>{%
         \let\\\@alph\<bbl@cntr@\bbl@KVP@alph @\languagename>}}%
   \fi
-  \ifx\bbl@KVP@Alph\@nil\else
+  \ifx\bbl@KVP@Alph\@nnil\else
     \bbl@extras@wrap{\\\bbl@Alph@saved}%
       {\let\bbl@Alph@saved\@Alph}%
       {\let\@Alph\bbl@Alph@saved
@@ -2808,7 +2819,7 @@
         \let\\\@Alph\<bbl@cntr@\bbl@KVP@Alph @\languagename>}}%
   \fi
   % == Calendars ==
-  \ifx\bbl@KVP@calendar\@nil
+  \ifx\bbl@KVP@calendar\@nnil
     \edef\bbl@KVP@calendar{\bbl@cl{calpr}}%
   \fi
   \def\bbl@tempe##1 ##2\@@{% Get first calendar
@@ -2858,7 +2869,7 @@
   % == Release saved transforms ==
   \bbl@release@transforms\relax % \relax closes the last item.
   % == main ==
-  \ifx\bbl@KVP@main\@nil  % Restore only if not 'main'
+  \ifx\bbl@KVP@main\@nnil  % Restore only if not 'main'
     \let\languagename\bbl@savelangname
     \chardef\localeid\bbl@savelocaleid\relax
   \fi}
@@ -2867,7 +2878,7 @@
   \@namedef{extras#1}{}%
   \@namedef{noextras#1}{}%
   \bbl@startcommands*{#1}{captions}%
-    \ifx\bbl@KVP@captions\@nil %      and also if import, implicit
+    \ifx\bbl@KVP@captions\@nnil %      and also if import, implicit
       \def\bbl@tempb##1{%             elt for \bbl@captionslist
         \ifx##1\@empty\else
           \bbl@exp{%
@@ -2884,7 +2895,7 @@
       \fi
     \fi
   \StartBabelCommands*{#1}{date}%
-    \ifx\bbl@KVP@import\@nil
+    \ifx\bbl@KVP@date\@nnil
       \bbl@exp{%
         \\\SetString\\\today{\\\bbl@nocaption{today}{#1today}}}%
     \else
@@ -2900,16 +2911,16 @@
       {\bbl@ifunset{bbl@rgthm@#1}{3}{\bbl@cs{rgthm@#1}}}}}%
   % == hyphenrules (also in renew) ==
   \bbl@provide@hyphens{#1}%
-  \ifx\bbl@KVP@main\@nil\else
+  \ifx\bbl@KVP@main\@nnil\else
      \expandafter\main@language\expandafter{#1}%
   \fi}
 \def\bbl@provide@renew#1{%
-  \ifx\bbl@KVP@captions\@nil\else
+  \ifx\bbl@KVP@captions\@nnil\else
     \StartBabelCommands*{#1}{captions}%
       \bbl@read@ini{\bbl@KVP@captions}2%   % Here all letters cat = 11
     \EndBabelCommands
   \fi
-  \ifx\bbl@KVP@import\@nil\else
+  \ifx\bbl@KVP@date\@nnil\else
     \StartBabelCommands*{#1}{date}%
       \bbl@savetoday
       \bbl@savedate
@@ -2943,7 +2954,7 @@
     {}}
 \def\bbl@provide@hyphens#1{%
   \let\bbl@tempa\relax
-  \ifx\bbl@KVP@hyphenrules\@nil\else
+  \ifx\bbl@KVP@hyphenrules\@nnil\else
     \bbl@replace\bbl@KVP@hyphenrules{ }{,}%
     \bbl@foreach\bbl@KVP@hyphenrules{%
       \ifx\bbl@tempa\relax    %  if not yet found
@@ -2956,7 +2967,7 @@
       \fi}%
   \fi
   \ifx\bbl@tempa\relax %         if no opt or no language in opt found
-    \ifx\bbl@KVP@import\@nil
+    \ifx\bbl@KVP@import\@nnil
       \ifx\bbl@initoload\relax\else
         \bbl@exp{%               and hyphenrules is not empty
           \\\bbl@ifblank{\bbl@cs{hyphr@#1}}%
@@ -2995,6 +3006,9 @@
   \bbl@trim\toks@{#2}%
   \bbl@xin@{;\bbl@section/\bbl@tempa;}{\bbl@key@list}%
   \ifin@\else
+    \bbl@xin@{,identification/include.}%
+             {,\bbl@section/\bbl@tempa}%
+    \ifin@\edef\bbl@required@inis{\the\toks@}\fi
     \bbl@exp{%
       \\\g@addto@macro\\\bbl@inidata{%
         \\\bbl@elt{\bbl@section}{\bbl@tempa}{\the\toks@}}}%
@@ -3007,6 +3021,16 @@
     \bbl@exp{\\\g@addto@macro\\\bbl@inidata{%
       \\\bbl@elt{identification}{\bbl@tempa}{\the\toks@}}}%
   \fi}
+\def\bbl@loop@ini{%
+  \loop
+    \if T\ifeof\bbl@readstream F\fi T\relax % Trick, because inside \loop
+      \endlinechar\m@ne
+      \read\bbl@readstream to \bbl@line
+      \endlinechar`\^^M
+      \ifx\bbl@line\@empty\else
+        \expandafter\bbl@iniline\bbl@line\bbl@iniline
+      \fi
+    \repeat}
 \ifx\bbl@readstream\@undefined
   \csname newread\endcsname\bbl@readstream
 \fi
@@ -3032,17 +3056,16 @@
       \let\bbl@inistore\bbl@inistore@min    % Remember it's local
     \fi
     \def\bbl@section{identification}%
+    \let\bbl@required@inis\@empty
     \bbl@exp{\\\bbl@inistore tag.ini=#1\\\@@}%
     \bbl@inistore load.level=#2\@@
-    \loop
-    \if T\ifeof\bbl@readstream F\fi T\relax % Trick, because inside \loop
-      \endlinechar\m@ne
-      \read\bbl@readstream to \bbl@line
-      \endlinechar`\^^M
-      \ifx\bbl@line\@empty\else
-        \expandafter\bbl@iniline\bbl@line\bbl@iniline
+    \bbl@loop@ini
+    \ifx\bbl@required@inis\@empty\else
+      \bbl@replace\bbl@required@inis{ }{,}%
+      \bbl@foreach\bbl@required@inis{%
+        \openin\bbl@readstream=##1.ini
+        \bbl@loop@ini}%
       \fi
-    \repeat
     % == Process stored data ==
     \bbl@csarg\xdef{lini@\languagename}{#1}%
     \bbl@read@ini@aux
@@ -3114,7 +3137,7 @@
  \ifx\bbl@tempa\relax\else
    \bbl@replace\bbl@tempa{=}{}%
    \ifx\bbl@tempa\@empty\else
-     \xdef\bbl@calendars{,\bbl@tempa}%
+     \xdef\bbl@calendars{\bbl@calendars,\bbl@tempa}%
    \fi
    \bbl@exp{%
      \def\<bbl@inikv@#1>####1####2{%
@@ -3293,7 +3316,7 @@
 \def\bbl@inikv@labels#1#2{%
   \in@{.map}{#1}%
   \ifin@
-    \ifx\bbl@KVP@labels\@nil\else
+    \ifx\bbl@KVP@labels\@nnil\else
       \bbl@xin@{ map }{ \bbl@KVP@labels\space}%
       \ifin@
         \def\bbl@tempc{#1}%
@@ -3387,6 +3410,7 @@
       \bbl@ifunset{bbl@calpr@\languagename}{}{\bbl@cl{calpr}},%
       #1}%
     \bbl@replace\bbl@tempe{ }{}%
+    \bbl@replace\bbl@tempe{CONVERT}{convert=}% Hackish
     \bbl@replace\bbl@tempe{convert}{convert=}%
     \let\bbl@ld@calendar\@empty
     \let\bbl@ld@variant\@empty
@@ -3493,7 +3517,7 @@
   \catcode`\%=12
   \catcode`\&=14
   \gdef\bbl@transforms#1#2#3{&%
-    \ifx\bbl@KVP@transforms\@nil\else
+    \ifx\bbl@KVP@transforms\@nnil\else
       \directlua{
          local str = [==[#2]==]
          str = str:gsub('%.%d+%.%d+$', '')
@@ -4096,9 +4120,7 @@
     \ifx\RTLfootnotetext\@undefined
       \AtEndOfPackage{%
         \EnableBabelHook{babel-bidi}%
-        \ifx\fontspec\@undefined
-          \bbl@loadfontspec % bidi needs fontspec
-        \fi
+        \bbl@loadfontspec % bidi needs fontspec
         \usepackage#1{bidi}}%
     \fi}
   \ifnum\bbl@bidimode>200

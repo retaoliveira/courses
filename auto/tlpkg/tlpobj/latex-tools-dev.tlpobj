@@ -1,17 +1,17 @@
 name latex-tools-dev
 category Package
-revision 63631
+revision 64533
 shortdesc Development pre-release of the LaTeX tools bundle
 longdesc This is a pre-release version of the standard LaTeX tools
 longdesc bundle. It accompanies the pre-testing kernel code
 longdesc (latex-base-dev), and is intended for testing by knowledgeable
 longdesc users.
-containersize 43204
-containerchecksum d8c9786ebf19693e43f9face12fd2660c71a3ddab75fb5d360805f31aafccaccc2065b5db6b084be92652429b76b69c77f6461f66c3ffc1cbd90e3e11db5c9f0
-doccontainersize 5315084
-doccontainerchecksum 764c6720959a1ceeec0c37b9b29d23779bc72281e955ef883733bec09bd825e3fca2d1342e2a91d816efe400de38efa79446f09bc27d0cb3b12d681842951848
-srccontainersize 228712
-srccontainerchecksum bc10076dc7ebd80570a53e673699810c5ab5e57aa460e380dddf1f7e719faa79b872772dcfa00d20878885773c76be870e37bb1f1193a43f4eff1cbae6204fbe
+containersize 43220
+containerchecksum f05930e313462ec4b0d5b600a8872e9c1663bcff568685a121485b06e4d25a38dbbf77e031ba93f74fb8436dfd71b27220672e6141b49b099940cd925fb1c32a
+doccontainersize 5314804
+doccontainerchecksum f2844752f2b2bb2420e25afb887e1ea985e980c732f11226daf8390c7358a716e95ee21664e4b000609592daef20630d818a709d0af5e6753a02af901448274f
+srccontainersize 228764
+srccontainerchecksum 4beb32ece5e220d79daa346077d7cca4b0b6ceb0c5e24f133fa4ebbd94fcd58f4d830eb980f2f4308ab4985069ba6ce0d38fbb94fd679cb36f16d317720524da
 runfiles size=121
  texmf-dist/tex/latex-dev/tools/.tex
  texmf-dist/tex/latex-dev/tools/afterpage.sty
@@ -63,4 +63,4 @@ runfiles size=121
 catalogue-ctan /macros/latex-dev/required/tools
 catalogue-license lppl1.3c
 catalogue-topics collection latex-devel
-catalogue-version 2022-11-01 pre-release 0
+catalogue-version 2022-11-01 pre-release 2

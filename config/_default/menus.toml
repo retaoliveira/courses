@@ -92,7 +92,7 @@
 [[main]]
   parent = "Disciplinas"
   name = "Quarto: um novo sistema para publicação técnica e científica - PPGA - 2022/2"
-  url = "disciplinas/quarto/"
+  url = "https://curso-quarto.netlify.app"
   weight = 50
 
 [[main]]

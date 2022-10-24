@@ -33,7 +33,7 @@
 %% 
 %% File: hyperref.dtx
 \ProvidesFile{hvtex.def}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hyperref driver for VTeX in PDF/PS mode]
 \Hy@VersionCheck{hvtex.def}
 \providecommand*{\XR@ext}{pdf}
@@ -137,32 +137,35 @@
     \let#1\Hy@gtemp
   }%
 \fi
-\ifx\mediaheight\@undefined
-\else
-  \ifx\mediaheight\relax
-  \else
-    \ifHy@setpagesize
-       \providecommand*{\VTeXInitMediaSize}{%
-         \ltx@IfUndefined{stockwidth}{%
-           \ifdim\paperheight>0pt %
-             \setlength\mediaheight\paperheight
-           \fi
-           \ifdim\paperheight>0pt %
-             \setlength\mediawidth\paperwidth
-           \fi
-         }{%
-           \ifdim\stockheight>0pt %
-             \setlength\mediaheight\stockheight
-           \fi
-           \ifdim\stockwidth>0pt %
-             \setlength\mediawidth\stockwidth
-           \fi
-         }%
-       }%
-       \Hy@AtBeginDocument{\VTeXInitMediaSize}%
-    \fi
-    \Hy@DisableOption{setpagesize}%
+\ifcsname mediaheight\endcsname
+  \ifHy@setpagesize
+     \providecommand*{\VTeXInitMediaSize}{%
+        \ifdim\stockwidth>\z@
+          \ifdim\stockheight>\z@
+           \setlength\mediaheight\stockheight
+           \setlength\mediawidth\stockwidth
+          \else
+            \ifdim\paperwidth>\z@
+              \ifdim\paperheight>\z@
+                \setlength\mediaheight\paperheight
+                \setlength\mediawidth\paperwidth
+              \fi
+            \fi
+          \fi
+        \else
+          \ifdim\stockwidth=\z@
+            \ifdim\paperwidth>\z@
+              \ifdim\paperheight>\z@
+                \setlength\mediaheight\paperheight
+                \setlength\mediawidth\paperwidth
+              \fi
+            \fi
+          \fi
+        \fi
+     }%
+     \Hy@AtBeginDocument{\VTeXInitMediaSize}%
   \fi
+  \Hy@DisableOption{setpagesize}%
 \fi
 \providecommand*\@pdfview{xyz}
 \providecommand*\@pdfborder{0 0 1}

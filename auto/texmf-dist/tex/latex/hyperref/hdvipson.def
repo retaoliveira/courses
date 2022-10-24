@@ -33,7 +33,7 @@
 %% 
 %% File: hyperref.dtx
 \ProvidesFile{hdvipson.def}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hyperref driver for dvipsone]
 \Hy@VersionCheck{hdvipson.def}
 \providecommand*{\XR@ext}{pdf}

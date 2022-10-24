@@ -33,7 +33,7 @@
 %% 
 %% File: hyperref.dtx
 \ProvidesFile{hdvipdfm.def}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hyperref driver for dvipdfm]
 \Hy@VersionCheck{hdvipdfm.def}
 \special{pdf:majorversion \Hy@pdf@majorversion}
@@ -632,19 +632,25 @@
 \AtBeginShipoutFirst{%
   \ifHy@setpagesize
     \begingroup
-      \@ifundefined{stockwidth}{%
-        \ifdim\paperwidth>\z@
-          \ifdim\paperheight>\z@
-            \special{papersize=\the\paperwidth,\the\paperheight}%
+      \ifdim\stockwidth>\z@
+        \ifdim\stockheight>\z@
+         \special{papersize=\the\stockwidth,\the\stockheight}%
+        \else
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \special{papersize=\the\paperwidth,\the\paperheight}%
+            \fi
           \fi
         \fi
-      }{%
-        \ifdim\stockwidth>\z@
-          \ifdim\stockheight>\z@
-            \special{papersize=\the\stockwidth,\the\stockheight}%
+      \else
+        \ifdim\stockwidth=\z@
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \special{papersize=\the\paperwidth,\the\paperheight}%
+            \fi
           \fi
         \fi
-      }%
+      \fi
     \endgroup
   \fi
   \Hy@DisableOption{setpagesize}%

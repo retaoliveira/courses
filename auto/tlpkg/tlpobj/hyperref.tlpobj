@@ -1,6 +1,6 @@
 name hyperref
 category Package
-revision 63665
+revision 64491
 shortdesc Extensive support for hypertext in LaTeX
 longdesc The hyperref package is used to handle cross-referencing
 longdesc commands in LaTeX to produce hypertext links in the document.
@@ -29,12 +29,12 @@ depend rerunfilecheck
 depend stringenc
 depend url
 depend zapfding
-containersize 91032
-containerchecksum ea0085b89e9819d4c852f8aece9283356a9408cf284c23c59c382dd18f4b4ac3954952510276c8dd972e3cbce8970b61dabd402ea7d5e164baeac2bfd57d514a
-doccontainersize 3681880
-doccontainerchecksum 1b7408d3b605976a4d4662cc97dc76f278b2672760565aa9b43f6093f9aec8182883b51b1fa5770eb6aec8d66a22492ce833cdd607d746ad82a8ffb27e927682
-srccontainersize 415140
-srccontainerchecksum 1e4fb9678576000a4716e49b1b1398a479b1f967b8a0077c14ae1b4874ec6a22b521ed9b100c5ff0ae565e18665ea45ad14a5735cca29ee47d9aa2bbe6aab7c0
+containersize 91056
+containerchecksum ed66c6415b99be491e93e70cd28b9cd3e68b879253ef5dd6b6519ab70bdfd7f44caca99bf8302652b4764487c970dad5b818565dab35e2e892871dfa04c3e67f
+doccontainersize 3680204
+doccontainerchecksum 0e4372c15cbae9db68046388acf390361b93c177f2116875113f1d489a3e270df9837bb9404b350d51879d9ab951bf39a6088b0b3fa7068d7643261e4177c453
+srccontainersize 415160
+srccontainerchecksum 0a7cedf1324709984ca78cbd6f8ce9015e6d7323e651d2ca0d68cc09a861689d484c463294de10777168f41f3d045c3571ba7b8434f3e97571333f820e1b24c8
 runfiles size=204
  texmf-dist/tex/latex/hyperref/backref.sty
  texmf-dist/tex/latex/hyperref/hdvipdfm.def
@@ -71,4 +71,4 @@ catalogue-contact-home https://github.com/latex3/hyperref
 catalogue-ctan /macros/latex/contrib/hyperref
 catalogue-license lppl1.3
 catalogue-topics hyper pdf-feat adobe-distiller form-fillin etex
-catalogue-version 7.00s
+catalogue-version 7.00t

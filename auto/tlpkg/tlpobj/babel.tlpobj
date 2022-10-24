@@ -1,6 +1,6 @@
 name babel
 category Package
-revision 63948
+revision 64614
 shortdesc Multilingual support for LaTeX, LuaLaTeX, XeLaTeX, and Plain TeX
 longdesc This package manages culturally-determined typographical (and
 longdesc other) rules for a wide range of languages. A document may
@@ -12,13 +12,13 @@ longdesc has to be done for each language. Included is also a set of ini
 longdesc files for about 250 languages. Many language styles work with
 longdesc pdfLaTeX, as well as with XeLaTeX and LuaLaTeX, out of the box.
 longdesc A few even work with plain formats.
-containersize 191140
-containerchecksum ba96647dfd2e6eb5ea3d8c03a6efc99a6122314b93c1ed911c1d8f2c01a44b0dda2605354ae53b291bf74e207a7a6ed8421e2919bd13637847fef27c7f0ef582
-doccontainersize 870100
-doccontainerchecksum 62cde36b43552f2a893fbb271cd5354eed19e7a022ceeb5ea52cfaefe8aa051f157029a7cff26c216d167656d1f33475e15b72e1000a496e831672e8d4ec2404
-srccontainersize 718440
-srccontainerchecksum cdabe36eb98fd4a20b3dd0066fd77b0df48ca24865bbd767bdeaa18416ea6b77f9fd0821ef962cb7b58bcc991830465eb02b904fc369ac90a8e1058a0190a411
-runfiles size=1035
+containersize 192408
+containerchecksum 1c69ff276834f3581bd006eb1d20428884b268c213e1aed29b3e426d57015e821a268aecf9abf76035716609db76e858d3d550dc2fc3ccfc3320c648958c0a22
+doccontainersize 872556
+doccontainerchecksum f74f6acff9e4263c11d434b4cfc9e874ef7c2d7862f204e3f5344538211c347e84f4c0c0b0842cc3c2cdb3af18596e8e0827f5cd01b2ab3274864fdf94ef7d58
+srccontainersize 715732
+srccontainerchecksum 6020850841e08aaf47e23df71b5d201cad79f1c8578b0c468b2a91e7d25cb227c29d11ebb3669efc7cac5c594a4cb512c4144059ae6559a51b9ae36db31afead
+runfiles size=1020
  texmf-dist/makeindex/babel/bbglo.ist
  texmf-dist/makeindex/babel/bbind.ist
  texmf-dist/tex/generic/babel/UKenglish.sty
@@ -31,6 +31,7 @@ runfiles size=1035
  texmf-dist/tex/generic/babel/babel-bidi-basic.lua
  texmf-dist/tex/generic/babel/babel-ca-buddhist.tex
  texmf-dist/tex/generic/babel/babel-ca-coptic.tex
+ texmf-dist/tex/generic/babel/babel-ca-ethiopic.tex
  texmf-dist/tex/generic/babel/babel-ca-hebrew.tex
  texmf-dist/tex/generic/babel/babel-ca-islamic.tex
  texmf-dist/tex/generic/babel/babel-ca-persian.tex
@@ -505,6 +506,7 @@ runfiles size=1035
  texmf-dist/tex/generic/babel/locale/oc/babel-occitan.tex
  texmf-dist/tex/generic/babel/locale/om/babel-om.ini
  texmf-dist/tex/generic/babel/locale/om/babel-oromo.tex
+ texmf-dist/tex/generic/babel/locale/or/babel-odia.tex
  texmf-dist/tex/generic/babel/locale/or/babel-or.ini
  texmf-dist/tex/generic/babel/locale/or/babel-oriya.tex
  texmf-dist/tex/generic/babel/locale/os/babel-os.ini
@@ -765,4 +767,4 @@ catalogue-contact-repository https://github.com/latex3/babel
 catalogue-ctan /macros/latex/required/babel/base
 catalogue-license lppl1.3
 catalogue-topics multilingual
-catalogue-version 3.78
+catalogue-version 3.81

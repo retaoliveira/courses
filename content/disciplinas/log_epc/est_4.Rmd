@@ -1,10 +1,10 @@
 ---
 date: "2021-06-30T00:00:00+01:00"
-draft: true
+draft: False
 menu:
-  log_epc:
-    parent: Atividades de Aprendizagem
-    weight: 11
+  log_adm:
+    parent: Atividades de aprendizagem
+    weight: 15
 title: 4. Gestão de transportes
 editor_options: 
   markdown: 
@@ -16,13 +16,23 @@ type: docs
 weight: 45
 ---
 
+Nesta atividade, os grupos deverão trabalhar com a contrução de conteúdos sobre as tecnologias de transporte (modos) e sobre o contexto de oferta desses modos no Brasil. 
 
-O PRAZO DE ENTREGA DESTA ATIVIDADE PELO Dropbox Paper É: **04/07**
+Não será necessário preparar uma apresentação ou mesmo um relatório. Os grupos deverão organizar as informações e buscar instrumentos para ilustração a serem discutidos em sala.
 
-Leia do artigo [O uso da tecnologia nas adversidades da gestão de transportes](https://github.com/retaoliveira/relements/raw/main/texto/ti_transportes.pdf) e responda as perguntas no Dropbox Paper. 
+Os grupos que trabalharão com a caracterização das tecnologias deverão explorar os seguintes elementos: 
 
-1. Como as TICs podem contribuir para a mitigação dos impactos disruptivos e da pandemia COVID 19 na gestão de transportes?
+a) subclassificação dos modos;   
+b) Como os modos se originaram;   
+c) Elementos de infra e superestrutura;   
+d) Elementos de material rodante;   
+e) Onde e como ocorrem os gargalos (pontos onde a capacidade é menor do que a demanda, gerando congestionamento)
 
-2. Discuta o **problema estrutural** brasileiro quanto ao **transporte de cargas** em escala regional que compromete o alinhamento estratégico na cadeia de suprimentos, a eficiência, a responsividade, a sustentabilidade, a resiliência e a competitividade de produtos brasileiros no mercado internacional.
+Os grupos que trabalharão com a caracterização do contexto, deverão explorar os seguintes elementos: 
 
-3. Na sua opinião, faz sentido os caminhoneiros demandarem intervenção das autoridades públicas para imposição de uma tabela de fretes mínimos ao mercado? Justifique. 
+a) Uso no Brasil;
+b) Como é a distribuição da infraestrutura no país;
+c) Quem são os operadores desse modo;
+d) Como o Brasil se compara com a distribuição de infraestrutura em outros países.
+
+A discussão em sala acontecerá dia **17/10**. 

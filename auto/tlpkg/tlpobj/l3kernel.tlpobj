@@ -1,6 +1,6 @@
 name l3kernel
 category Package
-revision 64066
+revision 64552
 shortdesc LaTeX3 programming conventions
 longdesc The l3kernel bundle provides an implementation of the LaTeX3
 longdesc programmers' interface, as a set of packages that run under
@@ -9,13 +9,13 @@ longdesc LaTeX3 kernel and other future code are built: it is an API for
 longdesc TeX programmers. The packages are set up so that the LaTeX3
 longdesc conventions can be used with regular LaTeX2e packages.
 depend l3backend
-containersize 173260
-containerchecksum ed8bef888a6b90c1f15c52c85907b8792f93beeb638d6ca5f749d79a1c3fc2916dcb53009f64b89deaac4c0b7ab1dc56def5d036da354267a490641c31f7dcf0
-doccontainersize 11848044
-doccontainerchecksum eb78bac71852625676ed6aac3e9baf53c523ffb6b5c4bf2d8e88f11a19f0a0391b15737d76c7a6d0ab4dff75b132c17e8292c4924718ca1384220a5c37f43403
-srccontainersize 592832
-srccontainerchecksum b072da980d0a1ae433f03e8bf2c0410d2e972e6c2b4441d9b5336b3b1442b30d51ba90f5d809ab626d6729466084c23ba59b98a0ed418096b5ecc85341f51f13
-runfiles size=355
+containersize 175504
+containerchecksum 7729efcabe0e12290402bdc36366e52469527acb70a48292ff7c87f4dff526f8c67b682a1106dd883336d7c2efa596717d3c295641ad16757a7e5e8a5946fbd7
+doccontainersize 11915464
+doccontainerchecksum 74ae7172bbe3aac19c68dd9f73d6e43fe6ad4e1375a75255e38a26c3e5ae3adaa5f611d978b87d3b34b771f19848834aab63a11a98fecc7d323149caeccc54ad
+srccontainersize 597728
+srccontainerchecksum 009b3c15c078bda5f4b6a2f4e5bc0c56b0459a0b88621d405c5fe8f47ae93451ee295ecdb41ff715ebeff8d21e23fc6ea537b6d7da2ab3491fd0931c938a2659
+runfiles size=360
  texmf-dist/tex/latex/l3kernel/expl3-code.tex
  texmf-dist/tex/latex/l3kernel/expl3-generic.tex
  texmf-dist/tex/latex/l3kernel/expl3.ltx

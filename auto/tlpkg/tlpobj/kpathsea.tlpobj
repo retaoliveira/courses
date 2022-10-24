@@ -1,6 +1,6 @@
 name kpathsea
 category TLCore
-revision 63534
+revision 64475
 shortdesc Path searching library for TeX-related files
 longdesc Kpathsea is a library and utility programs which provide path
 longdesc searching facilities for TeX file types, including the
@@ -9,10 +9,10 @@ longdesc layered on top of a general search mechanism. It is not
 longdesc distributed separately, but rather is released and maintained
 longdesc as part of the TeX Live sources.
 depend kpathsea.ARCH
-containersize 32472
-containerchecksum fc14de3c5a2d42b27c1bc3eddfcb1da4c615b9ef84df2687388ca637244ec2a32ec332b6de7db8d7e61e5535d217e42a3f869cd8df32fbc85662a990461f41ca
-doccontainersize 1079700
-doccontainerchecksum 1ebd180d7047b7393fdfd862f0509e9d0dc7c0aa7306457675e08f151b785440caba794146b357c76f1588cd1979526b40d841807218b92f9992208b1b47f1ab
+containersize 32476
+containerchecksum 0d8622ae361967754182dd797e34c470219f4939ad5c740b8564fe5879daa4f7b1b324efc6f87ee94af809d115ecbbfe6a16b6c3b12043787932609aa962aff9
+doccontainersize 1061956
+doccontainerchecksum 1df1bafc82d966a6f8a01cf951803b0902fe2ca41fff292f9fac5a4e86db63e214572c9ba0d83a5d683f0da7e4f9fa70e20b09cca2629805719985d14c2efc12
 runfiles size=52
  texmf-dist/web2c/amiga-pl.tcx
  texmf-dist/web2c/cp1250cs.tcx

@@ -33,7 +33,7 @@
 %% 
 %% File: hyperref.dtx
 \ProvidesFile{hpdftex.def}
-  [2022-06-20 v7.00s %
+  [2022-09-22 v7.00t %
   Hyperref driver for pdfTeX]
 \Hy@VersionCheck{hpdftex.def}
 \pdf@ifdraftmode{%
@@ -701,21 +701,28 @@
         \fi
       \fi
     }{%
-      \ltx@IfUndefined{stockwidth}{%
-        \ifdim\paperwidth>\z@
-          \setlength{\pdfpagewidth}{\paperwidth}%
-        \fi
-        \ifdim\paperheight>\z@
-          \setlength{\pdfpageheight}{\paperheight}%
-        \fi
-      }{%
-        \ifdim\stockwidth>\z@
-          \setlength{\pdfpagewidth}{\stockwidth}%
-        \fi
+      \ifdim\stockwidth>\z@
         \ifdim\stockheight>\z@
-          \setlength{\pdfpageheight}{\stockheight}%
+         \setlength{\pdfpagewidth}{\stockwidth}%
+         \setlength{\pdfpageheight}{\stockheight}%
+        \else
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \setlength{\pdfpagewidth}{\paperwidth}%
+              \setlength{\pdfpageheight}{\paperheight}%
+            \fi
+          \fi
         \fi
-      }%
+      \else
+        \ifdim\stockwidth=\z@
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \setlength{\pdfpagewidth}{\paperwidth}%
+              \setlength{\pdfpageheight}{\paperheight}%
+            \fi
+          \fi
+        \fi
+      \fi
     }%
   }%
   \Hy@DisableOption{setpagesize}%

@@ -1,6 +1,6 @@
 name tlgs.win32
 category TLCore
-revision 63030
+revision 64483
 catalogue ghostscript
 shortdesc Freely available PostScript interpreter
 longdesc Ghostscript is a freely available PostScript interpreter which
@@ -9,9 +9,9 @@ longdesc complement to a TeX installation, used in many utilities,
 longdesc including PostScript/PDF viewers such as gv and GSview.
 longdesc Ghostscript is no longer held on CTAN: please see the home page
 longdesc for downloads.
-containersize 8131508
-containerchecksum 25a352dac72c2bb51817a855f9eff7303e9032009d1320ca39fb0d07fd6d920ee3994669792cd1722edf8840ba552456a60a95daf249aa34ca64d04f8cd435c1
-binfiles arch=win32 size=7688
+containersize 12448600
+containerchecksum d4968393ed333b6610900b998b90086e142ae6cc699488c583da338cb0c94664606930950aded9423aaa0d5562edb1e5abd3e39eaca37c107dac87fd063f85c2
+binfiles arch=win32 size=11994
  bin/win32/eps2eps.exe
  bin/win32/pdf2dsc.exe
  bin/win32/pdfopt.exe
@@ -299,8 +299,12 @@ binfiles arch=win32 size=7688
  tlpkg/tlgs/Resource/SubstCID/Korea1-WMode
  tlpkg/tlgs/bin/gsdll32.dll
  tlpkg/tlgs/bin/gsdll32.lib
+ tlpkg/tlgs/bin/gsdll64.dll
+ tlpkg/tlgs/bin/gsdll64.lib
  tlpkg/tlgs/bin/gswin32.exe
  tlpkg/tlgs/bin/gswin32c.exe
+ tlpkg/tlgs/bin/gswin64.exe
+ tlpkg/tlgs/bin/gswin64c.exe
  tlpkg/tlgs/fonts/COPYING
  tlpkg/tlgs/fonts/LICENSE-utopia.txt
  tlpkg/tlgs/fonts/README-utopia.txt
