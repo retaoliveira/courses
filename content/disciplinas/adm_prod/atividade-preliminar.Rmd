@@ -1,21 +1,21 @@
 ---
-title: "Atividde preliminar"
+title: "Atividade preliminar"
 draft: false
-date: '2021-10-15T00:00:00+01:00'
+date: '2021-11-08T00:00:00+01:00'
 menu:
   adm-prod:
-    parent: Atividade preliminar
-    weight: 01
+    parent: Atividades avaliativas
+    weight: 10
 toc: yes
 type: docs
-weight: 16
+weight: 10
 ---
 
 Esta atividade deverá ser desenvolvida pelos grupos informados no trabalho de cronoanálise, a saber: 
 
-Grupo 1: 
+Grupo 1: Caio Costa Rosa Santos, Rogério Pedersoli de Lima, Thais Paulo de Moura, Vanderlei Alves de Souza
 
-Grupo 2: 
+Grupo 2: Pedro Henrique Figueiroa Mattos, Arthur Tertolino Manini e Erick Martins
 
 Grupo 3: 
 

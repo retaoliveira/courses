@@ -19,8 +19,13 @@ editor_options:
 
 Por meio deste documento, nortearemos a conclusão da disciplina Administração da Produção 1 do curso de administração. 
 
-Temos como proposta pedagógica a `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. Para tanto, desenvolveremos duas atividades avaliativas, com valoração de 30 pontos cada. 
+Temos como proposta pedagógica a `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. Para tanto, desenvolveremos três atividades avaliativas, a saber:
 
+ Atividade | Pontuação
+ ----------|----------
+ Atividade preliminar | 10 pontos
+ Atividade assíncrona | 20 pontos
+ Atividade em sala | 30 pontos
 
 
 ## Objetivos de aprendizagem
@@ -32,7 +37,7 @@ Por meio destas atividades, os estudantes desenvolverão competências para disc
 
 | **Data**           | **CH** | **Assunto** | **Formato**|
 |----------|--------|-------------|------|
-| 19/11              |2h|Retrospecto e nivelamentos de conceitos fundamentais e estrutura geral da gestão da produção | encontro síncrono online
+| 18/11              |2h|Retrospecto e nivelamentos de conceitos fundamentais e estrutura geral da gestão da produção | encontro síncrono online
 | 22/11              |2h|Horizontes de planejamento e sua relação com as dimensões da administração da produçao | Encontro síncrono **presencial**
 | 25/11              |2h|Atividade assíncrona sobre planejamento, programação e controle da produção | Atividade assíncrona
 | 29/11              |2h|Planejamento, programação e controle da produção | Encontro síncrono **presencial**
