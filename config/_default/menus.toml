@@ -124,11 +124,11 @@
   url = "disciplinas/log_especial/"
   weight = 30
 
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Econometria de Séries Temporais - PPGA - 2021/2"
-#  url = "disciplinas/st/"
-#  weight = 30
+[[main]]
+  parent = "Disciplinas"
+  name = "Administração da produção - 2022/2"
+  url = "disciplinas/adm_prod/"
+  weight = 70
   
 #[[main]]
 #  parent = "Disciplinas"
