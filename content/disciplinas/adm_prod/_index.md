@@ -37,6 +37,7 @@ Por meio destas atividades, os estudantes desenvolverão competências para disc
 
 | **Data**           | **CH** | **Assunto** | **Formato**|
 |----------|--------|-------------|------|
+| 15/11 | 2h | Atividade preliminar | Atividade assíncrona
 | 18/11              |2h|Retrospecto e nivelamentos de conceitos fundamentais e estrutura geral da gestão da produção | encontro síncrono online
 | 22/11              |2h|Horizontes de planejamento e sua relação com as dimensões da administração da produçao | Encontro síncrono **presencial**
 | 25/11              |2h|Atividade assíncrona sobre planejamento, programação e controle da produção | Atividade assíncrona
