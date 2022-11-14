@@ -61,7 +61,7 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 | 31/10              |2h|Gestão de estoques e armazenagem
 | 07/11              |2h|Localizações logísticas.
 | 14/11              |2h|Localizações logísticas.
-| 21/11              |2h|Custos logísticos.
+| 21/11              |2h|Localizações logísticas.
 | 28/11              |2h|Custos logísticos.
 | 05/12              |2h|Custos logísticos.
 | 12/12              |2h|Logística reversa, verde e sustentável.

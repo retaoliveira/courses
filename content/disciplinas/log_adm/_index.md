@@ -79,17 +79,17 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas 
 | 10/10              |2h|Transportes e distribuição física.
 | 17/10              |2h|Transportes e distribuição física.
 | 19/10              |2h|Transportes e distribuição física.
-| 24/10              |2h|Gestão de estoques e armazenagem
-| 26/10              |2h|Gestão de estoques e armazenagem
-| 31/10              |2h|Localizações logísticas.
-| 07/11              |2h|Localizações logísticas.
-| 09/11              |2h|Localizações logísticas.
-| 14/11              |2h|Localizações logísticas.
-| 16/11              |2h|Custos logísticos.
-| 21/11              |2h|Custos logísticos.
-| 23/11              |2h|Custos logísticos.
+| 24/10              |2h|Transportes e distribuição física.
+| 26/10              |2h|Transportes e distribuição física.
+| 31/10              |2h|Transportes e distribuição física.
+| 07/11              |2h|Transportes e distribuição física.
+| 09/11              |2h|Gestão de estoques e armazenagem.
+| 14/11              |2h|Gestão de estoques e armazenagem.
+| 16/11              |2h|Transportes aquaviário e aéreo.
+| 21/11              |2h|Localizações logísticas.
+| 23/11              |2h|Localizações logísticas.
 | 28/11              |2h|Custos logísticos.
-| 30/11              |2h|Logística reversa, verde e sustentável.
+| 30/11              |2h|Custos logísticos.
 | 05/12              |2h|Logística reversa, verde e sustentável.
 | 07/12              |2h|Exame especial
 
