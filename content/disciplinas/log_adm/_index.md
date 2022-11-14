@@ -99,15 +99,18 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Atividade
 ------|------------
-10|  AA1 - Nivel de serviço logístico
-10|  AA2 - TICs e KPIs
-10|  AA3 – Logística Urbana
-10|  AA4 - Gestão de Transportes
-10|  AA5 - Gestão de estoques e armazenagem
-10|  AA6 - Multivarejo e omnichanel
-10|  AA7 - Sustentabilidade e Logística
-30|  Projeto Integrador
-TOTAL:| 100 pontos
+10|  Estudos Autônomos 1 - Nivel de serviço logístico
+10|  Estudos Autônomos 2 - TICs e KPIs
+10|  Estudos Autônomos 3 – Logística Urbana
+10|  Estudos Autônomos 4 - Gestão de Transportes
+10|  Estudos Autônomos 5 - Gestão de estoques e armazenagem
+05|  Estudos Autônomos 6 - Redes Logísticas
+10|  Estudos Autônomos 7 - Custos logísticos
+05|  Projeto integrador 1
+10|  Projeto integrador 2
+10|  Projeto integrador 3
+10|  Projeto integrador 4
+TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
