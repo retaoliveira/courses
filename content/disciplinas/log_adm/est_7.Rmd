@@ -1,0 +1,40 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Atividades de aprendizagem
+    weight: 21
+title: 6. Redes Logísticas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A demanda anual para produção equivale a 120.000 motores e o custo unitário de aquisição de cada motor é de R$ 120,00. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.
+
+Cada motor pesa cerca de 4,5 quilogramas e o lote de compras atualmente definido para aquisição destes componentes é de 3.000 unidades. Após recebimento do pedido, o fornecedor demora 1 (um) dia para expedição dos motores.
+
+A empresa mantém um estoque de segurança de 50% da demanda média por motores durante o lead time de entrega.
+
+Os custos anuais para manutenção de estoque dos motores são de 25% do valor de aquisição. 
+
+O gerente da fábrica recebeu uma proposta para realizar o transporte dos motores e deve decidir qual irá aceitar. Os detalhes da operação de transporte são apresentados a seguir. 
+
+|Transportadora |	Lote de Compra Ótimo (un)	|Tempo em trânsito (dias)	|Custo unitário de transporte (R$/kg)|
+|---|-----------|-----------|-------------|
+|AMRailroad	|2000	|5	|0,144|
+|Northeast Trucking|	1000	|3	|0,167|
+|Golden Freightways|	500|	3	|0,178|
+|Golden Freightways|	1500|	3	|0,178|
+|Golden Freightways|	2500|	3	|0,133|
+|Golden Freightways|	3000|	3	|0,089|
+|Golden Freightways|	4000|	3	|0,079|
+
+A partir do cálculo do custo total de estoque (cíclico, segurança e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica. 
+

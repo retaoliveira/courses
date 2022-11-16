@@ -693,6 +693,84 @@
     </item>
     
     <item>
+      <title>6. Redes Logísticas</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_adm/est_7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_adm/est_7/</guid>
+      <description>
+
+
+&lt;p&gt;Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A demanda anual para produção equivale a 120.000 motores e o custo unitário de aquisição de cada motor é de R$ 120,00. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.&lt;/p&gt;
+&lt;p&gt;Cada motor pesa cerca de 4,5 quilogramas e o lote de compras atualmente definido para aquisição destes componentes é de 3.000 unidades. Após recebimento do pedido, o fornecedor demora 1 (um) dia para expedição dos motores.&lt;/p&gt;
+&lt;p&gt;A empresa mantém um estoque de segurança de 50% da demanda média por motores durante o lead time de entrega.&lt;/p&gt;
+&lt;p&gt;Os custos anuais para manutenção de estoque dos motores são de 25% do valor de aquisição.&lt;/p&gt;
+&lt;p&gt;O gerente da fábrica recebeu uma proposta para realizar o transporte dos motores e deve decidir qual irá aceitar. Os detalhes da operação de transporte são apresentados a seguir.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;7%&#34; /&gt;
+&lt;col width=&#34;28%&#34; /&gt;
+&lt;col width=&#34;28%&#34; /&gt;
+&lt;col width=&#34;34%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Transportadora&lt;/th&gt;
+&lt;th&gt;Lote de Compra Ótimo (un)&lt;/th&gt;
+&lt;th&gt;Tempo em trânsito (dias)&lt;/th&gt;
+&lt;th&gt;Custo unitário de transporte (R$/kg)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;AMRailroad&lt;/td&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0,144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Northeast Trucking&lt;/td&gt;
+&lt;td&gt;1000&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,167&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Golden Freightways&lt;/td&gt;
+&lt;td&gt;500&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Golden Freightways&lt;/td&gt;
+&lt;td&gt;1500&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Golden Freightways&lt;/td&gt;
+&lt;td&gt;2500&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,133&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Golden Freightways&lt;/td&gt;
+&lt;td&gt;3000&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,089&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Golden Freightways&lt;/td&gt;
+&lt;td&gt;4000&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0,079&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A partir do cálculo do custo total de estoque (cíclico, segurança e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>3. Logística Urbana (para todos os alunos)</title>
       <link>https://retacourses.netlify.app/disciplinas/log_adm/aa_3/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
