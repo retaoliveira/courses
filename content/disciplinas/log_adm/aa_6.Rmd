@@ -26,13 +26,15 @@ O gerente da fábrica recebeu uma proposta para realizar o transporte dos motore
 
 |Transportadora |	Lote de Compra Ótimo (un)	|Tempo em trânsito (dias)	|Custo unitário de transporte (R$/kg)|
 |------------|-------|-------|--------|
-|AMRailroad	|2000	|5	|0,144|
-|Northeast Trucking|	1000	|3	|0,167|
-|Golden Freightways|	500|	3	|0,178|
-|Golden Freightways|	1500|	3	|0,178|
-|Golden Freightways|	2500|	3	|0,133|
-|Golden Freightways|	3000|	3	|0,089|
-|Golden Freightways|	4000|	3	|0,079|
+|AMRailroad	|2000	|5	|0,10222222
+|
+|Northeast Trucking|	1000	|3	|0,166666667|
+|Golden Freightways|	500|	3	|0,188888889|
+|Golden Freightways|	1500|	3	|0,177777778|
+|Golden Freightways|	2500|	3	|0,133333333|
+|Golden Freightways|	3000|	3	|0,111111111|
+|Golden Freightways|	4000|	3	|0,078888889
+|
 
 A partir do cálculo do custo total de estoque (cíclico e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica. 
 
