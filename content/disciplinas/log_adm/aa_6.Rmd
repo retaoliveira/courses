@@ -16,13 +16,11 @@ type: docs
 weight: 25
 ---
 
-Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A demanda anual para produção equivale a 120.000 motores e o custo unitário de aquisição de cada motor é de R$ 120,00. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.
+Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A **demanda anual** para produção equivale a **120.000 motores** e o custo unitário de **aquisição** de cada motor é de **R$ 120,00**. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.
 
-Cada motor pesa cerca de 4,5 quilogramas e o lote de compras atualmente definido para aquisição destes componentes é de 3.000 unidades. Após recebimento do pedido, o fornecedor demora 1 (um) dia para expedição dos motores.
+Cada motor pesa cerca de **5 quilogramas**. Após recebimento do pedido, o fornecedor expede dos motores no mesmo dia.
 
-A empresa mantém um estoque de segurança de 50% da demanda média por motores durante o lead time de entrega.
-
-Os custos anuais para manutenção de estoque dos motores são de 25% do valor de aquisição. 
+Os **custos anuais** para manutenção de estoque dos motores são de **25% do valor de aquisição**. 
 
 O gerente da fábrica recebeu uma proposta para realizar o transporte dos motores e deve decidir qual irá aceitar. Os detalhes da operação de transporte são apresentados a seguir. 
 
@@ -36,5 +34,5 @@ O gerente da fábrica recebeu uma proposta para realizar o transporte dos motore
 |Golden Freightways|	3000|	3	|0,089|
 |Golden Freightways|	4000|	3	|0,079|
 
-A partir do cálculo do custo total de estoque (cíclico, segurança e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica. 
+A partir do cálculo do custo total de estoque (cíclico e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica. 
 
