@@ -1,0 +1,20 @@
+---
+title: "Atividade 01"
+draft: false
+date: '2021-11-08T00:00:00+01:00'
+menu:
+  adm_prod:
+    parent: Atividades avaliativas
+    weight: 11
+toc: yes
+type: docs
+weight: 11
+---
+
+Os componentes do grupo deverão responder as perguntas que seguem apenas com o conhecimento adquirido ao longo desta disciplina, sem necessariamente consultar fontes formais para elaboração das respostas.
+
+A entrega da atividade será realizada pela Tarefa no SIGAA 
+
+1. Como as dimensões de (i) variedade do output, (ii) volume do output, (iii) variação da demanda, e (iv) visibilidade pelo consumidor diferenciam as decisões gerais da administração da produção?
+
+2. Diferencie eficácia e eficiência/produtividade. Como esses dois conceitos se relacionam aos objetivos da administração da produção? 

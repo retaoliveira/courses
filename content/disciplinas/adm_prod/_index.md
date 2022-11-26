@@ -25,7 +25,7 @@ Temos como proposta pedagógica a `Aprendizagem Baseada em Projetos` e `Sala de 
  ----------|----------
  Atividade preliminar | 10 pontos
  Atividade assíncrona | 20 pontos
- Atividade em sala | 30 pontos
+ Atividade assíncrona | 30 pontos
 
 
 ## Objetivos de aprendizagem

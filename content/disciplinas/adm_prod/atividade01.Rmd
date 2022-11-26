@@ -1,0 +1,27 @@
+---
+title: "Atividade 01"
+draft: false
+date: '2021-11-08T00:00:00+01:00'
+menu:
+  adm_prod:
+    parent: Atividades avaliativas
+    weight: 11
+toc: yes
+type: docs
+weight: 11
+---
+
+
+A entrega da atividade será realizada pela Tarefa no SIGAA e o trabalho realizado pelos grupos de trabalho. Podem entregar apenas uma atividade por grupo. 
+
+Lembrem-se de usar linguagem própria e que não é admitida cópia de outros documentos, sob penalidade de anulação da nota. 
+
+
+1. Defina "administração da produção". Quais decisões precisamos tomar? 
+
+2. Qual a diferença entre os conceitos "projeto" e "planejamento"? Discuta um exemplo para ilustrar sua resposta. 
+
+3. Quais são os três horizontes de planejamento? Quais suas diferenças? Qual é o mais adequado para a administração da produção?
+
+4. A que se referem as atividades de "planejamento, programação e controle da produção"? Cite e explique um exemplo de ações que são demandadas nessas atividades. 
+
