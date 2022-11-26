@@ -6,7 +6,7 @@ menu:
   adm_prod:
     name: Organização do curso
     weight: 1
-lastmod: "2022-08-12T00:00:00Z"
+lastmod: "2022-11-25T00:00:00Z"
 toc: yes
 type: docs
 weight: 1
