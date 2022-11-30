@@ -104,9 +104,8 @@ Pontos|	Atividade
 10|  Estudos Autônomos 3 – Logística Urbana
 10|  Estudos Autônomos 4 - Gestão de Transportes
 10|  Estudos Autônomos 5 - Gestão de estoques e armazenagem
-05|  Estudos Autônomos 6 - Redes Logísticas
-10|  Estudos Autônomos 7 - Custos logísticos
-05|  Projeto integrador 1
+10|  Estudos Autônomos 6 - Redes Logísticas
+10|  Projeto integrador 1
 10|  Projeto integrador 2
 10|  Projeto integrador 3
 10|  Projeto integrador 4
