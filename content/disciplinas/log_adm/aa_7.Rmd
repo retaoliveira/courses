@@ -1,0 +1,23 @@
+---
+date: "2022-11-165T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Atividades de aprendizagem
+    weight: 22
+title: 7. Custos Logísticos (para quem não esteve em sala)
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 26
+---
+
+Leia o artigo disponível no [link](https://cefetmgbr-my.sharepoint.com/:b:/g/personal/renataoliveira_cefetmg_br/EZy80Id-UpJBku1EskSmrh0BqkmOdxUseMhgjsHt6asHmA?e=Yi33kg) e na tarefa no SIGAA. 
+
+Responda: 
+
+1. Como a curva ABC contribui para a gestão de armazenagem? Explique como é possível utilizar essa abordagem para aumento de produtividade, mais agilidade no picking e redução do custo operacional. 
