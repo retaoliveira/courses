@@ -11,9 +11,7 @@ type: docs
 weight: 11
 ---
 
-
-
-A entrega da atividade será realizada pela Tarefa no SIGAA 
+A entrega da atividade será realizada pela Tarefa no SIGAA até dia 06/12.
 
 Em grupos, segundo o tema sorteado:
 
