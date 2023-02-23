@@ -49,19 +49,20 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas 
 |--------------------|--------|-------------|
 | 27/03              |2h|Logística empresarial e a cadeia de suprimentos. 
 | 31/03              |2h|Logística empresarial e a cadeia de suprimentos.
-| 03/04             |2h|Planejamento e gestão da cadeia de suprimentos.
+| 03/04              |2h|Planejamento e gestão da cadeia de suprimentos.
 | 10/04              |2h|Planejamento e gestão da cadeia de suprimentos.   
 | 14/04              |2h|Planejamento e gestão da cadeia de suprimentos.
 | 17/04              |2h|Nível de serviço logístico, desempenho e ICT.
 | 24/04              |2h|KPIs em gestão de processos de produção e suprimento
 | 28/04              |2h|KPIs em gestão de processos de produção e suprimento  
 | 05/05              |2h|Logística urbana.
-| 08/05              |2h|Logística urbana. | 12/05              |2h|Logística urbana.
+| 08/05              |2h|Logística urbana. 
+12/05                |2h|Logística urbana.
 | 15/05              |2h|Transportes e distribuição física.
 | 19/05              |2h|Transportes e distribuição física.
-| 22/05               |2h|
+| 22/05              |2h|Transportes e distribuição física.
 | 26/05              |2h|Transportes e distribuição física.
-| 29/05              |2h|Gestão de estoques e armazenagem.
+| 28/05              |2h|Gestão de estoques e armazenagem.
 | 02/06              |2h|Gestão de estoques e armazenagem.
 | 05/06              |2h|Localizações logísticas.
 | 12/06              |2h|Localizações logísticas.
