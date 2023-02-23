@@ -1,7 +1,7 @@
 ---
 date: "2022-28-03T00:00:00Z"
 draft: false
-lastmod: "2022-08-12T00:00:00Z"
+lastmod: "2023-23-02T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
@@ -17,7 +17,7 @@ editor_options:
 
 ## Proposta pedagógica
 
-A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
+A intencionalidade pedagógica deste curso é fazer com que os estudantes possam desenvolver seu aprendizado sobre elementos e suas interações nos sistemas logísticos de maneira mais dinâmica e com protagonismo do estudante. Serão apresentadas bases teóricas e desenvolvidas atividades de entendimento prático do conteúdo proposto.
 
 A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
 
@@ -48,24 +48,23 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 22/08              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 29/08              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 05/09              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 12/09              |2h|Nível de serviço logístico, desempenho e ICT.
-| 19/09              |2h|KPIs em gestão de processos de produção e suprimento 
-| 26/09              |2h|Logística urbana.
-| 03/10              |2h|Logística urbana.
-| 10/10              |2h|Transportes e distribuição física.
-| 17/10              |2h|Transportes e distribuição física.
-| 24/10              |2h|Gestão de estoques e armazenagem
-| 31/10              |2h|Gestão de estoques e armazenagem
-| 07/11              |2h|Localizações logísticas.
-| 14/11              |2h|Localizações logísticas.
-| 21/11              |2h|Localizações logísticas.
-| 28/11              |2h|Custos logísticos.
-| 05/12              |2h|Custos logísticos.
-| 12/12              |2h|Logística reversa, verde e sustentável.
-| 19/12              |2h|Exame especial
+| 27/03              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 03/04             |2h|Planejamento e gestão da cadeia de suprimentos.
+| 10/04              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 17/04              |2h|Nível de serviço logístico, desempenho e ICT.
+| 24/04              |2h|KPIs em gestão de processos de produção e suprimento
+| 08/05              |2h|Logística urbana.
+| 15/05              |2h|Transportes e distribuição física.
+| 22/05              |2h|Transportes e distribuição física.
+| 29/05              |2h|Gestão de estoques e armazenagem.
+| 05/06              |2h|Gestão de estoques e armazenagem.
+| 12/06              |2h|Localizações logísticas.
+| 19/06              |2h|Localizações logísticas.
+| 26/06              |2h|Custos logísticos.
+| 03/07              |2h|Custos logísticos.
+| 10/07              |2h|Logística reversa, verde e sustentável.
+| 14/07              |2h|Exame especial
+
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
