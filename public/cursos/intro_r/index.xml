@@ -128,22 +128,21 @@
       
       <guid>https://retacourses.netlify.app/cursos/intro_r/abrindo_dados/</guid>
       <description>
-&lt;script src=&#34;https://retacourses.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
   &lt;link rel=&#34;stylesheet&#34; href=&#34;https://retacourses.netlify.app/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#abrindo-dados-no-r&#34;&gt;Abrindo dados no R&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#abrindo-dados-no-r&#34; id=&#34;toc-abrindo-dados-no-r&#34;&gt;Abrindo dados no R&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#pacotes-no-r&#34;&gt;Pacotes no R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#caminhos-no-r&#34;&gt;Caminhos no R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#readr&#34;&gt;Readr&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#tibbles&#34;&gt;Tibbles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dados-em-arquivos-editores-de-planilhas&#34;&gt;Dados em arquivos editores de planilhas&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#pacotes-no-r&#34; id=&#34;toc-pacotes-no-r&#34;&gt;Pacotes no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#caminhos-no-r&#34; id=&#34;toc-caminhos-no-r&#34;&gt;Caminhos no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readr&#34; id=&#34;toc-readr&#34;&gt;Readr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tibbles&#34; id=&#34;toc-tibbles&#34;&gt;Tibbles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dados-em-arquivos-editores-de-planilhas&#34; id=&#34;toc-dados-em-arquivos-editores-de-planilhas&#34;&gt;Dados em arquivos editores de planilhas&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#um-pouco-sobre-donwload-e-manipulação-de-arquivos&#34;&gt;Um pouco sobre donwload e manipulação de arquivos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#um-pouco-sobre-donwload-e-manipulação-de-arquivos&#34; id=&#34;toc-um-pouco-sobre-donwload-e-manipulação-de-arquivos&#34;&gt;Um pouco sobre donwload e manipulação de arquivos&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#voltando-às-planilhas&#34;&gt;Voltando às planilhas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#voltando-às-planilhas&#34; id=&#34;toc-voltando-às-planilhas&#34;&gt;Voltando às planilhas&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
