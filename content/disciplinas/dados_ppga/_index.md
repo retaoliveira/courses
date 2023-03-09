@@ -57,39 +57,46 @@ Os encontros acontecerão nas **terças-feiras**, de **18:30 às 22:00h**. Serã
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 07/03 a 21/03 | Professora em licença médica.
-| 28/03 | Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
-| 04/04| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **projeto integrador**
-| 11/04| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
-| 18/04| **Atividade 2**| 
-| 25/04| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
-| 02/05| **Projeto integrador**: base de dados| 
-| 09/05| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos **Lab4**. **Atividade 4** para ser desenvolvida de maneira assíncrona.|
-| 16/05| Apresentação do **projeto integrador**| 
-| 23/05| Apresentação do **projeto integrador**| 
-| 30/05| Apresentação do **projeto integrador**| 
-| 06/06| Apresentação do **projeto integrador**| 
-| 13/06| Apresentação do **projeto integrador**| 
-| 20/06| Apresentação do **projeto integrador**| 
-| 27/06| Apresentação do **projeto integrador**| 
-| 04/07| Apresentação do **projeto integrador**| 
+| 07/03 a 21/03 | Professora em licença médica, mas atividades preliminares serão encaminhadas para os estudantes.
+| 28/03 | **Unidade 1**: Ambientação no R, RStudio, Git-Github, Rpubs e chatGPT. Comunicação por meio do R. **Lab1**
+| 04/04| **Unidade 1**: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. **Atividade 1**. **Projeto Integrador**: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos. **PI1** - definição do problema de pesquisa projeto integrador. 
+| 11/04| **Unidade 2**: Estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos Visualização de dados no R. **Atividade 2**
+| 18/04| **Unidade 2**: visualização de informações gerenciais e científicas. **Lab2**
+| 25/04| **Unidade 3**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.  **Atividade 3**. **PI2**: coleta e inspeção de base de dados.
+| 02/05| **Projeto Integrador**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados do Projeto Integrador. **PI3**
+| 09/05| **Unidade 3**: Estatística descritiva e mineração de dados. **Lab3**
+| 16/05| **Projeto Integrador**: Estatística descritiva e mineração de dados do projeto integrador. **PI4**
+| 23/05| **Unidade 4**: Segmentação de mercado. **Lab4**
+| 30/05| **Unidade 5**: Organização dados e produção de análises textuais sob perspectiva analítica. **Lab5**
+| 06/06| **Unidade 6**: Introdução aos dados espaciais 
+| 13/06| **Unidade 6**: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. **Lab6** 
+| 20/06| **Projeto Integrador**: Consolidação dos resultados e dos instrumentos de visualização e comunicação de informações gerenciais e científicas para subsídio ao processo decisório.
+| 27/06| **Projeto Integrador**: Entrega do relatório/dashboard/site  (e outros instrumentos) do projeto integrador para o grupo que fará a avaliação do documento como instrumento de tomada de decisão. **PI5**
+| 04/07| Apresentação do **projeto integrador** - **PI6** e relato do grupo avaliador **PI7**. 
 | **Total de Horas** | 60 horas    |
 
 ## Proposta de avaliação da aprendizagem
 
-A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (**Labs e atividades de aprendizagem**) e por meio da elaboração de um projeto transversal aos objetivos (**projeto integrador**).
+A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (**Labs e atividades de aprendizagem**) e por meio da elaboração de um projeto transversal aos objetivos, o **projeto integrador**, também com entregas segmentadas ao longo do semestre letivo.
 
 | Pontos |  Atividade
 |--------|--------------|
-| 10 |  Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
-| 10 |  Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
-| 10 |  Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes
-| 10 |  Lab 4 – Argumentos lógicos - ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos
-| 5 |  Atividade 1 
-| 5 |  Atividade 2 
-| 5 |  Atividade 3 
-| 5 |  Atividade 4 
-| 40 |  Projeto Integrador
+| 5 |  Lab 1 – Introdução do R e IDE RStudio. RMarkdown. 
+| 5 |  Lab 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
+| 5 |  Lab 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes. Estatística Descritiva e Mineração de dados.
+| 10 |  Lab 4 – Segmentação de mercado.  
+| 5 |  Lab 5 – Organização dados e produção de análises textuais sob perspectiva analítica  
+| 10 |  Lab 6 – Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório
+| 5 |  Atividade 1 – Introdução do R e IDE RStudio. RMarkdown. 
+| 5 |  Atividade 2 – Tipos de dados e objetos no R. Visualização de dados – base ggplot2
+| 5 |  Atividade 3 – Importação e introdução ao tratamento de dados no R. Tratamento de dados - dplyr. Junção de múltiplos dataframes. Estatística Descritiva e Mineração de dados.
+| 5 |  PI 1 – Definição do problema e dos objetivos da investigação
+| 5 |  PI 2 – Coleta e inspeção de base de dados
+| 5 |  PI 3 – Consolidação da base de dados
+| 5 |  PI 4 – AED
+| 10|  PI 5 – Instrumento de suporte ao processo decisório 
+| 5 |  PI 6 – Apresentação do PI
+| 10|  PI 7 – Avaliação pelo grupo designado.
 | TOTAL: |  100 pontos
 
 ## Requisitos básicos e expectativas iniciais
@@ -108,7 +115,11 @@ Computador com Sistema Operacional à escolha do estudante para desenvolver as a
 -   RStudio (Windows) - <https://rstudio.com/products/rstudio/download/>
 -   Git - <https://git-scm.com/downloads>
 
-Os alunos deverão ter uma conta gratuita na plataforma `github.com`. Recomendamos também que se cadastrem no [RPubs](https://rpubs.com/)
+Os alunos deverão ter uma conta gratuita nas plataformas:
+
+- `github.com`. Recomendamos também que se cadastrem no [RPubs](https://rpubs.com/)
+
+- `ChatGPT` - [ChatGPT](https://openai.com/blog/chatgpt)
 
 A turma virtual do SIGAA será utilizada para postagens de conteúdos e outras comunicações.
 
@@ -120,9 +131,16 @@ A turma virtual do SIGAA será utilizada para postagens de conteúdos e outras c
 -   NISHISATO, S. Analysis of Categorical Data: Dual Scaling and Its Applications. Toronto: University of Toronto Press, Scholarly Publishing Division, 2018. ISBN 9781487578909. Disponível em: <http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=2027628&lang=pt-br&site=ehost-live>. Acesso em: 22 out. 2020.
 - TSAY, Ruey S. Multivariate time series analysis: with R and financial applications. New Jersey: John Wiley & Sons, 2014.
 - TROSSET, Michael W. An introduction to statistical inference and its applications with R. Boca Raton: Chapman and Hall/CRC, 2009.
-- PARADIS, Emanuel. R for Beginners. Monpellier: Institut des Sciences de l’Evolution, 2005. Disponível em: https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf. Acesso em: 12 nov. 2019.  
-- TEETOR, Paul. R cookbook: Proven recipes for data analysis, statistics, and graphics. Sebastopol: O'Reilly Media, Inc., 2011.
+- PARADIS, Emanuel. R for Beginners. Monpellier: Institut des Sciences de l’Evolution, 2005. Disponível em: https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf. Acesso em: 12 nov. 2019. - TEETOR, Paul. R cookbook: Proven recipes for data analysis, statistics, and graphics. Sebastopol: O'Reilly Media, Inc., 2011.
 - Zen do R - https://curso-r.github.io/zen-do-r/index.html
+- FÁVERO, Luiz Paulo. Análise de dados: modelos de regressão com Excel, STATA e SPSS. Rio de Janeiro: Elsevier, 2015.   
+- MINGOTI, Sueli Aparecida. Análise de dados através de métodos de estatística multivariada: uma abordagem aplicada. Belo Horizonte: Editora UFMG, 2005.   
+- CUESTA, H. Practical Data Analysis. Birmingham, UK: Packt Publishing, 2013. Disponível em: http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=654543&lang=pt-br&site=ehost-live. Acesso em: 22 out. 2020.   
+- SHARDA, Ramesh. Business intelligence and analytics: systems for decision support. 10. ed. Boston: Pearson, 2015.   
+- NISHISATO, S. Analysis of Categorical Data: dual scaling and its applications. Toronto: University of Toronto Press, Scholarly Publishing Division, 2018. Disponível em: http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=2027628&lang=pt-br&site=ehost-live. Acesso em: 22 out. 2020.   
+- LAURSEN, Gert H. N. Business Analytics for Sales and Marketing Managers: how to compete in the information age. Hoboken, N.Y.: Wiley, 2011. Disponível em: http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=363582&lang=pt-br&site=ehost-live. Acesso em: 22 out. 2020.   
+- DAVENPORT, Thomas H. Inteligência Analítica nos Negócios: como usar a análise de informações para obter resultados superiores. Tradução: Ana Beatriz Rodrigues. São Paulo: Elsevier, 2010.
+
 
 
 ## Material adicional
@@ -132,7 +150,7 @@ A turma virtual do SIGAA será utilizada para postagens de conteúdos e outras c
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<R-PPGA>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<DADOS-PPGA>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
 
 
 ## Políticas institucionais e da disciplina
