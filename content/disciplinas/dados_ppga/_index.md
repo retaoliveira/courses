@@ -36,26 +36,44 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 ## Objetivos de aprendizagem
 
-Por meio desta disciplina, os alunos desenvolverão competências para:
+Por meio desta disciplina, os alunos desenvolverão competências para: 
 
-1. Entender a linguagem básica de programação no R. 
-2. Conhecer as funções básicas para manipular e representar dados.
+1. Implementar comunicação e reprodutibilidade de instrumentos gerenciais e científicos por meio de linguagem RMarkdown e Git.
+2. Desenvolver competências para busca, manipulação e tratamento de dados utilizando R e RStudio.
+3. Implementar métodos de estatística descritiva exploratória e mineração de dados para gestão organizacional.
+4. Organizar dados e produzir análises textuais sob perspectiva analítica. 
+5. Espacializar dados e produzir análises gerenciais que contemplem a localização como atributo decisório.   
+Por meio desta disciplina, os alunos desenvolverão competências para: 
+1. Implementar comunicação e reprodutibilidade de instrumentos gerenciais e científicos por meio de linguagem RMarkdown e Git.
+2. Desenvolver competências para busca, manipulação e tratamento de dados utilizando R e RStudio.
+3. Implementar métodos de estatística descritiva exploratória e mineração de dados para gestão organizacional.
+4. Organizar dados e produzir análises textuais sob perspectiva analítica. 
+5. Espacializar dados e produzir análises gerenciais que contemplem a localização como atributo decisório.   
+6. Construir instrumentos para visualização e comunicação para suporte à gestão e à tomada de decisão.
 
 ## Planejamento de encontros 
 
-Os encontros acontecerão nas **terças-feiras**, de **08:30 às 12:10h**. Serão realizados na Sala A do PPGA.
+Os encontros acontecerão nas **terças-feiras**, de **18:30 às 22:00h**. Serão realizados na Sala A (informática) do PPGA.
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 16/08| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
-| 23/08| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **projeto integrador**
-| 30/08| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
-| 06/09| **Atividade 2**| 
-| 13/09| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
-| 20/09| **Projeto integrador**: base de dados| 
-| 27/09| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos **Lab4**. **Atividade 4** para ser desenvolvida de maneira assíncrona.|
-| 04/10| Apresentação do **projeto integrador**| 
-| **Total de Horas** | 30 horas    |
+| 07/03 a 21/03 | Professora em licença médica.
+| 28/03 | Unidade 1: Comunicação por meio do R: ambientação no R, RStudio e Rpubs; Hello R; RMarkdown. **Lab1**|
+| 04/04| **Atividade 1**. Projeto integrador - definição do problema de pesquisa **projeto integrador**
+| 11/04| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. **Lab2**|
+| 18/04| **Atividade 2**| 
+| 25/04| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados. **Lab3**| 
+| 02/05| **Projeto integrador**: base de dados| 
+| 09/05| Unidade 4: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos **Lab4**. **Atividade 4** para ser desenvolvida de maneira assíncrona.|
+| 16/05| Apresentação do **projeto integrador**| 
+| 23/05| Apresentação do **projeto integrador**| 
+| 30/05| Apresentação do **projeto integrador**| 
+| 06/06| Apresentação do **projeto integrador**| 
+| 13/06| Apresentação do **projeto integrador**| 
+| 20/06| Apresentação do **projeto integrador**| 
+| 27/06| Apresentação do **projeto integrador**| 
+| 04/07| Apresentação do **projeto integrador**| 
+| **Total de Horas** | 60 horas    |
 
 ## Proposta de avaliação da aprendizagem
 
