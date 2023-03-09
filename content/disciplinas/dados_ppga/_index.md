@@ -6,7 +6,7 @@ menu:
   dados_ppga:
     name: Organização do curso
     weight: 10
-lastmod: '2022-08-12T00:00:00Z'
+lastmod: '2023-03-09T00:00:00Z'
 toc: yes
 type: docs
 weight: 10

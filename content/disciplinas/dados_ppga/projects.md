@@ -2,13 +2,13 @@
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
-  dados_pos:
+  dados_ppga:
     parent: Projetos
-    weight: 5
+    weight: 50
 title: Projeto Integrador
 toc: true
 type: docs
-weight: 10
+weight: 50
 ---
 
 Os projetos integradores são parte estruturante do curso e, portanto, visam promover a sistematização e a consolidação da aprendizagem. Ainda, tem como objetivo proporcionar aos estudantes a capacidade de implementação do conhecimento adquirido ao longo deste curso de maneira aplicada e em uma situação-problema real. 
