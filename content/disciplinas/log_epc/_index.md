@@ -78,7 +78,7 @@ Pontos|	Atividade
 10|  Atividade de aprendizagem 4 - Gestão de Transportes
 10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
 10|  Atividade de aprendizagem 6 - Redes Logísticas
-30|  Podcast
+30|  Projeto integrador - Podcast
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
