@@ -57,7 +57,7 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas 
 | 28/04              |2h|KPIs em gestão de processos de produção e suprimento  
 | 05/05              |2h|Logística urbana.
 | 08/05              |2h|Logística urbana. 
-12/05                |2h|Logística urbana.
+| 12/05              |2h|Logística urbana.
 | 15/05              |2h|Transportes e distribuição física.
 | 19/05              |2h|Transportes e distribuição física.
 | 22/05              |2h|Transportes e distribuição física.
@@ -82,21 +82,19 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Atividade
 ------|------------
-10|  Estudos Autônomos 1 - Nivel de serviço logístico
-10|  Estudos Autônomos 2 - TICs e KPIs
-10|  Estudos Autônomos 3 – Logística Urbana
-10|  Estudos Autônomos 4 - Gestão de Transportes
-10|  Estudos Autônomos 5 - Gestão de estoques e armazenagem
-10|  Estudos Autônomos 6 - Redes Logísticas
-10|  Projeto integrador 1
-10|  Projeto integrador 2
-10|  Projeto integrador 3
-10|  Projeto integrador 4
+10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
+10|  Atividade de aprendizagem 2 - Nivel de serviço logístico
+10|  Atividade de aprendizagem 2 - TICs e KPIs
+10|  Atividade de aprendizagem 3 – Logística Urbana
+10|  Atividade de aprendizagem 4 - Gestão de Transportes
+10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
+10|  Atividade de aprendizagem 6 - Redes Logísticas
+30|  Podcast
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: http://places.education
+Site da disciplina: https://www.places.education/disciplinas/log_adm/
 
 ## Bibliografia recomendada
 

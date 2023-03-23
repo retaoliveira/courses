@@ -71,21 +71,19 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Atividade
 ------|------------
-10|  Estudos Autônomos 1 - Nivel de serviço logístico
-10|  Estudos Autônomos 2 - TICs e KPIs
-10|  Estudos Autônomos 3 – Logística Urbana
-10|  Estudos Autônomos 4 - Gestão de Transportes
-10|  Estudos Autônomos 5 - Redes Logísticas
-10|  Estudos Autônomos 6 - Custos logísticos
-10|  Projeto integrador 1
-10|  Projeto integrador 2
-10|  Projeto integrador 3
-10|  Projeto integrador 4
+10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
+10|  Atividade de aprendizagem 2 - Nivel de serviço logístico
+10|  Atividade de aprendizagem 2 - TICs e KPIs
+10|  Atividade de aprendizagem 3 – Logística Urbana
+10|  Atividade de aprendizagem 4 - Gestão de Transportes
+10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
+10|  Atividade de aprendizagem 6 - Redes Logísticas
+30|  Podcast
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: http://places.education
+Site da disciplina: https://www.places.education/disciplinas/log_epc/
 
 ## Bibliografia recomendada
 
