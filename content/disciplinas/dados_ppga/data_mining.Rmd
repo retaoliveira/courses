@@ -2,7 +2,7 @@
 date: "2020-12-275T00:00:00+01:00"
 draft: true
 menu:
-  dados_pos:
+  dados_ppga:
     parent: Unidade 4 - Estatística descritiva e mineração de dados
     weight: 40
 title: Introdução à mineração de dados
