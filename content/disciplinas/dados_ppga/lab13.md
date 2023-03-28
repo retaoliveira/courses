@@ -3,7 +3,7 @@ date: "2022-03-28T00:00:00+01:00"
 draft: false
 menu:
   dados_ppga:
-    parent: Unidade 1
+    parent: Labs
     weight: 12
 title: Lab 1.3
 toc: false
