@@ -21,6 +21,6 @@ type: docs
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_url('https://http://r-decision.github.io/class01/#1', height = "400px")
 ```
-[LINK](https://places-research.github.io/class01_dataadm)
+[LINK](https://http://r-decision.github.io/class01/#1)
 
 
