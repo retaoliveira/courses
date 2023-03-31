@@ -25,17 +25,17 @@ Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos".
 10 pontos
 
 ## Grupos de trabalho
-**Grupo 1**: 
+**Grupo 1**: Allan, Ana Luiza B., Rebeca F., Sarah C. e Vitor U.
 
-**Grupo 2**: 
+**Grupo 2**: Miqueli, Igor, Anna, João, Lucas Gabriel e Guilherme Boechat
 
-**Grupo 3:** 
+**Grupo 3:**: Alice, Arthur, Joice, Tulio e Rosângela
 
-**Grupo 4:** 
+**Grupo 4:**: 
 
-**Grupo 5:** 
+**Grupo 5:**: Ricardo, Henry, Maria Julia, Eduarda e Samara
 
-**Grupo 6:** 
+**Grupo 6:**: Mônica e Maria Isabel 
 
 
 ## Atividades
@@ -45,3 +45,22 @@ Cada grupo deverá elaborar três perguntas objetivas sobre os conceitos "Logís
 Essas perguntas serão distribuídas para os demais grupos para que todos **elaborem uma resposta completa** a partir de cada retorno de **perguntas ao ChatGPT**. **Todas as perguntas feitas ao ChatGPT** deverão ser **inseridas ao fim da resposta** elaborada pelo grupo. Cada resposta deverá ter no **máximo 150** palavras. (30 minutos)
 
 Posteriormente, cada grupo respondente ficará responsável pela apresentação do que foi respondido. (25 minutos)
+
+
+## Perguntas: 
+
+Grupo 1: 
+1. Por que o SEDEX entrega mais rápido que o PAC?
+2. Como funciona o processo logístico de entregas internacionais da Shein?
+3. Qual a relação entre cadeia de suprimentos e logística?
+
+Grupo 3:
+1. Quais as principais ferramentas de logística vinculadas à análise de dados?
+2. No ramo da gestão de estoques, o que é o endereçamento de estoque qual a importância dele na logística?
+3. Quais as principais diferenças no conceito de cadeia de suprimentos após a indústria 4.0?
+
+Grupo 5: 
+1.  
+
+
+Grupo 2: 
