@@ -16,20 +16,6 @@ type: docs
 weight: 10
 ---
 
-## Grupos de trabalho
-**Grupo 1**: 
-
-**Grupo 2**: 
-
-**Grupo 3:** 
-
-**Grupo 4:** 
-
-**Grupo 5:** 
-
-**Grupo 6:** 
-
-
 ## Atividade para casa
 
 Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
