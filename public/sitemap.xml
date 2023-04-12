@@ -27,6 +27,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab21/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc1/</loc>
+    <lastmod>2023-03-28T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab22/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -35,6 +38,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/atividade3/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab31/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -202,6 +208,9 @@
     <loc>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/tidyverse/</loc>
+    <lastmod>2020-12-30T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -267,6 +276,9 @@
     <loc>https://retacourses.netlify.app/talk/synthesizing/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/</loc>
+    <lastmod>2023-03-28T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/categories/</loc>
     <lastmod>2022-05-16T18:54:02-03:00</lastmod>
   </url><url>
@@ -284,9 +296,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/tag/urban-logistics/</loc>
     <lastmod>2022-05-16T18:54:02-03:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/post/amazon/</loc>
     <lastmod>2022-01-12T14:03:13-03:00</lastmod>

@@ -30,7 +30,6 @@ rgdal | ler e escrever dados espaciais
 tidyverse | organização de dados
 reshape2 |
 ggmosaic |
-GISTools | ler e escrever dados espaciais
 sf | manipulação de dados espaciais
 tmap | mapas temáticos
 
@@ -44,7 +43,6 @@ library(rgdal)
 library(tidyverse)
 library(reshape2)
 library(ggmosaic)
-library(GISTools)
 library(sp)
 library(sf)
 library(tmap)
@@ -78,24 +76,8 @@ O package `GISTools` vem com diferentes bancos de dados que podem ajudar no ente
 
 Para carregar os dados, utilize a função `data()`. 
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
-library(GISTools)
-data(newhaven)
-ls() # inspecionar os dados
-```
 
-Verifique as classes dos objetos:
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
-class(breach)
-
-class(blocks)
-```
-Os dados associados ao objeto `blocks` podem ser visualizados por meio da função:
-
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
-head(data.frame(blocks))
-```
 
 O data frame de um objeto espacial `sp` também pode ser acessado por meio de `@data`:
 
@@ -300,7 +282,7 @@ qtm(georgia_sf, fill = "MedInc", text ="Name", text.size=0.5, format = "World_wi
 
 ### Mapa completo por meio do `tmap`
 
-Para gerar mapas completos por meio do package `tmap`, é necessário utilizar a função `tm_shape`acompanhada de uma outra função que especifique o precisa ser plotado. Antes de plotar, um objeto contendo a linha da divisa estadual da Georgia pode ser criada por meio da função `st_union()` do package `sf`. Uma alternativa para dados `sp` é função `gUnaryUnion()` do package `rgeos`, carregado juntamente com o package `GISTools`. 
+Para gerar mapas completos por meio do package `tmap`, é necessário utilizar a função `tm_shape`acompanhada de uma outra função que especifique o precisa ser plotado. Antes de plotar, um objeto contendo a linha da divisa estadual da Georgia pode ser criada por meio da função `st_union()` do package `sf`. Uma alternativa para dados `sp` é função `gUnaryUnion()` do package `rgeos`. 
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 # união das feições para composição do limite estadual

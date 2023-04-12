@@ -2,10 +2,10 @@
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
-  dados_grad:
-    parent: Encontros síncronos
+  dados_ppga:
+    parent: Aulas
     weight: 6
-title: Encontro Síncrono 2
+title: "Aula 2: Explorando funções e estrutura básica no R"
 weight: 6
 editor_options: 
   markdown: 
@@ -24,4 +24,3 @@ knitr::include_url('https://places-research.github.io/class02_dados_adm', height
 [LINK](https://places-research.github.io/class02_dados_adm)
 
 
-<iframe width="964" height="542" src="https://www.youtube.com/embed/MXBIc1a38XE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
