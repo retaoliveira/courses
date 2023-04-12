@@ -30,6 +30,7 @@ weight: 10
 
 3. Instale os pacotes: 
   - `"tidyverse"`
+  - `"devtools"`
   - `"tinytex"`
   - `"knitr"`
   - `"flexdashboard"`
