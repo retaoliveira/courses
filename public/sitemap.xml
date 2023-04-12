@@ -103,8 +103,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula01/</loc>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/estrutura_dados/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/atividade3/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -207,9 +205,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/spatial/operacoes-espaciais/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/tidyverse/</loc>
-    <lastmod>2020-12-30T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
