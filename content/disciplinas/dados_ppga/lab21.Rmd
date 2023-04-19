@@ -2,8 +2,8 @@
 date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
-  dados_pos_2022:
-    parent: Unidade 2
+  dados_ppga:
+    parent: Labs
     weight: 11
 title: Lab 2.1 - `ggplot`
 type: docs
@@ -25,7 +25,7 @@ A **Unidade 2** é estruturada considerando os seguintes tópicos:
 
 3. Rode o arquivo .Rmd por meio do ícone `knitr` 
 
-4. Salve o .Rmd e **submeta-o por meio da tarefa no Sigaa**. 
+4. Salve o .Rmd e apresente à professora. 
 
 <hr></hr>
 

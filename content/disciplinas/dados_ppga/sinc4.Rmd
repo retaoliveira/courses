@@ -1,11 +1,11 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
+date: "2023-04-19T00:00:00+01:00"
 draft: false
 menu:
-  dados_grad:
-    parent: Encontros síncronos
+  dados_ppga:
+    parent: Aulas
     weight: 8
-title: Encontro Síncrono 4
+title: "Aula 4: Visualizando dados no R"
 weight: 8
 editor_options: 
   markdown: 
@@ -19,11 +19,8 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class04_dados_adm', height = "400px")
+knitr::include_url('https://r-decision.github.io/class04/', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class04_dados_adm)
-
-
-<iframe width="964" height="542" src="https://www.youtube.com/embed/fqg0tXcC4kE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[LINK](https://r-decision.github.io/class04/)
 

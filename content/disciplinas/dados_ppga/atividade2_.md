@@ -1,11 +1,11 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_ppga:
-    parent: Atividades de aprendizagem
+    parent: Labs
     weight: 11
-title: Atividade 3
+title: "Lab 2.1: Plastic waste"
 toc: true
 type: docs
 weight: 12

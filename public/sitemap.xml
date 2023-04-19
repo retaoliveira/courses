@@ -48,6 +48,12 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/abrindo_dados/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc3/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc4/</loc>
+    <lastmod>2023-04-19T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab32/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -121,6 +127,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab13/</loc>
     <lastmod>2022-03-28T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/atividade2_/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/estoques/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
@@ -132,6 +141,12 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/git_r/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab22_bechedel/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/atividade2/</loc>
+    <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/github/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -266,7 +281,7 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2023-03-28T00:00:00+01:00</lastmod>
+    <lastmod>2023-04-19T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/categories/</loc>
     <lastmod>2022-05-16T18:54:02-03:00</lastmod>

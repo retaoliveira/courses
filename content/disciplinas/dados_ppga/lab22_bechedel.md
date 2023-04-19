@@ -1,14 +1,14 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
-  dados_pos_2022:
-    parent: Unidade 2
-    weight: 12
-title: Lab 2.2 - `ggplot` e `dplyr`
+  dados_ppga:
+    parent: Labs
+    weight: 14
+title: "Lab 2.3: `ggplot` e `dplyr` - DESAFIO"
 toc: true
 type: docs
-weight: 12
+weight: 14
 ---
 
 A **Unidade 2** é estruturada considerando os seguintes tópicos:
