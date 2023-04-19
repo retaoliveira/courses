@@ -1,8 +1,8 @@
 ---
 date: "2020-12-275T00:00:00+01:00"
-draft: true
+draft: false
 menu:
-  log_epc:
+  log_adm:
     parent: Aulas
     weight: 11
 title: 'Aula 03 - Nível de serviço e indicadores de desempenho'
@@ -23,3 +23,5 @@ knitr::include_url('https://log2022.github.io/class04', height = "400px")
 ```
 
 [LINK](https://log2022.github.io/class04)
+
+[Download pdf](https://cefetmgbr-my.sharepoint.com/:b:/g/personal/renataoliveira_cefetmg_br/Ecn8co7kNxtJu1l7vke_c0MB7L57-bYpMdaK_zhGPJ-Plg?e=Usj6TE)
