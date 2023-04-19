@@ -5,10 +5,10 @@ date: '2023-04-19T00:00:00+01:00'
 menu:
   dados_ppga:
     parent: Atividades de aprendizagem
-    weight: 13
+    weight: 16
 toc: yes
 type: docs
-weight: 13
+weight: 16
 ---
 
 1. Instale o pacote `cepespR`
