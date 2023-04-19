@@ -4,11 +4,11 @@ draft: false
 menu:
   dados_ppga:
     parent: Labs
-    weight: 12
+    weight: 11
 title: Lab 1.3
 toc: false
 type: docs
-weight: 12
+weight: 11
 ---
 
 Neste laboratório, você deverá criar pelo menos três tipos de arquivos `.Rmd`. Inspire-se na [galeria do RStudio](https://rmarkdown.rstudio.com/gallery.html).  

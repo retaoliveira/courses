@@ -4,7 +4,7 @@ draft: false
 menu:
   dados_ppga:
     parent: Labs
-    weight: 11
+    weight: 12
 title: "Lab 2.1: Plastic waste"
 toc: true
 type: docs
