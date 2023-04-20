@@ -1289,6 +1289,29 @@ para representar distribuições de variáveis numéricas é utilizar boxplot. V
     </item>
     
     <item>
+      <title>Dicas de sites, datasets e livros</title>
+      <link>https://retacourses.netlify.app/cursos/intro_r/datasets/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/intro_r/datasets/</guid>
+      <description>&lt;h1 id=&#34;dicas-de-livros-sites-e-datasets-para-se-divertir&#34;&gt;Dicas de livros, sites e datasets para se divertir&lt;/h1&gt;
+&lt;h2 id=&#34;introdução-ao-r&#34;&gt;Introdução ao R&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cookbook-r.com/&#34;&gt;Cookbook for R&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;dataviz&#34;&gt;Dataviz&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535&#34;&gt;How the BBC Visual and Data Journalism team works with graphics in R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bbc.github.io/rcookbook/&#34;&gt;BBC Visual and Data Journalism cookbook for R graphics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://socviz.co/index.html#preface&#34;&gt;Data Visualization: A practical introduction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://clauswilke.com/dataviz/&#34;&gt;Fundamentals of data visualization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://r-graph-gallery.com/&#34;&gt;The R Graph Gallery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.data-to-viz.com/&#34;&gt;From data to Viz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dataviz-inspiration.com/&#34;&gt;Dataviz inspiration&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;r-and-github&#34;&gt;R and Github&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MilesMcBain/gistfo&#34;&gt;Turn your RStudio untitled tabs into gists&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://happygitwithr.com/&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Manipulação e limpeza de dados</title>
       <link>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</link>
       <pubDate>Sat, 15 May 2021 00:00:00 +0100</pubDate>

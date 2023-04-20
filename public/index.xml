@@ -30,20 +30,20 @@
     </item>
     
     <item>
+      <title>Cursos</title>
+      <link>https://retacourses.netlify.app/cursos/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://retacourses.netlify.app/cursos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Posts</title>
       <link>https://retacourses.netlify.app/post/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://retacourses.netlify.app/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cursos</title>
-      <link>https://retacourses.netlify.app/cursos/</link>
-      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://retacourses.netlify.app/cursos/</guid>
       <description></description>
     </item>
     
