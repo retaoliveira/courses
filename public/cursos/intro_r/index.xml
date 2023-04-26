@@ -1462,31 +1462,31 @@ Em uma única sequência de operações, abrimos os dados, alteramos os nomes da
 Usaremos a função mutate para operar transformações nas variáveis existentes e criar variáveis novas. Há inúmeras transformações possíveis e elas lembram bastante as funções de outros softwares, como MS Excel. Vamos ver algumas das mais importantes.&lt;/p&gt;
 &lt;p&gt;No nosso caso, o formato dos valores de latitude e longitude estão em formato diferente do convenional. Latitudes são representadas por números entre -90 e 90, com 8 casas decimais, e Longitudes por números entre -180 e 180, também com 8 casas decimais. Em nosso par de variáveis, latitude está sem separador de decimal está omitido. Faremos a correção divindo latitude por 1 milhão.&lt;/p&gt;
 &lt;p&gt;No caso de longitude, a situação é ainda pior. Há vários separadores e a variável foi lida como texto. Teremos que limpar todos os separadores, transformar a variável em número e, ao final, dividir por 1 milhão para colocar o separador no lugar certo.&lt;/p&gt;
-&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;% 
-mutate(lat = lat / 1000000, 
-lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+mutate(lat = lat / 1000000,
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;rdquo;),
 lon = as.numeric(lon),
-lon = lon / 1000000) 
+lon = lon / 1000000)
 Como utilizamos os nomes das próprias variáveis à esquerda da operação de transformação, produziremos uma substituição e não haverá novas colunas na base de dados.&lt;/p&gt;
 &lt;p&gt;Voltaremos ao verbo mutate no próximo tutorial e no exemplos abaixo.&lt;/p&gt;
 &lt;p&gt;Filtrando linhas
 Por vezes, queremos trabalhar apenas com um conjunto de linhas do nosso banco de dados. Por exemplo, se quisermos selecionar apenas escolas municipais de educação infantil, utilizamos o verbo &amp;lsquo;filter&amp;rsquo; com a condição desejada. Note que estamos criando um novo data frame (ou seja, um novo objeto) que contém a seleção de linhas produzida:&lt;/p&gt;
-&lt;p&gt;emeis &amp;lt;- escolas %&amp;gt;% 
+&lt;p&gt;emeis &amp;lt;- escolas %&amp;gt;%
 filter(tipo == &amp;ldquo;EMEI&amp;rdquo;)
 Além da igualdade, poderíamos usar outros símbolos: maior (&amp;gt;). maior ou igual (&amp;gt;=), menor (&amp;lt;), menor ou igual (&amp;lt;=) e diferente (!=) para selecionar casos. Para casos de NA, podemos usar a função is.na(), pois a igualdade &amp;lsquo;== NA&amp;rsquo; é inválida em R.&lt;/p&gt;
 &lt;p&gt;Vamos supor agora que todos centros de educação infantil (creche) da rede direta, indireta e conveniada. Como combinar condições?&lt;/p&gt;
-&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;%
 filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)
 Note que, para dizer que para combinarmos as condições de seleção de linha, utilizamos uma barra vertical. A barra é o símbolo &amp;ldquo;ou&amp;rdquo;, e indica que todas as observações que atenderem a uma ou outra condição serão incluídas.&lt;/p&gt;
 &lt;p&gt;Vamos supor que queremos estabelecer agora condições para a seleção de linhas a partir de duas variáveis. Por exemplo, queremos incluir as mesmas escolas já escolhidas e que também sejam da Diretoria Regional do Ipiranga. O símbolo da conjunção &amp;ldquo;e&amp;rdquo; é &amp;ldquo;&amp;amp;&amp;rdquo;. Veja como utilizá-lo:&lt;/p&gt;
-&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
-filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
-tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;%
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; |
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; |
 tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;Ao usar duas variáveis diferentes para filter e a conjunção &amp;ldquo;e&amp;rdquo;, podemos escrever o comando separando as condições por vírgula e dispensar o operador &amp;ldquo;&amp;amp;&amp;quot;:&lt;/p&gt;
-&lt;p&gt;creches_ipiranga &amp;lt;- escolas %&amp;gt;% 
-filter((tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
-tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+&lt;p&gt;Ao usar duas variáveis diferentes para filter e a conjunção &amp;ldquo;e&amp;rdquo;, podemos escrever o comando separando as condições por vírgula e dispensar o operador &amp;ldquo;&amp;amp;&amp;rdquo;:&lt;/p&gt;
+&lt;p&gt;creches_ipiranga &amp;lt;- escolas %&amp;gt;%
+filter((tipo == &amp;ldquo;CEI DIRET&amp;rdquo; |
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; |
 tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;),
 dre == &amp;ldquo;DIRETORIA REGIONAL DE EDUCACAO IPIRANGA&amp;rdquo;)
 Você pode combinar quantas condições precisar. Se houver ambiguidade quanto à ordem das condições, use parênteses, como fizemos acima.&lt;/p&gt;
@@ -1499,7 +1499,7 @@ Criamos acima um data frame que contém apenas centros de educação infantil co
 &lt;p&gt;library(ggmap)
 library(osmdata)
 Sem entrar em detalhes, vamos utilizar as funções get_map e getbb para obter um mapa sobre o qual inseriremos nossos pontos.&lt;/p&gt;
-&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;),
 maptype = &amp;ldquo;toner-background&amp;rdquo;,
 zoom = 13)
 Podemos plotar o mapa que baixamos com a função plot:&lt;/p&gt;
@@ -1532,15 +1532,15 @@ nome,
 dre,
 lat,
 lon,
-codigo_inep) %&amp;gt;% 
-mutate(lat = lat / 1000000, 
-lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+codigo_inep) %&amp;gt;%
+mutate(lat = lat / 1000000,
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;rdquo;),
 lon = as.numeric(lon),
-lon = lon / 1000000) %&amp;gt;% 
-filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
-tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+lon = lon / 1000000) %&amp;gt;%
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; |
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; |
 tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;),
 maptype = &amp;ldquo;toner-background&amp;rdquo;,
 zoom = 13)&lt;/p&gt;
 &lt;p&gt;ggmap(map_sp) +
@@ -1551,9 +1551,9 @@ geom_point(aes(lon, lat), data = creches)&lt;/p&gt;
 &lt;h2 id=&#34;fake-data&#34;&gt;Fake data&lt;/h2&gt;
 &lt;p&gt;Para esta atividade, vamos trabalhar com um banco de dados falso criado para a atividade.&lt;/p&gt;
 &lt;p&gt;Abra o banco de dados usando &lt;em&gt;read_delim&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(tidyverse)
-url_fake_data &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/fake_data.csv&amp;quot;
-fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_names = T)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;library(tidyverse)
+url_fake_data &amp;lt;- &amp;#34;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/fake_data.csv&amp;#34;
+fake &amp;lt;- read_delim(url_fake_data, delim = &amp;#34;;&amp;#34;, col_names = T)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fakeland é uma democracia muito estável que realiza eleições presidenciais a cada 4 anos. Vamos trabalhar com o conjunto de dados falso de cidadãos individuais de Fakeland que contém informações sobre suas características básicas e opiniões / posições políticas (falsas). A descrição das variáveis está abaixo:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;age&lt;/em&gt;: idade&lt;/li&gt;
@@ -1572,17 +1572,17 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;/ul&gt;
 &lt;h2 id=&#34;agrupando-com-_filter_-e-_pull_&#34;&gt;Agrupando com &lt;em&gt;filter&lt;/em&gt; e &lt;em&gt;pull&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Vamos supor que nos interessa comparar a renda entre grupos de sexo. Poderíamos, rapidamente selecionar as linhas de um dos grupos de sexo com o verbo &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Male&amp;quot;) 
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Female&amp;quot;) 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Male&amp;#34;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Female&amp;#34;) 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Com o comando &lt;em&gt;pull&lt;/em&gt;, podemos &amp;lsquo;retirar&amp;rsquo; de um data frame uma coluna e tratá-la como um vetor destacado. &lt;em&gt;pull&lt;/em&gt; é mais um (de vários) verbos do &lt;em&gt;dplyr&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Male&amp;#34;) %&amp;gt;%
   pull(income)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E, se adicionarmos à &amp;lsquo;pipeline&amp;rsquo; um comando simples de estatística descritiva &amp;ndash; média, por exemplo &amp;ndash; calculamos uma estatística para o grupo para o qual selecionamos com &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Male&amp;#34;) %&amp;gt;%
   pull(income) %&amp;gt;%
   mean()
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que não utilizamos o símbolo de atribuição &amp;lsquo;&amp;lt;-&amp;rsquo; e, portanto, não armazenamos o resultado em nenhum objeto.&lt;/p&gt;
@@ -1590,22 +1590,22 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;p&gt;Essa estratégia funciona para calcular uma medida qualquer para um grupo. Mas, em geral, interessa &amp;lsquo;sumarizar&amp;rsquo; um variável &amp;ndash; como renda &amp;ndash; por uma variável de grupo &amp;ndash; como sexo &amp;ndash; sem destacar cada uma das categorias. Vamos ver como fazer isso.&lt;/p&gt;
 &lt;h2 id=&#34;_summarise_&#34;&gt;&lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Uma maneira altenartiva ao que acabamos de realizar é utilizar o verbo &lt;em&gt;summarise&lt;/em&gt;. Com ele, não precisamos extrair a variável do data frame para gerar um sumário estatístico. Veja como é simples:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Male&amp;#34;) %&amp;gt;%
   summarise(media_homens = mean(income))
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
-  filter(sex == &amp;quot;Female&amp;quot;) %&amp;gt;%
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
+  filter(sex == &amp;#34;Female&amp;#34;) %&amp;gt;%
   summarise(media_mulheres = mean(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;agrupando-com-_group_by_-by-e-_summarise_&#34;&gt;Agrupando com &lt;em&gt;group_by&lt;/em&gt; by e &lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Para agrupar os dados por uma ou mais variáveis na &amp;lsquo;gramática&amp;rsquo; do &lt;em&gt;dplyr&lt;/em&gt; utilizamos o verbo &lt;em&gt;group_by&lt;/em&gt; em combinação com &lt;em&gt;summarise&lt;/em&gt;. Veja um exemplo antes de detalharmos seu uso:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(media_renda = mean(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que o resultado é uma tabela de duas linhas que contém a média de renda para grupo de sexo. O primeiro passo é justamente indicar qual é a variável &amp;ndash; discreta &amp;ndash; pela qual queremos agrupar os dados. Fazemos isso com &lt;em&gt;group_by&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Na sequência, utilizamos &lt;em&gt;summarise&lt;/em&gt; para criar uma lista das operações que faremos em outras variáveis ao agrupar os dados. Por exemplo, estamos calculando a média da renda, que aparecerá com o nome &amp;lsquo;media_renda&amp;rsquo;, para cada um dos grupos de sexo.&lt;/p&gt;
 &lt;p&gt;Execute novamente o código acima e observe atentamente sua estrutura antes de avançar.&lt;/p&gt;
 &lt;p&gt;O verbo &lt;em&gt;summarise&lt;/em&gt; permite mais de uma operação por agrupamento. Por exemplo, podemos calcular o desvio padrao da renda, a media da idade (&amp;lsquo;age&amp;rsquo;) e a soma do número de eleições nas quais votou (&amp;lsquo;vote_history&amp;rsquo;):&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(media_renda = mean(income),
             stdev_renda = sd(income),
@@ -1614,7 +1614,7 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Simples, não? O comando &lt;em&gt;summarise&lt;/em&gt; é bastante flexível e aceita diversas operações. Veremos as mais comuns adiante.&lt;/p&gt;
 &lt;p&gt;E se quisermos, agora, utilizar mais de uma variável para agrupar os dados? Por exemplo, e se quisermos agrupar por sexo e candidato de preferência, como fazemos?&lt;/p&gt;
 &lt;p&gt;Basta adicionar outra variável dentro do comando &lt;em&gt;group_by&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex, candidate) %&amp;gt;%
   summarise(media_renda = mean(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observe bem a estrutura dos resultados que obtivemos. Em primeiro lugar, o resultado é sempre um data frame. Sempre que estivermos preparando os dados para gerar tabelas ou com gráficos, como veremos no tutorial seguinte, produziremos um data frame para servir de &amp;lsquo;input&amp;rsquo; para o gráfico ou tabela.&lt;/p&gt;
@@ -1624,103 +1624,103 @@ fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_name
 &lt;h2 id=&#34;funções-de-sumário-estatístico&#34;&gt;Funções de sumário estatístico&lt;/h2&gt;
 &lt;p&gt;Vamos ver exemplos das funções de sumário estatístico mais utilizadas dentro do verbo &lt;em&gt;summarise&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;1- Média&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(media = mean(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2- Desvio padrão&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(desvpad = sd(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3- Mediana&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(mediana = median(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4- Quantis (no exemplo, quantis 10%, 25%, 75%, 90%)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(quantil_10 = quantile(income, probs = 0.1),
             quantil_25 = quantile(income, probs = 0.25),
             quantil_75 = quantile(income, probs = 0.75),
             quantil_90 = quantile(income, probs = 0.9))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5- Mínimo e máximo&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(minimo = min(income),
             maximo = max(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;6- Contagem e soma&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(contagem = n(),
             soma = sum(age))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Importante: quando houver algum &amp;ldquo;NA&amp;rdquo; (missing value) em uma variável numérica, é preciso utilizar o argumento &amp;ldquo;na.rm = TRUE&amp;rdquo; dentro da função de sumário. Veja como ficaria o código caso houvesse algum &amp;ldquo;NA&amp;rdquo;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex) %&amp;gt;%
   summarise(media = mean(income, na.rm = TRUE))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A sessão Useful &lt;a href=&#34;https://r4ds.had.co.nz/transform.html#summarise-funs&#34;&gt;Summary Functions&lt;/a&gt; do livro R for Data Science traz uma relação mais completa de funçoes que podem ser usandas com summarise. O &lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf&#34;&gt;“cheatsheet” da RStudio&lt;/a&gt; oferece uma lista para uso rápido.&lt;/p&gt;
 &lt;h2 id=&#34;transformando-um-agrupamento-em-um-crosstab-e-exportando&#34;&gt;Transformando um agrupamento em um &amp;ldquo;crosstab&amp;rdquo; e exportando&lt;/h2&gt;
 &lt;p&gt;Vamos retomar o exemplo do agrupamento por duas variáveis, sexo e candidato de preferência:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex, candidate) %&amp;gt;%
   summarise(media_renda = mean(income))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Esse formato não costuma ser o usual em apresentação de dados. O mais comum é termos a informação que consta em nossas duas primeiras colunas como margens em uma tabela de duas entradas.&lt;/p&gt;
 &lt;p&gt;Na linguagem de manipulação de dados, o resultado acima está no formato &amp;ldquo;long&amp;rdquo; e todas as variáveis são representadas como colunas. Uma tabela de 2 entradas corresponde ao formato &amp;ldquo;wide&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Há dois verbos no &lt;em&gt;dplyr&lt;/em&gt; que transformam &amp;ldquo;long&amp;rdquo; em &amp;ldquo;wide&amp;rdquo; e vice-versa: &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt;. Como &lt;em&gt;spread&lt;/em&gt;, tranformamos o nosso resultado acima na tabela desejada:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex, candidate) %&amp;gt;%
   summarise(media_renda = mean(income)) %&amp;gt;%
   spread(sex, media_renda)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;spread&lt;/em&gt; precisa de 2 argumentos: a &amp;ldquo;key&amp;rdquo;, que a variável que irá para a margem superior da tabela, e &amp;ldquo;value&amp;rdquo;, que é a variável que ficará em seu conteúdo.&lt;/p&gt;
 &lt;p&gt;É fácil, inclusive, exportá-la para um editor de planilhas com a função &lt;em&gt;write_csv&lt;/em&gt; (do pacote &lt;em&gt;readr&lt;/em&gt;) ao final do pipeline:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex, candidate) %&amp;gt;%
   summarise(media_renda = mean(income)) %&amp;gt;%
   spread(sex, media_renda) %&amp;gt;%
-  write_csv(&amp;quot;tabela_candidato_sexo_renda.csv&amp;quot;)
+  write_csv(&amp;#34;tabela_candidato_sexo_renda.csv&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vá à sua pasta de trabalho e verifique que sua tabela está lá.&lt;/p&gt;
 &lt;p&gt;Veja que, como introduzimos um comando de exportação ao final do pipelina, não geramos nenhum objeto. Não há símbolo de atribuição em nosso código. Esse é um dos objetivo do uso do pipe (%&amp;gt;%): reduzir o número de objetos intermediários gerados.&lt;/p&gt;
 &lt;h3 id=&#34;spread-e-gather-caindo-em-desuso&#34;&gt;Spread e Gather caindo em desuso&lt;/h3&gt;
 &lt;p&gt;Há notícias de que os verbos &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt; cairão em desuso. Seus substituos serão &lt;em&gt;pivot_wider&lt;/em&gt; e &lt;em&gt;pivot_longer&lt;/em&gt;. As 4 funções são parte do pacote &lt;em&gt;tidyr&lt;/em&gt;, componente do &lt;em&gt;tidyverse&lt;/em&gt;. O uso das novas funções é bem similar ao das antigas, e veja como fica a substituição de &lt;em&gt;spread&lt;/em&gt; por &lt;em&gt;pivot_wider&lt;/em&gt; no código que produzimos. É possível que sua instalação do &lt;em&gt;tidyverse&lt;/em&gt; não contenha as novas funções e que o código abaixo não funcione.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;%
   group_by(sex, candidate) %&amp;gt;%
   summarise(media_renda = mean(income)) %&amp;gt;%
   pivot_wider(names_from = sex,
               values_from = media_renda)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mutate-com-group-by&#34;&gt;Mutate com Group By&lt;/h2&gt;
 &lt;p&gt;Vamos supor que queremos manter os dados no mesmo formato, ou seja, sem &amp;lsquo;achatá-los&amp;rsquo; por uma variável discreta, mas queremos uma nova coluna que represente a soma de uma variável por grupo &amp;ndash; para calcular percentuais de renda dentro de cada grupo de sexo, por exemplo. Vamos observar o resultado do uso conjunto de &lt;em&gt;group_by&lt;/em&gt; e &lt;em&gt;mutate&lt;/em&gt;. Para podermos observar o resultado, vamos armazenar os novos dados em um objeto chamado &amp;lsquo;fake2&amp;rsquo; e utilizar o comando &lt;em&gt;View&lt;/em&gt;. A última coluna de nossos dados agora é a soma da renda dentro de cada grupo.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake2 &amp;lt;- fake %&amp;gt;% 
   group_by(sex) %&amp;gt;%
   mutate(renda_grupo = mean(income))
 
 View(fake2)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando utilizarmos &lt;em&gt;group_by&lt;/em&gt; sem o &lt;em&gt;summarise&lt;/em&gt;, é importante &amp;ldquo;desagrupar&amp;rdquo; os data frame, ou &amp;ldquo;desligar o agrupamento&amp;rdquo;. Caso contrário, o agrupamento continuará ativo e afetando todas as operações seguintes. Repetindo o código com o desagrupamento:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake2 &amp;lt;- fake %&amp;gt;% 
   group_by(sex) %&amp;gt;%
   mutate(renda_grupo = mean(income)) %&amp;gt;%
   ungroup()
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mais-verbos-do-_dplyr_-_arrange_-e-_slice_&#34;&gt;Mais verbos do &lt;em&gt;dplyr&lt;/em&gt;: &lt;em&gt;arrange&lt;/em&gt; e &lt;em&gt;slice&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Se quisermos ordenar, de forma crescente, nossos dados por idade, por exemplo, basta usar o comando &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   arrange(age)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Em ordem decrescente teríamos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   arrange(-age)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisermos &amp;lsquo;desempatar&amp;rsquo; o ordenamento por idade por uma segunda variável, basta adicioná-la ao &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   arrange(-age, vote_history)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando trabalhamos com bases de dados de survey faz pouco sentido ordená-las. Entretanto, quando trabalhamos numa escala menor, com poucas linhas, ou com a produção de tabelas, como nos exemplos acima, convém ordenar a tabela (veja que, neste ponto, faz pouco sentido diferenciar tabela de data frame, pois se tornam sinônimos) por alguma variável de interesse.&lt;/p&gt;
 &lt;p&gt;Por exemplo, podemos ordenar os grupos de candidato de preferência por média de renda:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   group_by(candidate) %&amp;gt;% 
   summarise(media_renda = mean(income)) %&amp;gt;% 
   arrange(media_renda)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fácil e útil.&lt;/p&gt;
 &lt;p&gt;Finalmente, vamos supor que queremos extrair da base de dados apenas os 10 indivíduos de menor idade Como &amp;ldquo;recortar&amp;rdquo; linhas dos dados pela posição das linhas?&lt;/p&gt;
 &lt;p&gt;Em primeiro lugar, vamos ordenar os dados por idade. A seguir, vamos aplicar o verbo &lt;em&gt;slice&lt;/em&gt; para recortar as 10 primeiras linhas:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   arrange(age) %&amp;gt;% 
   slice(1:10)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisessemos recortar do 25, por exemplo, ao último, sem precisar especificar qual é o número da última posição, utilizamos &lt;em&gt;n()&lt;/em&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fake %&amp;gt;% 
   arrange(age) %&amp;gt;% 
   slice(25:n())
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que a aplicação de &lt;em&gt;slice&lt;/em&gt; não afeta em nada as colunas.&lt;/p&gt;
@@ -1747,7 +1747,7 @@ View(fake2)
 &lt;/ul&gt;
 &lt;h1 id=&#34;declaração-de-parâmetros&#34;&gt;Declaração de parâmetros&lt;/h1&gt;
 &lt;p&gt;Os parâmetros são especificados usando o campo dos parâmetros dentro da seção &lt;code&gt;YAML&lt;/code&gt;. Podemos especificar um ou mais parâmetros com cada item em uma nova linha. A título de exemplo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: My Document
 output: html_document
 params:
@@ -1757,7 +1757,7 @@ params:
   data: file.csv
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Todos os tipos de dados do &lt;code&gt;R&lt;/code&gt; podem ser processados por &lt;code&gt;yaml::yaml.load()&lt;/code&gt;, podendo ser incluídos como parâmetros, a saber: &lt;code&gt;character&lt;/code&gt;, &lt;code&gt;numeric&lt;/code&gt;, &lt;code&gt;integer&lt;/code&gt; e &lt;code&gt;logical&lt;/code&gt;. Também podemos usar objetos R incluindo &lt;code&gt;!r&lt;/code&gt; antes das expressões &lt;code&gt;R&lt;/code&gt;. Por exemplo, podemos incluir a data atual com o seguinte código R:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: My Document
 output: html_document
 params:
@@ -1781,24 +1781,24 @@ params:
 &lt;p&gt;Usando o botão &lt;code&gt;Knit&lt;/code&gt; no RStudio ou a função &lt;code&gt;rmarkdown::render()&lt;/code&gt;, os valores-padrão listados nos metadados do &lt;code&gt;YAML&lt;/code&gt; (quando especificados) serão utilizados.&lt;/p&gt;
 &lt;h3 id=&#34;knitting-com-parâmetros-personalizados&#34;&gt;&lt;code&gt;Knitting&lt;/code&gt; com parâmetros personalizados&lt;/h3&gt;
 &lt;p&gt;Mesmo que seu documento tenha o campo de parâmetros nos metadados do &lt;code&gt;YAML&lt;/code&gt;, você pode realmente substituí-lo fornecendo uma lista personalizada de valores de parâmetros para a função &lt;code&gt;rmarkdown::render()&lt;/code&gt;. Por exemplo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;rmarkdown::render(&amp;quot;MyDocument.Rmd&amp;quot;, params = list(
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rmarkdown::render(&amp;#34;MyDocument.Rmd&amp;#34;, params = list(
   year = 2017,
-  region = &amp;quot;Asia&amp;quot;,
+  region = &amp;#34;Asia&amp;#34;,
   printcode = FALSE,
-  file = &amp;quot;file2.csv&amp;quot;
+  file = &amp;#34;file2.csv&amp;#34;
 ))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Não temos que declarar explicitamente todos os parâmetros no argumento dos &lt;code&gt;params&lt;/code&gt;. Qualquer parâmetro não especificado terá como padrão os valores especificados nos metadados do &lt;code&gt;YAML&lt;/code&gt;. Por exemplo, a função a seguir somente anulará o parâmetro da região:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;rmarkdown::render(&amp;quot;MyDocument.Rmd&amp;quot;, params = list(
-  region = &amp;quot;Asia&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rmarkdown::render(&amp;#34;MyDocument.Rmd&amp;#34;, params = list(
+  region = &amp;#34;Asia&amp;#34;
 ))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Você pode querer integrar estas mudanças em uma função. Tal função também poderia ser usada para criar um arquivo de saída com um nome de arquivo diferente para cada uma das diferentes combinações de parâmetros. No exemplo a seguir, um novo arquivo Report-region year.pdf é criado para cada conjunto de parâmetros:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;render_report = function(region, year) {
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;render_report = function(region, year) {
   rmarkdown::render(
-    &amp;quot;MyDocument.Rmd&amp;quot;, params = list(
+    &amp;#34;MyDocument.Rmd&amp;#34;, params = list(
       region = region,
       year = year
     ),
-    output_file = paste0(&amp;quot;Report-&amp;quot;, region, &amp;quot;-&amp;quot;, year, &amp;quot;.pdf&amp;quot;)
+    output_file = paste0(&amp;#34;Report-&amp;#34;, region, &amp;#34;-&amp;#34;, year, &amp;#34;.pdf&amp;#34;)
   )
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;a-interface-interativa-ao-usuário&#34;&gt;A interface interativa ao usuário&lt;/h3&gt;
@@ -1808,28 +1808,28 @@ params:
 &lt;p&gt;Os controles de entrada para diferentes tipos de parâmetros podem ser personalizados, especificando subitens adicionais dentro da especificação do parâmetro em &lt;code&gt;YAML&lt;/code&gt;. Por exemplo, controles deslizantes, caixas de seleção e caixas de entrada de texto podem ser todos usados para controles de entrada.&lt;/p&gt;
 &lt;p&gt;Além disso, também podemos especificar as restrições dos valores permitidos em cada parâmetro. Por exemplo, podemos querer que nosso modelo só seja executado durante anos entre 2010 e 2018. Isto é particularmente benéfico se você gostaria que outros usuários interagissem com o relatório, pois impede que os usuários tentem executar relatórios fora dos limites projetados.&lt;/p&gt;
 &lt;p&gt;Adaptando nosso exemplo acima para incluir algumas configurações:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;---
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: My Document
 output: html_document
 params:
   year:
-    label: &amp;quot;Year&amp;quot;
+    label: &amp;#34;Year&amp;#34;
     value: 2017
     input: slider
     min: 2010
     max: 2018
     step: 1
-    sep: &amp;quot;&amp;quot;
+    sep: &amp;#34;&amp;#34;
   region:
-    label: &amp;quot;Region:&amp;quot;
+    label: &amp;#34;Region:&amp;#34;
     value: Europe
     input: select
     choices: [North America, Europe, Asia, Africa]
   printcode:
-    label: &amp;quot;Display Code:&amp;quot;
+    label: &amp;#34;Display Code:&amp;#34;
     value: TRUE
   data:
-    label: &amp;quot;Input dataset:&amp;quot;
+    label: &amp;#34;Input dataset:&amp;#34;
     value: results.csv
     input: file
 ---
@@ -2068,11 +2068,11 @@ password	passwordInput&lt;/p&gt;
 &lt;h2 id=&#34;atividades-de-verificação-de-aprendizagem&#34;&gt;Atividades de verificação de aprendizagem&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Questão 1:&lt;/strong&gt;
 Abra o &lt;code&gt;data.frame&lt;/code&gt; &amp;ldquo;iris&amp;rdquo;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;a &amp;lt;- iris
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;a &amp;lt;- iris
 class(iris)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;a. Calcule estatísticas básicas de cada variável. Copie e cole no Canvas (código e resultado).&lt;/p&gt;
 &lt;p&gt;Veja o exemplo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;summary(iris$Sepal.Length)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;summary(iris$Sepal.Length)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;b. Para que serve p símbolo &lt;code&gt;$&lt;/code&gt; após o nome do data.frame?
 c. Por meio das funções &lt;code&gt;hist()&lt;/code&gt; e &lt;code&gt;boxplot()&lt;/code&gt;, respectivamente, gere um exemplo de cada gráfico para a variável que você escolher. Copie e cole no Canvas.&lt;/p&gt;
 </description>

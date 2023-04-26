@@ -28,26 +28,7 @@ subtitle = "Um pequeno passo na vida do estudante.... Mas um enorme passo para a
 #  [[content.filter_button]]
 #    name = "Iniciação científica"
 #    tag = "Iniciação científica"
-  
-#  [[content.filter_button]]
-#    name = "Spatial Analysis"
-#    tag = "spatial analysis"
-  
-#  [[content.filter_button]]
-#    name = "Urban and Regional Planning"
-#    tag = "urban planning"
-  
-#  [[content.filter_button]]
-#    name = "Data Science"
-    tag = "data science"
-#    
-#  [[content.filter_button]]
-#    name = "Urban Logistics"
-#    tag = "urban logistics"
-    
-#  [[content.filter_button]]
-#    name = "Railroads"
-#    tag = "rail"    
+
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

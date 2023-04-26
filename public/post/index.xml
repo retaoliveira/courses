@@ -287,14 +287,14 @@
 &lt;/ol&gt;
 &lt;p&gt;Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.&lt;/p&gt;
 &lt;p&gt;In a &lt;code&gt;chunk&lt;/code&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;install.packages(&amp;quot;swirl&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;install.packages(&amp;#34;swirl&amp;#34;)
 library(swirl)
 
 install_course()
 swirl()
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O arquivo pode ser acessado no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o &lt;a href=&#34;http://swirlstats.com/scn/&#34;&gt;Swirl Course Network&lt;/a&gt;. A instalação é feita também com a função &lt;code&gt;install_course()&lt;/code&gt;, mas nesse caso você precisa digitar o nome do curso como em:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;swirl::install_course(&amp;quot;A_(very)_short_introduction_to_R&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;swirl::install_course(&amp;#34;A_(very)_short_introduction_to_R&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -487,7 +487,7 @@ Tools for selecting colour combinations.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;como-operacionalizar&#34;&gt;Como operacionalizar?&lt;/h2&gt;
-&lt;p&gt;Vá ao site do &lt;a href=&#34;Github.com&#34;&gt;Github.com&lt;/a&gt; e crie uma conta gratuita. Faça seu login. 
+&lt;p&gt;Vá ao site do &lt;a href=&#34;Github.com&#34;&gt;Github.com&lt;/a&gt; e crie uma conta gratuita. Faça seu login.
 Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.&lt;/p&gt;
 &lt;p&gt;Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios &lt;code&gt;local&lt;/code&gt;e &lt;code&gt;remoto&lt;/code&gt;. O próprio &lt;code&gt;Github&lt;/code&gt; tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o &lt;a href=&#34;https://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ainda tenho que me acostumar a utilizar o &lt;code&gt;RStudio&lt;/code&gt; para gerenciar versão no &lt;code&gt;Github&lt;/code&gt;. Sim, é possível. Mas até agora achei que o &lt;code&gt;GitKraken&lt;/code&gt; é mais rápido e eficiente.&lt;/p&gt;
