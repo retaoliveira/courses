@@ -2,7 +2,7 @@
 date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
-  dados_pos_2022:
+  dados_ppga:
     parent: Labs
     weight: 15
 title: "Lab 3.1 - `dados categóricos`"
@@ -10,19 +10,6 @@ toc: true
 type: docs
 weight: 15
 ---
-
-A **Unidade 2** é estruturada considerando os seguintes tópicos:
-
-- Estrutura de dados no R;   
-- Tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos;   
-- Visualização de dados no R.   
-
-São propostas as seguintes atividades:
-
-- Faça o download do arquivo disponível no ***link***   
-- Resolva as questões.   
-- Gere um tipo de documento .Rmd de sua preferência.   
-- Envie por email (renataoliveira@gmail.com ou renataoliveira@cefetmg.br) o arquivo .Rmd e o arquivo gerado.
 
 ## **Atividade**
 

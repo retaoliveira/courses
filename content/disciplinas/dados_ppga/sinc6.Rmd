@@ -19,10 +19,10 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('r-decision.github.io/class06/', height = "400px")
+knitr::include_url('https://r-decision.github.io/class06/', height = "400px")
 ```
 
-[LINK](r-decision.github.io/class06/)
+[LINK](https://r-decision.github.io/class06/)
 
 
 
