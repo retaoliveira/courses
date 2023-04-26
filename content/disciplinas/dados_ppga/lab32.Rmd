@@ -1,10 +1,10 @@
 ---
-title: "Lab 3.2"
+title: "Lab 3.2 - manipulação de dados"
 draft: false
 date: '2021-10-15T00:00:00+01:00'
 menu:
   dados_ppga:
-    parent: Unidade 3
+    parent: Labs
     weight: 20
 toc: yes
 type: docs
@@ -29,7 +29,7 @@ A **Unidade 3** é estruturada considerando os seguintes tópicos:
 
 3. Rode o arquivo .Rmd por meio do ícone `knitr` 
 
-4. Salve o .Rmd e **submeta-o por meio da tarefa no Sigaa**. 
+4. Salve o .Rmd e entregue à docentes. 
 
 <hr></hr>
 
