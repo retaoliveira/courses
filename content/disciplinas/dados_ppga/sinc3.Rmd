@@ -25,3 +25,7 @@ knitr::include_url('https://r-decision.github.io/class03/', height = "400px")
 [LINK](https://r-decision.github.io/class03/)
 
 
+## Homework
+- Atividade 2
+- Lab 2.1
+- Lab 2.2

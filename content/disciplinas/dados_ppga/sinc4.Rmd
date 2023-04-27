@@ -24,3 +24,15 @@ knitr::include_url('https://r-decision.github.io/class04/', height = "400px")
 
 [LINK](https://r-decision.github.io/class04/)
 
+## Homework
+
+- Atividade 02 - tipo de dados e objetos
+    - Questão 4 para Raphael
+    - Todas as questões para Jancler e Raissa
+- Lab 2.2 - starwars - para todos
+    - 5
+    - 6
+    - 7
+- Lab 2.1 - plastic waste
+- Projeto integrador - estruturar tema, elaborar perguntas e trazer dados
+
