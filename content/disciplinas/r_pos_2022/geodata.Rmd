@@ -2,7 +2,7 @@
 date: "2019-05-05T00:00:00+01:00"
 draft: true
 menu:
-  dados_ppga:
+  dados_dado:
     parent: Unidade 7 - Localização como atributo de suporte à decisão
     weight: 60
 title: Dados espaciais
