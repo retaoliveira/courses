@@ -1,6 +1,6 @@
 ---
-date: "2020-12-275T00:00:00+01:00"
-draft: true
+date: "2023-04-285T00:00:00+01:00"
+draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
@@ -22,26 +22,17 @@ Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos".
 
 ## Pontos
 
-5 pontos
-
-## Grupos de trabalho
-**Grupo 1**: Artur Abreu, Pedro Lemes, Arthur Joia e Gabriel Ramos
-
-**Grupo 2**: Amanda Nascimento, Jancler Adrano, Lucas Gomes, Maria Júlia Alves e Naiara Caetano
-
-**Grupo 3:** Amanda Evelyn, Aline Lacerda, Bárbara Silva e Isadora Oliveira
-
-**Grupo 4:** Marina Caroline, Rayssa Aparecida, Thayna Assis e Yara Bertilie
-
-**Grupo 5:** Arthus Ferraz, Mathias, Sebastião e Caroline
-
-**Grupo 6:** Renata, Webert, Taynara e Leonardo
+10 pontos
 
 
 ## Atividades
 
-Cada grupo deverá elaborar um parágrafo com a sua própria definição de "nível de serviço logístico". 
+- Cada grupo deverá elaborar um parágrafo com a sua própria definição de "nível de serviço logístico". 
 
-Cada grupo fará uma pesquisa sobre os indicadores de desempenho/nível de serviço recebidos e fará a interpretacão do indicador, críticas, alinhamento com as atividades-chave da gestão da cadeia de suprimentos, classificação do indicador segundo informação. 
+- Cada dupla sorteará um tipo de indicador logístico, fará uma pesquisa para identificar um indicador do tipo sorteado
+e apresentará as seguintes dimensões para a turma: 
+   - interpretacão do indicador;
+   - críticas; 
+   - alinhamento com as atividades-chave da gestão da cadeia de suprimentos.
 
 

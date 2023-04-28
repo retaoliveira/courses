@@ -1,6 +1,6 @@
 ---
 date: "2019-05-05T00:00:00+01:00"
-draft: false
+draft: true
 menu:
   dados_ppga:
     parent: Unidade 7 - Localização como atributo de suporte à decisão
@@ -81,19 +81,19 @@ Para carregar os dados, utilize a função `data()`.
 
 O data frame de um objeto espacial `sp` também pode ser acessado por meio de `@data`:
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 head(blocks@data)
 ```
 
 Os dados das unidades censitárias de New Haven podem ser visualizados por meio de:
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 plot(blocks)
 ```
 
 Para plotar as unidades censitárias e as rodovias em vermelho. A função `par` serve para plotar mais de um gráfico em uma mesma representação. Existem diferentes parâmetros para essa função. Por exemplo, o `mfrow` refere-se ao número de linhas e colunas para combinar as plotagens.O parâmetro `mar` ajuda na definição de margens.  
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 par(mar = c(0,0,0,0))
 plot(roads, col="red")
 plot(blocks, add=TRUE)
@@ -142,7 +142,7 @@ vignette(package = "sf") # visualizar as vignettes
 
 A forma mais simples de converter os dados considerados para análise das funções de `sp` em objetos do `sf` é por meio da função `st_as_sf()`.
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # carregar o dado
 data("georgia") 
 
@@ -152,13 +152,13 @@ class(georgia_sf)
 georgia_sf # representa as dez primeiras feições
 ```
 
-```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 georgia #apresenta todas as feições
 ```
 
 A função `plot` também funciona de maneira diferente. Ela permite criar objetos `sf` e se o objeto tiver atributos, ele demarcará com preenchimento das feições. Teste:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # todos os atributos
 plot(georgia_sf)
 
@@ -171,14 +171,14 @@ plot(georgia_sf[,c(4,5)])
 
 Objetos `sf` apresentam data frame. O data frame de `sp` e `sf` podem ser comparados. No data frame dos objetos `sf` há atributos de geometria, diferentemente do data frame `sp`. 
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 head(data.frame(georgia))
 head(data.frame(georgia_sf))
 ```
 
 Para converter dado espaciais `sf` para `sp`, faça:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 g2 <- as(georgia_sf, "Spatial")
 class(g2)
 ```
