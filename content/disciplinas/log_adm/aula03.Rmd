@@ -19,9 +19,8 @@ weight: 11
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://log2022.github.io/class04', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class03', height = "400px")
 ```
 
-[LINK](https://log2022.github.io/class04)
+[LINK](https://logistica2023.github.io/class03)
 
-[Download pdf](https://cefetmgbr-my.sharepoint.com/:b:/g/personal/renataoliveira_cefetmg_br/Ecn8co7kNxtJu1l7vke_c0MB7L57-bYpMdaK_zhGPJ-Plg?e=Usj6TE)

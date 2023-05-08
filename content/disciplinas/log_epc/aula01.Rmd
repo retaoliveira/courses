@@ -25,7 +25,7 @@ Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no 
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://log2022.github.io/class01', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class01', height = "400px")
 ```
 
-[LINK](https://log2022.github.io/class01)
+[LINK](https://logistica2023.github.io/class01)

@@ -95,39 +95,38 @@ Clique no botão &lt;code&gt;Knit HTML&lt;/code&gt; na barra de ferramentas do d
 &lt;h2 id=&#34;exercícios&#34;&gt;Exercícios:&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Questão 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Qual é a classe dos vetores abaixo? Imprima o vetor com &lt;em&gt;print&lt;/em&gt; e tente advinhar. Use a função &lt;em&gt;class&lt;/em&gt; para descobrir a resposta.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(1, 2, TRUE, 4)
-v2 &amp;lt;- c(&amp;quot;T&amp;quot;, &amp;quot;TRUE&amp;quot;, &amp;quot;FALSE&amp;quot;, &amp;quot;T&amp;quot;)
-v3 &amp;lt;- c(&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;)
-v4 &amp;lt;- c(1, &amp;quot;4&amp;quot;, 4, 1)
-v5 &amp;lt;- c(1, 2, &amp;quot;feijao com arroz&amp;quot;)
-v6 &amp;lt;- c(&amp;quot;Beatriz&amp;quot;, &amp;quot;Pedro&amp;quot;, TRUE)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(1, 2, TRUE, 4)
+v2 &amp;lt;- c(&amp;#34;T&amp;#34;, &amp;#34;TRUE&amp;#34;, &amp;#34;FALSE&amp;#34;, &amp;#34;T&amp;#34;)
+v3 &amp;lt;- c(&amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;3&amp;#34;, &amp;#34;4&amp;#34;)
+v4 &amp;lt;- c(1, &amp;#34;4&amp;#34;, 4, 1)
+v5 &amp;lt;- c(1, 2, &amp;#34;feijao com arroz&amp;#34;)
+v6 &amp;lt;- c(&amp;#34;Beatriz&amp;#34;, &amp;#34;Pedro&amp;#34;, TRUE)
 v7 &amp;lt;- c(T, T, F, T, F, F, 42)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Você consegue identificar as regras de combinação de tipos de dados diferentes em um mesmo vetor? Se tiver dúvidas, pergunte.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questão 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Veja as cores de veículos comercializados por uma concessionária na semana passada.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;colours &amp;lt;- factor(c(&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,
-                    &amp;quot;silver&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,
-                    &amp;quot;red&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,&amp;quot;silver&amp;quot;),
-                  levels=c(&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,&amp;quot;black&amp;quot;))
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;colours &amp;lt;- factor(c(&amp;#34;red&amp;#34;,&amp;#34;blue&amp;#34;,&amp;#34;red&amp;#34;,&amp;#34;white&amp;#34;,
+                    &amp;#34;silver&amp;#34;,&amp;#34;red&amp;#34;,&amp;#34;white&amp;#34;,&amp;#34;silver&amp;#34;,
+                    &amp;#34;red&amp;#34;,&amp;#34;red&amp;#34;,&amp;#34;white&amp;#34;,&amp;#34;silver&amp;#34;,&amp;#34;silver&amp;#34;),
+                  levels=c(&amp;#34;red&amp;#34;,&amp;#34;blue&amp;#34;,&amp;#34;white&amp;#34;,&amp;#34;silver&amp;#34;,&amp;#34;black&amp;#34;))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se você colocar o código a seguir, o que acontece? Por que? Responda na atividade da semana.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;colours[4] &amp;lt;- &amp;quot;orange&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;colours[4] &amp;lt;- &amp;#34;orange&amp;#34;
 colours
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Utilize a função &lt;code&gt;table&lt;/code&gt; para determinar a quantidade de automóveis comercializados de cada cor. Pesquise na internet e pergunte caso tenha dúvidas.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;table(colours)
-
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;d11 &amp;lt;- plyr::count(colours)
-d12 &amp;lt;- plyr::count(mtcars, vars = &amp;quot;cyl&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;table(colours)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;d11 &amp;lt;- plyr::count(colours)
+d12 &amp;lt;- plyr::count(mtcars, vars = &amp;#34;cyl&amp;#34;)
 d13 &amp;lt;- gmodels::CrossTable(colours)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Questão 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Considere:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;car.type &amp;lt;- factor(c(&amp;quot;saloon&amp;quot;,&amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;,
-    &amp;quot;saloon&amp;quot;,&amp;quot;convertible&amp;quot;,&amp;quot;hatchback&amp;quot;,&amp;quot;convertible&amp;quot;,
-    &amp;quot;saloon&amp;quot;, &amp;quot;hatchback&amp;quot;,&amp;quot;saloon&amp;quot;, &amp;quot;saloon&amp;quot;,
-    &amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;),
-    levels=c(&amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;,&amp;quot;convertible&amp;quot;))
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;car.type &amp;lt;- factor(c(&amp;#34;saloon&amp;#34;,&amp;#34;saloon&amp;#34;,&amp;#34;hatchback&amp;#34;,
+    &amp;#34;saloon&amp;#34;,&amp;#34;convertible&amp;#34;,&amp;#34;hatchback&amp;#34;,&amp;#34;convertible&amp;#34;,
+    &amp;#34;saloon&amp;#34;, &amp;#34;hatchback&amp;#34;,&amp;#34;saloon&amp;#34;, &amp;#34;saloon&amp;#34;,
+    &amp;#34;saloon&amp;#34;,&amp;#34;hatchback&amp;#34;),
+    levels=c(&amp;#34;saloon&amp;#34;,&amp;#34;hatchback&amp;#34;,&amp;#34;convertible&amp;#34;))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Gere a tabela de frequências para os dados &lt;code&gt;car.type&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Experimente:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;table(car.type, colours)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;table(car.type, colours)
 gmodels::CrossTable(car.type, colours)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Qual a diferença entre o uso da função &lt;code&gt;table&lt;/code&gt; com um ou argumentos?
 Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;code&gt;table(colours, car.type)&lt;/code&gt;?&lt;/p&gt;
@@ -143,8 +142,7 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
 &lt;p&gt;Calcule sua produtividade em &amp;ldquo;palavras por Litro de café&amp;rdquo;. Atribua o resultado a um novo vetor.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -206,45 +204,45 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;preparação-para-o-exercício&#34;&gt;Preparação para o exercício:&lt;/h2&gt;
 &lt;p&gt;Carregue o &lt;em&gt;data frame&lt;/em&gt; &lt;em&gt;mtcars&lt;/em&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;data(mtcars)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;data(mtcars)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script&#34;&gt;Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:&lt;/h2&gt;
 &lt;p&gt;Q1)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;Head(mtcars)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Head(mtcars)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q2)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;str(Mtcars)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;str(Mtcars)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q3)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;dim[mtcars]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dim[mtcars]
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q4)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;nomes(mtcars)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nomes(mtcars)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q5)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;head(mtcars, x = 10)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;head(mtcars, x = 10)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q6)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- (&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- (&amp;#34;pato&amp;#34;, &amp;#34;cachorro&amp;#34;, &amp;#34;minhoca&amp;#34;, &amp;#34;lagarto&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q7)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v2 &amp;lt;- c(&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v2 &amp;lt;- c(&amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;3&amp;#34;, &amp;#34;4&amp;#34;)
 v1 + 42
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q8)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(&amp;#34;pato&amp;#34;, &amp;#34;cachorro&amp;#34;, &amp;#34;minhoca&amp;#34;, &amp;#34;lagarto&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q9)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v3 &amp;lt;- c(33 31 40 25 27 40)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v3 &amp;lt;- c(33 31 40 25 27 40)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q10)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(pato, cachorro, minhoca, lagarto)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(pato, cachorro, minhoca, lagarto)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q11)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot; &amp;quot;cachorro&amp;quot; &amp;quot;minhoca&amp;quot; &amp;quot;lagarto&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(&amp;#34;pato&amp;#34; &amp;#34;cachorro&amp;#34; &amp;#34;minhoca&amp;#34; &amp;#34;lagarto&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q12)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v3 &amp;lt;- C(33, 31, 40, 25, 27, 40)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v3 &amp;lt;- C(33, 31, 40, 25, 27, 40)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q13)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(&amp;#34;pato&amp;#34;, &amp;#34;cachorro&amp;#34;&amp;#34;, &amp;#34;minhoca&amp;#34;, &amp;#34;lagarto&amp;#34;)
 v3 &amp;lt;- c(33, 31, 40, 25, 27, 40)
 myData &amp;lt;- data.frame(v1, v3)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q14)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(&amp;#34;pato&amp;#34;, &amp;#34;cachorro&amp;#34;&amp;#34;, &amp;#34;minhoca&amp;#34;, &amp;#34;lagarto&amp;#34;)
 v4 &amp;lt;- c(33, 31, 40, 25)
 myData &amp;lt;- data.frame(v1 = animal, v4 = idade)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q15)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;ls
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ls
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Q16)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;v1 &amp;lt;- c(&amp;quot;pato&amp;quot;, &amp;quot;cachorro&amp;quot;, &amp;quot;minhoca&amp;quot;, &amp;quot;lagarto&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(&amp;#34;pato&amp;#34;, &amp;#34;cachorro&amp;#34;, &amp;#34;minhoca&amp;#34;, &amp;#34;lagarto&amp;#34;)
 sum(v1)
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -285,16 +283,16 @@ sum(v1)
 &lt;h2 id=&#34;pacotes&#34;&gt;Pacotes&lt;/h2&gt;
 &lt;p&gt;Usaremos o pacote &lt;strong&gt;tidyverse&lt;/strong&gt;* para esta análise.
 Execute o seguinte código no Console para carregar este pacote.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;library(tidyverse)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;library(tidyverse)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;dados&#34;&gt;Dados&lt;/h2&gt;
 &lt;p&gt;O conjunto de dados para esta tarefa pode ser encontrado no link a seguir, acessado por meio do comando:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-#url_file &amp;lt;- &amp;quot;atalho no seu computador/plastic-waste.csv&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+#url_file &amp;lt;- &amp;#34;atalho no seu computador/plastic-waste.csv&amp;#34;
 
 #plastic_waste &amp;lt;- read_csv(url_file)
 
 #library(readr)
-plastic_waste &amp;lt;- read_csv(&amp;quot;D:/OneDrive - cefetmg.br/01_disciplinas/ERE/2020_2/R_adm/00_aulas/class07_dados_adm/data/plastic-waste.csv&amp;quot;)
+plastic_waste &amp;lt;- read_csv(&amp;#34;D:/OneDrive - cefetmg.br/01_disciplinas/ERE/2020_2/R_adm/00_aulas/class07_dados_adm/data/plastic-waste.csv&amp;#34;)
 
 View(plastic_waste)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As descrições das variáveis são as seguintes:&lt;/p&gt;
@@ -324,31 +322,30 @@ View(plastic_waste)
 &lt;/ul&gt;
 &lt;h1 id=&#34;exercícios&#34;&gt;Exercícios&lt;/h1&gt;
 &lt;p&gt;Vamos começar dando uma olhada na distribuição de resíduos plásticos per capita em 2010.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
   geom_histogram(binwidth = 0.2)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Um país se destaca como uma observação incomum no topo da distribuição.&lt;/p&gt;
 &lt;p&gt;Uma maneira de identificar este país é filtrar os dados para países onde os resíduos plásticos per capita são maiores que 3,5 kg/pessoa.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;plastic_waste %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;plastic_waste %&amp;gt;%
   filter(plastic_waste_per_cap &amp;gt; 3.5)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Você esperava este resultado?&lt;/p&gt;
 &lt;p&gt;Você poderia considerar fazer alguma pesquisa sobre Trinidad e Tobago para ver por que os resíduos plásticos per capita são tão altos lá, ou se isto é um erro de dados.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Faça um histograma para a distribuição de resíduos plásticos per capita desagregados (facet) por continente. O que você pode dizer sobre como os continentes se comparam uns aos outros em termos de seus resíduos plásticos per capita?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
   geom_histogram() +
   facet_wrap(~ continent)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Outra forma de visualizar os dados numéricos é utilizando gráficos de densidade.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
   geom_density()
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E comparar as distribuições entre continentes por curvas de densidade de coloração por continente.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent)) +
   geom_density()
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O gráfico resultante pode ser um pouco difícil de ler, então vamos também preencher as curvas com cores.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent, 
                      fill = continent)) +
@@ -357,7 +354,7 @@ View(plastic_waste)
 &lt;p&gt;Podemos mudar o nível de transparência da cor de preenchimento para ajudar nisso.&lt;/p&gt;
 &lt;p&gt;O argumento &lt;code&gt;alpha&lt;/code&gt; recebe valores entre 0 e 1: 0 é completamente transparente e 1 é completamente opaco.
 Não há como dizer qual valor funcionará melhor, então você só precisa tentar alguns valores.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent, 
                      fill = continent)) +
@@ -372,14 +369,14 @@ Não há como dizer qual valor funcionará melhor, então você só precisa tent
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;E ainda outra maneira de visualizar esta relação é utilizando gráficos boxplot.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = plastic_waste, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
        mapping = aes(x = continent, 
                      y = plastic_waste_per_cap)) +
   geom_boxplot()
 &lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
 &lt;li&gt;Converta os boxplot da tarefa anterior para &lt;a href=&#34;http://ggplot2.tidyverse.org/reference/geom_violin.html&#34;&gt;plot de violino&lt;/a&gt;. O que os gráficos de violino revelam que os boxplot não revelam? Quais características são aparentes nas parcelas de box mas não nas parcelas de violino?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;ggplot(data = plastic_waste, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
        mapping = aes(x = continent, 
                      y = plastic_waste_per_cap)) +
   geom_violin()
@@ -397,56 +394,54 @@ Você precisará fazer duas parcelas separadas.
 Algum destes pares de variáveis parece estar associado de forma mais linear?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
 plastic_waste %&amp;gt;% 
   ggplot(aes(x = mismanaged_plastic_waste_per_cap, y = plastic_waste_per_cap, color = continent)) + 
     geom_point() +
     scale_color_viridis_d() +
-    labs(x = &amp;quot;Resíduos plásticos mal administrados per capita&amp;quot;, 
-         y = &amp;quot;Resíduos plásticos per capita&amp;quot;, 
-         color = &amp;quot;Continente&amp;quot;,
-         title = &amp;quot;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;quot;,
-         subtitle = &amp;quot;por continente&amp;quot;) +
+    labs(x = &amp;#34;Resíduos plásticos mal administrados per capita&amp;#34;, 
+         y = &amp;#34;Resíduos plásticos per capita&amp;#34;, 
+         color = &amp;#34;Continente&amp;#34;,
+         title = &amp;#34;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;#34;,
+         subtitle = &amp;#34;por continente&amp;#34;) +
     theme_minimal()
 
 plastic_waste %&amp;gt;% 
   ggplot(aes(x = coastal_pop, y = plastic_waste_per_cap, color = continent)) + 
     geom_point() +
     scale_color_viridis_d() +
-    labs(x = &amp;quot;Resíduos plásticos mal administrados per capita&amp;quot;, 
-         y = &amp;quot;Resíduos plásticos per capita&amp;quot;, 
-         color = &amp;quot;Continente&amp;quot;,
-         title = &amp;quot;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;quot;,
-         subtitle = &amp;quot;por continente&amp;quot;) +
+    labs(x = &amp;#34;Resíduos plásticos mal administrados per capita&amp;#34;, 
+         y = &amp;#34;Resíduos plásticos per capita&amp;#34;, 
+         color = &amp;#34;Continente&amp;#34;,
+         title = &amp;#34;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;#34;,
+         subtitle = &amp;#34;por continente&amp;#34;) +
     theme_minimal()
 
 plastic_waste %&amp;gt;% 
   ggplot(aes(x = total_pop, y = plastic_waste_per_cap, color = continent)) + 
     geom_point() +
     scale_color_viridis_d() +
-    labs(x = &amp;quot;Resíduos plásticos mal administrados per capita&amp;quot;, 
-         y = &amp;quot;Resíduos plásticos per capita&amp;quot;, 
-         color = &amp;quot;Continente&amp;quot;,
-         title = &amp;quot;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;quot;,
-         subtitle = &amp;quot;por continente&amp;quot;) +
+    labs(x = &amp;#34;Resíduos plásticos mal administrados per capita&amp;#34;, 
+         y = &amp;#34;Resíduos plásticos per capita&amp;#34;, 
+         color = &amp;#34;Continente&amp;#34;,
+         title = &amp;#34;Resíduos plásticos per capita e os resíduos plásticos mal administrados per capita&amp;#34;,
+         subtitle = &amp;#34;por continente&amp;#34;) +
     theme_minimal()
-
-
 &lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
 &lt;li&gt;Recrie o seguinte gráfico e interprete o que você vê no contexto dos dados.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;plastic_waste %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;plastic_waste %&amp;gt;% 
   mutate(coastal_pop_prop = coastal_pop / total_pop) %&amp;gt;%
   filter(plastic_waste_per_cap &amp;lt; 3) %&amp;gt;%
   ggplot(aes(x = coastal_pop_prop, y = plastic_waste_per_cap, color = continent)) + 
     geom_point() +
-    geom_smooth(color = &amp;quot;black&amp;quot;) +
+    geom_smooth(color = &amp;#34;black&amp;#34;) +
     scale_color_viridis_d() +
-    labs(x = &amp;quot;Coastal population proportion (Coastal / total population)&amp;quot;, 
-         y = &amp;quot;Plastic waste per capita &amp;quot;, 
-         color = &amp;quot;Continent&amp;quot;,
-         title = &amp;quot;Plastic waste vs. coastal population proportion&amp;quot;,
-         subtitle = &amp;quot;by continent&amp;quot;) +
+    labs(x = &amp;#34;Coastal population proportion (Coastal / total population)&amp;#34;, 
+         y = &amp;#34;Plastic waste per capita &amp;#34;, 
+         color = &amp;#34;Continent&amp;#34;,
+         title = &amp;#34;Plastic waste vs. coastal population proportion&amp;#34;,
+         subtitle = &amp;#34;by continent&amp;#34;) +
     theme_minimal()
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -484,49 +479,45 @@ plastic_waste %&amp;gt;%
 &lt;ol&gt;
 &lt;li&gt;Dê uma olhada no dataframe Starwars.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;glimpse(starwars)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;glimpse(starwars)
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(starwars, 
        aes(x = height, y = mass, color = gender, size = birth_year)) +
-  geom_point(color = &amp;quot;pink&amp;quot;)
+  geom_point(color = &amp;#34;pink&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(starwars, 
        aes(x = height, y = mass, color = as.factor(gender), size = birth_year)) +
   geom_point() +
   labs(
-    title = &amp;quot;TEste&amp;quot;,
-    x = &amp;quot;Adoro&amp;quot;, 
-    y = &amp;quot;WOW&amp;quot;,
-    size = &amp;quot;Idade&amp;quot;
+    title = &amp;#34;TEste&amp;#34;,
+    x = &amp;#34;Adoro&amp;#34;, 
+    y = &amp;#34;WOW&amp;#34;,
+    size = &amp;#34;Idade&amp;#34;
     )
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com &lt;code&gt;eval = FALSE&lt;/code&gt; porque o código atual ali não é válido e, portanto, o documento não permitia o &lt;code&gt;knit&lt;/code&gt;. Uma vez substituído o código por um código válido, defina a opção &amp;ldquo;eval = TRUE&amp;rdquo;, ou remova a opção &amp;ldquo;eval&amp;rdquo; por completo, uma vez que está definida como &amp;ldquo;TRUE&amp;rdquo; por padrão).&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(starwars, aes(___)) +
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(starwars, aes(___)) +
   geom___
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;(Desta vez nenhum código inicial é fornecido, você está por sua conta!)&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -615,11 +606,11 @@ plastic_waste %&amp;gt;%
 &lt;p&gt;Sua tarefa é preencher os espaços em branco assinalados por &lt;code&gt;___&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;dados-e-pacotes&#34;&gt;Dados e pacotes&lt;/h3&gt;
 &lt;p&gt;Começamos com o carregamento dos pacotes que vamos utilizar. Lembrem-se que, caso haja algum problema com o carregamento dos pacotes, tente instalá-los novamente.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;library(fivethirtyeight)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;library(fivethirtyeight)
 library(tidyverse)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O conjunto de dados contém informações sobre &lt;code&gt;r nrow(bechdel)&lt;/code&gt; filmes lançados entre &lt;code&gt;r min(bechdel$year)&lt;/code&gt; e &lt;code&gt;r max(bechdel$year)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Entretanto, vamos focar nossa análise em filmes lançados entre 1990 e 2013.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;bechdel90_13 &amp;lt;- bechdel %&amp;gt;% 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 &amp;lt;- bechdel %&amp;gt;% 
   filter(between(year, 1990, 2013))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Existem &amp;lsquo;___&amp;rsquo; filmes. (insira a quantidade de filmes)&lt;/p&gt;
 &lt;hr&gt;
@@ -633,7 +624,7 @@ library(tidyverse)
 &lt;hr&gt;
 &lt;h3 id=&#34;análise&#34;&gt;Análise&lt;/h3&gt;
 &lt;p&gt;Vamos ver como o orçamento médio e o bruto variam conforme o filme caso tenha passado no teste de Bechdel, que é armazenado na variável &amp;ldquo;binary&amp;rdquo;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;bechdel90_13 %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 %&amp;gt;%
   group_by(binary) %&amp;gt;%
   summarise(med_budget = median(budget_2013),
             med_domgross = median(domgross_2013, na.rm = TRUE),
@@ -647,39 +638,39 @@ library(tidyverse)
 &lt;li&gt;&lt;code&gt;notalk&lt;/code&gt; = as mulheres não falam umas com as outras&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;nowomen&lt;/code&gt; = menos de duas mulheres&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;bechdel90_13 %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 %&amp;gt;%
   group_by(clean_test) %&amp;gt;%
   summarise(med_budget = median(budget_2013),
             med_domgross = median(domgross_2013, na.rm = TRUE),
             med_intgross = median(intgross_2013, na.rm = TRUE))
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A fim de avaliar como o retorno do investimento varia entre os filmes que passam e fracassam no &lt;strong&gt;teste de Bechdel&lt;/strong&gt;, vamos primeiro criar uma nova variável chamada &lt;code&gt;roi&lt;/code&gt; como uma razão do orçamento bruto.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;bechdel90_13 &amp;lt;- bechdel90_13 %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 &amp;lt;- bechdel90_13 %&amp;gt;%
   mutate(roi = (intgross_2013 + domgross_2013) / budget_2013)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vamos ver quais filmes têm o maior retorno sobre o investimento.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;bechdel90_13 %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 %&amp;gt;%
   arrange(desc(roi)) %&amp;gt;% 
   select(title, roi, year)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Abaixo está uma visualização do retorno do investimento por resultado de teste, porém é difícil ver as distribuições devido a algumas observações extremas.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = bechdel90_13, 
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = bechdel90_13, 
        mapping = aes(x = clean_test, y = roi, color = binary)) +
   geom_boxplot() +
-  labs(title = &amp;quot;Retorno do investimento vs. Resultados do teste Bechdel&amp;quot;,
-       x = &amp;quot;Resultado detalhado de Bechdel&amp;quot;,
-       y = &amp;quot;___&amp;quot;,
-       color = &amp;quot;Resultado binário de Bechdel&amp;quot;)
+  labs(title = &amp;#34;Retorno do investimento vs. Resultados do teste Bechdel&amp;#34;,
+       x = &amp;#34;Resultado detalhado de Bechdel&amp;#34;,
+       y = &amp;#34;___&amp;#34;,
+       color = &amp;#34;Resultado binário de Bechdel&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quais são os filmes com retorno de investimento &lt;em&gt;muito altos&lt;/em&gt;?&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;bechdel90_13 %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bechdel90_13 %&amp;gt;%
   filter(roi &amp;gt; 400) %&amp;gt;%
   select(title, budget_2013, domgross_2013, year)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja como é a relação entre os filmes com menor retorno e o resultado detalhado do teste Bechedel.&lt;/p&gt;
 &lt;p&gt;A ampliação dos filmes com &lt;code&gt;roi &amp;lt; ___&lt;/code&gt; proporciona uma melhor visão de como os medianos através das categorias se comparam:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;ggplot(data = bechdel90_13, mapping = aes(x = clean_test, y = roi, color = binary)) +
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ggplot(data = bechdel90_13, mapping = aes(x = clean_test, y = roi, color = binary)) +
   geom_boxplot() +
-  labs(title = &amp;quot;Retorno do investimento vs. Resultado do teste de Bechdel&amp;quot;,
-       subtitle = &amp;quot;___&amp;quot;, # Something about zooming in to a certain level
-       x = &amp;quot;Resultado detalhado de Bechdel&amp;quot;,
-       y = &amp;quot;Retorno do investimento&amp;quot;,
-       color = &amp;quot;Resultado binário de Bechdel&amp;quot;) +
+  labs(title = &amp;#34;Retorno do investimento vs. Resultado do teste de Bechdel&amp;#34;,
+       subtitle = &amp;#34;___&amp;#34;, # Something about zooming in to a certain level
+       x = &amp;#34;Resultado detalhado de Bechdel&amp;#34;,
+       y = &amp;#34;Retorno do investimento&amp;#34;,
+       color = &amp;#34;Resultado binário de Bechdel&amp;#34;) +
   coord_cartesian(ylim = c(0, 15))
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -715,32 +706,31 @@ library(tidyverse)
 &lt;h2 id=&#34;manipulação-de-dados&#34;&gt;&lt;strong&gt;Manipulação de dados&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;exercício-1&#34;&gt;Exercício 1.&lt;/h3&gt;
 &lt;p&gt;Carregue os dados no seu ambiente.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# From TidyTuesday: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md
-hotels &amp;lt;- read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# From TidyTuesday: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md
+hotels &amp;lt;- read_csv(&amp;#34;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-2&#34;&gt;Exercício 2.&lt;/h3&gt;
 &lt;p&gt;As pessoas estão viajando por um capricho?
 Vamos ver&amp;hellip;&lt;/p&gt;
 &lt;p&gt;Preencha os espaços em branco para filtragem de reservas de hotel onde o hóspede é &lt;strong&gt;não&lt;/strong&gt; dos EUA (código do país &lt;code&gt;USA&lt;/code&gt;) e o &lt;code&gt;lead_time&lt;/code&gt; é menos de 1 dia.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Você precisará definir &lt;code&gt;eval=TRUE&lt;/code&gt; quando tiver uma resposta que queira experimentar.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
 # on the fly
 hotels %&amp;gt;%
   filter(
-    country != &amp;quot;USA&amp;quot;, 
+    country != &amp;#34;USA&amp;#34;, 
     lead_time &amp;lt; 1
     )
 
 # Com registro de objeto
 
 hotel &amp;lt;- hotels %&amp;gt;% 
-  filter(country != &amp;quot;USA&amp;quot;, lead_time &amp;lt; 1) %&amp;gt;% 
+  filter(country != &amp;#34;USA&amp;#34;, lead_time &amp;lt; 1) %&amp;gt;% 
   select(country, lead_time) 
 
 # Sem pipe
 
-hotels_sem_pipe &amp;lt;- filter(hotels, country != &amp;quot;USA&amp;quot;, lead_time &amp;lt; 1)
+hotels_sem_pipe &amp;lt;- filter(hotels, country != &amp;#34;USA&amp;#34;, lead_time &amp;lt; 1)
 hotels_sem_pipe &amp;lt;- select(hotels_sem_pipe, country, lead_time)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-3&#34;&gt;Exercício 3.&lt;/h3&gt;
 &lt;p&gt;Quantas marcações envolvem pelo menos 1 criança &lt;strong&gt;ou&lt;/strong&gt; bebê?&lt;/p&gt;
 &lt;p&gt;No seguinte &lt;code&gt;chunk&lt;/code&gt;, substitua&lt;/p&gt;
@@ -749,7 +739,7 @@ hotels_sem_pipe &amp;lt;- select(hotels_sem_pipe, country, lead_time)
 &lt;li&gt;&lt;code&gt;[OR]&lt;/code&gt; com o operador lógico para &amp;ldquo;ou&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Você precisará definir &lt;code&gt;eval=TRUE&lt;/code&gt; quando tiver uma resposta que queira experimentar.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;hotels %&amp;gt;%
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hotels %&amp;gt;%
   filter(children &amp;gt;= 1 | babies &amp;gt;= 1)
 
 # Com registro de objeto
@@ -759,32 +749,31 @@ hotel_bebe_chil &amp;lt;- hotels %&amp;gt;%
 # Sem pipe
 
 hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-4&#34;&gt;Exercício 4.&lt;/h3&gt;
 &lt;p&gt;Você acha que é mais provável encontrar reservas com crianças ou bebês em hotéis urbanos ou resorts hoteleiros?
 Teste sua intuição.&lt;/p&gt;
 &lt;p&gt;Usando &lt;code&gt;filter()&lt;/code&gt; determine o número de reservas em hotéis resort que têm mais de 1 criança &lt;strong&gt;ou&lt;/strong&gt; bebê no quarto?&lt;/p&gt;
 &lt;p&gt;Então, faça o mesmo para hotéis urbanos, e compare o número de linhas no dataframe filtrado resultantes.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# Com registro de objeto
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Com registro de objeto
 hotel_bebe_chil_resort &amp;lt;- hotels %&amp;gt;%
   filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
-  filter(hotel == &amp;quot;Resort Hotel&amp;quot;)
+  filter(hotel == &amp;#34;Resort Hotel&amp;#34;)
 
 # Sem pipe
 
 hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)
-hotel_bebe_chil_resort_sem_pipe &amp;lt;- filter(hotel_bebe_chil_resort, hotel == &amp;quot;Resort Hotel&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# Com registro de objeto
+hotel_bebe_chil_resort_sem_pipe &amp;lt;- filter(hotel_bebe_chil_resort, hotel == &amp;#34;Resort Hotel&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Com registro de objeto
 hotel_bebe_chil_city &amp;lt;- hotels %&amp;gt;%
   filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
   mutate(hotel = tolower(hotel)) %&amp;gt;% 
-  filter(hotel == &amp;quot;city hotel&amp;quot;)
+  filter(hotel == &amp;#34;city hotel&amp;#34;)
 
 # Sem pipe
 
 hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)
-hotel_bebe_chil_city_sem_pipe &amp;lt;- filter(hotel_bebe_chil_sem_pipe, hotel == &amp;quot;City Hotel&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;hotel_bebe_chil_class &amp;lt;- hotels %&amp;gt;% 
+hotel_bebe_chil_city_sem_pipe &amp;lt;- filter(hotel_bebe_chil_sem_pipe, hotel == &amp;#34;City Hotel&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hotel_bebe_chil_class &amp;lt;- hotels %&amp;gt;% 
   filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
   group_by(hotel) %&amp;gt;% 
   summarise(n = max(stays_in_weekend_nights))
@@ -796,18 +785,16 @@ hotel_bebe_chil_city_sem_pipe &amp;lt;- filter(hotel_bebe_chil_sem_pipe, hotel =
 &lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Não esqueça de rotular também seu &lt;code&gt;chunk&lt;/code&gt; R (onde diz &lt;code&gt;lable-me-1&lt;/code&gt;).
 Seu rótulo deve ser curto, informativo, e não deve incluir espaços.
 Também não deve repetir uma etiqueta anterior, caso contrário o R Markdown lhe dará um erro sobre a repetição de etiquetas R em pedaços.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-6&#34;&gt;Exercício 6.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-6&#34;&gt;Exercício 6.&lt;/h3&gt;
 &lt;p&gt;Repita o exercício 5, uma vez para reservas canceladas (&lt;code&gt;is_canceled&lt;/code&gt; codificado como 1) e uma vez para reservas não canceladas (&lt;code&gt;is_canceled&lt;/code&gt; codificado como 0).&lt;/p&gt;
 &lt;p&gt;O que isto revela sobre os resultados surpreendentes que você observou no exercício anterior?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Não se esqueça de rotular também seu &lt;code&gt;chunk&lt;/code&gt; de R (onde diz &lt;code&gt;label-me-2&lt;/code&gt;).&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# add code here
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# add code here
 # pay attention to correctness and code style
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-7&#34;&gt;Exercício 7.&lt;/h3&gt;
 &lt;p&gt;Calcular a tarifa mínima, média, mediana e máxima média diária (&lt;code&gt;adr&lt;/code&gt;) agrupados por tipo de &lt;code&gt;hotel&lt;/code&gt; para que você possa obter estas estatísticas separadamente para hotéis de resorts e cidades.&lt;/p&gt;
 &lt;p&gt;Que tipo de hotel é mais caro, em média?&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# add code here
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# add code here
 # pay attention to correctness and code style
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-8&#34;&gt;Exercício 8.&lt;/h3&gt;
 &lt;p&gt;Observamos dois valores incomuns nas estatísticas resumidas acima &amp;ndash; um mínimo negativo, e um máximo muito alto).
@@ -815,7 +802,7 @@ Que tipos de hotéis são estes?&lt;/p&gt;
 &lt;p&gt;Localize estas observações no conjunto de dados e descubra a data de chegada (ano e mês), assim como quantas pessoas (adultos, crianças e bebês) permaneceram no quarto.&lt;/p&gt;
 &lt;p&gt;Você pode investigar os dados no espectador para localizar estes valores, mas de preferência você deve identificá-los de forma reprodutível com algum código.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Dica:&lt;/strong&gt; Por exemplo, você pode &lt;code&gt;filter&lt;/code&gt; para o dado quantidade &lt;code&gt;adr&lt;/code&gt; e &lt;code&gt;select&lt;/code&gt; as colunas relevantes.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# add code here
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# add code here
 # pay attention to correctness and code style
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;dicionário-de-dados&#34;&gt;Dicionário de dados&lt;/h4&gt;
 &lt;p&gt;Abaixo está o dicionário de dados completo.
@@ -999,13 +986,13 @@ Note que é longo (há muitas variáveis nos dados), mas utilizamos um conjunto 
 &lt;li&gt;Removam os arquivos de dados do arquivo .zip.&lt;/li&gt;
 &lt;li&gt;Carregue os arquivos de dados usando a função &lt;code&gt;read_csv&lt;/code&gt; e atribuindo cada conjunto de dados a um objeto&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;professions &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/professions.csv&amp;quot;)
-dates &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/dates.csv&amp;quot;)
-works &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/works.csv&amp;quot;)
-enrolment &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/enrolment.csv&amp;quot;)
-survey &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/survey.csv&amp;quot;)
-purchases &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/purchases.csv&amp;quot;)
-prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;professions &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/professions.csv&amp;#34;)
+dates &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/dates.csv&amp;#34;)
+works &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/works.csv&amp;#34;)
+enrolment &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/enrolment.csv&amp;#34;)
+survey &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/survey.csv&amp;#34;)
+purchases &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/purchases.csv&amp;#34;)
+prices &amp;lt;- read_csv(&amp;#34;D:/Dropbox/Public/dados/prices.csv&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-2-1&#34;&gt;Exercício 2.&lt;/h3&gt;
 &lt;p&gt;Manipulação de dados - mulheres cientistas&lt;/p&gt;
 &lt;ol&gt;
@@ -1025,9 +1012,7 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;p&gt;Gere um dataframe considerando apenas a coluna com o nome das cientistas.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-3-1&#34;&gt;Exercício 3.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-3-1&#34;&gt;Exercício 3.&lt;/h3&gt;
 &lt;p&gt;Manipulação de dados - matrículas&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1040,15 +1025,12 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;p&gt;Gere um dataframe com os alunos que estão frequentando as aulas e que não estão matriculados.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-4-1&#34;&gt;Exercício 4.&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-4-1&#34;&gt;Exercício 4.&lt;/h3&gt;
 &lt;p&gt;Manipulação de dados - compras&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Gere um dataframe com a síntese da soma da receita da loja por consumidor&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;
-
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -1061,7 +1043,7 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;ol&gt;
 &lt;li&gt;Instale o pacote &lt;code&gt;cepespR&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;devtools::install_github(&amp;quot;Cepesp-Fgv/cepesp-r&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#34;Cepesp-Fgv/cepesp-r&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Baixe o arquivo .Rmd e o .csvb e abra no RStudio.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1118,7 +1100,7 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 &lt;/table&gt;
 &lt;p&gt;Não discutiremos todas as regras de comparação de objetos, mas passaremos por um conjunto grande de exemplos a partir do qual elas podem ser inferidas.&lt;/p&gt;
 &lt;p&gt;Vamos começar com alguns exemplos simples:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;42 == 41
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;42 == 41
 42 != 41
 (2 + 2) == (3 + 1)
 (2 + 2) != (3 + 1)
@@ -1130,32 +1112,32 @@ prices &amp;lt;- read_csv(&amp;quot;D:/Dropbox/Public/dados/prices.csv&amp;quot;
 42 &amp;lt;= 41
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Antes de avançar, tenha certeza que entendeu os exemplos acima.&lt;/p&gt;
 &lt;p&gt;Operadores relacionais também vale para textos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;texto&amp;quot; == &amp;quot;texto&amp;quot;
-&amp;quot;texto&amp;quot; == &amp;quot;texTo&amp;quot;
-&amp;quot;texto&amp;quot; != &amp;quot;texto&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;texto&amp;#34; == &amp;#34;texto&amp;#34;
+&amp;#34;texto&amp;#34; == &amp;#34;texTo&amp;#34;
+&amp;#34;texto&amp;#34; != &amp;#34;texto&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note no segundo exemplo que o R é &amp;ldquo;case sensitive&amp;rdquo;, ou seja, diferencia maiúsculas de minúsculas ao comparar textos.&lt;/p&gt;
 &lt;p&gt;Textos também podem ser ordenados (lexicograficamente, isto é, alfabeticamente):&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;a&amp;quot; &amp;gt; &amp;quot;b&amp;quot;
-&amp;quot;a&amp;quot; &amp;lt; &amp;quot;b&amp;quot;
-&amp;quot;A&amp;quot; &amp;lt; &amp;quot;b&amp;quot;
-&amp;quot;A&amp;quot; &amp;gt; &amp;quot;a&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;a&amp;#34; &amp;gt; &amp;#34;b&amp;#34;
+&amp;#34;a&amp;#34; &amp;lt; &amp;#34;b&amp;#34;
+&amp;#34;A&amp;#34; &amp;lt; &amp;#34;b&amp;#34;
+&amp;#34;A&amp;#34; &amp;gt; &amp;#34;a&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inclusive palavras inteiras e sentenças:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;&amp;quot;cachorro&amp;quot; &amp;lt; &amp;quot;cachorro quente&amp;quot;
-&amp;quot;churrasco de gato&amp;quot; &amp;gt; &amp;quot;cachorro quente&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;cachorro&amp;#34; &amp;lt; &amp;#34;cachorro quente&amp;#34;
+&amp;#34;churrasco de gato&amp;#34; &amp;gt; &amp;#34;cachorro quente&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E valores lógicos? Veja se entende o que acontece nos exemplos abaixo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;TRUE == 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;TRUE == 1
 FALSE == 0
 TRUE &amp;gt; FALSE
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Podemos comparar valores armazenados em variáveis da mesma maneira que fizemos nos exemplos até aqui:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;x &amp;lt;- 5
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;x &amp;lt;- 5
 y &amp;lt;- 10
 x &amp;gt; y
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;operadores-relacionais-e-vetores&#34;&gt;Operadores relacionais e vetores&lt;/h2&gt;
 &lt;p&gt;É possível comparar um vetor com um valor. Neste caso, cada elemento do vetor é comparado individualmente ao valor e o resultado é um vetor lógico de tamanho igual ao vetor comparado.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;lt;- c(1030, 551, 992, 345, 203, 2037)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;votos16 &amp;lt;- c(1030, 551, 992, 345, 203, 2037)
 votos16 &amp;gt;= 1000
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vamos usar o vetor &amp;ldquo;votos16&amp;rdquo;, que contém votos de candidatos fictícios em 2016, com os votos dos mesmo candidatos em 2012:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos12 &amp;lt;- c(890, 354, 950, 400, 50, 3416)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;votos12 &amp;lt;- c(890, 354, 950, 400, 50, 3416)
 votos16 &amp;gt; votos12
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que, na comparação entre dois vetores, os elementos são comparados par a par de acordo com a sua posição no vetor. O vetor lógico resultante tem o mesmo tamanho dos vetores comparados.&lt;/p&gt;
 &lt;h2 id=&#34;operadores-lógicos-booleanos&#34;&gt;Operadores Lógicos (Booleanos)&lt;/h2&gt;
@@ -1183,7 +1165,7 @@ votos16 &amp;gt; votos12
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Por exemplo, se queremos verificar todos os candidatos que obtiveram acima de 500 (exclusive) &lt;strong&gt;E&lt;/strong&gt; abaixo de 1500 (inclusive) votos, fazemos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja a tabela de possibilidades de combinação de duas proposições com a conjunção &amp;ldquo;e&amp;rdquo;:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1218,7 +1200,7 @@ votos16 &amp;gt; votos12
 &lt;/table&gt;
 &lt;p&gt;Se o valor atende às duas condições, então o resultado é TRUE. Se ao menos uma proposição é falsa, sob a conjunção &amp;ldquo;e&amp;rdquo;, então a combinação das proposições também é.&lt;/p&gt;
 &lt;p&gt;Com o operador &amp;ldquo;Ou&amp;rdquo;, a combinação de proposições é verdadeira se pelo menos uma delas for verdadeira.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos16 &amp;lt; 500 | votos12 &amp;gt; 1500
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;votos16 &amp;lt; 500 | votos12 &amp;gt; 1500
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja a tabela de possibilidades de combinação de duas proposições com a conjunção &amp;ldquo;ou&amp;rdquo;:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1252,14 +1234,14 @@ votos16 &amp;gt; votos12
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Finalmente, o operador lógico &amp;ldquo;não&amp;rdquo; tem a função de reverter um proposição:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;!TRUE
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;!TRUE
 !(5 &amp;gt; 3)
 !(votos16 &amp;gt; 500 &amp;amp; votos16 &amp;lt;= 1500)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Lembre-se que, quando trabalhamos com vetores lógicos, podemos tratá-los como se fossem zeros e uns, tal qual no exemplo:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;sum(votos16 &amp;gt; votos12)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sum(votos16 &amp;gt; votos12)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;cláusulas-condicionais&#34;&gt;Cláusulas condicionais&lt;/h2&gt;
 &lt;p&gt;Um dos usos mais importantes dos operadores relacionais e lógicos é na construção de &lt;strong&gt;cláusulas condicionais&lt;/strong&gt;, &amp;ldquo;if&amp;rdquo;, &amp;ldquo;else&amp;rdquo; e &amp;ldquo;else if&amp;rdquo;. Elas são fundamentais para a construção de funções e algoritmos. Veja um uso simples do condicional &lt;em&gt;if&lt;/em&gt;, para o cálculo do valor absoluto de uma variável:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;# exemplo com x negativo
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# exemplo com x negativo
 x &amp;lt;- -23
 
 if (x &amp;lt; 0){
@@ -1276,43 +1258,41 @@ if (x &amp;lt; 0){
 }
 
 print(x)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A condição que o &lt;em&gt;if&lt;/em&gt; deve atender vem entre parênteses. A instrução a ser atendida caso a cláusula seja verdadeira vem dentro das chaves. Aliás, é boa prática (na maioria dos casos) abrir as chaves em uma linha, escrever as instruções em outra, e fechar as chaves na linha seguinte ao final das instruções, como no exemplo. Também é boa prática &amp;ldquo;identar&amp;rdquo;, ou seja, desalinhar as instruções do restante do código. Falaremos sobre &amp;ldquo;estilo&amp;rdquo; em algum momento do curso. Por enquanto, apenas observe e não se assuste. Diferentemente de outras linguagens, R não requer identação para funcionar.&lt;/p&gt;
 &lt;p&gt;Vamos supor que um candidato teve determinada quantia de votos. Ele precisava de 700 para ser eleito. Vamos criar uma nova variável, &amp;ldquo;status&amp;rdquo;, que receberá valor &amp;ldquo;eleito&amp;rdquo; se &amp;ldquo;votos&amp;rdquo; for maior que 700. Supondo que o candidato recebeu 800 votos, fazemos:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;votos &amp;lt;- 800
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;votos &amp;lt;- 800
 
 if (votos &amp;gt; 700){
-  status &amp;lt;- &amp;quot;eleito&amp;quot;
+  status &amp;lt;- &amp;#34;eleito&amp;#34;
 }
 
 print(status)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mas e se quisermos dar o valor &amp;ldquo;nao eleito&amp;rdquo; a &amp;ldquo;status&amp;rdquo; caso ele não tenha recebido mais de 700 votos? Usamos &lt;em&gt;else&lt;/em&gt; para indicar o que fazer em todos os casos em que a condição em &lt;em&gt;if&lt;/em&gt; não foi atendida.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;if (votos &amp;gt; 700){
-  status &amp;lt;- &amp;quot;eleito&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (votos &amp;gt; 700){
+  status &amp;lt;- &amp;#34;eleito&amp;#34;
 } else {
-  status &amp;lt;- &amp;quot;nao eleito&amp;quot;
+  status &amp;lt;- &amp;#34;nao eleito&amp;#34;
 }
 
 print(status)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Por fim, vamos imaginar um regra mais complexa. Se o total de &amp;ldquo;votos&amp;rdquo; do candidato for maior que 1200, então ele está eleito. Se a votação tiver ficado entre 700 (exclusive) e 1200 (inclusive), ele recebe &amp;ldquo;status&amp;rdquo; igual a &amp;ldquo;suplente&amp;rdquo;. Com 700 votos ou menos, o &amp;ldquo;status&amp;rdquo; é não eleito.&lt;/p&gt;
 &lt;p&gt;Veja como traduzir a regra acima em código usando &lt;em&gt;if&lt;/em&gt;, &lt;em&gt;else if&lt;/em&gt; e &lt;em&gt;else&lt;/em&gt;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;if (votos &amp;gt; 1200){
-  status &amp;lt;- &amp;quot;eleito&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (votos &amp;gt; 1200){
+  status &amp;lt;- &amp;#34;eleito&amp;#34;
 } else if (votos &amp;gt; 700  &amp;amp; votos &amp;lt;= 1200){
-  status &amp;lt;- &amp;quot;suplente&amp;quot;
+  status &amp;lt;- &amp;#34;suplente&amp;#34;
 } else {
-  status &amp;lt;- &amp;quot;nao eleito&amp;quot;
+  status &amp;lt;- &amp;#34;nao eleito&amp;#34;
 }
 
 print(status)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Outro exemplos simples do uso de condicionais, agora com uma variável de textos&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;partido &amp;lt;- &amp;quot;PMDB&amp;quot;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;partido &amp;lt;- &amp;#34;PMDB&amp;#34;
 
-if (partido == &amp;quot;PMDB&amp;quot; | partido == &amp;quot;PSD&amp;quot; | partido == &amp;quot;DEM&amp;quot;) {
-  print(&amp;quot;governo&amp;quot;)
+if (partido == &amp;#34;PMDB&amp;#34; | partido == &amp;#34;PSD&amp;#34; | partido == &amp;#34;DEM&amp;#34;) {
+  print(&amp;#34;governo&amp;#34;)
 } else {
-  print(&amp;quot;oposição&amp;quot;)
+  print(&amp;#34;oposição&amp;#34;)
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;É possível complicar bastante o uso dos condicionais &amp;ldquo;aninhando&amp;rdquo; uma cláusula dentro da outra e criando &amp;ldquo;labirintos&amp;rdquo; de condições. Fazer isso, porém, é mais uma questão de lógica do que de uso da linguagem. Não há variações relevantes do uso em relação aos exemplos simples apresentados acima. Se você consegue fazer os condicionais em papel e caneta e se os exemplos anteriores tiverem ficado claros, então consegue fazê-los em R.&lt;/p&gt;
 &lt;h2 id=&#34;exercício&#34;&gt;Exercício&lt;/h2&gt;
@@ -1323,7 +1303,7 @@ if (partido == &amp;quot;PMDB&amp;quot; | partido == &amp;quot;PSD&amp;quot; | p
 &lt;h2 id=&#34;repetindo-tarefas---while-loop&#34;&gt;Repetindo tarefas - while loop&lt;/h2&gt;
 &lt;p&gt;Uma das vantagens dos computadores em relação aos seres humanos é a capacidade de repetir tarefas a um custo baixo. Vamos ver um exemplo simples: con  tar até 42. Usaremos como recurso um &lt;em&gt;while&lt;/em&gt; loop, ou seja, daremos um estado inicial, uma condição e uma instrução para o computador e pediremos para ele repetir a instrução &lt;strong&gt;enquanto&lt;/strong&gt; a condição for atendida.&lt;/p&gt;
 &lt;p&gt;Em nosso caso, a instrução será: imprima o número &amp;ldquo;atual&amp;rdquo; (você já entenderá isso), armazenado na variável &amp;ldquo;contador&amp;rdquo;, e some mais um. A condição será: enquanto a variável &amp;ldquo;contador&amp;rdquo; for menor ou igual a 42. Se vamos começar a contar a partir do 1, nosso estado inicial será igualar o &amp;ldquo;contador&amp;rdquo; a 1. Veja como fica o código:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;contador &amp;lt;- 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;contador &amp;lt;- 1
 
 while (contador &amp;lt;= 42) {
   print(contador)
@@ -1331,12 +1311,11 @@ while (contador &amp;lt;= 42) {
 }
 
 print(contador)
-
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Traduzindo para o português: &amp;ldquo;enquanto o contador for menor ou igual a 42, imprima e some um&amp;rdquo;. A estrutura de um &lt;em&gt;while&lt;/em&gt; loop é sempre: &amp;ldquo;enquanto&amp;rdquo; (condição), &amp;ldquo;faça&amp;rdquo; (instrução).&lt;/p&gt;
 &lt;p&gt;Veja que precisamos planejar muito bem o &lt;em&gt;while&lt;/em&gt; loop. Se, por exemplo, esquecermos de pensar como a condição inicial será alterada a cada &lt;strong&gt;iteração&lt;/strong&gt; (sem o &amp;ldquo;n&amp;rdquo; mesmo, pois é diferente de &amp;ldquo;interação&amp;rdquo;), corremos o risco de criar um &amp;ldquo;loop infinito&amp;rdquo;. O critério de parada (condição entre parênteses) deve ser atendido em algum ponto do programa para que ele seja interrompido.&lt;/p&gt;
 &lt;p&gt;Vamos complicar. Seguiremos contando até 42, mas todas as vezes em que o número for par (ou seja, múltiplo de 2), deixaremos de imprimir o número. Como fazer isso? Com &lt;em&gt;if&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Dica: para saber se um número é divisível por outro, basta usar o resto da divisão (consulte o tutorial anterior %%) e checar se é igual a zero.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;contador &amp;lt;- 1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;contador &amp;lt;- 1
 
 while (contador &amp;lt;= 42) {
   if ((contador %% 2) != 0){
@@ -1348,22 +1327,22 @@ while (contador &amp;lt;= 42) {
 print(contador)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que temos agora um código &amp;ldquo;aninhado&amp;rdquo;, pois colocamos um condicional dentro de um loop. Novamente, combinar estruturas de código é mais um problema de lógica do que de linguagem e, se você consegue fazer no papel, consegue traduzir para o R.&lt;/p&gt;
 &lt;h2 id=&#34;repetindo-tarefas---for-loop&#34;&gt;Repetindo tarefas - for loop&lt;/h2&gt;
-&lt;p&gt;E se em vez de repetir uma tarefa até atingir uma condição já soubermos quantas vezes queremos repetí-la? Neste caso, podemos usar o &lt;em&gt;for&lt;/em&gt; loop. O loop não será mais do tipo &amp;ldquo;enquanto x faça y&amp;rdquo; mas &amp;ldquo;para todo i &amp;lsquo;em&amp;rsquo; a até b&amp;rdquo;. Veja como o exemplo de contar até 42 ficaria com &lt;em&gt;for&lt;/em&gt; loop:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 1:42){
+&lt;p&gt;E se em vez de repetir uma tarefa até atingir uma condição já soubermos quantas vezes queremos repetí-la? Neste caso, podemos usar o &lt;em&gt;for&lt;/em&gt; loop. O loop não será mais do tipo &amp;ldquo;enquanto x faça y&amp;rdquo; mas &amp;ldquo;para todo i &amp;rsquo;em&amp;rsquo; a até b&amp;rdquo;. Veja como o exemplo de contar até 42 ficaria com &lt;em&gt;for&lt;/em&gt; loop:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for (i in 1:42){
   print(i)
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Neste caso, lemos &amp;ldquo;para cada i &amp;lsquo;em&amp;rsquo; 1 até 42, faça&amp;rdquo;. O que o &lt;em&gt;for&lt;/em&gt; loop faz é variar o i a cada iteração de acordo com a sequência estabelecida. Outro exemplo, agora na ordem reversa:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 10:-10){
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Neste caso, lemos &amp;ldquo;para cada i &amp;rsquo;em&amp;rsquo; 1 até 42, faça&amp;rdquo;. O que o &lt;em&gt;for&lt;/em&gt; loop faz é variar o i a cada iteração de acordo com a sequência estabelecida. Outro exemplo, agora na ordem reversa:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for (i in 10:-10){
   print(i)
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora com a condição de não imprimir os pares:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;for (i in 1:42){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for (i in 1:42){
   if((i %% 2) != 0){
     print(i)
   }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;for&lt;/em&gt; loops não precisam ser apenas com números. Na verdade, você pode colocar após o &amp;ldquo;in&amp;rdquo; qualquer vetor. Por exemplo, um vetor das regiões brasileiras (ou UFs, se você tiver paciência de escrever todas):&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;vetor_regioes &amp;lt;- c(&amp;quot;norte&amp;quot;, &amp;quot;nordeste&amp;quot;, &amp;quot;sudeste&amp;quot;,&amp;quot;sul&amp;quot;, &amp;quot;centro-oeste&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vetor_regioes &amp;lt;- c(&amp;#34;norte&amp;#34;, &amp;#34;nordeste&amp;#34;, &amp;#34;sudeste&amp;#34;,&amp;#34;sul&amp;#34;, &amp;#34;centro-oeste&amp;#34;)
 
 for (regiao in vetor_regioes){
   print(regiao)
@@ -1372,7 +1351,7 @@ for (regiao in vetor_regioes){
 &lt;p&gt;Vamos parar por aqui com &lt;em&gt;loops&lt;/em&gt; e voltaremos a eles para fazermos exercícios.&lt;/p&gt;
 &lt;h2 id=&#34;escrevendo-funções&#34;&gt;Escrevendo funções&lt;/h2&gt;
 &lt;p&gt;Ao longo dos três tutorais que fizemos usamos diversas funções e já estamos acostumados com elas. Vamos agora aprender a construir funções simples. Vamos do exemplo à aplicação. E nosso exemplo será, novamente, um conversor de farenheit para celsius:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;conversor &amp;lt;- function(farenheit){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;conversor &amp;lt;- function(farenheit){
   celsius &amp;lt;- ((farenheit - 32) / 9) * 5
   return(celsius)
 }
@@ -1384,7 +1363,7 @@ conversor(32)
 &lt;h2 id=&#34;exercício-1&#34;&gt;Exercício&lt;/h2&gt;
 &lt;p&gt;Crie uma função chamada &amp;ldquo;quadrado&amp;rdquo; que recebe um número &amp;ldquo;x&amp;rdquo; e retorna o quadrado de x.&lt;/p&gt;
 &lt;h2 id=&#34;reposta&#34;&gt;Reposta&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;quadrado &amp;lt;- function(x){
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;quadrado &amp;lt;- function(x){
   resultado &amp;lt;- x * x
   return(resultado)
 }
@@ -1434,9 +1413,9 @@ quadrado(17)
 &lt;h2 id=&#34;manipulação-de-dados&#34;&gt;&lt;strong&gt;Manipulação de dados&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;exercício-1&#34;&gt;Exercício 1.&lt;/h3&gt;
 &lt;p&gt;Carregue os dados no seu ambiente.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;
-dados1 &amp;lt;- read_csv(&amp;quot;&amp;quot;)
-dados2 &amp;lt;- read_csv(&amp;quot;&amp;quot;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+dados1 &amp;lt;- read_csv(&amp;#34;&amp;#34;)
+dados2 &amp;lt;- read_csv(&amp;#34;&amp;#34;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;exercício-2&#34;&gt;Exercício 2.&lt;/h3&gt;
 &lt;p&gt;Responda as seguintes perguntas:&lt;/p&gt;
 &lt;ul&gt;
