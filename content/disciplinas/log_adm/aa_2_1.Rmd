@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 5
-title: 2. KPIs e nível de serviço (**para quem não esteve presente**)
+title: 2. KPIs e nível de serviço (para quem não esteve presente)
 editor_options: 
   markdown: 
     wrap: 70
@@ -16,7 +16,7 @@ type: docs
 weight: 20
 ---
 
-**Prazo para entrega: 15/05/2023** Pela atividade no SIGAA
+**Prazo para entrega: 15/05/2023** - Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL
 
 
 ## Objetivo de aprendizagem: 
