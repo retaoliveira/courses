@@ -1,11 +1,11 @@
 ---
-date: "2020-12-275T00:00:00+01:00"
-draft: true
+date: "2023-05-085T00:00:00+01:00"
+draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 5
-title: 1. Logística e cadeia de suprimentos (para quem não esteve presente)
+title: 1. Logística e cadeia de suprimentos (**para quem não esteve presente**)
 editor_options: 
   markdown: 
     wrap: 70
@@ -16,7 +16,7 @@ type: docs
 weight: 20
 ---
 
-**Prazo para entrega: 03/10/2022**
+**Prazo para entrega: 15/08/2023**
 
 
 ## Objetivo de aprendizagem: 
@@ -25,7 +25,7 @@ Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos".
 
 ## Pontos
 
-5 pontos
+10 pontos
 
 ## Atividades
 
