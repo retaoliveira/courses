@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 16
+    weight: 13
 title: 2. KPIs e nível de serviço (para quem não esteve presente)
 editor_options: 
   markdown: 
