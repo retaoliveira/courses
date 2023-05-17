@@ -4,9 +4,9 @@ draft: false
 menu:
   dados_ppga:
     parent: Aulas
-    weight: 15
-title: Manipulação de dados e junção relacional
-weight: 15
+    weight: 30
+title: "Aula 07: Manipulação de dados e junção relacional"
+weight: 30
 editor_options: 
   markdown: 
     wrap: 72
