@@ -2,10 +2,10 @@
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
-  dados_grad:
-    parent: Encontros síncronos
+  dados_ppga:
+    parent: Aulas
     weight: 11
-title: Encontro Síncrono 8
+title: Manipulação de dados e junção relacional
 weight: 11
 editor_options: 
   markdown: 
@@ -19,13 +19,12 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class07_dados_adm', height = "400px")
+knitr::include_url('https://r-decision.github.io/class07/#1', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class07_dados_adm)
+[LINK](https://r-decision.github.io/class07/#1)
 
 
-<iframe width="1068" height="601" src="https://www.youtube.com/embed/KkVqt_-Dmks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
