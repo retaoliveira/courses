@@ -1,14 +1,14 @@
 ---
 title: "Lab 4.3"
 draft: true
-date: '2021-10-15T00:00:00+01:00'
+date: '2023-05-24T00:00:00+01:00'
 menu:
   dados_pos_2022:
-    parent: Unidade 4
-    weight: 20
+    parent: Labs
+    weight: 40
 toc: yes
 type: docs
-weight: 20
+weight: 40
 ---
 ```{r load-pkg, message = FALSE}
 library(tidyverse)
