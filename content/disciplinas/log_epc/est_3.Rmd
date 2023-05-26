@@ -1,8 +1,8 @@
 ---
-date: "2021-06-30T00:00:00+01:00"
-draft: true
+date: "2023-05-26T00:00:00+01:00"
+draft: false
 menu:
-  log_adm:
+  log_epc:
     parent: Atividades de aprendizagem
     weight: 10
 title: 3. Logística Urbana

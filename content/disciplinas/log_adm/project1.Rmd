@@ -11,7 +11,7 @@ type: docs
 weight: 15
 ---
 
-**Prazo para entrega: 03/10/2022**
+**Prazo para entrega: 09/06/2023**
 
 ## Pré-requisitos
 
