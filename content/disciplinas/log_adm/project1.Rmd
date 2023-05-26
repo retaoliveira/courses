@@ -1,6 +1,6 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
-draft: true
+date: "2023-05-26T00:00:00+01:00"
+draft: false
 menu:
   log_adm:
     parent: Projetos
@@ -27,13 +27,13 @@ Esta atividade tem valor de 10 pontos e deverá ser entregue por meio do sigaa, 
 
 
 ### Criar um vídeo público no youtube conforme as seguintes diretrizes:
-
-1. O vídeo deverá ter, no máximo, 3 (três) minutos.
-2. O conteúdo do vídeo deverá contemplar:
-- a caracterização da mudança que a 4a revolução industrial está proporcionando às atividades econômicas escolhida pelo grupo.
-- a relação entre essa mudança e as atividades-chave da gestão da cadeia de suprimentos 
-- vantagens e desvantagens para a gestão da cadeia de suprimentos considerando seu impacto no trade-off logístico (responsividade e eficiência)
-- as implicações sociais, econômicas e ambientais dessas mudanças
+1. Escolha uma atividade econômica sobre a qual vocês querem explorar o processo logístico.
+2. O vídeo deverá ter, no máximo, 3 (três) minutos.
+3. O conteúdo do vídeo deverá contemplar:
+- a caracterização da mudança que a 4a revolução industrial está proporcionando à atividade econômica escolhida pelo grupo.
+- a relação entre essa mudança e as atividades-chave da gestão da cadeia de suprimentos nesse setor econômico.
+- vantagens e desvantagens da estrutura da cadeia de suprimentos considerando o trade-off logístico (responsividade e eficiência) - considere a perspectiva pública e a privada.
+- as implicações sociais, econômicas e ambientais dessa cadeia de suprimentos.
 
 ## Rubrica de avaliação
 

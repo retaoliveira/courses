@@ -2,10 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
+    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/atividade1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/</loc>
   </url><url>
@@ -207,6 +208,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab22_bechedel/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project1/</loc>
+    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab31/</loc>
     <lastmod>2023-04-26T00:00:00+01:00</lastmod>
   </url><url>
@@ -321,6 +325,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/artigo1/</loc>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_31/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -407,7 +413,7 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2023-05-17T00:00:00+01:00</lastmod>
+    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/</loc>
     <lastmod>2023-04-19T00:00:00+01:00</lastmod>

@@ -87,8 +87,11 @@ Pontos|	Atividade
 10|  Atividade de aprendizagem 3 – Logística Urbana
 10|  Atividade de aprendizagem 4 - Gestão de Transportes e de estoques
 10|  Atividade de aprendizagem 5 - Redes Logísticas
-20|  Avaliação individual oral
-30|  Projeto integrador - Podcast
+10|  Atividade de aprendizagem 6 - Custos Logísticos
+10|  Atividade de aprendizagem 7 - Logística reversa e logística sustentável
+10|  Projeto integrador - 1
+20|  Projeto integrador - 2
+
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
