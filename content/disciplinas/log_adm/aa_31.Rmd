@@ -1,0 +1,30 @@
+---
+date: "2023-05-260T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Atividades de aprendizagem
+    weight: 10
+title: "3. Logística Urbana (para alunos que estiveram ausentes nos encontros dos dias 08/05 e 12/05)"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+**Prazo para entrega: 02/06/2023 - Pela tarefa no SIGAA**
+
+Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem:
+
+1. Defina Logística Urbana
+
+2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
+
+3. Em que a Logística Urbana se diferencia da logística regional? Explique e cite exemplos.
+
+4. Escolha uma solução de logística urbana contemporânea. Detalhe a solução, fale o sobre o problema que ela endereça e comente sobre sua existência na cidade onde reside. 
+
