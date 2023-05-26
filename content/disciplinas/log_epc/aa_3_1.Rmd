@@ -4,7 +4,7 @@ draft: true
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 10
+    weight: 40
 title: 2. Logística Urbana (para todos os alunos)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 35
+weight: 50
 ---
 
 **Prazo para entrega: 31/10/2022**
