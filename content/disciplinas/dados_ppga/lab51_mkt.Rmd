@@ -1,0 +1,23 @@
+---
+draft: false
+menu:
+  dados_ppga:
+    parent: Labs
+    weight: 50
+title: "Lab 5.1 - Segmentação de mercado - DESAFIO"
+editor_options: 
+  markdown: 
+    wrap: 72
+type: docs
+weight: 50
+---
+
+## Objetivo
+
+Faça uma segmentação para entender a diferenciação e as similaridades de consumidores. 
+
+## Dados
+
+O Consumidor.gov.br é um novo serviço público para solução alternativa de conflitos de consumo por meio da internet, que permite a interlocução direta entre consumidores e empresas, fornece ao Estado informações essenciais à elaboração e implementação de políticas públicas de defesa dos consumidores e incentiva a competitividade no mercado pela melhoria da qualidade e do atendimento ao consumidor.
+
+[Dados](https://dados.mj.gov.br/dataset/reclamacoes-do-consumidor-gov-br)
