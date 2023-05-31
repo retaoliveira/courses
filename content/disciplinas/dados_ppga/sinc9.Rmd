@@ -1,12 +1,12 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
-draft: true
+date: "2023-05-31T00:00:00+01:00"
+draft: false
 menu:
   dados_grad:
-    parent: Encontros síncronos
-    weight: 12
-title: Encontro Síncrono 9
-weight: 12
+    parent: Aulas
+    weight: 40
+title: "Aula 08: Mineração de dados"
+weight: 40
 editor_options: 
   markdown: 
     wrap: 72
@@ -19,12 +19,12 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://r-decision.github.io/class08', height = "400px")
+knitr::include_url('https://r-decision.github.io/class10/', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class08_dados_adm)
+[LINK](https://r-decision.github.io/class10/)
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/ys-hfKF-Z78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 

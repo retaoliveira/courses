@@ -1,5 +1,5 @@
 ---
-title: "Lab 5.2"
+title: "Lab 5.2 - extraindo dados de arquivos .pdf"
 draft: false
 date: '2023-05-31T00:00:00+01:00'
 menu:
