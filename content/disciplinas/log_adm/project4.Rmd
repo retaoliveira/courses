@@ -25,16 +25,16 @@ Os grupos de trabalho deverão:
 
 4. **Escolher** uma das áreas de conhecimento da administração* e **relacionar** com as decisões em níveis estratégico e tático que são tomadas no dia-a-dia do profissional na área selecionada. 
 
-*áreas de conhecimento da administração:
-- Humanidades 
-- Jurídico
-- Recursos Humanos
-- Marketing ou Comercial
-- Produção, Logística e Qualidade
-- Econômico-Financeiro
-- Estratégia / Empreendedorismo
-- Gestao da informaçao
-- Gestão de projetos
+*áreas de conhecimento da administração:   
+- Humanidades   
+- Jurídico.   
+- Recursos Humanos.   
+- Marketing ou Comercial.   
+- Produção, Logística e Qualidade.   
+- Econômico-Financeiro.   
+- Estratégia / Empreendedorismo.   
+- Gestao da informaçao.   
+- Gestão de projetos.   
 
 5. **Descrever** *brevemente* o fluxo (usando a imaginação mesmo!) desde um determinado fornecedor primário, passando pelas etapas de manufatura e de distribuição até a situação registrada. Indique possíveis atividades depois do que é apresentado como registro considerando a estrutura da cadeia de suprimentos. 
 
