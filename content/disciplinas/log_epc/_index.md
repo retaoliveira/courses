@@ -49,7 +49,7 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
 | 27/03              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 03/04             |2h|Planejamento e gestão da cadeia de suprimentos.
+| 03/04              |2h|Planejamento e gestão da cadeia de suprimentos.
 | 10/04              |2h|Planejamento e gestão da cadeia de suprimentos.   
 | 17/04              |2h|Nível de serviço logístico, desempenho e ICT.
 | 24/04              |2h|KPIs em gestão de processos de produção e suprimento
@@ -76,9 +76,9 @@ Pontos|	Atividade
 10|  Atividade de aprendizagem 2 - TICs e KPIs
 10|  Atividade de aprendizagem 3 – Logística Urbana
 10|  Atividade de aprendizagem 4 - Gestão de Transportes
-10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
-10|  Atividade de aprendizagem 6 - Redes Logísticas
-30|  Projeto integrador - Podcast
+10|  Atividade de aprendizagem 5 - Redes Logísticas
+20|  Projeto integrador - 1
+20|  Projeto integrador - 2
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
