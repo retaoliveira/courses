@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Atividades de aprendizagem
     weight: 35
-title: 3. Logística Urbana
+title: 3. Logística Urbana (para quem não esteve presente no encontro)
 editor_options: 
   markdown: 
     wrap: 70

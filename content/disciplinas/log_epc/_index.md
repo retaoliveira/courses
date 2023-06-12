@@ -77,8 +77,8 @@ Pontos|	Atividade
 10|  Atividade de aprendizagem 3 – Logística Urbana
 10|  Atividade de aprendizagem 4 - Gestão de Transportes
 10|  Atividade de aprendizagem 5 - Redes Logísticas
-20|  Projeto integrador - 1
-20|  Projeto integrador - 2
+25|  Projeto integrador - 1
+25|  Projeto integrador - 2
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
