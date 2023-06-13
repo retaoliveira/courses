@@ -86,7 +86,7 @@ Pontos|	Atividade
 10|  Atividade de aprendizagem 2 - Nivel de serviço logístico/TICs e KPIs
 10|  Atividade de aprendizagem 3 – Logística Urbana
 10|  Atividade de aprendizagem 4 - Gestão de Transportes e de estoques
-10|  Atividade de aprendizagem 5 - Redes Logísticas
+10|  Atividade de aprendizagem 5 - Redes Logísticas e custo logístico
 10|  Atividade de aprendizagem 6 - Logística reversa e logística sustentável
 20|  Projeto integrador - 1
 20|  Projeto integrador - 2
