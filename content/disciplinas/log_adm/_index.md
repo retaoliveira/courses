@@ -80,16 +80,16 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem, por meio de uma avaliação individual oral e por meio da elaboração de projetos transversais aos objetivos. 
 
-Pontos|	Atividade
-------|------------
+Pontos|	Atividade | Prazo
+------|------------| -----
 10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
 10|  Atividade de aprendizagem 2 - Nivel de serviço logístico/TICs e KPIs
 10|  Atividade de aprendizagem 3 – Logística Urbana
-10|  Atividade de aprendizagem 4 - Gestão de Transportes e de estoques
+10|  Atividade de aprendizagem 4 - Gestão de Transportes e de estoques | **23/06**
 10|  Atividade de aprendizagem 5 - Redes Logísticas e custo logístico
 10|  Atividade de aprendizagem 6 - Logística reversa e logística sustentável
-20|  Projeto integrador - 1
-20|  Projeto integrador - 2
+20|  Projeto integrador - 1 | **20/06**
+20|  Projeto integrador - 2 | **07/07**
 
 TOTAL:| 	100 pontos
 

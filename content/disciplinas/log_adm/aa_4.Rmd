@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 15
+    weight: 5
 title: 4. Gestão de transportes (para quem não esteve presente em ao menos dois encontros)
 editor_options: 
   markdown: 
@@ -16,7 +16,7 @@ type: docs
 weight: 35
 ---
 
-**Prazo para entrega: 19/06/2023**
+**Prazo para entrega: 23/06/2023**
 
 Leia do artigo [O uso da tecnologia nas adversidades da gestão de transportes](https://github.com/retaoliveira/relements/raw/main/texto/ti_transportes.pdf) e responda as perguntas que seguem na atividade no Paper Dropbox
 
