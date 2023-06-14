@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 20
+    weight: 15
 title: 3. Logística Urbana (para alunos que estiveram ausentes nos encontros dos dias 08/05 e 12/05)
 editor_options: 
   markdown: 

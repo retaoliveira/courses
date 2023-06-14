@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 15
+    weight: 20
 title: 4. Gestão de transportes (para quem não esteve presente em ao menos dois encontros)
 editor_options: 
   markdown: 
