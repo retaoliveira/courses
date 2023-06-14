@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 6
+    weight: 4
 title: 4. Gestão de transportes (para todos os alunos)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 50
+weight: 40
 ---
 
 **Prazo para entrega: 23/06/2023**
