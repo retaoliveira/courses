@@ -13,7 +13,7 @@ weight: 35
 
 **Prazo para entrega: 07/07/2023**
 
-Fiquem à vontade para utilizar a ferramenta que o grupo escolher. O envio será feito pela atividade aberta no SIGAA. Caso haja links, por favor, incluam no documento. O valor desta etapa é **20 pontos**.
+Fiquem à vontade para utilizar a ferramenta que o grupo escolher. O envio será feito pela atividade aberta no SIGAA. Caso haja links, por favor, incluam no documento. O valor desta etapa é **25 pontos**.
 
 Os grupos de trabalho deverão: 
 
