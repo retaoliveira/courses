@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 40
+    weight: 45
 title: 4. Gestão de transportes (feita em sala)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 40
+weight: 45
 ---
 
 Nesta atividade, os grupos deverão trabalhar com a contrução de conteúdos sobre as tecnologias de transporte (modos) e sobre o contexto de oferta desses modos no Brasil. 

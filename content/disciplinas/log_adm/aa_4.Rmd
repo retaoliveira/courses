@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 45
+    weight: 50
 title: 4. Gestão de transportes (para quem não esteve presente em ao menos dois encontros)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 45
+weight: 50
 ---
 
 **Prazo para entrega: 23/06/2023**
