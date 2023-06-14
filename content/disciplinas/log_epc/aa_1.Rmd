@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 1
+    weight: 10
 title: 1. Logística e cadeia de suprimentos
 editor_options: 
   markdown: 
