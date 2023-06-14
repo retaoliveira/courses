@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 10
+    weight: 5
 title: 1. Logística e cadeia de suprimentos
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 20
+weight: 10
 ---
 
 ## Objetivo de aprendizagem: 

@@ -4,7 +4,7 @@ draft: true
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 14
+    weight: 5
 title: 4. Gestão de transportes (feita em sala)
 editor_options: 
   markdown: 
