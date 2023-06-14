@@ -5,10 +5,10 @@ date: "2023-05-26T00:00:00+01:00"
 menu:
   log_epc:
     parent: Projetos
-    weight: 30
+    weight: 55
 toc: yes
 type: docs
-weight: 30
+weight: 55
 ---
 
 **Prazo para entrega: 24/06/2023**

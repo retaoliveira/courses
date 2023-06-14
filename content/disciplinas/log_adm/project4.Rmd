@@ -4,11 +4,11 @@ draft: false
 menu:
   log_adm:
     parent: Projetos
-    weight: 5
+    weight: 60
 title: Projeto Integrador 2
 toc: true
 type: docs
-weight: 20
+weight: 60
 ---
 
 **Prazo para entrega: 07/07/2023**
