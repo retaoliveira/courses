@@ -17,7 +17,7 @@ weight: 30
 ---
 
 
-Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa do Dropbox Paper:
+Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa do SIGAA:
 
 1. Defina Logística Urbana
 
