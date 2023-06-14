@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Projetos
-    weight: 30
+    weight: 40
 title: Projeto Integrador 2
 toc: true
 type: docs
