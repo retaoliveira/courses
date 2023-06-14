@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 25
+weight: 50
 ---
 
 Nesta atividade, os grupos deverão trabalhar com a contrução de conteúdos sobre as tecnologias de transporte (modos) e sobre o contexto de oferta desses modos no Brasil. 
