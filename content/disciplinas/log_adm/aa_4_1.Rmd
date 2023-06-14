@@ -1,10 +1,10 @@
 ---
-date: "2021-06-30T00:00:00+01:00"
+date: "2023-03-235T00:00:00+01:00"
 draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 10
+    weight: 40
 title: 4. Gestão de transportes (feita em sala)
 editor_options: 
   markdown: 

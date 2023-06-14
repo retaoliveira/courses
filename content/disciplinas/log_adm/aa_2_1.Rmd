@@ -1,10 +1,10 @@
 ---
-date: "2023-05-085T00:00:00+01:00"
+date: "2023-03-235T00:00:00+01:00"
 draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 5
+    weight: 25
 title: 2. KPIs e nível de serviço (para quem não esteve presente)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 20
+weight: 25
 ---
 
 **Prazo para entrega: 15/05/2023** - Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL

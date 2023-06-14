@@ -1,10 +1,10 @@
 ---
-date: "2023-05-260T00:00:00+01:00"
+date: "2023-03-235T00:00:00+01:00"
 draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 15
+    weight: 30
 title: 3. Logística Urbana (para alunos que estiveram ausentes nos encontros dos dias 08/05 e 12/05)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 35
+weight: 30
 ---
 
 **Prazo para entrega: 02/06/2023 - Pela tarefa no SIGAA**
