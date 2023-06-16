@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 55
-title: 4. Gestão de estoques e armazenagem (em sala)
+title: 5. Gestão de estoques e armazenagem (em sala)
 editor_options: 
   markdown: 
     wrap: 70
@@ -30,12 +30,12 @@ A Electronic Moon Inc compra **4.800 unidades por ano** a um preço (com a entre
 
 Baseado nos custos logísticos totais anuais, que modo de transporte a Star Company deve escolher? 
 
-> Dicas:
+> Dicas:   
 1.	O custo de transporte deve ser anualizado, considerando o frete de cada unidade.  
 2.	O estoque em trânsito refere-se à mercadoria que fica em estoque, mas em trânsito no sistema de transportes. Lembre-se que cada unidade da demanda anual é transportada e fica um % do ano em trânsito; e o custo de estoque incide sobre cada peça. Ainda, o custo de transporte refere-se ao frete a ser pago por cada unidade transportada no ano. Deve ser estimado consirando:    
-i.	Custo de manter estoque anual (lembre-se de considerar o custo de aquisição de cada motor e o % de custo de manutenção).  
-ii.	A proporção de tempo anualizado referente ao tempo em trânsito (TT/365).  
-iii.	Demanda anual.  
+   i.	Custo de manter estoque anual (lembre-se de considerar o custo de aquisição de cada motor e o % de custo de manutenção).  
+   ii.	A proporção de tempo anualizado referente ao tempo em trânsito (TT/365).  
+   iii.	Demanda anual.  
 3.	O custo do estoque na fábrica de componentes considera o estoque médio (unidades no carregamento dividido por 2) e o custo de manutenção de cada item em estoque.     
 4.	Pense no custo total = custo de manter estoque + custo de transporte.  
 

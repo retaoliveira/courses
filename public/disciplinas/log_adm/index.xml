@@ -480,7 +480,7 @@ e apresentará as seguintes dimensões para a turma:&lt;/p&gt;
 &lt;p&gt;A Electronic Moon Inc compra &lt;strong&gt;4.800 unidades por ano&lt;/strong&gt; a um preço (com a entrega) contratado de &lt;strong&gt;R$ 500 por unidade&lt;/strong&gt;. Os custos de manutenção de estoque para ambas as empresas são de &lt;strong&gt;25% por ano&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Baseado nos custos logísticos totais anuais, que modo de transporte a Star Company deve escolher?&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Dicas:
+&lt;p&gt;Dicas:&lt;br /&gt;
 1. O custo de transporte deve ser anualizado, considerando o frete de cada unidade.&lt;br /&gt;
 2. O estoque em trânsito refere-se à mercadoria que fica em estoque, mas em trânsito no sistema de transportes. Lembre-se que cada unidade da demanda anual é transportada e fica um % do ano em trânsito; e o custo de estoque incide sobre cada peça. Ainda, o custo de transporte refere-se ao frete a ser pago por cada unidade transportada no ano. Deve ser estimado consirando:&lt;br /&gt;
 i. Custo de manter estoque anual (lembre-se de considerar o custo de aquisição de cada motor e o % de custo de manutenção).&lt;br /&gt;
