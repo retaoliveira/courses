@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Aulas
-    weight: 60
+    weight: 13
 title: 'Aula 06 - Gestão de estoques e redes logísticas'
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 60
+weight: 13
 ---
 
 ## Apresentação
