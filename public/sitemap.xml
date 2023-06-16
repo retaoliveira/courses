@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
-    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
+    <lastmod>2023-06-12T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/</loc>
     <lastmod>2022-05-09T00:00:00+01:00</lastmod>
@@ -37,6 +37,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/tidyverse/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/atividade3/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -228,13 +230,12 @@
     <loc>https://retacourses.netlify.app/cursos/open_science/por_que_os/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_1_1/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_1_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/atividade3/</loc>
     <lastmod>2023-04-19T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project4/</loc>
-    <lastmod>2022-05-09T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/lab41/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -287,17 +288,11 @@
     <loc>https://retacourses.netlify.app/cursos/open_science/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_1/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_1/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_1_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_2/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_2/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_2_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab52/</loc>
     <lastmod>2023-05-31T00:00:00+01:00</lastmod>
@@ -310,6 +305,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/lab52/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_2_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_2_1/</loc>
   </url><url>
@@ -331,9 +328,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc8/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/artigo1/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_31/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/artigo1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_31/</loc>
   </url><url>
@@ -342,9 +339,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/swirl/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_4_1/</loc>
-    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/desafios/</loc>
     <lastmod>2021-06-30T00:00:00+01:00</lastmod>
@@ -357,11 +351,10 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab5_mkt/</loc>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_4/</loc>
-    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/ggplot/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_4_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/datasets/</loc>
     <lastmod>2023-04-19T00:00:00+01:00</lastmod>
@@ -381,15 +374,19 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/projects/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_4/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab51_mkt/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project1/</loc>
-    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/project1/</loc>
     <lastmod>2022-05-09T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_5/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project1/</loc>
+    <lastmod>2023-05-26T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_epc/project4/</loc>
     <lastmod>2022-05-09T00:00:00+01:00</lastmod>
@@ -399,6 +396,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/project4/</loc>
+    <lastmod>2023-06-12T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/sinc3/</loc>
     <lastmod>2021-10-25T00:00:00+01:00</lastmod>
@@ -446,7 +446,7 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/</loc>
-    <lastmod>2023-05-31T00:00:00+01:00</lastmod>
+    <lastmod>2023-06-12T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/</loc>
     <lastmod>2023-04-19T00:00:00+01:00</lastmod>
