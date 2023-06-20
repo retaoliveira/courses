@@ -480,6 +480,68 @@ e apresentará as seguintes dimensões para a turma:&lt;/p&gt;
     </item>
     
     <item>
+      <title>5. Gestão de estoques e armazenagem (em sala)</title>
+      <link>https://retacourses.netlify.app/disciplinas/log_epc/aa_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://retacourses.netlify.app/disciplinas/log_epc/aa_5/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;Realizado em sala: 16/06/2023&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A Star Company fornece motores elétricos para a empresa Electronic Moon Inc. com base no preço de entrega. A Star tem a responsabilidade de fornecer o transporte. O Gerente de transportes tem três opções para o serviço de transporte. Ele reuniu as seguintes informações:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;22%&#34; /&gt;
+&lt;col width=&#34;27%&#34; /&gt;
+&lt;col width=&#34;22%&#34; /&gt;
+&lt;col width=&#34;27%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Modo de transporte&lt;/th&gt;
+&lt;th&gt;Tempo em trânsito(dias)&lt;/th&gt;
+&lt;th&gt;Frete (R$/unidade)&lt;/th&gt;
+&lt;th&gt;Tamanho de carregamento (unidades)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Cabotagem&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;td&gt;1500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Ferroviário&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;td&gt;1000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Rodoviário&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;88&lt;/td&gt;
+&lt;td&gt;500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A Electronic Moon Inc compra &lt;strong&gt;4.800 unidades por ano&lt;/strong&gt; a um preço (com a entrega) contratado de &lt;strong&gt;R$ 500 por unidade&lt;/strong&gt;. Os custos de manutenção de estoque para ambas as empresas são de &lt;strong&gt;25% por ano&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Baseado nos custos logísticos totais anuais, que modo de transporte a Star Company deve escolher?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dicas:&lt;br /&gt;
+1. O custo de transporte deve ser anualizado, considerando o frete de cada unidade.&lt;br /&gt;
+2. O estoque em trânsito refere-se à mercadoria que fica em estoque, mas em trânsito no sistema de transportes. Lembre-se que cada unidade da demanda anual é transportada e fica um % do ano em trânsito; e o custo de estoque incide sobre cada peça. Ainda, o custo de transporte refere-se ao frete a ser pago por cada unidade transportada no ano. Deve ser estimado consirando:&lt;br /&gt;
+i. Custo de manter estoque anual (lembre-se de considerar o custo de aquisição de cada motor e o % de custo de manutenção).&lt;br /&gt;
+ii. A proporção de tempo anualizado referente ao tempo em trânsito (TT/365).&lt;br /&gt;
+iii. Demanda anual.&lt;br /&gt;
+3. O custo do estoque na fábrica de componentes considera o estoque médio (unidades no carregamento dividido por 2) e o custo de manutenção de cada item em estoque.&lt;br /&gt;
+4. Pense no custo total = custo de manter estoque + custo de transporte.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Projeto Integrador 2</title>
       <link>https://retacourses.netlify.app/disciplinas/log_epc/project4/</link>
       <pubDate>Mon, 09 May 2022 00:00:00 +0100</pubDate>
