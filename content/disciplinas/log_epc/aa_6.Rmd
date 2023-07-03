@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 21
+    weight: 60
 title: 6. Logística Sustentável (atividade realizada em sala)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 25
+weight: 60
 ---
 
 Leia o texto de opinião apresentado pelo [Nexo Políticas Públicas](https://www.places.education/post/qual-a-rela-o-entre-o-meu-pedido-online-e-as-mudan-as-clim-ticas-globais/) e responda as questões que seguem:
