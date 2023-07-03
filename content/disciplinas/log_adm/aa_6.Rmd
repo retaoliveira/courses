@@ -1,11 +1,11 @@
 ---
 date: "2022-11-165T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 21
-title: 6. Redes Logísticas (atividade realizada em sala)
+title: 6. Logística Sustentável (atividade realizada em sala)
 editor_options: 
   markdown: 
     wrap: 70
@@ -16,24 +16,8 @@ type: docs
 weight: 25
 ---
 
-Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A **demanda anual** para produção equivale a **120.000 motores** e o custo unitário de **aquisição** de cada motor é de **R$ 120,00**. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.
+Leia o texto de opinião apresentado pelo [Nexo Políticas Públicas](https://www.places.education/post/qual-a-rela-o-entre-o-meu-pedido-online-e-as-mudan-as-clim-ticas-globais/) e responda as questões que seguem:
 
-Cada motor pesa cerca de **5 quilogramas**. Após recebimento do pedido, o fornecedor expede dos motores no mesmo dia.
+1. Como você a eletrificação veicular como caminho definitivo para redução de emissão de Co2 e NOx pela distribuição urbana de mercadorias? Quais aspectos você considera para elaboração da sua resposta.
 
-Os **custos anuais** para manutenção de estoque dos motores são de **25% do valor de aquisição**. 
-
-O gerente da fábrica recebeu uma proposta para realizar o transporte dos motores e deve decidir qual irá aceitar. Os detalhes da operação de transporte são apresentados a seguir. 
-
-|Transportadora |	Lote de Compra Ótimo (un)	|Tempo em trânsito (dias)	|Custo unitário de transporte (R$/kg)|
-|------------|-------|-------|--------|
-|AMRailroad	|2000	|5	|0,10222222|
-|Northeast Trucking|	1000	|3	|0,166666667|
-|Golden Freightways|	500|	3	|0,188888889|
-|Golden Freightways|	1500|	3	|0,177777778|
-|Golden Freightways|	2500|	3	|0,133333333|
-|Golden Freightways|	3000|	3	|0,111111111|
-|Golden Freightways|	4000|	3	|0,078888889
-|
-
-A partir do cálculo do custo total de estoque (cíclico e em trânsito) e dos custos de transporte, determine qual a alternativa mais econômica. 
-
+2. Além da alteração da matriz energética e considerando diferentes atores envolvidos na demanda pelo transporte de mercadorias, cite pelo menos duas ações, de diferentes atores, que podem reduzir a contribuição das cadeias de suprimentos para o aquecimento global. 
