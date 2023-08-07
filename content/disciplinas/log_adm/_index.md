@@ -1,7 +1,7 @@
 ---
 date: "2022-28-03T00:00:00Z"
 draft: false
-lastmod: "2023-31-07T00:00:00Z"
+lastmod: "2023-02-08T00:00:00Z"
 menu:
   log_adm:
     name: Organização do curso

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/</loc>
-    <lastmod>2022-05-09T00:00:00+01:00</lastmod>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
+    <lastmod>2023-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/atividade1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/</loc>
+    <loc>https://retacourses.netlify.app/disciplinas/log_epc/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
@@ -130,8 +130,6 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/transportes/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula01/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab13/</loc>
     <lastmod>2022-03-28T00:00:00+01:00</lastmod>
   </url><url>
@@ -150,12 +148,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab1.2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula02/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula03/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula04/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc6/</loc>
     <lastmod>2023-04-26T00:00:00+01:00</lastmod>
   </url><url>
@@ -173,8 +165,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/estoques/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula05/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/sdss/atividade2/</loc>
     <lastmod>2021-12-05T00:00:00+01:00</lastmod>
@@ -197,8 +187,6 @@
     <loc>https://retacourses.netlify.app/cursos/intro_r/git_r/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aula06/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab22_bechedel/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -216,8 +204,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/open_science/por_que_os/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_1_1/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/atividade3/</loc>
     <lastmod>2023-04-19T00:00:00+01:00</lastmod>
@@ -273,10 +259,6 @@
     <loc>https://retacourses.netlify.app/cursos/open_science/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_1/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_2/</loc>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab52/</loc>
     <lastmod>2023-05-31T00:00:00+01:00</lastmod>
   </url><url>
@@ -288,10 +270,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/lab52/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_2_1/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_6/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab41/</loc>
     <lastmod>2023-05-17T00:00:00+01:00</lastmod>
@@ -310,8 +288,6 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc8/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_31/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab42/</loc>
     <lastmod>2023-05-17T00:00:00+01:00</lastmod>
@@ -339,9 +315,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/sinc1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_4/</loc>
-    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/funcoes_manipulacao/</loc>
     <lastmod>2021-05-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -354,14 +327,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab51_mkt/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/urban/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/project1/</loc>
-    <lastmod>2022-05-09T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/aa_5/</loc>
-  </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_epc/project4/</loc>
-    <lastmod>2022-05-09T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/sinc2/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
