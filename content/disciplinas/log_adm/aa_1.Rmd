@@ -1,0 +1,78 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  log_adm:
+    parent: Atividades de aprendizagem
+    weight: 5
+title: 1. Logística e cadeia de suprimentos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+## Objetivo de aprendizagem: 
+
+Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
+
+## Pontos
+
+10 pontos
+
+## Grupos de trabalho
+**Grupo 1**: 
+Eduarda
+Isadora
+Tairiimedes
+Thais
+
+**Grupo 2**: 
+Francisco
+Humberto
+Ivan
+Marden
+
+**Grupo 3:** 
+Álvaro
+Bruno Monteiro
+Guilherme Ricardo
+Pedro Fernandes
+
+**Grupo 4:** 
+João Vitor
+Paola
+
+**Grupo 5:** 
+Germana
+Thiago
+Raphael Moreira
+Camila Drumond
+
+**Grupo 6:** 
+Isadora Fonseca
+Fernanda Santos
+Ana clara Cardoso
+Natália Peixoto
+
+**Grupo 7:** 
+Igor
+Ian
+David
+
+**Grupo 8:** 
+Pedro Figueroa
+Erick Martins
+João Carlos
+
+## Atividades
+
+As perguntas deverão ser respondidas pelo **ChatGPT**. **Todas as perguntas feitas ao ChatGPT** deverão ser **inseridas no SIGAA** por meio de um documento. As respostas deverão ter no **máximo 150** palavras. Encaminhem as respostas pelo SIGAA (UMA PARA CADA GRUPO COM O NOME DOS PARTICIPANTES) (10 minutos)
+
+Posteriormente, cada grupo ficará responsável pela apresentação do que foi respondido. (80 minutos - 10 por grupo).
+
+
