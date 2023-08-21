@@ -1,0 +1,55 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  log_epc:
+    parent: Atividades de aprendizagem
+    weight: 5
+title: 1. Logística e cadeia de suprimentos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+## Objetivo de aprendizagem: 
+
+Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
+
+## Pontos
+
+10 pontos
+
+## Grupos de trabalho
+**Grupo 1:**
+
+
+**Grupo 2:**
+ 
+
+**Grupo 3:** 
+ 
+
+**Grupo 4:** 
+
+
+**Grupo 5:** 
+  
+
+**Grupo 6:** 
+
+
+**Grupo 7:** 
+ 
+
+**Grupo 8:** 
+
+## Atividades
+
+As perguntas deverão ser respondidas pelo **ChatGPT**. **Todas as perguntas feitas ao ChatGPT** deverão ser **inseridas no [Padlet](https://padlet.com/renataoliveira/log-stica-5wbtv58i0fn7hduf)** por meio de um documento. As respostas deverão ter no **máximo 150** palavras. (15 minutos)
+
+Posteriormente, faremos a discussão sobre as respostas do ChatGPT. 
