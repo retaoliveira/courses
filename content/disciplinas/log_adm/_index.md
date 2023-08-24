@@ -94,6 +94,10 @@ Pontos|	Atividade | Prazo
 
 TOTAL:| 	100 pontos
 
+## Padlet da disciplina
+
+[Padlet](https://padlet.com/renataoliveira/log-adm-2m49obi28ahufgna)
+
 ## Recursos necessários
 
 Site da disciplina: https://www.places.education/disciplinas/log_adm/
