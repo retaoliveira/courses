@@ -4,7 +4,7 @@ draft: false
 menu:
   log_adm:
     parent: Atividades de aprendizagem
-    weight: 15
+    weight: 20
 title: 1. Logística e cadeia de suprimentos (para quem não esteve presente)
 editor_options: 
   markdown: 
