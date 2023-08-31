@@ -2,7 +2,7 @@
 date: "2023-03-235T00:00:00+01:00"
 draft: false
 menu:
-  log_epc:
+  log_adm:
     parent: Atividades de aprendizagem
     weight: 20
 title: 2. KPIs e nível de serviço
@@ -18,7 +18,7 @@ weight: 20
 
 ## Objetivo de aprendizagem: 
 
-Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
+Apropriar indicadores de desempenho e nível de serviço. 
 
 ## Pontos
 

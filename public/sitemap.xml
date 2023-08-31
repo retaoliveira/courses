@@ -96,9 +96,6 @@
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula02/</loc>
     <lastmod>2023-08-07T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula03/</loc>
-    <lastmod>2023-08-07T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab12/</loc>
     <lastmod>2022-03-28T00:00:00+01:00</lastmod>
   </url><url>
@@ -146,6 +143,9 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/log_all/transportes/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula03/</loc>
+    <lastmod>2023-08-07T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab13/</loc>
     <lastmod>2022-03-28T00:00:00+01:00</lastmod>
@@ -275,6 +275,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/open_science/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_2/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab52/</loc>
     <lastmod>2023-05-31T00:00:00+01:00</lastmod>
@@ -884,5 +886,7 @@
   </url><url>
     <loc>https://retacourses.netlify.app/publication/de-oliveira-2016/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_1_1/</loc>
   </url>
 </urlset>
