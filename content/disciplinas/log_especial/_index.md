@@ -99,7 +99,8 @@ TOTAL:| 100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: http://places.education
+[Site da disciplina](http://places.education) 
+[Google Docs](https://docs.google.com/document/d/14nHCYXnvi-bTvN1-0z0Ag_9SHvQRoo1jl7BOBmBqGJg/edit)
 
 ## Bibliografia recomendada
 

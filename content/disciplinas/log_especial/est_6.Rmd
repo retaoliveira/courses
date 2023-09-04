@@ -17,7 +17,7 @@ weight: 25
 ---
 
 
-Leia do artigo [Multivarejo e omnicanal: o novo varejo alimentar do Grupo Pão de Açúcar](https://github.com/retaoliveira/relements/raw/main/texto/omini_pao.pdf) e responda as perguntas que seguem no respectivo Dropbox Paper.
+Leia do artigo [Multivarejo e omnicanal: o novo varejo alimentar do Grupo Pão de Açúcar](https://github.com/retaoliveira/relements/raw/main/texto/omini_pao.pdf) e responda as perguntas que seguem no respectivo Google Docs.
 
 1. Discuta, à luz dos conhecimentos adquiridos ao longo da disciplina, a seguinte frase: "A logística não é linear, otimizar um subsistema não significa otimizar o sistema total, é preciso olhar para os demais elos da cadeia”. Emita sua opinião quanto à concordância ou não com essa afirmativa e justifique. 
 
