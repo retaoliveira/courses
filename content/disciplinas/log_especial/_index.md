@@ -15,9 +15,10 @@ editor_options:
     wrap: sentence
 ---
 
+
 ## Proposta pedagógica
 
-A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
+A intencionalidade pedagógica deste curso é fazer com que os estudantes possam desenvolver seu aprendizado sobre elementos e suas interações nos sistemas logísticos de maneira mais dinâmica e com protagonismo do estudante. Serão apresentadas bases teóricas e desenvolvidas atividades de entendimento prático do conteúdo proposto.
 
 A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
 
@@ -41,58 +42,45 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 3.  Quantificar e comparar resultados esperados de determinadas soluções logísticas.
 4.  Integrar análise de dados à gestão da cadeia de suprimentos com foco no processo decisório.
 
-## Unidades de ensino
-
-| **Unidade**      | **CH** 
-|------------------|--------
-| Logística empresarial e a cadeia de suprimentos | 06
-| Planejamento e gestão da cadeia de suprimentos | 06
-| Nível de serviço logístico | 06
-| Integração logística e sistemas de informação na logística | 06
-| Transporte e distribuição física | 08
-| Custos logísticos | 08
-| Localizações logísticas | 08
-| Logística reversa | 06
-| Operadores logísticos e a Logística Internacional | 06
-
-
 ## Planejamento de encontros
 
-Aqui temos um cronograma de trabalho para os encontros presenciais. 
+Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** e nas **quintas-feiras**, de **18:50 às 20:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 17/08              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 22/08              |2h|Logística empresarial e a cadeia de suprimentos.
-| 24/08              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 29/08              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 31/08              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 05/09              |2h|Nível de serviço logístico, desempenho e ICT.
-| 12/09              |2h|Nível de serviço logístico, desempenho e ICT.
-| 14/09              |2h|KPIs em gestão de processos de produção e suprimento  
-| 19/09              |2h|KPIs em gestão de processos de produção e suprimento 
-| 21/09              |2h|KPIs em gestão de processos de produção e suprimento   
-| 26/09              |2h|Logística urbana.
-| 28/09              |2h|Logística urbana.
-| 03/10              |2h|Logística urbana.
-| 5/10               |2h|Transportes e distribuição física.
-| 10/10              |2h|Transportes e distribuição física.
-| 17/10              |2h|Transportes e distribuição física.
-| 19/10              |2h|Transportes e distribuição física.
-| 24/10              |2h|Gestão de estoques e armazenagem
-| 26/10              |2h|Gestão de estoques e armazenagem
-| 31/10              |2h|Localizações logísticas.
-| 07/11              |2h|Localizações logísticas.
-| 09/11              |2h|Localizações logísticas.
-| 14/11              |2h|Localizações logísticas.
+| 07/08              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 10/08              |2h|Logística empresarial e a cadeia de suprimentos.
+| 14/08              |2h|Logística empresarial e a cadeia de suprimentos.
+| 17/08              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 21/08              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 24/08              |2h|Nível de serviço logístico, desempenho e ICT.
+| 28/08              |2h|Nível de serviço logístico, desempenho e ICT.
+| 31/08              |2h|KPIs em gestão de processos de produção e suprimento  
+| 04/09              |2h|KPIs em gestão de processos de produção e suprimento  
+| 11/09              |2h|Logística urbana.
+| 14/09              |2h|Logística urbana. 
+| 18/09              |2h|Logística urbana.
+| 21/09              |2h|Logística urbana.
+| 25/09              |2h|Transportes e distribuição física.
+| 28/09              |2h|Transportes e distribuição física.
+| 02/10              |2h|Transportes e distribuição física.
+| 05/10              |2h|Transportes e distribuição física.
+| 16/10              |2h|Gestão de estoques e armazenagem.
+| 19/10              |2h|Gestão de estoques e armazenagem.
+| 23/10              |2h|Localizações logísticas.
+| 26/10              |2h|Localizações logísticas.
+| 30/10              |2h|Localizações logísticas.
+| 06/11              |2h|Localizações logísticas.
+| 09/11              |2h|Custos logísticos.
+| 13/11              |2h|Custos logísticos.
 | 16/11              |2h|Custos logísticos.
-| 21/11              |2h|Custos logísticos.
-| 23/11              |2h|Custos logísticos.
-| 28/11              |2h|Custos logísticos.
-| 30/11              |2h|Logística reversa, verde e sustentável.
-| 05/12              |2h|Logística reversa, verde e sustentável.
-| 07/12              |2h|Exame especial
+| 20/11              |2h|Custos logísticos.
+| 23/11              |2h|Logística reversa, verde e sustentável.
+| 27/11              |2h|Logística reversa, verde e sustentável.
+| 30/11              |2h|Exame especial
 
+## Proposta de avaliação da aprendizagem
+A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem, por meio de uma avaliação individual oral e por meio da elaboração de projetos transversais aos objetivos. 
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 

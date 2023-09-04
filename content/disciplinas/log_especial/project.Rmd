@@ -13,131 +13,7 @@ weight: 16
 
 Esta atividade tem valor de 30 pontos e deverá ser entregue por meio do sigaa, na respectiva tarefa. Recomendo a elaboração de um documento contendo as etapas de elaboração do projeto.  
 
-# Primeira etapa
-
-Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de `Logística` e `Gestão da Cadeia de Suprimentos` com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica. 
-
-A entrega será o link do vídeo carregado no youtube. 
-
-### Criar um vídeo público no youtube conforme as seguintes diretrizes:
-
-1. O vídeo deverá ter, no máximo, 3 (três) minutos.
-2. O conteúdo do vídeo deverá contemplar:
-- a caracterização da mudança que a 4a revolução industrial está proporcionando às atividades econômicas escolhida pelo grupo.
-- a relação entre essa mudança e as atividades-chave da gestão da cadeia de suprimentos 
-- vantagens e desvantagens para a gestão da cadeia de suprimentos considerando seu impacto no trade-off logístico (responsividade e eficiência)
-- as implicações sociais, econômicas e ambientais dessas mudanças
-
-<hr></hr>
-
-# Segunda etapa
-
-A `iFood` revolucionou o processo de delivery de refeições no Brasil. Em apenas seis meses da criação do aplicativo de pedidos, somente na cidade de São Paulo, a empresa já contava com cardápios de 650 restaurantes. Contudo, nos primeiros meses de atividade, os analistas da `iFood` identificaram diversas reclamações específicas dos clientes de um desses restaurantes: o **Sushi Liberdade**. Havia relatos de **atrasos nas entregas**, o que ocasionava grande número de reclamações no aplicativo. A situação era complicada para o restaurante, sendo que em alguns casos havia até mesmo a necessidade de **cancelamentos e restituição do valor financeiro aos clientes**. O restaurante acusava os **colaboradores responsáveis pela entrega de não prestarem o serviço** adequadamente, mas a `iFood` desconfiava dessa informação uma vez que não havia registros de reclamações de outros restaurantes.
-
-A diretoria da `iFood`, preocupada com as diversas reclamações e com a possibilidade de **perder o restaurante para um concorrente**, decidiu que era muito importante avaliar as **causas especiais** relacionadas às entregas com tempo maior do que os 120 minutos (*leadtime*[^1]) prometidos pelo aplicativo. Foi contratada uma consultoria independente, uma vez que esse fato causava também **graves prejuízos à imagem da `iFood`**. Para evitar maiores prejuízos à `iFood`, o restaurante Sushi Liberdade foi **cancelado da plataforma imediatamente** para que essa investigação apontasse os responsáveis, apesar de ter redirecionado seu funcionamento para o atendimento a pedidos para entrega recentemente.
-
-[^1]: *O leadtime pode ser definido como o tempo entre a colocação do pedido e o efetivo recebimento dos produtos. Assim, a composição desse indicador contempla: - Recebimento do pedido com detalhes do transporte a ser realizado; - Alocação de veículos, equipe de trabalho e deslocamento para coleta dos pedidos; (Esse tempo é concomitante com aquele necessário para expedição do pedido.) - Carregamento dos veículos; -Viagem até o consumidor.*
-
-Como uma **empresa digital responsável em relação a seus colaboradores (restaurantes e entregadores)**, e visando contribuir com a manutenção do restaurante, a `iFood` se propôs a oferecer uma consultoria **gratuita** ao Sushi Liberdade, mesmo antes dos resultados da investigação imparcial promovida pela consultora. O restaurante decidiu aceitar a **generosa oferta**, uma vez que estava sem outras opções no momento. Assim, o Sushi Liberdade recebeu os **analistas da `iFood`** para colocar as ideias em prática.
-
-## Compreensão do processo
-
-As notações para modelagem de processos, como por exemplo a notação BPMN, utilizam formas de agrupar tarefas de um processo que são desempenhadas pelos diferentes atores. No caso da `iFood`, possuímos quatro atores bem definidos: o Restaurante, o solicitante (consumidor), o Colaborador (responsável pela entrega) e a plataforma digital. Geralmente, as funções que cada um executa são distribuídas em raias. Os círculos identificam o início e fim do fluxo. Os retângulos identificam os processos, as setas identificam o fluxo e os losângulos identificam as decisões do processo. 
-
-A figura a seguir demonstra um exemplo de um processo de aquisição de férias construído na notação BPMN:
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics('https://retaoliveira.github.io/relements/figures/Imagem1.png')
-```
-
-Considerando os atores `iFood`, restaurante, consumidor e entregador (responsável pela entrega), construa o fluxograma do processo de entrega de pedidos da `iFood`. Considere também a situação em que o consumidor não esteja disponível no momento da entrega.
-
-Fiquem à vontade para utilizar a ferramenta que o grupo escolher. Podem até mesmo fazer com canetas coloridas em papel e enviar uma foto pela atividade aberta no SIGAA.
-
-<hr></hr>
-
-# Terceira etapa
-
-TABELA DE AMOSTRAS: [Link para download](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/ETKOyyBJOl5MgcNMyq7dThUBaaQaD1w3DnNyXs6MUAFYnA?e=MOqg2W)
-
-### Pergunta 1
-
-Considerando a tabela de amostras disponível no link, determine estatísticas descritivas básicas e utilize sua interpretação para descrever de forma preliminar o problema. 
-
-
-## Identificação das causas especiais 
-
-A terceira etapa implementada pela área de logística/análise de dados do iFood considerou o histórico de causas especiais observadas ao longo do tempo. 
-
-As situações registradas estão descritas a seguir. 
-
-**Descrição das causas especiais**
-
-(i)	Atraso na entrega do produto causada por excesso da demanda na área de cobertura parametrizada no app pela iFood; 
-(ii)	Atraso na entrega do produto causada por excesso da demanda na área de cobertura definida pelo restaurante;
-(iii)	Atraso na entrega do produto causada por falha no uso da funcionalidade de checkin/checkout da entrega no aplicativo pelo colaborador; 
-(iv)	Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerando regiões de expedição com maior periculosidade; 
-(v)	Atraso na entrega do produto devido às consecutivas desistências de colaboradores considerandos regiões de consumidores com maior periculosidade;
-(vi)	Atraso na entrega do produto devido à parametrização da iFood em locais onde o asfaltamento apresenta piores níveis de pavimentação; 
-(vii)	Atraso na entrega do produto causada por meio de transporte inadequado utilizado pelo colaborador; 
-(viii)	Atraso na entrega do produto causada pelo excesso de itens transportados pelo colaborador.
-
-A partir desse histórico, os analistas da iFood elaboraram o diagrama de causa e efeito (espinha de peixe), conforme estrutura demonstrada a seguir:
- 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics('https://retaoliveira.github.io/relements/figures/transport/espinha-peixe.png')
-```
- 
-### Pergunta 2 
-
-Com base na figura apresentada, reproduza o diagrama de causa e efeito (espinha de peixe) disponível pela área de qualidade da iFood, considerando o histórico de causas especiais. Identifique duas outras possíveis causas relacionadas ao problema “Atraso na entrega do produto” e categorize-as de acordo com a estrutura do diagrama.
-
-
-## Responsabilidade social e ambiental
-
-A iFood mantém um programa de responsabilidade social e ambiental. Nesse sentido, a partir de determinada data, foi considerada a possibilidade do aplicativo de pedidos utilizado pelos colaboradores responsáveis pela entrega disponibilizar, além dos meios tradicionais de entrega, a opção por meios de transporte menos poluentes (bicicletas elétricas, patinetes elétricas, etc.). Essa funcionalidade encontraria-se restrita para curtas distâncias e em espaços reservados para esse tipo de veículo, considerando a possibilidade de trânsito nessas condições e do baixo impacto ao _leadtime._
-
-Baseados nessas informações, os analistas da iFood indicaram um ponto ótimo para empresa em termos de impacto no seu _leadtime_ médio. Nesse caso, seria necessário considerar ¼ (um quarto) das entregas exclusivamente utilizando veículos considerados menos poluentes destinados às curtas distâncias e vias autorizadas para esse tipo de transporte. Os outros ¾ (três quartos) das entregas seriam realizados por veículos à combustão.
-
-Infelizmente, a indicação dos analistas da iFood considerou somente o ponto ótimo relacionado ao _leadtime._ Contudo, seriam notados os seguintes impactos negativos dessa decisão:
-
-- O leadtime médio passaria de 96 minutos (se a iFood realizasse todas as  entregas diárias utilizando somente veículos considerados mais poluentes) para 101 minutos (caso realizasse as entregas utilizando ambos os tipos de veículos).    
-- O número de reclamações dos solicitantes em relação ao tempo das entregas teria um aumento de 0,17%, sendo que esse percentual geraria um prejuízo de $10.000 mensais para a empresa.    
-- Existiria um impacto negativo na imagem da empresa devido aos atrasos.   
-
-Por sua vez, seriam notados os seguintes impactos positivos dessa decisão:
-- Os valores repassados para os entregadores de veículos menos poluentes não seria maior do que os valores repassados para os outros entregadores.   
-- A iFood melhoraria os níveis do seu inventário de emissões de Gases de Efeito Estufa (GEE). (Esse inventário soma todos os níveis de emissão, tanto os de responsabilidade direta quanto indireta da empresa.)   
-- A iFood economizaria cerca de $150.000 anuais em compra de créditos de carbono da startup ambiental brasileira Moss.Earth. A compra de créditos está relacionada ao objetivo de tornar 100% dos pedidos da iFood neutros em emissão de gases do efeito estufa e compensar os gases emitidos.    
-- Haveria redução no número de ações jucidiais, devido ao histórico menor em número de acidentes com os colaboradores considerando o modelo híbrido.   
-- Existiria um impacto positivo na imagem da empresa.
-
-### Pergunta 3
-
-Você se tornou um dos Conselheiros de Administração da iFood e precisa decidir entre o modelo de entrega somente considerando veículos a combustão e o modelo de entrega híbrido. Qual seria a motivação da sua decisão considerando os impactos financeiros, sociais, ambientais e de imagem relacionados à sua escolha? Você consegue identificar outros impactos negativos ou positivos para essa situação?
-
-## Precarização do trabalho
-
-A Organização Internacional do Trabalho (OIT) e especialistas elencam alguns cenários que são indicativos de precarização nas relações de trabalho. São eles:
-1 - Insegurança no mercado de trabalho por falta de oportunidade;
-2 - Insegurança no trabalho devido à falta de proteção adequada caso venha a perder o posto de trabalho;
-3 - Insegurança no trabalho devido à dificuldade de continuar a exercer a atividade por falta de qualificação;
-4 - Condições precárias de segurança ocupacional e saúde;
-5 - Falta de acesso à educação básica e treinamento vocacional;
-7 - Insegurança de renda, no presente e no futuro; e
-8 - Insegurança quanto à possibilidade de ter os direitos coletivos da categoria representados por um sindicato.
-
-A iFood mantém em seu site (https://news.ifood.com.br/precarizacao-ifood/) a descrição de diversas ações que visam mitigar cada um dos indicativos de precarização nas relações de trabalho relacionados anteriormente.
-
-### Pergunta 4
-
-As ações relatadas pela iFood são coerentes e suficientes para mitigação dos indicativos de precarização nas relações de trabalho relacionados pela OIT? Quando observamos a atuação da iFood nas nossas cidades, identificamos que essas ações são realmente aplicadas? Existe alguma ação adicional que a iFood poderia considerar?
-
-<hr></hr>
-
-# Quarta etapa
-
-Os grupos de trabalho deverão: 
+Você deverá:
 
 1. **Registrar** alguma situação onde atividades-chave da cadeia de suprimentos acontecem e apresentam inadequações relacionadas a uma às duas dimensões: (i) eficiência - relação entre consumo dos recursos e a produção; (ii) responsividade - nível de serviço.
 
@@ -147,6 +23,6 @@ Os grupos de trabalho deverão:
 
 4. **Discutir** as externalidades da operação retratada e como poderiam ser mitigadas, sem comprometer o _trade-off_ entre eficiência e responsividade. 
 
-Sejam completos e sucintos nas respostas! Ilustrem bem o processo. Recomendo que escolham um processo familiar, pois fica mais fácil inferir sobre fluxos, causas e soluções.
+Seja completa e sucinta nas respostas! Ilustre bem o processo. Recomendo que escolha um processo familiar, pois fica mais fácil inferir sobre fluxos, causas e soluções.
 
 
