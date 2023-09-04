@@ -11,6 +11,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/atividade1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/lab1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -144,6 +147,8 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/transportes/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula01/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aula03/</loc>
     <lastmod>2023-08-07T00:00:00+01:00</lastmod>
   </url><url>
@@ -164,6 +169,20 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab1.2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula02/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula03/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula04/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula05/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula06/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula07/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/aula08/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc6/</loc>
     <lastmod>2023-04-26T00:00:00+01:00</lastmod>
@@ -234,6 +253,9 @@
     <loc>https://retacourses.netlify.app/cursos/log_all/redes/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/project/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/r_pos_2022/sinc1/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
   </url><url>
@@ -276,7 +298,12 @@
     <loc>https://retacourses.netlify.app/cursos/open_science/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_1/</loc>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/log_adm/aa_2/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_2/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab52/</loc>
     <lastmod>2023-05-31T00:00:00+01:00</lastmod>
@@ -289,6 +316,10 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/intror_master/lab52/</loc>
     <lastmod>2021-10-15T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_6/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_7/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab41/</loc>
     <lastmod>2023-05-17T00:00:00+01:00</lastmod>
@@ -308,6 +339,9 @@
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/sinc8/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_3/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab42/</loc>
     <lastmod>2023-05-17T00:00:00+01:00</lastmod>
   </url><url>
@@ -324,6 +358,9 @@
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab5_mkt/</loc>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_4/</loc>
+    <lastmod>2021-06-30T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://retacourses.netlify.app/cursos/intro_r/ggplot/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
@@ -342,6 +379,8 @@
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/projects/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://retacourses.netlify.app/disciplinas/log_especial/est_5/</loc>
   </url><url>
     <loc>https://retacourses.netlify.app/disciplinas/dados_ppga/lab51_mkt/</loc>
   </url><url>

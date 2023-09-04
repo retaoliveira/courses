@@ -133,11 +133,11 @@
 
 
   
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Logística - ADM Especial - 2022/2"
-#  url = "disciplinas/log_especial/"
-#  weight = 30
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística - ADM Especial - 2023/2"
+  url = "disciplinas/log_especial/"
+  weight = 30
 
 #[[main]]
 #  parent = "Disciplinas"
