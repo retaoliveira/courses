@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Aulas
     weight: 15
-title: 'Aula 07 - Custos Logísticos'
+title: 'Aula 07 - Redes Logísticas'
 editor_options: 
   markdown: 
     wrap: 70
@@ -19,7 +19,7 @@ weight: 15
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class08', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class07', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class08)
+[LINK](https://logistica2023.github.io/class07)
