@@ -16,7 +16,7 @@ type: docs
 weight: 25
 ---
 
-**Prazo para entrega: 15/05/2023** - Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL
+Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL
 
 
 ## Objetivo de aprendizagem: 

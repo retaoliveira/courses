@@ -16,7 +16,6 @@ type: docs
 weight: 35
 ---
 
-**Prazo para entrega: 07/11/2022**
 
 Leia os artigos:
 
