@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 45
-title: 4. Gestão de transportes (feita em sala)
+title: 4. Gestão de transportes (em sala)
 editor_options: 
   markdown: 
     wrap: 70
@@ -35,4 +35,3 @@ b) Como é a distribuição da infraestrutura no país;
 c) Quem são os operadores desse modo;
 d) Como o Brasil se compara com a distribuição de infraestrutura em outros países.
 
-A discussão em sala dias **02, 05 e 09 de junho**. 

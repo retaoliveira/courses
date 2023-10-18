@@ -5,7 +5,7 @@ menu:
   log_adm:
     parent: Atividades de aprendizagem
     weight: 60
-title: 6. Logística Sustentável (atividade realizada em sala)
+title: 6. Logística Sustentável (em sala)
 editor_options: 
   markdown: 
     wrap: 70

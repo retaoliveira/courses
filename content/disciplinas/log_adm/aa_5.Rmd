@@ -16,7 +16,7 @@ type: docs
 weight: 55
 ---
 
-**Realizado em sala: 16/06/2023**
+
 
 A Star Company fornece motores elétricos para a empresa Electronic Moon Inc. com base no preço de entrega. A Star tem a responsabilidade de fornecer o transporte. O Gerente de transportes tem três opções para o serviço de transporte. Ele reuniu as seguintes informações:
 
