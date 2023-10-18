@@ -19,7 +19,7 @@ weight: 12
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class05', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class06', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class05)
+[LINK](https://logistica2023.github.io/class06)
