@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Atividades de aprendizagem
     weight: 16
-title: 4. Gestão de estoques e armazenagem (para quem não esteve presente)
+title: 5. Gestão de estoques e armazenagem (para quem não esteve presente)
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 35
+weight: 16
 ---
 
 

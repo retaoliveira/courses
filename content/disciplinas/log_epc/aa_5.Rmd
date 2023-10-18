@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 55
+    weight: 15
 title: 5. Gestão de estoques e armazenagem (em sala)
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 55
+weight: 15
 ---
 
 

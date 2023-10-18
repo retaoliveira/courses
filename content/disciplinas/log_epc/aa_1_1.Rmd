@@ -4,7 +4,7 @@ draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 20
+    weight: 10
 title: 1. Logística e cadeia de suprimentos (para quem não esteve presente)
 editor_options: 
   markdown: 
@@ -13,10 +13,10 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 15
+weight: 10
 ---
 
-**Prazo para entrega: 07/09/2023** - Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL
+Entregar pela atividade no SIGAA - TRABALHO INDIVIDUAL
 
 
 ## Objetivo de aprendizagem: 

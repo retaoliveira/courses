@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Atividades de aprendizagem
     weight: 22
-title: 7. Custos Logísticos (para quem não esteve em sala)
+title: 6. Redes Logísticas e custo logístico (para quem não esteve em sala)
 editor_options: 
   markdown: 
     wrap: 70
