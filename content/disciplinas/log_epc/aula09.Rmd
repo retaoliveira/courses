@@ -4,8 +4,8 @@ draft: false
 menu:
   log_epc:
     parent: Aulas
-    weight: 11
-title: 'Aula 04 - Logística Urbana'
+    weight: 16
+title: 'Aula 09 - Sustentabilidade em logística'
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,13 +13,13 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 11
+weight: 16
 ---
 
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class05', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class09', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class05)
+[LINK](https://logistica2023.github.io/class09)

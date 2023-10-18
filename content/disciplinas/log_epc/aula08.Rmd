@@ -5,7 +5,7 @@ menu:
   log_epc:
     parent: Aulas
     weight: 15
-title: 'Aula 08 - Sustentabilidade em logística'
+title: 'Aula 08 - Custos Logísticos'
 editor_options: 
   markdown: 
     wrap: 70
@@ -19,7 +19,7 @@ weight: 15
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class09', height = "400px")
+knitr::include_url('https://logistica2023.github.io/class08', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class09)
+[LINK](https://logistica2023.github.io/class08)
