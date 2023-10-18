@@ -76,7 +76,7 @@ Pontos|	Atividade | Prazo
 10|  Atividade de aprendizagem 3 – Logística Urbana
 10|  Atividade de aprendizagem 4 - Gestão de Transportes | 
 10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
-10|  Atividade de aprendizagem 5 - Localização e custos logísticos
+10|  Atividade de aprendizagem 6 - Localização e custos logísticos
 15|  Projeto integrador 1 - Vídeo | 
 25|  Projeto integrador 2 - Revista | 
 TOTAL:| 	100 pontos
