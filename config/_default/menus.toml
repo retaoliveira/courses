@@ -91,26 +91,32 @@
 
 [[main]]
   parent = "Disciplinas"
-  name = "Logística - Eng. Produção Civil - 2023/2"
+  name = "Logística - Eng. Produção Civil - 2024/1"
   url = "disciplinas/log_epc/"
   weight = 10
   
 [[main]]
   parent = "Disciplinas"
-  name = "Logística - ADM - 2023/2"
-  url = "disciplinas/log_adm/"
+  name = "Planejamento e Controle da Produção - Eng. Materiais - 2024/1"
+  url = "disciplinas/ppc/"
   weight = 20
+
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Logística - ADM - 2023/2"
+#  url = "disciplinas/log_adm/"
+#  weight = 20
  
-[[main]]
-  parent = "Disciplinas"
-  name = "Ciência aberta e em colaboração - PPGA - 2023/2"
-  url = "https://open-reproducible-research.github.io/website/"
-  weight = 30
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Ciência aberta e em colaboração - PPGA - 2023/2"
+#  url = "https://open-reproducible-research.github.io/website/"
+#  weight = 30
   
   
 [[main]]
    parent = "Disciplinas"
-   name = "Análise de dados aplicada ao processo decisório - PPGA - 2023/1"
+   name = "Análise de dados aplicada ao processo decisório - PPGA - 2024/1"
    url = "disciplinas/dados_ppga/"
    weight = 35
   
@@ -133,11 +139,11 @@
 
 
   
-[[main]]
-  parent = "Disciplinas"
-  name = "Logística - ADM Especial - 2023/2"
-  url = "disciplinas/log_especial/"
-  weight = 30
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Logística - ADM Especial - 2023/2"
+#  url = "disciplinas/log_especial/"
+#  weight = 30
 
 #[[main]]
 #  parent = "Disciplinas"
