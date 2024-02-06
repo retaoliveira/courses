@@ -6,7 +6,7 @@ menu:
   adm_prod:
     name: Organização do curso
     weight: 1
-title: Logística
+title: Administração da Produção
 toc: true
 type: docs
 weight: 1
