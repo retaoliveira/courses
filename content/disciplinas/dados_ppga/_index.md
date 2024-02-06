@@ -6,7 +6,7 @@ menu:
   dados_ppga:
     name: Organização do curso
     weight: 10
-lastmod: '2023-03-09T00:00:00Z'
+lastmod: '2024-03-01T00:00:00Z'
 toc: yes
 type: docs
 weight: 10
@@ -53,26 +53,25 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros 
 
-Os encontros acontecerão nas **terças-feiras**, de **18:30 às 22:00h**. Serão realizados na Sala A (informática) do PPGA.
+Os encontros acontecerão nas **sextas-feiras**, de **14:00 às 18:00h**. Serão realizados na Sala A (informática) do PPGA.
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 07/03 a 21/03 | Professora em licença médica, mas atividades preliminares serão encaminhadas para os estudantes.
-| 28/03 | **Unidade 1**: Ambientação no R, RStudio, Git-Github, Rpubs e chatGPT. Comunicação por meio do R. **Lab1**
-| 04/04| **Unidade 1**: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. **Atividade 1**. **Projeto Integrador**: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos. **PI1** - definição do problema de pesquisa projeto integrador. 
-| 11/04| **Unidade 2**: Estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos Visualização de dados no R. **Atividade 2**
-| 18/04| **Unidade 2**: visualização de informações gerenciais e científicas. **Lab2**
-| 25/04| **Unidade 3**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.  **Atividade 3**. **PI2**: coleta e inspeção de base de dados.
-| 02/05| **Projeto Integrador**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados do Projeto Integrador. **PI3**
-| 09/05| **Unidade 3**: Estatística descritiva e mineração de dados. **Lab3**
-| 16/05| **Projeto Integrador**: Estatística descritiva e mineração de dados do projeto integrador. **PI4**
-| 23/05| **Unidade 4**: Segmentação de mercado. **Lab4**
-| 30/05| **Unidade 5**: Organização dados e produção de análises textuais sob perspectiva analítica. **Lab5**
-| 06/06| **Unidade 6**: Introdução aos dados espaciais 
-| 13/06| **Unidade 6**: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. **Lab6** 
-| 20/06| **Projeto Integrador**: Consolidação dos resultados e dos instrumentos de visualização e comunicação de informações gerenciais e científicas para subsídio ao processo decisório.
-| 27/06| **Projeto Integrador**: Entrega do relatório/dashboard/site  (e outros instrumentos) do projeto integrador para o grupo que fará a avaliação do documento como instrumento de tomada de decisão. **PI5**
-| 04/07| Apresentação do **projeto integrador** - **PI6** e relato do grupo avaliador **PI7**. 
+| 08/03 | **Unidade 1**: Ambientação no R, RStudio, Git-Github, Rpubs e chatGPT. Comunicação por meio do R. **Lab1**
+| 15/03| **Unidade 1**: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. **Atividade 1**. **Projeto Integrador**: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos. **PI1** - definição do problema de pesquisa projeto integrador. 
+| 22/03| **Unidade 2**: Estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos Visualização de dados no R. **Atividade 2**
+| 05/04| **Unidade 2**: visualização de informações gerenciais e científicas. **Lab2**
+| 12/04| **Unidade 3**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.  **Atividade 3**. **PI2**: coleta e inspeção de base de dados.
+| 19/04| **Projeto Integrador**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados do Projeto Integrador. **PI3**
+| 26/04| **Unidade 3**: Estatística descritiva e mineração de dados. **Lab3**
+| 03/05| **Projeto Integrador**: Estatística descritiva e mineração de dados do projeto integrador. **PI4**
+| 10/05| **Unidade 4**: Segmentação de mercado. **Lab4**
+| 17/05| **Unidade 5**: Organização dados e produção de análises textuais sob perspectiva analítica. **Lab5**
+| 24/05| **Unidade 6**: Introdução aos dados espaciais 
+| 07/06| **Unidade 6**: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. **Lab6** 
+| 14/06| **Projeto Integrador**: Consolidação dos resultados e dos instrumentos de visualização e comunicação de informações gerenciais e científicas para subsídio ao processo decisório.
+| 21/06| **Projeto Integrador**: Entrega do relatório/dashboard/site  (e outros instrumentos) do projeto integrador para o grupo que fará a avaliação do documento como instrumento de tomada de decisão. **PI5**
+| 28/06| Apresentação do **projeto integrador** - **PI6** e relato do grupo avaliador **PI7**. 
 | **Total de Horas** | 60 horas    |
 
 ## Proposta de avaliação da aprendizagem
