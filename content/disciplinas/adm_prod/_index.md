@@ -19,7 +19,7 @@ editor_options:
 
 A intencionalidade pedagógica deste curso é fazer com que os estudantes possam desenvolver seu aprendizado sobre elementos e suas interações nos sistemas logísticos de maneira mais dinâmica e com protagonismo do estudante. Serão apresentadas bases teóricas e desenvolvidas atividades de entendimento prático do conteúdo proposto.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Atividades avaliativas individuais (AI)` para consolidação e perspectiva integrada da disciplina. 
 
 ## Ementa da disciplina
 
@@ -51,86 +51,68 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** E nas 
 **Unidade** | **Data**           | **CH** | **Assunto** |
 ------------|--------------------|--------|-------------|
 Unidade 01 - Introdução | 04/03              |2h|Funções e planejamento e controle da produção 
-Unidade 01 - Introdução  | 08/03              |2h|Classificação, caracterização e objetivos da produção
-Unidade 01 - Introdução  | 11/03              |2h|fluxo de informações e materiais e sistemas de controle e sua operacionalização 
-Unidade 02 - Demanda e planejamento da capacidade  | 15/03              |2h|Estimativa quantitativa
-Unidade 02 - Demanda e planejamento da capacidade  | 18/03              |2h|Previsão e informação de vendas
-Unidade 02 - Demanda e planejamento da capacidade  | 22/03              |2h|Dimensão econômica e tipos de capacidade
-Unidade 02 - Demanda e planejamento da capacidade  | 25/03              |2h|Lote mínimo de produção e ponto de equilíbrio
-Unidade 02 - Demanda e planejamento da capacidade  | 01/04              |2h|Adequação com a capacidade operacional
-Unidade 03 - Planejamento e controle de materiais | 5/04              |2h|Tipos de estoques e custos de estoques
-
-Unidade 03 - Planejamento e controle de materiais | 08/04              |2h|Análise ABC
-Unidade 03 - Planejamento e controle de materiais | 12/04              |2h|Lote econômico de compras
-Unidade 03 - Planejamento e controle de materiais | 15/04              |2h|Planejamento e controle de estoques
-Unidade 04 - Planejamento da produção  | 19/04             |2h|Fluxograma do produto e do processo
-Unidade 04 - Planejamento da produção  | 22/04              |2h|Fluxograma do produto e do processo
-Unidade 04 - Planejamento da produção  | 26/04              |2h|Roteiro da produção
-Unidade 04 - Planejamento da produção  | 29/04              |2h|Requisitos operacionais
-Unidade 04 - Planejamento da produção  | 30/04              |2h|Requisitos operacionais
-Unidade 04 - Planejamento da produção  |      03/05         |2h|Dimensionamento de recursos
-Unidade 04 - Planejamento da produção  | 06/05             |2h|Dimensionamento de recursos
-Unidade 04 - Planejamento da produção  | 10/05              |2h|Dimensionamento de recursos
-Unidade 04 - Planejamento da produção  | 13/05              |2h|Dimensionamento de recursos
-Unidade 04 - Planejamento da produção  | 17/05              |2h|Carga de recursos
-Unidade 04 - Planejamento da produção  | 20/05              |2h|Sequência de operações
-Unidade 04 - Planejamento da produção  | 24/05              |2h|Sequência de operações
-Unidade 04 - Planejamento da produção  | 27/05              |2h|Plano de produção
-Unidade 04 - Planejamento da produção  | 03/06              |2h|Plano de produção
-Unidade 04 - Planejamento da produção  | 07/06              |2h|Plano de produção
-Unidade 05 - Planejamento de processo por projeto | 10/06              |2h|Aplicação de PERT-CPM
-Unidade 05 - Planejamento de processo por projeto | 14/06              |2h|Aplicação de PERT-CPM
-Unidade 05 - Planejamento de processo por projeto | 17/06              |2h|Aplicação de PERT-CPM
-Fechamento da disciplina  | 24/06             |2h|Exame especial
+Unidade 01 - Introdução  | 08/03              |2h|Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
+Unidade 01 - Introdução  | 11/03              |2h|Atividade em sala 1
+Unidade 02 - Demanda     | 15/03              |2h|Previsão e informação de vendas
+Unidade 02 - Demanda     | 18/03              |2h|Previsão e informação de vendas
+Unidade 02 - Demanda     | 22/03              |2h|Atividade em sala 2
+Unidade 03 - Planejamento e controle de materiais | 25/03              |2h|Tipos de estoques e custos de estoques
+Unidade 03 - Planejamento e controle de materiais | 01/04              |2h|Análise ABC
+Unidade 03 - Planejamento e controle de materiais | 05/04              |2h|Lote econômico de compras
+Unidade 03 - Planejamento e controle de materiais | 08/04              |2h|Atividade em sala 3
+Unidade 04 - Planejamento da capacidade  |  12/04                |2h|Tipos de capacidade e dimensão econômica 
+Unidade 04 - Planejamento da capacidade  |  15/04                |2h|Lote mínimo de produção e ponto de equilíbrio
+Unidade 04 - Planejamento da capacidade  |  19/04                 |2h|Atividade em sala 4
+Unidade 05 - Planejamento da produção  |  22/04            |2h|Fluxograma do produto e do processo
+Unidade 05 - Planejamento da produção  |  26/04             |2h|Atividade em sala 5
+Unidade 05 - Planejamento da produção  | 29/04               |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.
+Unidade 05 - Planejamento da produção  | 03/05             |2h|Atividade em sala 6
+Unidade 05 - Planejamento da produção  | 06/05              |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção.
+Unidade 05 - Planejamento da produção  | 10/05               |2h|Atividade em sala 7
+Unidade 05 - Planejamento da produção  | 13/05              |2h|Planejamento das necessidades de materiais.
+Unidade 05 - Planejamento da produção  | 17/05              |2h|Atividade em sala 8
+Unidade 05 - Planejamento da produção  | 20/05              |2h|Planejamento dos recursos de manufatura.
+Unidade 05 - Planejamento da produção  | 24/05              |2h|Atividade em sala 9
+Unidade 05 - Planejamento da produção  | 27/05              |2h|Programação da produção: roteiro da produção;
+Unidade 05 - Planejamento da produção  | 03/06               |2h|Atividade em sala 10
+Unidade 05 - Planejamento da produção  | 07/06               |2h|Programação da produção: sequência de operações; carga de máquinas
+Unidade 05 - Planejamento da produção  | 10/06               |2h|Atividade em sala 11
+Unidade 06 - Planejamento de processo por projeto  | 14/06               |2h|Aplicação de PERT-CPM
+Unidade 06 - Planejamento de processo por projeto  | 17/06               |2h|Atividade em sala 12
+Exame especial  | 24/06             |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
-A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
+A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio de atividades avaliativas individuais transversais aos objetivos. 
 
-Pontos|	Atividade | Prazo
-------|------------ | ---
-10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
-10|  Atividade de aprendizagem 2 - Nivel de serviço logístico, TICs e KPIs
-10|  Atividade de aprendizagem 3 – Logística Urbana
-10|  Atividade de aprendizagem 4 - Gestão de Transportes 
-10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
-10|  Atividade de aprendizagem 6 - Localização e custos logísticos
-15|  Projeto integrador 1 - Vídeo | 
-25|  Projeto integrador 2 - Revista | 
+Pontos|	Atividade
+------|----------
+60| 12 (doze) atividade de aprendizagem em grupos
+30| 3 (três) atividades avaliativas individuais
+10| Presença e participação
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: https://www.places.education/disciplinas/log_epc/
+Site da disciplina: https://www.places.education/disciplinas/adm_prod
 
 ## Bibliografia recomendada
 
-1.	Ballou, R. H. Gerenciamento da Cadeia de Suprimentos. Ed. Bookman. 2001.
-2.	Blanchard, B. S. Logistics Engineering and Management. Pearson Education. 2004. 
-3.	Bowersox, D. J., Closs, D. J. Logística Empresarial - O processo de integração da cadeia de suprimentos.
-4.	Glaeser, E. "Os Centros Urbanos, a maior invenção da humanidade." (2011).
-5.	Ching, H. Y. Gestão de Estoques na Cadeia de Logística Integrada. Editora Atlas. 2007.
-6.	Christopher, M. Logística e Gerenciamento da Cadeia de Suprimentos. Pioneira. 1992.
-7.	Chopra, P. M. Gerenciamento da Cadeia de Suprimentos. Prentice Hall, 2001.
-8.	De Sinay, M. C. F, et al. "Distribuição de carga urbana: componentes, restrições e tendências." (2004).
-9.	Dutra, N.G. S et al. O enfoque de city logistics na distribuição urbana de encomendas. 2004.
-10.	Faria, A. C. e Costa, M. F. G.  Gestão de Custos Logísticos. Editora Atlas. 2007.
-11.	Figueiredo, K. F. Et al. Logística e Gerenciamento da Cadeia de Suprimentos.  Editora Atlas. 2006.
-12.	Leite, P. R. Logística Reversa: Meio ambiente e competitividade. Pearson Prentice Hall. 2003.
-13.	Mander, Ülo; Brebbia, C. A; Tiezzi, E. (Ed.). The Sustainable City IV: Urban Regeneration and Sustainability. Wit Press, 2000.
-14.	Mckinnon, A; Browne, M; Whiteing, A. Green Logistics: Improving the environmental sustainability of logistics. Kogan Page Publishers, 2012.
-15.	Merenne-Schoumaker, B. La Localisation des Industries: Enjeux et dynamiques. Presses Universitaires de Rennes. 2011.
-16.	Morlok, E K. Introduction to transportation engineering and planning. New York: McGraw-Hill, 1978.
-17.	Novaes, A. G. Logística e Gerenciamento da Cadeia de Distribuição, 2001.
-18.	Ogden, K. W. Urban goods movement: a guide to policy and planning. 1ª Edição. Inglaterra: Editora Ashgate, 1992.
-19.	Pires, S. R. I.  Gestão da Cadeia de Suprimentos.  Editora Atlas. 2004.
-20.	Prata, B. A. et al. Logística Urbana: Fundamentos e Aplicalções. Editora CRV. 2012.
-21.	Tadeu, H. F. B. Logística Aeroportuária. Cengage Learning. 2010.
-22.	Taylor, D. A. Logística na Cadeia de Suprimentos. Pearson. Addison Wesley. 2005.
-23.	Wanke, P. F. Introdução ao Planejamento de Redes Logísticas. Editora Atlas. 2009
+1.	SLACK, N. et al. Administração da Produção. São Paulo: Editora Atlas, 2009.
+2.	TUBINO, Dalvio Ferrari. Planejamento e Controle da Produção - Teoria e Prática. São Paulo: Atlas, 2009. 
+3.	CORRÊA, L.H., GIANESI I.G.N., CAON, M. Planejamento, Programação e Controle da Produção MRP II/ERP: Conceitos, Uso e Implantação. São Paulo: Editora Atlas, 2007.
+4.	KRAJEWSKI, L.,RITZMAN, L. MALHOTRA, M. Administração de Produção e Operações. São Paulo: Pearson, 2009.
+5.	CHOPRA, S., MEINDL P. Gestão da Cadeia de Suprimentos estratégia, planejamento e operação. São Paulo: Pearson, 2011.
+6. FOGLIATTO, Flávio Sanson; FAGUNDES, Paulo Ricardo Motta. Troca rápida de ferramentas: proposta metodológica e estudo de caso. Gestão & Produção, v. 10, p. 163-181, 2003.
+7. JEONG, Ki‐Young; PHILLIPS, Don T. Operational efficiency and effectiveness measurement. International Journal of Operations & Production Management, v. 21, n. 11, p. 1404-1416, 2001.
+8. MESQUITA, Daytta Cristina Vieira; MESQUITA, Wisner Gonçalves; DA SILVA SOUZA, Leandro Rodrigues. Implementação do mapeamento de fluxo de valor de uma montadora de
+veículos, denominada empresa Beta. Exacta, v. 12, n. 2, p. 197-208, 2014.
+9. PELLEGRINI, Fernando R.; FOGLIATTO, Flávio S. Passos para implantação de sistemas de previsão de demanda: técnicas e estudo de caso. Production, v. 11, p. 43-64, 2001.
+10. REGO, José Roberto do; MESQUITA, Marco Aurélio de. Controle de estoque de peças de reposição em local único: uma revisão da literatura. Production, v. 21, p. 645-666, 2011.
+
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. 
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todas as atividades de aprendizagem.
 
 ## Comunicação
 
