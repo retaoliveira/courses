@@ -57,21 +57,21 @@ Os encontros acontecerão nas **sextas-feiras**, de **14:00 às 18:00h**. Serão
 
 | **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 08/03 | **Unidade 1**: Ambientação no R, RStudio, Git-Github, Rpubs e chatGPT. Comunicação por meio do R. **Lab1**
-| 15/03| **Unidade 1**: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. **Atividade 1**. **Projeto Integrador**: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos. **PI1** - definição do problema de pesquisa projeto integrador. 
-| 22/03| **Unidade 2**: Estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos Visualização de dados no R. **Atividade 2**
-| 05/04| **Unidade 2**: visualização de informações gerenciais e científicas. **Lab2**
-| 12/04| **Unidade 3**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.  **Atividade 3**. **PI2**: coleta e inspeção de base de dados.
-| 19/04| **Projeto Integrador**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados do Projeto Integrador. **PI3**
-| 26/04| **Unidade 3**: Estatística descritiva e mineração de dados. **Lab3**
-| 03/05| **Projeto Integrador**: Estatística descritiva e mineração de dados do projeto integrador. **PI4**
-| 10/05| **Unidade 4**: Segmentação de mercado. **Lab4**
-| 17/05| **Unidade 5**: Organização dados e produção de análises textuais sob perspectiva analítica. **Lab5**
-| 24/05| **Unidade 6**: Introdução aos dados espaciais 
-| 07/06| **Unidade 6**: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. **Lab6** 
-| 14/06| **Projeto Integrador**: Consolidação dos resultados e dos instrumentos de visualização e comunicação de informações gerenciais e científicas para subsídio ao processo decisório.
-| 21/06| **Projeto Integrador**: Entrega do relatório/dashboard/site  (e outros instrumentos) do projeto integrador para o grupo que fará a avaliação do documento como instrumento de tomada de decisão. **PI5**
-| 28/06| Apresentação do **projeto integrador** - **PI6** e relato do grupo avaliador **PI7**. 
+| 22/03 | **Unidade 1**: Ambientação no R, RStudio, Git-Github, Rpubs e chatGPT. Comunicação por meio do R. **Lab1**
+| 05/04| **Unidade 1**: RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. **Atividade 1**. **Projeto Integrador**: Identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos. **PI1** - definição do problema de pesquisa projeto integrador. 
+| 12/04| **Unidade 2**: Estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos Visualização de dados no R. **Atividade 2**
+| 19/04| **Unidade 2**: visualização de informações gerenciais e científicas. **Lab2**
+| 26/04| **Unidade 3**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados.  **Atividade 3**. **PI2**: coleta e inspeção de base de dados.
+| 03/05| **Projeto Integrador**: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados do Projeto Integrador. **PI3**
+| 10/05| **Unidade 3**: Estatística descritiva e mineração de dados. **Lab3**
+| 17/05| **Projeto Integrador**: Estatística descritiva e mineração de dados do projeto integrador. **PI4**
+| 24/05| **Unidade 4**: Segmentação de mercado. **Lab4**
+| 07/06| **Unidade 5**: Organização dados e produção de análises textuais sob perspectiva analítica. **Lab5**
+| 14/06| **Unidade 6**: Introdução aos dados espaciais 
+| 21/06| **Unidade 6**: Espacialização dados e produção de análises gerenciais que contemplem a localização como atributo decisório. **Lab6** 
+| 28/06| **Projeto Integrador**: Consolidação dos resultados e dos instrumentos de visualização e comunicação de informações gerenciais e científicas para subsídio ao processo decisório.
+| 05/07| **Projeto Integrador**: Entrega do relatório/dashboard/site  (e outros instrumentos) do projeto integrador para o grupo que fará a avaliação do documento como instrumento de tomada de decisão. **PI5**
+| 12/07| Apresentação do **projeto integrador** - **PI6** e relato do grupo avaliador **PI7**. 
 | **Total de Horas** | 60 horas    |
 
 ## Proposta de avaliação da aprendizagem
