@@ -98,7 +98,7 @@
 [[main]]
   parent = "Disciplinas"
   name = "Planejamento e Controle da Produção - Eng. Materiais - 2024/1"
-  url = "disciplinas/adm_prod/"
+  url = "http://adm-prod.github.io/site"
   weight = 20
 
 #[[main]]

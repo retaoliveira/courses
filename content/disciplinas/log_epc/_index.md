@@ -82,7 +82,9 @@ TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: https://www.places.education/disciplinas/log_epc/
+[Site da disciplina](https://www.places.education/disciplinas/log_epc/)
+[Jamboard da disciplina](https://jamboard.google.com/d/134sZy54Vit4YNenOhZtFByYw5broCd2ia2gTNkSkUD8/edit?usp=sharing)
+
 
 ## Bibliografia recomendada
 
