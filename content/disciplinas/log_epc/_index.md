@@ -48,22 +48,22 @@ Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**.
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 04/03              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 11/03              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 18/03              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 25/03              |2h|Nível de serviço logístico, desempenho e ICT.
-| 01/04              |2h|KPIs em gestão de processos de produção e suprimento
-| 08/04              |2h|Logística urbana.
-| 15/04              |2h|Logística urbana.
-| 22/04              |2h|Transportes e distribuição física.
-| 29/04              |2h|Transportes e distribuição física.
-| 06/05              |2h|Gestão de estoques e armazenagem.
-| 13/05              |2h|Localizações logísticas.
-| 20/05              |2h|Localizações logísticas.
-| 27/05              |2h|Custos logísticos.
-| 03/06              |2h|Custos logísticos.
-| 10/06              |2h|Logística reversa, verde e sustentável.
-| 17/06              |2h|Exame especial
+| 18/03              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 25/03              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 01/04              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 08/04              |2h|Nível de serviço logístico, desempenho e ICT.
+| 15/04              |2h|KPIs em gestão de processos de produção e suprimento
+| 22/04              |2h|Logística urbana.
+| 29/04              |2h|Logística urbana.
+| 06/05              |2h|Transportes e distribuição física.
+| 13/05              |2h|Transportes e distribuição física.
+| 20/05              |2h|Gestão de estoques e armazenagem.
+| 27/05              |2h|Localizações logísticas.
+| 03/06              |2h|Localizações logísticas.
+| 10/06              |2h|Custos logísticos.
+| 17/06              |2h|Custos logísticos.
+| 24/06              |2h|Logística reversa, verde e sustentável.
+| 01/07              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
