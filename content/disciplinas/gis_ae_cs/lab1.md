@@ -13,6 +13,8 @@ weight: 9
 
 Esta atividade tem como objetivo explorar o R e o QGIS para manipulação de dados espaciais. Para isso, vamos utilizar o banco de dados espaciais de limites de bairros em Belo Horizonte e a localização de atividades econômicas formais, disponíveis no [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base).
 
+---
+
 # Algumas informações gerais:
 
 ## R e RStudio
@@ -23,7 +25,9 @@ A estrutura do `R` fundamenta-se em uma grande variedade de ferramentas quantita
 
 A priori, instale os seguintes pacotes no seu computador:
 
-`install.packages(c("rmarkdown", "knitr", "dsbox", "tidyverse", "coronavirus", "lubridate", "glue", "scales", "ggrepel", "DT", "flexdashboard", "blogdown", "bookdown", "pagedown", "xaringan", "xaringanthemer", "janitor", "jsonlite", "kableExtra", "leaflet", "officedown", "openxlsx", "readr", "readxl", "devtools", "remotes", "swirl", "stringr", "tmap", "tmapstool", "rvest", "viridis", "installr", "distill", "rticles", "data.table", "ggplot2", "hrbrthemes", "plotly", "learnr", "prettydoc", "corrplot", "tufte", "ggpubr", "sf", "htmlwidgets"))`
+```{r}
+install.packages(c("rmarkdown", "knitr", "dsbox", "tidyverse", "coronavirus", "lubridate", "glue", "scales", "ggrepel", "DT", "flexdashboard", "blogdown", "bookdown", "pagedown", "xaringan", "xaringanthemer", "janitor", "jsonlite", "kableExtra", "leaflet", "officedown", "openxlsx", "readr", "readxl", "devtools", "remotes", "swirl", "stringr", "tmap", "tmapstool", "rvest", "viridis", "installr", "distill", "rticles", "data.table", "ggplot2", "hrbrthemes", "plotly", "learnr", "prettydoc", "corrplot", "tufte", "ggpubr", "sf", "htmlwidgets"))
+```
 
 Ao longo do curso chamaremos as bibliotecas para que possamos implementar as funções.
 
@@ -31,7 +35,7 @@ Em caso de dúvidas, assista o seguinte video:
 
 <iframe width="1197" height="645" src="https://www.youtube.com/embed/dOasm9dKjKE?list=PLqDTVtdD-5aPagWJB6_0IaKN3IpIGhFU1" title="HelloR! Breve introdução de funções, pacotes e objetos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Os objetos sf podem armazenar informações adicionais sobre os sistemas de referência de coordenadas (CRS). O valor padrão é NA (Não Disponível), como pode ser verificado com st_crs():
+Os objetos `sf` podem armazenar informações adicionais sobre os **sistemas de referência de coordenadas** (CRS). O valor padrão é NA (Não Disponível), como pode ser verificado com st_crs():
 
 ```{r}
 st_crs(world)
@@ -45,34 +49,38 @@ Quando um sistema de referência de coordenadas (CRS) está faltando ou o CRS er
 new_vector = st_set_crs(new_vector, "EPSG:4326") # set CRS
 ```
 
-## Esta atividade deverá ser realizada no dia **02/04/25**. São propostas as seguintes atividades:
+---
 
-### 1. Instale os aplicativos R e RStudio, nessa ordem, conforme diretrizes do [link](https://www.places.education/cursos/intro_r/install/) 
+# Atividades
 
-### 2. Faça a instalação do aplicativo QGIS. O download do instalador pode ser obtido no [link](https://qgis.org/download/)
+Esta atividade deverá ser realizada no dia **02/04/25**. São propostas as seguintes atividades:
 
-### 3. Abra o QGIS e o RStudio e verifique se estão funcionando corretamente. Explore o ambiente do RStudio e do QGIS.
+1. Instale os aplicativos R e RStudio, nessa ordem, conforme diretrizes do [link](https://www.places.education/cursos/intro_r/install/) 
 
-### 4. Leia os tópicos Dados espaciais e QGIS na [página](https://www.places.education/cursos/spatial/localizacao/#dados-espaciais) com cuidado e entenda o que é a estrutura de arquivos denominada `shapefile`.  
+2. Faça a instalação do aplicativo QGIS. O download do instalador pode ser obtido no [link](https://qgis.org/download/)
 
-### 5. Faça o download dos shapefiles referente aos bairros BH e atividades econômicas formais no site [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo?#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base)
+3. Abra o QGIS e o RStudio e verifique se estão funcionando corretamente. Explore o ambiente do RStudio e do QGIS.
 
-### 6. Abra o QGIS e carregue os shapefiles referentes aos bairros BH e atividades econômicas formais.
+4. Leia os tópicos Dados espaciais e QGIS na [página](https://www.places.education/cursos/spatial/localizacao/#dados-espaciais) com cuidado e entenda o que é a estrutura de arquivos denominada `shapefile`.  
 
-### 7. Carregue os shapefiles no RStudio utilizando o pacote `sf` e explore as respectivas funções do pacote para manipulação de dados espaciais. 
+5. Faça o download dos shapefiles referente aos bairros BH e atividades econômicas formais no site [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo?#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base)
+
+6. Abra o QGIS e carregue os shapefiles referentes aos bairros BH e atividades econômicas formais.
+
+7. Carregue os shapefiles no RStudio utilizando o pacote `sf` e explore as respectivas funções do pacote para manipulação de dados espaciais. 
 
 ```{r}
 shapefile <- st_read('caminho do arquivo')
 ```
+
+Informações sobre este procedimento estão disponíveis no [link](https://www.places.education/cursos/spatial/geodata/). Mas não se apresse. Utilize apenas a função `st_read()` para carregar os shapefiles.  
 
 ```{r}
 vignette(package = "sf") # see which vignettes are available
 vignette("sf1")          # an introduction to the package
 ```
 
-Informações sobre este procedimento estão disponíveis no [link](https://www.places.education/cursos/spatial/geodata/). Mas não se apresse. Utilize apenas a função `st_read()` para carregar os shapefiles.  
-
-### 8. Agora agere o seu primeiro mapa de representação dos dados espaciais no QGIS e no RStudio. 
+8. Agora agere o seu primeiro mapa de representação dos dados espaciais no QGIS e no RStudio. 
 
 No QGIS é bem direto. Basta clicar no botão `Add Vector Layer` e selecionar o shapefile que deseja visualizar.
 
@@ -81,6 +89,8 @@ No RStudio você pode utilizar a função `plot()` para visualizar os dados.
 ```{r}
 plot(dados)
 ```
+
+---
 
 # Hora de pensar
 
