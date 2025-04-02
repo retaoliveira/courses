@@ -53,7 +53,7 @@ new_vector = st_set_crs(new_vector, "EPSG:4326") # set CRS
 
 # Atividades
 
-Esta atividade deverá ser realizada no dia **02/04/25**. São propostas as seguintes atividades:
+Esta atividade deverá ser realizada no dia **02/04/25**. São propostos os seguintes exercícios:
 
 1. Instale os aplicativos R e RStudio, nessa ordem, conforme diretrizes do [link](https://www.places.education/cursos/intro_r/install/) 
 
@@ -80,7 +80,7 @@ vignette(package = "sf") # see which vignettes are available
 vignette("sf1")          # an introduction to the package
 ```
 
-8. Agora agere o seu primeiro mapa de representação dos dados espaciais no QGIS e no RStudio. 
+8. Agora gere o seu primeiro mapa de representação dos dados espaciais no QGIS e no RStudio. 
 
 No QGIS é bem direto. Basta clicar no botão `Add Vector Layer` e selecionar o shapefile que deseja visualizar.
 
