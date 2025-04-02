@@ -3,7 +3,7 @@ date: "2025-04-02T00:00:00+01:00"
 draft: false
 menu:
   gis_ae_cs:
-    parent: Unidade 1
+    parent: Introdução à disciplina
     weight: 9
 title: Lab 1
 toc: false
@@ -11,7 +11,7 @@ type: docs
 weight: 9
 ---
 
-### Esta atividade tem como objetivo explorar o R e o QGIS para manipulação de dados espaciais. Para isso, vamos utilizar o banco de dados espaciais de limites de bairros em Belo Horizonte e a localização de atividades econômicas formais, disponíveis no [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base).
+Esta atividade tem como objetivo explorar o R e o QGIS para manipulação de dados espaciais. Para isso, vamos utilizar o banco de dados espaciais de limites de bairros em Belo Horizonte e a localização de atividades econômicas formais, disponíveis no [BHMAP](https://bhmap.pbh.gov.br/v2/mapa/idebhgeo#zoom=4&lat=7796893.0925&lon=609250.9075&baselayer=base).
 
 # Algumas informações gerais:
 
