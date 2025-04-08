@@ -18,6 +18,8 @@ A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de
 
 A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostos `projetos incrementais` para apreensão do conhecimento e um `projeto integrador` para consolidação e perspectiva integrada da disciplina.
 
+O plano de ensino da disciplina está disponível no [link](https://www.administracao.bh.cefetmg.br/wp-content/uploads/sites/180/2020/11/TE-GI_Análise-de-Dados-para-Gestão-Organizacional.pdf)
+
 ## Ementa da disciplina
 
 - Comunicação e reprodutibilidade de dados, relatórios, apresentações e produções científicas em RMarkdown.
