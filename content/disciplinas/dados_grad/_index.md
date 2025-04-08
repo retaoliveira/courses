@@ -43,61 +43,57 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 Os encontros acontecerão nas **segundas e terças-feiras**, de **18:50 às 20:30h**.
 
-
-
-**Encontro** | **Data**           | **Descrição da Atividade**                                                                                                                                                 | 
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Encontro** | **Data**           | **Descrição da Atividade**                                                                
+|------------|--------------------|--------------------------------------------------------
 01| 07/04| Ambientação no R, RStudio, Git-Github e Rpubs. |
-02| 08/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
-03| 14/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
-04| 15/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
-05| 22/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
-06| 28/04| Visualização e comunicação de informações gerenciais e científicas. | 
-07| 29/04| Visualização e comunicação de informações gerenciais e científicas. | 
-08| 05/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+02| 08/04| Ambientação no R, RStudio, Git-Github e Rpubs. |
+03| 14/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+04| 15/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+05| 22/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+06| 28/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+07| 29/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+08| 05/05| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
 09| 06/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
 10| 12/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
 11| 13/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-12| 19/05| Segmentação de mercado            | 
-13| 20/05| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
-14| 26/05| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
-15| 27/05| Seminário final com apresentação dos trabalhos. | 
-16| 02/06| Exame especial|              |
-17| 03/06| Exame especial|              |
-28| 09/06| Exame especial|              |
-19| 10/06| Exame especial|              |
-20| 16/06| Exame especial|              |
-21| 17/06| Exame especial|              |
-22| 23/06| Exame especial|              |
-23| 24/06| Exame especial|              |
-24| 30/06| Exame especial|              |
-25| 01/07| Exame especial|              |
-26| 07/07| Exame especial|              |
-27| 08/07| Exame especial|              |
-28| 14/07| Exame especial|              |
-29| 15/07| Exame especial|              |
-30| 21/07| Exame especial|              |
+12| 19/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+13| 20/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+14| 26/05| Organização de dados e produção de análises textuais sob perspectiva analítica. | 
+15| 27/05| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+16| 02/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+17| 03/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+18| 09/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+19| 10/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. | 
+20| 16/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+21| 17/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+22| 23/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+23| 24/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+24| 30/06| Visualização e comunicação de informações gerenciais e científicas. |
+25| 01/07| Visualização e comunicação de informações gerenciais e científicas. |
+26| 07/07| Visualização e comunicação de informações gerenciais e científicas. |
+27| 08/07| Visualização e comunicação de informações gerenciais e científicas. |
+28| 14/07| Visualização e comunicação de informações gerenciais e científicas. |
+29| 15/07| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
+30| 21/07| Exame especial |
 | **Total de Horas** | | 30 horas     |
 
 ## Proposta de avaliação da aprendizagem
 
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem (projetos incrementais) e por meio da elaboração de um projeto transversal aos objetivos (projeto integrador).
 
-| Pontos | Entrega | Atividade                                                                                                                                                                                                                                                    |
-|--------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5 | 17/06 | Lab 1 – Introdução do R e IDE RStudio. RMarkdown. |
-| 5 | 24/06 | Lab 2 – Tipos de dados e objetos no R|
-| 5 | 01/07 | Lab 3 – Visualização de dados – base ggplot2|
-| 5 | 15/07 | Lab 4 – Importação e introdução ao tratamento de dados no R.|
-| 5 | 22/07 | Lab 5 – Tratamento de dados - dplyr|
-| 5 | 05/08 | Lab 6 – Junção de múltiplos dataframes|	
-| 5 | 26/08 | Lab 7 – Segmentação de mercado – análise de cluster|
-| 10 | 01/07 | Projeto integrador - Entrega parcial|
-| 20 | 09/09 | Projeto integrador - Entrega final|
-| 15 | 10/09 | Projeto integrador - Apresentação|
-| 15 | 10/09 | Projeto integrador - Avaliação pelos pares|
-| 5 |       | Engajamento|
-| TOTAL: |         | 100 pontos                                                                                                                                                                                                                                                   |
+| Pontos | Atividade|
+|--------|---------|
+| 5 | Lab 1 – Introdução do R e IDE RStudio. RMarkdown. |
+| 5 | Lab 2 – Tipos de dados e objetos no R|
+| 10| Lab 3 – Visualização de dados – base ggplot2|
+| 5 | Lab 4 – Importação e introdução ao tratamento de dados no R.|
+| 10| Lab 5 – Tratamento de dados - dplyr|
+| 5 | Lab 6 – Junção de múltiplos dataframes|	
+| 10| Lab 7 – Análise textual| 
+| 10| Lab 8 – Análise espacial|
+| 40| Projeto integrador - Entrega final|
+
+| TOTAL: |  100 pontos                                                                                                                                                                                                                                   
 
 ## Requisitos básicos e expectativas iniciais
 
