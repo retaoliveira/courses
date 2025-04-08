@@ -45,25 +45,39 @@ Os encontros acontecerão nas **segundas e terças-feiras**, de **18:50 às 20:3
 
 
 
-| **Data**           | **Descrição da Atividade**                                                                                                                                                 | 
+**Encontro** | **Data**           | **Descrição da Atividade**                                                                                                                                                 | 
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| 25/05| Ambientação no R, RStudio, Git-Github e Rpubs. | X |                |
-| 28/05| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. | X |                |
-| 04/06| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | X |                |
-| 11/06| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | X |                |
-| 18/06| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | X |                |
-| 25/06| Visualização e comunicação de informações gerenciais e científicas. | X  |                |
-| 02/07| Visualização e comunicação de informações gerenciais e científicas. | X  |                |
-| 09/07| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| X |           |
-| 16/07| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| X |           |
-| 23/07| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| X |           |
-| 06/08| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| X |           |
-| 13/08| Segmentação de mercado            | X            |                |
-| 27/08| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| X|                |
-| 03/09| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| X|                |
-| 10/09| Seminário final com apresentação dos trabalhos. | X|                |
-| 17/09| Exame especial|              |                |
-| **Total de Horas** | | 30 horas     |                |
+01| 07/04| Ambientação no R, RStudio, Git-Github e Rpubs. |
+02| 08/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+03| 14/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+04| 15/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+05| 22/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+06| 28/04| Visualização e comunicação de informações gerenciais e científicas. | 
+07| 29/04| Visualização e comunicação de informações gerenciais e científicas. | 
+08| 05/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+09| 06/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+10| 12/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+11| 13/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+12| 19/05| Segmentação de mercado            | 
+13| 20/05| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
+14| 26/05| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
+15| 27/05| Seminário final com apresentação dos trabalhos. | 
+16| 02/06| Exame especial|              |
+17| 03/06| Exame especial|              |
+28| 09/06| Exame especial|              |
+19| 10/06| Exame especial|              |
+20| 16/06| Exame especial|              |
+21| 17/06| Exame especial|              |
+22| 23/06| Exame especial|              |
+23| 24/06| Exame especial|              |
+24| 30/06| Exame especial|              |
+25| 01/07| Exame especial|              |
+26| 07/07| Exame especial|              |
+27| 08/07| Exame especial|              |
+28| 14/07| Exame especial|              |
+29| 15/07| Exame especial|              |
+30| 21/07| Exame especial|              |
+| **Total de Horas** | | 30 horas     |
 
 ## Proposta de avaliação da aprendizagem
 
@@ -119,7 +133,7 @@ Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira\@cefetmg.br](mailto:renataoliveira@cefetmg.br)
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
 
 > Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
