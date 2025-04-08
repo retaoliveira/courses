@@ -865,11 +865,6 @@ Antes de avançar, vamos usar o __help__ (documentação) do R para descobrir o 
 ?mtcars
 ```
 
-Se quiseremos olhar para os dados que acabamos de carregar utilizamos a função _View_ (com V maiúsculo, algo pouco usual em R):
-
-```{r}
-View(mtcars)
-```
 
 
 ### Do editor de planilhas ao R - parte 1
