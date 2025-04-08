@@ -155,11 +155,11 @@
 #  url = "disciplinas/adm_prod/"
 #  weight = 70
   
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Análise de Dados para gestão organizacional - 2021/1"
-#  url = "disciplinas/dados_grad/"
-#  weight = 10
+[[main]]
+  parent = "Disciplinas"
+  name = "Análise de Dados para gestão organizacional - 2021/1"
+  url = "disciplinas/dados_grad/"
+  weight = 10
 
 #[[main]]
 #  parent = "Disciplinas"
