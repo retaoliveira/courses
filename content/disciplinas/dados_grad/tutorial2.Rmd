@@ -22,7 +22,7 @@ library(tidyverse)
 ```
 
 ## Diretrizes gerais:
-1. Baixe o arquivo e abra no RStudio. [Link](https://www.dropbox.com/s/027ibiwzsfz128v/tutorial2.Rmd?dl=0)
+1. Baixe o arquivo e abra no RStudio. [Link](https://www.icloud.com/iclouddrive/0dc-NMSJNsMb_IlYqyZx1ur7g#tutorial2)
 
 2. Execute as operações assinaladas nos exercícios a seguir. 
 
