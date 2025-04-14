@@ -1,21 +1,3 @@
----
-date: 2021-10-15T00:00:00+01:00
-draft: true
-menu:
-  intro_r:
-    parent: 1 - Primeiros passos
-    weight: 50
-title: Tipos de dados
-type: docs
-editor_options: 
-  markdown: 
-    wrap: 70
-output: 
-  blogdown::html_page:
-    toc: true
-weight: 390
----
-
 
 <div id="TOC">
 <ul>
@@ -392,8 +374,8 @@ print(f_tamanho)</code></pre>
 <pre><code>## [1] baixo
 ## Levels: alto baixo medio</code></pre>
 <pre class="r"><code>f_tamanho[1] &gt; f_tamanho[2]</code></pre>
-<pre><code>## Warning in Ops.factor(f_tamanho[1], f_tamanho[2]): &#39;&gt;&#39; not meaningful for
-## factors</code></pre>
+<pre><code>## Warning in Ops.factor(f_tamanho[1], f_tamanho[2]): &#39;&gt;&#39; não faz sentido para
+## fatores</code></pre>
 <pre><code>## [1] NA</code></pre>
 <p>Sem ordenarmos, não podemos comparar os níveis e estamos assumindo a variável como sendo nominal.</p>
 <p>Para ordernar os níveis de um vetor de fatores, temos que informar alguns parâmetros adicionais – <em>order</em> e <em>levels</em> – ao criá-lo:</p>
@@ -821,6 +803,7 @@ print(cafe2)</code></pre>
 <p>Pronto! Logo mais veremos como abrir conjuntos de dados de outras fontes (arquivos de texto, outros softwares, etc), mas já podemos começar a trabalhar com <em>data frames</em>.</p>
 <p>Antes de avançar, vamos usar o <strong>help</strong> (documentação) do R para descobrir o que há no <em>data frame</em> chamado <em>mtcars</em>:</p>
 <pre class="r"><code>?mtcars</code></pre>
+<pre><code>## inicializando servidor httpd de ajuda ... concluído</code></pre>
 <div id="do-editor-de-planilhas-ao-r---parte-1" class="section level3">
 <h3>Do editor de planilhas ao R - parte 1</h3>
 <p>A partir desse ponto no curso vamos resistir à tentação de “olhar” para os dados. O hábito de quem utiliza com editores de planilha como MS Excel ou Libre Office, ou ainda com algums softwares de análise de dados como SPSS e Minitab, é trabalhar “olhando” para os dados, ou seja, para os valores de cada célula de uma base dados.</p>

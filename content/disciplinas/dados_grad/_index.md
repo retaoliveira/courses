@@ -107,7 +107,7 @@ A avaliação priorizará o esforço e a criatividade apresentados em detrimento
 
 ## Recursos necessários
 
-Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone. Os softwares a serem instalados são:
+Computador com Sistema Operacional à escolha do estudante, conexão à internet. Os softwares a serem instalados são:
 
 -   R (Windows) - <https://cran.r-project.org/bin/windows/base/>
 -   RStudio (Windows) - <https://rstudio.com/products/rstudio/download/>
@@ -133,7 +133,6 @@ Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 
 Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
 
-> Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
 
 ## Políticas institucionais e da disciplina
 
