@@ -19,17 +19,144 @@ weight: 110
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-SIRGAS 2000 é um sistema de referência geodésico usado na América Latina, incluindo o Brasil. Seu código EPSG é 4674. Esse sistema é baseado no elipsoide GRS 1980 e é utilizado em aplicações geoespaciais em toda a América Central e do Sul.
+# Introdução
 
-Se você estiver trabalhando com projeções UTM, o código EPSG varia conforme a zona. Por exemplo, SIRGAS 2000 / UTM zona 23S tem o código EPSG 31983, que é adequado para estudos da RMBH e BH.
+## WGS 84
+
+O sistema de referência geodésico **WGS** 84 (World Geodetic System 1984) é um sistema de coordenadas geográficas amplamente utilizado em aplicações globais, como GPS e mapeamento. Seu código EPSG é **4326**. O WGS 84 é baseado no elipsoide WGS 84 e é utilizado para representar a superfície da Terra em um sistema tridimensional.
+
+## SIRGAS 2000
+
+Com o fim do término da coexistência entres os Sistemas de Referência no Brasil, passa ser válido apenas o SRC SIRGAS em sua realização 2000 (SIRGAS2000).
+
+O **SIRGAS 2000** é um sistema de referência geodésico utilizado na América Latina, incluindo o Brasil. Seu código EPSG é **4674**. Esse sistema é baseado no elipsoide GRS 1980 e é utilizado em aplicações geoespaciais em toda a América Central e do Sul.
+
+## SIRGAS 2000 / UTM 23S
+O **SIRGAS 2000 / UTM 23S** é uma projeção cartográfica que combina o sistema de referência SIRGAS 2000 com a projeção UTM (Universal Transverse Mercator) na zona 23S. O código EPSG para essa projeção é **31983**. Essa projeção é amplamente utilizada em aplicações geográficas e de mapeamento no Brasil, especialmente em áreas urbanas e rurais.
+
+**UTM** é a sigla para Universal Transverse Mercator, um sistema de coordenadas que divide a Terra em zonas para localizar pontos na superfície. É um sistema de **projeção cartográfica** que permite representar áreas geográficas em um formato plano. 
+
+A projeção UTM é baseada em um cilindro tangente ao elipsoide da Terra, o que minimiza as distorções em áreas relativamente pequenas. O sistema UTM é amplamente utilizado em aplicações de mapeamento e geoprocessamento, especialmente em áreas urbanas e rurais.
+
+### Principais características  
+- A Terra é dividida em 60 zonas, cada uma com 6 graus de longitude
+- Cada zona tem um sistema de coordenadas próprio
+- A unidade de medida é o metro
+- A origem do sistema é o Equador e o Meridiano Central
+- O sistema UTM é muito usado em geotecnologias, como SIG (Sistemas de Informação Geográfica)
+
+### Vantagens
+- É preciso em áreas relativamente pequenas
+- A utilização de metros como unidade de medida facilita a conversão e a comparação de dados
+- É amplamente suportado por softwares de GIS
+
+### Desvantagens
+- A projeção UTM não é adequada para áreas muito grandes, pois pode introduzir distorções significativas
+- A divisão da Terra em zonas pode causar problemas de continuidade em áreas que se estendem por várias zonas
+
+Se você estiver trabalhando com projeções UTM, o código EPSG varia conforme a zona. Por exemplo, **SIRGAS 2000 / UTM zona 23S** tem o código EPSG **31983**, que é adequado para estudos da RMBH e BH.
+
+**UTM** é a sigla para Universal Transverse Mercator, um sistema de coordenadas que divide a Terra em zonas para localizar pontos na superfície. É um sistema de **projeção cartográfica** que permite representar áreas geográficas em um formato plano. 
+
+
+### Principais características  
+- A Terra é dividida em 60 zonas, cada uma com 6 graus de longitude
+- Cada zona tem um sistema de coordenadas próprio
+- A unidade de medida é o metro
+- A origem do sistema é o Equador e o Meridiano Central
+- O sistema UTM é muito usado em geotecnologias, como SIG (Sistemas de Informação Geográfica)
+
+### Vantagens
+- É preciso em áreas relativamente pequenas
+- A utilização de metros como unidade de medida facilita a conversão e a comparação de dados
+- É amplamente suportado por softwares de GIS
+
+### Desvantagens
+- A projeção UTM não é adequada para áreas muito grandes, pois pode introduzir distorções significativas
+- A divisão da Terra em zonas pode causar problemas de continuidade em áreas que se estendem por várias zonas
+
+
+### Sistemas de coordenadas geográficas/projetadas importantes
+
+- SIRGAS 2000 - EPSG:4674
+- WGS 84 - EPSG:4326
+- SIRGAS 2000 / UTM zona 23S - EPSG:31983
+- SAD 69 - EPSG:4618
+
+## ATENÇÃO!!!!
+
+No SIG, existe o Sistema de Coordenadas do Projeto e o Sistema de Coordenadas da camada. Algumas dúvidas comuns são:
+
+- Os dados em shapefile não aparecem sobrepostos no mapa;
+- A grade de coordenadas não aparece;
+- As coordenadas da grade estão estranhas;
+- O valor da área está errado no mapa.
+
+Todos esses “problemas” têm relação direta com o pouco conhecimento da pessoa sobre os Sistemas de Referência. Na [apostila](https://pt.slideshare.net/slideshow/20141011-qgis24-sistemadereferenciadecoordenadas/40168072#1) desenvolvida por Jorge Santos você encontrará todas as informações necessárias para entender o que são os sistemas de referência de coordenadas, como funcionam e como utilizá-los no QGIS.
+
+> Fonte: [QGIS Brasil](https://qgisbrasil.org/2014/10/15/qgis24-sistemas-de-referencia-de-coordenadas-src/) e elaboração própria
+
+---
+
+# Atividade: Transformação de Sistemas de Coordenadas no QGIS
+
+## Objetivo
+
+Ensinar os alunos a converter coordenadas entre sistemas geográficos e projetados utilizando o QGIS.
+
+---
+
+## Passo a passo da atividade
+
+### 1. Abrindo o QGIS e carregando os dados
+
+a. Inicie o QGIS e crie um novo projeto.
+
+b. Salve o projeto com o nome `lab1_qgis.qgz` na pasta de trabalho.
+
+c. Faça o download de um `shapefile` cujas feições sejam polígonos e outro com pontos no BHMap. Salve os `shapefile` na pasta de trabalho.
+
+d. No menu Camada, selecione `Adicionar Camada Vetorial` e inclua os dois `shapefiles` salvos no projeto.
+
+e. Verifique o sistema de coordenadas que está no projeto. Caso não esteja no sistema de coordenadas desejado, altere o sistema de coordenadas do projeto para `EPGS:4674` (SIRGAS 2000).
+
+f. Clique em Abrir para visualizar os dados no mapa.
+
+### 2. Verificando o sistema de coordenadas da camada
+
+a. Clique com o botão direito na camada de pontos e selecione Propriedades.
+
+b. Vá até a aba Fonte e veja o Sistema de Referência Espacial (CRS) atribuído à camada.
+
+c. Se a camada estiver em coordenadas geográficas (WGS 84 ou Sirgas 2000), será necessário transformá-la para um sistema projetado.
+
+
+### 3. Transformando para um sistema projetado
+
+a. Clique com o botão direito na camada e selecione Exportar > Salvar Como.
+
+b. No campo Sistema de Referência Espacial (CRS), clique em Selecionar CRS.
+
+c. Escolha um sistema projetado adequado à área de estudo (por exemplo, SIRGAS 2000 / UTM Zone 23S - EPSG:31983 para parte do Brasil).
+
+d.  Defina o formato do arquivo de saída e o diretório onde será salvo.
+
+e. Clique em OK para salvar a nova camada com o sistema projetado.
+
+### 4. Conferindo a transformação
+
+a. Adicione a nova camada ao projeto e compare sua sobreposição com a camada original.
+
+b. Verifique nas propriedade de cada camada qual o SRC utilizado.
+
+### Discussão e Conclusão
+
+Qual foi a diferença entre os sistemas de coordenadas antes e depois da conversão?
+
+Por que é importante utilizar sistemas projetados em análises geográficas?
+
+Como a escolha do CRS pode impactar a precisão dos dados?
 
 
 
 
-Neste `lab` você terá a oportunidade de realizar atividades que possibilitarão o desenvolvimento de competências práticas em QGIS. O objetivo é que você consiga realizar as atividades propostas de forma autônoma, utilizando o QGIS como ferramenta de análise espacial.
-
-1. Acesse o QGIS e crie um novo projeto. Salve o projeto com o nome `lab1_qgis.qgz`.
-2. Adicione uma camada vetorial de pontos ao projeto. Você pode usar a camada `pontos.shp` que está disponível na pasta `dados` do repositório do curso.
-3. Adicione uma camada vetorial de polígonos ao projeto. Você pode usar a camada `poligonos.shp` que está disponível na pasta `dados` do repositório do curso.
-4. verifique qual o sistema de coordenadas geográficas ou projetadas que está no projeto. Caso não esteja no sistema de coordenadas desejado, altere o sistema de coordenadas do projeto para  `EPGS:4674` (SIRGAS 2000).
-4. Altere a simbologia das camadas adicionadas. Utilize cores diferentes para os pontos e polígonos, e ajuste a transparência do raster.
