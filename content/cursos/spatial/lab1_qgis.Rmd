@@ -1,0 +1,35 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  spatial:
+    parent: Labs
+    weight: 110
+title: Lab 1 - QGIS
+editor_options: 
+  markdown: 
+    wrap: 30
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 110
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+SIRGAS 2000 é um sistema de referência geodésico usado na América Latina, incluindo o Brasil. Seu código EPSG é 4674. Esse sistema é baseado no elipsoide GRS 1980 e é utilizado em aplicações geoespaciais em toda a América Central e do Sul.
+
+Se você estiver trabalhando com projeções UTM, o código EPSG varia conforme a zona. Por exemplo, SIRGAS 2000 / UTM zona 23S tem o código EPSG 31983, que é adequado para estudos da RMBH e BH.
+
+
+
+
+Neste `lab` você terá a oportunidade de realizar atividades que possibilitarão o desenvolvimento de competências práticas em QGIS. O objetivo é que você consiga realizar as atividades propostas de forma autônoma, utilizando o QGIS como ferramenta de análise espacial.
+
+1. Acesse o QGIS e crie um novo projeto. Salve o projeto com o nome `lab1_qgis.qgz`.
+2. Adicione uma camada vetorial de pontos ao projeto. Você pode usar a camada `pontos.shp` que está disponível na pasta `dados` do repositório do curso.
+3. Adicione uma camada vetorial de polígonos ao projeto. Você pode usar a camada `poligonos.shp` que está disponível na pasta `dados` do repositório do curso.
+4. verifique qual o sistema de coordenadas geográficas ou projetadas que está no projeto. Caso não esteja no sistema de coordenadas desejado, altere o sistema de coordenadas do projeto para  `EPGS:4674` (SIRGAS 2000).
+4. Altere a simbologia das camadas adicionadas. Utilize cores diferentes para os pontos e polígonos, e ajuste a transparência do raster.
