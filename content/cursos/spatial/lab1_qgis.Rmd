@@ -32,11 +32,12 @@ Com o fim do término da coexistência entres os Sistemas de Referência no Bras
 O **SIRGAS 2000** é um sistema de referência geodésico utilizado na América Latina, incluindo o Brasil. Seu código EPSG é **4674**. Esse sistema é baseado no elipsoide GRS 1980 e é utilizado em aplicações geoespaciais em toda a América Central e do Sul.
 
 ## SIRGAS 2000 / UTM 23S
+
 O **SIRGAS 2000 / UTM 23S** é uma projeção cartográfica que combina o sistema de referência SIRGAS 2000 com a projeção UTM (Universal Transverse Mercator) na zona 23S. O código EPSG para essa projeção é **31983**. Essa projeção é amplamente utilizada em aplicações geográficas e de mapeamento no Brasil, especialmente em áreas urbanas e rurais.
 
-**UTM** é a sigla para Universal Transverse Mercator, um sistema de coordenadas que divide a Terra em zonas para localizar pontos na superfície. É um sistema de **projeção cartográfica** que permite representar áreas geográficas em um formato plano. 
+**UTM** é a sigla para Universal Transverse Mercator, um sistema de coordenadas que ![divide a Terra em zonas](https://pt.wikipedia.org/wiki/Universal_Transversa_de_Mercator#/media/Ficheiro:Utm-zones.jpg) para localizar pontos na superfície. É um sistema de **projeção cartográfica** que permite representar áreas geográficas em um formato plano. 
 
-A projeção UTM é baseada em um cilindro tangente ao elipsoide da Terra, o que minimiza as distorções em áreas relativamente pequenas. O sistema UTM é amplamente utilizado em aplicações de mapeamento e geoprocessamento, especialmente em áreas urbanas e rurais.
+A projeção UTM é baseada em um [cilindro tangente ao elipsoide da Terra](https://adenilsongiovanini.com.br/blog/coordenadas-utm/), o que minimiza as distorções em áreas relativamente pequenas. O sistema UTM é amplamente utilizado em aplicações de mapeamento e geoprocessamento, especialmente em áreas urbanas e rurais.
 
 ### Principais características  
 - A Terra é dividida em 60 zonas, cada uma com 6 graus de longitude
