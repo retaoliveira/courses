@@ -65,7 +65,7 @@ weight: 390
 
 Carregue o *data frame* *mtcars*
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 data(mtcars)
 ```
 
@@ -73,80 +73,80 @@ data(mtcars)
 
 Q1)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 Head(mtcars)
 ```
 
 Q2)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 str(Mtcars)
 ```
 
 Q3)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 dim[mtcars]
 ```
 
 Q4)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 nomes(mtcars)
 ```
 
 Q5)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 head(mtcars, x = 10)
 ```
 
 Q6)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- ("pato", "cachorro", "minhoca", "lagarto")
 ```
 
 Q7)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v2 <- c("1", "2", "3", "4")
 v1 + 42
 ```
 
 Q8)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c("pato", "cachorro", "minhoca", "lagarto"
 ```
 
 Q9)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v3 <- c(33 31 40 25 27 40)
 ```
 
 Q10)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c(pato, cachorro, minhoca, lagarto)
 ```
 
 Q11)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c("pato" "cachorro" "minhoca" "lagarto")
 ```
 
 Q12)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v3 <- C(33, 31, 40, 25, 27, 40)
 ```
 
 Q13)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
 v3 <- c(33, 31, 40, 25, 27, 40)
 myData <- data.frame(v1, v3)
@@ -154,7 +154,7 @@ myData <- data.frame(v1, v3)
 
 Q14)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
 v4 <- c(33, 31, 40, 25)
 myData <- data.frame(v1 = animal, v4 = idade)
@@ -162,13 +162,13 @@ myData <- data.frame(v1 = animal, v4 = idade)
 
 Q15)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 ls
 ```
 
 Q16)
 
-```{r, echo = FALSE, eval=FALSE, include = TRUE}
+```{r, eval=FALSE}
 v1 <- c("pato", "cachorro", "minhoca", "lagarto")
 sum(v1)
 ```
