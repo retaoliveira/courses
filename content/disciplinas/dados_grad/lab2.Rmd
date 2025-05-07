@@ -1,12 +1,12 @@
 ---
-date: "2021-06-05T00:00:00+01:00"
+date: "2025-05-05T00:00:00+01:00"
 draft: false
 menu:
   dados_grad:
     parent: Labs
     weight: 60
 title: Lab 2 - Introdução ao GGPLOT2
-weight: 25
+weight: 400
 editor_options: 
   markdown: 
     wrap: 72
@@ -24,7 +24,7 @@ library(tidyverse)
 [Apresentação](https://places-research.github.io/class04_dataadm/?panelset=plot&panelset1=plot2&panelset2=plot3#3)
 
 ## Diretrizes gerais:
-1. Baixe o arquivo e abra no RStudio. 
+1. Crie um novo .Rmd no RStudio. 
 
 2. Execute as operações assinaladas nos exercícios a seguir. 
 
