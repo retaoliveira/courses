@@ -1,11 +1,11 @@
 ---
 date: "2021-06-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_grad:
     parent: Labs
     weight: 15
-title: Lab 2
+title: Lab 2 - Introdução ao GGPLOT
 weight: 25
 editor_options: 
   markdown: 

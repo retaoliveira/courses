@@ -1,0 +1,175 @@
+---
+date: 2021-10-15T00:00:00+01:00
+draft: false
+menu:
+  dados_grad:
+    parent: Labs
+    weight: 50
+title: Lab 1 - Introdução ao R
+type: docs
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+weight: 390
+---
+
+## A **Unidade 1** é estruturada considerando os seguintes tópicos:
+- Instalação do R e do RStudio
+- Como instalar o Git
+- Criando uma conta no Github
+- Instalar e carregar pacotes no R
+- Instalar pacotes no R a partir do Github
+- E aí, R? Entendendo o ambiente de trabalho
+- Primeiros documentos no R - RMarkdown
+
+## Diretrizes gerais:
+
+1. Atualizar versões do R e do RStudio.
+
+2. Baixe o arquivo .Rmd e abra no RStudio. 
+
+[Arquivo]()
+
+3. Instale os pacotes: 
+  - `"tidyverse"`
+  - `"tinytex"`
+  - `"knitr"`
+  - `"flexdashboard"`
+  - `"xaringan"`
+  - `"xaringanthemer"`
+  - `"xaringanExtra"` - devtools::install_github("gadenbuie/xaringanExtra")
+  - `"bookdown"`
+  - `"blogdown"`
+  
+4. Chame as bibliotecas dos pacotes instalados
+  - `library("tidyverse")`
+  - `library("tinytex")`
+  - `library("knitr")`
+  - `library("flexdashboard")`
+  - `library("xaringan")`
+  - `library("xaringanthemer")`
+  - `library("xaringanExtra")`
+  - `library("bookdown")`
+  - `library("blogdown")`
+
+5. Corrija os problemas de códigos nos respectivos `chunks`. 
+
+6. Rode o arquivo .Rmd por meio do ícone `knitr` 
+
+> Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
+
+## Exercício:
+
+Carregue o *data frame* *mtcars*
+
+```{r, eval=FALSE}
+data(mtcars)
+```
+
+## Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:
+
+Q1)
+
+```{r, eval=FALSE}
+Head(mtcars)
+```
+
+Q2)
+
+```{r, eval=FALSE}
+str(Mtcars)
+```
+
+Q3)
+
+```{r, eval=FALSE}
+dim[mtcars]
+```
+
+Q4)
+
+```{r, eval=FALSE}
+nomes(mtcars)
+```
+
+Q5)
+
+```{r, eval=FALSE}
+head(mtcars, x = 10)
+```
+
+Q6)
+
+```{r, eval=FALSE}
+v1 <- ("pato", "cachorro", "minhoca", "lagarto")
+```
+
+Q7)
+
+```{r, eval=FALSE}
+v2 <- c("1", "2", "3", "4")
+v1 + 42
+```
+
+Q8)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto"
+```
+
+Q9)
+
+```{r, eval=FALSE}
+v3 <- c(33 31 40 25 27 40)
+```
+
+Q10)
+
+```{r, eval=FALSE}
+v1 <- c(pato, cachorro, minhoca, lagarto)
+```
+
+Q11)
+
+```{r, eval=FALSE}
+v1 <- c("pato" "cachorro" "minhoca" "lagarto")
+```
+
+Q12)
+
+```{r, eval=FALSE}
+v3 <- C(33, 31, 40, 25, 27, 40)
+```
+
+Q13)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
+v3 <- c(33, 31, 40, 25, 27, 40)
+myData <- data.frame(v1, v3)
+```
+
+Q14)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
+v4 <- c(33, 31, 40, 25)
+myData <- data.frame(v1 = animal, v4 = idade)
+```
+
+Q15)
+
+```{r, eval=FALSE}
+ls
+```
+
+Q16)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+sum(v1)
+```
+
