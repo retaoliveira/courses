@@ -5,7 +5,7 @@ menu:
   gis_ae_cs:
     parent: Labs
     weight: 9
-title: Lab 3
+title: Lab 3 - Geocodificação com QGIS
 toc: false
 type: docs
 weight: 9
@@ -85,9 +85,9 @@ Conexão com a internet (para geocodificação online).
 
 # 6. Referências e Materiais Adicionais
 
-📌 Documentação do MMQGIS.  
-📌 Nominatim (OpenStreetMap Geocoding).  
-📌 Tutorial QGIS + Geocodificação.  
+📌 [Documentação do MMQGIS](https://plugins.qgis.org/plugins/mmqgis/).  
+📌 [Nominatim (OpenStreetMap Geocoding)](https://nominatim.openstreetmap.org/).  
+📌 [Tutorial QGIS + Geocodificação.](Tutorial QGIS + Geocodificação)  
 
 
 
