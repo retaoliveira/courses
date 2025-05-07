@@ -5,7 +5,7 @@ menu:
   dados_grad:
     parent: Labs
     weight: 15
-title: Lab 2 - Introdução ao GGPLOT
+title: Lab 2 - Introdução ao GGPLOT2
 weight: 25
 editor_options: 
   markdown: 
@@ -21,8 +21,10 @@ type: docs
 library(tidyverse)
 ```
 
+[Apresentação](https://places-research.github.io/class04_dataadm/?panelset=plot&panelset1=plot2&panelset2=plot3#3)
+
 ## Diretrizes gerais:
-1. Baixe o arquivo e abra no RStudio. [Link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EWhJIYOWS7FJgdMe8znoLQwBWko-J1AFpwNbpeswSuD7fQ?e=H21RLg)
+1. Baixe o arquivo e abra no RStudio. 
 
 2. Execute as operações assinaladas nos exercícios a seguir. 
 
