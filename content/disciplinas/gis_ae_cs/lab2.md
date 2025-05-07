@@ -5,7 +5,7 @@ menu:
   gis_ae_cs:
     parent: Labs
     weight: 9
-title: Lab 3 - Geocodificação com QGIS
+title: Lab 2 - Geocodificação com QGIS
 toc: false
 type: docs
 weight: 9
@@ -32,6 +32,7 @@ Conexão com a internet (para geocodificação online).
 1. Abra o QGIS e crie um novo projeto.
 
 2. Instale o plugin MMQGIS (se não estiver instalado): Complementos → Gerenciar e Instalar Complementos → Busque por "MMQGIS" → Instale.
+> [Documentação Plugins](https://plugins.qgis.org/) 
 
 3. Carregue o arquivo CSV no QGIS: Camada → Adicionar Camada → Adicionar Camada de Texto Delimitado.
 

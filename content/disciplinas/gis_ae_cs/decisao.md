@@ -5,7 +5,7 @@ menu:
   gis_ae_cs:
     parent: Introdução à disciplina
     weight: 9
-title: Lab 1
+title: Decisão de qual software usar
 toc: false
 type: docs
 weight: 9
