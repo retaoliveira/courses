@@ -1,0 +1,129 @@
+---
+date: 2021-10-15T00:00:00+01:00
+draft: false
+menu:
+  dados_grad:
+    parent: Labs
+    weight: 50
+title: Lab 1 - Introdução ao R
+type: docs
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+weight: 390
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#a-unidade-1-é-estruturada-considerando-os-seguintes-tópicos" id="toc-a-unidade-1-é-estruturada-considerando-os-seguintes-tópicos">A <strong>Unidade 1</strong> é estruturada considerando os seguintes tópicos:</a></li>
+<li><a href="#diretrizes-gerais" id="toc-diretrizes-gerais">Diretrizes gerais:</a></li>
+<li><a href="#exercício" id="toc-exercício">Exercício:</a></li>
+<li><a href="#encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script" id="toc-encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script">Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:</a></li>
+</ul>
+</div>
+
+<div id="a-unidade-1-é-estruturada-considerando-os-seguintes-tópicos" class="section level2">
+<h2>A <strong>Unidade 1</strong> é estruturada considerando os seguintes tópicos:</h2>
+<ul>
+<li>Instalação do R e do RStudio</li>
+<li>Como instalar o Git</li>
+<li>Criando uma conta no Github</li>
+<li>Instalar e carregar pacotes no R</li>
+<li>Instalar pacotes no R a partir do Github</li>
+<li>E aí, R? Entendendo o ambiente de trabalho</li>
+<li>Primeiros documentos no R - RMarkdown</li>
+</ul>
+</div>
+<div id="diretrizes-gerais" class="section level2">
+<h2>Diretrizes gerais:</h2>
+<ol style="list-style-type: decimal">
+<li><p>Atualizar versões do R e do RStudio.</p></li>
+<li><p>Baixe o arquivo .Rmd e abra no RStudio.</p></li>
+</ol>
+<p><a href="">Arquivo</a></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Instale os pacotes:</li>
+</ol>
+<ul>
+<li><code>"tidyverse"</code></li>
+<li><code>"tinytex"</code></li>
+<li><code>"knitr"</code></li>
+<li><code>"flexdashboard"</code></li>
+<li><code>"xaringan"</code></li>
+<li><code>"xaringanthemer"</code></li>
+<li><code>"xaringanExtra"</code> - devtools::install_github(“gadenbuie/xaringanExtra”)</li>
+<li><code>"bookdown"</code></li>
+<li><code>"blogdown"</code></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Chame as bibliotecas dos pacotes instalados</li>
+</ol>
+<ul>
+<li><code>library("tidyverse")</code></li>
+<li><code>library("tinytex")</code></li>
+<li><code>library("knitr")</code></li>
+<li><code>library("flexdashboard")</code></li>
+<li><code>library("xaringan")</code></li>
+<li><code>library("xaringanthemer")</code></li>
+<li><code>library("xaringanExtra")</code></li>
+<li><code>library("bookdown")</code></li>
+<li><code>library("blogdown")</code></li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Corrija os problemas de códigos nos respectivos <code>chunks</code>.</p></li>
+<li><p>Rode o arquivo .Rmd por meio do ícone <code>knitr</code></p></li>
+</ol>
+<blockquote>
+<p>Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.</p>
+</blockquote>
+</div>
+<div id="exercício" class="section level2">
+<h2>Exercício:</h2>
+<p>Carregue o <em>data frame</em> <em>mtcars</em></p>
+<pre class="r"><code>data(mtcars)</code></pre>
+</div>
+<div id="encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script" class="section level2">
+<h2>Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:</h2>
+<p>Q1)</p>
+<pre class="r"><code>Head(mtcars)</code></pre>
+<p>Q2)</p>
+<pre class="r"><code>str(Mtcars)</code></pre>
+<p>Q3)</p>
+<pre class="r"><code>dim[mtcars]</code></pre>
+<p>Q4)</p>
+<pre class="r"><code>nomes(mtcars)</code></pre>
+<p>Q5)</p>
+<pre class="r"><code>head(mtcars, x = 10)</code></pre>
+<p>Q6)</p>
+<pre class="r"><code>v1 &lt;- (&quot;pato&quot;, &quot;cachorro&quot;, &quot;minhoca&quot;, &quot;lagarto&quot;)</code></pre>
+<p>Q7)</p>
+<pre class="r"><code>v2 &lt;- c(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;)
+v1 + 42</code></pre>
+<p>Q8)</p>
+<pre class="r"><code>v1 &lt;- c(&quot;pato&quot;, &quot;cachorro&quot;, &quot;minhoca&quot;, &quot;lagarto&quot;</code></pre>
+<p>Q9)</p>
+<pre class="r"><code>v3 &lt;- c(33 31 40 25 27 40)</code></pre>
+<p>Q10)</p>
+<pre class="r"><code>v1 &lt;- c(pato, cachorro, minhoca, lagarto)</code></pre>
+<p>Q11)</p>
+<pre class="r"><code>v1 &lt;- c(&quot;pato&quot; &quot;cachorro&quot; &quot;minhoca&quot; &quot;lagarto&quot;)</code></pre>
+<p>Q12)</p>
+<pre class="r"><code>v3 &lt;- C(33, 31, 40, 25, 27, 40)</code></pre>
+<p>Q13)</p>
+<pre class="r"><code>v1 &lt;- c(&quot;pato&quot;, &quot;cachorro&quot;&quot;, &quot;minhoca&quot;, &quot;lagarto&quot;)
+v3 &lt;- c(33, 31, 40, 25, 27, 40)
+myData &lt;- data.frame(v1, v3)</code></pre>
+<p>Q14)</p>
+<pre class="r"><code>v1 &lt;- c(&quot;pato&quot;, &quot;cachorro&quot;&quot;, &quot;minhoca&quot;, &quot;lagarto&quot;)
+v4 &lt;- c(33, 31, 40, 25)
+myData &lt;- data.frame(v1 = animal, v4 = idade)</code></pre>
+<p>Q15)</p>
+<pre class="r"><code>ls</code></pre>
+<p>Q16)</p>
+<pre class="r"><code>v1 &lt;- c(&quot;pato&quot;, &quot;cachorro&quot;, &quot;minhoca&quot;, &quot;lagarto&quot;)
+sum(v1)</code></pre>
+</div>

@@ -4,7 +4,7 @@ draft: false
 menu:
   dados_grad:
     parent: Labs
-    weight: 15
+    weight: 60
 title: Lab 2 - Introdução ao GGPLOT2
 weight: 25
 editor_options: 
