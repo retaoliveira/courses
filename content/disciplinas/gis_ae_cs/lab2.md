@@ -22,7 +22,7 @@ weight: 9
 ### Materiais necessários:
 Computador com QGIS instalado (versão 3.x recomendada).
 
-Arquivo CSV com endereços (cidades_sudeste_100.csv gerado anteriormente).
+Arquivo CSV com endereços (cidades_sudeste_10.csv).
 
 Conexão com a internet (para geocodificação online).
 
@@ -36,9 +36,7 @@ Conexão com a internet (para geocodificação online).
 
 3. Carregue o arquivo CSV no QGIS: Camada → Adicionar Camada → Adicionar Camada de Texto Delimitado.
 
-4. Selecione o arquivo cidades_sudeste_100.csv.
-
-5. Defina "endereco" como campo de endereço e "cidade" como campo auxiliar.
+4. Selecione o arquivo cidades_sudeste_10.csv.
 
 #  3. Geocodificação Prática (40 min)
 ### Usando o MMQGIS para geocodificar:
@@ -88,7 +86,7 @@ Conexão com a internet (para geocodificação online).
 
 📌 [Documentação do MMQGIS](https://plugins.qgis.org/plugins/mmqgis/).  
 📌 [Nominatim (OpenStreetMap Geocoding)](https://nominatim.openstreetmap.org/).  
-📌 [Tutorial QGIS + Geocodificação.](Tutorial QGIS + Geocodificação)  
+📌 [Tutorial QGIS + Geocodificação](https://www.qgistutorials.com/en/docs/3/geocoding.html).  
 
 
 
