@@ -82,9 +82,11 @@ A escolha do método de classificação deve considerar a natureza dos dados, o 
 2. **Classifique os dados** (Propriedades do Layer → Simbologia):  
    - Escolha um método (ex.: Jenks, Quantis).  
    - Defina o número de classes (5 a 7 é comum).  
-3. **Aplique cores adequadas** (sequenciais para dados populacionais). [Cores](www.places.education/cursos/spatial/decisao_cores.html) podem ser encontradas em sites como [ColorBrewer](https://colorbrewer2.org/).
+3. **Aplique cores adequadas** (sequenciais para dados populacionais). [Cores](https://www.places.education/cursos/spatial/decisao_cores/) podem ser encontradas em sites como [ColorBrewer](https://colorbrewer2.org/).
+
 4. **Adicione elementos do mapa** (legenda, escala, título).  
    - Use o menu "Layout" para criar um layout de impressão.  
+   - Insira o mapa no layout.
    - Adicione elementos como título, legenda, escala e fonte.  
    - Ajuste a posição e o tamanho dos elementos conforme necessário.
       
