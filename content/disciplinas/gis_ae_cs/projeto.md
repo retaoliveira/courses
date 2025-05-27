@@ -81,7 +81,7 @@ weight: 11
 - **Dados:** IBGE, OpenStreetMap, bases municipais, dados setoriais (saúde, transporte, meio ambiente).  
 
 ## **Cronograma Sugerido**  
-| Etapa | Duração |  
+| Etapa | Cronograma |  
 |-------|---------|  
 | 1. Definição do problema | 1a semana |  
 | 2. Coleta e Inspeção de Dados | 2a semana |
