@@ -20,6 +20,7 @@ Sua tarefa é preencher os espaços em branco assinalados por `___`.
 ### Dados e pacotes
 
 Vamos analisar o conjunto de dados `bechdel`, que contém informações sobre filmes e seu desempenho financeiro, além de informações sobre o teste de Bechdel, que avalia a representação feminina em filmes.
+
 O teste de Bechdel é um critério simples que avalia se um filme contém pelo menos duas mulheres que falam entre si sobre algo que não seja um homem.
 
 Começamos com o carregamento dos pacotes que vamos utilizar. 
@@ -29,9 +30,67 @@ library(pacman)
 p_load(fivethirtyeight, tidyverse, tidytuesday)
 ```
 
-O conjunto de dados contém informações sobre `r nrow(bechdel)` filmes lançados entre `r min(bechdel$year)` e `r max(bechdel$year)`.
+O carregamento dos dados pode ser feito considerando o código a seguir: 
 
-Entretanto, vamos focar nossa análise em filmes lançados entre 1990 e 2013.
+```{r}
+raw_bechdel <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-03-09/raw_bechdel.csv')
+movies <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-03-09/movies.csv')
+
+```
+
+
+### Dicionário dos dados
+
+# `raw_bechdel.csv`
+
+|variável |tipo de dado     |descrição |
+|:--------|:---------|:-----------|
+|year     |integer   | Year of release |
+|id       |integer   | ID of film |
+|imdb_id  |character | IMDB ID|
+|title    |character | Title of film |
+|rating   |integer   | Rating (0-3), 0 = unscored, 1. It has to have at least two [named] women in it, 2. Who talk to each other, 3. About something besides a man |
+
+# `movies.csv`
+
+|Variável      |Tipo de dado     |Descrição |
+|:-------------|:---------|:-----------|
+|year          |double    | Year |
+|imdb          |character | IMDB|
+|title         |character |Title of movie |
+|test          |character | Bechdel Test outcome|
+|clean_test    |character | Bechdel Test cleaned |
+|binary        |character | Binary pass/fail of bechdel |
+|budget        |double    | Budget as of release year |
+|domgross      |character | Domestic gross in release year |
+|intgross      |character | International gross in release year |
+|code          |character | Code |
+|budget_2013   |double    | Budget normalized to 2013 |
+|domgross_2013 |character | Domestic gross  normalized to 2013 |
+|intgross_2013 |character | International gross normalized to 2013 |
+|period_code   |double    | Period code |
+|decade_code   |double    | Decade Code |
+|imdb_id       |character | IMDB ID |
+|plot          |character | Plot of movie |
+|rated         |character | Rating of movie |
+|response      |character | Response? |
+|language      |character | Language of film |
+|country       |character | Country produced in |
+|writer        |character | Writer of film |
+|metascore     |double    | Metascore rating (0-100) |
+|imdb_rating   |double    | IMDB Rating 0-10|
+|director      |character | Director of movie |
+|released      |character | Released date |
+|actors        |character | Actors |
+|genre         |character | Genre |
+|awards        |character | Awards |
+|runtime       |character | Runtime |
+|type          |character | Type of film |
+|poster        |character | Poster image |
+|imdb_votes    |character | IMDB Votes |
+|error         |character | Error? |
+
+Vamos focar nossa análise em filmes lançados entre 1990 e 2013.
 
 ```{r}
 bechdel90_13 <- bechdel %>% 
@@ -54,7 +113,7 @@ E também utilizaremos as variáveis `binary` e `clean_test` para **grouping**.
 
 ### Análise
 
-Vamos ver como o orçamento médio e o bruto variam conforme o filme caso tenha passado no teste de Bechdel, que é armazenado na variável "binary".
+Vamos ver como o orçamento mediano e o bruto variam conforme o filme caso tenha passado no teste de Bechdel, que é armazenado na variável "binary".
 
 ```{r message = FALSE}
 bechdel90_13 %>%
