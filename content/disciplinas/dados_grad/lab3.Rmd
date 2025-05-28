@@ -1,0 +1,237 @@
+---
+date: "2025-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Labs
+    weight: 60
+title: Lab 3 - Construção de gráficos de barras, histogramas e boxplots usando ggplot2.
+weight: 400
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+## Objetivos:
+- Aprender a criar gráficos estatísticos básicos no R usando ggplot2.
+
+- Personalizar elementos visuais (cores, rótulos, temas).
+
+- Interpretar os gráficos gerados.
+
+## Pré-requisitos:
+- Instalação do R e RStudio.
+
+- Pacotes necessários: ggplot2, dplyr (para manipulação de dados).
+
+- Conhecimento básico de sintaxe do R.
+
+---
+
+# Carregar pacotes
+
+```{r}
+library(pacman)
+p_load("ggplot2", "dplyr")
+```
+
+### 1. Preparação dos Dados
+Usaremos o conjunto de dados mpg (já incluído no ggplot2), que contém informações sobre carros.
+
+# Carregar dados
+```{r}
+data(mpg)
+head(mpg)  # Visualizar as primeiras linhas
+```
+
+### 2. Gráfico de Barras
+Objetivo: Comparar a contagem de carros por classe (class).
+
+Código Básico:
+```{r}
+ggplot(mpg, aes(x = class)) +
+  geom_bar(fill = "skyblue", color = "black") +
+  labs(title = "Contagem de Carros por Classe",
+       x = "Classe do Veículo",
+       y = "Contagem") +
+  theme_minimal()
+```
+
+Atividades:
+- Mude as cores das barras usando fill e color.
+- Adicione rótulos (labs) personalizados.
+- Use coord_flip() para inverter os eixos.
+
+Em `geom_bar` no `ggplot2`, `stat` e `position` têm funções diferentes. O `stat` determina como a altura das barras é calculada (por exemplo, contagem de casos ou valores originais), enquanto `position` controla como as barras são posicionadas quando há múltiplas barras no mesmo local do eixo x.
+
+**`stat`**
+Define o tipo de transformação estatística que é aplicada aos dados antes de serem plotados. Por padrão, stat = "count", que significa que a altura de cada barra representa o número de casos em cada grupo ou categoria no eixo x. 
+
+- Exemplos:
+  - stat = "count": A altura da barra representa a contagem de pontos de dados em cada categoria (o padrão).
+  - stat = "identity": A altura da barra representa os valores diretamente do conjunto de dados, sem nenhuma transformação.
+  - stat = "bin": A altura da barra representa a frequência de ocorrências dentro de intervalos.
+
+> O stat altera a escala do eixo y, afetando a interpretação da altura das barras. 
+
+
+**`position`**
+Determina como as barras são posicionadas quando há múltiplas barras no mesmo local no eixo x.
+
+- Exemplos:
+  - position = "stack": As barras são empilhadas umas sobre as outras (o padrão).
+  - position = "dodge": As barras são colocadas lado a lado.
+  - position = "fill": As barras são empilhadas, mas cada barra representa a mesma proporção em relação à sua própria altura total.
+
+> O position controla a maneira como as barras são agrupadas ou separadas visualmente no gráfico, afetando a clareza da comparação entre diferentes grupos. 
+
+> Por exemplo, usando stat = "identity" com position = "dodge" permite comparar os valores originais de diferentes grupos lado a lado, enquanto stat = "count" com position = "stack" mostra a contagem total de casos empilhada em cada grupo.
+
+#### 2.1. Gráfico de Barras com stat = "identity"
+
+Objetivo: Usar valores pré-calculados (não contagem).
+
+Vamos usar o conjunto mpg e agregar dados para exemplificar stat = "identity".
+
+```{r}
+# Criar um dataset agregado (média de consumo por classe e tipo de tração)
+dados_agg <- mpg %>%
+  group_by(class, drv) %>%
+  summarise(media_hwy = mean(hwy), .groups = "drop")
+
+head(dados_agg)
+```
+
+```{r}
+ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = "identity", position = "dodge") +  # Barras lado a lado
+  labs(title = "Média de Consumo (hwy) por Classe e Tração",
+       x = "Classe do Veículo",
+       y = "Média de Milhas por Galão (hwy)",
+       fill = "Tipo de Tração") +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Pastel1")
+```
+
+Atividades:
+- Mude position = "dodge" para position = "stack" (empilhado).
+- Adicione rótulos de valor com geom_text(aes(label = round(media_hwy, 1)), position = position_dodge(width = 0.9), vjust = -0.5).
+
+#### 2.2. Gráfico de Barras Empilhadas
+Objetivo: Mostrar a contribuição de cada categoria em um total.
+
+```{r}
+ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = "identity", position = "stack") +  # Empilhado
+  labs(title = "Consumo Total (hwy) por Classe (Empilhado)",
+       x = "Classe do Veículo",
+       y = "Soma de Milhas por Galão (hwy)") +
+  theme_classic()
+```
+
+Atividade:
+- Compare com o gráfico de position = "dodge". Quando cada um é útil?
+
+#### 2.3. Gráfico de Barras em Proporção (%)
+Objetivo: Mostrar a distribuição percentual de cada categoria.
+
+```{r}
+ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = "identity", position = "fill") +  # Proporção
+  labs(title = "Proporção do Consumo (hwy) por Classe",
+       x = "Classe do Veículo",
+       y = "Proporção",
+       fill = "Tipo de Tração") +
+  scale_y_continuous(labels = scales::percent) +  # Converter eixo y em %
+  theme_light()
+```
+
+Atividades:
+- Adicione bordas brancas às barras: color = "white", size = 0.2.
+- Mude a paleta de cores com scale_fill_manual(values = c("#FF6B6B", "#4ECDC4", "#45B7D1")).
+
+---
+
+### 3. Histograma
+Objetivo: Visualizar a distribuição da variável numérica hwy (consumo em estrada).
+
+```{r}
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram(bins = 15, fill = "coral", color = "white") +
+  labs(title = "Distribuição do Consumo na Estrada (hwy)",
+       x = "Milhas por Galão (Estrada)",
+       y = "Frequência") +
+  theme_classic()
+```
+
+Atividades:
+- Ajuste o número de bins e observe como muda a visualização.
+- Sobreponha uma curva de densidade usando geom_density(aes(y = ..count..)).
+
+### 4. Boxplot
+Objetivo: Comparar a distribuição do consumo (hwy) por tipo de motor (drv).
+
+```{r}
+ggplot(mpg, aes(x = drv, y = hwy, fill = drv)) +
+  geom_boxplot() +
+  labs(title = "Consumo na Estrada por Tipo de Tração",
+       x = "Tipo de Tração",
+       y = "Milhas por Galão (hwy)") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_bw()
+```
+
+Atividades:
+- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).
+- Mude a paleta de cores (scale_fill_manual ou scale_fill_brewer).
+
+### 5. Exercício de Consolidação
+Crie um relatório em RMarkdown contendo:   
+- Um gráfico de barras mostrando a contagem de carros por manufacturer.
+- Um gráfico de barras (stat = "identity") da média de cty por manufacturer.
+- Uma versão empilhada do mesmo gráfico, colorido por cyl.
+- Uma versão em proporção (%) do gráfico empilhado.
+- Um histograma da variável cty (consumo na cidade).
+- Um boxplot comparando cty por cyl (número de cilindros).
+
+Exemplo de código para o exercício:
+
+```{r}
+# Dados agregados
+dados_exercicio <- mpg %>%
+  group_by(manufacturer, cyl) %>%
+  summarise(media_cty = mean(cty), .groups = "drop")
+
+# Gráfico de proporção
+ggplot(dados_exercicio, aes(x = manufacturer, y = media_cty, fill = factor(cyl))) +
+  geom_bar(stat = "identity", position = "fill") +
+  labs(y = "Proporção do Consumo (cty)", fill = "Cilindros") +
+  scale_y_continuous(labels = scales::percent)
+```
+
+Recursos Adicionais:
+[Documentação do ggplot2](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
+[Galeria de gráficos com ggplot2](https://ggplot2.tidyverse.org/gallery.html)
+[Posicionamento das barras](https://ggplot2.tidyverse.org/articles/positioning.html)https://ggplot2.tidyverse.org/reference/scale_brewer.html
+[Guia de bolso - GGPLOT2](https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html)
+
+Dica: Use ?geom_bar, ?geom_histogram e ?geom_boxplot para explorar mais opções!
+
+Dicas Extras:
+- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).
+- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).
+- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.
+- Explore temas adicionais com theme_minimal(), theme_classic(), etc.
+- Use scale_fill_brewer() para paletas de cores predefinidas.
+- Para personalizar rótulos de eixos, use labs(x = "Novo Rótulo", y = "Outro Rótulo").
+- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = "gray", size = 0.5)).
+- Para salvar gráficos, use ggsave("nome_do_grafico.png", width = 8, height = 6).
