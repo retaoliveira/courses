@@ -56,7 +56,6 @@ head(mpg)  # Visualizar as primeiras linhas
 ### 2. Gráfico de Barras
 Objetivo: Comparar a contagem de carros por classe (class).
 
-Código Básico:
 ```{r}
 ggplot(mpg, aes(x = class)) +
   geom_bar(fill = "skyblue", color = "black") +
@@ -67,9 +66,9 @@ ggplot(mpg, aes(x = class)) +
 ```
 
 Atividades:
-- Mude as cores das barras usando fill e color.
-- Adicione rótulos (labs) personalizados.
-- Use coord_flip() para inverter os eixos.
+- Mude as cores das barras usando fill e color.   
+- Adicione rótulos (labs) personalizados.   
+- Use coord_flip() para inverter os eixos.   
 
 Em `geom_bar` no `ggplot2`, `stat` e `position` têm funções diferentes. O `stat` determina como a altura das barras é calculada (por exemplo, contagem de casos ou valores originais), enquanto `position` controla como as barras são posicionadas quando há múltiplas barras no mesmo local do eixo x.
 
@@ -122,8 +121,8 @@ ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
   scale_fill_brewer(palette = "Pastel1")
 ```
 
-Atividades:
-- Mude position = "dodge" para position = "stack" (empilhado).
+Atividades:   
+- Mude position = "dodge" para position = "stack" (empilhado).   
 - Adicione rótulos de valor com geom_text(aes(label = round(media_hwy, 1)), position = position_dodge(width = 0.9), vjust = -0.5).
 
 #### 2.2. Gráfico de Barras Empilhadas
@@ -138,7 +137,7 @@ ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
   theme_classic()
 ```
 
-Atividade:
+Atividade:   
 - Compare com o gráfico de position = "dodge". Quando cada um é útil?
 
 #### 2.3. Gráfico de Barras em Proporção (%)
@@ -155,9 +154,9 @@ ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
   theme_light()
 ```
 
-Atividades:
-- Adicione bordas brancas às barras: color = "white", size = 0.2.
-- Mude a paleta de cores com scale_fill_manual(values = c("#FF6B6B", "#4ECDC4", "#45B7D1")).
+Atividades:   
+- Adicione bordas brancas às barras: color = "white", size = 0.2.   
+- Mude a paleta de cores com scale_fill_manual(values = c("#FF6B6B", "#4ECDC4", "#45B7D1")).    
 
 ---
 
@@ -173,9 +172,9 @@ ggplot(mpg, aes(x = hwy)) +
   theme_classic()
 ```
 
-Atividades:
-- Ajuste o número de bins e observe como muda a visualização.
-- Sobreponha uma curva de densidade usando geom_density(aes(y = ..count..)).
+Atividades:   
+- Ajuste o número de bins e observe como muda a visualização.   
+- Sobreponha uma curva de densidade usando geom_density(aes(y = ..count..)).   
 
 ### 4. Boxplot
 Objetivo: Comparar a distribuição do consumo (hwy) por tipo de motor (drv).
@@ -190,18 +189,18 @@ ggplot(mpg, aes(x = drv, y = hwy, fill = drv)) +
   theme_bw()
 ```
 
-Atividades:
-- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).
-- Mude a paleta de cores (scale_fill_manual ou scale_fill_brewer).
+Atividades:   
+- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).   
+- Mude a paleta de cores (scale_fill_manual ou scale_fill_brewer).   
 
 ### 5. Exercício de Consolidação
 Crie um relatório em RMarkdown contendo:   
-- Um gráfico de barras mostrando a contagem de carros por manufacturer.
-- Um gráfico de barras (stat = "identity") da média de cty por manufacturer.
-- Uma versão empilhada do mesmo gráfico, colorido por cyl.
-- Uma versão em proporção (%) do gráfico empilhado.
-- Um histograma da variável cty (consumo na cidade).
-- Um boxplot comparando cty por cyl (número de cilindros).
+- Um gráfico de barras mostrando a contagem de carros por manufacturer.   
+- Um gráfico de barras (stat = "identity") da média de cty por manufacturer.   
+- Uma versão empilhada do mesmo gráfico, colorido por cyl.   
+- Uma versão em proporção (%) do gráfico empilhado.   
+- Um histograma da variável cty (consumo na cidade).   
+- Um boxplot comparando cty por cyl (número de cilindros).   
 
 Exemplo de código para o exercício:
 
@@ -219,19 +218,20 @@ ggplot(dados_exercicio, aes(x = manufacturer, y = media_cty, fill = factor(cyl))
 ```
 
 Recursos Adicionais:
-[Documentação do ggplot2](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
-[Galeria de gráficos com ggplot2](https://ggplot2.tidyverse.org/gallery.html)
-[Posicionamento das barras](https://ggplot2.tidyverse.org/articles/positioning.html)https://ggplot2.tidyverse.org/reference/scale_brewer.html
-[Guia de bolso - GGPLOT2](https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html)
+
+[Documentação do ggplot2](https://ggplot2.tidyverse.org/reference/scale_brewer.html).  
+[Galeria de gráficos com ggplot2](https://ggplot2.tidyverse.org/gallery.html).  
+[Posicionamento das barras](https://ggplot2.tidyverse.org/articles/positioning.html)https://ggplot2.tidyverse.org/reference/scale_brewer.html.  
+[Guia de bolso - GGPLOT2](https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html).  
 
 Dica: Use ?geom_bar, ?geom_histogram e ?geom_boxplot para explorar mais opções!
 
-Dicas Extras:
-- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).
-- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).
-- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.
-- Explore temas adicionais com theme_minimal(), theme_classic(), etc.
-- Use scale_fill_brewer() para paletas de cores predefinidas.
-- Para personalizar rótulos de eixos, use labs(x = "Novo Rótulo", y = "Outro Rótulo").
-- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = "gray", size = 0.5)).
-- Para salvar gráficos, use ggsave("nome_do_grafico.png", width = 8, height = 6).
+Dicas Extras:   
+- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).   
+- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).   
+- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.   
+- Explore temas adicionais com theme_minimal(), theme_classic(), etc.   
+- Use scale_fill_brewer() para paletas de cores predefinidas.   
+- Para personalizar rótulos de eixos, use labs(x = "Novo Rótulo", y = "Outro Rótulo").   
+- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = "gray", size = 0.5)).   
+- Para salvar gráficos, use ggsave("nome_do_grafico.png", width = 8, height = 6).   

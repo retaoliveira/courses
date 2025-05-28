@@ -62,7 +62,6 @@ head(mpg)  # Visualizar as primeiras linhas</code></pre>
 <div id="gráfico-de-barras" class="section level3">
 <h3>2. Gráfico de Barras</h3>
 <p>Objetivo: Comparar a contagem de carros por classe (class).</p>
-<p>Código Básico:</p>
 <pre class="r"><code>ggplot(mpg, aes(x = class)) +
   geom_bar(fill = &quot;skyblue&quot;, color = &quot;black&quot;) +
   labs(title = &quot;Contagem de Carros por Classe&quot;,
@@ -71,8 +70,8 @@ head(mpg)  # Visualizar as primeiras linhas</code></pre>
   theme_minimal()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>Atividades:
-- Mude as cores das barras usando fill e color.
-- Adicione rótulos (labs) personalizados.
+- Mude as cores das barras usando fill e color.<br />
+- Adicione rótulos (labs) personalizados.<br />
 - Use coord_flip() para inverter os eixos.</p>
 <p>Em <code>geom_bar</code> no <code>ggplot2</code>, <code>stat</code> e <code>position</code> têm funções diferentes. O <code>stat</code> determina como a altura das barras é calculada (por exemplo, contagem de casos ou valores originais), enquanto <code>position</code> controla como as barras são posicionadas quando há múltiplas barras no mesmo local do eixo x.</p>
 <p><strong><code>stat</code></strong>
@@ -132,8 +131,8 @@ head(dados_agg)</code></pre>
   theme_minimal() +
   scale_fill_brewer(palette = &quot;Pastel1&quot;)</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<p>Atividades:
-- Mude position = “dodge” para position = “stack” (empilhado).
+<p>Atividades:<br />
+- Mude position = “dodge” para position = “stack” (empilhado).<br />
 - Adicione rótulos de valor com geom_text(aes(label = round(media_hwy, 1)), position = position_dodge(width = 0.9), vjust = -0.5).</p>
 </div>
 <div id="gráfico-de-barras-empilhadas" class="section level4">
@@ -146,7 +145,7 @@ head(dados_agg)</code></pre>
        y = &quot;Soma de Milhas por Galão (hwy)&quot;) +
   theme_classic()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>Atividade:
+<p>Atividade:<br />
 - Compare com o gráfico de position = “dodge”. Quando cada um é útil?</p>
 </div>
 <div id="gráfico-de-barras-em-proporção" class="section level4">
@@ -161,8 +160,8 @@ head(dados_agg)</code></pre>
   scale_y_continuous(labels = scales::percent) +  # Converter eixo y em %
   theme_light()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p>Atividades:
-- Adicione bordas brancas às barras: color = “white”, size = 0.2.
+<p>Atividades:<br />
+- Adicione bordas brancas às barras: color = “white”, size = 0.2.<br />
 - Mude a paleta de cores com scale_fill_manual(values = c(“#FF6B6B”, “#4ECDC4”, “#45B7D1”)).</p>
 <hr />
 </div>
@@ -177,8 +176,8 @@ head(dados_agg)</code></pre>
        y = &quot;Frequência&quot;) +
   theme_classic()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p>Atividades:
-- Ajuste o número de bins e observe como muda a visualização.
+<p>Atividades:<br />
+- Ajuste o número de bins e observe como muda a visualização.<br />
 - Sobreponha uma curva de densidade usando geom_density(aes(y = ..count..)).</p>
 </div>
 <div id="boxplot" class="section level3">
@@ -192,18 +191,18 @@ head(dados_agg)</code></pre>
   scale_fill_brewer(palette = &quot;Set2&quot;) +
   theme_bw()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<p>Atividades:
-- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).
+<p>Atividades:<br />
+- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).<br />
 - Mude a paleta de cores (scale_fill_manual ou scale_fill_brewer).</p>
 </div>
 <div id="exercício-de-consolidação" class="section level3">
 <h3>5. Exercício de Consolidação</h3>
 <p>Crie um relatório em RMarkdown contendo:<br />
-- Um gráfico de barras mostrando a contagem de carros por manufacturer.
-- Um gráfico de barras (stat = “identity”) da média de cty por manufacturer.
-- Uma versão empilhada do mesmo gráfico, colorido por cyl.
-- Uma versão em proporção (%) do gráfico empilhado.
-- Um histograma da variável cty (consumo na cidade).
+- Um gráfico de barras mostrando a contagem de carros por manufacturer.<br />
+- Um gráfico de barras (stat = “identity”) da média de cty por manufacturer.<br />
+- Uma versão empilhada do mesmo gráfico, colorido por cyl.<br />
+- Uma versão em proporção (%) do gráfico empilhado.<br />
+- Um histograma da variável cty (consumo na cidade).<br />
 - Um boxplot comparando cty por cyl (número de cilindros).</p>
 <p>Exemplo de código para o exercício:</p>
 <pre class="r"><code># Dados agregados
@@ -217,20 +216,20 @@ ggplot(dados_exercicio, aes(x = manufacturer, y = media_cty, fill = factor(cyl))
   labs(y = &quot;Proporção do Consumo (cty)&quot;, fill = &quot;Cilindros&quot;) +
   scale_y_continuous(labels = scales::percent)</code></pre>
 <p><img src="/disciplinas/dados_grad/lab3_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<p>Recursos Adicionais:
-<a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">Documentação do ggplot2</a>
-<a href="https://ggplot2.tidyverse.org/gallery.html">Galeria de gráficos com ggplot2</a>
-<a href="https://ggplot2.tidyverse.org/articles/positioning.html">Posicionamento das barras</a><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="uri">https://ggplot2.tidyverse.org/reference/scale_brewer.html</a>
-<a href="https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html">Guia de bolso - GGPLOT2</a></p>
+<p>Recursos Adicionais:</p>
+<p><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">Documentação do ggplot2</a>.<br />
+<a href="https://ggplot2.tidyverse.org/gallery.html">Galeria de gráficos com ggplot2</a>.<br />
+<a href="https://ggplot2.tidyverse.org/articles/positioning.html">Posicionamento das barras</a><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="uri">https://ggplot2.tidyverse.org/reference/scale_brewer.html</a>.<br />
+<a href="https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html">Guia de bolso - GGPLOT2</a>.</p>
 <p>Dica: Use ?geom_bar, ?geom_histogram e ?geom_boxplot para explorar mais opções!</p>
-<p>Dicas Extras:
-- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).
-- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).
-- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.
-- Explore temas adicionais com theme_minimal(), theme_classic(), etc.
-- Use scale_fill_brewer() para paletas de cores predefinidas.
-- Para personalizar rótulos de eixos, use labs(x = “Novo Rótulo”, y = “Outro Rótulo”).
-- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = “gray”, size = 0.5)).
+<p>Dicas Extras:<br />
+- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).<br />
+- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).<br />
+- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.<br />
+- Explore temas adicionais com theme_minimal(), theme_classic(), etc.<br />
+- Use scale_fill_brewer() para paletas de cores predefinidas.<br />
+- Para personalizar rótulos de eixos, use labs(x = “Novo Rótulo”, y = “Outro Rótulo”).<br />
+- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = “gray”, size = 0.5)).<br />
 - Para salvar gráficos, use ggsave(“nome_do_grafico.png”, width = 8, height = 6).</p>
 </div>
 </div>
