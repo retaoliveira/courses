@@ -6,7 +6,7 @@ menu:
     parent: Labs
     weight: 10
 title: Lab 4 - Operações espaciais
-toc: true
+toc: false
 type: docs
 weight: 10
 ---
