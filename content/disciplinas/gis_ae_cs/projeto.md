@@ -14,8 +14,8 @@ weight: 11
 
 ## **Objetivos Gerais:**  
 - Introduzir conceitos básicos de produção de mapas e tratamento de dados espaciais.  
-- Capacitar os alunos no uso do QGIS para manipulação e análise de dados geográficos.  
-- Desenvolver habilidades em geoprocessamento para identificação de padrões espaciais e suporte à decisão.  
+- Capacitar os alunos no uso do QGIS para manipulação e análise de dados geográficos.   
+- Desenvolver habilidades em geoprocessamento para identificação de padrões espaciais e suporte à decisão.   
 - Aplicar metodologias de análise espacial em estudos de caso reais.  
 
 ---  
