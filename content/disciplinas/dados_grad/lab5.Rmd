@@ -1,51 +1,15 @@
 ---
-title: "Lab 3.2 - manipulação de dados"
+title: "Lab 5 - manipulação de dados"
 draft: false
 date: '2023-04-26T00:00:00+01:00'
 menu:
-  dados_ppga:
+  dados_grad:
     parent: Labs
     weight: 20
 toc: yes
 type: docs
 weight: 20
 ---
-
-A **Unidade 3** é estruturada considerando os seguintes tópicos:
-- Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. 
-- Estatística descritiva e mineração de dados
-
-## **Diretrizes gerais:**
-
-1. Baixe o arquivo .Rmd e abra no RStudio. 
-
-[Arquivo .Rmd](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EeohRlLO7OtCtKdHO72GS2oBc8B1LBdlZuoRt02jIw2LLg?e=dUCXFm)
-
-[Dados_1](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EfOboEtruQNLnK1Iz2RynCcBNxYE6pz_gBbjOIUWRSodpw?e=y0igVw)
-
-[Dados_2](https://cefetmgbr-my.sharepoint.com/:x:/g/personal/renataoliveira_cefetmg_br/EZBh8qqZVJVFsZu3pfmdbPYBH-4XbbGRkrkpybi0pTSObA?e=4koetd)
-
-2. Siga as diretrizes da atividade. 
-
-3. Rode o arquivo .Rmd por meio do ícone `knitr` 
-
-4. Salve o .Rmd e entregue à docentes. 
-
-<hr></hr>
-
-## **Manipulação de dados**
-
-### Exercício 1.
-Carregue os dados no seu ambiente. 
-
-```{r load-data, eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
-
-dados1 <- read_csv("")
-dados2 <- read_csv("")
-```
-
-
-### Exercício 2.
 
 Responda as seguintes perguntas:
 
