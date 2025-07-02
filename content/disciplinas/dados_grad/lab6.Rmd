@@ -6,12 +6,7 @@ menu:
     parent: Labs
     weight: 64
 title: Lab 6 - Segmentação de mercado
-editor_options: 
-  markdown: 
-    wrap: 72
-output: 
-  blogdown::html_page:
-    toc: true
+toc: true
 type: docs
 weight: 600
 ---
