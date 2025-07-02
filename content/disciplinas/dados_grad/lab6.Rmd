@@ -4,8 +4,8 @@ draft: false
 menu:
   dados_grad:
     parent: Labs
-    weight: 10
-title: Lab 6: Segmentação de mercado
+    weight: 64
+title: Lab 6 - Segmentação de mercado
 editor_options: 
   markdown: 
     wrap: 72
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 10
+weight: 600
 ---
 
 ```{r}
@@ -59,9 +59,9 @@ A técnica de segmentação de clientes depende de vários diferenciais-chave qu
 
 Na primeira etapa deste projeto de ciência de dados, vamos realizar a exploração de dados. Importaremos os pacotes essenciais necessários para esta função e, em seguida, leremos nossos dados. Finalmente, analisaremos os dados de entrada para obter as informações necessárias.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 
-customer_data=read.csv("https://raw.githubusercontent.com/retaoliveira/relements/main/data/Mall_Customers.csv?token=AKYVP2TU37DVTLG7CB6DYE3AM53OW")
+customer_data <- read_csv("~/Library/CloudStorage/GoogleDrive-renataoliveira@gmail.com/Meu Drive/02_work/01_disciplinas/2025_1/dados_grad/Mall_Customers.csv") 
 
 str(customer_data)
 
@@ -72,7 +72,7 @@ Temos uma variável que é uma identificação do consumidor, uma variável de g
 
 Vamos agora exibir as primeiras seis linhas de nosso conjunto de dados usando a função head() e usar a função summary() para emitir o resumo do mesmo.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 head(customer_data)
 summary(customer_data$Age)
 
@@ -93,7 +93,7 @@ sd(customer_data$Spending.Score..1.100.)
 
 Criaremos um barplot para mostrar a distribuição de gênero em nosso conjunto de dados de clientes_dados.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 
 a <- table(customer_data$Genre)
 
@@ -110,11 +110,11 @@ Pelo gráfico acima, observamos que o número de mulheres é maior do que o de h
 
 Vamos traçar um histograma para visualizar a distribuição e traçar a freqüência das idades dos clientes. Primeiramente, procederemos com um resumo da variável Idade.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 summary(customer_data$Age)
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 
 ggplot(customer_data, aes(x = Age)) +
   geom_histogram(binwidth = 5) +
@@ -122,7 +122,7 @@ ggplot(customer_data, aes(x = Age)) +
 
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 boxplot(customer_data$Age,
        col="#ff0066",
        main="Boxplot for Descriptive Analysis of Age")
@@ -138,7 +138,7 @@ A partir das duas visualizações acima, concluímos que a idade mediana do clie
 
 Nesta seção do projeto R, vamos criar visualizações para analisar a renda anual dos clientes. Traçaremos um histograma e então procederemos a examinar estes dados usando um gráfico de densidade.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 summary(customer_data$Annual.Income..k..)
 
 ggplot(customer_data) +
@@ -148,7 +148,7 @@ ggplot(customer_data) +
 
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 ggplot(customer_data) +
   geom_density(aes(x = Annual.Income..k..), fill="#69b3a2", color="#e9ecef", alpha=0.8) +
   theme_ipsum() +
@@ -160,7 +160,7 @@ Da análise descritiva acima, concluímos que a renda mínima anual dos clientes
 
 # Análise da pontuação de gastos dos clientes
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 summary(customer_data$Spending.Score..1.100.)
 
 ggplot(customer_data, aes(y = Spending.Score..1.100.)) +
@@ -169,12 +169,12 @@ ggplot(customer_data, aes(y = Spending.Score..1.100.)) +
 
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 
 ggplot(customer_data) +
   geom_histogram(aes(x = Spending.Score..1.100.), binwidth = 10, fill = "#660033") +
   theme_ipsum() +
-  ggtitle("HistoGgram for Spending Score")
+  ggtitle("Histogram for Spending Score")
 
 
 ```
@@ -198,7 +198,7 @@ O principal objetivo por trás de métodos de partição de clusters como o K-Me
 
 No R, é possível implementar essa análise por meio da função a seguir.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 
 df <- customer_data %>% 
   mutate(Genre = ifelse(Genre == "Male", 1, 2)) %>% 
@@ -213,7 +213,7 @@ Do gráfico acima, concluímos que 6 é um número apropriado de clusters.
 
 Usando a função `fviz_nbclust()`, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 library(NbClust)
 library(factoextra)
 
@@ -222,7 +222,7 @@ fviz_nbclust(customer_data[,3:5], kmeans, method = "silhouette")
 
 Agora, tomemos k = 6 como nosso número de clusters inicial.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 set.seed(12345)
 km.res <- kmeans(df, 6, nstart=25)
 print(km.res)
@@ -240,7 +240,7 @@ Na saída de nossa operação de kmeans, observamos uma lista com várias inform
 
 As médias das variáveis para os agrupamentos podem ser obtidas por meio da função:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 cluster_result <- aggregate(df, by=list(cluster=km.res$cluster), mean)
 cluster_result
 
@@ -248,7 +248,7 @@ cluster_result
 
 ## O conjunto de agrupamentos pode ser visualizado por meio da função:
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 df2 <- cbind(df, cluster=km.res$cluster)
 
 km.res$centers
@@ -265,7 +265,7 @@ a + theme_ipsum()
 
 ## Relacionando as variáveis:
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 ggplot(df2, aes(x =Annual.Income..k.., y = Spending.Score..1.100.)) + 
   geom_point(stat = "identity", aes(color = as.factor(cluster))) +
   scale_color_discrete(name=" ",

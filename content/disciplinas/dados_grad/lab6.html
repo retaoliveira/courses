@@ -1,0 +1,206 @@
+---
+date: '2020-12-24'
+draft: false
+menu:
+  dados_grad:
+    parent: Labs
+    weight: 64
+title: Lab 6 - Segmentação de mercado
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 600
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#fun%C3%A7%C3%B5es" id="toc-funções">Funções</a>
+<ul>
+<li><a href="#normaliza%C3%A7%C3%A3o-minmax" id="toc-normalização-minmax">Normalização MinMax</a></li>
+</ul></li>
+<li><a href="#o-que-%C3%A9-segmenta%C3%A7%C3%A3o-de-mercado" id="toc-o-que-é-segmentação-de-mercado">O que é segmentação de mercado?</a>
+<ul>
+<li><a href="#como-implementar-a-segmenta%C3%A7%C3%A3o-de-clientes-no-r" id="toc-como-implementar-a-segmentação-de-clientes-no-r">Como implementar a segmentação de clientes no R?</a></li>
+</ul></li>
+<li><a href="#visualiza%C3%A7%C3%A3o-de-g%C3%AAnero-do-cliente" id="toc-visualização-de-gênero-do-cliente">Visualização de gênero do cliente</a></li>
+<li><a href="#visualiza%C3%A7%C3%A3o-da-distribui%C3%A7%C3%A3o-et%C3%A1ria" id="toc-visualização-da-distribuição-etária">Visualização da distribuição etária</a></li>
+<li><a href="#an%C3%A1lise-da-renda-anual-dos-clientes" id="toc-análise-da-renda-anual-dos-clientes">Análise da renda anual dos clientes</a></li>
+<li><a href="#an%C3%A1lise-da-pontua%C3%A7%C3%A3o-de-gastos-dos-clientes" id="toc-análise-da-pontuação-de-gastos-dos-clientes">Análise da pontuação de gastos dos clientes</a>
+<ul>
+<li><a href="#k-means-cluster-para-segmenta%C3%A7%C3%A3o-de-mercado" id="toc-k-means-cluster-para-segmentação-de-mercado">K-Means Cluster para segmentação de mercado</a>
+<ul>
+<li><a href="#determinando-o-n%C3%BAmero-de-clusters-%C3%B3timos" id="toc-determinando-o-número-de-clusters-ótimos">Determinando o número de clusters ótimos</a></li>
+</ul></li>
+<li><a href="#o-conjunto-de-agrupamentos-pode-ser-visualizado-por-meio-da-fun%C3%A7%C3%A3o" id="toc-o-conjunto-de-agrupamentos-pode-ser-visualizado-por-meio-da-função">O conjunto de agrupamentos pode ser visualizado por meio da função:</a></li>
+<li><a href="#relacionando-as-vari%C3%A1veis" id="toc-relacionando-as-variáveis">Relacionando as variáveis:</a></li>
+<li><a href="#s%C3%ADntese" id="toc-síntese">Síntese</a></li>
+</ul></li>
+</ul>
+</div>
+
+<pre class="r"><code>library(gmodels)
+library(factoextra)</code></pre>
+<pre><code>## Loading required package: ggplot2</code></pre>
+<pre><code>## Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa</code></pre>
+<pre class="r"><code>library(FactoMineR)
+library(ggplot2)
+library(ggcorrplot)
+library(psych)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;psych&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:ggplot2&#39;:
+## 
+##     %+%, alpha</code></pre>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ lubridate 1.9.4     ✔ tibble    3.3.0
+## ✔ purrr     1.0.4     ✔ tidyr     1.3.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ psych::%+%()    masks ggplot2::%+%()
+## ✖ psych::alpha()  masks ggplot2::alpha()
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<pre class="r"><code>library(outliers)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;outliers&#39;
+## 
+## The following object is masked from &#39;package:psych&#39;:
+## 
+##     outlier</code></pre>
+<pre class="r"><code>library(hrbrthemes)
+library(ggplot2)
+library(dplyr)
+library(plotly)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;
+## 
+## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot
+## 
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter
+## 
+## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<pre class="r"><code>library(viridis)</code></pre>
+<pre><code>## Loading required package: viridisLite</code></pre>
+<pre class="r"><code>library(hrbrthemes)
+library(knitr)
+library(kableExtra)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;kableExtra&#39;
+## 
+## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     group_rows</code></pre>
+<div id="funções" class="section level1">
+<h1>Funções</h1>
+<div id="normalização-minmax" class="section level2">
+<h2>Normalização MinMax</h2>
+<pre class="r"><code>norm_minmax &lt;- function(x){
+                           (x- min(x)) /(max(x)-min(x))
+}</code></pre>
+</div>
+</div>
+<div id="o-que-é-segmentação-de-mercado" class="section level1">
+<h1>O que é segmentação de mercado?</h1>
+<p>Segmentação de mercado é o processo de divisão da base de clientes em vários grupos de indivíduos que compartilham uma semelhança de diferentes maneiras que são relevantes para o marketing, tais como sexo, idade, interesses e hábitos de gastos diversos.</p>
+<p>As empresas que implantam a segmentação de clientes consideram que cada cliente tem requisitos diferentes e exigem um esforço de marketing específico para tratá-los adequadamente. As empresas visam obter uma abordagem mais profunda do cliente que estão almejando. Portanto, seu objetivo tem que ser específico e deve ser adaptado para atender às exigências individuais de cada cliente. Além disso, através dos dados coletados, as empresas podem obter uma compreensão mais profunda das preferências dos clientes, bem como os requisitos para descobrir segmentos valiosos que lhes proporcionariam o máximo lucro. Desta forma, elas podem estratificar suas técnicas de marketing de forma mais eficiente e minimizar a possibilidade de risco ao seu investimento.</p>
+<p>A técnica de segmentação de clientes depende de vários diferenciais-chave que dividem os clientes em grupos a serem analisados. Dados relacionados à demografia, geografia, status econômico, bem como padrões comportamentais, desempenham um papel crucial na determinação da direção da empresa em direção aos vários segmentos.</p>
+<div id="como-implementar-a-segmentação-de-clientes-no-r" class="section level2">
+<h2>Como implementar a segmentação de clientes no R?</h2>
+<p>Na primeira etapa deste projeto de ciência de dados, vamos realizar a exploração de dados. Importaremos os pacotes essenciais necessários para esta função e, em seguida, leremos nossos dados. Finalmente, analisaremos os dados de entrada para obter as informações necessárias.</p>
+<p>Temos uma variável que é uma identificação do consumidor, uma variável de gênero, uma de idade, outra de renda anual em k$ e um score de gastos que varia entre 1 e 100.</p>
+<p>Vamos agora exibir as primeiras seis linhas de nosso conjunto de dados usando a função head() e usar a função summary() para emitir o resumo do mesmo.</p>
+<blockquote>
+<p>Faça uma interpretação das variáveis</p>
+</blockquote>
+<hr>
+</div>
+</div>
+<div id="visualização-de-gênero-do-cliente" class="section level1">
+<h1>Visualização de gênero do cliente</h1>
+<p>Criaremos um barplot para mostrar a distribuição de gênero em nosso conjunto de dados de clientes_dados.</p>
+<p>Pelo gráfico acima, observamos que o número de mulheres é maior do que o de homens.</p>
+</div>
+<div id="visualização-da-distribuição-etária" class="section level1">
+<h1>Visualização da distribuição etária</h1>
+<p>Vamos traçar um histograma para visualizar a distribuição e traçar a freqüência das idades dos clientes. Primeiramente, procederemos com um resumo da variável Idade.</p>
+<p>A partir das duas visualizações acima, concluímos que a idade mediana do cliente está entre 30 e 35 anos. A idade mínima dos clientes é 18 anos, enquanto que a idade máxima é 70 anos.</p>
+</div>
+<div id="análise-da-renda-anual-dos-clientes" class="section level1">
+<h1>Análise da renda anual dos clientes</h1>
+<p>Nesta seção do projeto R, vamos criar visualizações para analisar a renda anual dos clientes. Traçaremos um histograma e então procederemos a examinar estes dados usando um gráfico de densidade.</p>
+<p>Da análise descritiva acima, concluímos que a renda mínima anual dos clientes é de 15 e a máxima renda é de 137 mil $ anuais. As pessoas que ganham uma renda média de 70 têm a maior contagem de freqüência em nossa distribuição de histogramas. O salário médio de todos os clientes é de 60,56.</p>
+</div>
+<div id="análise-da-pontuação-de-gastos-dos-clientes" class="section level1">
+<h1>Análise da pontuação de gastos dos clientes</h1>
+<p>Podemos ver que a Análise Descritiva da Pontuação de Gastos é que Min é 1, Max é 99 e a média é 50,20. Pelo histograma, concluímos que os clientes entre as classes 40 e 50 são os mais frequentes entre todas as classes.</p>
+<div id="k-means-cluster-para-segmentação-de-mercado" class="section level2">
+<h2>K-Means Cluster para segmentação de mercado</h2>
+<p>Ao utilizar o algoritmo K-Means clustering, o primeiro passo é indicar o número de clusters (k) que desejamos produzir. O algoritmo começa com a seleção aleatória de <code>k</code> objetos do conjunto de dados que servirão como os centros iniciais de nossos clusters.</p>
+<p>Estes objetos selecionados são os meios de agrupamento, também conhecidos como centroides. Então, os objetos restantes são atribuídos aos centróides mais próximos. Esses centróides são definidos pela Distância Euclidiana presente entre o objeto e o cluster. Nos referimos a esta etapa como “atribuição de agrupamento”.</p>
+<p>Quando a atribuição é concluída, o algoritmo procede para calcular o novo valor médio de cada agrupamento presente nos dados. Após o recálculo dos centros, as observações são verificadas, identificando se elas estão mais próximas de um agrupamento diferente. Usando a média atualizada do cluster, os objetos passam por uma reatribuição. Isto passa repetidamente por várias iterações até que as atribuições de agrupamento parem de se alterar. Os clusters que estão presentes na iteração atual são os mesmos que foram obtidos na iteração anterior.</p>
+<div id="determinando-o-número-de-clusters-ótimos" class="section level3">
+<h3>Determinando o número de clusters ótimos</h3>
+<p>Ao trabalhar com clusters, é preciso especificar o número de clusters a serem utilizados. Para ajudá-lo a determinar os clusters ideais, há três métodos populares. Consideraremos o método de cotovelo.</p>
+<p>O principal objetivo por trás de métodos de partição de clusters como o K-Means é definir os clusters de forma que a variação intra-cluster permaneça mínima.</p>
+<p>No R, é possível implementar essa análise por meio da função a seguir.</p>
+<p>Do gráfico acima, concluímos que 6 é um número apropriado de clusters.</p>
+<p>Usando a função <code>fviz_nbclust()</code>, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:</p>
+<p>Agora, tomemos k = 6 como nosso número de clusters inicial.</p>
+<p>Na saída de nossa operação de kmeans, observamos uma lista com várias informações-chave. A partir daí, concluímos que as informações úteis são:</p>
+<ul>
+<li>cluster - Este é um vetor de vários inteiros que denotam o cluster que tem uma alocação de cada ponto.+</li>
+<li>totss - Isto representa a soma total dos quadrados.</li>
+<li>centers - Matriz composta de vários centros de agrupamento</li>
+<li>withinss - Este é um vetor que representa a soma intra-cluster dos quadrados tendo um componente por cluster.</li>
+<li>tot.withinss - Denota a soma total intra-cluster de quadrados.</li>
+<li>betweenss - Esta é a soma dos quadrados entre os quadrados de um cluster.</li>
+<li>size - O número total de pontos que cada aglomerado possui.</li>
+</ul>
+<p>As médias das variáveis para os agrupamentos podem ser obtidas por meio da função:</p>
+</div>
+</div>
+<div id="o-conjunto-de-agrupamentos-pode-ser-visualizado-por-meio-da-função" class="section level2">
+<h2>O conjunto de agrupamentos pode ser visualizado por meio da função:</h2>
+</div>
+<div id="relacionando-as-variáveis" class="section level2">
+<h2>Relacionando as variáveis:</h2>
+<blockquote>
+<p>Complete a análise a seguir identificando os agrupamentos:</p>
+</blockquote>
+<p>Da visualização acima, observamos que há uma distribuição de 6 clusters como segue:</p>
+<ul>
+<li><p>Cluster ___ e ___ - Estes clusters representam os dados do cliente com o salário médio de renda, bem como o gasto médio anual de salário.</p></li>
+<li><p>Cluster ___ - Este cluster representa o cliente_dados com uma alta renda anual, bem como um alto gasto anual.</p></li>
+<li><p>Cluster ___ - Este grupo denota os dados do cliente com baixa renda anual, bem como o baixo gasto anual de renda.</p></li>
+<li><p>Cluster ___ - Este cluster denota uma alta renda anual e um baixo gasto anual.</p></li>
+<li><p>Cluster ___ - Este cluster representa uma baixa renda anual, mas seu alto gasto anual.</p></li>
+</ul>
+<p>Com a ajuda do clustering, podemos compreender muito melhor as variáveis, o que nos leva a tomar decisões cuidadosas. Com a identificação dos clientes, as empresas podem lançar produtos e serviços que visam clientes com base em vários parâmetros como renda, idade, padrões de gastos, etc. Além disso, padrões mais complexos, como revisões de produtos, são levados em consideração para melhor segmentação.</p>
+</div>
+<div id="síntese" class="section level2">
+<h2>Síntese</h2>
+<p>Neste projeto de ciência de dados, passamos pelo modelo de segmentação do cliente. Desenvolvemos isto por meio de um algoritmo de clustering chamado K-means clustering. Analisamos e visualizamos os dados e depois procedemos à implementação de nosso algoritmo.</p>
+<hr>
+<p><em>Créditos</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://data-flair.training/blogs/r-data-science-project-customer-segmentation/">Projeto Data Science - Segmentação de clientes usando o aprendizado de máquinas em R</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

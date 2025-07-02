@@ -49,7 +49,7 @@ library(tidyverse)
 
 O conjunto de dados para esta tarefa pode ser encontrado no link a seguir, acessado por meio do comando:
 
-```{r load-data, message=FALSE, eval=TRUE}
+```{r load-data, message=FALSE, eval=FALSE}
 
 #url_file <- "atalho no seu computador/plastic-waste.csv"
 
