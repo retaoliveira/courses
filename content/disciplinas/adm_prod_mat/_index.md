@@ -1,9 +1,9 @@
 ---
 date: "2024-01-03T00:00:00Z"
 draft: false
-lastmod: "2024-01-03T00:00:00Z"
+lastmod: "2025-08-19T00:00:00Z"
 menu:
-  adm_prod:
+  adm_prod_mat:
     name: Organização do curso
     weight: 1
 title: Administração da Produção
@@ -38,11 +38,7 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 ## Objetivos de aprendizagem
 
-Por meio desta disciplina, os estudantes desenvolverão competências para:
-
-1.  entender os processos administrativos como instrumentos fundamentais de orientação da ação administrativa, aplicando-se os métodos e processos de planejamento, organização, direção e controle.
-2. Desenvolver habilidades fundamentais para o planejamento, estrutura e operacionalização de um sistema produtivo, compatibilizando a demanda com os recursos disponíveis.
-3. Identificar e avaliar os impactos econômico-financeiros referentes às decisões produtivas.
+Por meio desta disciplina, os estudantes desenvolverão competências para realização de estudos dos processos administrativos como instrumentos fundamentais de orientação da ação administrativa, aplicando-se os métodos e processos de planejamento, organização, direção e controle.
 
 ## Planejamento de encontros síncronos
 
@@ -50,36 +46,38 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** E nas 
 
 **Unidade** | **Data**           | **CH** | **Assunto** |
 ------------|--------------------|--------|-------------|
-Unidade 01 - Introdução | 04/03              |2h|Funções e planejamento e controle da produção 
-Unidade 01 - Introdução  | 08/03              |2h|Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
-Unidade 01 - Introdução  | 11/03              |2h|Atividade em sala 1
-Unidade 02 - Demanda     | 15/03              |2h|Previsão e informação de vendas
-Unidade 02 - Demanda     | 18/03              |2h|Previsão e informação de vendas
-Unidade 02 - Demanda     | 22/03              |2h|Atividade em sala 2
-Unidade 03 - Planejamento e controle de materiais | 25/03              |2h|Tipos de estoques e custos de estoques
-Unidade 03 - Planejamento e controle de materiais | 01/04              |2h|Análise ABC
-Unidade 03 - Planejamento e controle de materiais | 05/04              |2h|Lote econômico de compras
-Unidade 03 - Planejamento e controle de materiais | 08/04              |2h|Atividade em sala 3
-Unidade 04 - Planejamento da capacidade  |  12/04                |2h|Tipos de capacidade e dimensão econômica 
-Unidade 04 - Planejamento da capacidade  |  15/04                |2h|Lote mínimo de produção e ponto de equilíbrio
-Unidade 04 - Planejamento da capacidade  |  19/04                 |2h|Atividade em sala 4
-Unidade 05 - Planejamento da produção  |  22/04            |2h|Fluxograma do produto e do processo
-Unidade 05 - Planejamento da produção  |  26/04             |2h|Atividade em sala 5
-Unidade 05 - Planejamento da produção  | 29/04               |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.
-Unidade 05 - Planejamento da produção  | 03/05             |2h|Atividade em sala 6
-Unidade 05 - Planejamento da produção  | 06/05              |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção.
-Unidade 05 - Planejamento da produção  | 10/05               |2h|Atividade em sala 7
-Unidade 05 - Planejamento da produção  | 13/05              |2h|Planejamento das necessidades de materiais.
-Unidade 05 - Planejamento da produção  | 17/05              |2h|Atividade em sala 8
-Unidade 05 - Planejamento da produção  | 20/05              |2h|Planejamento dos recursos de manufatura.
-Unidade 05 - Planejamento da produção  | 24/05              |2h|Atividade em sala 9
-Unidade 05 - Planejamento da produção  | 27/05              |2h|Programação da produção: roteiro da produção;
-Unidade 05 - Planejamento da produção  | 03/06               |2h|Atividade em sala 10
-Unidade 05 - Planejamento da produção  | 07/06               |2h|Programação da produção: sequência de operações; carga de máquinas
-Unidade 05 - Planejamento da produção  | 10/06               |2h|Atividade em sala 11
-Unidade 06 - Planejamento de processo por projeto  | 14/06               |2h|Aplicação de PERT-CPM
-Unidade 06 - Planejamento de processo por projeto  | 17/06               |2h|Atividade em sala 12
-Exame especial  | 24/06             |2h|Exame especial
+Unidade 01 - Introdução | 26/08              |2h|Funções e planejamento e controle da produção 
+Unidade 01 - Introdução  | 29/08              |2h|Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
+Unidade 01 - Introdução  | 02/09              |2h|Atividade em sala 1
+Unidade 02 - Demanda     | 05/09              |2h|Previsão e informação de vendas
+Unidade 02 - Demanda     | 09/09              |2h|Previsão e informação de vendas
+Unidade 02 - Demanda     | 12/09             |2h|Atividade em sala 2
+Unidade 03 - Planejamento e controle de materiais | 16/09              |2h|Tipos de estoques e custos de estoques
+Unidade 03 - Planejamento e controle de materiais | 19/09              |2h|Análise ABC
+Unidade 03 - Planejamento e controle de materiais | 23/09              |2h|Lote econômico de compras
+Unidade 03 - Planejamento e controle de materiais | 26/09              |2h|Atividade em sala 3
+Unidade 04 - Planejamento da capacidade  |  30/09                |2h|Tipos de capacidade e dimensão econômica 
+Unidade 04 - Planejamento da capacidade  |  03/10                |2h|Lote mínimo de produção e ponto de equilíbrio
+Unidade 04 - Planejamento da capacidade  |  07/10                 |2h|Atividade em sala 4
+Avaliacão - Prova individual  |  10/10                |2h|Avaliação 1
+Unidade 05 - Planejamento da produção  |  14/10            |2h|Fluxograma do produto e do processo
+Unidade 05 - Planejamento da produção  |  17/10             |2h|Atividade em sala 5
+Unidade 05 - Planejamento da produção  | 21/10              |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.
+Unidade 05 - Planejamento da produção  | 24/10             |2h|Atividade em sala 6
+Unidade 05 - Planejamento da produção  | 28/10             |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção.
+Unidade 05 - Planejamento da produção  | 31/10               |2h|Atividade em sala 7
+Unidade 05 - Planejamento da produção  | 04/11              |2h|Planejamento das necessidades de materiais.
+Unidade 05 - Planejamento da produção  | 07/11              |2h|Atividade em sala 8
+Unidade 05 - Planejamento da produção  | 11/11              |2h|Planejamento dos recursos de manufatura.
+Unidade 05 - Planejamento da produção  | 14/11              |2h|Atividade em sala 9
+Unidade 05 - Planejamento da produção  | 18/11              |2h|Programação da produção: roteiro da produção;
+Unidade 05 - Planejamento da produção  | 25/11               |2h|Atividade em sala 10
+Unidade 05 - Planejamento da produção  | 28/11               |2h|Programação da produção: sequência de operações; carga de máquinas
+Unidade 05 - Planejamento da produção  | 02/12                |2h|Atividade em sala 11
+Unidade 06 - Planejamento de processo por projeto  | 05/12               |2h|Aplicação de PERT-CPM
+Unidade 06 - Planejamento de processo por projeto  | 09/12               |2h|Atividade em sala 12
+Avaliacão - Prova individual  |  16/12                |2h|Avaliação 1
+Exame especial  | 09/01             |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio de atividades avaliativas individuais transversais aos objetivos. 
@@ -87,13 +85,12 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 Pontos|	Atividade
 ------|----------
 60| 12 (doze) atividade de aprendizagem em grupos
-30| 3 (três) atividades avaliativas individuais
-10| Presença e participação
+40| 2 (duas) atividades avaliativas individuais
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-Site da disciplina: https://www.places.education/disciplinas/adm_prod
+Site da disciplina: https://www.places.education/disciplinas/adm_prod_mat/
 
 ## Bibliografia recomendada
 
