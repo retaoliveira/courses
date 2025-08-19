@@ -1,7 +1,7 @@
 ---
-date: "2024-01-03T00:00:00Z"
+date: "2025-08-19T00:00:00Z"
 draft: false
-lastmod: "2024-01-03T00:00:00Z"
+lastmod: "2025-08-19T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
@@ -23,47 +23,45 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 ## Ementa da disciplina
 
-- Visão Geral da Logística.   
-- A Cadeia de Suprimentos (Supply Chain) - conceitos principais.   
-- Organização de Suprimentos: funções e objetivos.   
-- Compras e fornecedores.   
-- Armazenagem.   
-- Gestão de Estoques.   
-- Just-in-Time.   
-- Avaliação do sistema suprimentos.  
+- Compreender a noção de processos e a necessidade do gerenciamento da informação na Cadeia de Suprimentos;    
+- conhecer os fundamentos e as principais soluções logísticas com ênfase no uso estratégico e empresarial;    
+- analisar problemas cujas soluções passam pela utilização de soluções logísticas;    
+- avaliar os riscos e oportunidades na implantação de uma estratégia.   
 
 ## Objetivos de aprendizagem
 
 Por meio desta disciplina, os estudantes desenvolverão competências para:
 
-1.  discutir, por meio de conhecimento teórico e prático, os elementos constitutivos das cadeias de suprimentos e suas interrelações.
-2.  Elaborar propostas estratégicas para gestão da cadeia de suprimentos.
-3.  Quantificar e comparar resultados esperados de determinadas soluções logísticas.
-4.  Integrar análise de dados à gestão da cadeia de suprimentos com foco no processo decisório.
+1.  Desenvolvimento de um conhecimento claro dos elementos constitutivos das
+cadeias de suprimentos.   
+2.  Elaborar propostas estratégicas para gestão da cadeia de suprimentos.   
+3.  Desenvolvimento de soluções logísticas.   
+4.  Integração da cadeia de suprimentos através do sistema de informações. 
 
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**. 
+Os encontros acontecerão nas **sextas-feiras**, de **20:50 às 22:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 18/03              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 25/03              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 01/04              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 08/04              |2h|Nível de serviço logístico, desempenho e ICT.
-| 15/04              |2h|KPIs em gestão de processos de produção e suprimento
-| 22/04              |2h|Logística urbana.
-| 29/04              |2h|Logística urbana.
-| 06/05              |2h|Transportes e distribuição física.
-| 13/05              |2h|Transportes e distribuição física.
-| 20/05              |2h|Gestão de estoques e armazenagem.
-| 27/05              |2h|Localizações logísticas.
-| 03/06              |2h|Localizações logísticas.
-| 10/06              |2h|Custos logísticos.
-| 17/06              |2h|Custos logísticos.
-| 24/06              |2h|Logística reversa, verde e sustentável.
-| 01/07              |2h|Exame especial
+| 29/08              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 05/09              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 12/09              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 19/09              |2h|Nível de serviço logístico, desempenho e ICT.
+| 26/09              |2h|KPIs em gestão de processos de produção e suprimento
+| 03/10              |2h|Logística urbana.
+| 10/10              |2h|Logística urbana.
+| 17/10              |2h|Transportes e distribuição física.
+| 24/10              |2h|Transportes e distribuição física.
+| 31/10              |2h|Gestão de estoques e armazenagem.
+| 07/11              |2h|Localizações logísticas.
+| 14/11              |2h|Localizações logísticas.
+| 28/11              |2h|Custos logísticos.
+| 05/12              |2h|Custos logísticos.
+| 12/12              |2h|Logística reversa, verde e sustentável.
+| 19/12              |2h|Logística reversa, verde e sustentável.
+| 09/01              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
@@ -83,9 +81,6 @@ TOTAL:| 	100 pontos
 ## Recursos necessários
 
 [Site da disciplina](https://www.places.education/disciplinas/log_epc/)
-
-[Jamboard da disciplina](https://jamboard.google.com/d/134sZy54Vit4YNenOhZtFByYw5broCd2ia2gTNkSkUD8/edit?usp=sharing)
-
 
 ## Bibliografia recomendada
 
