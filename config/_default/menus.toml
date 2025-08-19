@@ -143,11 +143,11 @@
 #  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"#  url = "disciplinas/sdss/"
 #  weight = 50
 
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "GIS e análise espacial para Ciências Sociais - Adm - 2025/1"
-#  url = "disciplinas/gis_ae_cs/"
-#  weight = 50
+[[main]]
+  parent = "Disciplinas"
+  name = "GIS e análise espacial para Ciências Sociais - Adm - 2025/1"
+  url = "disciplinas/gis_ae_cs/"
+  weight = 50
   
 #[[main]]
 #  parent = "Disciplinas"
