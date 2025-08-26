@@ -98,13 +98,13 @@
 [[main]]
   parent = "Disciplinas"
   name = "Planejamento e Controle da Produção - Eng. Materiais - 2025/2"
-  url = "http://adm-prod.github.io/site"
+  url = "disciplinas/adm_prod_mat/"
   weight = 20
   
 [[main]]
   parent = "Disciplinas"
   name = "Planejamento e Controle da Produção - Eng. Mecânica - 2025/2"
-  url = "http://adm-prod.github.io/site"
+  url = "disciplinas/adm_prod_mec/"
   weight = 30
 
 #[[main]]
@@ -147,13 +147,13 @@
   parent = "Disciplinas"
   name = "GIS e análise espacial para Ciências Sociais - Adm - 2025/1"
   url = "disciplinas/gis_ae_cs/"
-  weight = 50
+  weight = 60
   
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Logística - ADM Especial - 2023/2"
-#  url = "disciplinas/log_especial/"
-#  weight = 30
+[[main]]
+  parent = "Disciplinas"
+  name = "Logística de transporte e armazenagem - 2025/2"
+  url = "disciplinas/log_ta/"
+  weight = 40
 
 #[[main]]
 #  parent = "Disciplinas"
@@ -165,7 +165,7 @@
   parent = "Disciplinas"
   name = "Análise de Dados para gestão organizacional - 2025/2"
   url = "disciplinas/dados_grad/"
-  weight = 40
+  weight = 50
 
 #[[main]]
 #  parent = "Disciplinas"
