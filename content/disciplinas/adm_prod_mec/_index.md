@@ -52,7 +52,7 @@ Unidade 02 - Demanda     | 11/09              |2h|Previsão e informação de ve
 Unidade 02 - Demanda     | 18/09             |2h|Atividade em sala 2
 Unidade 03 - Planejamento e controle de materiais | 25/09              |2h|Tipos de estoques e custos de estoques. Lote econômico de compras.
 Unidade 03 - Planejamento e controle de materiais | 02/10              |2h|Atividade em sala 3
-Unidade 04 - Planejamento da capacidade  |  09/10                |2h|Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio 
+Unidade 04 - Planejamento da capacidade  |  09/10                |2h|Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio. 
 Unidade 04 - Planejamento da capacidade  |  16/10                |2h|Atividade em sala 4
 Avaliacão - Prova individual  |  23/10                |2h|Avaliação 1
 Unidade 05 - Planejamento da produção  | 30/10            |2h|Fluxograma do produto e do processo. Atividade em sala 5
@@ -69,7 +69,7 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Atividade
 ------|----------
-60| 12 (doze) atividade de aprendizagem em grupos
+60| 11 (atividades) atividade de aprendizagem em grupos
 40| 2 (duas) atividades avaliativas individuais
 TOTAL:| 	100 pontos
 
@@ -98,7 +98,7 @@ veículos, denominada empresa Beta. Exacta, v. 12, n. 2, p. 197-208, 2014.
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<PPC-MAT>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<PPC-MEC>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
 
 ## Políticas institucionais e da disciplina
 

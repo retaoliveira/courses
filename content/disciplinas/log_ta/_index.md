@@ -43,7 +43,7 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 Por meio desta disciplina, os estudantes desenvolverão competências para:
 
-1.  Compreender a importância da atividade de Transporte de Carga e da estratégia 1 de Armazenagem para a tomada de decisão, comparando resultados de diferentes fases de um planejamento. 
+1.  Compreender a importância da atividade de Transporte de Carga e da estratégia de armazenagem para a tomada de decisão, comparando resultados de diferentes fases de um planejamento. 
 2.  Elaborar propostas estratégicas para gestão da cadeia de suprimentos.   
 3.  Desenvolvimento de soluções logísticas.   
 4.  Integração da cadeia de suprimentos através do sistema de informações. 
@@ -51,7 +51,7 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **sextas-feiras**, de **20:50 às 22:30**. 
+Os encontros acontecerão nas **terças e quintas-feiras**, de **16:40 às 18:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|

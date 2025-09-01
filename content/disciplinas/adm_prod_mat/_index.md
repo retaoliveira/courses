@@ -42,7 +42,7 @@ Por meio desta disciplina, os estudantes desenvolverão competências para reali
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **terças-feiras**, de **18:50 às 20:30** E nas **sextas-feiras**, de **18:50 às 20:30**. 
+Os encontros acontecerão nas **terças e sextas-feiras**, de **18:50 às 20:30**. 
 
 **Unidade** | **Data**           | **CH** | **Assunto** |
 ------------|--------------------|--------|-------------|
