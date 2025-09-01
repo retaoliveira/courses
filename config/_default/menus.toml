@@ -93,19 +93,19 @@
   parent = "Disciplinas"
   name = "Logística - Eng. Produção Civil - 2025/2"
   url = "disciplinas/log_epc/"
-  weight = 10
+  weight = 30
   
 [[main]]
   parent = "Disciplinas"
   name = "Planejamento e Controle da Produção - Eng. Materiais - 2025/2"
   url = "disciplinas/adm_prod_mat/"
-  weight = 20
+  weight = 10
   
 [[main]]
   parent = "Disciplinas"
   name = "Planejamento e Controle da Produção - Eng. Mecânica - 2025/2"
   url = "disciplinas/adm_prod_mec/"
-  weight = 30
+  weight = 20
 
 #[[main]]
 #  parent = "Disciplinas"
