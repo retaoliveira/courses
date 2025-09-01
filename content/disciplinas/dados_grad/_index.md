@@ -1,7 +1,7 @@
 ---
 date: "2020-23-12T00:00:00Z"
 draft: false
-lastmod: "2025-04-08T00:00:00Z"
+lastmod: "2025-08-26T00:00:00Z"
 menu:
   dados_grad:
     name: Organização do curso

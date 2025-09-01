@@ -23,17 +23,27 @@ A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceit
 
 ## Ementa da disciplina
 
-- Compreender a noção de processos e a necessidade do gerenciamento da informação na Cadeia de Suprimentos;    
-- conhecer os fundamentos e as principais soluções logísticas com ênfase no uso estratégico e empresarial;    
-- analisar problemas cujas soluções passam pela utilização de soluções logísticas;    
-- avaliar os riscos e oportunidades na implantação de uma estratégia.   
+- Transporte e sua influência no sistema logístico. 
+- Objetivos de um sistema de transporte. 
+- Medidas de desempenho em transporte. 
+- Os modos de Transporte. 
+- Transporte intermodal. 
+- Preparação da carga. 
+- Os custos logísticos do transporte. 
+- Como projetar um sistema de transporte. 
+- A elaboração e a otimização de rotas. 
+- Apresentação dos custos envolvidos na atividade de armazenamento e os impactos na cadeia de valor do produto. 
+- Políticas de estoques a partir do conceito de logística integrada. 
+- Conceitos e técnicas de controle e avaliação de estoques. 
+- Análise da necessidade de espaço físico e planejamento de layout e localização de armazéns. 
+- Apresentação de métodos para armazenamento de materiais: localização, classificação e codificação. 
+- Movimentação de cargas.
 
 ## Objetivos de aprendizagem
 
 Por meio desta disciplina, os estudantes desenvolverão competências para:
 
-1.  Desenvolvimento de um conhecimento claro dos elementos constitutivos das
-cadeias de suprimentos.   
+1.  Compreender a importância da atividade de Transporte de Carga e da estratégia 1 de Armazenagem para a tomada de decisão, comparando resultados de diferentes fases de um planejamento. 
 2.  Elaborar propostas estratégicas para gestão da cadeia de suprimentos.   
 3.  Desenvolvimento de soluções logísticas.   
 4.  Integração da cadeia de suprimentos através do sistema de informações. 
@@ -80,7 +90,7 @@ TOTAL:| 	100 pontos
 
 ## Recursos necessários
 
-[Site da disciplina](https://www.places.education/disciplinas/log_epc/)
+[Site da disciplina](https://www.places.education/disciplinas/log_ta/)
 
 ## Bibliografia recomendada
 
