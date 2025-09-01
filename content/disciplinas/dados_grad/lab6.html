@@ -1,6 +1,6 @@
 ---
 date: '2020-12-24'
-draft: false
+draft: true
 menu:
   dados_grad:
     parent: Labs
@@ -18,23 +18,30 @@ weight: 600
 
 <pre class="r"><code>library(gmodels)
 library(factoextra)</code></pre>
-<pre><code>## Loading required package: ggplot2</code></pre>
+<pre><code>## Warning: pacote &#39;factoextra&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre><code>## Carregando pacotes exigidos: ggplot2</code></pre>
 <pre><code>## Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa</code></pre>
-<pre class="r"><code>library(FactoMineR)
-library(ggplot2)
-library(ggcorrplot)
-library(psych)</code></pre>
+<pre class="r"><code>library(FactoMineR)</code></pre>
+<pre><code>## Warning: pacote &#39;FactoMineR&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(ggcorrplot)</code></pre>
+<pre><code>## Warning: pacote &#39;ggcorrplot&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre class="r"><code>library(psych)</code></pre>
+<pre><code>## Warning: pacote &#39;psych&#39; foi compilado no R versão 4.4.3</code></pre>
 <pre><code>## 
-## Attaching package: &#39;psych&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:ggplot2&#39;:
+## Anexando pacote: &#39;psych&#39;</code></pre>
+<pre><code>## Os seguintes objetos são mascarados por &#39;package:ggplot2&#39;:
 ## 
 ##     %+%, alpha</code></pre>
 <pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Warning: pacote &#39;tibble&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre><code>## Warning: pacote &#39;purrr&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre><code>## Warning: pacote &#39;lubridate&#39; foi compilado no R versão 4.4.2</code></pre>
 <pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ## ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
 ## ✔ lubridate 1.9.4     ✔ tibble    3.3.0
-## ✔ purrr     1.0.4     ✔ tidyr     1.3.1</code></pre>
+## ✔ purrr     1.1.0     ✔ tidyr     1.3.1</code></pre>
 <pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ psych::%+%()    masks ggplot2::%+%()
 ## ✖ psych::alpha()  masks ggplot2::alpha()
@@ -43,38 +50,40 @@ library(psych)</code></pre>
 ## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <pre class="r"><code>library(outliers)</code></pre>
 <pre><code>## 
-## Attaching package: &#39;outliers&#39;
+## Anexando pacote: &#39;outliers&#39;
 ## 
-## The following object is masked from &#39;package:psych&#39;:
+## O seguinte objeto é mascarado por &#39;package:psych&#39;:
 ## 
 ##     outlier</code></pre>
 <pre class="r"><code>library(hrbrthemes)
 library(ggplot2)
 library(dplyr)
 library(plotly)</code></pre>
+<pre><code>## Warning: pacote &#39;plotly&#39; foi compilado no R versão 4.4.3</code></pre>
 <pre><code>## 
-## Attaching package: &#39;plotly&#39;
+## Anexando pacote: &#39;plotly&#39;
 ## 
-## The following object is masked from &#39;package:ggplot2&#39;:
+## O seguinte objeto é mascarado por &#39;package:ggplot2&#39;:
 ## 
 ##     last_plot
 ## 
-## The following object is masked from &#39;package:stats&#39;:
+## O seguinte objeto é mascarado por &#39;package:stats&#39;:
 ## 
 ##     filter
 ## 
-## The following object is masked from &#39;package:graphics&#39;:
+## O seguinte objeto é mascarado por &#39;package:graphics&#39;:
 ## 
 ##     layout</code></pre>
 <pre class="r"><code>library(viridis)</code></pre>
-<pre><code>## Loading required package: viridisLite</code></pre>
+<pre><code>## Carregando pacotes exigidos: viridisLite</code></pre>
 <pre class="r"><code>library(hrbrthemes)
-library(knitr)
-library(kableExtra)</code></pre>
+library(knitr)</code></pre>
+<pre><code>## Warning: pacote &#39;knitr&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre class="r"><code>library(kableExtra)</code></pre>
 <pre><code>## 
-## Attaching package: &#39;kableExtra&#39;
+## Anexando pacote: &#39;kableExtra&#39;
 ## 
-## The following object is masked from &#39;package:dplyr&#39;:
+## O seguinte objeto é mascarado por &#39;package:dplyr&#39;:
 ## 
 ##     group_rows</code></pre>
 <div id="funções" class="section level1">
