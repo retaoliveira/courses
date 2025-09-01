@@ -36,14 +36,14 @@ library(tidyverse)
 3. Carregue os arquivos de dados usando a função `read_csv` e atribuindo cada conjunto de dados a um objeto
 
 
-```{r eval=TRUE, message=FALSE, warning=FALSE, include=FALSE}
-professions <- read_csv("D:/Dropbox/Public/dados/professions.csv")
-dates <- read_csv("D:/Dropbox/Public/dados/dates.csv")
-works <- read_csv("D:/Dropbox/Public/dados/works.csv")
-enrolment <- read_csv("D:/Dropbox/Public/dados/enrolment.csv")
-survey <- read_csv("D:/Dropbox/Public/dados/survey.csv")
-purchases <- read_csv("D:/Dropbox/Public/dados/purchases.csv")
-prices <- read_csv("D:/Dropbox/Public/dados/prices.csv")
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# professions <- read_csv("D:/Dropbox/Public/dados/professions.csv")
+# dates <- read_csv("D:/Dropbox/Public/dados/dates.csv")
+# works <- read_csv("D:/Dropbox/Public/dados/works.csv")
+# enrolment <- read_csv("D:/Dropbox/Public/dados/enrolment.csv")
+# survey <- read_csv("D:/Dropbox/Public/dados/survey.csv")
+# purchases <- read_csv("D:/Dropbox/Public/dados/purchases.csv")
+# prices <- read_csv("D:/Dropbox/Public/dados/prices.csv")
 ```
 
 # Manipulação de dados - mulheres cientistas
@@ -58,7 +58,7 @@ prices <- read_csv("D:/Dropbox/Public/dados/prices.csv")
 
 5. Gere um dataframe considerando apenas a coluna com o nome das cientistas.
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 dataframe_junto <- professions %>%
   left_join(dates, by="name") %>% 
   left_join(works, by="name") %>% 
@@ -76,7 +76,7 @@ dataframe_junto <- professions %>%
 3. Gere um dataframe com os alunos que estão frequentando as aulas e que não estão matriculados.
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 data1 <- enrolment %>% 
   left_join(survey, by="id")
 
