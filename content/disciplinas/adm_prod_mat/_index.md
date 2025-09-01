@@ -42,7 +42,7 @@ Por meio desta disciplina, os estudantes desenvolverão competências para reali
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30** E nas **sextas-feiras**, de **18:50 às 20:30**. 
+Os encontros acontecerão nas **terças-feiras**, de **18:50 às 20:30** E nas **sextas-feiras**, de **18:50 às 20:30**. 
 
 **Unidade** | **Data**           | **CH** | **Assunto** |
 ------------|--------------------|--------|-------------|
@@ -76,7 +76,7 @@ Unidade 05 - Planejamento da produção  | 28/11               |2h|Programação
 Unidade 05 - Planejamento da produção  | 02/12                |2h|Atividade em sala 11
 Unidade 06 - Planejamento de processo por projeto  | 05/12               |2h|Aplicação de PERT-CPM
 Unidade 06 - Planejamento de processo por projeto  | 09/12               |2h|Atividade em sala 12
-Avaliacão - Prova individual  |  16/12                |2h|Avaliação 1
+Avaliacão - Prova individual  |  16/12                |2h|Avaliação 2
 Exame especial  | 09/01             |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
