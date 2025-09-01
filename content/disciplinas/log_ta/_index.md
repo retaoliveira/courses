@@ -55,22 +55,37 @@ Os encontros acontecerão nas **terças e quintas-feiras**, de **16:40 às 18:30
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 29/08              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 05/09              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 12/09              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 19/09              |2h|Nível de serviço logístico, desempenho e ICT.
-| 26/09              |2h|KPIs em gestão de processos de produção e suprimento
-| 03/10              |2h|Logística urbana.
-| 10/10              |2h|Logística urbana.
-| 17/10              |2h|Transportes e distribuição física.
-| 24/10              |2h|Transportes e distribuição física.
-| 31/10              |2h|Gestão de estoques e armazenagem.
-| 07/11              |2h|Localizações logísticas.
-| 14/11              |2h|Localizações logísticas.
-| 28/11              |2h|Custos logísticos.
-| 05/12              |2h|Custos logísticos.
-| 12/12              |2h|Logística reversa, verde e sustentável.
-| 19/12              |2h|Logística reversa, verde e sustentável.
+| 26/08              |2h|Elementos fundamentais para análise de transportes.
+| 28/08              |2h|Elementos fundamentais para análise de transportes.
+| 02/09              |2h|Elementos fundamentais para análise de transportes.
+| 04/09              |2h|Caracterização dos modos de transporte.
+| 09/09              |2h|Caracterização dos modos de transporte.
+| 11/09              |2h|Caracterização dos modos de transporte.
+| 16/09              |2h|Movimentação de cargas no Brasil e no mundo.
+| 18/09              |2h|Movimentação de cargas no Brasil e no mundo.
+| 23/09              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
+| 25/09              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
+| 30/09              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 02/10              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 07/10              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 09/10              |2h|Planejamento e Programas de Manutenção de Frotas.
+| 14/10              |2h|Análise de Confiabilidade. 
+| 16/10              |2h|Dimensionamento de recursos.
+| 21/10              |2h|Dimensionamento de recursos.
+| 23/10              |2h|Dimensionamento de recursos.
+| 28/10              |2h|Dimensionamento de recursos.
+| 30/10              |2h|Dimensionamento de recursos.
+| 04/11              |2h|Dimensionamento de recursos.
+| 06/11              |2h|Elementos geradores de custos no transporte de cargas.
+| 11/11              |2h|Elementos geradores de custos no transporte de cargas.
+| 13/11              |2h|Elementos geradores de custos no transporte de cargas.
+| 18/11              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
+| 25/11              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
+| 27/11              |2h|Políticas de estoques e armazenagem.
+| 02/12              |2h|Políticas de estoques e armazenagem.
+| 04/12              |2h|Simulação e análise de capacidade de terminais.
+| 09/12              |2h|Simulação e análise de capacidade de terminais.
+| 11/12              |2h|Simulação e análise de capacidade de terminais.
 | 09/01              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
@@ -78,14 +93,13 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 Pontos|	Atividade | Prazo
 ------|------------ | ---
-10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
-10|  Atividade de aprendizagem 2 - Nivel de serviço logístico, TICs e KPIs
-10|  Atividade de aprendizagem 3 – Logística Urbana
-10|  Atividade de aprendizagem 4 - Gestão de Transportes 
-10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
-10|  Atividade de aprendizagem 6 - Localização e custos logísticos
-15|  Projeto integrador 1 - Vídeo | 
-25|  Projeto integrador 2 - Revista | 
+10|  Atividade de aprendizagem 1 - Modos de transporte para movimentação de mercadorias.
+10|  Atividade de aprendizagem 2 - Nivel de serviço operacional, TICs e KPIs.
+10|  Atividade de aprendizagem 3 – Dimensionamento de recursos.
+10|  Atividade de aprendizagem 4 - Elementos geradores de custos no transporte de cargas.
+10|  Atividade de aprendizagem 5 - Roteirização e Problemas de transportes (pesquisa operacional).
+10|  Atividade de aprendizagem 6 - Simulação e análise de capacidade de terminais.
+40|  Projeto integrador - Revista | 
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
@@ -124,7 +138,7 @@ TOTAL:| 	100 pontos
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-EPC>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-TA>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br>
 
 ## Políticas institucionais e da disciplina
 
