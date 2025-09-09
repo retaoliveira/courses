@@ -1,0 +1,33 @@
+---
+date: "2025-09-09T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Aulas
+    weight: 5
+title: 'Aula 01 - Introdução à disciplina'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+## Apresentação
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://logisticata.github.io/class01', height = "400px")
+```
+
+[LINK](https://logisticata.github.io/class01)
+
+## Atividade para casa
+
+Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
+
+<iframe width="1236" height="695" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento - Supply Chain Certifications" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
