@@ -1,6 +1,6 @@
 ---
-date: "2023-08-07T00:00:00+01:00"
-draft: true
+date: "2025-09-12T00:00:00+01:00"
+draft: false
 menu:
   log_epc:
     parent: Aulas
@@ -16,11 +16,7 @@ type: docs
 weight: 5
 ---
 
-## Atividade para casa
 
-Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
-
-<iframe width="1268" height="713" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Apresentação
 
@@ -29,3 +25,9 @@ knitr::include_url('https://logistica2023.github.io/class01', height = "400px")
 ```
 
 [LINK](https://logistica2023.github.io/class01)
+
+## Atividade para casa
+
+Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
+
+<iframe width="1268" height="713" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
