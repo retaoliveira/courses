@@ -45,6 +45,7 @@ weight: 5
         *   **Natureza:** [ ] Bem  [ ] Serviço  (Marque um X)
         *   **Volume de Produção:** [ ] Alto (Massa)  [ ] Médio (Lotes)  [ ] Baixo (Sob Encomenda/Projeto)
         *   **Variedade de Produtos:** [ ] Baixa (Pouca customização)  [ ] Alta (Muita customização)
+        *   **Tipo de produção:** [ ] Contínua  [ ] Massa  [ ] lotes  [ ] Projeto
 3.  **Preparem um 'Pitch' de 1 minuto:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
 
 #### **Fase 3: Apresentações e Discussão (10 minutos)**
