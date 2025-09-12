@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 5
+weight: 6
 ---
 
 ## **Atividade: A Fábrica do Futuro**
