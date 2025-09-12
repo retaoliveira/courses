@@ -26,47 +26,33 @@ weight: 5
 
 ---
 
-### Fundamentos
-    *   **Natureza:** **Bens** (produtos físicos, tangíveis) vs. **Serviços** (intangíveis, experiências).
-    *   **Volume:** **Alto** (ex: linha de montagem de celulares) vs. **Baixo** (ex: construção de um navio).
-    *   **Variedade:** **Alta** (ex: oficina de carros personalizados) vs. **Baixa** (ex: fábrica de parafusos padrão).
-3.  Entrega para cada grupo uma cartolina, canetas e a **Missão Principal**.
+### Fundamentos\
+**Natureza:** **Bens** (produtos físicos, tangíveis) vs. **Serviços** (intangíveis, experiências).\
+**Volume:** **Alto** (ex: linha de montagem de celulares) vs. **Baixo** (ex: construção de um navio).\
+**Variedade:** **Alta** (ex: oficina de carros personalizados) vs. **Baixa** (ex: fábrica de parafusos padrão).\
+       
+### A Missão - Classificar sistemas de produção (15 minutos)
 
-#### **Fase 2: A Missão - Criar e Classificar (15 minutos)**
+Vocês são os novos empreendedores de 'A Fábrica do Futuro'. Sua missão é:
 
-**Instruções dadas a cada grupo:**
-"Vocês são os novos empreendedores de 'A Fábrica do Futuro'. Sua missão é:
+1. **Estruturar as informações a seguir sobre seu negócio**
+    - **Nome da Empresa:** (Ex: "ZoomBurger", "PetTalk App", "SkyCars Ltd")
+    - **Nosso Produto/Serviço é:** (Descreva brevemente O QUE é)
+    - **Classificação:**
+        - **Natureza:** Bem Serviço
+        - **Volume de Produção:** Alto (Massa) Médio (Lotes) Baixo (Sob Encomenda/Projeto)
+        - **Variedade de Produtos:** Baixa (Pouca customização) Alta (Muita customização)
+        - **Tipo de produção:** [ ] Contínua  [ ] Massa  [ ] lotes  [ ] Projeto
 
-1.  **Inventar um Produto ou Serviço:** Seja criativo! Pode ser algo totalmente novo ou uma versão melhorada de algo que já existe. (Ex: um carro voador movido a energia solar, um aplicativo que traduz a linguagem dos animais, uma hamburgueria que imprime a sua foto no pão, um serviço de tutorias personalizadas por IA).
-2.  **Preencher o Cartaz de Apresentação:** Desenhem ou escrevam no cartaz as seguintes informações:
-    *   **Nome da Empresa:** (Ex: "ZoomBurger", "PetTalk App", "SkyCars Ltd")
-    *   **Nosso Produto/Serviço é:** (Descreva brevemente O QUE é)
-    *   **Classificação:**
-        *   **Natureza:** [ ] Bem  [ ] Serviço  (Marque um X)
-        *   **Volume de Produção:** [ ] Alto (Massa)  [ ] Médio (Lotes)  [ ] Baixo (Sob Encomenda/Projeto)
-        *   **Variedade de Produtos:** [ ] Baixa (Pouca customização)  [ ] Alta (Muita customização)
-        *   **Tipo de produção:** [ ] Contínua  [ ] Massa  [ ] lotes  [ ] Projeto
-3.  **Preparem um 'Pitch' de 1 minuto:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
+2. **Preparem um 'Pitch' de 1 minuto:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
 
-#### **Fase 3: Apresentações e Discussão (10 minutos)**
 
-1.  Cada grupo tem **1 minuto** para fazer seu "pitch" e mostrar seu cartaz.
-2.  Após cada apresentação, o facilitador (ou outros grupos) pode fazer uma pergunta rápida para testar a classificação:
+### Apresentações e Discussão (10 minutos)**
+
+1.  Cada grupo tem **1 minuto** para fazer seu "pitch".
+2.  Após cada apresentação, cada grupo deve fazer uma pergunta rápida ao grupo que está apresentando. Exemplos:
     *   "O que faria vocês mudarem a classificação de 'Volume Baixo' para 'Volume Alto'?"
     *   "Se vocês começassem a oferecer pacotes padronizados, isso alteraria a variedade?"
     *   "Há um elemento de serviço mesmo em um produto físico? (ex: garantia, personalização)"
-3.  O facilitador deve reforçar os acertos e gently corrigir quaisquer classificações equivocadas, usando a justificativa dos próprios alunos para clarificar os conceitos.
 
----
 
-### **Tópicos para Discussão e Encerramento:**
-
-Ao final de todas as apresentações, o professor pode sintetizar a atividade destacando:
-
-*   "Vimos hoje que a classificação não é fixa; uma empresa pode operar em mais de uma modalidade."
-*   "Notem como Volume e Variedade geralmente têm uma relação inversa: alta variedade normalmente implica baixo volume, e vice-versa."
-*   "A natureza do produto (bem ou serviço) define toda a operação logística por trás dele."
-*   "A atividade de hoje mostra como esses conceitos teóricos são aplicados no mundo real do empreendedorismo e da gestão de operações."
-
-**Variação para Turmas Grandes ou Tempo Mais Curto:**
-Em vez de inventar um produto, o professor pode entregar para cada grupo **3 cartões com produtos/serviços reais já definidos** (ex: "Usina Hidrelétrica", "Confeitaria de Bolos Decorados", "Clínica Médica", "Fábrica de Lápis"). A tarefa do grupo se torna apenas classificá-los e justificar. Isso agiliza muito o processo.
