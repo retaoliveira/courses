@@ -4,7 +4,7 @@ draft: false
 menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
-    weight: 6
+    weight: 10
 title: 1. Introdução a sistemas de produção
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 6
+weight: 10
 ---
 
 ## **Atividade: A Fábrica do Futuro**
