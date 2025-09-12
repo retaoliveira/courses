@@ -21,10 +21,10 @@ weight: 5
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://gradlogistica.github.io/class01', height = "400px")
+knitr::include_url('https://gradlogistica.github.io/aula01', height = "400px")
 ```
 
-[LINK](https://gradlogistica.github.io/class01)
+[LINK](https://gradlogistica.github.io/aula01)
 
 ## Atividade para casa
 
