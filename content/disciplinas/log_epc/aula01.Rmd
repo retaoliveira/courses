@@ -21,13 +21,14 @@ weight: 5
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class01', height = "400px")
+knitr::include_url('https://gradlogistica.github.io/class01', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class01)
+[LINK](https://gradlogistica.github.io/class01)
 
 ## Atividade para casa
 
 Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
 
 <iframe width="1268" height="713" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+git
