@@ -46,12 +46,12 @@ Vocês são os novos empreendedores de 'A Fábrica do Futuro'. Sua missão é:
         - **Layout:** [ ] Processo  [ ] Produto  [ ] Célula  [ ] Posicional
         - **Padrão de atendimento da demanda:** [ ] MTS [ ] ATO [ ] MTO [ ] ETO
 
-3. **Preparem um 'Pitch' de 2 minuto:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
+3. **Preparem um 'Pitch' de 2 minutos:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
 
 
 ### Apresentações e Discussão (10 minutos)
 
-1.  Cada grupo tem **2 minuto** para apresentar seu "pitch".
+1.  Cada grupo tem **2 minutos** para apresentar seu "pitch".
 2.  Após cada apresentação, cada grupo deve fazer uma pergunta rápida ao grupo que está apresentando. Exemplos:
     *   "O que faria vocês mudarem a classificação de 'Volume Baixo' para 'Volume Alto'?"
     *   "Se vocês começassem a oferecer pacotes padronizados, isso alteraria a variedade?"
