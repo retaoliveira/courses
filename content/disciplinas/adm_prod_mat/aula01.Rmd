@@ -20,8 +20,8 @@ weight: 5
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://adm-prod.github.io/site/slides/class01.html#/title-slide', height = "400px")
+knitr::include_url('https://adm-producao.github.io/aula01/', height = "400px")
 ```
 
-[LINK](https://adm-prod.github.io/site/slides/class01.html#/title-slide)
+[LINK](https://adm-producao.github.io/aula01/)
 
