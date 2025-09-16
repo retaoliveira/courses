@@ -1,6 +1,6 @@
 ---
 date: "2021-10-15T00:00:00+01:00"
-draft: False
+draft: true
 menu:
   dados_grad:
     parent: Labs
@@ -27,17 +27,23 @@ weight: 400
 <p>Começamos com o carregamento dos pacotes que vamos utilizar.</p>
 <pre class="r"><code>library(pacman)
 p_load(fivethirtyeight, tidyverse, tidytuesday)</code></pre>
-<pre><code>## Warning: package &#39;tidytuesday&#39; is not available for this version of R
+<pre><code>## Warning: não é possível acessar o índice para o repositório http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4:
+##   não foi possível abrir a URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4/PACKAGES&#39;</code></pre>
+<pre><code>## pacote &#39;fivethirtyeight&#39; desempacotado com sucesso e somas MD5 verificadas
 ## 
-## A version of this package for your version of R might be available elsewhere,
-## see the ideas at
+## Os pacotes binários baixados estão em
+## 	C:\Users\renat\AppData\Local\Temp\RtmpwfZK8o\downloaded_packages</code></pre>
+<pre><code>## Warning: pacote &#39;fivethirtyeight&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre><code>## Warning: pacote &#39;tidytuesday&#39; não está disponível for this version of R
+## 
+## Uma versão deste pacote para a sua versão do R pode estar disponível em outro lugar,
+## veja as ideias em
 ## https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</code></pre>
-<pre><code>## Warning: &#39;BiocManager&#39; not available.  Could not check Bioconductor.
-## 
-## Please use `install.packages(&#39;BiocManager&#39;)` and then retry.</code></pre>
+<pre><code>## Warning: não é possível acessar o índice para o repositório http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4:
+##   não foi possível abrir a URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4/PACKAGES&#39;</code></pre>
 <pre><code>## Warning in p_install(package, character.only = TRUE, ...):</code></pre>
 <pre><code>## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called &#39;tidytuesday&#39;</code></pre>
+## logical.return = TRUE, : não há nenhum pacote chamado &#39;tidytuesday&#39;</code></pre>
 <pre><code>## Warning in p_load(fivethirtyeight, tidyverse, tidytuesday): Failed to install/load:
 ## tidytuesday</code></pre>
 <p>O carregamento dos dados pode ser feito considerando o código a seguir:</p>

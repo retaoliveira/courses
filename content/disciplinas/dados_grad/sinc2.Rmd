@@ -1,6 +1,6 @@
 ---
 date: "2021-05-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_grad:
     parent: Encontros
@@ -23,5 +23,3 @@ knitr::include_url('https://places-research.github.io/class02_dataadm', height =
 ```
 
 [LINK](https://places-research.github.io/class02_dataadm)
-
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/8cZ5TcKx5oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
