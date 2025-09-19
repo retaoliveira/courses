@@ -3,7 +3,7 @@ date: "2021-05-05T00:00:00+01:00"
 draft: False
 menu:
   dados_grad:
-    parent: Encontros
+    parent: Aulas
     weight: 12
 title: Aula 01 - Introdução à análise de dados
 weight: 15

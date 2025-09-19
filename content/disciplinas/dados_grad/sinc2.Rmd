@@ -3,9 +3,9 @@ date: "2021-05-05T00:00:00+01:00"
 draft: true
 menu:
   dados_grad:
-    parent: Encontros
+    parent: Aulas
     weight: 12
-title: Encontro Síncrono 2
+title: Aula 02
 weight: 15
 editor_options: 
   markdown: 
