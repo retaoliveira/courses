@@ -43,41 +43,41 @@ Por meio desta disciplina, os alunos desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **segundas e terças-feiras**, de **18:50 às 20:30h**.
+Os encontros acontecerão nas **quintas-feiras** de **18:50 às 20:30h** e **sextas-feiras** de **16:40 às 18:30**. 
 
 **Encontro** | **Data**           | **Descrição da Atividade**                                                                
 |------------|--------------------|--------------------------------------------------------
-01| 07/04| Ambientação no R, RStudio, Git-Github e Rpubs. |
-02| 08/04| Ambientação no R, RStudio, Git-Github e Rpubs. |
-03| 14/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
-04| 15/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
-05| 22/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
-06| 28/04| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
-07| 29/04| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
-08| 05/05| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
-09| 06/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-10| 12/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-11| 13/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-12| 19/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-13| 20/05| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
-14| 26/05| Organização de dados e produção de análises textuais sob perspectiva analítica. | 
-15| 27/05| Organização de dados e produção de análises textuais sob perspectiva analítica. |
-16| 02/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
-17| 03/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
-18| 09/06| Organização de dados e produção de análises textuais sob perspectiva analítica. |
-19| 10/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. | 
-20| 16/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
-21| 17/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
-22| 23/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
-23| 24/06| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
-24| 30/06| Visualização e comunicação de informações gerenciais e científicas. |
-25| 01/07| Visualização e comunicação de informações gerenciais e científicas. |
-26| 07/07| Visualização e comunicação de informações gerenciais e científicas. |
-27| 08/07| Visualização e comunicação de informações gerenciais e científicas. |
-28| 14/07| Visualização e comunicação de informações gerenciais e científicas. |
-29| 15/07| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
-30| 21/07| Exame especial |
-| **Total de Horas** | | 30 horas     |
+01| 28/08| Ambientação no R, RStudio, Git-Github e Rpubs. |
+02| 29/08| Ambientação no R, RStudio, Git-Github e Rpubs. |
+03| 04/09| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+04| 05/09| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+05| 11/09| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+06| 12/09| RMarkdown como instrumento para produção de documentos estáticos e interativos, produção de websites, produção de dashboards, apresentações, livros e artigos científicos. |
+07| 18/09| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+08| 19/09| Estrutura de dados no R: tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos. | 
+09| 25/09| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+10| 26/09| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+11| 02/10| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+12| 03/10| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+13| 09/10| Funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados.| 
+14| 10/10| Organização de dados e produção de análises textuais sob perspectiva analítica. | 
+15| 16/10| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+16| 17/10| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+17| 23/10| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+18| 24/10| Organização de dados e produção de análises textuais sob perspectiva analítica. |
+19| 30/10| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. | 
+20| 31/10| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+21| 06/11| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+22| 07/11| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+23| 13/11| Espacialização de dados e produção de análises gerenciais que contemplem a localização como atributo decisório. |
+24| 14/11| Visualização e comunicação de informações gerenciais e científicas. |
+25| 27/11| Visualização e comunicação de informações gerenciais e científicas. |
+26| 28/11| Visualização e comunicação de informações gerenciais e científicas. |
+27| 04/12| Visualização e comunicação de informações gerenciais e científicas. |
+28| 05/12| Visualização e comunicação de informações gerenciais e científicas. |
+29| 11/12| Implementação de R e RStudio para identificação, caracterização e diagnóstico de problemas e proposição de soluções em processos organizacionais e científicos.| 
+30| 12/12| Exame especial |
+| **Total de Horas** | | 60 horas     |
 
 ## Proposta de avaliação da aprendizagem
 
@@ -94,7 +94,6 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 | 10| Lab 7 – Análise textual| 
 | 10| Lab 8 – Análise espacial|
 | 40| Projeto integrador - Entrega final|
-
 | TOTAL: |  100 pontos                                                                                                                                                                                                                                   
 
 ## Requisitos básicos e expectativas iniciais
@@ -131,7 +130,7 @@ Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@cefetmg.br](mailto:renataoliveira@cefetmg.br)
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: [renataoliveira@gmail.br](mailto:renataoliveira@gmail.br)
 
 
 ## Políticas institucionais e da disciplina
