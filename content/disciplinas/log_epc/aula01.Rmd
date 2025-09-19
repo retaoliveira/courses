@@ -26,8 +26,8 @@ knitr::include_url('https://gradlogistica.github.io/aula01', height = "400px")
 
 [LINK](https://gradlogistica.github.io/aula01)
 
-## Atividade para casa
+<!-- ## Atividade para casa -->
 
-Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro. 
+<!-- Assista o vídeo e traga, em papel, 1 (uma) pergunta para discussão em sala no próximo encontro.  -->
 
-<iframe width="1236" height="695" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento - Supply Chain Certifications" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- <iframe width="1236" height="695" src="https://www.youtube.com/embed/E1viFYWocGU" title="Supply Chain Management - Cadeia de suprimento - Supply Chain Certifications" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
