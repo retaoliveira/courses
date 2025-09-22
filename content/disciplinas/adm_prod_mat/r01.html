@@ -1,0 +1,494 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Código R
+    weight: 30
+title: 2. Previsão e informação de vendas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#section" id="toc-section">=============================================================================</a></li>
+<li><a href="#an%C3%A1lise-de-previs%C3%A3o-de-demanda---engenharias-de-materiais-e-mec%C3%A2nica" id="toc-análise-de-previsão-de-demanda---engenharias-de-materiais-e-mecânica">ANÁLISE DE PREVISÃO DE DEMANDA - ENGENHARIAS DE MATERIAIS E MECÂNICA</a></li>
+<li><a href="#baseado-em-slack-et-al.-e-rodrigues" id="toc-baseado-em-slack-et-al.-e-rodrigues">Baseado em Slack et al. e Rodrigues</a></li>
+<li><a href="#section-1" id="toc-section-1">=============================================================================</a></li>
+<li><a href="#carregar-bibliotecas-necess%C3%A1rias" id="toc-carregar-bibliotecas-necessárias">Carregar bibliotecas necessárias</a></li>
+<li><a href="#section-2" id="toc-section-2">=============================================================================</a></li>
+<li><a href="#cria%C3%A7%C3%A3o-do-dataframe-com-os-dados-hist%C3%B3ricos" id="toc-criação-do-dataframe-com-os-dados-históricos">1. CRIAÇÃO DO DATAFRAME COM OS DADOS HISTÓRICOS</a></li>
+<li><a href="#section-3" id="toc-section-3">=============================================================================</a></li>
+<li><a href="#section-4" id="toc-section-4">=============================================================================</a></li>
+<li><a href="#c%C3%A1lculo-das-previs%C3%B5es---m%C3%A9todo-da-m%C3%A9dia-m%C3%B3vel-simples-n3" id="toc-cálculo-das-previsões---método-da-média-móvel-simples-n3">2. CÁLCULO DAS PREVISÕES - MÉTODO DA MÉDIA MÓVEL SIMPLES (n=3)</a></li>
+<li><a href="#section-5" id="toc-section-5">=============================================================================</a></li>
+<li><a href="#section-6" id="toc-section-6">=============================================================================</a></li>
+<li><a href="#c%C3%A1lculo-das-previs%C3%B5es---m%C3%A9dia-m%C3%B3vel-ponderada-pesos-0.5-0.3-0.2" id="toc-cálculo-das-previsões---média-móvel-ponderada-pesos-0.5-0.3-0.2">3. CÁLCULO DAS PREVISÕES - MÉDIA MÓVEL PONDERADA (pesos: 0.5, 0.3, 0.2)</a></li>
+<li><a href="#section-7" id="toc-section-7">=============================================================================</a></li>
+<li><a href="#section-8" id="toc-section-8">=============================================================================</a></li>
+<li><a href="#c%C3%A1lculo-das-previs%C3%B5es---suaviza%C3%A7%C3%A3o-exponencial-%CE%B1-0.3" id="toc-cálculo-das-previsões---suavização-exponencial-α-0.3">4. CÁLCULO DAS PREVISÕES - SUAVIZAÇÃO EXPONENCIAL (α = 0.3)</a></li>
+<li><a href="#section-9" id="toc-section-9">=============================================================================</a></li>
+<li><a href="#section-10" id="toc-section-10">=============================================================================</a></li>
+<li><a href="#c%C3%A1lculo-dos-erros-de-previs%C3%A3o-mape" id="toc-cálculo-dos-erros-de-previsão-mape">5. CÁLCULO DOS ERROS DE PREVISÃO (MAPE)</a></li>
+<li><a href="#section-11" id="toc-section-11">=============================================================================</a></li>
+<li><a href="#section-12" id="toc-section-12">=============================================================================</a></li>
+<li><a href="#preparar-dados-para-gr%C3%A1ficos" id="toc-preparar-dados-para-gráficos">6. PREPARAR DADOS PARA GRÁFICOS</a></li>
+<li><a href="#section-13" id="toc-section-13">=============================================================================</a></li>
+<li><a href="#section-14" id="toc-section-14">=============================================================================</a></li>
+<li><a href="#gr%C3%A1ficos-comparativos" id="toc-gráficos-comparativos">7. GRÁFICOS COMPARATIVOS</a></li>
+<li><a href="#section-15" id="toc-section-15">=============================================================================</a></li>
+<li><a href="#section-16" id="toc-section-16">—————————————————————————–</a></li>
+<li><a href="#gr%C3%A1fico-1-compara%C3%A7%C3%A3o-geral-de-todos-os-m%C3%A9todos" id="toc-gráfico-1-comparação-geral-de-todos-os-métodos">GRÁFICO 1: COMPARAÇÃO GERAL DE TODOS OS MÉTODOS</a></li>
+<li><a href="#section-17" id="toc-section-17">—————————————————————————–</a></li>
+<li><a href="#section-18" id="toc-section-18">—————————————————————————–</a></li>
+<li><a href="#gr%C3%A1fico-2-demanda-real-vs.-m%C3%A9dia-m%C3%B3vel-simples" id="toc-gráfico-2-demanda-real-vs.-média-móvel-simples">GRÁFICO 2: DEMANDA REAL vs. MÉDIA MÓVEL SIMPLES</a></li>
+<li><a href="#section-19" id="toc-section-19">—————————————————————————–</a></li>
+<li><a href="#section-20" id="toc-section-20">—————————————————————————–</a></li>
+<li><a href="#gr%C3%A1fico-3-demanda-real-vs.-m%C3%A9dia-m%C3%B3vel-ponderada" id="toc-gráfico-3-demanda-real-vs.-média-móvel-ponderada">GRÁFICO 3: DEMANDA REAL vs. MÉDIA MÓVEL PONDERADA</a></li>
+<li><a href="#section-21" id="toc-section-21">—————————————————————————–</a></li>
+<li><a href="#section-22" id="toc-section-22">—————————————————————————–</a></li>
+<li><a href="#gr%C3%A1fico-4-demanda-real-vs.-suaviza%C3%A7%C3%A3o-exponencial" id="toc-gráfico-4-demanda-real-vs.-suavização-exponencial">GRÁFICO 4: DEMANDA REAL vs. SUAVIZAÇÃO EXPONENCIAL</a></li>
+<li><a href="#section-23" id="toc-section-23">—————————————————————————–</a></li>
+<li><a href="#section-24" id="toc-section-24">=============================================================================</a></li>
+<li><a href="#salvar-os-resultados" id="toc-salvar-os-resultados">8. SALVAR OS RESULTADOS</a></li>
+<li><a href="#section-25" id="toc-section-25">=============================================================================</a></li>
+<li><a href="#salvar-dataframe-completo" id="toc-salvar-dataframe-completo">Salvar dataframe completo</a></li>
+<li><a href="#section-26" id="toc-section-26">=============================================================================</a></li>
+<li><a href="#resumo-final-dos-resultados" id="toc-resumo-final-dos-resultados">9. RESUMO FINAL DOS RESULTADOS</a></li>
+<li><a href="#section-27" id="toc-section-27">=============================================================================</a></li>
+</ul>
+</div>
+
+<div id="section" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="análise-de-previsão-de-demanda---engenharias-de-materiais-e-mecânica" class="section level1">
+<h1>ANÁLISE DE PREVISÃO DE DEMANDA - ENGENHARIAS DE MATERIAIS E MECÂNICA</h1>
+</div>
+<div id="baseado-em-slack-et-al.-e-rodrigues" class="section level1">
+<h1>Baseado em Slack et al. e Rodrigues</h1>
+</div>
+<div id="section-1" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="carregar-bibliotecas-necessárias" class="section level1">
+<h1>Carregar bibliotecas necessárias</h1>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: pacote &#39;ggplot2&#39; foi compilado no R versão 4.4.3</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## 
+## Anexando pacote: &#39;dplyr&#39;</code></pre>
+<pre><code>## Os seguintes objetos são mascarados por &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## Os seguintes objetos são mascarados por &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(tidyr)
+library(scales)</code></pre>
+<pre><code>## Warning: pacote &#39;scales&#39; foi compilado no R versão 4.4.3</code></pre>
+</div>
+<div id="section-2" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="criação-do-dataframe-com-os-dados-históricos" class="section level1">
+<h1>1. CRIAÇÃO DO DATAFRAME COM OS DADOS HISTÓRICOS</h1>
+</div>
+<div id="section-3" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>dados_demanda &lt;- data.frame(
+  Mes = 1:12,
+  Demanda_Real = c(120, 135, 118, 142, 130, 155, 145, 160, 138, 165, 150, 170)
+)
+
+# Visualizar os dados
+print(&quot;Dados Históricos de Demanda:&quot;)</code></pre>
+<pre><code>## [1] &quot;Dados Históricos de Demanda:&quot;</code></pre>
+<pre class="r"><code>print(dados_demanda)</code></pre>
+<pre><code>##    Mes Demanda_Real
+## 1    1          120
+## 2    2          135
+## 3    3          118
+## 4    4          142
+## 5    5          130
+## 6    6          155
+## 7    7          145
+## 8    8          160
+## 9    9          138
+## 10  10          165
+## 11  11          150
+## 12  12          170</code></pre>
+</div>
+<div id="section-4" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="cálculo-das-previsões---método-da-média-móvel-simples-n3" class="section level1">
+<h1>2. CÁLCULO DAS PREVISÕES - MÉTODO DA MÉDIA MÓVEL SIMPLES (n=3)</h1>
+</div>
+<div id="section-5" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>calcular_mms &lt;- function(dados, n = 3) {
+  previsoes &lt;- rep(NA, nrow(dados))
+  for (i in (n+1):nrow(dados)) {
+    previsoes[i] &lt;- mean(dados$Demanda_Real[(i-n):(i-1)])
+  }
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura &lt;- mean(tail(dados$Demanda_Real, n))
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_mms &lt;- calcular_mms(dados_demanda)
+dados_demanda$MMS &lt;- resultado_mms$previsoes</code></pre>
+</div>
+<div id="section-6" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="cálculo-das-previsões---média-móvel-ponderada-pesos-0.5-0.3-0.2" class="section level1">
+<h1>3. CÁLCULO DAS PREVISÕES - MÉDIA MÓVEL PONDERADA (pesos: 0.5, 0.3, 0.2)</h1>
+</div>
+<div id="section-7" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>calcular_mmp &lt;- function(dados, pesos = c(0.5, 0.3, 0.2)) {
+  n &lt;- length(pesos)
+  previsoes &lt;- rep(NA, nrow(dados))
+  
+  for (i in (n+1):nrow(dados)) {
+    valores &lt;- dados$Demanda_Real[(i-n):(i-1)]
+    previsoes[i] &lt;- sum(valores * pesos)
+  }
+  
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura &lt;- sum(tail(dados$Demanda_Real, n) * pesos)
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_mmp &lt;- calcular_mmp(dados_demanda)
+dados_demanda$MMP &lt;- resultado_mmp$previsoes</code></pre>
+</div>
+<div id="section-8" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="cálculo-das-previsões---suavização-exponencial-α-0.3" class="section level1">
+<h1>4. CÁLCULO DAS PREVISÕES - SUAVIZAÇÃO EXPONENCIAL (α = 0.3)</h1>
+</div>
+<div id="section-9" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>calcular_ses &lt;- function(dados, alpha = 0.3) {
+  previsoes &lt;- numeric(nrow(dados))
+  previsoes[1] &lt;- dados$Demanda_Real[1]  # Previsão inicial = primeira demanda
+  
+  for (i in 2:nrow(dados)) {
+    previsoes[i] &lt;- alpha * dados$Demanda_Real[i-1] + (1 - alpha) * previsoes[i-1]
+  }
+  
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura &lt;- alpha * tail(dados$Demanda_Real, 1) + (1 - alpha) * tail(previsoes, 1)
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_ses &lt;- calcular_ses(dados_demanda)
+dados_demanda$SES &lt;- resultado_ses$previsoes</code></pre>
+</div>
+<div id="section-10" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="cálculo-dos-erros-de-previsão-mape" class="section level1">
+<h1>5. CÁLCULO DOS ERROS DE PREVISÃO (MAPE)</h1>
+</div>
+<div id="section-11" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>calcular_mape &lt;- function(real, previsao) {
+  # Remover NAs para cálculo
+  indices_validos &lt;- !is.na(previsao)
+  real_validos &lt;- real[indices_validos]
+  previsao_validos &lt;- previsao[indices_validos]
+  
+  erro_percentual &lt;- abs((real_validos - previsao_validos) / real_validos) * 100
+  mape &lt;- mean(erro_percentual)
+  return(mape)
+}
+
+# Calcular MAPE para cada método
+mape_mms &lt;- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$MMS)
+mape_mmp &lt;- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$MMP)
+mape_ses &lt;- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$SES)
+
+cat(&quot;\nCOMPARAÇÃO DA ACURÁCIA DOS MÉTODOS (MAPE):\n&quot;)</code></pre>
+<pre><code>## 
+## COMPARAÇÃO DA ACURÁCIA DOS MÉTODOS (MAPE):</code></pre>
+<pre class="r"><code>cat(&quot;Média Móvel Simples (n=3):&quot;, round(mape_mms, 2), &quot;%\n&quot;)</code></pre>
+<pre><code>## Média Móvel Simples (n=3): 8.64 %</code></pre>
+<pre class="r"><code>cat(&quot;Média Móvel Ponderada (0.5,0.3,0.2):&quot;, round(mape_mmp, 2), &quot;%\n&quot;)</code></pre>
+<pre><code>## Média Móvel Ponderada (0.5,0.3,0.2): 9.21 %</code></pre>
+<pre class="r"><code>cat(&quot;Suavização Exponencial (α=0.3):&quot;, round(mape_ses, 2), &quot;%\n&quot;)</code></pre>
+<pre><code>## Suavização Exponencial (α=0.3): 8.15 %</code></pre>
+</div>
+<div id="section-12" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="preparar-dados-para-gráficos" class="section level1">
+<h1>6. PREPARAR DADOS PARA GRÁFICOS</h1>
+</div>
+<div id="section-13" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code># acrescentar 13o
+dados_completo &lt;- rbind(
+  dados_demanda,
+  data.frame(
+    Mes = 13,
+    Demanda_Real = NA,
+    MMS = resultado_mms$proxima_previsao,
+    MMP = resultado_mmp$proxima_previsao,
+    SES = resultado_ses$proxima_previsao
+  )
+)
+
+# Converter para formato longo para ggplot2
+dados_long &lt;- dados_completo %&gt;%
+  pivot_longer(
+    cols = c(Demanda_Real, MMS, MMP, SES),
+    names_to = &quot;Tipo&quot;,
+    values_to = &quot;Valor&quot;
+  ) %&gt;%
+  mutate(
+    Tipo = factor(Tipo, levels = c(&quot;Demanda_Real&quot;, &quot;MMS&quot;, &quot;MMP&quot;, &quot;SES&quot;)),
+    Linha_Type = ifelse(Tipo == &quot;Demanda_Real&quot;, &quot;Real&quot;, &quot;Previsão&quot;)
+  )</code></pre>
+</div>
+<div id="section-14" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="gráficos-comparativos" class="section level1">
+<h1>7. GRÁFICOS COMPARATIVOS</h1>
+</div>
+<div id="section-15" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code># Paleta de cores personalizada
+cores &lt;- c(&quot;Demanda_Real&quot; = &quot;#1f77b4&quot;, 
+           &quot;MMS&quot; = &quot;#ff7f0e&quot;, 
+           &quot;MMP&quot; = &quot;#2ca02c&quot;, 
+           &quot;SES&quot; = &quot;#d62728&quot;)</code></pre>
+</div>
+<div id="section-16" class="section level1">
+<h1>—————————————————————————–</h1>
+</div>
+<div id="gráfico-1-comparação-geral-de-todos-os-métodos" class="section level1">
+<h1>GRÁFICO 1: COMPARAÇÃO GERAL DE TODOS OS MÉTODOS</h1>
+</div>
+<div id="section-17" class="section level1">
+<h1>—————————————————————————–</h1>
+<pre class="r"><code>grafico_comparativo &lt;- ggplot(dados_long, aes(x = Mes, y = Valor, color = Tipo, linetype = Linha_Type)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = &quot;Série&quot;,
+    values = cores,
+    labels = c(&quot;Demanda Real&quot;, &quot;Média Móvel Simples&quot;, &quot;Média Móvel Ponderada&quot;, &quot;Suavização Exponencial&quot;)
+  ) +
+  scale_linetype_manual(name = &quot;Tipo&quot;, values = c(&quot;Real&quot; = &quot;solid&quot;, &quot;Previsão&quot; = &quot;dashed&quot;)) +
+  labs(
+    title = &quot;Comparação das Técnicas de Previsão de Demanda&quot;,
+    subtitle = &quot;Média Móvel Simples (n=3) vs. Média Móvel Ponderada (0.5,0.3,0.2) vs. Suavização Exponencial (α=0.3)&quot;,
+    x = &quot;Mês&quot;,
+    y = &quot;Demanda (Unidades)&quot;,
+    caption = &quot;Fonte: Baseado em Slack et al. e Rodrigues&quot;
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = &quot;bold&quot;, size = 14, hjust = 0.5),
+    plot.subtitle = element_text(size = 10, hjust = 0.5),
+    legend.position = &quot;right&quot;,
+    panel.grid.minor = element_blank()
+  ) +
+  scale_x_continuous(breaks = 1:13) +
+  geom_vline(xintercept = 12.5, linetype = &quot;dotted&quot;, color = &quot;gray50&quot;) +
+  annotate(&quot;text&quot;, x = 12.7, y = 170, label = &quot;Futuro&quot;, angle = 90, size = 3)
+
+print(grafico_comparativo)</code></pre>
+<pre><code>## Warning: Removed 7 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/r01_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="section-18" class="section level1">
+<h1>—————————————————————————–</h1>
+</div>
+<div id="gráfico-2-demanda-real-vs.-média-móvel-simples" class="section level1">
+<h1>GRÁFICO 2: DEMANDA REAL vs. MÉDIA MÓVEL SIMPLES</h1>
+</div>
+<div id="section-19" class="section level1">
+<h1>—————————————————————————–</h1>
+<pre class="r"><code>grafico_mms &lt;- ggplot(subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;MMS&quot;)), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;MMS&quot;) &amp; !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = &quot;Série&quot;,
+    values = c(&quot;Demanda_Real&quot; = &quot;#1f77b4&quot;, &quot;MMS&quot; = &quot;#ff7f0e&quot;),
+    labels = c(&quot;Demanda Real&quot;, &quot;Média Móvel Simples (n=3)&quot;)
+  ) +
+  labs(
+    title = &quot;Previsão por Média Móvel Simples&quot;,
+    subtitle = paste(&quot;MAPE:&quot;, round(mape_mms, 2), &quot;%&quot;),
+    x = &quot;Mês&quot;,
+    y = &quot;Demanda (Unidades)&quot;
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = &quot;bold&quot;, size = 12, hjust = 0.5),
+    legend.position = &quot;bottom&quot;
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_mms)</code></pre>
+<pre><code>## Warning: Removed 4 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/r01_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+<div id="section-20" class="section level1">
+<h1>—————————————————————————–</h1>
+</div>
+<div id="gráfico-3-demanda-real-vs.-média-móvel-ponderada" class="section level1">
+<h1>GRÁFICO 3: DEMANDA REAL vs. MÉDIA MÓVEL PONDERADA</h1>
+</div>
+<div id="section-21" class="section level1">
+<h1>—————————————————————————–</h1>
+<pre class="r"><code>grafico_mmp &lt;- ggplot(subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;MMP&quot;)), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;MMP&quot;) &amp; !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = &quot;Série&quot;,
+    values = c(&quot;Demanda_Real&quot; = &quot;#1f77b4&quot;, &quot;MMP&quot; = &quot;#2ca02c&quot;),
+    labels = c(&quot;Demanda Real&quot;, &quot;Média Móvel Ponderada&quot;)
+  ) +
+  labs(
+    title = &quot;Previsão por Média Móvel Ponderada&quot;,
+    subtitle = paste(&quot;Pesos: 0.5, 0.3, 0.2 | MAPE:&quot;, round(mape_mmp, 2), &quot;%&quot;),
+    x = &quot;Mês&quot;,
+    y = &quot;Demanda (Unidades)&quot;
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = &quot;bold&quot;, size = 12, hjust = 0.5),
+    legend.position = &quot;bottom&quot;
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_mmp)</code></pre>
+<pre><code>## Warning: Removed 4 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/r01_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="section-22" class="section level1">
+<h1>—————————————————————————–</h1>
+</div>
+<div id="gráfico-4-demanda-real-vs.-suavização-exponencial" class="section level1">
+<h1>GRÁFICO 4: DEMANDA REAL vs. SUAVIZAÇÃO EXPONENCIAL</h1>
+</div>
+<div id="section-23" class="section level1">
+<h1>—————————————————————————–</h1>
+<pre class="r"><code>grafico_ses &lt;- ggplot(subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;SES&quot;)), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c(&quot;Demanda_Real&quot;, &quot;SES&quot;) &amp; !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = &quot;Série&quot;,
+    values = c(&quot;Demanda_Real&quot; = &quot;#1f77b4&quot;, &quot;SES&quot; = &quot;#d62728&quot;),
+    labels = c(&quot;Demanda Real&quot;, &quot;Suavização Exponencial (α=0.3)&quot;)
+  ) +
+  labs(
+    title = &quot;Previsão por Suavização Exponencial&quot;,
+    subtitle = paste(&quot;α = 0.3 | MAPE:&quot;, round(mape_ses, 2), &quot;%&quot;),
+    x = &quot;Mês&quot;,
+    y = &quot;Demanda (Unidades)&quot;
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = &quot;bold&quot;, size = 12, hjust = 0.5),
+    legend.position = &quot;bottom&quot;
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_ses)</code></pre>
+<pre><code>## Warning: Removed 1 row containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/r01_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+<div id="section-24" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="salvar-os-resultados" class="section level1">
+<h1>8. SALVAR OS RESULTADOS</h1>
+</div>
+<div id="section-25" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="salvar-dataframe-completo" class="section level1">
+<h1>Salvar dataframe completo</h1>
+<pre class="r"><code>write.csv(dados_completo, &quot;previsao_demanda.csv&quot;, row.names = FALSE)
+
+# Salvar gráficos
+ggsave(&quot;grafico_comparativo.png&quot;, grafico_comparativo, width = 10, height = 6, dpi = 300)</code></pre>
+<pre><code>## Warning: Removed 7 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<pre class="r"><code>ggsave(&quot;grafico_mms.png&quot;, grafico_mms, width = 8, height = 5, dpi = 300)</code></pre>
+<pre><code>## Warning: Removed 4 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<pre class="r"><code>ggsave(&quot;grafico_mmp.png&quot;, grafico_mmp, width = 8, height = 5, dpi = 300)</code></pre>
+<pre><code>## Warning: Removed 4 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<pre class="r"><code>ggsave(&quot;grafico_ses.png&quot;, grafico_ses, width = 8, height = 5, dpi = 300)</code></pre>
+<pre><code>## Warning: Removed 1 row containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+</div>
+<div id="section-26" class="section level1">
+<h1>=============================================================================</h1>
+</div>
+<div id="resumo-final-dos-resultados" class="section level1">
+<h1>9. RESUMO FINAL DOS RESULTADOS</h1>
+</div>
+<div id="section-27" class="section level1">
+<h1>=============================================================================</h1>
+<pre class="r"><code>cat(&quot;\n=== RESUMO DAS PREVISÕES PARA O MÊS 13 ===\n&quot;)</code></pre>
+<pre><code>## 
+## === RESUMO DAS PREVISÕES PARA O MÊS 13 ===</code></pre>
+<pre class="r"><code>cat(&quot;Média Móvel Simples (n=3):&quot;, round(resultado_mms$proxima_previsao, 1), &quot;unidades\n&quot;)</code></pre>
+<pre><code>## Média Móvel Simples (n=3): 161.7 unidades</code></pre>
+<pre class="r"><code>cat(&quot;Média Móvel Ponderada (0.5,0.3,0.2):&quot;, round(resultado_mmp$proxima_previsao, 1), &quot;unidades\n&quot;)</code></pre>
+<pre><code>## Média Móvel Ponderada (0.5,0.3,0.2): 161.5 unidades</code></pre>
+<pre class="r"><code>cat(&quot;Suavização Exponencial (α=0.3):&quot;, round(resultado_ses$proxima_previsao, 1), &quot;unidades\n&quot;)</code></pre>
+<pre><code>## Suavização Exponencial (α=0.3): 155.9 unidades</code></pre>
+<pre class="r"><code>cat(&quot;\n=== RECOMENDAÇÃO BASEADA NO MAPE ===\n&quot;)</code></pre>
+<pre><code>## 
+## === RECOMENDAÇÃO BASEADA NO MAPE ===</code></pre>
+<pre class="r"><code>mapes &lt;- c(MMS = mape_mms, MMP = mape_mmp, SES = mape_ses)
+melhor_metodo &lt;- names(which.min(mapes))
+cat(&quot;Método mais preciso:&quot;, melhor_metodo, &quot;com MAPE de&quot;, round(min(mapes), 2), &quot;%\n&quot;)</code></pre>
+<pre><code>## Método mais preciso: SES com MAPE de 8.15 %</code></pre>
+<pre class="r"><code># Exibir dataframe final
+print(&quot;\nDataFrame Completo com Todas as Previsões:&quot;)</code></pre>
+<pre><code>## [1] &quot;\nDataFrame Completo com Todas as Previsões:&quot;</code></pre>
+<pre class="r"><code>print(dados_completo, na.print = &quot;-&quot;)</code></pre>
+<pre><code>##    Mes Demanda_Real      MMS   MMP      SES
+## 1    1          120       NA    NA 120.0000
+## 2    2          135       NA    NA 120.0000
+## 3    3          118       NA    NA 124.5000
+## 4    4          142 124.3333 124.1 122.5500
+## 5    5          130 131.6667 131.3 128.3850
+## 6    6          155 130.0000 127.6 128.8695
+## 7    7          145 142.3333 141.0 136.7086
+## 8    8          160 143.3333 140.5 139.1961
+## 9    9          138 153.3333 153.0 145.4372
+## 10  10          165 147.6667 148.1 143.2061
+## 11  11          150 154.3333 154.4 149.7442
+## 12  12          170 151.0000 148.5 149.8210
+## 13  13           NA 161.6667 161.5 155.8747</code></pre>
+</div>

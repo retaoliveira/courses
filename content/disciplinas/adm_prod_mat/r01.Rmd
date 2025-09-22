@@ -1,0 +1,365 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Código R
+    weight: 30
+title: 2. Previsão e informação de vendas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+# =============================================================================
+# ANÁLISE DE PREVISÃO DE DEMANDA - ENGENHARIAS DE MATERIAIS E MECÂNICA
+# Baseado em Slack et al. e Rodrigues
+# =============================================================================
+
+# Carregar bibliotecas necessárias
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(scales)
+
+```
+
+# =============================================================================
+# 1. CRIAÇÃO DO DATAFRAME COM OS DADOS HISTÓRICOS
+# =============================================================================
+
+```{r}
+dados_demanda <- data.frame(
+  Mes = 1:12,
+  Demanda_Real = c(120, 135, 118, 142, 130, 155, 145, 160, 138, 165, 150, 170)
+)
+
+# Visualizar os dados
+print("Dados Históricos de Demanda:")
+print(dados_demanda)
+```
+
+
+
+# =============================================================================
+# 2. CÁLCULO DAS PREVISÕES - MÉTODO DA MÉDIA MÓVEL SIMPLES (n=3)
+# =============================================================================
+
+```{r}
+calcular_mms <- function(dados, n = 3) {
+  previsoes <- rep(NA, nrow(dados))
+  for (i in (n+1):nrow(dados)) {
+    previsoes[i] <- mean(dados$Demanda_Real[(i-n):(i-1)])
+  }
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura <- mean(tail(dados$Demanda_Real, n))
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_mms <- calcular_mms(dados_demanda)
+dados_demanda$MMS <- resultado_mms$previsoes
+```
+
+
+
+
+# =============================================================================
+# 3. CÁLCULO DAS PREVISÕES - MÉDIA MÓVEL PONDERADA (pesos: 0.5, 0.3, 0.2)
+# =============================================================================
+
+```{r}
+calcular_mmp <- function(dados, pesos = c(0.5, 0.3, 0.2)) {
+  n <- length(pesos)
+  previsoes <- rep(NA, nrow(dados))
+  
+  for (i in (n+1):nrow(dados)) {
+    valores <- dados$Demanda_Real[(i-n):(i-1)]
+    previsoes[i] <- sum(valores * pesos)
+  }
+  
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura <- sum(tail(dados$Demanda_Real, n) * pesos)
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_mmp <- calcular_mmp(dados_demanda)
+dados_demanda$MMP <- resultado_mmp$previsoes
+
+```
+
+
+# =============================================================================
+# 4. CÁLCULO DAS PREVISÕES - SUAVIZAÇÃO EXPONENCIAL (α = 0.3)
+# =============================================================================
+
+```{r}
+calcular_ses <- function(dados, alpha = 0.3) {
+  previsoes <- numeric(nrow(dados))
+  previsoes[1] <- dados$Demanda_Real[1]  # Previsão inicial = primeira demanda
+  
+  for (i in 2:nrow(dados)) {
+    previsoes[i] <- alpha * dados$Demanda_Real[i-1] + (1 - alpha) * previsoes[i-1]
+  }
+  
+  # Previsão para o próximo período (Mês 13)
+  previsao_futura <- alpha * tail(dados$Demanda_Real, 1) + (1 - alpha) * tail(previsoes, 1)
+  return(list(previsoes = previsoes, proxima_previsao = previsao_futura))
+}
+
+resultado_ses <- calcular_ses(dados_demanda)
+dados_demanda$SES <- resultado_ses$previsoes
+
+```
+
+
+# =============================================================================
+# 5. CÁLCULO DOS ERROS DE PREVISÃO (MAPE)
+# =============================================================================
+
+```{r}
+calcular_mape <- function(real, previsao) {
+  # Remover NAs para cálculo
+  indices_validos <- !is.na(previsao)
+  real_validos <- real[indices_validos]
+  previsao_validos <- previsao[indices_validos]
+  
+  erro_percentual <- abs((real_validos - previsao_validos) / real_validos) * 100
+  mape <- mean(erro_percentual)
+  return(mape)
+}
+
+# Calcular MAPE para cada método
+mape_mms <- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$MMS)
+mape_mmp <- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$MMP)
+mape_ses <- calcular_mape(dados_demanda$Demanda_Real, dados_demanda$SES)
+
+cat("\nCOMPARAÇÃO DA ACURÁCIA DOS MÉTODOS (MAPE):\n")
+cat("Média Móvel Simples (n=3):", round(mape_mms, 2), "%\n")
+cat("Média Móvel Ponderada (0.5,0.3,0.2):", round(mape_mmp, 2), "%\n")
+cat("Suavização Exponencial (α=0.3):", round(mape_ses, 2), "%\n")
+```
+
+# =============================================================================
+# 6. PREPARAR DADOS PARA GRÁFICOS
+# =============================================================================
+
+```{r}
+
+# acrescentar 13o
+dados_completo <- rbind(
+  dados_demanda,
+  data.frame(
+    Mes = 13,
+    Demanda_Real = NA,
+    MMS = resultado_mms$proxima_previsao,
+    MMP = resultado_mmp$proxima_previsao,
+    SES = resultado_ses$proxima_previsao
+  )
+)
+
+# Converter para formato longo para ggplot2
+dados_long <- dados_completo %>%
+  pivot_longer(
+    cols = c(Demanda_Real, MMS, MMP, SES),
+    names_to = "Tipo",
+    values_to = "Valor"
+  ) %>%
+  mutate(
+    Tipo = factor(Tipo, levels = c("Demanda_Real", "MMS", "MMP", "SES")),
+    Linha_Type = ifelse(Tipo == "Demanda_Real", "Real", "Previsão")
+  )
+```
+
+
+
+# =============================================================================
+# 7. GRÁFICOS COMPARATIVOS
+# =============================================================================
+
+```{r}
+# Paleta de cores personalizada
+cores <- c("Demanda_Real" = "#1f77b4", 
+           "MMS" = "#ff7f0e", 
+           "MMP" = "#2ca02c", 
+           "SES" = "#d62728")
+```
+
+
+# -----------------------------------------------------------------------------
+# GRÁFICO 1: COMPARAÇÃO GERAL DE TODOS OS MÉTODOS
+# -----------------------------------------------------------------------------
+
+```{r}
+grafico_comparativo <- ggplot(dados_long, aes(x = Mes, y = Valor, color = Tipo, linetype = Linha_Type)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = "Série",
+    values = cores,
+    labels = c("Demanda Real", "Média Móvel Simples", "Média Móvel Ponderada", "Suavização Exponencial")
+  ) +
+  scale_linetype_manual(name = "Tipo", values = c("Real" = "solid", "Previsão" = "dashed")) +
+  labs(
+    title = "Comparação das Técnicas de Previsão de Demanda",
+    subtitle = "Média Móvel Simples (n=3) vs. Média Móvel Ponderada (0.5,0.3,0.2) vs. Suavização Exponencial (α=0.3)",
+    x = "Mês",
+    y = "Demanda (Unidades)",
+    caption = "Fonte: Baseado em Slack et al. e Rodrigues"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    plot.subtitle = element_text(size = 10, hjust = 0.5),
+    legend.position = "right",
+    panel.grid.minor = element_blank()
+  ) +
+  scale_x_continuous(breaks = 1:13) +
+  geom_vline(xintercept = 12.5, linetype = "dotted", color = "gray50") +
+  annotate("text", x = 12.7, y = 170, label = "Futuro", angle = 90, size = 3)
+
+print(grafico_comparativo)
+```
+
+
+
+
+
+# -----------------------------------------------------------------------------
+# GRÁFICO 2: DEMANDA REAL vs. MÉDIA MÓVEL SIMPLES
+# -----------------------------------------------------------------------------
+```{r}
+grafico_mms <- ggplot(subset(dados_long, Tipo %in% c("Demanda_Real", "MMS")), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c("Demanda_Real", "MMS") & !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = "Série",
+    values = c("Demanda_Real" = "#1f77b4", "MMS" = "#ff7f0e"),
+    labels = c("Demanda Real", "Média Móvel Simples (n=3)")
+  ) +
+  labs(
+    title = "Previsão por Média Móvel Simples",
+    subtitle = paste("MAPE:", round(mape_mms, 2), "%"),
+    x = "Mês",
+    y = "Demanda (Unidades)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 12, hjust = 0.5),
+    legend.position = "bottom"
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_mms)
+
+```
+
+
+# -----------------------------------------------------------------------------
+# GRÁFICO 3: DEMANDA REAL vs. MÉDIA MÓVEL PONDERADA
+# -----------------------------------------------------------------------------
+
+```{r}
+grafico_mmp <- ggplot(subset(dados_long, Tipo %in% c("Demanda_Real", "MMP")), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c("Demanda_Real", "MMP") & !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = "Série",
+    values = c("Demanda_Real" = "#1f77b4", "MMP" = "#2ca02c"),
+    labels = c("Demanda Real", "Média Móvel Ponderada")
+  ) +
+  labs(
+    title = "Previsão por Média Móvel Ponderada",
+    subtitle = paste("Pesos: 0.5, 0.3, 0.2 | MAPE:", round(mape_mmp, 2), "%"),
+    x = "Mês",
+    y = "Demanda (Unidades)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 12, hjust = 0.5),
+    legend.position = "bottom"
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_mmp)
+```
+
+
+
+# -----------------------------------------------------------------------------
+# GRÁFICO 4: DEMANDA REAL vs. SUAVIZAÇÃO EXPONENCIAL
+# -----------------------------------------------------------------------------
+
+```{r}
+grafico_ses <- ggplot(subset(dados_long, Tipo %in% c("Demanda_Real", "SES")), 
+                     aes(x = Mes, y = Valor, color = Tipo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = subset(dados_long, Tipo %in% c("Demanda_Real", "SES") & !is.na(Valor)), size = 2) +
+  scale_color_manual(
+    name = "Série",
+    values = c("Demanda_Real" = "#1f77b4", "SES" = "#d62728"),
+    labels = c("Demanda Real", "Suavização Exponencial (α=0.3)")
+  ) +
+  labs(
+    title = "Previsão por Suavização Exponencial",
+    subtitle = paste("α = 0.3 | MAPE:", round(mape_ses, 2), "%"),
+    x = "Mês",
+    y = "Demanda (Unidades)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 12, hjust = 0.5),
+    legend.position = "bottom"
+  ) +
+  scale_x_continuous(breaks = 1:13)
+
+print(grafico_ses)
+```
+
+
+
+# =============================================================================
+# 8. SALVAR OS RESULTADOS
+# =============================================================================
+
+# Salvar dataframe completo
+
+
+```{r}
+write.csv(dados_completo, "previsao_demanda.csv", row.names = FALSE)
+
+# Salvar gráficos
+ggsave("grafico_comparativo.png", grafico_comparativo, width = 10, height = 6, dpi = 300)
+ggsave("grafico_mms.png", grafico_mms, width = 8, height = 5, dpi = 300)
+ggsave("grafico_mmp.png", grafico_mmp, width = 8, height = 5, dpi = 300)
+ggsave("grafico_ses.png", grafico_ses, width = 8, height = 5, dpi = 300)
+```
+
+
+# =============================================================================
+# 9. RESUMO FINAL DOS RESULTADOS
+# =============================================================================
+
+```{r}
+
+cat("\n=== RESUMO DAS PREVISÕES PARA O MÊS 13 ===\n")
+cat("Média Móvel Simples (n=3):", round(resultado_mms$proxima_previsao, 1), "unidades\n")
+cat("Média Móvel Ponderada (0.5,0.3,0.2):", round(resultado_mmp$proxima_previsao, 1), "unidades\n")
+cat("Suavização Exponencial (α=0.3):", round(resultado_ses$proxima_previsao, 1), "unidades\n")
+
+cat("\n=== RECOMENDAÇÃO BASEADA NO MAPE ===\n")
+mapes <- c(MMS = mape_mms, MMP = mape_mmp, SES = mape_ses)
+melhor_metodo <- names(which.min(mapes))
+cat("Método mais preciso:", melhor_metodo, "com MAPE de", round(min(mapes), 2), "%\n")
+
+# Exibir dataframe final
+print("\nDataFrame Completo com Todas as Previsões:")
+print(dados_completo, na.print = "-")
+```
+

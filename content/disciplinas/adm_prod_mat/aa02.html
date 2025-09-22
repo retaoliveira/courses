@@ -1,0 +1,90 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#atividade-em-grupo-o-desafio-do-planejador-de-produ%C3%A7%C3%A3o" id="toc-atividade-em-grupo-o-desafio-do-planejador-de-produção"><strong>Atividade em Grupo: O Desafio do Planejador de Produção</strong></a></li>
+</ul>
+</div>
+
+<div id="atividade-em-grupo-o-desafio-do-planejador-de-produção" class="section level3">
+<h3><strong>Atividade em Grupo: O Desafio do Planejador de Produção</strong></h3>
+<p><strong>Título:</strong> Previsão de Demanda para uma Peça Automotiva</p>
+<p><strong>Objetivo:</strong> Os alunos, divididos em grupos, atuarão como uma equipe de Planejamento e Controle da Produção (PCP) de uma empresa do setor metal-mecânico. Eles deverão analisar dados históricos, escolher uma técnica de previsão, aplicá-la e discutir suas implicações para as áreas de Produção e Compras.</p>
+<p><strong>Duração Total:</strong> 1h20min
+<strong>Público-Alvo:</strong> Alunos de Engenharia de Materiais e Mecânica.
+<strong>Materiais Necessários:</strong> Calculadoras, planilhas impressas (ou acesso a computadores com Excel), flip chart ou quadro branco para apresentações.</p>
+<p><strong>Dinâmica da Atividade (Parte Qualitativa e Quantitativa Integradas):</strong></p>
+<p><strong>Fase 1: Contextualização e Análise Qualitativa (20 minutos)</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>Formação dos Grupos (5 min):</strong> Formar grupos de 4-5 alunos. Cada grupo é a “Equipe de PCP”.</li>
+<li><strong>Apresentação do Cenário (5 min):</strong>
+<ul>
+<li>“Vocês são responsáveis pelo planejamento da produção da ‘Peça XYZ’, um componente crítico para motores, fabricado em aço liga. A demanda é volátil e impacta diretamente o setor de compras de chapas de aço (Eng. de Materiais) e a programação da usinagem (Eng. Mecânica).”</li>
+<li>Entregar uma folha com informações qualitativas:
+<ul>
+<li>“Há 6 meses, um concorrente saiu do mercado.”</li>
+<li>“Há previsão de lançamento de um novo modelo de veículo por um grande cliente em 3 meses.”</li>
+<li>“O setor de vendas acredita que a demanda vai crescer 15% no próximo semestre.”</li>
+</ul></li>
+</ul></li>
+<li><strong>Discussão Qualitativa (10 min):</strong>
+<ul>
+<li><strong>Tarefa para o grupo:</strong> Com base nessas informações, qual é a perspectiva para a demanda futura? Quais fatores devem ser considerados? Essa análise qualitativa sugere que a demanda tende a aumentar, diminuir ou permanecer estável? Isso afetará a escolha da técnica quantitativa?</li>
+</ul></li>
+</ol>
+<p><strong>Fase 2: Análise Quantitativa e Cálculos (30 minutos)</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>Distribuição dos Dados (2 min):</strong> Entregar uma tabela com a demanda real (em unidades) da Peça XYZ nos últimos 12 meses.
+<ul>
+<li>Exemplo de Dados (Meses 1 a 12): 120, 135, 118, 142, 130, 155, 145, 160, 138, 165, 150, 170.</li>
+</ul></li>
+<li><strong>Tarefa Quantitativa (28 min):</strong>
+<ul>
+<li><strong>Passo 1 (Escolha do Modelo):</strong> O grupo deve escolher entre <strong>Média Móvel de 3 períodos</strong> ou <strong>Suavização Exponencial (α=0,3)</strong>. A previsão inicial (para o mês 1) pode ser a demanda real do mês 1 (120 unidades).</li>
+<li><strong>Passo 2 (Cálculo):</strong> Calcular a previsão para cada um dos meses 2 a 12 usando a técnica escolhida.</li>
+<li><strong>Passo 3 (Erro):</strong> Calcular o <strong>MAPE</strong> geral do modelo para o período.</li>
+<li><strong>Passo 4 (Previsão Futura):</strong> Usar o modelo para prever a demanda para o <strong>Mês 13</strong>.</li>
+</ul></li>
+</ol>
+<p><strong>Fase 3: Síntese e Apresentação (30 minutos)</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>Preparação da Síntese (15 min):</strong> Cada grupo prepara uma mini-apresentação (3 minutos) para o “gerente” (o professor e a turma) contendo:
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>A decisão qualitativa: o cenário é de crescimento?</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>A técnica quantitativa escolhida e o porquê.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>O valor da previsão para o Mês 13.</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>As implicações dessa previsão para:</li>
+</ol>
+<ul>
+<li><strong>Engenharia de Materiais:</strong> Quando e quanto de chapa de aço comprar?</li>
+<li><strong>Engenharia Mecânica:</strong> A programação da produção deve ser alterada? A capacidade atual é suficiente?</li>
+</ul></li>
+</ul></li>
+<li><strong>Apresentações e Debate (15 min):</strong> Cada grupo apresenta rapidamente suas conclusões. O professor/mediação promove um debate comparando as diferentes escolhas (técnicas e previsões) e destaca a importância da integração entre a análise qualitativa (contexto de mercado) e quantitativa (dados históricos).</li>
+</ol>
+<p><strong>Resultado Esperado:</strong> Os alunos vivenciam o processo completo de previsão, entendendo suas nuances tanto técnicas (cálculo) quanto gerenciais (interpretação e impacto nas engenharias), desenvolvendo uma visão sistêmica da Administração da Produção.</p>
+</div>

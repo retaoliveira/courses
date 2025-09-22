@@ -1,0 +1,61 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+
+### **Atividade de aprendizagem**
+
+**Título:** Previsão de Demanda para uma Peça Automotiva
+
+**Objetivo:** Vocês, divididos em grupos, atuarão como uma equipe de Planejamento e Controle da Produção (PCP) de uma empresa do setor metal-mecânico. Vocês deverão analisar dados históricos, escolher uma técnica de previsão, aplicá-la e discutir suas implicações para as áreas de Produção e Compras.
+
+**Duração Total:** 1h20min
+
+**Fase 1: Contextualização e Análise Qualitativa (20 minutos)**
+
+1.  **Formação dos Grupos (5 min):** Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da empresa". 
+2.  **Apresentação do Cenário (5 min):**
+    *   "Vocês são responsáveis pelo planejamento da produção da 'Peça XYZ', um componente crítico para motores, fabricado em aço liga. A demanda é volátil e impacta diretamente o setor de compras de chapas de aço (Eng. de Materiais) e a programação da usinagem (Eng. Mecânica)."
+    *   Entregar uma folha com informações qualitativas:
+        *   "Há 6 meses, um concorrente saiu do mercado."
+        *   "Há previsão de lançamento de um novo modelo de veículo por um grande cliente em 3 meses."
+        *   "O setor de vendas acredita que a demanda vai crescer 15% no próximo semestre."
+3.  **Discussão Qualitativa (10 min):**
+    *   **Tarefa para o grupo:** Com base nessas informações, qual é a perspectiva para a demanda futura? Quais fatores devem ser considerados? Essa análise qualitativa sugere que a demanda tende a aumentar, diminuir ou permanecer estável? Isso afetará a escolha da técnica quantitativa?
+
+**Fase 2: Análise Quantitativa e Cálculos (30 minutos)**
+
+1.  **Distribuição dos Dados (2 min):** Entregar uma tabela com a demanda real (em unidades) da Peça XYZ nos últimos 12 meses.
+    *   Exemplo de Dados (Meses 1 a 12): 120, 135, 118, 142, 130, 155, 145, 160, 138, 165, 150, 170.
+2.  **Tarefa Quantitativa (28 min):**
+    *   **Passo 1 (Escolha do Modelo):** O grupo deve escolher entre **Média Móvel de 3 períodos** ou **Suavização Exponencial (α=0,3)**. A previsão inicial (para o mês 1) pode ser a demanda real do mês 1 (120 unidades).
+    *   **Passo 2 (Cálculo):** Calcular a previsão para cada um dos meses 2 a 12 usando a técnica escolhida.
+    *   **Passo 3 (Erro):** Calcular o **MAPE** geral do modelo para o período.
+    *   **Passo 4 (Previsão Futura):** Usar o modelo para prever a demanda para o **Mês 13**.
+
+**Fase 3: Síntese e Apresentação (30 minutos)**
+
+1.  **Preparação da Síntese (15 min):** Cada grupo prepara uma mini-apresentação (3 minutos) para o "gerente" (o professor e a turma) contendo:
+    *   a) A decisão qualitativa: o cenário é de crescimento?
+    *   b) A técnica quantitativa escolhida e o porquê.
+    *   c) O valor da previsão para o Mês 13.
+    *   d) As implicações dessa previsão para:
+        *   **Engenharia de Materiais:** Quando e quanto de chapa de aço comprar?
+        *   **Engenharia Mecânica:** A programação da produção deve ser alterada? A capacidade atual é suficiente?
+2.  **Apresentações e Debate (15 min):** Cada grupo apresenta rapidamente suas conclusões. O professor/mediação promove um debate comparando as diferentes escolhas (técnicas e previsões) e destaca a importância da integração entre a análise qualitativa (contexto de mercado) e quantitativa (dados históricos).
+
+**Resultado Esperado:** Os alunos vivenciam o processo completo de previsão, entendendo suas nuances tanto técnicas (cálculo) quanto gerenciais (interpretação e impacto nas engenharias), desenvolvendo uma visão sistêmica da Administração da Produção.
