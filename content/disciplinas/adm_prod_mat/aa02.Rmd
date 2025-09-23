@@ -22,11 +22,13 @@ weight: 20
 
 **Duração Total:** 90min
 
-### **Formação dos Grupos** Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da sua empresa". 
+### **Formação dos Grupos** 
+
+Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da sua empresa". 
 
 ### **Apresentação dos Cenários**
 
-1. Cenário 01 - Sorvete Artesanal - Produto Sazonal    
+#### 1. Cenário 01 - Sorvete Artesanal - Produto Sazonal    
 (GRUPOS 1/4)
 
 **Contexto:** Uma sorveteria premium que precisa planejar a produção para o próximo ano.
@@ -40,7 +42,7 @@ weight: 20
 **Fatores externos:** Condições climáticas, eventos locais, concorrência
 
 
-2. Cenário 02 - Smartphone Premium - Produto com Tendência   
+#### 2. Cenário 02 - Smartphone Premium - Produto com Tendência   
 (GRUPOS 2/5)
 
 **Contexto**: Uma empresa de tecnologia lançou um novo modelo há 12 meses.
@@ -54,7 +56,7 @@ weight: 20
 **Fatores externos**: Lançamento de concorrentes, inovações tecnológicas, poder aquisitivo
 
 
-3. Cenário 03 - Medicamento Específico - Produto Irregular    
+#### 3. Cenário 03 - Medicamento Específico - Produto Irregular    
 (GRUPOS 3/6)
         
 **Contexto**: Laboratório farmacêutico com produto sujeito a demandas irregulares.
@@ -68,25 +70,29 @@ weight: 20
 **Fatores externos**: Surtos sazonais de doenças, campanhas de saúde pública, prescrições médicas
         
 ### **Discussão qualitativa**
-    *   **Tarefa para o grupo:** Com base nas informações de cada grupo, qual é a perspectiva para a demanda futura? Quais fatores devem ser considerados? Essa análise qualitativa sugere que a demanda tende a aumentar, diminuir ou permanecer estável? Isso afetará a escolha da técnica quantitativa?
+
+**Tarefa para o grupo:** Com base nas informações de cada grupo, qual é a perspectiva para a demanda futura? Quais fatores devem ser considerados? Essa análise qualitativa sugere que a demanda tende a aumentar, diminuir ou permanecer estável? Isso afetará a escolha da técnica quantitativa?
 
 ###  **Tarefa Quantitativa:**
-    *   **Passo 1 (Cálculo):** Calcular a previsão para cada um dos meses 2 a 12 usando os modelos de previsão de demanda MMS, MMP e SES.
-    *   **Passo 2 (Erro):** Calcular o **MAPE** geral dow modelow para o período.
-    *   **Passo 3 (Previsão Futura):** Usar o modelo para prever a demanda para o **Mês 13**.
-    *   **Passo 4 (Escolha do Modelo):** Com base no MAPE e na análise qualitativa, escolher o modelo mais adequado para a previsão futura.
-    *   **Passo 5 (Plotar as previsões):** Criar um gráfico comparando as demandas reais e as previsões dos três modelos ao longo dos meses 1 a 12, incluindo a previsão para o Mês 13.
+
+*   **Passo 1 (Cálculo):** Calcular a previsão para cada um dos meses 2 a 12 usando os modelos de previsão de demanda MMS, MMP e SES.   
+*   **Passo 2 (Erro):** Calcular o **MAPE** geral dow modelow para o período.   
+*   **Passo 3 (Previsão Futura):** Usar o modelo para prever a demanda para o **Mês 13**.   
+*   **Passo 4 (Escolha do Modelo):** Com base no MAPE e na análise qualitativa, escolher o modelo mais adequado para a previsão futura.   
+*   **Passo 5 (Plotar as previsões):** Criar um gráfico comparando as demandas reais e as previsões dos três modelos ao longo dos meses 1 a 12, incluindo a previsão para o Mês 13.
 
 ### **Síntese e Apresentação**
 
 1.  **Preparação da Síntese:** Cada grupo prepara uma mini-apresentação (3 minutos) para o "gerente" (o professor e a turma) contendo:
-    *   a) Síntese da discussão qualitativa
-    *   b) A técnica quantitativa escolhida e o porquê.
-    *   c) O valor da previsão para o Mês 13.
+*   a) Síntese da discussão qualitativa   
+*   b) A técnica quantitativa escolhida e o porquê.   
+*   c) O valor da previsão para o Mês 13.   
+
 2.  **Apresentações e Debate:** Cada grupo apresentará rapidamente suas conclusões. 
 
 
 ### Fórmulas para os Cálculos:
+
 MMS: (D_t + D_{t-1} + ... + D_{t-n+1}) / n
 
 MMP: (w1×D_t + w2×D_{t-1} + w3×D_{t-2}) / (w1+w2+w3)
