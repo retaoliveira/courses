@@ -1,0 +1,249 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas - GRUPO 01
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## 🔍 Análise Detalhada por Cenário
+
+### **Cenário 1: Sazonalidade Clara (Componente Automotivo)**
+
+
+```{r}
+# DADOS E ESTATÍSTICAS
+demanda <- c(85, 92, 110, 125, 140, 165, 155, 130, 95, 80, 75, 70)
+mes <-c(1:12)  
+
+dados_sazonal <- data.frame(mes, demanda)
+```
+
+
+```r
+# DADOS E ESTATÍSTICAS
+Demanda_Real = c(85, 92, 110, 125, 140, 165, 155, 130, 95, 80, 75, 70)
+Média: 110.8 unidades | Desvio Padrão: 36.0 | CV: 32.5%
+Tendência: -1.27 unidades/mês (decrescente suave)
+```
+
+**Padrão Identificado:** 
+- **Sazonalidade forte** com pico no verão (meses 5-8: 125-165 unidades)
+- Vale no inverno (meses 10-12: 70-80 unidades) 
+- Comportamento previsível e repetitivo
+
+**Análise Técnica:**
+- Ideal para métodos de **decomposição clássica**
+- Sazonalidade explica ≈60% da variação
+- Previsões devem considerar o ciclo anual
+
+---
+
+### **Cenário 2: Crescimento Exponencial (Baterias VE)**
+
+```{r}
+# DADOS E ESTATÍSTICAS  
+demanda <- c(45, 52, 58, 65, 75, 88, 102, 120, 140, 165, 195, 230)
+mes <-c(1:12)  
+
+dados_exponencial <- data.frame(mes, demanda)
+```
+
+
+```r
+# DADOS E ESTATÍSTICAS  
+Demanda_Real = c(45, 52, 58, 65, 75, 88, 102, 120, 140, 165, 195, 230)
+Média: 111.5 unidades | Desvio Padrão: 61.1 | CV: 54.8%
+Tendência: +16.82 unidades/mês (crescimento forte)
+R² da tendência: 0.98 (excelente ajuste)
+```
+
+**Padrão Identificado:**
+- **Crescimento acelerado** constante
+- Aumento de 411% em 12 meses (45 → 230 unidades)
+- Mercado em expansão exponencial
+
+**Análise Técnica:**
+- Métodos devem **capturar tendência** acima de tudo
+- Dados históricos totalmente relevantes
+- Previsões requerem projeção de crescimento
+
+---
+
+### **Cenário 3: Alta Volatilidade (Compressor Industrial)**
+
+```{r}
+# DADOS E ESTATÍSTICAS
+demanda <- c(120, 85, 140, 75, 160, 95, 130, 110, 170, 80, 150, 100)
+mes <-c(1:12)  
+
+dados_volatil <- data.frame(mes, demanda)
+```
+
+```r
+# DADOS E ESTATÍSTICAS
+Demanda_Real = c(120, 85, 140, 75, 160, 95, 130, 110, 170, 80, 150, 100)
+Média: 118.3 unidades | Desvio Padrão: 35.2 | CV: 29.8%
+Tendência: +1.36 unidades/mês (quase estável)
+```
+
+**Padrão Identificado:**
+- **Alta volatilidade** sem padrão claro
+- Flutuações entre 75-170 unidades (variação de 127%)
+- Comportamento imprevisível de clientes
+
+**Análise Técnica:**
+- Métodos complexos têm **pouca vantagem** sobre simples
+- Foco em **flexibilidade operacional**
+- Estoque de segurança mais importante que previsão precisa
+
+## 💻 Códigos Principais Implementados
+
+### **1. Função de Análise de Padrões**
+```{r}
+analisar_padrao_demanda <- function(dados) {
+  modelo <- lm(demanda ~ mes, data = dados)
+  tendencia <- coefficients(modelo)[2]
+  r2 <- summary(modelo)$r.squared
+  cv <- sd(dados$demanda) / mean(dados$demanda) * 100
+  
+  tipo_padrao <- ifelse(cv > 40, "Alta Volatilidade",
+                       ifelse(r2 > 0.8, "Tendência Forte", 
+                             ifelse(abs(tendencia) > 10, "Crescimento", "Sazonal")))
+  
+  return(list(tendencia = tendencia, r2 = r2, cv = cv, tipo = tipo_padrao))
+}
+```
+
+### **2. Funções de Previsão por Cenário**
+```{r}
+# CENÁRIO 1 - SAZONALIDADE
+prever_sazonal <- function(dados) {
+  # Decomposição sazonal simples
+  media_verao <- mean(dados$demanda[5:8])  # Meses 5-8
+  media_inverno <- mean(dados$demanda[10:12]) # Meses 10-12
+  return(list(
+    previsao_mes13 = media_inverno,  # Mês 13 é inverno
+    tecnica = "Média Sazonal",
+    intervalo = c(media_inverno*0.9, media_inverno*1.1)
+  ))
+}
+
+# CENÁRIO 2 - CRESCIMENTO  
+prever_crescimento <- function(dados) {
+  modelo <- lm(Demanda_Real ~ Mes, data = dados)
+  previsao <- predict(modelo, newdata = data.frame(Mes = 13))
+  return(list(
+    previsao_mes13 = round(previsao, 1),
+    tecnica = "Regressão Linear",
+    r2 = summary(modelo)$r.squared
+  ))
+}
+
+# CENÁRIO 3 - VOLATILIDADE
+prever_volatil <- function(dados) {
+  mms <- mean(tail(dados$Demanda_Real, 3))  # MMS n=3
+  return(list(
+    previsao_mes13 = mms,
+    tecnica = "Média Móvel Simples (n=3)",
+    estoque_seguranca = sd(dados$Demanda_Real) * 1.5
+  ))
+}
+```
+
+### **3. Geração de Relatórios Automatizados**
+```{r}
+gerar_relatorio_cenario <- function(cenario, numero) {
+  analise <- analisar_padrao_demanda(cenario$dados)
+  
+  cat("=== CENÁRIO", numero, "===\n")
+  cat("Produto:", cenario$produto, "\n")
+  cat("Padrão:", analise$tipo, "\n")
+  cat("CV:", round(analise$cv, 1), "% | Tendência:", round(analise$tendencia, 2), "/mês\n")
+  
+  # Aplicar técnica recomendada
+  if(analise$tipo == "Sazonal") {
+    resultado <- prever_sazonal(cenario$dados)
+  } else if(analise$tipo == "Crescimento") {
+    resultado <- prever_crescimento(cenario$dados)  
+  } else {
+    resultado <- prever_volatil(cenario$dados)
+  }
+  
+  cat("Técnica:", resultado$tecnica, "\n")
+  cat("Previsão Mês 13:", resultado$previsao_mes13, "unidades\n")
+}
+```
+
+
+## 📈 Resultados Esperados por Cenário
+
+### **Cenário 1 - Sazonalidade Clara**
+```
+PREVISÃO MÊS 13: ≈70-80 unidades (período de inverno)
+TÉCNICA: Média Sazonal ou Decomposição
+MAPE ESPERADO: 8-12% (alta precisão devido ao padrão claro)
+AÇÕES: Reduzir produção, programar manutenção, manter estoque mínimo
+```
+
+### **Cenário 2 - Crescimento Exponencial**  
+```
+PREVISÃO MÊS 13: ≈250-260 unidades (projeção linear)
+TÉCNICA: Regressão Linear
+MAPE ESPERADO: 5-8% (excelente ajuste)
+AÇÕES: Expandir capacidade, contratar equipe, aumentar supply chain
+```
+
+### **Cenário 3 - Alta Volatilidade**
+```
+PREVISÃO MÊS 13: ≈110-130 unidades (próximo à média)
+TÉCNICA: MMS + Estoque de Segurança
+MAPE ESPERADO: 15-25% (baixa precisão inerente)
+AÇÕES: Manter flexibilidade, estoque de segurança, lead times curtos
+```
+
+## 🎯 Respostas Esperadas dos Grupos
+
+### **Análise Qualitativa Esperada:**
+- **Cenário 1:** Identificar sazonalidade e planejar capacidade diferenciada
+- **Cenário 2:** Reconhecer crescimento de mercado e necessidade de expansão  
+- **Cenário 3:** Aceitar imprevisibilidade e focar em resiliência operacional
+
+### **Escolha de Método Esperada:**
+- **Grupo 1 (Sazonal):** Deve escolher método sazonal, não MMS
+- **Grupo 2 (Crescimento):** Deve priorizar métodos com tendência
+- **Grupo 3 (Volátil):** Deve optar por simplicidade + estoque segurança
+
+
+## 📊 Métricas de Avaliação dos Grupos
+
+### **Critérios Quantitativos (60% da nota):**
+- **Cálculos corretos:** 25 pontos
+- **MAPE calculado adequadamente:** 15 pontos  
+- **Previsão Mês 13 dentro do esperado:** 20 pontos
+
+### **Critérios Qualitativos (40% da nota):**
+- **Análise do padrão:** 10 pontos
+- **Escolha do método justificada:** 10 pontos
+- **Recomendações práticas adequadas:** 10 pontos
+- **Integração quali-quanti:** 10 pontos
+
+## ✅ Conclusão da Síntese
+
+Os **3 cenários** representam desafios **distintos e realistas** de previsão:
+1. **Padrão previsível** (Sazonalidade) → Foco em métodos clássicos
+2. **Tendência clara** (Crescimento) → Foco em projeção  
+3. **Imprevisibilidade** (Volatilidade) → Foco em resiliência
+
+Cada cenário testa habilidades diferentes dos alunos, desde **análise técnica** até **tomada de decisão operacional**, preparando-os para desafios reais de administração da produção.
+

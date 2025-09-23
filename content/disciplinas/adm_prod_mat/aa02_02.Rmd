@@ -1,0 +1,306 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: true
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 30
+title: 2. Previsão e informação de vendas - CENÁRIO 02
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+**Contexto**: Uma empresa de tecnologia lançou um novo modelo há 12 meses.
+
+**Questão-chave**: Como prever adequadamente o crescimento constante da demanda?
+
+**Desafio**: Tendência de crescimento precisa ser capturada corretamente
+
+**Focos**: Planejamento de produção escalonada, gestão de cadeia de suprimentos
+
+**Fatores externos**: Lançamento de concorrentes, inovações tecnológicas, poder aquisitivo
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# Carregar bibliotecas necessárias
+library(dplyr)
+library(kableExtra)
+library(ggplot2)
+
+# FUNÇÕES PARA CÁLCULO DOS MÉTODOS DE PREVISÃO ----------------------------
+
+calcular_mms <- function(dados, n) {
+  mms <- numeric(length(dados))
+  for(i in n:length(dados)) {
+    mms[i] <- mean(dados[(i-n+1):i])
+  }
+  return(mms)
+}
+
+calcular_mmp <- function(dados, pesos) {
+  n <- length(pesos)
+  mmp <- numeric(length(dados))
+  for(i in n:length(dados)) {
+    periodo <- dados[(i-n+1):i]
+    mmp[i] <- sum(periodo * pesos) / sum(pesos)
+  }
+  return(mmp)
+}
+
+calcular_se <- function(dados, alpha) {
+  se <- numeric(length(dados))
+  se[1] <- dados[1]  # Inicialização
+  for(i in 2:length(dados)) {
+    se[i] <- alpha * dados[i-1] + (1-alpha) * se[i-1]
+  }
+  return(se)
+}
+
+calcular_mape <- function(real, previsao) {
+  erro <- abs((real - previsao) / real)
+  mape <- mean(erro, na.rm = TRUE) * 100
+  return(round(mape, 2))
+}
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# CENÁRIO 2: SMARTPHONE PREMIUM -------------------------------------------
+
+# Dados do Cenário 2
+demanda2 <- c(1200, 1350, 1500, 1650, 1800, 2000, 2200, 2400, 2550, 2700, 2850, 3000)
+
+# Cálculos para Cenário 2
+mms2 <- calcular_mms(demanda2, 3)
+mmp2 <- calcular_mmp(demanda2, c(0.5, 0.3, 0.2))
+se2 <- calcular_se(demanda2, 0.3)
+
+# Criar dataframe para Cenário 2
+df2 <- data.frame(
+  Mês = paste("Mês", 1:12),
+  Demanda_Real = demanda2,
+  MMS = round(mms2, 1),
+  MMP = round(mmp2, 1),
+  SE = round(se2, 1)
+)
+
+# Calcular MAPE para Cenário 2
+mape_mms2 <- calcular_mape(demanda2[4:12], mms2[4:12])
+mape_mmp2 <- calcular_mape(demanda2[4:12], mmp2[4:12])
+mape_se2 <- calcular_mape(demanda2[2:12], se2[2:12])
+
+# Tabela HTML para Cenário 2
+kable(df2, caption = "Cenário 2: Smartphone Premium - Previsões de Demanda") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  add_header_above(c(" " = 2, "Métodos de Previsão" = 3)) %>%
+  footnote(general = paste("MAPE - MMS:", mape_mms2, "%, MMP:", mape_mmp2, "%, SE:", mape_se2, "%"))
+
+# Gráfico para Cenário 2
+ggplot(df2, aes(x = factor(Mês, levels = paste("Mês", 1:12)))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = "Real"), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = "MMS"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = "MMP"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = "SE"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  labs(title = "Cenário 2: Smartphone Premium - Comparação de Métodos",
+       x = "Mês", y = "Demanda (unidades)", color = "Série") +
+  theme_minimal()
+
+```
+
+
+```{r}
+# LAYOUT DE IMPRESSÃO EM DUAS PÁGINAS - TABELA CORRIGIDA ------------------
+
+library(gridExtra)
+library(grid)
+library(ggplot2)
+library(dplyr)
+
+# FUNÇÃO PARA PÁGINA 1: DADOS E CÁLCULOS COM CAMPOS VAZIOS -----------------
+criar_pagina1_calculos <- function(cenario_num, titulo, descricao, dados_reais) {
+  
+  # Criar dataframe com campos vazios para preenchimento
+  dados_preenchimento <- data.frame(
+    Mês = dados_reais$Mês,
+    Demanda_Real = dados_reais$Demanda_Real,
+    MMS_Aluno = rep("______", 12),
+    MMP_Aluno = rep("______", 12),
+    SE_Aluno = rep("______", 12),
+    Erro_MMS = rep("______", 12),
+    Erro_MMP = rep("______", 12),
+    Erro_SE = rep("______", 12)
+  )
+  
+  # Adicionar linha para totais e MAPE
+  dados_completos <- rbind(
+    dados_preenchimento,
+    data.frame(
+      Mês = "13o mês/MAPE FINAL",
+      Demanda_Real = "______",
+      MMS_Aluno = "______",
+      MMP_Aluno = "______",
+      SE_Aluno = "______",
+      Erro_MMS = "______%",
+      Erro_MMP = "______%", 
+      Erro_SE = "______%"
+    )
+  )
+  
+  # Criar tabela formatada com campos vazios
+  tabela_calculos <- tableGrob(dados_completos, 
+                              rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 10,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c("white", "#f9f9f9"), 6), "#f0f8ff"))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = "bold", fontsize = 11),
+                                  bg_params = list(fill = "lightgray", alpha = 0.8)
+                                )
+                              ))
+  
+  # Adicionar título e instruções
+  titulo_page1 <- textGrob(paste("CENÁRIO", cenario_num, ":", titulo), 
+                          gp = gpar(fontsize = 16, fontface = "bold"))
+  
+  instrucoes <- textGrob(
+    paste("INSTRUÇÕES:\n",
+          "1. Calcule as previsões usando MMS (n=3), MMP (pesos: 0.5, 0.3, 0.2) e SE (α=0.3)\n",
+          "2. Preencha as colunas de previsão para cada método\n", 
+          "3. Calcule o erro percentual para cada período: |(Real - Previsão)/Real| × 100%\n",
+          "4. Calcule o MAPE final para cada método: Média dos erros percentuais"),
+    gp = gpar(fontsize = 11, lineheight = 1.2)
+  )
+  
+   # Fórmulas para referência
+   formulas <- textGrob(
+     "FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3  |  MMP = (0.5×Dₜ + 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂)  |  SE = α×Dₜ + (1-α)×Fₜ",
+     gp = gpar(fontsize = 10, fontface = "italic")
+   )
+  
+  # Layout da página 1
+  grid.arrange(
+    titulo_page1,
+    instrucoes,
+    formulas,
+    tabela_calculos,
+    nrow = 4,
+    heights = c(0.3, 0.4, 0.2, 3)
+  )
+}
+
+# FUNÇÃO PARA PÁGINA 2: GRÁFICO DE PREVISÕES ------------------------------
+#----------------------
+criar_pagina2_grafico <- function(cenario_num, titulo, dados_reais) {
+  
+  # Adicionar o 13º mês para previsão
+  meses_completos <- c(dados_reais$Mês, "M13")
+  x_breaks <- 1:13
+  x_labels <- meses_completos
+  
+  # Calcular limite y considerando possível aumento na previsão
+  y_max <- max(dados_reais$Demanda_Real) * 1.4
+  
+  # Criar gráfico com eixos e pontos da demanda real
+  grafico_previsoes <- ggplot() +
+    # Grade de fundo
+    theme_bw() +
+    
+    # Eixos e limites - agora até 13 meses
+    scale_x_continuous(breaks = 1:13, labels = meses_completos, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, y_max)) +
+    
+    # Pontos da demanda real (apenas até o 12º mês)
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = "black", shape = 16) +
+    
+    # Linha da demanda real (apenas até o 12º mês)
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = "black", size = 1, linetype = "solid") +
+    
+    # Área sombreada para indicar período de previsão futura (mês 13)
+    annotate("rect", xmin = 12.5, xmax = 13.5, ymin = 0, ymax = y_max,
+             fill = "yellow", alpha = 0.2) +
+    
+    # Linha vertical para separar histórico de previsão
+    geom_vline(xintercept = 12.5, linetype = "dashed", color = "red", size = 0.8) +
+    
+    # Texto indicando área de previsão
+    annotate("text", x = 12.75, y = y_max * 0.95, 
+             label = "PREVISÃO\nMÊS 13", 
+             color = "red", fontface = "bold", size = 4, hjust = 0.5) +
+    
+    # Áreas para desenhar as previsões (linhas tracejadas como guia)
+    geom_hline(yintercept = seq(0, y_max, length.out = 15), 
+               color = "gray90", size = 0.1, alpha = 0.5) +
+    
+    # Títulos e labels
+    labs(
+      title = paste("CENÁRIO", cenario_num, ":", titulo, "- REGISTRO DAS PREVISÕES"),
+      subtitle = "Demanda Real (linha preta) - Desenhe as previsões incluindo o Mês 13 (previsão futura)",
+      x = "Meses",
+      y = "Demanda"
+    ) +
+    
+    # Tema
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+      plot.subtitle = element_text(hjust = 0.5, size = 11),
+      panel.grid.major = element_line(color = "gray95"),
+      panel.grid.minor = element_blank()
+    ) +
+    
+    # Legenda interativa para cores
+    annotate("text", x = 0.5, y = y_max * 0.95, 
+             label = "LEGENDA DE CORES:", hjust = 0, fontface = "bold", size = 4) +
+    annotate("text", x = 0.5, y = y_max * 0.90, 
+             label = "● MMS (Média Móvel Simples) → Use VERMELHO", hjust = 0, size = 3.5) +
+    annotate("text", x = 0.5, y = y_max * 0.86, 
+             label = "● MMP (Média Móvel Ponderada) → Use AZUL", hjust = 0, size = 3.5) +
+    annotate("text", x = 0.5, y = y_max * 0.82, 
+             label = "● SE (Suavização Exponencial) → Use VERDE", hjust = 0, size = 3.5) +
+    annotate("text", x = 0.5, y = y_max * 0.77, 
+             label = "--- Linha pontilhada: Separa histórico de previsão", 
+             hjust = 0, size = 3, color = "red") +
+    
+    # Espaço para anotações
+    annotate("text", x = 8, y = y_max * 0.95, 
+             label = "OBSERVAÇÕES:", hjust = 0, fontface = "bold", size = 4) +
+    annotate("text", x = 8, y = y_max * 0.91, 
+             label = "• Qual método acompanhou melhor a demanda?", hjust = 0, size = 3) +
+    annotate("text", x = 8, y = y_max * 0.87, 
+             label = "• Qual previsão para o Mês 13?", hjust = 0, size = 3) +
+    annotate("text", x = 8, y = y_max * 0.83, 
+             label = "• Justifique sua resposta:", hjust = 0, size = 3) 
+
+  
+  return(grafico_previsoes)
+}
+
+
+
+# VERSÃO COMBINADA (DUAS PÁGINAS EM UM PDF) -------------------------------
+
+criar_pdf_completo <- function(cenario_num, titulo, dados_reais, nome_arquivo) {
+  
+  pdf(nome_arquivo, width = 11, height = 8.5)
+  
+  # Página 1 - Cálculos
+  criar_pagina1_calculos(cenario_num, titulo, "", dados_reais)
+  
+  # Página 2 - Gráfico
+  print(criar_pagina2_grafico(cenario_num, titulo, dados_reais))
+  
+  dev.off()
+}
+
+# Gerar PDFs completos
+criar_pdf_completo(2, "Smartphone Premium", df2, "Cenario2_Smartphone_Completo.pdf") 
+```

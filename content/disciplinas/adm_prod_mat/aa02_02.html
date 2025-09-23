@@ -1,0 +1,250 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: true
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 30
+title: 2. Previsão e informação de vendas - CENÁRIO 02
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+
+<p><strong>Contexto</strong>: Uma empresa de tecnologia lançou um novo modelo há 12 meses.</p>
+<p><strong>Questão-chave</strong>: Como prever adequadamente o crescimento constante da demanda?</p>
+<p><strong>Desafio</strong>: Tendência de crescimento precisa ser capturada corretamente</p>
+<p><strong>Focos</strong>: Planejamento de produção escalonada, gestão de cadeia de suprimentos</p>
+<p><strong>Fatores externos</strong>: Lançamento de concorrentes, inovações tecnológicas, poder aquisitivo</p>
+<pre class="r"><code># LAYOUT DE IMPRESSÃO EM DUAS PÁGINAS - TABELA CORRIGIDA ------------------
+
+library(gridExtra)</code></pre>
+<pre><code>## 
+## Anexando pacote: &#39;gridExtra&#39;</code></pre>
+<pre><code>## O seguinte objeto é mascarado por &#39;package:dplyr&#39;:
+## 
+##     combine</code></pre>
+<pre class="r"><code>library(grid)
+library(ggplot2)
+library(dplyr)
+
+# FUNÇÃO PARA PÁGINA 1: DADOS E CÁLCULOS COM CAMPOS VAZIOS -----------------
+criar_pagina1_calculos &lt;- function(cenario_num, titulo, descricao, dados_reais) {
+  
+  # Criar dataframe com campos vazios para preenchimento
+  dados_preenchimento &lt;- data.frame(
+    Mês = dados_reais$Mês,
+    Demanda_Real = dados_reais$Demanda_Real,
+    MMS_Aluno = rep(&quot;______&quot;, 12),
+    MMP_Aluno = rep(&quot;______&quot;, 12),
+    SE_Aluno = rep(&quot;______&quot;, 12),
+    Erro_MMS = rep(&quot;______&quot;, 12),
+    Erro_MMP = rep(&quot;______&quot;, 12),
+    Erro_SE = rep(&quot;______&quot;, 12)
+  )
+  
+  # Adicionar linha para totais e MAPE
+  dados_completos &lt;- rbind(
+    dados_preenchimento,
+    data.frame(
+      Mês = &quot;13o mês/MAPE FINAL&quot;,
+      Demanda_Real = &quot;______&quot;,
+      MMS_Aluno = &quot;______&quot;,
+      MMP_Aluno = &quot;______&quot;,
+      SE_Aluno = &quot;______&quot;,
+      Erro_MMS = &quot;______%&quot;,
+      Erro_MMP = &quot;______%&quot;, 
+      Erro_SE = &quot;______%&quot;
+    )
+  )
+  
+  # Criar tabela formatada com campos vazios
+  tabela_calculos &lt;- tableGrob(dados_completos, 
+                              rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 10,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c(&quot;white&quot;, &quot;#f9f9f9&quot;), 6), &quot;#f0f8ff&quot;))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = &quot;bold&quot;, fontsize = 11),
+                                  bg_params = list(fill = &quot;lightgray&quot;, alpha = 0.8)
+                                )
+                              ))
+  
+  # Adicionar título e instruções
+  titulo_page1 &lt;- textGrob(paste(&quot;CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo), 
+                          gp = gpar(fontsize = 16, fontface = &quot;bold&quot;))
+  
+  instrucoes &lt;- textGrob(
+    paste(&quot;INSTRUÇÕES:\n&quot;,
+          &quot;1. Calcule as previsões usando MMS (n=3), MMP (pesos: 0.5, 0.3, 0.2) e SE (α=0.3)\n&quot;,
+          &quot;2. Preencha as colunas de previsão para cada método\n&quot;, 
+          &quot;3. Calcule o erro percentual para cada período: |(Real - Previsão)/Real| × 100%\n&quot;,
+          &quot;4. Calcule o MAPE final para cada método: Média dos erros percentuais&quot;),
+    gp = gpar(fontsize = 11, lineheight = 1.2)
+  )
+  
+   # Fórmulas para referência
+   formulas &lt;- textGrob(
+     &quot;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3  |  MMP = (0.5×Dₜ + 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂)  |  SE = α×Dₜ + (1-α)×Fₜ&quot;,
+     gp = gpar(fontsize = 10, fontface = &quot;italic&quot;)
+   )
+  
+  # Layout da página 1
+  grid.arrange(
+    titulo_page1,
+    instrucoes,
+    formulas,
+    tabela_calculos,
+    nrow = 4,
+    heights = c(0.3, 0.4, 0.2, 3)
+  )
+}
+
+# FUNÇÃO PARA PÁGINA 2: GRÁFICO DE PREVISÕES ------------------------------
+criar_pagina2_grafico &lt;- function(cenario_num, titulo, dados_reais) {
+  
+  # Criar gráfico com eixos e pontos da demanda real
+  grafico_previsoes &lt;- ggplot() +
+    # Grade de fundo
+    theme_bw() +
+    
+    # Eixos e limites
+    scale_x_continuous(breaks = 1:12, labels = dados_reais$Mês, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, max(dados_reais$Demanda_Real) * 1.4)) +
+    
+    # Pontos da demanda real
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = &quot;black&quot;, shape = 16) +
+    
+    # Linha da demanda real
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = &quot;black&quot;, size = 1, linetype = &quot;solid&quot;) +
+    
+    # Áreas para desenhar as previsões (linhas tracejadas como guia)
+    geom_hline(yintercept = seq(0, max(dados_reais$Demanda_Real) * 1.3, 
+                               length.out = 10), 
+               color = &quot;gray90&quot;, size = 0.2) +
+    
+    # Títulos e labels
+    labs(
+      title = paste(&quot;CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo, &quot;- REGISTRO DAS PREVISÕES&quot;),
+      subtitle = &quot;Demanda Real (linha preta) - Desenhe as previsões usando as cores indicadas&quot;,
+      x = &quot;Meses&quot;,
+      y = &quot;Demanda&quot;
+    ) +
+    
+    # Tema
+    theme(
+      plot.title = element_text(hjust = 0.5, face = &quot;bold&quot;, size = 14),
+      plot.subtitle = element_text(hjust = 0.5, size = 11),
+      panel.grid.major = element_line(color = &quot;gray95&quot;),
+      panel.grid.minor = element_blank()
+    ) +
+    
+    # Legenda interativa para cores
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.35, 
+             label = &quot;LEGENDA DE CORES:&quot;, hjust = 0, fontface = &quot;bold&quot;, size = 4) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.30, 
+             label = &quot;● MMS (Média Móvel Simples) → Use VERMELHO&quot;, hjust = 0, size = 3.5) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.26, 
+             label = &quot;● MMP (Média Móvel Ponderada) → Use AZUL&quot;, hjust = 0, size = 3.5) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.22, 
+             label = &quot;● SE (Suavização Exponencial) → Use VERDE&quot;, hjust = 0, size = 3.5) +
+    
+    # Espaço para anotações
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.30, 
+             label = &quot;OBSERVAÇÕES:&quot;, hjust = 0, fontface = &quot;bold&quot;, size = 4) +
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.26, 
+             label = &quot;• Qual método acompanhou melhor a demanda?&quot;, hjust = 0, size = 3) +
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = &quot;• Justifique sua resposta:&quot;, hjust = 0, size = 3)
+  
+  return(grafico_previsoes)
+}
+
+
+# VERSÃO COMBINADA (DUAS PÁGINAS EM UM PDF) -------------------------------
+
+criar_pdf_completo &lt;- function(cenario_num, titulo, dados_reais, nome_arquivo) {
+  
+  pdf(nome_arquivo, width = 11, height = 8.5)
+  
+  # Página 1 - Cálculos
+  criar_pagina1_calculos(cenario_num, titulo, &quot;&quot;, dados_reais)
+  
+  # Página 2 - Gráfico
+  print(criar_pagina2_grafico(cenario_num, titulo, dados_reais))
+  
+  dev.off()
+}
+
+# Gerar PDFs completos
+criar_pdf_completo(2, &quot;Smartphone Premium&quot;, df2, &quot;Cenario2_Smartphone_Completo.pdf&quot;) </code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in &#39;mbcsToSbcs&#39;: -&gt;
+## substituted for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## png 
+##   2</code></pre>

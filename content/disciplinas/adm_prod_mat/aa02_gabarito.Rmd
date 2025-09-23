@@ -1,0 +1,812 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: true
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas - gabarito
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+**Contexto:** Uma sorveteria premium que precisa planejar a produção para o próximo ano.
+
+**Questão-chave:** Qual método fornece a melhor previsão para otimizar a produção e minimizar desperdícios?
+
+**Desafio:** Alta sazonalidade com pico no verão
+
+**Focos:** Identificar padrão sazonal, preparar para picos de demanda
+
+**Fatores externos:** Condições climáticas, eventos locais, concorrência
+
+
+```{r}
+# Carregar bibliotecas necessárias
+library(dplyr)
+library(kableExtra)
+library(ggplot2)
+
+# FUNÇÕES PARA CÁLCULO DOS MÉTODOS DE PREVISÃO ----------------------------
+
+calcular_mms <- function(dados, n) {
+  mms <- numeric(length(dados))
+  for(i in n:length(dados)) {
+    mms[i] <- mean(dados[(i-n+1):i])
+  }
+  return(mms)
+}
+
+calcular_mmp <- function(dados, pesos) {
+  n <- length(pesos)
+  mmp <- numeric(length(dados))
+  for(i in n:length(dados)) {
+    periodo <- dados[(i-n+1):i]
+    mmp[i] <- sum(periodo * pesos) / sum(pesos)
+  }
+  return(mmp)
+}
+
+calcular_se <- function(dados, alpha) {
+  se <- numeric(length(dados))
+  se[1] <- dados[1]  # Inicialização
+  for(i in 2:length(dados)) {
+    se[i] <- alpha * dados[i-1] + (1-alpha) * se[i-1]
+  }
+  return(se)
+}
+
+calcular_mape <- function(real, previsao) {
+  erro <- abs((real - previsao) / real)
+  mape <- mean(erro, na.rm = TRUE) * 100
+  return(round(mape, 2))
+}
+
+# CENÁRIO 1: SORVETE ARTESANAL --------------------------------------------
+
+# Dados do Cenário 1
+meses <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
+demanda1 <- c(120, 130, 180, 250, 400, 650, 800, 720, 480, 300, 200, 280)
+
+# Cálculos para Cenário 1
+mms1 <- calcular_mms(demanda1, 3)
+mmp1 <- calcular_mmp(demanda1, c(0.5, 0.3, 0.2))
+se1 <- calcular_se(demanda1, 0.3)
+
+# Criar dataframe para Cenário 1
+df1 <- data.frame(
+  Mês = meses,
+  Demanda_Real = demanda1,
+  MMS = round(mms1, 1),
+  MMP = round(mmp1, 1),
+  SE = round(se1, 1)
+)
+
+# Calcular MAPE para Cenário 1 (excluindo primeiros meses sem previsão)
+mape_mms1 <- calcular_mape(demanda1[4:12], mms1[4:12])
+mape_mmp1 <- calcular_mape(demanda1[4:12], mmp1[4:12])
+mape_se1 <- calcular_mape(demanda1[2:12], se1[2:12])
+
+# Tabela HTML para Cenário 1
+kable(df1, caption = "Cenário 1: Sorvete Artesanal - Previsões de Demanda") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  add_header_above(c(" " = 2, "Métodos de Previsão" = 3)) %>%
+  footnote(general = paste("MAPE - MMS:", mape_mms1, "%, MMP:", mape_mmp1, "%, SE:", mape_se1, "%"))
+
+# Gráfico para Cenário 1
+ggplot(df1, aes(x = factor(Mês, levels = meses))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = "Real"), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = "MMS"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = "MMP"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = "SE"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  labs(title = "Cenário 1: Sorvete Artesanal - Comparação de Métodos",
+       x = "Mês", y = "Demanda (kg)", color = "Série") +
+  theme_minimal()
+
+# CENÁRIO 2: SMARTPHONE PREMIUM -------------------------------------------
+
+# Dados do Cenário 2
+demanda2 <- c(1200, 1350, 1500, 1650, 1800, 2000, 2200, 2400, 2550, 2700, 2850, 3000)
+
+# Cálculos para Cenário 2
+mms2 <- calcular_mms(demanda2, 3)
+mmp2 <- calcular_mmp(demanda2, c(0.5, 0.3, 0.2))
+se2 <- calcular_se(demanda2, 0.3)
+
+# Criar dataframe para Cenário 2
+df2 <- data.frame(
+  Mês = paste("Mês", 1:12),
+  Demanda_Real = demanda2,
+  MMS = round(mms2, 1),
+  MMP = round(mmp2, 1),
+  SE = round(se2, 1)
+)
+
+# Calcular MAPE para Cenário 2
+mape_mms2 <- calcular_mape(demanda2[4:12], mms2[4:12])
+mape_mmp2 <- calcular_mape(demanda2[4:12], mmp2[4:12])
+mape_se2 <- calcular_mape(demanda2[2:12], se2[2:12])
+
+# Tabela HTML para Cenário 2
+kable(df2, caption = "Cenário 2: Smartphone Premium - Previsões de Demanda") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  add_header_above(c(" " = 2, "Métodos de Previsão" = 3)) %>%
+  footnote(general = paste("MAPE - MMS:", mape_mms2, "%, MMP:", mape_mmp2, "%, SE:", mape_se2, "%"))
+
+# Gráfico para Cenário 2
+ggplot(df2, aes(x = factor(Mês, levels = paste("Mês", 1:12)))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = "Real"), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = "MMS"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = "MMP"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = "SE"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  labs(title = "Cenário 2: Smartphone Premium - Comparação de Métodos",
+       x = "Mês", y = "Demanda (unidades)", color = "Série") +
+  theme_minimal()
+
+# CENÁRIO 3: MEDICAMENTO ESPECÍFICO ---------------------------------------
+
+# Dados do Cenário 3
+demanda3 <- c(450, 420, 480, 1200, 460, 440, 430, 1500, 470, 490, 510, 2000)
+
+# Cálculos para Cenário 3
+mms3 <- calcular_mms(demanda3, 3)
+mmp3 <- calcular_mmp(demanda3, c(0.5, 0.3, 0.2))
+se3 <- calcular_se(demanda3, 0.3)
+
+# Criar dataframe para Cenário 3
+df3 <- data.frame(
+  Mês = meses,
+  Demanda_Real = demanda3,
+  MMS = round(mms3, 1),
+  MMP = round(mmp3, 1),
+  SE = round(se3, 1)
+)
+
+# Calcular MAPE para Cenário 3
+mape_mms3 <- calcular_mape(demanda3[4:12], mms3[4:12])
+mape_mmp3 <- calcular_mape(demanda3[4:12], mmp3[4:12])
+mape_se3 <- calcular_mape(demanda3[2:12], se3[2:12])
+
+# Tabela HTML para Cenário 3
+kable(df3, caption = "Cenário 3: Medicamento Específico - Previsões de Demanda") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  add_header_above(c(" " = 2, "Métodos de Previsão" = 3)) %>%
+  footnote(general = paste("MAPE - MMS:", mape_mms3, "%, MMP:", mape_mmp3, "%, SE:", mape_se3, "%"))
+
+# Gráfico para Cenário 3
+ggplot(df3, aes(x = factor(Mês, levels = meses))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = "Real"), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = "MMS"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = "MMP"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = "SE"), size = 1, linetype = "dashed", na.rm = TRUE) +
+  labs(title = "Cenário 3: Medicamento Específico - Comparação de Métodos",
+       x = "Mês", y = "Demanda (caixas)", color = "Série") +
+  theme_minimal()
+
+# RESUMO COMPARATIVO DOS MAPES --------------------------------------------
+
+# Criar tabela resumo com MAPE de todos os cenários
+resumo_mape <- data.frame(
+  Cenário = c("Sorvete Artesanal", "Smartphone Premium", "Medicamento Específico"),
+  MMS = c(mape_mms1, mape_mms2, mape_mms3),
+  MMP = c(mape_mmp1, mape_mmp2, mape_mmp3),
+  SE = c(mape_se1, mape_se2, mape_se3),
+  Melhor_Método = c(
+    ifelse(min(c(mape_mms1, mape_mmp1, mape_se1)) == mape_mms1, "MMS", 
+           ifelse(min(c(mape_mms1, mape_mmp1, mape_se1)) == mape_mmp1, "MMP", "SE")),
+    ifelse(min(c(mape_mms2, mape_mmp2, mape_se2)) == mape_mms2, "MMS", 
+           ifelse(min(c(mape_mms2, mape_mmp2, mape_se2)) == mape_mmp2, "MMP", "SE")),
+    ifelse(min(c(mape_mms3, mape_mmp3, mape_se3)) == mape_mms3, "MMS", 
+           ifelse(min(c(mape_mms3, mape_mmp3, mape_se3)) == mape_mmp3, "MMP", "SE"))
+  )
+)
+
+# Tabela resumo em HTML
+kable(resumo_mape, caption = "Resumo Comparativo - MAPE por Cenário e Método (%)") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  row_spec(which.min(resumo_mape$MMS), bold = TRUE, color = "white", background = "#D32F2F") %>%
+  row_spec(which.min(resumo_mape$MMP), bold = TRUE, color = "white", background = "#388E3C") %>%
+  row_spec(which.min(resumo_mape$SE), bold = TRUE, color = "white", background = "#1976D2")
+
+# ANÁLISE DOS RESULTADOS --------------------------------------------------
+
+cat("ANÁLISE DOS RESULTADOS:\n")
+cat("=======================\n\n")
+
+cat("CENÁRIO 1 (Sorvete Artesanal - Sazonal):\n")
+cat("- MAPE MMS:", mape_mms1, "%\n")
+cat("- MAPE MMP:", mape_mmp1, "%\n") 
+cat("- MAPE SE:", mape_se1, "%\n")
+cat("- Método recomendado:", ifelse(mape_mms1 == min(c(mape_mms1, mape_mmp1, mape_se1)), "MMS",
+                                   ifelse(mape_mmp1 == min(c(mape_mms1, mape_mmp1, mape_se1)), "MMP", "SE")), "\n\n")
+
+cat("CENÁRIO 2 (Smartphone Premium - Tendência):\n")
+cat("- MAPE MMS:", mape_mms2, "%\n")
+cat("- MAPE MMP:", mape_mmp2, "%\n")
+cat("- MAPE SE:", mape_se2, "%\n")
+cat("- Método recomendado:", ifelse(mape_mms2 == min(c(mape_mms2, mape_mmp2, mape_se2)), "MMS",
+                                   ifelse(mape_mmp2 == min(c(mape_mms2, mape_mmp2, mape_se2)), "MMP", "SE")), "\n\n")
+
+cat("CENÁRIO 3 (Medicamento - Irregular):\n")
+cat("- MAPE MMS:", mape_mms3, "%\n")
+cat("- MAPE MMP:", mape_mmp3, "%\n")
+cat("- MAPE SE:", mape_se3, "%\n")
+cat("- Método recomendado:", ifelse(mape_mms3 == min(c(mape_mms3, mape_mmp3, mape_se3)), "MMS",
+                                   ifelse(mape_mmp3 == min(c(mape_mms3, mape_mmp3, mape_se3)), "MMP", "SE")), "\n")
+```
+
+
+```{r}
+# FUNÇÃO CORRIGIDA DO GABARITO COM PREVISÃO DO 13º MÊS --------------------
+
+calcular_previsao_mes13 <- function(dados_reais) {
+  demanda <- dados_reais$Demanda_Real
+  
+  # Calcular previsões para os meses históricos
+  mms <- calcular_mms(demanda, 3)
+  mmp <- calcular_mmp(demanda, c(0.5, 0.3, 0.2))
+  se <- calcular_se(demanda, 0.3)
+  
+  # PREVISÃO PARA O MÊS 13
+  # MMS: média dos últimos 3 meses (meses 10, 11, 12)
+  previsao_mms_13 <- mean(demanda[10:12])
+  
+  # MMP: média ponderada dos últimos 3 meses
+  previsao_mmp_13 <- sum(demanda[10:12] * c(0.5, 0.3, 0.2))
+  
+  # SE: usando o último valor suavizado
+  previsao_se_13 <- 0.3 * demanda[12] + 0.7 * se[12]
+  
+  # Calcular MAPE (apenas meses históricos)
+  mape_mms <- calcular_mape(demanda[4:12], mms[4:12])
+  mape_mmp <- calcular_mape(demanda[4:12], mmp[4:12])
+  mape_se <- calcular_mape(demanda[2:12], se[2:12])
+  
+  return(list(
+    MMS = c(mms, previsao_mms_13),
+    MMP = c(mmp, previsao_mmp_13),
+    SE = c(se, previsao_se_13),
+    MAPE_MMS = mape_mms,
+    MAPE_MMP = mape_mmp,
+    MAPE_SE = mape_se,
+    Previsao_M13 = c(MMS = previsao_mms_13, MMP = previsao_mmp_13, SE = previsao_se_13)
+  ))
+}
+
+# CALCULAR RESULTADOS PARA CADA CENÁRIO COM MÊS 13 ------------------------
+
+resultados1_mes13 <- calcular_previsao_mes13(df1)
+resultados2_mes13 <- calcular_previsao_mes13(df2)
+resultados3_mes13 <- calcular_previsao_mes13(df3)
+
+# FUNÇÃO ATUALIZADA DO GABARITO COM MÊS 13 --------------------------------
+
+criar_gabarito_completo <- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0("Gabarito_Completo_Cenario", cenario_num, ".pdf"), width = 14, height = 11)
+  
+  # Criar dataframe completo com mês 13
+  meses_completos <- c(dados_reais$Mês, "M13")
+  demanda_completa <- c(dados_reais$Demanda_Real, NA)
+  
+  dados_gabarito <- data.frame(
+    Mês = meses_completos,
+    Demanda_Real = demanda_completa,
+    MMS_Correto = round(resultados$MMS, 1),
+    MMP_Correto = round(resultados$MMP, 1),
+    SE_Correto = round(resultados$SE, 1),
+    Erro_MMS = c(round(abs((dados_reais$Demanda_Real - resultados$MMS[1:12]) / dados_reais$Demanda_Real) * 100, 1), "---"),
+    Erro_MMP = c(round(abs((dados_reais$Demanda_Real - resultados$MMP[1:12]) / dados_reais$Demanda_Real) * 100, 1), "---"),
+    Erro_SE = c(round(abs((dados_reais$Demanda_Real - resultados$SE[1:12]) / dados_reais$Demanda_Real) * 100, 1), "---")
+  )
+  
+  # Adicionar linha de MAPE
+  linha_mape <- data.frame(
+    Mês = "MAPE (M1-12)",
+    Demanda_Real = "---",
+    MMS_Correto = paste(round(resultados$MAPE_MMS, 2), "%"),
+    MMP_Correto = paste(round(resultados$MAPE_MMP, 2), "%"),
+    SE_Correto = paste(round(resultados$MAPE_SE, 2), "%"),
+    Erro_MMS = "---",
+    Erro_MMP = "---",
+    Erro_SE = "---"
+  )
+  
+  dados_gabarito_completo <- rbind(dados_gabarito, linha_mape)
+  
+  # Criar tabela formatada
+  tabela_gabarito <- tableGrob(dados_gabarito_completo, rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 10,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c("white", "#f0f0f0"), 6), 
+                                                          "lightyellow", "#e8f5e8"))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = "bold", fontsize = 11),
+                                  bg_params = list(fill = "#2196F3", alpha = 0.8)
+                                )
+                              ))
+  
+  # Resumo das previsões do Mês 13
+  resumo_mes13 <- data.frame(
+    Método = c("MMS", "MMP", "SE"),
+    Previsão_M13 = round(resultados$Previsao_M13, 1),
+    Fórmula_Usada = c(
+      "Média dos meses 10, 11, 12",
+      "Ponderada: 0.5×M12 + 0.3×M11 + 0.2×M10",
+      "Suavização: 0.3×M12 + 0.7×F12"
+    )
+  )
+  
+  tabela_resumo <- tableGrob(resumo_mes13, rows = NULL,
+                            theme = ttheme_minimal(
+                              base_size = 10,
+                              core = list(
+                                bg_params = list(fill = c("white", "#f9f9f9", "white"))
+                              )
+                            ))
+  
+  # Layout da página do gabarito
+  grid.arrange(
+    textGrob(paste("GABARITO COMPLETO - CENÁRIO", cenario_num, ":", titulo),
+            gp = gpar(fontsize = 18, fontface = "bold")),
+    
+    textGrob("PREVISÕES COMPLETAS INCLUINDO MÊS 13",
+            gp = gpar(fontsize = 14, fontface = "italic")),
+    
+    textGrob(paste("MAPE dos métodos (Meses 1-12): MMS =", round(resultados$MAPE_MMS, 2), 
+                  "%, MMP =", round(resultados$MAPE_MMP, 2), "%, SE =", round(resultados$MAPE_SE, 2), "%"),
+            gp = gpar(fontsize = 12, col = "darkred", fontface = "bold")),
+    
+    tabela_gabarito,
+    
+    textGrob("PREVISÕES PARA O MÊS 13:",
+            gp = gpar(fontsize = 12, fontface = "bold")),
+    
+    tabela_resumo,
+    
+    nrow = 6, 
+    heights = c(0.2, 0.1, 0.1, 2.5, 0.1, 0.4)
+  )
+  
+  dev.off()
+}
+
+# FUNÇÃO DO GABARITO GRÁFICO COM PREVISÕES PLOTADAS ATÉ MÊS 13 ------------
+
+criar_gabarito_grafico_mes13 <- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0("Gabarito_Grafico_Mes13_Cenario", cenario_num, ".pdf"), width = 14, height = 10)
+  
+  # Dados para o gráfico
+  meses_grafico <- 1:13
+  meses_labels <- c(dados_reais$Mês, "M13")
+  
+  # Criar gráfico com todas as previsões incluindo mês 13
+  grafico_gabarito <- ggplot() +
+    # Demanda real (apenas meses 1-12)
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = "black", shape = 16) +
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = "black", size = 1, linetype = "solid") +
+    
+    # Previsão MMS (meses 4-13)
+    geom_line(aes(x = 4:13, y = resultados$MMS[4:13]), 
+              color = "red", size = 1.2, linetype = "solid") +
+    geom_point(aes(x = 4:13, y = resultados$MMS[4:13]), 
+               size = 3, color = "red", shape = 17) +
+    
+    # Previsão MMP (meses 4-13)
+    geom_line(aes(x = 4:13, y = resultados$MMP[4:13]), 
+              color = "blue", size = 1.2, linetype = "solid") +
+    geom_point(aes(x = 4:13, y = resultados$MMP[4:13]), 
+               size = 3, color = "blue", shape = 15) +
+    
+    # Previsão SE (meses 2-13)
+    geom_line(aes(x = 2:13, y = resultados$SE[2:13]), 
+              color = "darkgreen", size = 1.2, linetype = "solid") +
+    geom_point(aes(x = 2:13, y = resultados$SE[2:13]), 
+               size = 3, color = "darkgreen", shape = 18) +
+    
+    # Destacar área de previsão futura
+    annotate("rect", xmin = 12.5, xmax = 13.5, ymin = 0, 
+             ymax = max(dados_reais$Demanda_Real) * 1.3,
+             fill = "yellow", alpha = 0.2) +
+    
+    geom_vline(xintercept = 12.5, linetype = "dashed", color = "red", size = 1) +
+    
+    # Configurações do gráfico
+    scale_x_continuous(breaks = 1:13, labels = meses_labels, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, max(dados_reais$Demanda_Real) * 1.3)) +
+    
+    labs(
+      title = paste("GABARITO - CENÁRIO", cenario_num, ":", titulo, "- PREVISÕES ATÉ MÊS 13"),
+      subtitle = "Linha preta: Demanda Real | Vermelho: MMS | Azul: MMP | Verde: SE | Área amarela: Previsão Futura",
+      x = "Meses",
+      y = "Demanda"
+    ) +
+    
+    theme_bw() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+      plot.subtitle = element_text(hjust = 0.5, size = 12),
+      panel.grid.major = element_line(color = "gray95")
+    ) +
+    
+    # Legenda com valores do Mês 13
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.25, 
+             label = "PREVISÕES MÊS 13:", hjust = 0, fontface = "bold", size = 5) +
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = paste("MMS:", round(resultados$Previsao_M13["MMS"], 1)), 
+             hjust = 0, color = "red", fontface = "bold", size = 4) +
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.16, 
+             label = paste("MMP:", round(resultados$Previsao_M13["MMP"], 1)), 
+             hjust = 0, color = "blue", fontface = "bold", size = 4) +
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.12, 
+             label = paste("SE:", round(resultados$Previsao_M13["SE"], 1)), 
+             hjust = 0, color = "darkgreen", fontface = "bold", size = 4) +
+    
+    # MAPE
+    annotate("text", x = 8, y = max(dados_reais$Demanda_Real) * 1.25, 
+             label = "MAPE (M1-12):", hjust = 0, fontface = "bold", size = 5) +
+    annotate("text", x = 8, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = paste("MMS:", round(resultados$MAPE_MMS, 2), "%"), 
+             hjust = 0, color = "red", size = 4) +
+    annotate("text", x = 8, y = max(dados_reais$Demanda_Real) * 1.16, 
+             label = paste("MMP:", round(resultados$MAPE_MMP, 2), "%"), 
+             hjust = 0, color = "blue", size = 4) +
+    annotate("text", x = 8, y = max(dados_reais$Demanda_Real) * 1.12, 
+             label = paste("SE:", round(resultados$MAPE_SE, 2), "%"), 
+             hjust = 0, color = "darkgreen", size = 4)
+  
+  print(grafico_gabarito)
+  dev.off()
+}
+
+# GERAR GABARITOS COMPLETOS PARA CADA CENÁRIO -----------------------------
+
+# Cenário 1: Sorvete Artesanal
+criar_gabarito_completo(1, "Sorvete Artesanal", df1, resultados1_mes13)
+criar_gabarito_grafico_mes13(1, "Sorvete Artesanal", df1, resultados1_mes13)
+
+# Cenário 2: Smartphone Premium
+criar_gabarito_completo(2, "Smartphone Premium", df2, resultados2_mes13)
+criar_gabarito_grafico_mes13(2, "Smartphone Premium", df2, resultados2_mes13)
+
+# Cenário 3: Medicamento Específico
+criar_gabarito_completo(3, "Medicamento Específico", df3, resultados3_mes13)
+criar_gabarito_grafico_mes13(3, "Medicamento Específico", df3, resultados3_mes13)
+
+# RESUMO COMPARATIVO COM MÊS 13 -------------------------------------------
+
+criar_resumo_completo_professor <- function() {
+  
+  resumo <- data.frame(
+    Cenário = c("1 - Sorvete Artesanal", "2 - Smartphone Premium", "3 - Medicamento Específico"),
+    Padrão = c("Sazonal", "Tendência", "Irregular"),
+    MAPE_MMS = c(round(resultados1_mes13$MAPE_MMS, 2), 
+                 round(resultados2_mes13$MAPE_MMP, 2), 
+                 round(resultados3_mes13$MAPE_MMS, 2)),
+    MAPE_MMP = c(round(resultados1_mes13$MAPE_MMP, 2), 
+                 round(resultados2_mes13$MAPE_MMP, 2), 
+                 round(resultados3_mes13$MAPE_MMP, 2)),
+    MAPE_SE = c(round(resultados1_mes13$MAPE_SE, 2), 
+                round(resultados2_mes13$MAPE_SE, 2), 
+                round(resultados3_mes13$MAPE_SE, 2)),
+    Previsão_M13_MMS = round(c(resultados1_mes13$Previsao_M13["MMS"], 
+                              resultados2_mes13$Previsao_M13["MMS"], 
+                              resultados3_mes13$Previsao_M13["MMS"]), 1),
+    Previsão_M13_MMP = round(c(resultados1_mes13$Previsao_M13["MMP"], 
+                              resultados2_mes13$Previsao_M13["MMP"], 
+                              resultados3_mes13$Previsao_M13["MMP"]), 1),
+    Previsão_M13_SE = round(c(resultados1_mes13$Previsao_M13["SE"], 
+                             resultados2_mes13$Previsao_M13["SE"], 
+                             resultados3_mes13$Previsao_M13["SE"]), 1)
+  )
+  
+  pdf("Resumo_Completo_Professor.pdf", width = 14, height = 10)
+  
+  tabela_resumo <- tableGrob(resumo, rows = NULL,
+                            theme = ttheme_minimal(
+                              base_size = 10,
+                              core = list(
+                                bg_params = list(fill = c(rep(c("white", "#f9f9f9"), 2), "white"))
+                              )
+                            ))
+  
+  grid.arrange(
+    textGrob("RESUMO COMPLETO PARA O PROFESSOR - ANÁLISE COMPARATIVA COM MÊS 13",
+            gp = gpar(fontsize = 16, fontface = "bold")),
+    
+    tabela_resumo,
+    
+    textGrob("ANÁLISE DAS PREVISÕES DO MÊS 13:\n• Cenário 1 (Sazonal): Método X projeta valor Y porque...\n• Cenário 2 (Tendência): Método Z captura melhor a tendência porque...\n• Cenário 3 (Irregular): Método W é mais conservador porque...",
+            gp = gpar(fontsize = 11, lineheight = 1.2),
+            x = unit(0.05, "npc"), just = "left"),
+    
+    nrow = 3,
+    heights = c(0.2, 0.6, 0.4)
+  )
+  
+  dev.off()
+  
+  return(resumo)
+}
+
+# Gerar resumo completo
+resumo_completo <- criar_resumo_completo_professor()
+
+# CONFIRMAÇÃO FINAL -------------------------------------------------------
+cat("GABARITOS COMPLETOS COM MÊS 13 GERADOS COM SUCESSO!\n")
+cat("===================================================\n\n")
+cat("ARQUIVOS CRIADOS:\n\n")
+
+cat("GABARITOS DE CÁLCULOS COMPLETOS:\n")
+cat("- Gabarito_Completo_Cenario1.pdf\n")
+cat("- Gabarito_Completo_Cenario2.pdf\n")
+cat("- Gabarito_Completo_Cenario3.pdf\n\n")
+
+cat("GABARITOS GRÁFICOS COM MÊS 13:\n")
+cat("- Gabarito_Grafico_Mes13_Cenario1.pdf\n")
+cat("- Gabarito_Grafico_Mes13_Cenario2.pdf\n")
+cat("- Gabarito_Grafico_Mes13_Cenario3.pdf\n\n")
+
+cat("RESUMO PARA O PROFESSOR:\n")
+cat("- Resumo_Completo_Professor.pdf\n\n")
+
+cat("PREVISÕES DO MÊS 13 POR CENÁRIO:\n")
+print(resumo_completo[, c("Cenário", "Previsão_M13_MMS", "Previsão_M13_MMP", "Previsão_M13_SE")])
+
+```
+
+
+
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# CALCULAR RESULTADOS CORRETOS PARA O GABARITO ----------------------------
+
+# Função para calcular resultados corretos
+calcular_resultados_gabarito <- function(dados_reais) {
+  
+  # Calcular previsões corretas
+  mms <- calcular_mms(dados_reais$Demanda_Real, 3)
+  mmp <- calcular_mmp(dados_reais$Demanda_Real, c(0.5, 0.3, 0.2))
+  se <- calcular_se(dados_reais$Demanda_Real, 0.3)
+  
+  # Calcular MAPE corretos
+  mape_mms <- calcular_mape(dados_reais$Demanda_Real[4:12], mms[4:12])
+  mape_mmp <- calcular_mape(dados_reais$Demanda_Real[4:12], mmp[4:12])
+  mape_se <- calcular_mape(dados_reais$Demanda_Real[2:12], se[2:12])
+  
+  return(list(
+    MMS = mms,
+    MMP = mmp,
+    SE = se,
+    MAPE_MMS = mape_mms,
+    MAPE_MMP = mape_mmp,
+    MAPE_SE = mape_se
+  ))
+}
+
+# Calcular resultados para cada cenário
+resultados1 <- calcular_resultados_gabarito(df1)
+resultados2 <- calcular_resultados_gabarito(df2)
+resultados3 <- calcular_resultados_gabarito(df3)
+
+# FUNÇÃO CORRIGIDA DO GABARITO --------------------------------------------
+
+criar_gabarito <- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0("Gabarito_Cenario", cenario_num, ".pdf"), width = 11, height = 8.5)
+  
+  # Criar dataframe completo para o gabarito
+  dados_gabarito <- data.frame(
+    Mês = dados_reais$Mês,
+    Demanda_Real = dados_reais$Demanda_Real,
+    MMS_Correto = round(resultados$MMS, 1),
+    MMP_Correto = round(resultados$MMP, 1),
+    SE_Correto = round(resultados$SE, 1),
+    Erro_MMS = round(abs((dados_reais$Demanda_Real - resultados$MMS) / dados_reais$Demanda_Real) * 100, 1),
+    Erro_MMP = round(abs((dados_reais$Demanda_Real - resultados$MMP) / dados_reais$Demanda_Real) * 100, 1),
+    Erro_SE = round(abs((dados_reais$Demanda_Real - resultados$SE) / dados_reais$Demanda_Real) * 100, 1)
+  )
+  
+  # Substituir NA por "-"
+  dados_gabarito[is.na(dados_gabarito)] <- "-"
+  
+  # Adicionar linha de MAPE
+  linha_mape <- data.frame(
+    Mês = "MAPE FINAL",
+    Demanda_Real = "-",
+    MMS_Correto = paste(resultados$MAPE_MMS, "%"),
+    MMP_Correto = paste(resultados$MAPE_MMP, "%"),
+    SE_Correto = paste(resultados$MAPE_SE, "%"),
+    Erro_MMS = "-",
+    Erro_MMP = "-",
+    Erro_SE = "-"
+  )
+  
+  dados_gabarito_completo <- rbind(dados_gabarito, linha_mape)
+  
+  # Criar tabela formatada
+  tabela_gabarito <- tableGrob(dados_gabarito_completo, rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 9,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c("white", "#f0f0f0"), 6), "#e8f5e8"))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = "bold", fontsize = 10),
+                                  bg_params = list(fill = "#2196F3", alpha = 0.8)
+                                )
+                              ))
+  
+  # Layout da página do gabarito
+  grid.arrange(
+    textGrob(paste("GABARITO - CENÁRIO", cenario_num, ":", titulo),
+            gp = gpar(fontsize = 16, fontface = "bold")),
+    
+    textGrob("RESPOSTAS CORRETAS PARA OS CÁLCULOS DE PREVISÃO",
+            gp = gpar(fontsize = 12, fontface = "italic")),
+    
+    textGrob(paste("MAPE Esperado: MMS =", resultados$MAPE_MMS, "%, MMP =", 
+                  resultados$MAPE_MMP, "%, SE =", resultados$MAPE_SE, "%"),
+            gp = gpar(fontsize = 11, col = "darkred")),
+    
+    tabela_gabarito,
+    
+    nrow = 4, 
+    heights = c(0.2, 0.1, 0.1, 2.5)
+  )
+  
+  dev.off()
+}
+
+# GERAR GABARITOS PARA CADA CENÁRIO ---------------------------------------
+
+criar_gabarito(1, "Sorvete Artesanal", df1, resultados1)
+criar_gabarito(2, "Smartphone Premium", df2, resultados2)
+criar_gabarito(3, "Medicamento Específico", df3, resultados3)
+
+# GABARITO GRÁFICO COM PREVISÕES PLOTADAS ---------------------------------
+
+criar_gabarito_grafico <- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0("Gabarito_Grafico_Cenario", cenario_num, ".pdf"), width = 11, height = 8.5)
+  
+  # Criar gráfico com todas as previsões
+  grafico_gabarito <- ggplot() +
+    # Demanda real
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = "black", shape = 16) +
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = "black", size = 1, linetype = "solid") +
+    
+    # Previsão MMS
+    geom_line(aes(x = 4:12, y = resultados$MMS[4:12]), 
+              color = "red", size = 1, linetype = "dashed") +
+    geom_point(aes(x = 4:12, y = resultados$MMS[4:12]), 
+               size = 2, color = "red", shape = 17) +
+    
+    # Previsão MMP
+    geom_line(aes(x = 4:12, y = resultados$MMP[4:12]), 
+              color = "blue", size = 1, linetype = "dashed") +
+    geom_point(aes(x = 4:12, y = resultados$MMP[4:12]), 
+               size = 2, color = "blue", shape = 15) +
+    
+    # Previsão SE
+    geom_line(aes(x = 2:12, y = resultados$SE[2:12]), 
+              color = "darkgreen", size = 1, linetype = "dashed") +
+    geom_point(aes(x = 2:12, y = resultados$SE[2:12]), 
+               size = 2, color = "darkgreen", shape = 18) +
+    
+    # Configurações do gráfico
+    scale_x_continuous(breaks = 1:12, labels = dados_reais$Mês, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, max(dados_reais$Demanda_Real) * 1.3)) +
+    
+    labs(
+      title = paste("GABARITO - CENÁRIO", cenario_num, ":", titulo),
+      subtitle = "Linha preta: Demanda Real | Vermelho: MMS | Azul: MMP | Verde: SE",
+      x = "Meses",
+      y = "Demanda"
+    ) +
+    
+    theme_bw() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+      plot.subtitle = element_text(hjust = 0.5, size = 11),
+      panel.grid.major = element_line(color = "gray95")
+    ) +
+    
+    # Legenda
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.25, 
+             label = paste("MAPE - MMS:", resultados$MAPE_MMS, "%"), 
+             hjust = 0, color = "red", fontface = "bold") +
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = paste("MAPE - MMP:", resultados$MAPE_MMP, "%"), 
+             hjust = 0, color = "blue", fontface = "bold") +
+    annotate("text", x = 1, y = max(dados_reais$Demanda_Real) * 1.15, 
+             label = paste("MAPE - SE:", resultados$MAPE_SE, "%"), 
+             hjust = 0, color = "darkgreen", fontface = "bold")
+  
+  print(grafico_gabarito)
+  dev.off()
+}
+
+# Gerar gabaritos gráficos
+criar_gabarito_grafico(1, "Sorvete Artesanal", df1, resultados1)
+criar_gabarito_grafico(2, "Smartphone Premium", df2, resultados2)
+criar_gabarito_grafico(3, "Medicamento Específico", df3, resultados3)
+
+# RESUMO COMPARATIVO PARA O PROFESSOR ------------------------------------
+
+criar_resumo_professor <- function() {
+  
+  resumo <- data.frame(
+    Cenário = c("1 - Sorvete Artesanal", "2 - Smartphone Premium", "3 - Medicamento Específico"),
+    Padrão = c("Sazonal", "Tendência", "Irregular"),
+    MAPE_MMS = c(resultados1$MAPE_MMS, resultados2$MAPE_MMS, resultados3$MAPE_MMS),
+    MAPE_MMP = c(resultados1$MAPE_MMP, resultados2$MAPE_MMP, resultados3$MAPE_MMP),
+    MAPE_SE = c(resultados1$MAPE_SE, resultados2$MAPE_SE, resultados3$MAPE_SE),
+    Melhor_Método = c(
+      ifelse(min(c(resultados1$MAPE_MMS, resultados1$MAPE_MMP, resultados1$MAPE_SE)) == resultados1$MAPE_MMS, "MMS",
+             ifelse(min(c(resultados1$MAPE_MMS, resultados1$MAPE_MMP, resultados1$MAPE_SE)) == resultados1$MAPE_MMP, "MMP", "SE")),
+      ifelse(min(c(resultados2$MAPE_MMS, resultados2$MAPE_MMP, resultados2$MAPE_SE)) == resultados2$MAPE_MMS, "MMS",
+             ifelse(min(c(resultados2$MAPE_MMS, resultados2$MAPE_MMP, resultados2$MAPE_SE)) == resultados2$MAPE_MMP, "MMP", "SE")),
+      ifelse(min(c(resultados3$MAPE_MMS, resultados3$MAPE_MMP, resultados3$MAPE_SE)) == resultados3$MAPE_MMS, "MMS",
+             ifelse(min(c(resultados3$MAPE_MMS, resultados3$MAPE_MMP, resultados3$MAPE_SE)) == resultados3$MAPE_MMP, "MMP", "SE"))
+    )
+  )
+  
+  pdf("Resumo_Professor.pdf", width = 11, height = 8.5)
+  
+  tabela_resumo <- tableGrob(resumo, rows = NULL,
+                            theme = ttheme_minimal(
+                              base_size = 11,
+                              core = list(
+                                bg_params = list(fill = c(rep(c("white", "#f9f9f9"), 2), "white"))
+                              ),
+                              colhead = list(
+                                fg_params = list(fontface = "bold"),
+                                bg_params = list(fill = "#FF9800")
+                              )
+                            ))
+  
+  grid.arrange(
+    textGrob("RESUMO PARA O PROFESSOR - ANÁLISE COMPARATIVA",
+            gp = gpar(fontsize = 16, fontface = "bold")),
+    
+    textGrob("Comparação do MAPE por Cenário e Método de Previsão",
+            gp = gpar(fontsize = 12, fontface = "italic")),
+    
+    tabela_resumo,
+    
+    textGrob("ANÁLISE:\n• Cenário 1 (Sazonal): Método X funciona melhor porque...\n• Cenário 2 (Tendência): Método Y é mais adequado porque...\n• Cenário 3 (Irregular): Método Z se adapta melhor porque...",
+            gp = gpar(fontsize = 10, lineheight = 1.2),
+            x = unit(0.05, "npc"), just = "left"),
+    
+    nrow = 4,
+    heights = c(0.2, 0.1, 0.6, 0.4)
+  )
+  
+  dev.off()
+  
+  return(resumo)
+}
+
+# Gerar resumo para o professor
+resumo_professor <- criar_resumo_professor()
+
+print(resumo_professor)
+```
+
+

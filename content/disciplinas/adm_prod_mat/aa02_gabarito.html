@@ -1,0 +1,1670 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: true
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas - gabarito
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+
+<p><strong>Contexto:</strong> Uma sorveteria premium que precisa planejar a produção para o próximo ano.</p>
+<p><strong>Questão-chave:</strong> Qual método fornece a melhor previsão para otimizar a produção e minimizar desperdícios?</p>
+<p><strong>Desafio:</strong> Alta sazonalidade com pico no verão</p>
+<p><strong>Focos:</strong> Identificar padrão sazonal, preparar para picos de demanda</p>
+<p><strong>Fatores externos:</strong> Condições climáticas, eventos locais, concorrência</p>
+<pre class="r"><code># Carregar bibliotecas necessárias
+library(dplyr)
+library(kableExtra)
+library(ggplot2)
+
+# FUNÇÕES PARA CÁLCULO DOS MÉTODOS DE PREVISÃO ----------------------------
+
+calcular_mms &lt;- function(dados, n) {
+  mms &lt;- numeric(length(dados))
+  for(i in n:length(dados)) {
+    mms[i] &lt;- mean(dados[(i-n+1):i])
+  }
+  return(mms)
+}
+
+calcular_mmp &lt;- function(dados, pesos) {
+  n &lt;- length(pesos)
+  mmp &lt;- numeric(length(dados))
+  for(i in n:length(dados)) {
+    periodo &lt;- dados[(i-n+1):i]
+    mmp[i] &lt;- sum(periodo * pesos) / sum(pesos)
+  }
+  return(mmp)
+}
+
+calcular_se &lt;- function(dados, alpha) {
+  se &lt;- numeric(length(dados))
+  se[1] &lt;- dados[1]  # Inicialização
+  for(i in 2:length(dados)) {
+    se[i] &lt;- alpha * dados[i-1] + (1-alpha) * se[i-1]
+  }
+  return(se)
+}
+
+calcular_mape &lt;- function(real, previsao) {
+  erro &lt;- abs((real - previsao) / real)
+  mape &lt;- mean(erro, na.rm = TRUE) * 100
+  return(round(mape, 2))
+}
+
+# CENÁRIO 1: SORVETE ARTESANAL --------------------------------------------
+
+# Dados do Cenário 1
+meses &lt;- c(&quot;Jan&quot;, &quot;Fev&quot;, &quot;Mar&quot;, &quot;Abr&quot;, &quot;Mai&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Ago&quot;, &quot;Set&quot;, &quot;Out&quot;, &quot;Nov&quot;, &quot;Dez&quot;)
+demanda1 &lt;- c(120, 130, 180, 250, 400, 650, 800, 720, 480, 300, 200, 280)
+
+# Cálculos para Cenário 1
+mms1 &lt;- calcular_mms(demanda1, 3)
+mmp1 &lt;- calcular_mmp(demanda1, c(0.5, 0.3, 0.2))
+se1 &lt;- calcular_se(demanda1, 0.3)
+
+# Criar dataframe para Cenário 1
+df1 &lt;- data.frame(
+  Mês = meses,
+  Demanda_Real = demanda1,
+  MMS = round(mms1, 1),
+  MMP = round(mmp1, 1),
+  SE = round(se1, 1)
+)
+
+# Calcular MAPE para Cenário 1 (excluindo primeiros meses sem previsão)
+mape_mms1 &lt;- calcular_mape(demanda1[4:12], mms1[4:12])
+mape_mmp1 &lt;- calcular_mape(demanda1[4:12], mmp1[4:12])
+mape_se1 &lt;- calcular_mape(demanda1[2:12], se1[2:12])
+
+# Tabela HTML para Cenário 1
+kable(df1, caption = &quot;Cenário 1: Sorvete Artesanal - Previsões de Demanda&quot;) %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;), full_width = FALSE) %&gt;%
+  add_header_above(c(&quot; &quot; = 2, &quot;Métodos de Previsão&quot; = 3)) %&gt;%
+  footnote(general = paste(&quot;MAPE - MMS:&quot;, mape_mms1, &quot;%, MMP:&quot;, mape_mmp1, &quot;%, SE:&quot;, mape_se1, &quot;%&quot;))</code></pre>
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 1: </span><span id="tab:unnamed-chunk-2">Table 2: </span>Cenário 1: Sorvete Artesanal - Previsões de Demanda
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Métodos de Previsão
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Mês
+</th>
+<th style="text-align:right;">
+Demanda_Real
+</th>
+<th style="text-align:right;">
+MMS
+</th>
+<th style="text-align:right;">
+MMP
+</th>
+<th style="text-align:right;">
+SE
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Jan
+</td>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+120.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fev
+</td>
+<td style="text-align:right;">
+130
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+120.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mar
+</td>
+<td style="text-align:right;">
+180
+</td>
+<td style="text-align:right;">
+143.3
+</td>
+<td style="text-align:right;">
+135
+</td>
+<td style="text-align:right;">
+123.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Abr
+</td>
+<td style="text-align:right;">
+250
+</td>
+<td style="text-align:right;">
+186.7
+</td>
+<td style="text-align:right;">
+169
+</td>
+<td style="text-align:right;">
+140.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mai
+</td>
+<td style="text-align:right;">
+400
+</td>
+<td style="text-align:right;">
+276.7
+</td>
+<td style="text-align:right;">
+245
+</td>
+<td style="text-align:right;">
+173.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jun
+</td>
+<td style="text-align:right;">
+650
+</td>
+<td style="text-align:right;">
+433.3
+</td>
+<td style="text-align:right;">
+375
+</td>
+<td style="text-align:right;">
+241.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jul
+</td>
+<td style="text-align:right;">
+800
+</td>
+<td style="text-align:right;">
+616.7
+</td>
+<td style="text-align:right;">
+555
+</td>
+<td style="text-align:right;">
+363.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ago
+</td>
+<td style="text-align:right;">
+720
+</td>
+<td style="text-align:right;">
+723.3
+</td>
+<td style="text-align:right;">
+709
+</td>
+<td style="text-align:right;">
+494.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Set
+</td>
+<td style="text-align:right;">
+480
+</td>
+<td style="text-align:right;">
+666.7
+</td>
+<td style="text-align:right;">
+712
+</td>
+<td style="text-align:right;">
+562.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Out
+</td>
+<td style="text-align:right;">
+300
+</td>
+<td style="text-align:right;">
+500.0
+</td>
+<td style="text-align:right;">
+564
+</td>
+<td style="text-align:right;">
+537.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nov
+</td>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+326.7
+</td>
+<td style="text-align:right;">
+370
+</td>
+<td style="text-align:right;">
+466.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dez
+</td>
+<td style="text-align:right;">
+280
+</td>
+<td style="text-align:right;">
+260.0
+</td>
+<td style="text-align:right;">
+266
+</td>
+<td style="text-align:right;">
+386.4
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> MAPE - MMS: 32.1 %, MMP: 41.33 %, SE: 50.57 %
+</td>
+</tr>
+</tfoot>
+</table>
+<pre class="r"><code># Gráfico para Cenário 1
+ggplot(df1, aes(x = factor(Mês, levels = meses))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = &quot;Real&quot;), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = &quot;MMS&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = &quot;MMP&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = &quot;SE&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  labs(title = &quot;Cenário 1: Sorvete Artesanal - Comparação de Métodos&quot;,
+       x = &quot;Mês&quot;, y = &quot;Demanda (kg)&quot;, color = &quot;Série&quot;) +
+  theme_minimal()</code></pre>
+<pre><code>## Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+## ℹ Please use `linewidth` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+## generated.</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/aa02_gabarito_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code># CENÁRIO 2: SMARTPHONE PREMIUM -------------------------------------------
+
+# Dados do Cenário 2
+demanda2 &lt;- c(1200, 1350, 1500, 1650, 1800, 2000, 2200, 2400, 2550, 2700, 2850, 3000)
+
+# Cálculos para Cenário 2
+mms2 &lt;- calcular_mms(demanda2, 3)
+mmp2 &lt;- calcular_mmp(demanda2, c(0.5, 0.3, 0.2))
+se2 &lt;- calcular_se(demanda2, 0.3)
+
+# Criar dataframe para Cenário 2
+df2 &lt;- data.frame(
+  Mês = paste(&quot;Mês&quot;, 1:12),
+  Demanda_Real = demanda2,
+  MMS = round(mms2, 1),
+  MMP = round(mmp2, 1),
+  SE = round(se2, 1)
+)
+
+# Calcular MAPE para Cenário 2
+mape_mms2 &lt;- calcular_mape(demanda2[4:12], mms2[4:12])
+mape_mmp2 &lt;- calcular_mape(demanda2[4:12], mmp2[4:12])
+mape_se2 &lt;- calcular_mape(demanda2[2:12], se2[2:12])
+
+# Tabela HTML para Cenário 2
+kable(df2, caption = &quot;Cenário 2: Smartphone Premium - Previsões de Demanda&quot;) %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;), full_width = FALSE) %&gt;%
+  add_header_above(c(&quot; &quot; = 2, &quot;Métodos de Previsão&quot; = 3)) %&gt;%
+  footnote(general = paste(&quot;MAPE - MMS:&quot;, mape_mms2, &quot;%, MMP:&quot;, mape_mmp2, &quot;%, SE:&quot;, mape_se2, &quot;%&quot;))</code></pre>
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 1: </span><span id="tab:unnamed-chunk-2">Table 1: </span>Cenário 2: Smartphone Premium - Previsões de Demanda
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Métodos de Previsão
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Mês
+</th>
+<th style="text-align:right;">
+Demanda_Real
+</th>
+<th style="text-align:right;">
+MMS
+</th>
+<th style="text-align:right;">
+MMP
+</th>
+<th style="text-align:right;">
+SE
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Mês 1
+</td>
+<td style="text-align:right;">
+1200
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1200.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 2
+</td>
+<td style="text-align:right;">
+1350
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1200.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 3
+</td>
+<td style="text-align:right;">
+1500
+</td>
+<td style="text-align:right;">
+1350.0
+</td>
+<td style="text-align:right;">
+1305
+</td>
+<td style="text-align:right;">
+1245.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 4
+</td>
+<td style="text-align:right;">
+1650
+</td>
+<td style="text-align:right;">
+1500.0
+</td>
+<td style="text-align:right;">
+1455
+</td>
+<td style="text-align:right;">
+1321.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 5
+</td>
+<td style="text-align:right;">
+1800
+</td>
+<td style="text-align:right;">
+1650.0
+</td>
+<td style="text-align:right;">
+1605
+</td>
+<td style="text-align:right;">
+1420.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 6
+</td>
+<td style="text-align:right;">
+2000
+</td>
+<td style="text-align:right;">
+1816.7
+</td>
+<td style="text-align:right;">
+1765
+</td>
+<td style="text-align:right;">
+1534.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 7
+</td>
+<td style="text-align:right;">
+2200
+</td>
+<td style="text-align:right;">
+2000.0
+</td>
+<td style="text-align:right;">
+1940
+</td>
+<td style="text-align:right;">
+1673.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 8
+</td>
+<td style="text-align:right;">
+2400
+</td>
+<td style="text-align:right;">
+2200.0
+</td>
+<td style="text-align:right;">
+2140
+</td>
+<td style="text-align:right;">
+1831.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 9
+</td>
+<td style="text-align:right;">
+2550
+</td>
+<td style="text-align:right;">
+2383.3
+</td>
+<td style="text-align:right;">
+2330
+</td>
+<td style="text-align:right;">
+2002.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 10
+</td>
+<td style="text-align:right;">
+2700
+</td>
+<td style="text-align:right;">
+2550.0
+</td>
+<td style="text-align:right;">
+2505
+</td>
+<td style="text-align:right;">
+2166.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 11
+</td>
+<td style="text-align:right;">
+2850
+</td>
+<td style="text-align:right;">
+2700.0
+</td>
+<td style="text-align:right;">
+2655
+</td>
+<td style="text-align:right;">
+2326.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mês 12
+</td>
+<td style="text-align:right;">
+3000
+</td>
+<td style="text-align:right;">
+2850.0
+</td>
+<td style="text-align:right;">
+2805
+</td>
+<td style="text-align:right;">
+2483.6
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> MAPE - MMS: 7.37 %, MMP: 9.58 %, SE: 19.71 %
+</td>
+</tr>
+</tfoot>
+</table>
+<pre class="r"><code># Gráfico para Cenário 2
+ggplot(df2, aes(x = factor(Mês, levels = paste(&quot;Mês&quot;, 1:12)))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = &quot;Real&quot;), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = &quot;MMS&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = &quot;MMP&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = &quot;SE&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  labs(title = &quot;Cenário 2: Smartphone Premium - Comparação de Métodos&quot;,
+       x = &quot;Mês&quot;, y = &quot;Demanda (unidades)&quot;, color = &quot;Série&quot;) +
+  theme_minimal()</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/aa02_gabarito_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<pre class="r"><code># CENÁRIO 3: MEDICAMENTO ESPECÍFICO ---------------------------------------
+
+# Dados do Cenário 3
+demanda3 &lt;- c(450, 420, 480, 1200, 460, 440, 430, 1500, 470, 490, 510, 2000)
+
+# Cálculos para Cenário 3
+mms3 &lt;- calcular_mms(demanda3, 3)
+mmp3 &lt;- calcular_mmp(demanda3, c(0.5, 0.3, 0.2))
+se3 &lt;- calcular_se(demanda3, 0.3)
+
+# Criar dataframe para Cenário 3
+df3 &lt;- data.frame(
+  Mês = meses,
+  Demanda_Real = demanda3,
+  MMS = round(mms3, 1),
+  MMP = round(mmp3, 1),
+  SE = round(se3, 1)
+)
+
+# Calcular MAPE para Cenário 3
+mape_mms3 &lt;- calcular_mape(demanda3[4:12], mms3[4:12])
+mape_mmp3 &lt;- calcular_mape(demanda3[4:12], mmp3[4:12])
+mape_se3 &lt;- calcular_mape(demanda3[2:12], se3[2:12])
+
+# Tabela HTML para Cenário 3
+kable(df3, caption = &quot;Cenário 3: Medicamento Específico - Previsões de Demanda&quot;) %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;), full_width = FALSE) %&gt;%
+  add_header_above(c(&quot; &quot; = 2, &quot;Métodos de Previsão&quot; = 3)) %&gt;%
+  footnote(general = paste(&quot;MAPE - MMS:&quot;, mape_mms3, &quot;%, MMP:&quot;, mape_mmp3, &quot;%, SE:&quot;, mape_se3, &quot;%&quot;))</code></pre>
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 1: </span><span id="tab:unnamed-chunk-2">Table 1: </span>Cenário 3: Medicamento Específico - Previsões de Demanda
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Métodos de Previsão
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Mês
+</th>
+<th style="text-align:right;">
+Demanda_Real
+</th>
+<th style="text-align:right;">
+MMS
+</th>
+<th style="text-align:right;">
+MMP
+</th>
+<th style="text-align:right;">
+SE
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Jan
+</td>
+<td style="text-align:right;">
+450
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+450.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fev
+</td>
+<td style="text-align:right;">
+420
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+450.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mar
+</td>
+<td style="text-align:right;">
+480
+</td>
+<td style="text-align:right;">
+450.0
+</td>
+<td style="text-align:right;">
+447
+</td>
+<td style="text-align:right;">
+441.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Abr
+</td>
+<td style="text-align:right;">
+1200
+</td>
+<td style="text-align:right;">
+700.0
+</td>
+<td style="text-align:right;">
+594
+</td>
+<td style="text-align:right;">
+452.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mai
+</td>
+<td style="text-align:right;">
+460
+</td>
+<td style="text-align:right;">
+713.3
+</td>
+<td style="text-align:right;">
+692
+</td>
+<td style="text-align:right;">
+676.9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jun
+</td>
+<td style="text-align:right;">
+440
+</td>
+<td style="text-align:right;">
+700.0
+</td>
+<td style="text-align:right;">
+826
+</td>
+<td style="text-align:right;">
+611.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jul
+</td>
+<td style="text-align:right;">
+430
+</td>
+<td style="text-align:right;">
+443.3
+</td>
+<td style="text-align:right;">
+448
+</td>
+<td style="text-align:right;">
+560.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ago
+</td>
+<td style="text-align:right;">
+1500
+</td>
+<td style="text-align:right;">
+790.0
+</td>
+<td style="text-align:right;">
+649
+</td>
+<td style="text-align:right;">
+521.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Set
+</td>
+<td style="text-align:right;">
+470
+</td>
+<td style="text-align:right;">
+800.0
+</td>
+<td style="text-align:right;">
+759
+</td>
+<td style="text-align:right;">
+814.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Out
+</td>
+<td style="text-align:right;">
+490
+</td>
+<td style="text-align:right;">
+820.0
+</td>
+<td style="text-align:right;">
+989
+</td>
+<td style="text-align:right;">
+711.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nov
+</td>
+<td style="text-align:right;">
+510
+</td>
+<td style="text-align:right;">
+490.0
+</td>
+<td style="text-align:right;">
+484
+</td>
+<td style="text-align:right;">
+645.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dez
+</td>
+<td style="text-align:right;">
+2000
+</td>
+<td style="text-align:right;">
+1000.0
+</td>
+<td style="text-align:right;">
+798
+</td>
+<td style="text-align:right;">
+604.5
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> MAPE - MMS: 44.19 %, MMP: 53.12 %, SE: 43.1 %
+</td>
+</tr>
+</tfoot>
+</table>
+<pre class="r"><code># Gráfico para Cenário 3
+ggplot(df3, aes(x = factor(Mês, levels = meses))) +
+  geom_line(aes(y = Demanda_Real, group = 1, color = &quot;Real&quot;), size = 1) +
+  geom_line(aes(y = MMS, group = 1, color = &quot;MMS&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = MMP, group = 1, color = &quot;MMP&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  geom_line(aes(y = SE, group = 1, color = &quot;SE&quot;), size = 1, linetype = &quot;dashed&quot;, na.rm = TRUE) +
+  labs(title = &quot;Cenário 3: Medicamento Específico - Comparação de Métodos&quot;,
+       x = &quot;Mês&quot;, y = &quot;Demanda (caixas)&quot;, color = &quot;Série&quot;) +
+  theme_minimal()</code></pre>
+<p><img src="/disciplinas/adm_prod_mat/aa02_gabarito_files/figure-html/unnamed-chunk-2-3.png" width="672" /></p>
+<pre class="r"><code># RESUMO COMPARATIVO DOS MAPES --------------------------------------------
+
+# Criar tabela resumo com MAPE de todos os cenários
+resumo_mape &lt;- data.frame(
+  Cenário = c(&quot;Sorvete Artesanal&quot;, &quot;Smartphone Premium&quot;, &quot;Medicamento Específico&quot;),
+  MMS = c(mape_mms1, mape_mms2, mape_mms3),
+  MMP = c(mape_mmp1, mape_mmp2, mape_mmp3),
+  SE = c(mape_se1, mape_se2, mape_se3),
+  Melhor_Método = c(
+    ifelse(min(c(mape_mms1, mape_mmp1, mape_se1)) == mape_mms1, &quot;MMS&quot;, 
+           ifelse(min(c(mape_mms1, mape_mmp1, mape_se1)) == mape_mmp1, &quot;MMP&quot;, &quot;SE&quot;)),
+    ifelse(min(c(mape_mms2, mape_mmp2, mape_se2)) == mape_mms2, &quot;MMS&quot;, 
+           ifelse(min(c(mape_mms2, mape_mmp2, mape_se2)) == mape_mmp2, &quot;MMP&quot;, &quot;SE&quot;)),
+    ifelse(min(c(mape_mms3, mape_mmp3, mape_se3)) == mape_mms3, &quot;MMS&quot;, 
+           ifelse(min(c(mape_mms3, mape_mmp3, mape_se3)) == mape_mmp3, &quot;MMP&quot;, &quot;SE&quot;))
+  )
+)
+
+# Tabela resumo em HTML
+kable(resumo_mape, caption = &quot;Resumo Comparativo - MAPE por Cenário e Método (%)&quot;) %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;), full_width = FALSE) %&gt;%
+  row_spec(which.min(resumo_mape$MMS), bold = TRUE, color = &quot;white&quot;, background = &quot;#D32F2F&quot;) %&gt;%
+  row_spec(which.min(resumo_mape$MMP), bold = TRUE, color = &quot;white&quot;, background = &quot;#388E3C&quot;) %&gt;%
+  row_spec(which.min(resumo_mape$SE), bold = TRUE, color = &quot;white&quot;, background = &quot;#1976D2&quot;)</code></pre>
+<table class="table table-striped table-hover" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 1: </span><span id="tab:unnamed-chunk-2">Table 1: </span>Resumo Comparativo - MAPE por Cenário e Método (%)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Cenário
+</th>
+<th style="text-align:right;">
+MMS
+</th>
+<th style="text-align:right;">
+MMP
+</th>
+<th style="text-align:right;">
+SE
+</th>
+<th style="text-align:left;">
+Melhor_Método
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Sorvete Artesanal
+</td>
+<td style="text-align:right;">
+32.10
+</td>
+<td style="text-align:right;">
+41.33
+</td>
+<td style="text-align:right;">
+50.57
+</td>
+<td style="text-align:left;">
+MMS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(211, 47, 47, 255) !important;font-weight: bold;color: white !important;background-color: rgba(56, 142, 60, 255) !important;font-weight: bold;color: white !important;background-color: rgba(25, 118, 210, 255) !important;">
+Smartphone Premium
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(211, 47, 47, 255) !important;font-weight: bold;color: white !important;background-color: rgba(56, 142, 60, 255) !important;font-weight: bold;color: white !important;background-color: rgba(25, 118, 210, 255) !important;">
+7.37
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(211, 47, 47, 255) !important;font-weight: bold;color: white !important;background-color: rgba(56, 142, 60, 255) !important;font-weight: bold;color: white !important;background-color: rgba(25, 118, 210, 255) !important;">
+9.58
+</td>
+<td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(211, 47, 47, 255) !important;font-weight: bold;color: white !important;background-color: rgba(56, 142, 60, 255) !important;font-weight: bold;color: white !important;background-color: rgba(25, 118, 210, 255) !important;">
+19.71
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(211, 47, 47, 255) !important;font-weight: bold;color: white !important;background-color: rgba(56, 142, 60, 255) !important;font-weight: bold;color: white !important;background-color: rgba(25, 118, 210, 255) !important;">
+MMS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Medicamento Específico
+</td>
+<td style="text-align:right;">
+44.19
+</td>
+<td style="text-align:right;">
+53.12
+</td>
+<td style="text-align:right;">
+43.10
+</td>
+<td style="text-align:left;">
+SE
+</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code># ANÁLISE DOS RESULTADOS --------------------------------------------------
+
+cat(&quot;ANÁLISE DOS RESULTADOS:\n&quot;)</code></pre>
+<pre><code>## ANÁLISE DOS RESULTADOS:</code></pre>
+<pre class="r"><code>cat(&quot;=======================\n\n&quot;)</code></pre>
+<pre><code>## =======================</code></pre>
+<pre class="r"><code>cat(&quot;CENÁRIO 1 (Sorvete Artesanal - Sazonal):\n&quot;)</code></pre>
+<pre><code>## CENÁRIO 1 (Sorvete Artesanal - Sazonal):</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMS:&quot;, mape_mms1, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE MMS: 32.1 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMP:&quot;, mape_mmp1, &quot;%\n&quot;) </code></pre>
+<pre><code>## - MAPE MMP: 41.33 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE SE:&quot;, mape_se1, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE SE: 50.57 %</code></pre>
+<pre class="r"><code>cat(&quot;- Método recomendado:&quot;, ifelse(mape_mms1 == min(c(mape_mms1, mape_mmp1, mape_se1)), &quot;MMS&quot;,
+                                   ifelse(mape_mmp1 == min(c(mape_mms1, mape_mmp1, mape_se1)), &quot;MMP&quot;, &quot;SE&quot;)), &quot;\n\n&quot;)</code></pre>
+<pre><code>## - Método recomendado: MMS</code></pre>
+<pre class="r"><code>cat(&quot;CENÁRIO 2 (Smartphone Premium - Tendência):\n&quot;)</code></pre>
+<pre><code>## CENÁRIO 2 (Smartphone Premium - Tendência):</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMS:&quot;, mape_mms2, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE MMS: 7.37 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMP:&quot;, mape_mmp2, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE MMP: 9.58 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE SE:&quot;, mape_se2, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE SE: 19.71 %</code></pre>
+<pre class="r"><code>cat(&quot;- Método recomendado:&quot;, ifelse(mape_mms2 == min(c(mape_mms2, mape_mmp2, mape_se2)), &quot;MMS&quot;,
+                                   ifelse(mape_mmp2 == min(c(mape_mms2, mape_mmp2, mape_se2)), &quot;MMP&quot;, &quot;SE&quot;)), &quot;\n\n&quot;)</code></pre>
+<pre><code>## - Método recomendado: MMS</code></pre>
+<pre class="r"><code>cat(&quot;CENÁRIO 3 (Medicamento - Irregular):\n&quot;)</code></pre>
+<pre><code>## CENÁRIO 3 (Medicamento - Irregular):</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMS:&quot;, mape_mms3, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE MMS: 44.19 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE MMP:&quot;, mape_mmp3, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE MMP: 53.12 %</code></pre>
+<pre class="r"><code>cat(&quot;- MAPE SE:&quot;, mape_se3, &quot;%\n&quot;)</code></pre>
+<pre><code>## - MAPE SE: 43.1 %</code></pre>
+<pre class="r"><code>cat(&quot;- Método recomendado:&quot;, ifelse(mape_mms3 == min(c(mape_mms3, mape_mmp3, mape_se3)), &quot;MMS&quot;,
+                                   ifelse(mape_mmp3 == min(c(mape_mms3, mape_mmp3, mape_se3)), &quot;MMP&quot;, &quot;SE&quot;)), &quot;\n&quot;)</code></pre>
+<pre><code>## - Método recomendado: SE</code></pre>
+<pre class="r"><code># LAYOUT DE IMPRESSÃO EM DUAS PÁGINAS - TABELA CORRIGIDA ------------------
+
+library(gridExtra)</code></pre>
+<pre><code>## 
+## Anexando pacote: &#39;gridExtra&#39;</code></pre>
+<pre><code>## O seguinte objeto é mascarado por &#39;package:dplyr&#39;:
+## 
+##     combine</code></pre>
+<pre class="r"><code>library(grid)
+library(ggplot2)
+library(dplyr)
+
+# FUNÇÃO PARA PÁGINA 1: DADOS E CÁLCULOS COM CAMPOS VAZIOS -----------------
+criar_pagina1_calculos &lt;- function(cenario_num, titulo, descricao, dados_reais) {
+  
+  # Criar dataframe com campos vazios para preenchimento
+  dados_preenchimento &lt;- data.frame(
+    Mês = dados_reais$Mês,
+    Demanda_Real = dados_reais$Demanda_Real,
+    MMS_Aluno = rep(&quot;______&quot;, 12),
+    MMP_Aluno = rep(&quot;______&quot;, 12),
+    SE_Aluno = rep(&quot;______&quot;, 12),
+    Erro_MMS = rep(&quot;______&quot;, 12),
+    Erro_MMP = rep(&quot;______&quot;, 12),
+    Erro_SE = rep(&quot;______&quot;, 12)
+  )
+  
+  # Adicionar linha para totais e MAPE
+  dados_completos &lt;- rbind(
+    dados_preenchimento,
+    data.frame(
+      Mês = &quot;MAPE FINAL&quot;,
+      Demanda_Real = &quot;______&quot;,
+      MMS_Aluno = &quot;______&quot;,
+      MMP_Aluno = &quot;______&quot;,
+      SE_Aluno = &quot;______&quot;,
+      Erro_MMS = &quot;______%&quot;,
+      Erro_MMP = &quot;______%&quot;, 
+      Erro_SE = &quot;______%&quot;
+    )
+  )
+  
+  # Criar tabela formatada com campos vazios
+  tabela_calculos &lt;- tableGrob(dados_completos, 
+                              rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 10,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c(&quot;white&quot;, &quot;#f9f9f9&quot;), 6), &quot;#f0f8ff&quot;))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = &quot;bold&quot;, fontsize = 11),
+                                  bg_params = list(fill = &quot;lightgray&quot;, alpha = 0.8)
+                                )
+                              ))
+  
+  # Adicionar título e instruções
+  titulo_page1 &lt;- textGrob(paste(&quot;CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo), 
+                          gp = gpar(fontsize = 16, fontface = &quot;bold&quot;))
+  
+  instrucoes &lt;- textGrob(
+    paste(&quot;INSTRUÇÕES:\n&quot;,
+          &quot;1. Calcule as previsões usando MMS (n=3), MMP (pesos: 0.5, 0.3, 0.2) e SE (α=0.3)\n&quot;,
+          &quot;2. Preencha as colunas de previsão para cada método\n&quot;, 
+          &quot;3. Calcule o erro percentual para cada período: |(Real - Previsão)/Real| × 100%\n&quot;,
+          &quot;4. Calcule o MAPE final para cada método: Média dos erros percentuais&quot;),
+    gp = gpar(fontsize = 11, lineheight = 1.2)
+  )
+  
+   # Fórmulas para referência
+   formulas &lt;- textGrob(
+     &quot;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3  |  MMP = (0.5×Dₜ + 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂)  |  SE = α×Dₜ + (1-α)×Fₜ&quot;,
+     gp = gpar(fontsize = 10, fontface = &quot;italic&quot;)
+   )
+  
+  # Layout da página 1
+  grid.arrange(
+    titulo_page1,
+    instrucoes,
+    formulas,
+    tabela_calculos,
+    nrow = 4,
+    heights = c(0.3, 0.4, 0.2, 3)
+  )
+}
+
+# FUNÇÃO PARA PÁGINA 2: GRÁFICO DE PREVISÕES ------------------------------
+criar_pagina2_grafico &lt;- function(cenario_num, titulo, dados_reais) {
+  
+  # Criar gráfico com eixos e pontos da demanda real
+  grafico_previsoes &lt;- ggplot() +
+    # Grade de fundo
+    theme_bw() +
+    
+    # Eixos e limites
+    scale_x_continuous(breaks = 1:12, labels = dados_reais$Mês, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, max(dados_reais$Demanda_Real) * 1.4)) +
+    
+    # Pontos da demanda real
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = &quot;black&quot;, shape = 16) +
+    
+    # Linha da demanda real
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = &quot;black&quot;, size = 1, linetype = &quot;solid&quot;) +
+    
+    # Áreas para desenhar as previsões (linhas tracejadas como guia)
+    geom_hline(yintercept = seq(0, max(dados_reais$Demanda_Real) * 1.3, 
+                               length.out = 10), 
+               color = &quot;gray90&quot;, size = 0.2) +
+    
+    # Títulos e labels
+    labs(
+      title = paste(&quot;CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo, &quot;- REGISTRO DAS PREVISÕES&quot;),
+      subtitle = &quot;Demanda Real (linha preta) - Desenhe as previsões usando as cores indicadas&quot;,
+      x = &quot;Meses&quot;,
+      y = &quot;Demanda&quot;
+    ) +
+    
+    # Tema
+    theme(
+      plot.title = element_text(hjust = 0.5, face = &quot;bold&quot;, size = 14),
+      plot.subtitle = element_text(hjust = 0.5, size = 11),
+      panel.grid.major = element_line(color = &quot;gray95&quot;),
+      panel.grid.minor = element_blank()
+    ) +
+    
+    # Legenda interativa para cores
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.35, 
+             label = &quot;LEGENDA DE CORES:&quot;, hjust = 0, fontface = &quot;bold&quot;, size = 4) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.30, 
+             label = &quot;● MMS (Média Móvel Simples) → Use VERMELHO&quot;, hjust = 0, size = 3.5) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.26, 
+             label = &quot;● MMP (Média Móvel Ponderada) → Use AZUL&quot;, hjust = 0, size = 3.5) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.22, 
+             label = &quot;● SE (Suavização Exponencial) → Use VERDE&quot;, hjust = 0, size = 3.5) +
+    
+    # Espaço para anotações
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.30, 
+             label = &quot;OBSERVAÇÕES:&quot;, hjust = 0, fontface = &quot;bold&quot;, size = 4) +
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.26, 
+             label = &quot;• Qual método acompanhou melhor a demanda?&quot;, hjust = 0, size = 3) +
+    annotate(&quot;text&quot;, x = 8, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = &quot;• Justifique sua resposta:&quot;, hjust = 0, size = 3)
+  
+  return(grafico_previsoes)
+}
+
+
+# VERSÃO COMBINADA (DUAS PÁGINAS EM UM PDF) -------------------------------
+
+criar_pdf_completo &lt;- function(cenario_num, titulo, dados_reais, nome_arquivo) {
+  
+  pdf(nome_arquivo, width = 11, height = 8.5)
+  
+  # Página 1 - Cálculos
+  criar_pagina1_calculos(cenario_num, titulo, &quot;&quot;, dados_reais)
+  
+  # Página 2 - Gráfico
+  print(criar_pagina2_grafico(cenario_num, titulo, dados_reais))
+  
+  dev.off()
+}
+
+# Gerar PDFs completos
+criar_pdf_completo(1, &quot;Sorvete Artesanal&quot;, df1, &quot;Cenario1_Sorvete_Completo.pdf&quot;)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in &#39;mbcsToSbcs&#39;: -&gt;
+## substituted for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_pdf_completo(2, &quot;Smartphone Premium&quot;, df2, &quot;Cenario2_Smartphone_Completo.pdf&quot;) </code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in &#39;mbcsToSbcs&#39;: -&gt;
+## substituted for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_pdf_completo(3, &quot;Medicamento Específico&quot;, df3, &quot;Cenario3_Medicamento_Completo.pdf&quot;)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₋ (U+208B)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;FÓRMULAS: MMS = (Dₜ + Dₜ₋₁ + Dₜ₋₂)/3 | MMP = (0.5×Dₜ +
+## 0.3×Dₜ₋₁ + 0.2×Dₜ₋₂) | SE = α×Dₜ + (1-α)×Fₜ&#39; in &#39;mbcsToSbcs&#39;: for ₜ (U+209C)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMS (Média Móvel Simples) → Use VERMELHO&#39; in &#39;mbcsToSbcs&#39;: -&gt;
+## substituted for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● MMP (Média Móvel Ponderada) → Use AZUL&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in
+## &#39;mbcsToSbcs&#39;: for ● (U+25CF)</code></pre>
+<pre><code>## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## for &#39;● SE (Suavização Exponencial) → Use VERDE&#39; in &#39;mbcsToSbcs&#39;: -&gt; substituted
+## for → (U+2192)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code># CALCULAR RESULTADOS CORRETOS PARA O GABARITO ----------------------------
+
+# Função para calcular resultados corretos
+calcular_resultados_gabarito &lt;- function(dados_reais) {
+  
+  # Calcular previsões corretas
+  mms &lt;- calcular_mms(dados_reais$Demanda_Real, 3)
+  mmp &lt;- calcular_mmp(dados_reais$Demanda_Real, c(0.5, 0.3, 0.2))
+  se &lt;- calcular_se(dados_reais$Demanda_Real, 0.3)
+  
+  # Calcular MAPE corretos
+  mape_mms &lt;- calcular_mape(dados_reais$Demanda_Real[4:12], mms[4:12])
+  mape_mmp &lt;- calcular_mape(dados_reais$Demanda_Real[4:12], mmp[4:12])
+  mape_se &lt;- calcular_mape(dados_reais$Demanda_Real[2:12], se[2:12])
+  
+  return(list(
+    MMS = mms,
+    MMP = mmp,
+    SE = se,
+    MAPE_MMS = mape_mms,
+    MAPE_MMP = mape_mmp,
+    MAPE_SE = mape_se
+  ))
+}
+
+# Calcular resultados para cada cenário
+resultados1 &lt;- calcular_resultados_gabarito(df1)
+resultados2 &lt;- calcular_resultados_gabarito(df2)
+resultados3 &lt;- calcular_resultados_gabarito(df3)
+
+# FUNÇÃO CORRIGIDA DO GABARITO --------------------------------------------
+
+criar_gabarito &lt;- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0(&quot;Gabarito_Cenario&quot;, cenario_num, &quot;.pdf&quot;), width = 11, height = 8.5)
+  
+  # Criar dataframe completo para o gabarito
+  dados_gabarito &lt;- data.frame(
+    Mês = dados_reais$Mês,
+    Demanda_Real = dados_reais$Demanda_Real,
+    MMS_Correto = round(resultados$MMS, 1),
+    MMP_Correto = round(resultados$MMP, 1),
+    SE_Correto = round(resultados$SE, 1),
+    Erro_MMS = round(abs((dados_reais$Demanda_Real - resultados$MMS) / dados_reais$Demanda_Real) * 100, 1),
+    Erro_MMP = round(abs((dados_reais$Demanda_Real - resultados$MMP) / dados_reais$Demanda_Real) * 100, 1),
+    Erro_SE = round(abs((dados_reais$Demanda_Real - resultados$SE) / dados_reais$Demanda_Real) * 100, 1)
+  )
+  
+  # Substituir NA por &quot;-&quot;
+  dados_gabarito[is.na(dados_gabarito)] &lt;- &quot;-&quot;
+  
+  # Adicionar linha de MAPE
+  linha_mape &lt;- data.frame(
+    Mês = &quot;MAPE FINAL&quot;,
+    Demanda_Real = &quot;-&quot;,
+    MMS_Correto = paste(resultados$MAPE_MMS, &quot;%&quot;),
+    MMP_Correto = paste(resultados$MAPE_MMP, &quot;%&quot;),
+    SE_Correto = paste(resultados$MAPE_SE, &quot;%&quot;),
+    Erro_MMS = &quot;-&quot;,
+    Erro_MMP = &quot;-&quot;,
+    Erro_SE = &quot;-&quot;
+  )
+  
+  dados_gabarito_completo &lt;- rbind(dados_gabarito, linha_mape)
+  
+  # Criar tabela formatada
+  tabela_gabarito &lt;- tableGrob(dados_gabarito_completo, rows = NULL,
+                              theme = ttheme_minimal(
+                                base_size = 9,
+                                core = list(
+                                  fg_params = list(hjust = 0.5, x = 0.5),
+                                  bg_params = list(fill = c(rep(c(&quot;white&quot;, &quot;#f0f0f0&quot;), 6), &quot;#e8f5e8&quot;))
+                                ),
+                                colhead = list(
+                                  fg_params = list(fontface = &quot;bold&quot;, fontsize = 10),
+                                  bg_params = list(fill = &quot;#2196F3&quot;, alpha = 0.8)
+                                )
+                              ))
+  
+  # Layout da página do gabarito
+  grid.arrange(
+    textGrob(paste(&quot;GABARITO - CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo),
+            gp = gpar(fontsize = 16, fontface = &quot;bold&quot;)),
+    
+    textGrob(&quot;RESPOSTAS CORRETAS PARA OS CÁLCULOS DE PREVISÃO&quot;,
+            gp = gpar(fontsize = 12, fontface = &quot;italic&quot;)),
+    
+    textGrob(paste(&quot;MAPE Esperado: MMS =&quot;, resultados$MAPE_MMS, &quot;%, MMP =&quot;, 
+                  resultados$MAPE_MMP, &quot;%, SE =&quot;, resultados$MAPE_SE, &quot;%&quot;),
+            gp = gpar(fontsize = 11, col = &quot;darkred&quot;)),
+    
+    tabela_gabarito,
+    
+    nrow = 4, 
+    heights = c(0.2, 0.1, 0.1, 2.5)
+  )
+  
+  dev.off()
+}
+
+# GERAR GABARITOS PARA CADA CENÁRIO ---------------------------------------
+
+criar_gabarito(1, &quot;Sorvete Artesanal&quot;, df1, resultados1)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_gabarito(2, &quot;Smartphone Premium&quot;, df2, resultados2)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_gabarito(3, &quot;Medicamento Específico&quot;, df3, resultados3)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code># GABARITO GRÁFICO COM PREVISÕES PLOTADAS ---------------------------------
+
+criar_gabarito_grafico &lt;- function(cenario_num, titulo, dados_reais, resultados) {
+  
+  pdf(paste0(&quot;Gabarito_Grafico_Cenario&quot;, cenario_num, &quot;.pdf&quot;), width = 11, height = 8.5)
+  
+  # Criar gráfico com todas as previsões
+  grafico_gabarito &lt;- ggplot() +
+    # Demanda real
+    geom_point(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+               size = 3, color = &quot;black&quot;, shape = 16) +
+    geom_line(aes(x = 1:12, y = dados_reais$Demanda_Real), 
+              color = &quot;black&quot;, size = 1, linetype = &quot;solid&quot;) +
+    
+    # Previsão MMS
+    geom_line(aes(x = 4:12, y = resultados$MMS[4:12]), 
+              color = &quot;red&quot;, size = 1, linetype = &quot;dashed&quot;) +
+    geom_point(aes(x = 4:12, y = resultados$MMS[4:12]), 
+               size = 2, color = &quot;red&quot;, shape = 17) +
+    
+    # Previsão MMP
+    geom_line(aes(x = 4:12, y = resultados$MMP[4:12]), 
+              color = &quot;blue&quot;, size = 1, linetype = &quot;dashed&quot;) +
+    geom_point(aes(x = 4:12, y = resultados$MMP[4:12]), 
+               size = 2, color = &quot;blue&quot;, shape = 15) +
+    
+    # Previsão SE
+    geom_line(aes(x = 2:12, y = resultados$SE[2:12]), 
+              color = &quot;darkgreen&quot;, size = 1, linetype = &quot;dashed&quot;) +
+    geom_point(aes(x = 2:12, y = resultados$SE[2:12]), 
+               size = 2, color = &quot;darkgreen&quot;, shape = 18) +
+    
+    # Configurações do gráfico
+    scale_x_continuous(breaks = 1:12, labels = dados_reais$Mês, expand = c(0.02, 0.02)) +
+    scale_y_continuous(limits = c(0, max(dados_reais$Demanda_Real) * 1.3)) +
+    
+    labs(
+      title = paste(&quot;GABARITO - CENÁRIO&quot;, cenario_num, &quot;:&quot;, titulo),
+      subtitle = &quot;Linha preta: Demanda Real | Vermelho: MMS | Azul: MMP | Verde: SE&quot;,
+      x = &quot;Meses&quot;,
+      y = &quot;Demanda&quot;
+    ) +
+    
+    theme_bw() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = &quot;bold&quot;, size = 14),
+      plot.subtitle = element_text(hjust = 0.5, size = 11),
+      panel.grid.major = element_line(color = &quot;gray95&quot;)
+    ) +
+    
+    # Legenda
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.25, 
+             label = paste(&quot;MAPE - MMS:&quot;, resultados$MAPE_MMS, &quot;%&quot;), 
+             hjust = 0, color = &quot;red&quot;, fontface = &quot;bold&quot;) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.20, 
+             label = paste(&quot;MAPE - MMP:&quot;, resultados$MAPE_MMP, &quot;%&quot;), 
+             hjust = 0, color = &quot;blue&quot;, fontface = &quot;bold&quot;) +
+    annotate(&quot;text&quot;, x = 1, y = max(dados_reais$Demanda_Real) * 1.15, 
+             label = paste(&quot;MAPE - SE:&quot;, resultados$MAPE_SE, &quot;%&quot;), 
+             hjust = 0, color = &quot;darkgreen&quot;, fontface = &quot;bold&quot;)
+  
+  print(grafico_gabarito)
+  dev.off()
+}
+
+# Gerar gabaritos gráficos
+criar_gabarito_grafico(1, &quot;Sorvete Artesanal&quot;, df1, resultados1)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_gabarito_grafico(2, &quot;Smartphone Premium&quot;, df2, resultados2)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code>criar_gabarito_grafico(3, &quot;Medicamento Específico&quot;, df3, resultados3)</code></pre>
+<pre><code>## png 
+##   2</code></pre>
+<pre class="r"><code># RESUMO COMPARATIVO PARA O PROFESSOR ------------------------------------
+
+criar_resumo_professor &lt;- function() {
+  
+  resumo &lt;- data.frame(
+    Cenário = c(&quot;1 - Sorvete Artesanal&quot;, &quot;2 - Smartphone Premium&quot;, &quot;3 - Medicamento Específico&quot;),
+    Padrão = c(&quot;Sazonal&quot;, &quot;Tendência&quot;, &quot;Irregular&quot;),
+    MAPE_MMS = c(resultados1$MAPE_MMS, resultados2$MAPE_MMS, resultados3$MAPE_MMS),
+    MAPE_MMP = c(resultados1$MAPE_MMP, resultados2$MAPE_MMP, resultados3$MAPE_MMP),
+    MAPE_SE = c(resultados1$MAPE_SE, resultados2$MAPE_SE, resultados3$MAPE_SE),
+    Melhor_Método = c(
+      ifelse(min(c(resultados1$MAPE_MMS, resultados1$MAPE_MMP, resultados1$MAPE_SE)) == resultados1$MAPE_MMS, &quot;MMS&quot;,
+             ifelse(min(c(resultados1$MAPE_MMS, resultados1$MAPE_MMP, resultados1$MAPE_SE)) == resultados1$MAPE_MMP, &quot;MMP&quot;, &quot;SE&quot;)),
+      ifelse(min(c(resultados2$MAPE_MMS, resultados2$MAPE_MMP, resultados2$MAPE_SE)) == resultados2$MAPE_MMS, &quot;MMS&quot;,
+             ifelse(min(c(resultados2$MAPE_MMS, resultados2$MAPE_MMP, resultados2$MAPE_SE)) == resultados2$MAPE_MMP, &quot;MMP&quot;, &quot;SE&quot;)),
+      ifelse(min(c(resultados3$MAPE_MMS, resultados3$MAPE_MMP, resultados3$MAPE_SE)) == resultados3$MAPE_MMS, &quot;MMS&quot;,
+             ifelse(min(c(resultados3$MAPE_MMS, resultados3$MAPE_MMP, resultados3$MAPE_SE)) == resultados3$MAPE_MMP, &quot;MMP&quot;, &quot;SE&quot;))
+    )
+  )
+  
+  pdf(&quot;Resumo_Professor.pdf&quot;, width = 11, height = 8.5)
+  
+  tabela_resumo &lt;- tableGrob(resumo, rows = NULL,
+                            theme = ttheme_minimal(
+                              base_size = 11,
+                              core = list(
+                                bg_params = list(fill = c(rep(c(&quot;white&quot;, &quot;#f9f9f9&quot;), 2), &quot;white&quot;))
+                              ),
+                              colhead = list(
+                                fg_params = list(fontface = &quot;bold&quot;),
+                                bg_params = list(fill = &quot;#FF9800&quot;)
+                              )
+                            ))
+  
+  grid.arrange(
+    textGrob(&quot;RESUMO PARA O PROFESSOR - ANÁLISE COMPARATIVA&quot;,
+            gp = gpar(fontsize = 16, fontface = &quot;bold&quot;)),
+    
+    textGrob(&quot;Comparação do MAPE por Cenário e Método de Previsão&quot;,
+            gp = gpar(fontsize = 12, fontface = &quot;italic&quot;)),
+    
+    tabela_resumo,
+    
+    textGrob(&quot;ANÁLISE:\n• Cenário 1 (Sazonal): Método X funciona melhor porque...\n• Cenário 2 (Tendência): Método Y é mais adequado porque...\n• Cenário 3 (Irregular): Método Z se adapta melhor porque...&quot;,
+            gp = gpar(fontsize = 10, lineheight = 1.2),
+            x = unit(0.05, &quot;npc&quot;), just = &quot;left&quot;),
+    
+    nrow = 4,
+    heights = c(0.2, 0.1, 0.6, 0.4)
+  )
+  
+  dev.off()
+  
+  return(resumo)
+}
+
+# Gerar resumo para o professor
+resumo_professor &lt;- criar_resumo_professor()
+
+print(resumo_professor)</code></pre>
+<pre><code>##                      Cenário    Padrão MAPE_MMS MAPE_MMP MAPE_SE Melhor_Método
+## 1      1 - Sorvete Artesanal   Sazonal    32.10    41.33   50.57           MMS
+## 2     2 - Smartphone Premium Tendência     7.37     9.58   19.71           MMS
+## 3 3 - Medicamento Específico Irregular    44.19    53.12   43.10            SE</code></pre>
