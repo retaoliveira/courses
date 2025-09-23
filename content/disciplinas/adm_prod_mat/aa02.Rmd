@@ -91,6 +91,7 @@ Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da sua empresa".
 2.  **Apresentações e Debate:** Cada grupo apresentará rapidamente suas conclusões. 
 
 
+
 ### Fórmulas para os Cálculos:
 
 MMS: (D_t + D_{t-1} + ... + D_{t-n+1}) / n
