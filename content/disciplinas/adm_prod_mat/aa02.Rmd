@@ -40,7 +40,8 @@ weight: 20
 **Fatores externos:** Condições climáticas, eventos locais, concorrência
 
 
-2. Cenário 02 - Smartphone Premium - Produto com Tendência
+2. Cenário 02 - Smartphone Premium - Produto com Tendência   
+(GRUPOS 2/5)
 
 **Contexto**: Uma empresa de tecnologia lançou um novo modelo há 12 meses.
 
