@@ -1,0 +1,64 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mec:
+    parent: Atividades de aprendizagem
+    weight: 10
+title: 1. Introdução a sistemas de produção
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
+Poderá realizar oa atividadeindividualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 26/09/2025. Peço que a justificativa das classificações sejam bem fundamentadas! 
+
+
+## **Atividade: A Fábrica do Futuro**
+
+**Objetivo de Aprendizagem:** Os estudantes serão capazes de classificar diferentes tipos de produção com base na natureza do produto (bens ou serviços), no volume (produção em massa, em lotes ou sob encomenda) e na variedade (baixa ou alta).
+
+**Número de Participantes:** Grupos de 3 alunos.
+
+---
+
+### Fundamentos\
+**Natureza:** **Bens** (produtos físicos, tangíveis) vs. **Serviços** (intangíveis, experiências).\
+**Volume:** **Alto** (ex: linha de montagem de celulares) vs. **Baixo** (ex: construção de um navio).\
+**Variedade:** **Alta** (ex: oficina de carros personalizados) vs. **Baixa** (ex: fábrica de parafusos padrão).\
+       
+### A Missão - Classificar sistemas de produção (15 minutos)
+
+Vocês são os novos empreendedores de 'A Fábrica do Futuro'. Sua missão é:
+
+1. **Inventar um Produto ou Serviço:** Seja criativo! Pode ser algo totalmente novo ou uma versão melhorada de algo que já existe. (Ex: um carro voador movido a energia solar, um aplicativo que traduz a linguagem dos animais, uma hamburgueria que imprime a sua foto no pão, um serviço de tutorias personalizadas por IA).
+
+2. **Estruturar as informações a seguir sobre seu negócio**
+    - **Nome da Empresa:** (Ex: "ZoomBurger", "PetTalk App", "SkyCars Ltd")
+    - **Nosso Produto/Serviço é:** (Descreva brevemente O QUE é)
+    - **Classificação:**
+        - **Natureza:** Bem Serviço
+        - **Volume de Produção:** Alto (Massa) Médio (Lotes) Baixo (Sob Encomenda/Projeto)
+        - **Variedade de Produtos:** Baixa (Pouca customização) Alta (Muita customização)
+        - **Tipo de produção:** [ ] Contínua  [ ] Massa  [ ] lotes  [ ] Projeto
+        - **Layout:** [ ] Processo  [ ] Produto  [ ] Célula  [ ] Posicional
+        - **Padrão de atendimento da demanda:** [ ] MTS [ ] ATO [ ] MTO [ ] ETO
+
+3. **Preparem um 'Pitch' de 2 minutos:** Um membro do grupo irá apresentar a empresa para a turma, explicando o produto/serviço e **justificando** por que escolheram aquela classificação (ex: "Classificamos o volume como BAIXO porque cada carro voador é feito sob encomenda do cliente, levando 3 meses para ficar pronto"). **A justificativa é a parte mais importante!**
+
+
+### Apresentações e Discussão (10 minutos)
+
+1.  Cada grupo tem **2 minutos** para apresentar seu "pitch".
+2.  Após cada apresentação, cada grupo deve fazer uma pergunta rápida ao grupo que está apresentando. Exemplos:
+    *   "O que faria vocês mudarem a classificação de 'Volume Baixo' para 'Volume Alto'?"
+    *   "Se vocês começassem a oferecer pacotes padronizados, isso alteraria a variedade?"
+    *   "Há um elemento de serviço mesmo em um produto físico? (ex: garantia, personalização)"
+
+
