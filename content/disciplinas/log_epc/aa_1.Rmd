@@ -1,10 +1,10 @@
 ---
-date: "2023-03-235T00:00:00+01:00"
-draft: true
+date: "2025-09-26T00:00:00+01:00"
+draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
-    weight: 5
+    weight: 20
 title: 1. Logística e cadeia de suprimentos
 editor_options: 
   markdown: 
@@ -20,33 +20,33 @@ weight: 5
 
 Consolidar conceitos estruturais como "Logística" e "Cadeia de suprimentos". 
 
-## Pontos
+Aplicar os conceitos fundamentais de custos logísticos (Ballou), trade-offs (Bowersox) e decisões estratégicas (Chopra) em um cenário simulado.
 
-10 pontos
+Vivenciar o desafio de integrar as funções de uma cadeia de suprimentos.
 
-## Grupos de trabalho
-**Grupo 1:**
-- Caio.  
-- Gustavo.  
-- Eduarda.  
+Desenvolver a capacidade de síntese e comunicação através de um pitch.
 
-**Grupo 2:**
-- Paola.  
-- Augusto.  
-- Rogério.  
-- Pedro Sakamoto.  
- 
+Promover a análise crítica das decisões tomadas.
 
-**Grupo 3:** 
-- Rodrigo. 
-- Felipe.  
-- Vanessa    
-- Otavio.  
+## Atividade
 
-## Atividades
+Apresentação do Caso **SuperBike**:
 
-Elaborar uma pergunta sobre logística. 
+**Contexto:** "Vocês são a equipe de gestão da 'SuperBike', uma startup que produz bicicletas elétricas premium personalizadas. A empresa está em fase de expansão e precisa definir a estratégia de sua cadeia de suprimentos para atender a um novo contrato com uma grande rede de varejo."
 
-As perguntas deverão ser respondidas pelo **ChatGPT**. **Todas as perguntas feitas ao ChatGPT** deverão ser **inseridas no [Padlet](https://padlet.com/renataoliveira/log-stica-5wbtv58i0fn7hduf)** por meio de um documento. As respostas deverão ter no **máximo 150** palavras. (15 minutos)
+### **O Desafio:** Cada grupo deve tomar **TRÊS DECISÕES CRÍTICAS** para a **cadeia de suprimento**s, considerando os **trade-offs** envolvidos:
 
-Posteriormente, faremos a discussão sobre as respostas do ChatGPT. 
+- **Localização do Centro de Distribuição (CD)**: Opção A (próximo à fábrica - custo fixo baixo, lead time longo) ou Opção B (próximo ao mercado consumidor - custo fixo alto, lead time curto). (Conceitos: Custo x Serviço ao Cliente; Estratégia de Rede).
+
+- **Estratégia de Estoque:** Opção A (Manter alto estoque de segurança para garantir 99% de nível de serviço) ou Opção B (Estoque enxuto com nível de serviço de 95%, focando em eficiência). (Conceitos: Trade-off Custos de Estoque x Nível de Serviço; Incerteza da Cadeia ).
+
+- **Modo de Transporte Principal:** Opção A (Rodoviário - mais barato, menos confiável) ou Opção B (Aéreo - mais caro, altamente confiável e rápido). (Conceitos: Custos de Transporte x Velocidade/Confiabilidade).
+
+### Estrutura Sugerida para o Pitch:
+
+- Nome do grupo e posicionamento estratégico da SuperBike (ex: "foco em custo" ou "foco em serviço premium").
+
+- Apresentação das três decisões tomadas (Localização CD, Estratégia de Estoque, Modo de transporte).
+
+- Principal justificativa para as escolhas, mencionando um trade-off ou conceito chave.
+
