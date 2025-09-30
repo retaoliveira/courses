@@ -1,101 +1,135 @@
 ---
-date: "2025-05-05T00:00:00+01:00"
-draft: true
+date: 2025-05-07T00:00:00+01:00
+draft: false
 menu:
   dados_grad:
     parent: Labs
-    weight: 60
-title: Lab 2 - Introdução ao GGPLOT2
-weight: 400
+    weight: 50
+title: Lab 2 - Tipo de dados e objetos no R
+type: docs
 editor_options: 
   markdown: 
-    wrap: 72
+    wrap: 70
 output: 
   blogdown::html_page:
-    toc: false
-    css: "/assets/css/custom.css"
-type: docs
+    toc: true
+weight: 390
 ---
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(tidyverse)
-```
 
-[Apresentação](https://places-research.github.io/class04_dataadm/?panelset=plot&panelset1=plot2&panelset2=plot3#3)
-
-## Diretrizes gerais:
-1. Crie um novo .Rmd no RStudio. 
-
-2. Execute as operações assinaladas nos exercícios a seguir. 
-
-3. Salve o .Rmd e submeta-o por meio desta tarefa. 
+## Corrija os problemas de códigos nos respectivos `chunks`. 
 
 > Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
 
-```{r load-packages, include=FALSE}
-library(tidyverse)
+## Exercício:
+
+Carregue o *data frame* *mtcars*
+
+```{r, eval=FALSE}
+data(mtcars)
 ```
 
-### Dê uma olhada no dataframe Starwars.
+## Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:
 
-```{r glimpse-starwars}
-glimpse(starwars)
+Q1)
+
+```{r, eval=FALSE}
+Head(mtcars)
 ```
 
-### Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.
+Q2)
 
-```{r scatterplot}
-ggplot(starwars, 
-       aes(x = height, y = mass, color = gender, size = birth_year)) +
-  geom_point(color = "#30509C")
+```{r, eval=FALSE}
+str(Mtcars)
 ```
 
-### Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.
+Q3)
 
-```{r scatterplot-labels}
-ggplot(starwars, 
-       aes(x = height, y = mass, color = gender, size = birth_year)) +
-  geom_point(color = "#30509C") +
-  labs(
-    #title = "___",
-    #x = "___", 
-    #y = "___",
-    #___
-    )
+```{r, eval=FALSE}
+dim[mtcars]
 ```
 
-### Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.
+Q4)
 
-(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com `eval = FALSE` porque o código atual ali não é válido e, portanto, o documento não permitia o `knit`. Uma vez substituído o código por um código válido, defina a opção "eval = TRUE", ou remova a opção "eval" por completo, uma vez que está definida como "TRUE" por padrão).
-
-```{r barplot, eval = FALSE}
-ggplot(starwars, aes(___)) +
-  geom___
+```{r, eval=FALSE}
+nomes(mtcars)
 ```
 
-### Escolha uma única variável numérica e faça um histograma dela.
+Q5)
 
-(Desta vez nenhum código inicial é fornecido, você está por sua conta!)
-
-```{r histogram}
-
+```{r, eval=FALSE}
+head(mtcars, x = 10)
 ```
 
-### Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.
+Q6)
 
-```{r num-cat}
-
+```{r, eval=FALSE}
+v1 <- ("pato", "cachorro", "minhoca", "lagarto")
 ```
 
-### Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.
+Q7)
 
-```{r cat-cat}
-
+```{r, eval=FALSE}
+v2 <- c("1", "2", "3", "4")
+v1 + 42
 ```
 
-### Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.
+Q8)
 
-```{r multi}
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto"
+```
 
+Q9)
+
+```{r, eval=FALSE}
+v3 <- c(33 31 40 25 27 40)
+```
+
+Q10)
+
+```{r, eval=FALSE}
+v1 <- c(pato, cachorro, minhoca, lagarto)
+```
+
+Q11)
+
+```{r, eval=FALSE}
+v1 <- c("pato" "cachorro" "minhoca" "lagarto")
+```
+
+Q12)
+
+```{r, eval=FALSE}
+v3 <- C(33, 31, 40, 25, 27, 40)
+```
+
+Q13)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
+v3 <- c(33, 31, 40, 25, 27, 40)
+myData <- data.frame(v1, v3)
+```
+
+Q14)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro"", "minhoca", "lagarto")
+v4 <- c(33, 31, 40, 25)
+myData <- data.frame(v1 = animal, v4 = idade)
+```
+
+Q15)
+
+```{r, eval=FALSE}
+ls
+```
+
+Q16)
+
+```{r, eval=FALSE}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+sum(v1)
 ```
 
