@@ -12,6 +12,7 @@ editor_options:
 output: 
   blogdown::html_page:
     toc: true
+    mathjax: default
 type: docs
 weight: 25
 ---
@@ -23,36 +24,93 @@ weight: 25
 </ul>
 </div>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <div id="atividade-de-aprendizagem" class="section level2">
 <h2><strong>Atividade de aprendizagem</strong></h2>
 <p>Estudo de Caso: Gestão de Estoques na Indústria Alfa</p>
-<p>A Indústria Alfa é fabricante de peças automotivas e trabalha com três grandes categorias de estoques: matéria-prima (aço), produtos em processo (componentes montados) e produtos acabados (peças embaladas para distribuição). Os dados para um dos ingredientes principais, o aço, estão a seguir:</p>
+<p>A Indústria Alfa é fabricante de peças automotivas e trabalha com três grandes categorias de estoques: matéria-prima (aço), produtos em processo (componentes montados) e produtos acabados (peças embaladas para distribuição). Os dados para um dos insumos principais, o aço, estão a seguir:</p>
 <p>Demanda anual de aço: 30.000 kg
 Custo de cada pedido de compra: R$ 200,00
 Custo de armazenagem por kg/ano: R$ 1,50
 Preço do aço: R$ 10,00/kg</p>
-<p>Além do aço, a empresa possui 5 itens principais em estoque (identificados por códigos):</p>
-<p>Aço
-Plástico
-Embalagem
-Componentes eletrônicos
-Adesivos</p>
+<p>Além do aço, a empresa possui 5 itens principais em estoque:</p>
+<ul>
+<li>Aço</li>
+<li>Plástico</li>
+<li>Embalagem</li>
+<li>Componentes eletrônicos</li>
+<li>Adesivos</li>
+</ul>
 <p>A tabela abaixo mostra o valor anual de consumo de cada item:</p>
-<p>Item Consumo Anual (kg ou unidades) Preço unitário (R<span class="math inline">\()	Valor anual consumido (R\)</span>)
-1 - Aço 30.000 10,00 300.000
-2 - Plástico 12.000 8,00 96.000
-3 - Embalagem 20.000 2,00 40.000
-4 - Comp. eletrônicos 2.000 15,00 30.000
-5 - Adesivos 5.000 1,00 5.000
-Exportar
-Copiar</p>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="36%" />
+<col width="28%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Consumo Anual (kg ou unidades)</th>
+<th>Preço unitário (R<span class="math inline">\() |	Valor anual consumido (R\)</span>)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 - Aço</td>
+<td>30.000</td>
+<td>10,00</td>
+<td>300.000</td>
+</tr>
+<tr class="even">
+<td>2 - Plástico</td>
+<td>12.000</td>
+<td>8,00</td>
+<td>96.000</td>
+</tr>
+<tr class="odd">
+<td>3 - Embalagem</td>
+<td>20.000</td>
+<td>2,00</td>
+<td>40.000</td>
+</tr>
+<tr class="even">
+<td>4 - Comp. eletrônicos</td>
+<td>2.000</td>
+<td>15,00</td>
+<td>30.000</td>
+</tr>
+<tr class="odd">
+<td>5 - Adesivos</td>
+<td>5.000</td>
+<td>1,00</td>
+<td>5.000</td>
+</tr>
+</tbody>
+</table>
 <p>Exemplo 1: Cálculo do Lote Econômico de Compras (LEC) para Aço</p>
-<p>A fórmula para o LEC é:</p>
-<p>[ LEC = ]</p>
+<p>O LEC é calculado pela fórmula de Wilson, que minimiza os custos totais de pedido e armazenagem. A fórmula para o LEC é:</p>
+<p><span class="math display">\[
+Q^* = \sqrt{\frac{2DS}{H}}
+\]</span></p>
 <p>Onde:</p>
-<p>D = Demanda anual (unidades)</p>
-<p>S = Custo do pedido (R$)</p>
-<p>H = Custo de armazenagem por unidade por ano (R$)</p>
+<ul>
+<li><span class="math inline">\(Q^*\)</span>: Quantidade ótima de pedido (LEC)</li>
+<li><span class="math inline">\(D\)</span>: Demanda anual</li>
+<li><span class="math inline">\(S\)</span>: Custo por pedido</li>
+<li><span class="math inline">\(H\)</span>: Custo de manutenção anual por unidade</li>
+</ul>
 <p>Aplicando os dados:</p>
 <p>D = 30.000 kg</p>
 <p>S = R$ 200,00</p>
@@ -102,21 +160,4 @@ Plástico: 96.000 / 471.000 ≈ 20%
 Embalagem: 40.000 / 471.000 ≈ 8%
 Componentes eletrônicos: 30.000 / 471.000 ≈ 6%
 Adesivos: 5.000 / 471.000 ≈ 1%</p>
-<p>Classificação:</p>
-<p>Classe A: Itens de maior importância (maior valor anual consumido, geralmente até 70-80% do valor total com cerca de 20% dos itens)</p>
-<p>Aço (64%)
-Plástico (20%)</p>
-<p>(Juntos: 84% do valor. Neste caso, podemos ajustar para incluir o Plástico na faixa A.)</p>
-<p>Classe B: Itens intermediários (aprox. 15% do valor)</p>
-<p>Embalagem (8%)
-Componentes eletrônicos (6%)</p>
-<p>(Juntos: 14%)</p>
-<p>Classe C: Itens de menor importância (em torno de 5% do valor total)</p>
-<p>Adesivos (1%)</p>
-<p>Resumo para apresentação:</p>
-<p>Classe A: Aço, Plástico
-Classe B: Embalagem, Comp. eletrônicos
-Classe C: Adesivos</p>
-<p>Observação: Os grupos podem adaptar esses exemplos para os seus cálculos, seguindo raciocínio semelhante para outros itens conforme o estudo de caso.</p>
-<p>Se desejar, posso criar o material do caso para impressão/distribuição em sala!</p>
 </div>
