@@ -1,0 +1,155 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 25
+title: 3. Planejamento e controle de materiais
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+## **Atividade de aprendizagem**
+
+Estudo de Caso: Gestão de Estoques na Indústria Alfa
+
+A Indústria Alfa é fabricante de peças automotivas e trabalha com três grandes categorias de estoques: matéria-prima (aço), produtos em processo (componentes montados) e produtos acabados (peças embaladas para distribuição). Os dados para um dos ingredientes principais, o aço, estão a seguir:
+
+Demanda anual de aço: 30.000 kg
+Custo de cada pedido de compra: R$ 200,00
+Custo de armazenagem por kg/ano: R$ 1,50
+Preço do aço: R$ 10,00/kg
+
+Além do aço, a empresa possui 5 itens principais em estoque (identificados por códigos):
+
+Aço
+Plástico
+Embalagem
+Componentes eletrônicos
+Adesivos
+
+A tabela abaixo mostra o valor anual de consumo de cada item:
+
+Item	Consumo Anual (kg ou unidades)	Preço unitário (R$)	Valor anual consumido (R$)
+1 - Aço	30.000	10,00	300.000
+2 - Plástico	12.000	8,00	96.000
+3 - Embalagem	20.000	2,00	40.000
+4 - Comp. eletrônicos	2.000	15,00	30.000
+5 - Adesivos	5.000	1,00	5.000
+Exportar
+Copiar
+
+Exemplo 1: Cálculo do Lote Econômico de Compras (LEC) para Aço
+
+A fórmula para o LEC é:
+
+[ LEC = \sqrt{\frac{2 \times D \times S}{H}} ]
+
+Onde:
+
+D = Demanda anual (unidades)
+
+S = Custo do pedido (R$)
+
+H = Custo de armazenagem por unidade por ano (R$)
+
+Aplicando os dados:
+
+D = 30.000 kg
+
+S = R$ 200,00
+
+H = R$ 1,50
+
+𝐿
+𝐸
+𝐶
+=
+2
+×
+30.000
+×
+200
+1
+,
+5
+
+𝐿
+𝐸
+𝐶
+=
+12.000
+.000
+1
+,
+5
+
+𝐿
+𝐸
+𝐶
+=
+8.000
+.000
+
+𝐿
+𝐸
+𝐶
+=
+2.828
+,
+43
+
+Resposta: O lote econômico de compras para o aço é de aproximadamente 2.828 kg por pedido.
+
+Exemplo 2: Classificação ABC de Estoque
+
+Cálculo do percentual de importância dos itens:
+
+Total anual consumido:
+
+300.000 (aço) + 96.000 (plástico) + 40.000 (embalagem) + 30.000 (componentes) + 5.000 (adesivos) = 471.000 R$
+
+Percentual de cada item:
+
+Aço: 300.000 / 471.000 ≈ 64%
+Plástico: 96.000 / 471.000 ≈ 20%
+Embalagem: 40.000 / 471.000 ≈ 8%
+Componentes eletrônicos: 30.000 / 471.000 ≈ 6%
+Adesivos: 5.000 / 471.000 ≈ 1%
+
+Classificação:
+
+Classe A: Itens de maior importância (maior valor anual consumido, geralmente até 70-80% do valor total com cerca de 20% dos itens)
+
+Aço (64%)
+Plástico (20%)
+
+(Juntos: 84% do valor. Neste caso, podemos ajustar para incluir o Plástico na faixa A.)
+
+Classe B: Itens intermediários (aprox. 15% do valor)
+
+Embalagem (8%)
+Componentes eletrônicos (6%)
+
+(Juntos: 14%)
+
+Classe C: Itens de menor importância (em torno de 5% do valor total)
+
+Adesivos (1%)
+
+Resumo para apresentação:
+
+Classe A: Aço, Plástico
+Classe B: Embalagem, Comp. eletrônicos
+Classe C: Adesivos
+
+Observação: Os grupos podem adaptar esses exemplos para os seus cálculos, seguindo raciocínio semelhante para outros itens conforme o estudo de caso.
+
+Se desejar, posso criar o material do caso para impressão/distribuição em sala!
