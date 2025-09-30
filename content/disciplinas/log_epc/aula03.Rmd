@@ -1,10 +1,10 @@
 ---
 date: "2023-08-07T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_epc:
     parent: Aulas
-    weight: 11
+    weight: 12
 title: 'Aula 03 - Nível de serviço e KPIs'
 editor_options: 
   markdown: 
@@ -13,13 +13,13 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 11
+weight: 12
 ---
 
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logistica2023.github.io/class04', height = "400px")
+knitr::include_url('https://gradlogistica.github.io/class03/', height = "400px")
 ```
 
-[LINK](https://logistica2023.github.io/class04)
+[LINK](https://gradlogistica.github.io/class03/)
