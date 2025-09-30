@@ -91,13 +91,3 @@ Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da sua empresa".
 2.  **Apresentações e Debate:** Cada grupo apresentará rapidamente suas conclusões. 
 
 
-
-### Fórmulas para os Cálculos:
-
-MMS: (D_t + D_{t-1} + ... + D_{t-n+1}) / n
-
-MMP: (w1×D_t + w2×D_{t-1} + w3×D_{t-2}) / (w1+w2+w3)
-
-SE: F_{t+1} = α × D_t + (1-α) × F_t
-
-MAPE: (1/n) × Σ |(Real - Previsão)/Real| × 100%
