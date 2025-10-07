@@ -23,3 +23,6 @@ knitr::include_url('https://logisticata.github.io/class03/#1', height = "400px")
 ```
 
 [LINK](https://logisticata.github.io/class03/#1)
+
+
+[Apresentação de exemplos de transportes](https://docs.google.com/presentation/d/1BwZR3KWq9MFJ_HeQ8cJvctH1KgCuASmY/edit?usp=sharing&ouid=112918242116659635451&rtpof=true&sd=true)
