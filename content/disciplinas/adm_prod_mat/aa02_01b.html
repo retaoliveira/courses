@@ -1,0 +1,268 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 20
+title: 2. Previsão e informação de vendas - GRUPO 01
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#an%C3%A1lise-detalhada-por-cen%C3%A1rio" id="toc-análise-detalhada-por-cenário">🔍 Análise Detalhada por Cenário</a>
+<ul>
+<li><a href="#cen%C3%A1rio-1-sazonalidade-clara-componente-automotivo" id="toc-cenário-1-sazonalidade-clara-componente-automotivo"><strong>Cenário 1: Sazonalidade Clara (Componente Automotivo)</strong></a></li>
+<li><a href="#cen%C3%A1rio-2-crescimento-exponencial-baterias-ve" id="toc-cenário-2-crescimento-exponencial-baterias-ve"><strong>Cenário 2: Crescimento Exponencial (Baterias VE)</strong></a></li>
+<li><a href="#cen%C3%A1rio-3-alta-volatilidade-compressor-industrial" id="toc-cenário-3-alta-volatilidade-compressor-industrial"><strong>Cenário 3: Alta Volatilidade (Compressor Industrial)</strong></a></li>
+</ul></li>
+<li><a href="#c%C3%B3digos-principais-implementados" id="toc-códigos-principais-implementados">💻 Códigos Principais Implementados</a>
+<ul>
+<li><a href="#fun%C3%A7%C3%A3o-de-an%C3%A1lise-de-padr%C3%B5es" id="toc-função-de-análise-de-padrões"><strong>1. Função de Análise de Padrões</strong></a></li>
+<li><a href="#fun%C3%A7%C3%B5es-de-previs%C3%A3o-por-cen%C3%A1rio" id="toc-funções-de-previsão-por-cenário"><strong>2. Funções de Previsão por Cenário</strong></a></li>
+<li><a href="#gera%C3%A7%C3%A3o-de-relat%C3%B3rios-automatizados" id="toc-geração-de-relatórios-automatizados"><strong>3. Geração de Relatórios Automatizados</strong></a></li>
+</ul></li>
+<li><a href="#resultados-esperados-por-cen%C3%A1rio" id="toc-resultados-esperados-por-cenário">📈 Resultados Esperados por Cenário</a>
+<ul>
+<li><a href="#cen%C3%A1rio-1---sazonalidade-clara" id="toc-cenário-1---sazonalidade-clara"><strong>Cenário 1 - Sazonalidade Clara</strong></a></li>
+<li><a href="#cen%C3%A1rio-2---crescimento-exponencial" id="toc-cenário-2---crescimento-exponencial"><strong>Cenário 2 - Crescimento Exponencial</strong></a></li>
+<li><a href="#cen%C3%A1rio-3---alta-volatilidade" id="toc-cenário-3---alta-volatilidade"><strong>Cenário 3 - Alta Volatilidade</strong></a></li>
+</ul></li>
+<li><a href="#respostas-esperadas-dos-grupos" id="toc-respostas-esperadas-dos-grupos">🎯 Respostas Esperadas dos Grupos</a>
+<ul>
+<li><a href="#an%C3%A1lise-qualitativa-esperada" id="toc-análise-qualitativa-esperada"><strong>Análise Qualitativa Esperada:</strong></a></li>
+<li><a href="#escolha-de-m%C3%A9todo-esperada" id="toc-escolha-de-método-esperada"><strong>Escolha de Método Esperada:</strong></a></li>
+</ul></li>
+<li><a href="#m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-dos-grupos" id="toc-métricas-de-avaliação-dos-grupos">📊 Métricas de Avaliação dos Grupos</a>
+<ul>
+<li><a href="#crit%C3%A9rios-quantitativos-60-da-nota" id="toc-critérios-quantitativos-60-da-nota"><strong>Critérios Quantitativos (60% da nota):</strong></a></li>
+<li><a href="#crit%C3%A9rios-qualitativos-40-da-nota" id="toc-critérios-qualitativos-40-da-nota"><strong>Critérios Qualitativos (40% da nota):</strong></a></li>
+</ul></li>
+<li><a href="#conclus%C3%A3o-da-s%C3%ADntese" id="toc-conclusão-da-síntese">✅ Conclusão da Síntese</a></li>
+</ul>
+</div>
+
+<div id="análise-detalhada-por-cenário" class="section level2">
+<h2>🔍 Análise Detalhada por Cenário</h2>
+<div id="cenário-1-sazonalidade-clara-componente-automotivo" class="section level3">
+<h3><strong>Cenário 1: Sazonalidade Clara (Componente Automotivo)</strong></h3>
+<pre class="r"><code># DADOS E ESTATÍSTICAS
+demanda &lt;- c(85, 92, 110, 125, 140, 165, 155, 130, 95, 80, 75, 70)
+mes &lt;-c(1:12)  
+
+dados_sazonal &lt;- data.frame(mes, demanda)</code></pre>
+<pre class="r"><code># DADOS E ESTATÍSTICAS
+Demanda_Real = c(85, 92, 110, 125, 140, 165, 155, 130, 95, 80, 75, 70)
+Média: 110.8 unidades | Desvio Padrão: 36.0 | CV: 32.5%
+Tendência: -1.27 unidades/mês (decrescente suave)</code></pre>
+<p><strong>Padrão Identificado:</strong>
+- <strong>Sazonalidade forte</strong> com pico no verão (meses 5-8: 125-165 unidades)
+- Vale no inverno (meses 10-12: 70-80 unidades)
+- Comportamento previsível e repetitivo</p>
+<p><strong>Análise Técnica:</strong>
+- Ideal para métodos de <strong>decomposição clássica</strong>
+- Sazonalidade explica ≈60% da variação
+- Previsões devem considerar o ciclo anual</p>
+<hr />
+</div>
+<div id="cenário-2-crescimento-exponencial-baterias-ve" class="section level3">
+<h3><strong>Cenário 2: Crescimento Exponencial (Baterias VE)</strong></h3>
+<pre class="r"><code># DADOS E ESTATÍSTICAS  
+demanda &lt;- c(45, 52, 58, 65, 75, 88, 102, 120, 140, 165, 195, 230)
+mes &lt;-c(1:12)  
+
+dados_exponencial &lt;- data.frame(mes, demanda)</code></pre>
+<pre class="r"><code># DADOS E ESTATÍSTICAS  
+Demanda_Real = c(45, 52, 58, 65, 75, 88, 102, 120, 140, 165, 195, 230)
+Média: 111.5 unidades | Desvio Padrão: 61.1 | CV: 54.8%
+Tendência: +16.82 unidades/mês (crescimento forte)
+R² da tendência: 0.98 (excelente ajuste)</code></pre>
+<p><strong>Padrão Identificado:</strong>
+- <strong>Crescimento acelerado</strong> constante
+- Aumento de 411% em 12 meses (45 → 230 unidades)
+- Mercado em expansão exponencial</p>
+<p><strong>Análise Técnica:</strong>
+- Métodos devem <strong>capturar tendência</strong> acima de tudo
+- Dados históricos totalmente relevantes
+- Previsões requerem projeção de crescimento</p>
+<hr />
+</div>
+<div id="cenário-3-alta-volatilidade-compressor-industrial" class="section level3">
+<h3><strong>Cenário 3: Alta Volatilidade (Compressor Industrial)</strong></h3>
+<pre class="r"><code># DADOS E ESTATÍSTICAS
+demanda &lt;- c(120, 85, 140, 75, 160, 95, 130, 110, 170, 80, 150, 100)
+mes &lt;-c(1:12)  
+
+dados_volatil &lt;- data.frame(mes, demanda)</code></pre>
+<pre class="r"><code># DADOS E ESTATÍSTICAS
+Demanda_Real = c(120, 85, 140, 75, 160, 95, 130, 110, 170, 80, 150, 100)
+Média: 118.3 unidades | Desvio Padrão: 35.2 | CV: 29.8%
+Tendência: +1.36 unidades/mês (quase estável)</code></pre>
+<p><strong>Padrão Identificado:</strong>
+- <strong>Alta volatilidade</strong> sem padrão claro
+- Flutuações entre 75-170 unidades (variação de 127%)
+- Comportamento imprevisível de clientes</p>
+<p><strong>Análise Técnica:</strong>
+- Métodos complexos têm <strong>pouca vantagem</strong> sobre simples
+- Foco em <strong>flexibilidade operacional</strong>
+- Estoque de segurança mais importante que previsão precisa</p>
+</div>
+</div>
+<div id="códigos-principais-implementados" class="section level2">
+<h2>💻 Códigos Principais Implementados</h2>
+<div id="função-de-análise-de-padrões" class="section level3">
+<h3><strong>1. Função de Análise de Padrões</strong></h3>
+<pre class="r"><code>analisar_padrao_demanda &lt;- function(dados) {
+  modelo &lt;- lm(demanda ~ mes, data = dados)
+  tendencia &lt;- coefficients(modelo)[2]
+  r2 &lt;- summary(modelo)$r.squared
+  cv &lt;- sd(dados$demanda) / mean(dados$demanda) * 100
+  
+  tipo_padrao &lt;- ifelse(cv &gt; 40, &quot;Alta Volatilidade&quot;,
+                       ifelse(r2 &gt; 0.8, &quot;Tendência Forte&quot;, 
+                             ifelse(abs(tendencia) &gt; 10, &quot;Crescimento&quot;, &quot;Sazonal&quot;)))
+  
+  return(list(tendencia = tendencia, r2 = r2, cv = cv, tipo = tipo_padrao))
+}</code></pre>
+</div>
+<div id="funções-de-previsão-por-cenário" class="section level3">
+<h3><strong>2. Funções de Previsão por Cenário</strong></h3>
+<pre class="r"><code># CENÁRIO 1 - SAZONALIDADE
+prever_sazonal &lt;- function(dados) {
+  # Decomposição sazonal simples
+  media_verao &lt;- mean(dados$demanda[5:8])  # Meses 5-8
+  media_inverno &lt;- mean(dados$demanda[10:12]) # Meses 10-12
+  return(list(
+    previsao_mes13 = media_inverno,  # Mês 13 é inverno
+    tecnica = &quot;Média Sazonal&quot;,
+    intervalo = c(media_inverno*0.9, media_inverno*1.1)
+  ))
+}
+
+# CENÁRIO 2 - CRESCIMENTO  
+prever_crescimento &lt;- function(dados) {
+  modelo &lt;- lm(Demanda_Real ~ Mes, data = dados)
+  previsao &lt;- predict(modelo, newdata = data.frame(Mes = 13))
+  return(list(
+    previsao_mes13 = round(previsao, 1),
+    tecnica = &quot;Regressão Linear&quot;,
+    r2 = summary(modelo)$r.squared
+  ))
+}
+
+# CENÁRIO 3 - VOLATILIDADE
+prever_volatil &lt;- function(dados) {
+  mms &lt;- mean(tail(dados$Demanda_Real, 3))  # MMS n=3
+  return(list(
+    previsao_mes13 = mms,
+    tecnica = &quot;Média Móvel Simples (n=3)&quot;,
+    estoque_seguranca = sd(dados$Demanda_Real) * 1.5
+  ))
+}</code></pre>
+</div>
+<div id="geração-de-relatórios-automatizados" class="section level3">
+<h3><strong>3. Geração de Relatórios Automatizados</strong></h3>
+<pre class="r"><code>gerar_relatorio_cenario &lt;- function(cenario, numero) {
+  analise &lt;- analisar_padrao_demanda(cenario$dados)
+  
+  cat(&quot;=== CENÁRIO&quot;, numero, &quot;===\n&quot;)
+  cat(&quot;Produto:&quot;, cenario$produto, &quot;\n&quot;)
+  cat(&quot;Padrão:&quot;, analise$tipo, &quot;\n&quot;)
+  cat(&quot;CV:&quot;, round(analise$cv, 1), &quot;% | Tendência:&quot;, round(analise$tendencia, 2), &quot;/mês\n&quot;)
+  
+  # Aplicar técnica recomendada
+  if(analise$tipo == &quot;Sazonal&quot;) {
+    resultado &lt;- prever_sazonal(cenario$dados)
+  } else if(analise$tipo == &quot;Crescimento&quot;) {
+    resultado &lt;- prever_crescimento(cenario$dados)  
+  } else {
+    resultado &lt;- prever_volatil(cenario$dados)
+  }
+  
+  cat(&quot;Técnica:&quot;, resultado$tecnica, &quot;\n&quot;)
+  cat(&quot;Previsão Mês 13:&quot;, resultado$previsao_mes13, &quot;unidades\n&quot;)
+}</code></pre>
+</div>
+</div>
+<div id="resultados-esperados-por-cenário" class="section level2">
+<h2>📈 Resultados Esperados por Cenário</h2>
+<div id="cenário-1---sazonalidade-clara" class="section level3">
+<h3><strong>Cenário 1 - Sazonalidade Clara</strong></h3>
+<pre><code>PREVISÃO MÊS 13: ≈70-80 unidades (período de inverno)
+TÉCNICA: Média Sazonal ou Decomposição
+MAPE ESPERADO: 8-12% (alta precisão devido ao padrão claro)
+AÇÕES: Reduzir produção, programar manutenção, manter estoque mínimo</code></pre>
+</div>
+<div id="cenário-2---crescimento-exponencial" class="section level3">
+<h3><strong>Cenário 2 - Crescimento Exponencial</strong></h3>
+<pre><code>PREVISÃO MÊS 13: ≈250-260 unidades (projeção linear)
+TÉCNICA: Regressão Linear
+MAPE ESPERADO: 5-8% (excelente ajuste)
+AÇÕES: Expandir capacidade, contratar equipe, aumentar supply chain</code></pre>
+</div>
+<div id="cenário-3---alta-volatilidade" class="section level3">
+<h3><strong>Cenário 3 - Alta Volatilidade</strong></h3>
+<pre><code>PREVISÃO MÊS 13: ≈110-130 unidades (próximo à média)
+TÉCNICA: MMS + Estoque de Segurança
+MAPE ESPERADO: 15-25% (baixa precisão inerente)
+AÇÕES: Manter flexibilidade, estoque de segurança, lead times curtos</code></pre>
+</div>
+</div>
+<div id="respostas-esperadas-dos-grupos" class="section level2">
+<h2>🎯 Respostas Esperadas dos Grupos</h2>
+<div id="análise-qualitativa-esperada" class="section level3">
+<h3><strong>Análise Qualitativa Esperada:</strong></h3>
+<ul>
+<li><strong>Cenário 1:</strong> Identificar sazonalidade e planejar capacidade diferenciada</li>
+<li><strong>Cenário 2:</strong> Reconhecer crescimento de mercado e necessidade de expansão<br />
+</li>
+<li><strong>Cenário 3:</strong> Aceitar imprevisibilidade e focar em resiliência operacional</li>
+</ul>
+</div>
+<div id="escolha-de-método-esperada" class="section level3">
+<h3><strong>Escolha de Método Esperada:</strong></h3>
+<ul>
+<li><strong>Grupo 1 (Sazonal):</strong> Deve escolher método sazonal, não MMS</li>
+<li><strong>Grupo 2 (Crescimento):</strong> Deve priorizar métodos com tendência</li>
+<li><strong>Grupo 3 (Volátil):</strong> Deve optar por simplicidade + estoque segurança</li>
+</ul>
+</div>
+</div>
+<div id="métricas-de-avaliação-dos-grupos" class="section level2">
+<h2>📊 Métricas de Avaliação dos Grupos</h2>
+<div id="critérios-quantitativos-60-da-nota" class="section level3">
+<h3><strong>Critérios Quantitativos (60% da nota):</strong></h3>
+<ul>
+<li><strong>Cálculos corretos:</strong> 25 pontos</li>
+<li><strong>MAPE calculado adequadamente:</strong> 15 pontos<br />
+</li>
+<li><strong>Previsão Mês 13 dentro do esperado:</strong> 20 pontos</li>
+</ul>
+</div>
+<div id="critérios-qualitativos-40-da-nota" class="section level3">
+<h3><strong>Critérios Qualitativos (40% da nota):</strong></h3>
+<ul>
+<li><strong>Análise do padrão:</strong> 10 pontos</li>
+<li><strong>Escolha do método justificada:</strong> 10 pontos</li>
+<li><strong>Recomendações práticas adequadas:</strong> 10 pontos</li>
+<li><strong>Integração quali-quanti:</strong> 10 pontos</li>
+</ul>
+</div>
+</div>
+<div id="conclusão-da-síntese" class="section level2">
+<h2>✅ Conclusão da Síntese</h2>
+<p>Os <strong>3 cenários</strong> representam desafios <strong>distintos e realistas</strong> de previsão:
+1. <strong>Padrão previsível</strong> (Sazonalidade) → Foco em métodos clássicos
+2. <strong>Tendência clara</strong> (Crescimento) → Foco em projeção<br />
+3. <strong>Imprevisibilidade</strong> (Volatilidade) → Foco em resiliência</p>
+<p>Cada cenário testa habilidades diferentes dos alunos, desde <strong>análise técnica</strong> até <strong>tomada de decisão operacional</strong>, preparando-os para desafios reais de administração da produção.</p>
+</div>
