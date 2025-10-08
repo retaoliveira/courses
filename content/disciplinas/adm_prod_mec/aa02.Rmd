@@ -2,7 +2,7 @@
 date: "2023-03-235T00:00:00+01:00"
 draft: false
 menu:
-  adm_prod_mat:
+  adm_prod_mec:
     parent: Atividades de aprendizagem
     weight: 20
 title: 2. Previsão e informação de vendas
@@ -17,7 +17,7 @@ weight: 20
 ---
 
 **PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 15/10/2025. 
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 20/10/2025. 
 
 ## **Atividade de aprendizagem**
 
