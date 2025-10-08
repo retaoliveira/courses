@@ -4,7 +4,7 @@ draft: false
 menu:
   adm_prod_mat:
     parent: Aulas
-    weight: 5
+    weight: 15
 title: 'Unidade 03 - Planejamento e controle de materiais'
 editor_options: 
   markdown: 

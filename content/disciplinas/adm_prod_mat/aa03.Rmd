@@ -4,7 +4,7 @@ draft: false
 menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
-    weight: 25
+    weight: 30
 title: 3. Planejamento e controle de materiais
 editor_options: 
   markdown: 
@@ -14,7 +14,7 @@ output:
     toc: true
     mathjax: default
 type: docs
-weight: 25
+weight: 10
 ---
 
 <script type="text/x-mathjax-config">
