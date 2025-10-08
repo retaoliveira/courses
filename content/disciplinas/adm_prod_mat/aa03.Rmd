@@ -28,6 +28,9 @@ MathJax.Hub.Config({
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 15/10/2025. 
+
 ## **Atividade de aprendizagem**
 
 ### Gestão de Estoques
