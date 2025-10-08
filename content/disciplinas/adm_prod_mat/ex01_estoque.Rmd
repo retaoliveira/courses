@@ -63,15 +63,15 @@ O LEC é calculado pela fórmula de Wilson, que minimiza os custos totais de ped
 
 
 $$
-Q^* = \sqrt{\frac{2DS}{H}}
+Q^* = \sqrt{\frac{2*D*Cpedir}{Cmanter}}
 $$
 
 Onde:
 
 - $Q^*$: Quantidade ótima de pedido (LEC)
 - $D$: Demanda anual
-- $S$: Custo por pedido
-- $H$: Custo de manutenção anual por unidade
+- $Cpedir$: Custo por pedido
+- $Cmanter$: Custo de manutenção anual por unidade
 
 Aplicando os dados:
 
@@ -111,6 +111,5 @@ Onde:
 - $L$: Tempo de entrega (lead time) em dias
 - $SS$: Estoque de segurança
 
-Assumindo:
-
+Assumindo que o estoque de segurança como base para o cálculo, e que o lead time é de 5 dias, temos:
 
