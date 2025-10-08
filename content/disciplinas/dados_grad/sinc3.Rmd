@@ -1,12 +1,12 @@
 ---
 date: "2021-05-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_grad:
-    parent: Encontros
-    weight: 15
-title: Encontro Síncrono 3
-weight: 15
+    parent: Aulas
+    weight: 19
+title: Aula 03 - Visualizando dados
+weight: 19
 editor_options: 
   markdown: 
     wrap: 72
@@ -19,8 +19,8 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class03_dataadm', height = "400px")
+knitr::include_url('https://graddados.github.io/aula03/', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class03_dataadm)
+[LINK](https://graddados.github.io/aula03/)
 

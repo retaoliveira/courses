@@ -1,402 +1,239 @@
 ---
-date: "2021-10-15T00:00:00+01:00"
-draft: true
+date: "2025-05-05T00:00:00+01:00"
+draft: false
 menu:
   dados_grad:
     parent: Labs
-    weight: 62
-title: Lab 4 - `ggplot` e `dplyr`
-toc: true
-type: docs
+    weight: 61
+title: Lab 4 - Construção de gráficos de barras, histogramas e boxplots usando ggplot2.
 weight: 400
+toc: True
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
 ---
 
+  <link rel="stylesheet" href="/assets/css/custom.css" type="text/css" />
 
 <div id="TOC">
 
 </div>
 
-<div id="atividade" class="section level2">
-<h2><strong>Atividade</strong></h2>
-<p>Nessa mini-análise trabalharemos com os dados usados no projeto publicada por Five Thirty Eight <a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/">“The Dollar-And-Cents Case Against Hollywood’s Exclusion of Women”</a>.</p>
-<p>Sua tarefa é preencher os espaços em branco assinalados por <code>___</code>.</p>
-<div id="dados-e-pacotes" class="section level3">
-<h3>Dados e pacotes</h3>
-<p>Vamos analisar o conjunto de dados <code>bechdel</code>, que contém informações sobre filmes e seu desempenho financeiro, além de informações sobre o teste de Bechdel, que avalia a representação feminina em filmes.</p>
-<p>O teste de Bechdel é um critério simples que avalia se um filme contém pelo menos duas mulheres que falam entre si sobre algo que não seja um homem.</p>
-<p>Começamos com o carregamento dos pacotes que vamos utilizar.</p>
+<div id="objetivos" class="section level2">
+<h2>Objetivos:</h2>
+<ul>
+<li><p>Aprender a criar gráficos estatísticos básicos no R usando ggplot2.</p></li>
+<li><p>Personalizar elementos visuais (cores, rótulos, temas).</p></li>
+<li><p>Interpretar os gráficos gerados.</p></li>
+</ul>
+</div>
+<div id="pré-requisitos" class="section level2">
+<h2>Pré-requisitos:</h2>
+<ul>
+<li><p>Instalação do R e RStudio.</p></li>
+<li><p>Pacotes necessários: ggplot2, dplyr (para manipulação de dados).</p></li>
+<li><p>Conhecimento básico de sintaxe do R.</p></li>
+</ul>
+<hr />
+</div>
+<div id="carregar-pacotes" class="section level1">
+<h1>Carregar pacotes</h1>
 <pre class="r"><code>library(pacman)
-p_load(fivethirtyeight, tidyverse, tidytuesday)</code></pre>
-<pre><code>## Warning: não é possível acessar o índice para o repositório http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4:
-##   não foi possível abrir a URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4/PACKAGES&#39;</code></pre>
-<pre><code>## pacote &#39;fivethirtyeight&#39; desempacotado com sucesso e somas MD5 verificadas
-## 
-## Os pacotes binários baixados estão em
-## 	C:\Users\renat\AppData\Local\Temp\RtmpwfZK8o\downloaded_packages</code></pre>
-<pre><code>## Warning: pacote &#39;fivethirtyeight&#39; foi compilado no R versão 4.4.3</code></pre>
-<pre><code>## Warning: pacote &#39;tidytuesday&#39; não está disponível for this version of R
-## 
-## Uma versão deste pacote para a sua versão do R pode estar disponível em outro lugar,
-## veja as ideias em
-## https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</code></pre>
-<pre><code>## Warning: não é possível acessar o índice para o repositório http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4:
-##   não foi possível abrir a URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.4/PACKAGES&#39;</code></pre>
-<pre><code>## Warning in p_install(package, character.only = TRUE, ...):</code></pre>
-<pre><code>## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : não há nenhum pacote chamado &#39;tidytuesday&#39;</code></pre>
-<pre><code>## Warning in p_load(fivethirtyeight, tidyverse, tidytuesday): Failed to install/load:
-## tidytuesday</code></pre>
-<p>O carregamento dos dados pode ser feito considerando o código a seguir:</p>
-<pre class="r"><code>raw_bechdel &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-03-09/raw_bechdel.csv&#39;)</code></pre>
-<pre><code>## Rows: 8839 Columns: 5
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr (2): imdb_id, title
-## dbl (3): year, id, rating
-## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre class="r"><code>movies &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-03-09/movies.csv&#39;)</code></pre>
-<pre><code>## Rows: 1794 Columns: 34
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr (24): imdb, title, test, clean_test, binary, domgross, intgross, code, d...
-## dbl  (7): year, budget, budget_2013, period_code, decade_code, metascore, im...
-## num  (1): imdb_votes
-## lgl  (2): response, error
-## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div id="dicionário-dos-dados" class="section level3">
-<h3>Dicionário dos dados</h3>
+p_load(&quot;ggplot2&quot;, &quot;dplyr&quot;)</code></pre>
+<div id="preparação-dos-dados" class="section level3">
+<h3>1. Preparação dos Dados</h3>
+<p>Usaremos o conjunto de dados mpg (já incluído no ggplot2), que contém informações sobre carros.</p>
 </div>
 </div>
-<div id="raw_bechdel.csv" class="section level1">
-<h1><code>raw_bechdel.csv</code></h1>
-<table>
-<colgroup>
-<col width="29%" />
-<col width="32%" />
-<col width="38%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">variável</th>
-<th align="left">tipo de dado</th>
-<th align="left">descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">year</td>
-<td align="left">integer</td>
-<td align="left">Year of release</td>
-</tr>
-<tr class="even">
-<td align="left">id</td>
-<td align="left">integer</td>
-<td align="left">ID of film</td>
-</tr>
-<tr class="odd">
-<td align="left">imdb_id</td>
-<td align="left">character</td>
-<td align="left">IMDB ID</td>
-</tr>
-<tr class="even">
-<td align="left">title</td>
-<td align="left">character</td>
-<td align="left">Title of film</td>
-</tr>
-<tr class="odd">
-<td align="left">rating</td>
-<td align="left">integer</td>
-<td align="left">Rating (0-3), 0 = unscored, 1. It has to have at least two [named] women in it, 2. Who talk to each other, 3. About something besides a man</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="movies.csv" class="section level1">
-<h1><code>movies.csv</code></h1>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Variável</th>
-<th align="left">Tipo de dado</th>
-<th align="left">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">year</td>
-<td align="left">double</td>
-<td align="left">Year</td>
-</tr>
-<tr class="even">
-<td align="left">imdb</td>
-<td align="left">character</td>
-<td align="left">IMDB</td>
-</tr>
-<tr class="odd">
-<td align="left">title</td>
-<td align="left">character</td>
-<td align="left">Title of movie</td>
-</tr>
-<tr class="even">
-<td align="left">test</td>
-<td align="left">character</td>
-<td align="left">Bechdel Test outcome</td>
-</tr>
-<tr class="odd">
-<td align="left">clean_test</td>
-<td align="left">character</td>
-<td align="left">Bechdel Test cleaned</td>
-</tr>
-<tr class="even">
-<td align="left">binary</td>
-<td align="left">character</td>
-<td align="left">Binary pass/fail of bechdel</td>
-</tr>
-<tr class="odd">
-<td align="left">budget</td>
-<td align="left">double</td>
-<td align="left">Budget as of release year</td>
-</tr>
-<tr class="even">
-<td align="left">domgross</td>
-<td align="left">character</td>
-<td align="left">Domestic gross in release year</td>
-</tr>
-<tr class="odd">
-<td align="left">intgross</td>
-<td align="left">character</td>
-<td align="left">International gross in release year</td>
-</tr>
-<tr class="even">
-<td align="left">code</td>
-<td align="left">character</td>
-<td align="left">Code</td>
-</tr>
-<tr class="odd">
-<td align="left">budget_2013</td>
-<td align="left">double</td>
-<td align="left">Budget normalized to 2013</td>
-</tr>
-<tr class="even">
-<td align="left">domgross_2013</td>
-<td align="left">character</td>
-<td align="left">Domestic gross normalized to 2013</td>
-</tr>
-<tr class="odd">
-<td align="left">intgross_2013</td>
-<td align="left">character</td>
-<td align="left">International gross normalized to 2013</td>
-</tr>
-<tr class="even">
-<td align="left">period_code</td>
-<td align="left">double</td>
-<td align="left">Period code</td>
-</tr>
-<tr class="odd">
-<td align="left">decade_code</td>
-<td align="left">double</td>
-<td align="left">Decade Code</td>
-</tr>
-<tr class="even">
-<td align="left">imdb_id</td>
-<td align="left">character</td>
-<td align="left">IMDB ID</td>
-</tr>
-<tr class="odd">
-<td align="left">plot</td>
-<td align="left">character</td>
-<td align="left">Plot of movie</td>
-</tr>
-<tr class="even">
-<td align="left">rated</td>
-<td align="left">character</td>
-<td align="left">Rating of movie</td>
-</tr>
-<tr class="odd">
-<td align="left">response</td>
-<td align="left">character</td>
-<td align="left">Response?</td>
-</tr>
-<tr class="even">
-<td align="left">language</td>
-<td align="left">character</td>
-<td align="left">Language of film</td>
-</tr>
-<tr class="odd">
-<td align="left">country</td>
-<td align="left">character</td>
-<td align="left">Country produced in</td>
-</tr>
-<tr class="even">
-<td align="left">writer</td>
-<td align="left">character</td>
-<td align="left">Writer of film</td>
-</tr>
-<tr class="odd">
-<td align="left">metascore</td>
-<td align="left">double</td>
-<td align="left">Metascore rating (0-100)</td>
-</tr>
-<tr class="even">
-<td align="left">imdb_rating</td>
-<td align="left">double</td>
-<td align="left">IMDB Rating 0-10</td>
-</tr>
-<tr class="odd">
-<td align="left">director</td>
-<td align="left">character</td>
-<td align="left">Director of movie</td>
-</tr>
-<tr class="even">
-<td align="left">released</td>
-<td align="left">character</td>
-<td align="left">Released date</td>
-</tr>
-<tr class="odd">
-<td align="left">actors</td>
-<td align="left">character</td>
-<td align="left">Actors</td>
-</tr>
-<tr class="even">
-<td align="left">genre</td>
-<td align="left">character</td>
-<td align="left">Genre</td>
-</tr>
-<tr class="odd">
-<td align="left">awards</td>
-<td align="left">character</td>
-<td align="left">Awards</td>
-</tr>
-<tr class="even">
-<td align="left">runtime</td>
-<td align="left">character</td>
-<td align="left">Runtime</td>
-</tr>
-<tr class="odd">
-<td align="left">type</td>
-<td align="left">character</td>
-<td align="left">Type of film</td>
-</tr>
-<tr class="even">
-<td align="left">poster</td>
-<td align="left">character</td>
-<td align="left">Poster image</td>
-</tr>
-<tr class="odd">
-<td align="left">imdb_votes</td>
-<td align="left">character</td>
-<td align="left">IMDB Votes</td>
-</tr>
-<tr class="even">
-<td align="left">error</td>
-<td align="left">character</td>
-<td align="left">Error?</td>
-</tr>
-</tbody>
-</table>
-<p>Vamos focar nossa análise em filmes lançados entre 1990 e 2013.</p>
-<pre class="r"><code>bechdel90_13 &lt;- bechdel %&gt;% 
-  filter(between(year, 1990, 2013))</code></pre>
-<p>Existem ’___’ filmes. (insira a quantidade de filmes)</p>
-<hr />
-<p>As variáveis financeiras em que vamos nos concentrar são as seguintes:</p>
+<div id="carregar-dados" class="section level1">
+<h1>Carregar dados</h1>
+<pre class="r"><code>data(mpg)
+head(mpg)  # Visualizar as primeiras linhas</code></pre>
+<pre><code>## # A tibble: 6 × 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…</code></pre>
+<div id="gráfico-de-barras" class="section level3">
+<h3>2. Gráfico de Barras</h3>
+<p>Objetivo: Comparar a contagem de carros por classe (class).</p>
+<pre class="r"><code>ggplot(mpg, aes(x = class)) +
+  geom_bar(fill = &quot;skyblue&quot;, color = &quot;black&quot;) +
+  labs(title = &quot;Contagem de Carros por Classe&quot;,
+       x = &quot;Classe do Veículo&quot;,
+       y = &quot;Contagem&quot;) +
+  theme_minimal()</code></pre>
+<p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Atividades:
+- Mude as cores das barras usando fill e color.<br />
+- Adicione rótulos (labs) personalizados.<br />
+- Use coord_flip() para inverter os eixos.</p>
+<p>Em <code>geom_bar</code> no <code>ggplot2</code>, <code>stat</code> e <code>position</code> têm funções diferentes. O <code>stat</code> determina como a altura das barras é calculada (por exemplo, contagem de casos ou valores originais), enquanto <code>position</code> controla como as barras são posicionadas quando há múltiplas barras no mesmo local do eixo x.</p>
+<p><strong><code>stat</code></strong>
+Define o tipo de transformação estatística que é aplicada aos dados antes de serem plotados. Por padrão, stat = “count”, que significa que a altura de cada barra representa o número de casos em cada grupo ou categoria no eixo x.</p>
 <ul>
-<li><code>budget_2013</code>: Orçamento em dólares de 2013 ajustados à inflação.</li>
-<li><code>domgross_2013</code>: Dólares internos brutos (EUA) em 2013, dólares ajustados pela inflação.</li>
-<li><code>intgross_2013</code>: Total internacional (i.e., mundial) bruto em 2013 dólares corrigidos da inflação.</li>
-</ul>
-<p>E também utilizaremos as variáveis <code>binary</code> e <code>clean_test</code> para <strong>grouping</strong>.</p>
-<hr />
-<div id="análise" class="section level3">
-<h3>Análise</h3>
-<p>Vamos ver como o orçamento mediano e o bruto variam conforme o filme caso tenha passado no teste de Bechdel, que é armazenado na variável “binary”.</p>
-<pre class="r"><code>bechdel90_13 %&gt;%
-  group_by(binary) %&gt;%
-  summarise(med_budget = median(budget_2013),
-            med_domgross = median(domgross_2013, na.rm = TRUE),
-            med_intgross = median(intgross_2013, na.rm = TRUE))</code></pre>
-<pre><code>## # A tibble: 2 × 4
-##   binary med_budget med_domgross med_intgross
-##   &lt;chr&gt;       &lt;dbl&gt;        &lt;dbl&gt;        &lt;dbl&gt;
-## 1 FAIL    48385984.    57318606.    104475669
-## 2 PASS    31070724     45330446.     80124349</code></pre>
-<p>Em seguida, vamos ver como o orçamento meidano e o bruto variam por um indicador mais detalhado do resultado do teste de Bechdel.</p>
-<p>Essa informação é armazenada na variável ‘clean_test’, que assume os seguintes valores:</p>
+<li>Exemplos:
 <ul>
-<li><code>ok</code> = passa no teste</li>
-<li><code>dubious</code>.</li>
-<li><code>men</code> = as mulheres só falam de homens</li>
-<li><code>notalk</code> = as mulheres não falam umas com as outras</li>
-<li><code>nowomen</code> = menos de duas mulheres</li>
+<li>stat = “count”: A altura da barra representa a contagem de pontos de dados em cada categoria (o padrão).</li>
+<li>stat = “identity”: A altura da barra representa os valores diretamente do conjunto de dados, sem nenhuma transformação.</li>
+<li>stat = “bin”: A altura da barra representa a frequência de ocorrências dentro de intervalos.</li>
+</ul></li>
 </ul>
-<pre class="r"><code>bechdel90_13 %&gt;%
-  group_by(clean_test) %&gt;%
-  summarise(med_budget = median(budget_2013),
-            med_domgross = median(domgross_2013, na.rm = TRUE),
-            med_intgross = median(intgross_2013, na.rm = TRUE))</code></pre>
-<pre><code>## # A tibble: 5 × 4
-##   clean_test med_budget med_domgross med_intgross
-##   &lt;ord&gt;           &lt;dbl&gt;        &lt;dbl&gt;        &lt;dbl&gt;
-## 1 nowomen     43373066     44891296.    89509349 
-## 2 notalk      56570084.    63890455    123102194 
-## 3 men         39737690.    56392786     99578022.
-## 4 dubious     35790994     49173429     89883201 
-## 5 ok          31070724     45330446.    80124349</code></pre>
-<p>A fim de avaliar como o retorno do investimento varia entre os filmes que passam e fracassam no <strong>teste de Bechdel</strong>, vamos primeiro criar uma nova variável chamada <code>roi</code> como uma razão do orçamento bruto.</p>
-<pre class="r"><code>bechdel90_13 &lt;- bechdel90_13 %&gt;%
-  mutate(roi = (intgross_2013 + domgross_2013) / budget_2013)</code></pre>
-<p>Vamos ver quais filmes têm o maior retorno sobre o investimento.</p>
-<pre class="r"><code>bechdel90_13 %&gt;%
-  arrange(desc(roi)) %&gt;% 
-  select(title, roi, year)</code></pre>
-<pre><code>## # A tibble: 1,615 × 3
-##    title                     roi  year
-##    &lt;chr&gt;                   &lt;dbl&gt; &lt;int&gt;
-##  1 Paranormal Activity      671.  2007
-##  2 The Blair Witch Project  648.  1999
-##  3 El Mariachi              583.  1992
-##  4 Clerks.                  258.  1994
-##  5 In the Company of Men    231.  1997
-##  6 Napoleon Dynamite        227.  2004
-##  7 Once                     190.  2006
-##  8 The Devil Inside         155.  2012
-##  9 Primer                   142.  2004
-## 10 Fireproof                134.  2008
-## # ℹ 1,605 more rows</code></pre>
-<p>Abaixo está uma visualização do retorno do investimento por resultado de teste, porém é difícil ver as distribuições devido a algumas observações extremas.</p>
-<pre class="r"><code>ggplot(data = bechdel90_13, 
-       mapping = aes(x = clean_test, y = roi, color = binary)) +
-  geom_boxplot() +
-  labs(title = &quot;Retorno do investimento vs. Resultados do teste Bechdel&quot;,
-       x = &quot;Resultado detalhado de Bechdel&quot;,
-       y = &quot;___&quot;,
-       color = &quot;Resultado binário de Bechdel&quot;)</code></pre>
+<blockquote>
+<p>O stat altera a escala do eixo y, afetando a interpretação da altura das barras.</p>
+</blockquote>
+<p><strong><code>position</code></strong>
+Determina como as barras são posicionadas quando há múltiplas barras no mesmo local no eixo x.</p>
+<ul>
+<li>Exemplos:
+<ul>
+<li>position = “stack”: As barras são empilhadas umas sobre as outras (o padrão).</li>
+<li>position = “dodge”: As barras são colocadas lado a lado.</li>
+<li>position = “fill”: As barras são empilhadas, mas cada barra representa a mesma proporção em relação à sua própria altura total.</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>O position controla a maneira como as barras são agrupadas ou separadas visualmente no gráfico, afetando a clareza da comparação entre diferentes grupos.</p>
+</blockquote>
+<blockquote>
+<p>Por exemplo, usando stat = “identity” com position = “dodge” permite comparar os valores originais de diferentes grupos lado a lado, enquanto stat = “count” com position = “stack” mostra a contagem total de casos empilhada em cada grupo.</p>
+</blockquote>
+<div id="gráfico-de-barras-com-stat-identity" class="section level4">
+<h4>2.1. Gráfico de Barras com stat = “identity”</h4>
+<p>Objetivo: Usar valores pré-calculados (não contagem).</p>
+<p>Vamos usar o conjunto mpg e agregar dados para exemplificar stat = “identity”.</p>
+<pre class="r"><code># Criar um dataset agregado (média de consumo por classe e tipo de tração)
+dados_agg &lt;- mpg %&gt;%
+  group_by(class, drv) %&gt;%
+  summarise(media_hwy = mean(hwy), .groups = &quot;drop&quot;)
+
+head(dados_agg)</code></pre>
+<pre><code>## # A tibble: 6 × 3
+##   class   drv   media_hwy
+##   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt;
+## 1 2seater r          24.8
+## 2 compact 4          25.8
+## 3 compact f          29.1
+## 4 midsize 4          24  
+## 5 midsize f          27.6
+## 6 minivan f          22.4</code></pre>
+<pre class="r"><code>ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = &quot;identity&quot;, position = &quot;dodge&quot;) +  # Barras lado a lado
+  labs(title = &quot;Média de Consumo (hwy) por Classe e Tração&quot;,
+       x = &quot;Classe do Veículo&quot;,
+       y = &quot;Média de Milhas por Galão (hwy)&quot;,
+       fill = &quot;Tipo de Tração&quot;) +
+  theme_minimal() +
+  scale_fill_brewer(palette = &quot;Pastel1&quot;)</code></pre>
+<p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Atividades:<br />
+- Mude position = “dodge” para position = “stack” (empilhado).<br />
+- Adicione rótulos de valor com geom_text(aes(label = round(media_hwy, 1)), position = position_dodge(width = 0.9), vjust = -0.5).</p>
+</div>
+<div id="gráfico-de-barras-empilhadas" class="section level4">
+<h4>2.2. Gráfico de Barras Empilhadas</h4>
+<p>Objetivo: Mostrar a contribuição de cada categoria em um total.</p>
+<pre class="r"><code>ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = &quot;identity&quot;, position = &quot;stack&quot;) +  # Empilhado
+  labs(title = &quot;Consumo Total (hwy) por Classe (Empilhado)&quot;,
+       x = &quot;Classe do Veículo&quot;,
+       y = &quot;Soma de Milhas por Galão (hwy)&quot;) +
+  theme_classic()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>Quais são os filmes com retorno de investimento <em>muito altos</em>?</p>
-<pre class="r"><code>bechdel90_13 %&gt;%
-  filter(roi &gt; 400) %&gt;%
-  select(title, budget_2013, domgross_2013, year)</code></pre>
-<pre><code>## # A tibble: 3 × 4
-##   title                   budget_2013 domgross_2013  year
-##   &lt;chr&gt;                         &lt;int&gt;         &lt;dbl&gt; &lt;int&gt;
-## 1 Paranormal Activity          505595     121251476  2007
-## 2 The Blair Witch Project      839077     196538593  1999
-## 3 El Mariachi                   11622       3388636  1992</code></pre>
-<p>Veja como é a relação entre os filmes com menor retorno e o resultado detalhado do teste Bechedel.</p>
-<p>A ampliação dos filmes com <code>roi &lt; ___</code> proporciona uma melhor visão de como os medianos através das categorias se comparam:</p>
-<pre class="r"><code>ggplot(data = bechdel90_13, mapping = aes(x = clean_test, y = roi, color = binary)) +
-  geom_boxplot() +
-  labs(title = &quot;Retorno do investimento vs. Resultado do teste de Bechdel&quot;,
-       subtitle = &quot;___&quot;, # Something about zooming in to a certain level
-       x = &quot;Resultado detalhado de Bechdel&quot;,
-       y = &quot;Retorno do investimento&quot;,
-       color = &quot;Resultado binário de Bechdel&quot;) +
-  coord_cartesian(ylim = c(0, 15))</code></pre>
+<p>Atividade:<br />
+- Compare com o gráfico de position = “dodge”. Quando cada um é útil?</p>
+</div>
+<div id="gráfico-de-barras-em-proporção" class="section level4">
+<h4>2.3. Gráfico de Barras em Proporção (%)</h4>
+<p>Objetivo: Mostrar a distribuição percentual de cada categoria.</p>
+<pre class="r"><code>ggplot(dados_agg, aes(x = class, y = media_hwy, fill = drv)) +
+  geom_bar(stat = &quot;identity&quot;, position = &quot;fill&quot;) +  # Proporção
+  labs(title = &quot;Proporção do Consumo (hwy) por Classe&quot;,
+       x = &quot;Classe do Veículo&quot;,
+       y = &quot;Proporção&quot;,
+       fill = &quot;Tipo de Tração&quot;) +
+  scale_y_continuous(labels = scales::percent) +  # Converter eixo y em %
+  theme_light()</code></pre>
+<p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Atividades:<br />
+- Adicione bordas brancas às barras: color = “white”, size = 0.2.<br />
+- Mude a paleta de cores com scale_fill_manual(values = c(“#FF6B6B”, “#4ECDC4”, “#45B7D1”)).</p>
+<hr />
+</div>
+</div>
+<div id="histograma" class="section level3">
+<h3>3. Histograma</h3>
+<p>Objetivo: Visualizar a distribuição da variável numérica hwy (consumo em estrada).</p>
+<pre class="r"><code>ggplot(mpg, aes(x = hwy)) +
+  geom_histogram(bins = 15, fill = &quot;coral&quot;, color = &quot;white&quot;) +
+  labs(title = &quot;Distribuição do Consumo na Estrada (hwy)&quot;,
+       x = &quot;Milhas por Galão (Estrada)&quot;,
+       y = &quot;Frequência&quot;) +
+  theme_classic()</code></pre>
 <p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Atividades:<br />
+- Ajuste o número de bins e observe como muda a visualização.<br />
+- Sobreponha uma curva de densidade usando geom_density(aes(y = ..count..)).</p>
+</div>
+<div id="boxplot" class="section level3">
+<h3>4. Boxplot</h3>
+<p>Objetivo: Comparar a distribuição do consumo (hwy) por tipo de motor (drv).</p>
+<pre class="r"><code>ggplot(mpg, aes(x = drv, y = hwy, fill = drv)) +
+  geom_boxplot() +
+  labs(title = &quot;Consumo na Estrada por Tipo de Tração&quot;,
+       x = &quot;Tipo de Tração&quot;,
+       y = &quot;Milhas por Galão (hwy)&quot;) +
+  scale_fill_brewer(palette = &quot;Set2&quot;) +
+  theme_bw()</code></pre>
+<p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Atividades:<br />
+- Adicione pontos sobre o boxplot com geom_jitter(width = 0.2).<br />
+- Mude a paleta de cores (scale_fill_manual ou scale_fill_brewer).</p>
+</div>
+<div id="exercício-de-consolidação" class="section level3">
+<h3>5. Exercício de Consolidação</h3>
+<p>Crie um relatório em RMarkdown contendo:<br />
+- Um gráfico de barras mostrando a contagem de carros por manufacturer.<br />
+- Um gráfico de barras (stat = “identity”) da média de cty por manufacturer.<br />
+- Uma versão empilhada do mesmo gráfico, colorido por cyl.<br />
+- Uma versão em proporção (%) do gráfico empilhado.<br />
+- Um histograma da variável cty (consumo na cidade).<br />
+- Um boxplot comparando cty por cyl (número de cilindros).</p>
+<p>Exemplo de código para o exercício:</p>
+<pre class="r"><code># Dados agregados
+dados_exercicio &lt;- mpg %&gt;%
+  group_by(manufacturer, cyl) %&gt;%
+  summarise(media_cty = mean(cty), .groups = &quot;drop&quot;)
+
+# Gráfico de proporção
+ggplot(dados_exercicio, aes(x = manufacturer, y = media_cty, fill = factor(cyl))) +
+  geom_bar(stat = &quot;identity&quot;, position = &quot;fill&quot;) +
+  labs(y = &quot;Proporção do Consumo (cty)&quot;, fill = &quot;Cilindros&quot;) +
+  scale_y_continuous(labels = scales::percent)</code></pre>
+<p><img src="/disciplinas/dados_grad/lab4_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Recursos Adicionais:</p>
+<p><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">Documentação do ggplot2</a>.<br />
+<a href="https://ggplot2.tidyverse.org/gallery.html">Galeria de gráficos com ggplot2</a>.<br />
+<a href="https://ggplot2.tidyverse.org/articles/positioning.html">Posicionamento das barras</a><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="uri">https://ggplot2.tidyverse.org/reference/scale_brewer.html</a>.<br />
+<a href="https://paternogbc.github.io/guia_ggplot2/grafico-de-barras.html">Guia de bolso - GGPLOT2</a>.</p>
+<p>Dica: Use ?geom_bar, ?geom_histogram e ?geom_boxplot para explorar mais opções!</p>
+<p>Dicas Extras:<br />
+- Use facet_wrap() para dividir os gráficos por categoria (ex: facet_wrap(~year)).<br />
+- Para reordenar barras: aes(x = reorder(class, -media_hwy), y = media_hwy).<br />
+- Incrementar a atividade do gráfico de barras para incluir stat = identity, e gráfico empilhado e proporção.<br />
+- Explore temas adicionais com theme_minimal(), theme_classic(), etc.<br />
+- Use scale_fill_brewer() para paletas de cores predefinidas.<br />
+- Para personalizar rótulos de eixos, use labs(x = “Novo Rótulo”, y = “Outro Rótulo”).<br />
+- Para adicionar linhas de grade, use theme(panel.grid.major = element_line(color = “gray”, size = 0.5)).<br />
+- Para salvar gráficos, use ggsave(“nome_do_grafico.png”, width = 8, height = 6).</p>
 </div>
 </div>

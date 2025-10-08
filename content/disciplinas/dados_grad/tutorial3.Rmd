@@ -1,11 +1,11 @@
 ---
 date: "2021-06-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_grad:
-    parent: Labs
+    parent: Tutoriais - aulas
     weight: 15
-title: Lab 2
+title: Gráficos com ggplot2
 weight: 25
 editor_options: 
   markdown: 
@@ -21,18 +21,6 @@ type: docs
 library(tidyverse)
 ```
 
-## Diretrizes gerais:
-1. Baixe o arquivo e abra no RStudio. [Link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EWhJIYOWS7FJgdMe8znoLQwBWko-J1AFpwNbpeswSuD7fQ?e=H21RLg)
-
-2. Execute as operações assinaladas nos exercícios a seguir. 
-
-3. Salve o .Rmd e submeta-o por meio desta tarefa. 
-
-> Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
-
-```{r load-packages, include=FALSE}
-library(tidyverse)
-```
 
 ### Dê uma olhada no dataframe Starwars.
 

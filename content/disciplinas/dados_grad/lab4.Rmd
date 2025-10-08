@@ -1,11 +1,11 @@
 ---
 date: "2025-05-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   dados_grad:
     parent: Labs
     weight: 61
-title: Lab 3 - Construção de gráficos de barras, histogramas e boxplots usando ggplot2.
+title: Lab 4 - Construção de gráficos de barras, histogramas e boxplots usando ggplot2.
 weight: 400
 toc: True
 editor_options: 
