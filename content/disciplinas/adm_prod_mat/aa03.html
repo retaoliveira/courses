@@ -20,7 +20,10 @@ weight: 25
 
 <div id="TOC">
 <ul>
-<li><a href="#atividade-de-aprendizagem" id="toc-atividade-de-aprendizagem"><strong>Atividade de aprendizagem</strong></a></li>
+<li><a href="#atividade-de-aprendizagem" id="toc-atividade-de-aprendizagem"><strong>Atividade de aprendizagem</strong></a>
+<ul>
+<li><a href="#gest%C3%A3o-de-estoques" id="toc-gestão-de-estoques">Gestão de Estoques</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -36,107 +39,42 @@ MathJax.Hub.Config({
 </script>
 <div id="atividade-de-aprendizagem" class="section level2">
 <h2><strong>Atividade de aprendizagem</strong></h2>
-<p>Estudo de Caso: Gestão de Estoques na Indústria Alfa</p>
-<p>A Indústria Alfa é fabricante de peças automotivas e trabalha com três grandes categorias de estoques: matéria-prima (aço), produtos em processo (componentes montados) e produtos acabados (peças embaladas para distribuição). Os dados para um dos insumos principais, o aço, estão a seguir:</p>
-<p>Demanda anual de aço: 30.000 kg
-Custo de cada pedido de compra: R$ 200,00
-Custo de armazenagem por kg/ano: R$ 1,50
-Preço do aço: R$ 10,00/kg</p>
-<p>Além do aço, a empresa possui 5 itens principais em estoque:</p>
-<ul>
-<li>Aço</li>
-<li>Plástico</li>
-<li>Embalagem</li>
-<li>Componentes eletrônicos</li>
-<li>Adesivos</li>
-</ul>
-<p>A tabela abaixo mostra o valor anual de consumo de cada item:</p>
-<table>
-<colgroup>
-<col width="8%" />
-<col width="36%" />
-<col width="28%" />
-<col width="28%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Consumo Anual (kg ou unidades)</th>
-<th>“Preço unitário (R$)</th>
-<th>Valor anual consumido (R$)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1 - Aço</td>
-<td>30.000</td>
-<td>10,00</td>
-<td>300.000</td>
-</tr>
-<tr class="even">
-<td>2 - Plástico</td>
-<td>12.000</td>
-<td>8,00</td>
-<td>96.000</td>
-</tr>
-<tr class="odd">
-<td>3 - Embalagem</td>
-<td>20.000</td>
-<td>2,00</td>
-<td>40.000</td>
-</tr>
-<tr class="even">
-<td>4 - Comp. eletrônicos</td>
-<td>2.000</td>
-<td>15,00</td>
-<td>30.000</td>
-</tr>
-<tr class="odd">
-<td>5 - Adesivos</td>
-<td>5.000</td>
-<td>1,00</td>
-<td>5.000</td>
-</tr>
-</tbody>
-</table>
-<p>Exemplo 1: Cálculo do Lote Econômico de Compras (LEC) para Aço</p>
-<p>O LEC é calculado pela fórmula de Wilson, que minimiza os custos totais de pedido e armazenagem. A fórmula para o LEC é:</p>
-<p><span class="math display">\[
-Q^* = \sqrt{\frac{2DS}{H}}
-\]</span></p>
-<p>Onde:</p>
-<ul>
-<li><span class="math inline">\(Q^*\)</span>: Quantidade ótima de pedido (LEC)</li>
-<li><span class="math inline">\(D\)</span>: Demanda anual</li>
-<li><span class="math inline">\(S\)</span>: Custo por pedido</li>
-<li><span class="math inline">\(H\)</span>: Custo de manutenção anual por unidade</li>
-</ul>
-<p>Aplicando os dados:</p>
-<p>D = 30.000 kg</p>
-<p>S = R$ 200,00</p>
-<p>H = R$ 1,50</p>
-<p><span class="math display">\[
-LEC = \sqrt{\frac{2 × 30.000 × 200}{1,5}}
-\]</span>
-<span class="math display">\[
-LEC = \sqrt{\frac{12000000}{1,5}}
-\]</span></p>
-<p><span class="math display">\[
-LEC = \sqrt{8000}
-\]</span></p>
-<p><span class="math display">\[
-LEC = 2828,43
-\]</span></p>
-<p>Resposta: O lote econômico de compras para o aço é de aproximadamente 2.828 kg por pedido.</p>
-<p>Exemplo 2: Cálculo do Ponto de Reposição (PR)</p>
-<p>O ponto de reposição é o nível de estoque no qual um novo pedido deve ser feito para evitar a falta de estoque. A fórmula é:</p>
-<p><span class="math display">\[
-PR = d × L + SS
-\]</span>
-Onde:
-- <span class="math inline">\(PR\)</span>: Ponto de reposição
-- <span class="math inline">\(d\)</span>: Demanda diária
-- <span class="math inline">\(L\)</span>: Tempo de entrega (lead time) em dias
-- <span class="math inline">\(SS\)</span>: Estoque de segurança
-Assumindo:</p>
+<div id="gestão-de-estoques" class="section level3">
+<h3>Gestão de Estoques</h3>
+<ol style="list-style-type: decimal">
+<li><p>A empresa X, tem um produto cuja demanda anual é de 120.000 unidades. Sabe-se que ela apresenta as seguintes despesas em relação à gestão de estoques: Custo de aquisição = R$ 2,00 por unidade; Custo de processamento de cada pedido = R$ 90,00 por pedido; Custo de Armazenagem = R$ 0,20 por unidade ao mês. Determine o LEC e a quantidade de pedidos no ano.</p></li>
+<li><p>O distribuidor de uma grande cervejaria vende uma média de 180 garrafas de cerveja por dia. Considerando que o distribuidor trabalhe 30 dias por mês e cada pedido tenha um custo fixo representado pelo transporte de R$ 153,00 por viagem, pergunta-se:<br />
+</p></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Qual o custo mensal de pedido se o distribuidor comprar lotes de 50 dúzias cada lote?<br />
+</li>
+<li>Qual o custo mensal de pedido se o distribuidor aumentar a quantia para 90 dúzias por lote?</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>Uma empresa especializada em produzir peças plásticas injetadas adquire a matéria prima plástica em pacotes de 15 quilogramas a um custo de R$ 25,00 cada um. A empresa consome cerca de 350 pacotes por mês. A empresa adquire um custo, representado pelo preparo e transporte, de R$ 200,00 cada vez que um pedido é feito. A empresa calcula que o custo de manutenção de estoque é de R$ 4,50 por pacote por mês. Se a empresa comprar 50 pacotes por lote de compra. Pergunta-se:<br />
+</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Qual o custo mensal de pedido?<br />
+</li>
+<li>Qual o custo mensal de manutenção dos estoques?<br />
+</li>
+<li>Qual o custo mensal total desta política de estoques?</li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li><p>A empresa PROTUBO, especialista em montagens e manutenções hidráulicas de grandes instalações industriais, tem em estoque uma grande diversidade de tubos, conexões, válvulas e reduções. O gerente de compras tendo estudado o modelo do lote econômico, solicitou a seu analista que elaborasse um estudo de quanto a empresa estava gastando a mais, por ano, por não comprar em lotes econômicos. Para tal, sugeriu que o cálculo fosse feito utilizando se o item VA-0457, que tem grande consumo anual. Na ficha desse item constam os seguintes dados: Lote de compra atual: 400 unidades / pedido, demanda de 10.000 unidades / ano, custo de manutenção de estoque estimado em R$ 0,40 / unidade / ano, custo de cada pedido de R$ 5,50 e o custo de aquisição é de R$ 0,18 por unidade. Qual foi a conclusão do analista?</p></li>
+<li><p>Uma grande perfumaria utiliza cerca de 5.000 unidades de um determinado frasco de perfume por mês. O custo mensal de manutenção de estoques é de R$ 0,01 por frasco e o custo fixo para cada pedido colocado é de R$ 30,00. Qual deve ser o lote econômico de compra deste frasco?</p></li>
+<li><p>Uma empresa produz caixas de embalagem para pizza e utiliza 440 bobinas de papelão ondulado por mês. Cada bobina custa R$ 45,00. A empresa faz o transporte das bobinas através de um caminhão próprio que tem um custo fixo de R$ 200,00 por viagem. Considerando um custo de estoque de R$ 10,00 ao mês por bobina, qual o lote econômico de compras?</p></li>
+<li><p>A Lavabrás possui uma fábrica de motores elétricos em São Paulo e uma montadora de lava-roupas domésticas em Porto Alegre. A empresa possui caminhões próprios que transportam os motores a um custo fixo de R$ 1.250,00 por viagem. A montadora em Porto Alegre monta e vende 4.000 lavadoras por mês. Cada motor custa R$ 250,00 e a empresa estima um custo de manutenção de estoque de R$ 5,00 por motor ao mês, pergunta-se:<br />
+</p></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Quantos motores a Lavabrás deveria transportar por viagem para minimizar o custo total?<br />
+</li>
+<li>Neste caso, qual será o estoque cíclico de motores na Lavabrás?<br />
+</li>
+<li>Qual o custo mensal total desta política de estoques?</li>
+</ol>
+</div>
 </div>
