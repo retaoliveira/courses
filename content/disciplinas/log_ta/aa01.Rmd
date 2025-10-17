@@ -1,0 +1,42 @@
+---
+date: "2023-08-07T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Atividades de Aprendizagem
+    weight: 15
+title: '01 - Indicadores de desempenho em transportes'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 15
+---
+
+1.	Calcule a produção de transportes da seguinte configuração de fluxos. Demonstre seus cálculos parciais.
+a.	A-E
+b.	A-D
+c.	A-G
+d.	A-H
+
+
+2.	Defina, com suas próprias palavras, de forma completa e sucinta, os seguintes conceitos:
+
+   a.	Eficiência Energética
+
+   b.	Produtividade
+  
+   c.	Produção de Transporte (inclusive indicador)
+  
+   d.	Matriz de Transportes
+   
+   e.	Custo-Brasil
+
+3.	Considerando o conceito de Matriz de Transportes, defina o que seria o equilíbrio dessa matriz. 
+
+4.	Cite e descreva três fatores que podem gerar baixo aproveitamento (ineficiência) da capacidade de transportes.
+
+
