@@ -37,12 +37,11 @@ Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail 
 
 **1. Exercícios**
 
-1. Um centro produtivo tem 200 horas de trabalho disponível por mês e é capaz de produzir 210 unidades por hora de trabalho. No entanto, no mês anterior ele produziu mercadorias por 170 horas, produzindo um total de 31000 unidades no mês. Determine: (i) Qual é a capacidade teórica mensal do centro de trabalho (dada é em número de unidades por mês)? (ii) Qual é a utilização do centro de trabalho? (iii) Qual é a eficiência do centro de trabalho?
+1. Um centro produtivo tem 200 horas de trabalho disponível por mês e é capaz de produzir 210 unidades por hora de trabalho. No entanto, no mês anterior ele produziu mercadorias por 170 horas, produzindo um total de 31000 unidades no mês. Determine: (i) Qual é a capacidade mensal instalada do centro de trabalho (dada é em número de unidades por mês)? (ii) Qual é a utilização do centro de trabalho? (iii) Qual é a eficiência do centro de trabalho?
 
 2. A demanda semanal estimada para um centro de trabalho é de 140 unidades. Cada funcionário é capaz de produzir 150 unidades semanais, considerando a saída-padrão. Considere que a taxa de utilização é de 60% e a taxa de eficiência é igual a 70%. Determine (i) o número de funcionários que este centro de trabalho deve ter e (ii) os possíveis efeitos negativos do erro de estimação do número de funcionários por não se considerar as perdas de capacidade.
 
-3. Um centro de trabalho tem uma demanda de 1000 unidades por mês. A capacidade padrão de produção é de 4 unidades por hora (720 unidades por mês). Determine qual a capacidade teórica de produção e quantos funcionários são necessários para atender a demanda mensal, assumindo
-que (i) cada funcionário é contratado para trabalhar no máximo 180 horas por mês, (ii) utilização de 62,5% e (iii) eficiência de 80%.
+3. Um centro de trabalho tem uma demanda de 1000 unidades por mês. A capacidade padrão de produção de cada funcionário é de 4 unidades por hora (720 unidades por mês). Determine quantos funcionários são necessários para atender a demanda mensal e verifique confrontando a demanda e a capacidade real de produção, assumindo que (i) cada funcionário é contratado para trabalhar no máximo 180 horas por mês, (ii) utilização de 62,5% e (iii) eficiência de 80%.
 
 4. Uma família de produtos tem a seguinte demanda prevista para os próximos seis meses.
 
@@ -55,4 +54,4 @@ Fev |3600|  |
 Mar |4000|  |
 Abr |3200|  |
 
-Considere também que cada produto da família em análise consuma (tempo-padrão) 3 minutos do recurso crítico (RC). O RC tem índices de utilização de 62,5% e de eficiência de 80%. Preencha a tabela com a capacidade total teórica (ou disponível) mínima necessária em horas para a produção dos produtos desta família.
+Considere também que cada produto da família em análise consuma (tempo-padrão) 3 minutos do recurso crítico (RC). O RC tem índices de utilização de 62,5% e de eficiência de 80%. Preencha a tabela com a capacidade real mínima necessária em horas para a produção dos produtos desta família.
