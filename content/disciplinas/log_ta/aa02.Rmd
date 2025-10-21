@@ -1,0 +1,106 @@
+---
+date: "2023-08-07T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Atividades de Aprendizagem
+    weight: 20
+title: '02 - Planejamento e programação de manutenção'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## Exercício 1: MTBF e MTTR
+
+Uma empresa de transporte possui um veículo que apresentou as seguintes falhas no último semestre.
+
+|Falha|	Tempo de Operação (horas)|	Tempo de Reparo (horas)|
+|------|-----|-----|
+|1|	850|	6|
+|2|	920|	4|
+|3|	1.100|	8|
+|4|	780	|5|
+
+Calcule:
+
+a) O MTBF (Tempo Médio Entre Falhas)
+
+b) O MTTR (Tempo Médio de Reparo)
+
+c) A disponibilidade do veículo
+
+d) Interprete os resultados obtidos
+
+## Exercício 2: Disponibilidade da Frota
+
+Uma frota de 15 caminhões operou durante um mês (720 horas). Os dados de paradas foram.
+
+- Manutenções preventivas: 180 horas totais   
+- Manutenções corretivas: 95 horas totais   
+- Tempo total disponível: 15 veículos × 720 horas = 10.800 horas
+
+Calcule:
+
+a) O tempo total de operação efetiva
+
+b) A disponibilidade da frota em percentual
+
+c) Quantas horas a frota ficou parada?
+
+d) Se a meta é 95% de disponibilidade, a frota atingiu o objetivo?
+
+## Exercício 3: Custo por Quilômetro
+
+A empresa LogTrans possui os seguintes dados de um veículo no último ano.
+
+- Quilometragem rodada: 85.000 km   
+- Custo com manutenções preventivas: R$ 6.500   
+- Custo com manutenções corretivas: R$ 4.200   
+- Custo com peças e materiais: R$ 3.800   
+- Custo com combustível: R$ 42.500   
+
+Calcule:
+
+a) O custo total de manutenção
+
+b) O custo de manutenção por quilômetro
+
+c) O custo total operacional por quilômetro
+
+d) Se o custo de manutenção aumentar 15%, qual será o novo custo por km?
+
+## Exercício 4: Comparação de Estratégias de Manutenção
+
+Uma empresa está avaliando duas estratégias para manutenção de freios.
+
+**Estratégia A - Preventiva:**
+
+- Revisão a cada 25.000 km   
+- Custo por revisão: R$ 650   
+- Previsão: 4 revisões/ano por veículo   
+- Falhas inesperadas: 0,5 por ano   
+- Custo de falha: R$ 2.800   
+
+**Estratégia B - Corretiva:**
+
+- Sem manutenção programada   
+- Falhas esperadas: 3 por ano   
+- Custo por reparo: R$ 1.200   
+- Custo adicional por urgência: +25%   
+- Multa por parada não programada: R$ 400/falha   
+
+Para uma frota de 25 veículos, calcule:
+
+a) Custo anual total da Estratégia A
+
+b) Custo anual total da Estratégia B
+
+c) Qual estratégia é mais econômica?
+
+d) Qual a economia anual escolhendo a melhor opção?

@@ -1,0 +1,145 @@
+---
+date: "2023-08-07T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Atividades de Aprendizagem
+    weight: 20
+title: '02 - Planejamento e programação de manutenção'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#exerc%C3%ADcio-1-mtbf-e-mttr" id="toc-exercício-1-mtbf-e-mttr">Exercício 1: MTBF e MTTR</a></li>
+<li><a href="#exerc%C3%ADcio-2-disponibilidade-da-frota" id="toc-exercício-2-disponibilidade-da-frota">Exercício 2: Disponibilidade da Frota</a></li>
+<li><a href="#exerc%C3%ADcio-3-custo-por-quil%C3%B4metro" id="toc-exercício-3-custo-por-quilômetro">Exercício 3: Custo por Quilômetro</a></li>
+<li><a href="#exerc%C3%ADcio-4-compara%C3%A7%C3%A3o-de-estrat%C3%A9gias-de-manuten%C3%A7%C3%A3o" id="toc-exercício-4-comparação-de-estratégias-de-manutenção">Exercício 4: Comparação de Estratégias de Manutenção</a></li>
+</ul>
+</div>
+
+<div id="exercício-1-mtbf-e-mttr" class="section level2">
+<h2>Exercício 1: MTBF e MTTR</h2>
+<p>Uma empresa de transporte possui um veículo que apresentou as seguintes falhas no último semestre.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Falha</th>
+<th>Tempo de Operação (horas)</th>
+<th>Tempo de Reparo (horas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>850</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>920</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>1.100</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>780</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Calcule:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>O MTBF (Tempo Médio Entre Falhas)</p></li>
+<li><p>O MTTR (Tempo Médio de Reparo)</p></li>
+<li><p>A disponibilidade do veículo</p></li>
+<li><p>Interprete os resultados obtidos</p></li>
+</ol>
+</div>
+<div id="exercício-2-disponibilidade-da-frota" class="section level2">
+<h2>Exercício 2: Disponibilidade da Frota</h2>
+<p>Uma frota de 15 caminhões operou durante um mês (720 horas). Os dados de paradas foram.</p>
+<ul>
+<li>Manutenções preventivas: 180 horas totais<br />
+</li>
+<li>Manutenções corretivas: 95 horas totais<br />
+</li>
+<li>Tempo total disponível: 15 veículos × 720 horas = 10.800 horas</li>
+</ul>
+<p>Calcule:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>O tempo total de operação efetiva</p></li>
+<li><p>A disponibilidade da frota em percentual</p></li>
+<li><p>Quantas horas a frota ficou parada?</p></li>
+<li><p>Se a meta é 95% de disponibilidade, a frota atingiu o objetivo?</p></li>
+</ol>
+</div>
+<div id="exercício-3-custo-por-quilômetro" class="section level2">
+<h2>Exercício 3: Custo por Quilômetro</h2>
+<p>A empresa LogTrans possui os seguintes dados de um veículo no último ano.</p>
+<ul>
+<li>Quilometragem rodada: 85.000 km<br />
+</li>
+<li>Custo com manutenções preventivas: R$ 6.500<br />
+</li>
+<li>Custo com manutenções corretivas: R$ 4.200<br />
+</li>
+<li>Custo com peças e materiais: R$ 3.800<br />
+</li>
+<li>Custo com combustível: R$ 42.500</li>
+</ul>
+<p>Calcule:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>O custo total de manutenção</p></li>
+<li><p>O custo de manutenção por quilômetro</p></li>
+<li><p>O custo total operacional por quilômetro</p></li>
+<li><p>Se o custo de manutenção aumentar 15%, qual será o novo custo por km?</p></li>
+</ol>
+</div>
+<div id="exercício-4-comparação-de-estratégias-de-manutenção" class="section level2">
+<h2>Exercício 4: Comparação de Estratégias de Manutenção</h2>
+<p>Uma empresa está avaliando duas estratégias para manutenção de freios.</p>
+<p><strong>Estratégia A - Preventiva:</strong></p>
+<ul>
+<li>Revisão a cada 25.000 km<br />
+</li>
+<li>Custo por revisão: R$ 650<br />
+</li>
+<li>Previsão: 4 revisões/ano por veículo<br />
+</li>
+<li>Falhas inesperadas: 0,5 por ano<br />
+</li>
+<li>Custo de falha: R$ 2.800</li>
+</ul>
+<p><strong>Estratégia B - Corretiva:</strong></p>
+<ul>
+<li>Sem manutenção programada<br />
+</li>
+<li>Falhas esperadas: 3 por ano<br />
+</li>
+<li>Custo por reparo: R$ 1.200<br />
+</li>
+<li>Custo adicional por urgência: +25%<br />
+</li>
+<li>Multa por parada não programada: R$ 400/falha</li>
+</ul>
+<p>Para uma frota de 25 veículos, calcule:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Custo anual total da Estratégia A</p></li>
+<li><p>Custo anual total da Estratégia B</p></li>
+<li><p>Qual estratégia é mais econômica?</p></li>
+<li><p>Qual a economia anual escolhendo a melhor opção?</p></li>
+</ol>
+</div>
