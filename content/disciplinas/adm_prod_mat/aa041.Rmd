@@ -29,11 +29,11 @@ MathJax.Hub.Config({
 </script>
 
 **PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 15/10/2025. 
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 25/10/2025. 
 
 ## **Atividade de aprendizagem**
 
-### Capacidade de produção 
+### Capacidade de produção A
 
 **1. Exercícios**
 
