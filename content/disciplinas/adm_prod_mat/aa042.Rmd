@@ -68,7 +68,7 @@ Abril|	2.000|
 Maio|	2.500|
 Junho|	3.000|
 
-A empresa tem atualmente 20 funcionários, cada um capaz de produzir 100 bicicletas por mês. O custo de produção por unidade é R$ 1.000. O custo de estocagem é R$ 50 por unidade por mês. O custo de contratação é R$ 2.000 por funcionário, e o de demissão é R$ 1.500.
+A empresa tem atualmente 20 funcionários, cada um capaz de produzir 100 bicicletas por mês. O custo de produção por unidade é R$ 1.000. O custo de armazenagem é R$ 50 por unidade por mês. O custo de contratação é R$ 2.000 por funcionário, e o de demissão é R$ 1.500.
 
 🎯 Estratégias possíveis:
 
@@ -78,7 +78,7 @@ Estratégia B (Perseguição): ajustar a produção mensalmente para igualar a d
 🧠 Perguntas:   
 Calcule a produção mensal constante necessária na Estratégia A.   
 Calcule o estoque final de cada mês na Estratégia A.   
-Calcule o custo total estimado da Estratégia A (produção + estocagem).   
+Calcule o custo total estimado da Estratégia A (produção + armazenagem).   
 Calcule o número de funcionários necessários a cada mês na Estratégia B.   
 Calcule o custo total estimado da Estratégia B (produção + contratação/demissão).   
 Qual estratégia apresenta menor custo total?   
