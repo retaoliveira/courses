@@ -41,13 +41,13 @@ d) Interprete os resultados obtidos
 
 Uma frota de 15 caminhões operou durante um mês (720 horas). Os dados de paradas foram.
 
-- Manutenções preventivas: 180 horas totais   
-- Manutenções corretivas: 95 horas totais   
+- Manutenções preventivas: 180 horas totais da frota  
+- Manutenções corretivas: 95 horas totais da frota
 - Tempo total disponível: 15 veículos × 720 horas = 10.800 horas
 
 Calcule:
 
-a) O tempo total de operação efetiva
+a) O tempo total de operação efetiva (tempo de produção de transportes)
 
 b) A disponibilidade da frota em percentual
 
@@ -73,7 +73,7 @@ b) O custo de manutenção por quilômetro
 
 c) O custo total operacional por quilômetro
 
-d) Se o custo de manutenção aumentar 15%, qual será o novo custo por km?
+d) Se o custo de manutenção aumentar 15%, qual será o novo custo operacional total por km?
 
 ## Exercício 4: Comparação de Estratégias de Manutenção
 
