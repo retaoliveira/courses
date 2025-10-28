@@ -46,7 +46,7 @@ Ela precisa decidir entre produzir internamente ou terceirizar a produção.
 Item|	Produção Interna|	Terceirização|
 -----|-----|-----|
 Custo Fixo Mensal	|R$ 50.000|	R$ 10.000  | 
-Custo Variável por unidade	R$ 3,00	|R$ 6,00 |   
+Custo Variável por unidade|	R$ 3,00	|R$ 6,00 |   
 Preço de Venda por unidade|	R$ 10,00	|R$ 10,00 |   
 
 🧠 Perguntas:   
