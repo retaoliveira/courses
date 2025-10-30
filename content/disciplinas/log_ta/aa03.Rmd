@@ -5,7 +5,7 @@ menu:
   log_ta:
     parent: Atividades de Aprendizagem
     weight: 20
-title: '02 - Planejamento e programação de manutenção'
+title: '03 - Dimensionamento de frotas'
 editor_options: 
   markdown: 
     wrap: 70
@@ -16,91 +16,27 @@ type: docs
 weight: 20
 ---
 
-## Exercício 1: MTBF e MTTR
+1. Quantos veículos serão necessários para atender um cliente com as seguintes características referente ao fluxo de transportes:   
 
-Uma empresa de transporte possui um veículo que apresentou as seguintes falhas no último semestre.
+- Demanda: 50.000 toneladas/mês
 
-|Falha|	Tempo de Operação (horas)|	Tempo de Reparo (horas)|
-|------|-----|-----|
-|1|	850|	6|
-|2|	920|	4|
-|3|	1.100|	8|
-|4|	780	|5|
+- Imobilização média dos veículos: 10%
 
-Calcule:
+- Utilização média da disponibilidade dos veículos: 80%
 
-a) O MTBF (Tempo Médio Entre Falhas)
+- Ciclo dos veículos: 5 dias
 
-b) O MTTR (Tempo Médio de Reparo)
+- Capacidade nominal dos veículos: 80 toneladas-úteis
 
-c) A disponibilidade do veículo
+2. Uma empresa, proprietária de uma frota de veículos destinados ao transporte rodoviário, precisa calcular quantos veículos serão necessários para efetuar a movimentação de 100.000 toneladas-úteis de carga no período de um mês. 
 
-d) Interprete os resultados obtidos
+Sabe-se que a imobilização de veículos é, em média, 10% da frota total e a utilização de veículos chega a 95% dos ativos disponíveis. Sabe-se ainda que o peso médio de cada veículo é 90% da capacidade nominal do veículo, de 27 toneladas. 
 
-## Exercício 2: Disponibilidade da Frota
+O tempo de ciclo para os veículos na rota entre os pontos A e B é equivalente a 4 dias. 
 
-Uma frota de 15 caminhões operou durante um mês (720 horas). Os dados de paradas foram.
+a)	Calcule o número de veículos necessários para a movimentação de toda a demanda de transporte no cenário proposto. 
 
-- Manutenções preventivas: 180 horas totais   
-- Manutenções corretivas: 95 horas totais   
-- Tempo total disponível: 15 veículos × 720 horas = 10.800 horas
+b)	Se houvesse uma redução de um dia no ciclo, qual seria o impacto na necessidade de veículos. 
 
-Calcule:
+c)	Verifique a alteração da necessidade de veículos considerando um incremento no ciclo de meio dia, totalizando 4,5 dias, mas com aumento do carregamento de cada veículo para a capacidade nominal. 
 
-a) O tempo total de operação efetiva
-
-b) A disponibilidade da frota em percentual
-
-c) Quantas horas a frota ficou parada?
-
-d) Se a meta é 95% de disponibilidade, a frota atingiu o objetivo?
-
-## Exercício 3: Custo por Quilômetro
-
-A empresa LogTrans possui os seguintes dados de um veículo no último ano.
-
-- Quilometragem rodada: 85.000 km   
-- Custo com manutenções preventivas: R$ 6.500   
-- Custo com manutenções corretivas: R$ 4.200   
-- Custo com peças e materiais: R$ 3.800   
-- Custo com combustível: R$ 42.500   
-
-Calcule:
-
-a) O custo total de manutenção
-
-b) O custo de manutenção por quilômetro
-
-c) O custo total operacional por quilômetro
-
-d) Se o custo de manutenção aumentar 15%, qual será o novo custo por km?
-
-## Exercício 4: Comparação de Estratégias de Manutenção
-
-Uma empresa está avaliando duas estratégias para manutenção de freios.
-
-**Estratégia A - Preventiva:**
-
-- Revisão a cada 25.000 km   
-- Custo por revisão: R$ 650   
-- Previsão: 4 revisões/ano por veículo   
-- Falhas inesperadas: 0,5 por ano   
-- Custo de falha: R$ 2.800   
-
-**Estratégia B - Corretiva:**
-
-- Sem manutenção programada   
-- Falhas esperadas: 3 por ano   
-- Custo por reparo: R$ 1.200   
-- Custo adicional por urgência: +25%   
-- Multa por parada não programada: R$ 400/falha   
-
-Para uma frota de 25 veículos, calcule:
-
-a) Custo anual total da Estratégia A
-
-b) Custo anual total da Estratégia B
-
-c) Qual estratégia é mais econômica?
-
-d) Qual a economia anual escolhendo a melhor opção?
