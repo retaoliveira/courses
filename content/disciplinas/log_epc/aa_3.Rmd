@@ -1,11 +1,11 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
     weight: 13
-title: 3. Logística Urbana (para todos os alunos)
+title: "3. Logística Urbana: Desafios da última milha"
 editor_options: 
   markdown: 
     wrap: 70
@@ -17,9 +17,26 @@ weight: 13
 ---
 
 
-Assita os vídeos constantes em [Desafios da Logística Urbana](https://www.places.education/cursos/log_all/log_urb/) e responda as questões que seguem na tarefa do Dropbox Paper:
+Leia a matéria no [site](https://www.insper.edu.br/pt/conteudos/gestao-e-negocios/ultima-milha-desafia-empresas-e-expoe-limites-da-logistica-urbana-no-brasil) e responda as questões a seguir. Vamos debater!
 
-1. Defina Logística Urbana
 
-2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
+### 1. Sustentabilidade e infraestrutura:
+
+Como as deficiências estruturais das cidades brasileiras — como congestionamentos e falta de planejamento urbano integrado — podem ser superadas sem aumentar os custos ou as emissões de carbono da entrega de última milha?
+
+### 2. Inovação versus desigualdade:
+
+De que forma a adoção de tecnologias (como lockers inteligentes, modais elétricos e algoritmos de roteirização) pode acentuar desigualdades entre grandes centros urbanos e cidades menores, onde a infraestrutura tecnológica e logística ainda é precária?
+
+### 3. Custos escondidos e modelo de negócio:
+
+Quais são os limites financeiros e operacionais das empresas ao tentar equilibrar rapidez, conveniência e sustentabilidade nas entregas, considerando a pressão por frete grátis e os custos crescentes de operação urbana?
+
+### 4. Papel do poder público:
+
+Como políticas públicas e parcerias público-privadas poderiam ser redesenhadas para favorecer soluções logísticas mais eficientes e inclusivas, em vez de simplesmente transferirem os custos da ineficiência para o setor privado?
+
+### 5. Comportamento do consumidor:
+
+Em que medida a expectativa dos consumidores por entregas cada vez mais rápidas influencia negativamente a sustentabilidade e a viabilidade econômica das soluções de última milha?
 
