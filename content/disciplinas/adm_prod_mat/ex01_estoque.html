@@ -1,0 +1,142 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 25
+title: 3. Planejamento e controle de materiais
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 25
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#atividade-de-aprendizagem" id="toc-atividade-de-aprendizagem"><strong>Atividade de aprendizagem</strong></a></li>
+</ul>
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div id="atividade-de-aprendizagem" class="section level2">
+<h2><strong>Atividade de aprendizagem</strong></h2>
+<p>Estudo de Caso: Gestão de Estoques na Indústria Alfa</p>
+<p>A Indústria Alfa é fabricante de peças automotivas e trabalha com três grandes categorias de estoques: matéria-prima (aço), produtos em processo (componentes montados) e produtos acabados (peças embaladas para distribuição). Os dados para um dos insumos principais, o aço, estão a seguir:</p>
+<p>Demanda anual de aço: 30.000 kg
+Custo de cada pedido de compra: R$ 200,00
+Custo de armazenagem por kg/ano: R$ 1,50
+Preço do aço: R$ 10,00/kg</p>
+<p>Além do aço, a empresa possui 5 itens principais em estoque:</p>
+<ul>
+<li>Aço</li>
+<li>Plástico</li>
+<li>Embalagem</li>
+<li>Componentes eletrônicos</li>
+<li>Adesivos</li>
+</ul>
+<p>A tabela abaixo mostra o valor anual de consumo de cada item:</p>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="36%" />
+<col width="28%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Consumo Anual (kg ou unidades)</th>
+<th>“Preço unitário (R$)</th>
+<th>Valor anual consumido (R$)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 - Aço</td>
+<td>30.000</td>
+<td>10,00</td>
+<td>300.000</td>
+</tr>
+<tr class="even">
+<td>2 - Plástico</td>
+<td>12.000</td>
+<td>8,00</td>
+<td>96.000</td>
+</tr>
+<tr class="odd">
+<td>3 - Embalagem</td>
+<td>20.000</td>
+<td>2,00</td>
+<td>40.000</td>
+</tr>
+<tr class="even">
+<td>4 - Comp. eletrônicos</td>
+<td>2.000</td>
+<td>15,00</td>
+<td>30.000</td>
+</tr>
+<tr class="odd">
+<td>5 - Adesivos</td>
+<td>5.000</td>
+<td>1,00</td>
+<td>5.000</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo 1: Cálculo do Lote Econômico de Compras (LEC) para Aço</p>
+<p>O LEC é calculado pela fórmula de Wilson, que minimiza os custos totais de pedido e armazenagem. A fórmula para o LEC é:</p>
+<p><span class="math display">\[
+Q^* = \sqrt{\frac{2*D*Cpedir}{Cmanter}}
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(Q^*\)</span>: Quantidade ótima de pedido (LEC)</li>
+<li><span class="math inline">\(D\)</span>: Demanda anual</li>
+<li><span class="math inline">\(Cpedir\)</span>: Custo por pedido</li>
+<li><span class="math inline">\(Cmanter\)</span>: Custo de manutenção anual por unidade</li>
+</ul>
+<p>Aplicando os dados:</p>
+<p>D = 30.000 kg</p>
+<p>S = R$ 200,00</p>
+<p>H = R$ 1,50</p>
+<p><span class="math display">\[
+LEC = \sqrt{\frac{2 × 30.000 × 200}{1,5}}
+\]</span>
+<span class="math display">\[
+LEC = \sqrt{\frac{12000000}{1,5}}
+\]</span></p>
+<p><span class="math display">\[
+LEC = \sqrt{8000}
+\]</span></p>
+<p><span class="math display">\[
+LEC = 2828,43
+\]</span></p>
+<p>Resposta: O lote econômico de compras para o aço é de aproximadamente 2.828 kg por pedido.</p>
+<p>Exemplo 2: Cálculo do Ponto de Reposição (PR)</p>
+<p>O ponto de reposição é o nível de estoque no qual um novo pedido deve ser feito para evitar a falta de estoque. A fórmula é:</p>
+<p><span class="math display">\[
+PR = d × L + SS
+\]</span>
+Onde:
+- <span class="math inline">\(PR\)</span>: Ponto de reposição
+- <span class="math inline">\(d\)</span>: Demanda diária
+- <span class="math inline">\(L\)</span>: Tempo de entrega (lead time) em dias
+- <span class="math inline">\(SS\)</span>: Estoque de segurança</p>
+<p>Assumindo que o estoque de segurança como base para o cálculo, e que o lead time é de 5 dias, temos:</p>
+</div>

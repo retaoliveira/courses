@@ -1,0 +1,44 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Extra
+    weight: 40
+title: Matemática Financeira
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 10
+---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+a.	Uma pessoa aplica R$75.000,00 por 68 dias, à taxa de 18% ao ano, no regime de juros simples. Calcule os juros e o capital acumulado?
+
+b.	Qual a taxa de juros anual auferida numa aplicação de R$1.500,00 que produziu o montante de R$2.250,00, após 57 dias de prazo, no regime de juros simples?
+
+c.	Qual a taxa de juros mensais (simples) que transformou uma aplicação de R$2.500,00 em R$3.158,80, após 4 meses?
+
+d.	Um capital de R$35.000,00 foi aplicado à taxa de 18,75% a.a., por 8 meses. Qual o montante gerado ao final do período em regime de juros compostos?
+
+e.	Um financiamento de R$3.200,00 para ser pago em 24 prestações mensais e sucessivas, com primeira vencendo 30 dias após a liberação dos recursos. Calcule o valor da prestação, para uma taxa de juros de 3,17% a.m. 
+
+f.	Um financiamento de R$ 100.000,00 feito por um banco que cobra 5% ao mês de taxa de juros. Quanto deverá pagar se o prazo de empréstimo for de cinco meses? 
+
+g.	Paulo está interessado em comprar uma moto, cujo preço à vista é R$ 4.000,00. Se Paulo der uma entrada de R$ 500,00 e pagar o restante em 24 meses, qual será o valor da prestação se a taxa for de 5% ao mês?
