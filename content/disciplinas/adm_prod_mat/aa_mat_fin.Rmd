@@ -5,7 +5,7 @@ menu:
   adm_prod_mat:
     parent: Extra
     weight: 40
-title: Matemática Financeira
+title: Matemática Financeira - atividade
 editor_options: 
   markdown: 
     wrap: 70
