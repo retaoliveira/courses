@@ -5,7 +5,7 @@ menu:
   dados_grad:
     parent: Tutoriais
     weight: 17
-title: Tutorial 5
+title: Manipulação de dados com dplyr
 weight: 27
 editor_options: 
   markdown: 

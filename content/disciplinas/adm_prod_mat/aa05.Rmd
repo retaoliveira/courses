@@ -1,0 +1,33 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 40
+title: 5.0 - Plano-mestre de produção
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 10
+---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 01/11/2025. 
+
