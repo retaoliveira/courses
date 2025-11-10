@@ -1,0 +1,27 @@
+---
+date: "2025-09-09T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Aulas
+    weight: 45
+title: 'Unidade 05 - Plano-mestre de produção'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+## Apresentação
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://adm-producao.github.io/aula05/', height = "400px")
+```
+
+[LINK](https://adm-producao.github.io/aula05/)
+
