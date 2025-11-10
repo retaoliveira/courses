@@ -29,5 +29,79 @@ MathJax.Hub.Config({
 </script>
 
 **PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 01/11/2025. 
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 20/11/2025. 
+
+### CASO PRÁTICO – EMPRESA FITSPORT
+
+### **Contexto**
+
+A FitSport fabrica tênis esportivos modelo "Runner Pro". Você é o Planejador de Produção e precisa elaborar o PMP para os próximos 6 meses. A demanda prevista e os pedidos firmes para os próximos meses são os seguintes:
+
+Tabela 1 – Demanda Prevista e Pedidos Firmes| | |
+--------|-|-|
+Mês	|Previsão|	Pedidos Firmes|
+Jan	|2.500  |2.800|
+Fev	|2.200	|1.900|
+Mar	|3.000	|2.400|
+Abr	|3.500	|1.800|
+Mai	|4.000	|1.200|
+Jun	|2.800	|800|
+
+Tabela 2 – Dados Operacionais e Custos|
+-------|----|
+Estoque inicial (Janeiro): |500 unidades|
+Capacidade mensal: |3.500 unidades|
+Lote mínimo de produção: |1.000 unidades|
+Estoque de segurança desejado: |300 unidades|
+Lead time de produção:| 1 mês|
+Produção normal: |R$ 80/unidade|
+Hora extra: |R$ 100/unidade (limite: +500 unidades/mês)|
+Estoque: |R$ 5/unidade/mês|
+Falta:| R$ 50/unidade (perda de venda)|
+
+
+### **Instruções**
+
+#### **Parte A – Definição da Demanda**
+
+**Questão 1:**
+
+Para cada mês, determine qual será a demanda real que o PMP deve considerar. Justifique sua escolha.
+
+#### **Parte B – Elaboração do PMP**
+
+**Questão 2:**
+
+Complete a tabela do PMP abaixo, calculando:
+
+Demanda (já definida na Parte A).  
+Produção planejada (PMP).  
+Estoque final.  
+Análise de capacidade.  
+
+Mês	|Demanda	|Estoque Inicial|	Produção (PMP)|	Estoque Final|	Capacidade Utilizada	|Status|
+----|-------|------|-------|-------|-------|-------|-------|
+Jan	| |	500	| |	 |	 |	 |	 |			
+Fev	| |	 |	 |	 |	 |	 |	 |					
+Mar	| |	 |	 |	 |	 |	 |	 |					
+Abr	| |	 |	 |	 |	 |	 |	 |  					
+Mai	| |	 |	 |	 |	 |	 |	 |					
+Jun	| |	 |	 |	 |	 |	 |	 |					
+
+Restrições a considerar:
+
+- Manter estoque de segurança de 300 unidades sempre que possível.  
+- Respeitar capacidade de 3.500 unidades/mês.  
+- Usar lotes mínimos de 1.000 unidades.  
+- Evitar rupturas de estoque.  
+
+
+#### **Parte C – Análise Crítica**
+
+**Questão 3:**
+
+Identifique:    
+a) Em quais meses há risco de ruptura ou necessidade de hora extra?    
+b) Qual o custo total da sua solução considerando produção e estoque?    
+c) Quais ajustes você sugeriria para otimizar o plano?
 

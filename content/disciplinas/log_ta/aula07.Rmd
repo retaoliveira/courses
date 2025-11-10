@@ -1,0 +1,27 @@
+---
+date: "2023-08-07T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Aulas
+    weight: 25
+title: 'Aula 07 - Custos em transportes'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+## Apresentação
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://logisticata.github.io/class07/#1', height = "400px")
+```
+
+[LINK](https://logisticata.github.io/class07/#1)
+
+
