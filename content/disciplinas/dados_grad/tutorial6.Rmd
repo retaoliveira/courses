@@ -31,19 +31,18 @@ library(tidyverse)
 
 ## Carregar arquivos
 
-1. Façam o download do arquivo .zip. 
-2. Removam os arquivos de dados do arquivo .zip.
-3. Carregue os arquivos de dados usando a função `read_csv` e atribuindo cada conjunto de dados a um objeto
+1. Carregue os arquivos de dados usando a função `read_csv` e atribuindo cada conjunto de dados a um objeto
 
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-# professions <- read_csv("D:/Dropbox/Public/dados/professions.csv")
-# dates <- read_csv("D:/Dropbox/Public/dados/dates.csv")
-# works <- read_csv("D:/Dropbox/Public/dados/works.csv")
-# enrolment <- read_csv("D:/Dropbox/Public/dados/enrolment.csv")
-# survey <- read_csv("D:/Dropbox/Public/dados/survey.csv")
-# purchases <- read_csv("D:/Dropbox/Public/dados/purchases.csv")
-# prices <- read_csv("D:/Dropbox/Public/dados/prices.csv")
+professions <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/scientists/professions.csv?token=GHSAT0AAAAAADODRWGABV7PFMKVBRBN7JE42ISJR2A")
+dates <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/scientists/dates.csv?token=GHSAT0AAAAAADODRWGA2A3FU2NORGWJR4KE2ISJQQQ")
+works <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/scientists/works.csv?token=GHSAT0AAAAAADODRWGB2WL6HQ4PMA56XD722ISJSJQ")
+enrolment <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/students/enrolment.csv?token=GHSAT0AAAAAADODRWGA7BUJXULHJSPGFIH42ISJQDA")
+survey <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/students/survey.csv?token=GHSAT0AAAAAADODRWGAWVNBU5L7VC5VMGYW2ISJPWQ")
+purchases <- read_csv("https://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/sales/purchases.csv?token=GHSAT0AAAAAADODRWGB6D25ZMYOUFJ2LSBS2ISJKCQ")
+prices <- read_csv("http://raw.githubusercontent.com/retaoliveira/relements/eb1a91ed27d6210830e37862364a73c92b461280/data/sales/prices.csv?token=GHSAT0AAAAAADODRWGB7FKDOUAT6PZR3IO22ISJI3Q")
+
 ```
 
 # Manipulação de dados - mulheres cientistas
