@@ -1,6 +1,6 @@
 ---
 title: "Lab 5 - manipulação de dados"
-draft: true
+draft: false
 date: '2023-04-26T00:00:00+01:00'
 menu:
   dados_grad:
