@@ -5,7 +5,7 @@ menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
     weight: 45
-title: 5.0 - Plano-mestre de produção
+title: 5.0 Plano-mestre de produção
 editor_options: 
   markdown: 
     wrap: 70
