@@ -5,7 +5,7 @@ menu:
   adm_prod_mec:
     parent: Atividades de aprendizagem
     weight: 40
-title: 4.1 Capacidade de produção A
+title: 4. Capacidade de produção
 editor_options: 
   markdown: 
     wrap: 70
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
 </script>
 
 **PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MEC> no início do assunto, até o dia 15/11/2025. 
+Essa atividade deve ser resolvida individualmente e encaminhada por e-mail (renataoliveira@gmail.com), com <ADM-MEC> no início do assunto, até o dia 20/11/2025. 
 
 ## **Atividade de aprendizagem**
 
@@ -55,3 +55,14 @@ Mar |4000|  |
 Abr |3200|  |
 
 Considere também que cada produto da família em análise consuma (tempo-padrão) 3 minutos do recurso crítico (RC). O RC tem índices de utilização de 62,5% e de eficiência de 80%. Preencha a tabela com a capacidade real mínima necessária em horas para a produção dos produtos desta família.
+
+5. Plano Agregado de Produção
+
+Mês|	Jun|	Jul|	Ago|	Set|	Out|	Nov|
+---|---|----|----|----|----|----|
+Demanda prevista|	2000|	2800|	3600|	3600|	4000|	3200|
+
+Considere também que cada produto da família em análise consuma (tempo-padrão) 3 minutos do recurso crítico RC. O RC tem índices de utilização de 62,5% e de eficiência de 80%. Cada operador do RC possui 180 horas mensais. (i) Determine a capacidade total teórica (ou disponível) necessária em horas por mês para a produção dos produtos da família apresentada; e (ii) Calcule o número de funcionários necessários para cada política de produção.
+
+a) Política de acompanhamento da demanda com a produção (lote a lote)
+b) Política de nivelamento da produção

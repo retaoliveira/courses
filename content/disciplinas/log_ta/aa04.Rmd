@@ -16,3 +16,37 @@ type: docs
 weight: 25
 ---
 
+1.	Você, técnico em transportes, foi contratado por uma empresa de transporte rodoviário de cargas para calcular os custos totais anuais (custo fixo e custo variável) da empresa, considerando apenas dois atributos, a saber: (i) depreciação e; (ii) custo com consumo de combustível. Considere as seguintes premissas para o cálculo:
+
+a.	Período pretendido de uso do veículo: 1 (um) ano   
+b.	Valor de aquisição do veículo sem pneus: R$ 300.000   
+c.	Valor de revenda do veículo após um ano de uso: R$ 200.000   
+d.	IPVA: R$ 2234,50   
+e.	Autonomia (consumo de combustível) do veículo: 3,5 km/litro   
+f.	Preço do combustível: R$ 5,00/litro   
+g.	Extensão média circulada mensalmente: 20.000 km   
+
+
+2.	Você, técnico em transportes, foi contratado por uma empresa de transporte rodoviário de cargas para calcular os custos totais anuais (custo fixo e custo variável) da empresa, considerando apenas três atributos, a saber: (i) depreciação; licenciamento e seguro obrigatório, e; (ii) custo com consumo de combustível. Considere as seguintes premissas para o cálculo: 
+
+a.	Período pretendido de uso do veículo: 1 (um) ano   
+b.	Valor de aquisição do veículo sem pneus: R$ 320.000   
+c.	Valor de revenda do veículo após um ano de uso: R$ 210.000   
+d.	Seguro obrigatório: 48,20  
+e.	IPVA: R$ 825,32   
+f.	Autonomia (consumo de combustível) do veículo: 3,1 km/litro   
+g.	Preço do combustível: R$ 5,50/litro   
+h.	Extensão média circulada mensalmente: 15.000 km    
+
+3.	Você, técnico em transportes, foi contratado por uma empresa de transporte rodoviário de cargas para calcular os custos totais anuais (custo fixo e custo variável) da empresa, considerando três atributos, a saber: (i) depreciação; (ii) salário da tripulação e; (ii) custo com consumo de combustível. Considere as seguintes premissas para o cálculo: 
+
+a.	Período pretendido de uso do veículo: 2 (dois) anos   
+b.	Valor de aquisição do veículo sem pneus: R$ 300.000,00   
+c.	Valor de revenda do veículo após dois anos de uso: R$ 150.000,00   
+d.	Autonomia (consumo de combustível) do veículo: 3,1 km/litro   
+e.	Preço do combustível: R$ 5,50/litro   
+f.	Extensão média circulada mensalmente: 25.000 km   
+g.	Salário Médio mensal do Motorista: R$ 1.350,00    
+h.	Número de motoristas na empresa: 2 (dois)   
+i.	Encargos sociais: 65% do valor do salário   
+
