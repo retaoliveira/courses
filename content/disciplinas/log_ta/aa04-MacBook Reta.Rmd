@@ -1,0 +1,67 @@
+---
+date: "2023-08-07T00:00:00+01:00"
+draft: false
+menu:
+  log_ta:
+    parent: Atividades de Aprendizagem
+    weight: 25
+title: '04 - Custos em transportes'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+---
+
+class: inverse, center, middle
+
+# Material Complementar
+
+---
+
+# Planilha para Download
+
+### Modelo de Planilha de Custos
+r
+
+Código para gerar planilha de custos em Excel
+library(openxlsx)
+
+Criar planilha
+wb <- createWorkbook() addWorksheet(wb, "Custos_Fixos") addWorksheet(wb, "Custos_Variaveis") addWorksheet(wb, "Resumo")
+
+… (adicionar dados e fórmulas)
+saveWorkbook(wb, "Planilha_Custos_Transporte.xlsx")
+
+### Disponível para download após a aula
+
+---
+
+# Exercício Prático
+
+### Calcule os custos da sua operação:
+
+**Dados do seu veículo:**
+- Valor de aquisição: __________
+- Km médio/mês: __________
+- Consumo médio: __________
+- Salário do motorista: __________
+
+**Calcule:**
+1. Custo fixo mensal
+2. Custo variável por km
+3. Custo total por km
+4. Ponto de equilíbrio operacional
+
+**Use a planilha fornecida!**
+
+
+```{r xaringan-countdown, echo=FALSE}
+
+countdown(minutes = 3, seconds = 0)
+```
