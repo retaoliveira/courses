@@ -46,7 +46,7 @@ A empresa Magmar SA produz um tipo de produto (A), com uma estrutura de montagem
 ```{r estrutura_q1, echo=FALSE} 
 estrutura_q1 <- data.frame( Produto = c("A", "A", "B"), Componente = c("B", "C", "C"), Quantidade = c(2, 3, 3) )
 
-kable(estrutura_q1, caption = "Estrutura de Montagem do Produto A") %>% kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE)
+kable(estrutura_q1) %>% kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE)
 ```
 
 **Lead Times de Montagem:**
