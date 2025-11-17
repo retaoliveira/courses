@@ -1,0 +1,220 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 45
+title: 6.0 MRP e MRPII
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 15
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+<div id="TOC">
+<ul>
+<li><a href="#quest%C3%A3o-1---empresa-magmar-sa" id="toc-questão-1---empresa-magmar-sa">Questão 1 - Empresa Magmar SA</a>
+<ul>
+<li><a href="#estrutura-do-produto" id="toc-estrutura-do-produto">Estrutura do Produto</a></li>
+</ul></li>
+<li><a href="#quest%C3%A3o-2" id="toc-questão-2">Questão 2</a></li>
+</ul>
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<p><strong>PARA QUEM NÃO COMPARECEU AO ENCONTRO:</strong>
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (<a href="mailto:renataoliveira@gmail.com" class="email">renataoliveira@gmail.com</a>), com <ADM-MAT> no início do assunto, até o dia 30/11/2025.</p>
+<div id="questão-1---empresa-magmar-sa" class="section level1">
+<h1>Questão 1 - Empresa Magmar SA</h1>
+<p>A empresa Magmar SA produz um tipo de produto (A), com uma estrutura de montagem dada pela seguinte rede de materiais:</p>
+<div id="estrutura-do-produto" class="section level2">
+<h2>Estrutura do Produto</h2>
+<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:estrutura_q1)(#tab:estrutura_q1)Estrutura de Montagem do Produto A
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Produto
+</th>
+<th style="text-align:left;">
+Componente
+</th>
+<th style="text-align:right;">
+Quantidade
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lead Times de Montagem:</strong></p>
+<ul>
+<li>A = 1 semana</li>
+<li>B = 2 semanas<br />
+</li>
+<li>C = 1 semana</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li>Usando estas informações, construa uma árvore do produto.<br />
+</li>
+<li>A empresa necessita entregar 10 unidades do produto A na semana 4 e 5 unidades na sétima semana. Não existe estoque em armazém de qualquer dos produtos, nem foram efetuadas nenhuma encomenda dos subprodutos que compõem o produto final.</li>
+</ol>
+<ol style="list-style-type: lower-roman">
+<li>Determine as quantidades a encomendar dos produtos/componentes e os períodos em que devem ser efetuadas as encomendas, considerando o política de dimensionamento lote a lote.</li>
+<li>É possível atender as necessidades mencionadas?</li>
+</ol>
+</div>
+</div>
+<div id="questão-2" class="section level1">
+<h1>Questão 2</h1>
+<p>Um programador gostaria de saber se um pedido de 200 unidades do produto A poderia ser cumprido no período 8, partindo do princípio que estamos no período 0. Note-se que, não existe qualquer estoque de qualquer componente e todos os tamanhos de pedido são lote a lote. A estrutura de montagem encontra-se representada na tabela a seguir.</p>
+<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Item
+</th>
+<th style="text-align:left;">
+Componente
+</th>
+<th style="text-align:right;">
+Quantidade
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li><p>Apresente a árvore do produto A.</p></li>
+<li><p>Considerando os seguintes lead times A=1, B=2, C=1, D=1, E=2 e F=1, apresente os planos de produção dos itens A, B, C, D, E e F e determine se o pedido de 100 unidades do produto A no período 6 e 200 unidades do produto A no período 8, podem ser cumpridos.</p></li>
+</ol>
+<p><strong>Lead Times:</strong></p>
+<ul>
+<li>A = 1 período</li>
+<li>B = 2 períodos</li>
+<li>C = 1 período</li>
+<li>D = 1 período</li>
+<li>E = 2 períodos</li>
+<li>F = 1 período</li>
+</ul>
+</div>
