@@ -19,9 +19,9 @@ weight: 25
 ## Apresentação
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://logisticata.github.io/class08/#1', height = "400px")
+knitr::include_url('https://logisticata.github.io/aula08/', height = "400px")
 ```
 
-[LINK](https://logisticata.github.io/class08/#1)
+[LINK](https://logisticata.github.io/aula08/)
 
 
