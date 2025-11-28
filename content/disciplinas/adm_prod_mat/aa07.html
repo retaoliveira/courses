@@ -1,0 +1,353 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mat:
+    parent: Atividades de aprendizagem
+    weight: 45
+title: 7.0 Programação da produção
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 15
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#atividade-roteiro-de-produ%C3%A7%C3%A3o-sequenciamento-e-carga-de-m%C3%A1quinas" id="toc-atividade-roteiro-de-produção-sequenciamento-e-carga-de-máquinas">Atividade: Roteiro de Produção, Sequenciamento e Carga de Máquinas</a>
+<ul>
+<li><a href="#grupo-1-roteiro-de-produ%C3%A7%C3%A3o" id="toc-grupo-1-roteiro-de-produção">Grupo 1: Roteiro de Produção</a></li>
+<li><a href="#grupo-2-sequenciamento-com-fifo-e-mtp" id="toc-grupo-2-sequenciamento-com-fifo-e-mtp">Grupo 2: Sequenciamento com FIFO e MTP</a></li>
+<li><a href="#grupo-3-sequenciamento-com-mde" id="toc-grupo-3-sequenciamento-com-mde">Grupo 3: Sequenciamento com MDE</a></li>
+<li><a href="#grupo-4-sequenciamento-com-mfe" id="toc-grupo-4-sequenciamento-com-mfe">Grupo 4: Sequenciamento com MFE</a></li>
+<li><a href="#grupo-5-carga-de-m%C3%A1quinas-e-decis%C3%B5es" id="toc-grupo-5-carga-de-máquinas-e-decisões">Grupo 5: Carga de Máquinas e Decisões</a></li>
+</ul></li>
+</ul>
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<p><strong>PARA QUEM NÃO COMPARECEU AO ENCONTRO:</strong>
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (<a href="mailto:renataoliveira@gmail.com" class="email">renataoliveira@gmail.com</a>), com <ADM-MAT> no início do assunto, até o dia 10/12/2025.</p>
+<div id="atividade-roteiro-de-produção-sequenciamento-e-carga-de-máquinas" class="section level1">
+<h1>Atividade: Roteiro de Produção, Sequenciamento e Carga de Máquinas</h1>
+<p>Uma fábrica produz o produto X (peça metálica simples). Operações e tempos por unidade:
+| Operação | Máquina | Tempo (min/unid.) |
+|———-|———|——————-|
+| Corte | M1 | 6 |
+| Furação | M2 | 4 |
+| Dobra | M1 | 5 |
+| Pintura | M3 | 8 |</p>
+<p>Em M1 (Corte + Dobra): tempo total por unidade = 11 min/unid.
+Pedidos para M1 nesta semana:
+| Pedido | Quantidade (unid.) | Data de Entrega (dias a partir de hoje) | Ordem de Chegada |
+|——–|——————-|——————————————|——————|
+| P1 | 10 | 3 | 1º |
+| P2 | 5 | 2 | 2º |
+| P3 | 20 | 7 | 3º |
+| P4 | 8 | 5 | 4º |
+| P5 | 12 | 4 | 5º |</p>
+<p>Tempos totais em M1 (já calculados):
+| Pedido | Tempo em M1 (min) |
+|——–|——————-|
+| P1 | 110 |
+| P2 | 55 |
+| P3 | 220 |
+| P4 | 88 |
+| P5 | 132 |</p>
+<p>Capacidade de M1: 8h/dia × 5 dias = 40h/semana = 2.400 min/semana.<br />
+Carga semanal total em M1 (já calculada): 2.520 min/semana ≈ 42h (inclui produto X + outros produtos).</p>
+<div id="grupo-1-roteiro-de-produção" class="section level2">
+<h2>Grupo 1: Roteiro de Produção</h2>
+<p><strong>Foco: Estrutura e importância do roteiro de produção como base para planejamento e controle.</strong></p>
+<p><strong>Tarefas:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Monte o roteiro de produção para o produto X. Preencha esta tabela com todas as operações (Corte, Furação, Dobra, Pintura), incluindo sequência, máquinas, tempos e precedências (ex.: “Após Corte”).</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Nº Operação</th>
+<th>Operação</th>
+<th>Máquina</th>
+<th>Tempo (min/unid.)</th>
+<th>Precedência</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+<td>Corte</td>
+<td>M1</td>
+<td>6</td>
+<td>Início</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li>Responda em 5 linhas:</li>
+</ol>
+<p>• Por que o roteiro é base para o planejamento e controle da produção (PCP)?<br />
+• O que pode acontecer se ele não for mantido atualizado (ex.: mudanças em máquinas ou tempos)?<br />
+Para Apresentar (5 min): Mostre a tabela completa e explique como o roteiro conecta com sequenciamento e carga de máquinas (ex.: define o que e onde processar).</p>
+<hr>
+</div>
+<div id="grupo-2-sequenciamento-com-fifo-e-mtp" class="section level2">
+<h2>Grupo 2: Sequenciamento com FIFO e MTP</h2>
+<p><strong>Foco: Comparar FIFO (justiça) e MTP (eficiência em tempo de espera).</strong></p>
+<p><strong>Tarefas:</strong>
+1. Use os tempos totais em M1 (já calculados):</p>
+<p>P1=110 min;<br />
+P2=55 min;<br />
+P3=220 min;<br />
+P4=88 min;<br />
+P5=132 min.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Determine as sequências. Preencha esta tabela:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Regra</th>
+<th>Sequência (1º, 2º, 3º, 4º, 5º)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FIFO</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MTP</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>• FIFO (Primeiro a Entrar, Primeiro a Sair): Ordene pela ordem de chegada (P1, P2, P3, P4, P5).<br />
+• MTP (Menor Tempo de Processamento): Ordene do menor tempo total para o maior.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Responda em 5–6 linhas:</li>
+</ol>
+<p>• Em qual regra os pedidos menores (menor tempo) são beneficiados?<br />
+• Qual regra parece mais “justa” para clientes e por quê?<br />
+• Qual reduz o tempo médio de espera na fila? Explique brevemente.<br />
+Para Apresentar (5 min): Mostre a tabela de sequências e discuta quando usar cada regra (ex.: FIFO para clientes, MTP para eficiência).</p>
+<hr>
+</div>
+<div id="grupo-3-sequenciamento-com-mde" class="section level2">
+<h2>Grupo 3: Sequenciamento com MDE</h2>
+<p><strong>Foco: Cumprimento de prazos com MDE (Menor Data de Entrega).</strong></p>
+<p><strong>Tarefas:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Use as datas de entrega (já listadas no Caso Comum):</li>
+</ol>
+<p>P1=3 dias;<br />
+P2=2 dias;<br />
+P3=7 dias;<br />
+P4=5 dias;<br />
+P5=4 dias.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Determine a sequência. Preencha esta tabela:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Pedido</th>
+<th>Data de Entrega (dias)</th>
+<th>Ordem na regra MDE (1º, 2º, …)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>P2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>P3</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>P4</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>P5</td>
+<td>4</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>MDE (Menor Data de Entrega): Ordene da data mais próxima (menor número de dias) para a mais distante.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Assuma 480 min/dia e início hoje (dia 0). Estime se algum pedido tende a atrasar: some tempos cumulativos da sequência MDE e compare com (dias × 480). Exemplo: 1º pedido termina em seu tempo; 2º em soma dos dois, etc. Registre em 2–3 linhas.</p></li>
+<li><p>Responda em 5–6 linhas:</p></li>
+</ol>
+<p>• Por que MDE é útil para empresas com prazos variados?<br />
+• Ela garante que ninguém atrase? Explique limitações (ex.: capacidade limitada).<br />
+Para Apresentar (5 min): Mostre a tabela de sequência e uma estimativa simples de prazos (ex.: “P2 termina no dia 1, mas P3 pode atrasar”).</p>
+<hr>
+</div>
+<div id="grupo-4-sequenciamento-com-mfe" class="section level2">
+<h2>Grupo 4: Sequenciamento com MFE</h2>
+<p><strong>Foco: Análise de folga e criticidade com MFE (Menor Folga em Relação à Entrega).</strong></p>
+<p><strong>Tarefas:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Use esta tabela com folgas já calculadas (hoje = dia 0; 1 dia = 480 min):</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Pedido</th>
+<th>Dias até a Entrega</th>
+<th>Tempo em M1 (min)</th>
+<th>Folga (min)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1</td>
+<td>3</td>
+<td>110</td>
+<td>1.330</td>
+</tr>
+<tr class="even">
+<td>P2</td>
+<td>2</td>
+<td>55</td>
+<td>905</td>
+</tr>
+<tr class="odd">
+<td>P3</td>
+<td>7</td>
+<td>220</td>
+<td>3.140</td>
+</tr>
+<tr class="even">
+<td>P4</td>
+<td>5</td>
+<td>88</td>
+<td>2.312</td>
+</tr>
+<tr class="odd">
+<td>P5</td>
+<td>4</td>
+<td>132</td>
+<td>1.788</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li><p>(Folga = (Dias × 480) – Tempo em M1.)</p></li>
+<li><p>Determine a sequência. Preencha esta tabela:
+| Pedido | Folga (min) | Ordem na regra MFE (1º, 2º, …) |
+|——–|————-|——————————–|
+| P1 | 1.330 | |
+| P2 | 905 | |
+| P3 | 3.140 | |
+| P4 | 2.312 | |
+| P5 | 1.788 | |</p></li>
+</ol>
+<p>• MFE (Menor Folga em Relação à Entrega): Ordene da menor folga (mais “apertado”) para a maior.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Responda em 5–6 linhas:</li>
+</ol>
+<p>• Como MFE difere de MDE (que olha só a data)?<br />
+• Em que situação real MFE é melhor (ex.: pedidos com tempos de processamento muito diferentes)?<br />
+Para Apresentar (5 min): Mostre a tabela de folgas e a sequência MFE. Explique a lógica: “Prioriza quem tem menos ‘espaço’ até o prazo”.</p>
+<hr>
+</div>
+<div id="grupo-5-carga-de-máquinas-e-decisões" class="section level2">
+<h2>Grupo 5: Carga de Máquinas e Decisões</h2>
+<p><strong>Foco: Análise de capacidade e decisões gerenciais (gargalos, ociosidades).</strong></p>
+<p><strong>Tarefas:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Use estes dados já calculados para M1:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capacidade semanal</td>
+<td>2.400 min (40h)</td>
+</tr>
+<tr class="even">
+<td>Carga total semanal</td>
+<td>2.520 min (~42h)</td>
+</tr>
+<tr class="odd">
+<td>Excesso de carga</td>
+<td>120 min (~2h)</td>
+</tr>
+<tr class="even">
+<td>% de Carga</td>
+<td>105%</td>
+</tr>
+<tr class="odd">
+<td>(Cálculo: (2.520 / 2.400) × 100 = 105%.)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Classifique em 1–2 linhas:
+• É gargalo (sobrecarga) ou ociosidade? O que significa 105% de carga?</p></li>
+<li><p>Escolha duas decisões possíveis (marque e descreva brevemente):<br />
+• ( ) Horas extras (ex.: +2h na semana).<br />
+• ( ) Subcontratação de parte da produção (ex.: terceirizar P3).<br />
+• ( ) Investimento em nova máquina/turno (ex.: comprar outra M1).<br />
+• ( ) Ajuste no roteiro (ex.: redistribuir Dobra para outra máquina). .</p></li>
+<li><p>Responda em 5–6 linhas:<br />
+• Descreva as duas decisões escolhidas.<br />
+• Qual é mais viável no curto prazo para uma empresa pequena? Justifique (ex.: custo, tempo de implementação).
+Para Apresentar (5 min): Mostre a tabela de dados e explique as decisões: “Com gargalo de 2h, priorizamos horas extras para resolver rápido”.</p></li>
+</ol>
+</div>
+</div>
