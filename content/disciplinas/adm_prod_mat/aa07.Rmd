@@ -35,6 +35,7 @@ Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail 
 # Atividade: Roteiro de Produção, Sequenciamento e Carga de Máquinas
 
 Uma fábrica produz o produto X (peça metálica simples). Operações e tempos por unidade:
+
 | Operação | Máquina | Tempo (min/unid.) |
 |----------|---------|-------------------|
 | Corte | M1 | 6 |
@@ -44,6 +45,7 @@ Uma fábrica produz o produto X (peça metálica simples). Operações e tempos 
 
 Em M1 (Corte + Dobra): tempo total por unidade = 11 min/unid.
 Pedidos para M1 nesta semana:
+
 | Pedido | Quantidade (unid.) | Data de Entrega (dias a partir de hoje) | Ordem de Chegada |
 |--------|-------------------|------------------------------------------|------------------|
 | P1 | 10 | 3 | 1º |
@@ -53,6 +55,7 @@ Pedidos para M1 nesta semana:
 | P5 | 12 | 4 | 5º |
 
 Tempos totais em M1 (já calculados):
+
 | Pedido | Tempo em M1 (min) |
 |--------|-------------------|
 | P1 | 110 |

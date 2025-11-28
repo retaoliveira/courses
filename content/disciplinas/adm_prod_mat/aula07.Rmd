@@ -5,7 +5,7 @@ menu:
   adm_prod_mat:
     parent: Aulas
     weight: 45
-title: 'Unidade 06 - MRP e MRP II'
+title: 'Unidade 07 - Programação da produção'
 editor_options: 
   markdown: 
     wrap: 70
@@ -20,8 +20,8 @@ weight: 25
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://adm-producao.github.io/aula06/', height = "400px")
+knitr::include_url('https://adm-producao.github.io/aula07/', height = "400px")
 ```
 
-[LINK](https://adm-producao.github.io/aula06/)
+[LINK](https://adm-producao.github.io/aula07/)
 
