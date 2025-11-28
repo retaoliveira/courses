@@ -1,0 +1,87 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mec:
+    parent: Atividades de aprendizagem
+    weight: 45
+title: 6.0 MRP e MRPII
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 15
+---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 30/11/2025. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE) 
+library(tidyverse) 
+library(knitr) 
+library(kableExtra)
+```
+
+# Questão 1 - Empresa Magmar SA
+
+A empresa Magmar SA produz um tipo de produto (A), com uma estrutura de montagem dada pela seguinte rede de materiais:
+
+## Estrutura do Produto
+```{r estrutura_q1, echo=FALSE} 
+estrutura_q1 <- data.frame( Produto = c("A", "A", "B"), Componente = c("B", "C", "C"), Quantidade = c(2, 3, 3) )
+
+kable(estrutura_q1) %>% kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE)
+```
+
+**Lead Times de Montagem:**
+
+- A = 1 semana
+- B = 2 semanas  
+- C = 1 semana
+
+a) Usando estas informações, construa uma árvore do produto.   
+b) A empresa necessita entregar 10 unidades do produto A na semana 4 e 5 unidades na sétima semana. Não existe estoque em armazém de qualquer dos produtos, nem foram efetuadas nenhuma encomenda dos subprodutos que compõem o produto final. 
+  (i) Determine as quantidades a encomendar dos produtos/componentes e os períodos em que devem ser efetuadas as encomendas, considerando o política de dimensionamento lote a lote.
+  (ii) É possível atender as necessidades mencionadas?
+
+
+# Questão 2
+
+Um programador gostaria de saber se um pedido de 200 unidades do produto A poderia ser cumprido no período 8, partindo do princípio que estamos no período 0. Note-se que, não existe qualquer estoque de qualquer componente e todos os tamanhos de pedido são lote a lote. A estrutura de montagem encontra-se representada na tabela a seguir.
+
+```{r estrutura_q2, echo=FALSE, message=FALSE, warning=FALSE}
+estrutura_q2 <- data.frame( Item = c("A", "A", "B", "B", "C", "C"), Componente = c("B", "C", "C", "D", "E", "F"), Quantidade = c(2, 2, 4, 1, 1, 1) )
+
+kable(estrutura_q2) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE)
+```
+
+a) Apresente a árvore do produto A.
+
+b) Considerando os seguintes lead times A=1, B=2, C=1, D=1, E=2 e F=1, apresente os planos de produção dos itens A, B, C, D, E e F e determine se o pedido de 100 unidades do produto A no período 6 e 200 unidades do produto A no período 8, podem ser cumpridos.
+
+**Lead Times:**
+
+- A = 1 período
+- B = 2 períodos
+- C = 1 período
+- D = 1 período
+- E = 2 períodos
+- F = 1 período
+

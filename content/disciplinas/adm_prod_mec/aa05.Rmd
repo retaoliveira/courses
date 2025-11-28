@@ -29,7 +29,7 @@ MathJax.Hub.Config({
 </script>
 
 **PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 20/11/2025. 
+Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 10/12/2025. 
 
 ### CASO PRÁTICO – EMPRESA FITSPORT
 
