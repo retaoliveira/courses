@@ -179,6 +179,7 @@ Para Apresentar (5 min): Mostre a tabela de sequência e uma estimativa simples 
 
 
 3.	Determine a sequência. Preencha esta tabela:
+
 | Pedido | Folga (min) | Ordem na regra MFE (1º, 2º, …) |
 |--------|-------------|--------------------------------|
 | P1 | 1.330 |  |
