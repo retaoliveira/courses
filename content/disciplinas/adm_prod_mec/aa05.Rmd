@@ -51,7 +51,6 @@ Tabela 2 – Dados Operacionais e Custos|
 -------|----|
 Estoque inicial (Janeiro): |500 unidades|
 Capacidade mensal: |3.500 unidades|
-Lote mínimo de produção: |1.000 unidades|
 Estoque de segurança desejado: |300 unidades|
 Lead time de produção:| 1 mês|
 Produção normal: |R$ 80/unidade|
