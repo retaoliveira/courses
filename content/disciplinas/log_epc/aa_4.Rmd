@@ -17,7 +17,7 @@ weight: 15
 ---
 
 
-Leia do artigo [O uso da tecnologia nas adversidades da gestão de transportes](https://github.com/retaoliveira/relements/raw/main/texto/ti_transportes.pdf). Responda as questões a seguir:
+Leia do artigo [O uso da tecnologia nas adversidades da gestão de transportes](E:/Google Drive/Meu Drive/02_work/01_disciplinas/2025_2/02_grad_logistica/logistica_graduacao/05_atividades_aprendizagem/05_atividades_aprendizagem/logistica_2022/TI/ti2013.pdf). Responda as questões a seguir:
 
 
 
