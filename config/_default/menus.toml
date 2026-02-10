@@ -91,19 +91,19 @@
 
 [[main]]
   parent = "Disciplinas"
-  name = "Logística - Eng. Produção Civil - 2025/2"
+  name = "Logística - Eng. Produção Civil - 2026/1"
   url = "disciplinas/log_epc/"
   weight = 30
   
 [[main]]
   parent = "Disciplinas"
-  name = "Planejamento e Controle da Produção - Eng. Materiais - 2025/2"
+  name = "Planejamento e Controle da Produção - Eng. Materiais - 2026/1"
   url = "disciplinas/adm_prod_mat/"
   weight = 10
   
 [[main]]
   parent = "Disciplinas"
-  name = "Planejamento e Controle da Produção - Eng. Mecânica - 2025/2"
+  name = "Planejamento e Controle da Produção - Eng. Mecânica - 2026/1"
   url = "disciplinas/adm_prod_mec/"
   weight = 20
 
@@ -143,17 +143,24 @@
 #  name = "Sistemas de Suporte à Decisão Espacial - PPGA - 2021/2"#  url = "disciplinas/sdss/"
 #  weight = 50
 
-[[main]]
-  parent = "Disciplinas"
-  name = "GIS e análise espacial para Ciências Sociais - Adm - 2025/1"
-  url = "disciplinas/gis_ae_cs/"
-  weight = 60
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "GIS e análise espacial para Ciências Sociais - Adm - 2025/1"
+#  url = "disciplinas/gis_ae_cs/"
+#  weight = 60
   
 [[main]]
   parent = "Disciplinas"
-  name = "Logística de transporte e armazenagem - 2025/2"
+  name = "Logística de transporte e armazenagem - 2026/1"
   url = "disciplinas/log_ta/"
   weight = 40
+
+[[main]]
+  parent = "Disciplinas"
+  name = "Introdução à modelagem e simulação de processos - 2026/1"
+  url = "disciplinas/simulacao/"
+  weight = 50
+
 
 #[[main]]
 #  parent = "Disciplinas"
@@ -161,11 +168,11 @@
 #  url = "disciplinas/adm_prod/"
 #  weight = 70
   
-[[main]]
-  parent = "Disciplinas"
-  name = "Análise de Dados para gestão organizacional - 2025/2"
-  url = "disciplinas/dados_grad/"
-  weight = 50
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Análise de Dados para gestão organizacional - 2025/2"
+#  url = "disciplinas/dados_grad/"
+#  weight = 50
 
 #[[main]]
 #  parent = "Disciplinas"
