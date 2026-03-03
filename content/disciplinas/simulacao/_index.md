@@ -42,8 +42,8 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 Os encontros acontecerão nas **quintas-feiras**, de **18:50 às 20:30**. 
 
-| **Data**           | **Unidade** | **Assunto** |
-|--------------------|-------------|
+| **Data**           | **Unidade** | **Tópico de aula**
+|--------------------|-------------|-------------------
 05/03 | 1 | Revisão de estatística e probabilidade.
 12/03 | 2 | Tipos de modelagem: modelo abstrato, modelo conceitual e modelo computacional.
 19/03 | 3 | Processos estocásticos e introdução à teoria das filas.
