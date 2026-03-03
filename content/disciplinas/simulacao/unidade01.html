@@ -1,0 +1,683 @@
+---
+draft: true
+menu:
+  simulacao:
+    parent: Atividades de aprendizagem
+    weight: 40
+title: "Unidade 01 - Revisão de estatística e probabilidade"
+author: "Disciplina de Simulação de Eventos Discretos"
+date: "2026"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 10
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#atividade-avaliativa-individual" id="toc-atividade-avaliativa-individual">ATIVIDADE AVALIATIVA INDIVIDUAL</a>
+<ul>
+<li><a href="#disciplina-simula%C3%A7%C3%A3o-de-eventos-discretos" id="toc-disciplina-simulação-de-eventos-discretos">Disciplina: Simulação de Eventos Discretos</a>
+<ul>
+<li><a href="#revis%C3%A3o-de-estat%C3%ADstica-e-probabilidade" id="toc-revisão-de-estatística-e-probabilidade">Revisão de Estatística e Probabilidade</a></li>
+</ul></li>
+<li><a href="#informa%C3%A7%C3%B5es-gerais" id="toc-informações-gerais">INFORMAÇÕES GERAIS</a></li>
+<li><a href="#objetivos-da-atividade" id="toc-objetivos-da-atividade">OBJETIVOS DA ATIVIDADE</a></li>
+<li><a href="#enunciado" id="toc-enunciado">ENUNCIADO</a>
+<ul>
+<li><a href="#dados-do-sistema" id="toc-dados-do-sistema">DADOS DO SISTEMA:</a></li>
+</ul></li>
+<li><a href="#parte-1-gera%C3%A7%C3%A3o-de-dados-30-pontos" id="toc-parte-1-geração-de-dados-30-pontos">PARTE 1: GERAÇÃO DE DADOS (3,0 pontos)</a>
+<ul>
+<li><a href="#gera%C3%A7%C3%A3o-de-chegadas-10-ponto" id="toc-geração-de-chegadas-10-ponto">1.1 Geração de Chegadas (1,0 ponto)</a></li>
+<li><a href="#gera%C3%A7%C3%A3o-de-tempos-de-atendimento-10-ponto" id="toc-geração-de-tempos-de-atendimento-10-ponto">1.2 Geração de Tempos de Atendimento (1,0 ponto)</a></li>
+<li><a href="#visualiza%C3%A7%C3%A3o-10-ponto" id="toc-visualização-10-ponto">1.3 Visualização (1,0 ponto)</a></li>
+</ul></li>
+<li><a href="#parte-2-simula%C3%A7%C3%A3o-do-sistema-40-pontos" id="toc-parte-2-simulação-do-sistema-40-pontos">PARTE 2: SIMULAÇÃO DO SISTEMA (4,0 pontos)</a>
+<ul>
+<li><a href="#implementa%C3%A7%C3%A3o-da-l%C3%B3gica-de-fila-25-pontos" id="toc-implementação-da-lógica-de-fila-25-pontos">2.1 Implementação da Lógica de Fila (2,5 pontos)</a></li>
+<li><a href="#c%C3%A1lculo-de-m%C3%A9tricas-de-desempenho-15-pontos" id="toc-cálculo-de-métricas-de-desempenho-15-pontos">2.2 Cálculo de Métricas de Desempenho (1,5 pontos)</a></li>
+</ul></li>
+<li><a href="#parte-3-an%C3%A1lise-estat%C3%ADstica-20-pontos" id="toc-parte-3-análise-estatística-20-pontos">PARTE 3: ANÁLISE ESTATÍSTICA (2,0 pontos)</a>
+<ul>
+<li><a href="#valida%C3%A7%C3%A3o-dos-dados-gerados-10-ponto" id="toc-validação-dos-dados-gerados-10-ponto">3.1 Validação dos Dados Gerados (1,0 ponto)</a></li>
+<li><a href="#intervalo-de-confian%C3%A7a-10-ponto" id="toc-intervalo-de-confiança-10-ponto">3.2 Intervalo de Confiança (1,0 ponto)</a></li>
+</ul></li>
+<li><a href="#parte-4-interpreta%C3%A7%C3%A3o-e-recomenda%C3%A7%C3%B5es-10-ponto" id="toc-parte-4-interpretação-e-recomendações-10-ponto">PARTE 4: INTERPRETAÇÃO E RECOMENDAÇÕES (1,0 ponto)</a>
+<ul>
+<li><a href="#an%C3%A1lise-do-sistema-atual-05-pontos" id="toc-análise-do-sistema-atual-05-pontos">4.1 Análise do Sistema Atual (0,5 pontos)</a></li>
+<li><a href="#cen%C3%A1rio-alternativo-05-pontos" id="toc-cenário-alternativo-05-pontos">4.2 Cenário Alternativo (0,5 pontos)</a></li>
+</ul></li>
+<li><a href="#crit%C3%A9rios-de-avalia%C3%A7%C3%A3o" id="toc-critérios-de-avaliação">CRITÉRIOS DE AVALIAÇÃO</a></li>
+<li><a href="#orienta%C3%A7%C3%B5es-para-entrega" id="toc-orientações-para-entrega">ORIENTAÇÕES PARA ENTREGA</a>
+<ul>
+<li><a href="#documento-escrito-pdf-ou-word" id="toc-documento-escrito-pdf-ou-word">Documento Escrito (PDF ou Word)</a></li>
+<li><a href="#c%C3%B3digo-r-.r-ou-.rmd" id="toc-código-r-.r-ou-.rmd">Código R (.R ou .Rmd)</a></li>
+<li><a href="#exemplo-de-estrutura-do-c%C3%B3digo" id="toc-exemplo-de-estrutura-do-código">Exemplo de Estrutura do Código:</a></li>
+</ul></li>
+<li><a href="#dicas-importantes" id="toc-dicas-importantes">DICAS IMPORTANTES</a></li>
+<li><a href="#recursos-%C3%BAteis" id="toc-recursos-úteis">RECURSOS ÚTEIS</a>
+<ul>
+<li><a href="#pacotes-r-recomendados" id="toc-pacotes-r-recomendados">Pacotes R Recomendados:</a></li>
+<li><a href="#fun%C3%A7%C3%B5es-r-%C3%BAteis" id="toc-funções-r-úteis">Funções R Úteis:</a></li>
+<li><a href="#f%C3%B3rmulas-%C3%BAteis" id="toc-fórmulas-úteis">Fórmulas Úteis:</a></li>
+</ul></li>
+<li><a href="#crit%C3%A9rios-de-corre%C3%A7%C3%A3o-detalhados" id="toc-critérios-de-correção-detalhados">CRITÉRIOS DE CORREÇÃO DETALHADOS</a>
+<ul>
+<li><a href="#o-que-ser%C3%A1-valorizado" id="toc-o-que-será-valorizado">O que será valorizado:</a></li>
+<li><a href="#o-que-ser%C3%A1-penalizado" id="toc-o-que-será-penalizado">O que será penalizado:</a></li>
+</ul></li>
+<li><a href="#perguntas-frequentes-faq" id="toc-perguntas-frequentes-faq">PERGUNTAS FREQUENTES (FAQ)</a></li>
+<li><a href="#rubrica-de-avalia%C3%A7%C3%A3o-detalhada" id="toc-rubrica-de-avaliação-detalhada">RUBRICA DE AVALIAÇÃO DETALHADA</a>
+<ul>
+<li><a href="#parte-1---gera%C3%A7%C3%A3o-de-dados-30-pontos" id="toc-parte-1---geração-de-dados-30-pontos">Parte 1 - Geração de Dados (3,0 pontos)</a></li>
+<li><a href="#parte-2---simula%C3%A7%C3%A3o-40-pontos" id="toc-parte-2---simulação-40-pontos">Parte 2 - Simulação (4,0 pontos)</a></li>
+<li><a href="#parte-3---an%C3%A1lise-estat%C3%ADstica-20-pontos" id="toc-parte-3---análise-estatística-20-pontos">Parte 3 - Análise Estatística (2,0 pontos)</a></li>
+<li><a href="#parte-4---interpreta%C3%A7%C3%A3o-10-ponto" id="toc-parte-4---interpretação-10-ponto">Parte 4 - Interpretação (1,0 ponto)</a></li>
+</ul></li>
+<li><a href="#exemplos-de-sa%C3%ADda-esperada" id="toc-exemplos-de-saída-esperada">EXEMPLOS DE SAÍDA ESPERADA</a>
+<ul>
+<li><a href="#exemplo-de-tabela-para-parte-1.1" id="toc-exemplo-de-tabela-para-parte-1.1">Exemplo de Tabela para Parte 1.1:</a></li>
+<li><a href="#exemplo-de-m%C3%A9tricas-para-parte-2.2" id="toc-exemplo-de-métricas-para-parte-2.2">Exemplo de Métricas para Parte 2.2:</a></li>
+</ul></li>
+<li><a href="#boa-sorte" id="toc-boa-sorte">BOA SORTE!</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="atividade-avaliativa-individual" class="section level1">
+<h1>ATIVIDADE AVALIATIVA INDIVIDUAL</h1>
+<div id="disciplina-simulação-de-eventos-discretos" class="section level2">
+<h2>Disciplina: Simulação de Eventos Discretos</h2>
+<div id="revisão-de-estatística-e-probabilidade" class="section level3">
+<h3>Revisão de Estatística e Probabilidade</h3>
+<hr />
+</div>
+</div>
+<div id="informações-gerais" class="section level2">
+<h2>INFORMAÇÕES GERAIS</h2>
+<p><strong>Data de Entrega:</strong> Próximo encontro<br />
+<strong>Valor:</strong> [definir pontuação]<br />
+<strong>Formato:</strong> Documento escrito (PDF ou Word) + Código R comentado (.R ou .Rmd)<br />
+<strong>Tipo:</strong> Individual</p>
+<hr />
+</div>
+<div id="objetivos-da-atividade" class="section level2">
+<h2>OBJETIVOS DA ATIVIDADE</h2>
+<ul>
+<li>Aplicar conceitos de probabilidade e estatística em simulação de eventos discretos</li>
+<li>Desenvolver habilidades de geração e análise de variáveis aleatórias</li>
+<li>Interpretar resultados estatísticos em contexto de simulação</li>
+<li>Validar modelos de simulação usando técnicas estatísticas</li>
+</ul>
+<hr />
+</div>
+<div id="enunciado" class="section level2">
+<h2>ENUNCIADO</h2>
+<p>Você foi contratado(a) como analista para estudar o sistema de atendimento de uma clínica médica. A clínica opera com 2 médicos e precisa avaliar seu desempenho atual e propor melhorias.</p>
+<div id="dados-do-sistema" class="section level3">
+<h3>DADOS DO SISTEMA:</h3>
+<p><strong>Chegada de Pacientes:</strong>
+- Os pacientes chegam seguindo um processo de Poisson com taxa média de <strong>5 pacientes por hora</strong>
+- A clínica funciona 8 horas por dia</p>
+<p><strong>Atendimento:</strong>
+- O tempo de consulta segue uma distribuição <strong>triangular</strong> com:
+- Tempo mínimo: 8 minutos
+- Tempo mais provável (moda): 15 minutos
+- Tempo máximo: 35 minutos</p>
+<p><strong>Configuração:</strong>
+- 2 médicos atendendo
+- Fila única (FIFO - First In, First Out)
+- Sem limite de capacidade da fila</p>
+<hr />
+</div>
+</div>
+<div id="parte-1-geração-de-dados-30-pontos" class="section level2">
+<h2>PARTE 1: GERAÇÃO DE DADOS (3,0 pontos)</h2>
+<div id="geração-de-chegadas-10-ponto" class="section level3">
+<h3>1.1 Geração de Chegadas (1,0 ponto)</h3>
+<p>Crie uma função em R para simular as chegadas de pacientes:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Gere os <strong>tempos entre chegadas</strong> de 100 pacientes usando a distribuição apropriada.</p></li>
+<li><p>Calcule os <strong>tempos de chegada absolutos</strong> (momento em que cada paciente chega).</p></li>
+<li><p>Apresente uma tabela com os 10 primeiros pacientes mostrando:</p>
+<ul>
+<li>Número do paciente</li>
+<li>Tempo entre chegadas</li>
+<li>Tempo de chegada absoluto</li>
+</ul></li>
+</ol>
+<p><strong>Dica:</strong> Lembre-se da relação entre distribuição de Poisson e Exponencial.</p>
+</div>
+<div id="geração-de-tempos-de-atendimento-10-ponto" class="section level3">
+<h3>1.2 Geração de Tempos de Atendimento (1,0 ponto)</h3>
+<ol style="list-style-type: lower-alpha">
+<li><p>Implemente uma função para gerar tempos de atendimento usando a distribuição triangular especificada. Você pode usar o pacote <code>triangle</code> ou implementar manualmente usando o método da transformação inversa.</p></li>
+<li><p>Gere 100 tempos de atendimento.</p></li>
+<li><p>Calcule e apresente:</p>
+<ul>
+<li>Média amostral</li>
+<li>Desvio padrão amostral</li>
+<li>Tempo mínimo e máximo observados</li>
+</ul></li>
+<li><p>Compare a média amostral com a média teórica da distribuição triangular.</p></li>
+</ol>
+</div>
+<div id="visualização-10-ponto" class="section level3">
+<h3>1.3 Visualização (1,0 ponto)</h3>
+<p>Crie os seguintes gráficos:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Histograma dos tempos entre chegadas com a curva teórica da distribuição exponencial sobreposta.</p></li>
+<li><p>Histograma dos tempos de atendimento.</p></li>
+<li><p>Gráfico de chegadas acumuladas ao longo do tempo (número de pacientes vs. tempo).</p></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="parte-2-simulação-do-sistema-40-pontos" class="section level2">
+<h2>PARTE 2: SIMULAÇÃO DO SISTEMA (4,0 pontos)</h2>
+<div id="implementação-da-lógica-de-fila-25-pontos" class="section level3">
+<h3>2.1 Implementação da Lógica de Fila (2,5 pontos)</h3>
+<p>Desenvolva um código de simulação que:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Processe os 100 pacientes considerando 2 médicos.</p></li>
+<li><p>Para cada paciente, calcule:</p>
+<ul>
+<li>Tempo de início de atendimento</li>
+<li>Médico que realizou o atendimento (médico 1 ou 2)</li>
+<li>Tempo de fim de atendimento</li>
+<li>Tempo de espera na fila</li>
+<li>Tempo total no sistema</li>
+</ul></li>
+<li><p>Apresente uma tabela com os dados completos dos pacientes 1, 20, 40, 60, 80 e 100.</p></li>
+</ol>
+<p><strong>Lógica esperada:</strong>
+- Quando um paciente chega, ele é atendido pelo primeiro médico disponível
+- Se ambos médicos estão ocupados, o paciente entra na fila
+- O próximo paciente da fila é atendido assim que um médico fica livre</p>
+</div>
+<div id="cálculo-de-métricas-de-desempenho-15-pontos" class="section level3">
+<h3>2.2 Cálculo de Métricas de Desempenho (1,5 pontos)</h3>
+<p>Calcule as seguintes métricas do sistema:</p>
+<p><strong>Métricas de Tempo:</strong>
+- Tempo médio de espera na fila
+- Tempo médio no sistema (espera + atendimento)
+- Tempo máximo de espera</p>
+<p><strong>Métricas de Utilização:</strong>
+- Taxa de utilização de cada médico (% do tempo ocupado)
+- Taxa de utilização média dos médicos</p>
+<p><strong>Métricas de Fila:</strong>
+- Comprimento médio da fila
+- Comprimento máximo da fila
+- Proporção de pacientes que não esperaram (foram atendidos imediatamente)</p>
+<hr />
+</div>
+</div>
+<div id="parte-3-análise-estatística-20-pontos" class="section level2">
+<h2>PARTE 3: ANÁLISE ESTATÍSTICA (2,0 pontos)</h2>
+<div id="validação-dos-dados-gerados-10-ponto" class="section level3">
+<h3>3.1 Validação dos Dados Gerados (1,0 ponto)</h3>
+<p>Realize testes estatísticos para validar suas gerações:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>Teste de Kolmogorov-Smirnov</strong> para verificar se os tempos entre chegadas seguem realmente uma distribuição exponencial com o parâmetro correto.</p></li>
+<li><p>Apresente:</p>
+<ul>
+<li>Estatística do teste</li>
+<li>p-valor</li>
+<li>Conclusão (com nível de significância α = 0.05)</li>
+</ul></li>
+<li><p>Crie um <strong>gráfico Q-Q plot</strong> comparando os quantis teóricos da exponencial com os quantis amostrais.</p></li>
+</ol>
+</div>
+<div id="intervalo-de-confiança-10-ponto" class="section level3">
+<h3>3.2 Intervalo de Confiança (1,0 ponto)</h3>
+<p>Para avaliar a precisão da simulação:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Execute <strong>30 replicações</strong> da simulação completa (cada uma com 100 pacientes).</p></li>
+<li><p>Para cada replicação, registre o <strong>tempo médio de espera na fila</strong>.</p></li>
+<li><p>Calcule o <strong>intervalo de confiança de 95%</strong> para o tempo médio de espera.</p></li>
+<li><p>Apresente:</p>
+<ul>
+<li>Média das 30 replicações</li>
+<li>Desvio padrão das replicações</li>
+<li>Intervalo de confiança [limite inferior, limite superior]</li>
+</ul></li>
+<li><p>Crie um <strong>gráfico</strong> mostrando:</p>
+<ul>
+<li>Histograma das 30 médias</li>
+<li>Linha vertical indicando a média geral</li>
+<li>Linhas verticais indicando os limites do IC 95%</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="parte-4-interpretação-e-recomendações-10-ponto" class="section level2">
+<h2>PARTE 4: INTERPRETAÇÃO E RECOMENDAÇÕES (1,0 ponto)</h2>
+<p>Com base nos resultados obtidos, responda:</p>
+<div id="análise-do-sistema-atual-05-pontos" class="section level3">
+<h3>4.1 Análise do Sistema Atual (0,5 pontos)</h3>
+<ol style="list-style-type: lower-alpha">
+<li><p>O sistema com 2 médicos está adequado? Justifique com base nas métricas calculadas.</p></li>
+<li><p>Qual é o principal gargalo do sistema? (chegadas, atendimento, número de médicos?)</p></li>
+<li><p>Os pacientes estão esperando muito tempo? O que seria considerado aceitável?</p></li>
+</ol>
+</div>
+<div id="cenário-alternativo-05-pontos" class="section level3">
+<h3>4.2 Cenário Alternativo (0,5 pontos)</h3>
+<ol style="list-style-type: lower-alpha">
+<li>Se a clínica contratar um 3º médico, o que você espera que aconteça com:
+<ul>
+<li>Tempo médio de espera</li>
+<li>Utilização dos médicos</li>
+<li>Comprimento da fila</li>
+</ul></li>
+<li>Sem fazer nova simulação, estime se valeria a pena contratar o 3º médico considerando que o custo é de R$ 5.000/dia e cada paciente gera receita de R$ 150. Cada paciente perdido por insatisfação com espera longa (&gt;30 min) representa perda de receita.</li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="critérios-de-avaliação" class="section level2">
+<h2>CRITÉRIOS DE AVALIAÇÃO</h2>
+<table>
+<colgroup>
+<col width="34%" />
+<col width="27%" />
+<col width="37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Pontos</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Parte 1</strong></td>
+<td>3,0</td>
+<td>Geração correta de dados, cálculos precisos, visualizações adequadas</td>
+</tr>
+<tr class="even">
+<td><strong>Parte 2</strong></td>
+<td>4,0</td>
+<td>Lógica de simulação correta, métricas calculadas adequadamente</td>
+</tr>
+<tr class="odd">
+<td><strong>Parte 3</strong></td>
+<td>2,0</td>
+<td>Testes estatísticos apropriados, interpretação correta</td>
+</tr>
+<tr class="even">
+<td><strong>Parte 4</strong></td>
+<td>1,0</td>
+<td>Análise crítica, recomendações fundamentadas</td>
+</tr>
+<tr class="odd">
+<td><strong>Código R</strong></td>
+<td>+0,5</td>
+<td>Código limpo, comentado e organizado (bônus)</td>
+</tr>
+<tr class="even">
+<td><strong>Apresentação</strong></td>
+<td>+0,5</td>
+<td>Documento bem formatado, gráficos legíveis (bônus)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total:</strong> 10,0 pontos (+ 1,0 de bônus possível)</p>
+<hr />
+</div>
+<div id="orientações-para-entrega" class="section level2">
+<h2>ORIENTAÇÕES PARA ENTREGA</h2>
+<div id="documento-escrito-pdf-ou-word" class="section level3">
+<h3>Documento Escrito (PDF ou Word)</h3>
+<p>Deve conter:
+1. Capa com nome, matrícula, disciplina
+2. Todas as respostas às questões das Partes 1 a 4
+3. Tabelas formatadas
+4. Gráficos com título, eixos identificados e legenda quando necessário
+5. Interpretação dos resultados
+6. Conclusões</p>
+</div>
+<div id="código-r-.r-ou-.rmd" class="section level3">
+<h3>Código R (.R ou .Rmd)</h3>
+<p>Deve conter:
+- Código completo e funcional
+- Comentários explicando cada seção
+- Definição de seed para reprodutibilidade: <code>set.seed([sua matrícula])</code>
+- Carregamento de pacotes no início
+- Código organizado em seções</p>
+</div>
+<div id="exemplo-de-estrutura-do-código" class="section level3">
+<h3>Exemplo de Estrutura do Código:</h3>
+<pre class="r"><code># ============================================
+# ATIVIDADE AVALIATIVA - SIMULAÇÃO DE FILAS
+# Nome: [Seu Nome]
+# Matrícula: [Sua Matrícula]
+# Data: [Data]
+# ============================================
+
+# Carregamento de pacotes
+library(tidyverse)
+library(triangle)  # Se usar
+
+# Definir seed para reprodutibilidade
+set.seed([sua_matricula])
+
+# ============================================
+# PARTE 1: GERAÇÃO DE DADOS
+# ============================================
+
+# 1.1 Geração de Chegadas
+gerar_chegadas &lt;- function(n, lambda) {
+  # Código aqui
+}
+
+# ... restante do código ...</code></pre>
+<hr />
+</div>
+</div>
+<div id="dicas-importantes" class="section level2">
+<h2>DICAS IMPORTANTES</h2>
+<ol style="list-style-type: decimal">
+<li><p><strong>Reprodutibilidade:</strong> Use <code>set.seed()</code> para garantir que seus resultados possam ser reproduzidos.</p></li>
+<li><p><strong>Distribuição Triangular:</strong> Pode usar o pacote <code>triangle</code> (<code>rtriangle()</code>) ou implementar manualmente:</p>
+<pre class="r"><code># FDA inversa da triangular
+rtri &lt;- function(n, a, b, c) {
+  u &lt;- runif(n)
+  ifelse(u &lt; (c-a)/(b-a),
+         a + sqrt(u * (b-a) * (c-a)),
+         b - sqrt((1-u) * (b-a) * (b-c)))
+}</code></pre></li>
+<li><p><strong>Lógica de 2 Servidores:</strong> Use vetores para rastrear quando cada médico ficará livre:</p>
+<pre class="r"><code>medico_livre &lt;- c(0, 0)  # Tempo em que cada médico ficará livre</code></pre></li>
+<li><p><strong>Visualização:</strong> Use <code>ggplot2</code> para gráficos mais profissionais.</p></li>
+<li><p><strong>Testes Estatísticos:</strong> Use funções do R como <code>ks.test()</code> e <code>t.test()</code>.</p></li>
+<li><p><strong>Organização:</strong> Crie funções para tarefas repetitivas (DRY - Don’t Repeat Yourself).</p></li>
+<li><p><strong>Validação:</strong> Teste seu código com casos simples primeiro (ex: 10 pacientes, 1 médico).</p></li>
+</ol>
+<hr />
+</div>
+<div id="recursos-úteis" class="section level2">
+<h2>RECURSOS ÚTEIS</h2>
+<div id="pacotes-r-recomendados" class="section level3">
+<h3>Pacotes R Recomendados:</h3>
+<pre class="r"><code>install.packages(&quot;tidyverse&quot;)
+install.packages(&quot;triangle&quot;)
+install.packages(&quot;knitr&quot;)
+install.packages(&quot;kableExtra&quot;)  # Para tabelas bonitas</code></pre>
+</div>
+<div id="funções-r-úteis" class="section level3">
+<h3>Funções R Úteis:</h3>
+<ul>
+<li><code>rexp()</code> - gera exponencial</li>
+<li><code>rtriangle()</code> - gera triangular (pacote triangle)</li>
+<li><code>ks.test()</code> - teste Kolmogorov-Smirnov</li>
+<li><code>t.test()</code> - teste t</li>
+<li><code>quantile()</code> - quantis</li>
+<li><code>qqplot()</code> - gráfico Q-Q</li>
+</ul>
+</div>
+<div id="fórmulas-úteis" class="section level3">
+<h3>Fórmulas Úteis:</h3>
+<p><strong>Média da Triangular:</strong>
+<span class="math display">\[E[X] = \frac{a + b + c}{3}\]</span></p>
+<p><strong>Tempo entre chegadas de Poisson:</strong>
+<span class="math display">\[\text{Se } N(t) \sim \text{Poisson}(\lambda), \text{ então } T \sim \text{Exp}(\lambda)\]</span></p>
+<p><strong>Intervalo de Confiança:</strong>
+<span class="math display">\[IC_{95\%} = \bar{x} \pm t_{0.025, n-1} \cdot \frac{s}{\sqrt{n}}\]</span></p>
+<hr />
+</div>
+</div>
+<div id="critérios-de-correção-detalhados" class="section level2">
+<h2>CRITÉRIOS DE CORREÇÃO DETALHADOS</h2>
+<div id="o-que-será-valorizado" class="section level3">
+<h3>O que será valorizado:</h3>
+<p>✅ Correção matemática e estatística<br />
+✅ Código funcional e bem estruturado<br />
+✅ Análise crítica e interpretação adequada<br />
+✅ Gráficos informativos e bem formatados<br />
+✅ Documentação clara e organizada<br />
+✅ Uso apropriado de conceitos da disciplina</p>
+</div>
+<div id="o-que-será-penalizado" class="section level3">
+<h3>O que será penalizado:</h3>
+<p>❌ Código que não executa ou gera erros<br />
+❌ Resultados sem interpretação<br />
+❌ Falta de comentários no código<br />
+❌ Gráficos sem título ou eixos não identificados<br />
+❌ Cópia de código sem compreensão<br />
+❌ Entrega incompleta</p>
+<hr />
+</div>
+</div>
+<div id="perguntas-frequentes-faq" class="section level2">
+<h2>PERGUNTAS FREQUENTES (FAQ)</h2>
+<p><strong>P: Posso usar pacotes de simulação prontos como <code>simmer</code>?</strong><br />
+R: Não. O objetivo é implementar a lógica manualmente para demonstrar compreensão dos conceitos.</p>
+<p><strong>P: E se meus resultados ficarem muito diferentes dos esperados?</strong><br />
+R: Variabilidade é natural em simulação. O importante é interpretar corretamente e validar estatisticamente.</p>
+<p><strong>P: Devo fazer análise de warm-up ou período transiente?</strong><br />
+R: Não é necessário para esta atividade. Considere a simulação em estado transiente.</p>
+<p><strong>P: Posso trabalhar em dupla?</strong><br />
+R: Não. A atividade é individual.</p>
+<p><strong>P: Como sei se minha simulação está correta?</strong><br />
+R: Teste com casos simples, verifique se as métricas fazem sentido lógico, valide estatisticamente.</p>
+<hr />
+</div>
+<div id="rubrica-de-avaliação-detalhada" class="section level2">
+<h2>RUBRICA DE AVALIAÇÃO DETALHADA</h2>
+<div id="parte-1---geração-de-dados-30-pontos" class="section level3">
+<h3>Parte 1 - Geração de Dados (3,0 pontos)</h3>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="20%" />
+<col width="13%" />
+<col width="23%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Excelente (1,0)</th>
+<th>Bom (0,7)</th>
+<th>Satisfatório (0,5)</th>
+<th>Insuficiente (0,0-0,3)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1.1 Chegadas</strong></td>
+<td>Geração correta, tabela completa, cálculos precisos</td>
+<td>Pequenos erros de formatação</td>
+<td>Lógica correta mas implementação com falhas</td>
+<td>Erros conceituais graves</td>
+</tr>
+<tr class="even">
+<td><strong>1.2 Atendimento</strong></td>
+<td>Distribuição implementada corretamente, análise completa</td>
+<td>Análise incompleta</td>
+<td>Implementação com erros menores</td>
+<td>Distribuição incorreta</td>
+</tr>
+<tr class="odd">
+<td><strong>1.3 Visualização</strong></td>
+<td>Gráficos profissionais, informativos, com todos elementos</td>
+<td>Faltam alguns elementos visuais</td>
+<td>Gráficos básicos mas funcionais</td>
+<td>Gráficos ausentes ou incorretos</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="parte-2---simulação-40-pontos" class="section level3">
+<h3>Parte 2 - Simulação (4,0 pontos)</h3>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="20%" />
+<col width="9%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Excelente</th>
+<th>Bom</th>
+<th>Satisfatório</th>
+<th>Insuficiente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>2.1 Lógica (2,5)</strong></td>
+<td>Simulação perfeita, 2 servidores corretos, fila FIFO</td>
+<td>Pequenos erros lógicos</td>
+<td>Lógica parcial</td>
+<td>Simulação incorreta</td>
+</tr>
+<tr class="even">
+<td><strong>2.2 Métricas (1,5)</strong></td>
+<td>Todas métricas corretas e bem apresentadas</td>
+<td>1-2 métricas incorretas</td>
+<td>Várias métricas incorretas</td>
+<td>Maioria incorreta</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="parte-3---análise-estatística-20-pontos" class="section level3">
+<h3>Parte 3 - Análise Estatística (2,0 pontos)</h3>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="20%" />
+<col width="9%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Excelente</th>
+<th>Bom</th>
+<th>Satisfatório</th>
+<th>Insuficiente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>3.1 Validação (1,0)</strong></td>
+<td>Teste correto, interpretação adequada, gráfico Q-Q</td>
+<td>Interpretação superficial</td>
+<td>Teste correto mas sem interpretação</td>
+<td>Teste incorreto</td>
+</tr>
+<tr class="even">
+<td><strong>3.2 IC (1,0)</strong></td>
+<td>30 replicações, IC correto, gráfico informativo</td>
+<td>Cálculo correto, gráfico simples</td>
+<td>Erros menores no cálculo</td>
+<td>IC incorreto</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="parte-4---interpretação-10-ponto" class="section level3">
+<h3>Parte 4 - Interpretação (1,0 ponto)</h3>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="20%" />
+<col width="9%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Excelente</th>
+<th>Bom</th>
+<th>Satisfatório</th>
+<th>Insuficiente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Análise crítica</strong></td>
+<td>Análise profunda, recomendações fundamentadas</td>
+<td>Análise superficial</td>
+<td>Interpretação básica</td>
+<td>Sem interpretação</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="exemplos-de-saída-esperada" class="section level2">
+<h2>EXEMPLOS DE SAÍDA ESPERADA</h2>
+<div id="exemplo-de-tabela-para-parte-1.1" class="section level3">
+<h3>Exemplo de Tabela para Parte 1.1:</h3>
+<pre><code>Paciente | Tempo Entre Chegadas | Tempo de Chegada
+---------|---------------------|------------------
+    1    |         0.00        |       0.00
+    2    |         8.45        |       8.45
+    3    |        15.23        |      23.68
+    4    |         3.12        |      26.80
+   ...   |        ...          |      ...</code></pre>
+</div>
+<div id="exemplo-de-métricas-para-parte-2.2" class="section level3">
+<h3>Exemplo de Métricas para Parte 2.2:</h3>
+<pre><code>MÉTRICAS DE DESEMPENHO DO SISTEMA
+=====================================
+
+Métricas de Tempo:
+- Tempo médio de espera: 12.5 minutos
+- Tempo médio no sistema: 27.8 minutos
+- Tempo máximo de espera: 45.2 minutos
+
+Utilização dos Recursos:
+- Utilização Médico 1: 78.5%
+- Utilização Médico 2: 76.3%
+- Utilização média: 77.4%
+
+Métricas de Fila:
+- Comprimento médio: 2.3 pacientes
+- Comprimento máximo: 8 pacientes
+- Pacientes sem espera: 35.0%</code></pre>
+<hr />
+</div>
+</div>
+<div id="boa-sorte" class="section level2">
+<h2>BOA SORTE!</h2>
+<p>Lembre-se: o objetivo desta atividade é consolidar seus conhecimentos de estatística e probabilidade aplicados à simulação. Demonstre seu raciocínio, documente bem seu código e interprete criticamente os resultados.</p>
+<p><strong>Em caso de dúvidas:</strong> Procure o professor no horário de atendimento ou envie email.</p>
+<p><strong>Prazo de entrega:</strong> [Definir data específica]</p>
+<p><strong>Forma de entrega:</strong> [Definir plataforma - Moodle, email, etc.]</p>
+<hr />
+<p><em>Disciplina: Simulação de Eventos Discretos</em><br />
+<em>Instituição: [Nome da Instituição]</em><br />
+<em>Professor: [Nome do Professor]</em><br />
+<em>Período: 2026</em></p>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</div>
+</div>

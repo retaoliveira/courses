@@ -1,7 +1,7 @@
 ---
 date: "2025-08-19T00:00:00Z"
 draft: false
-lastmod: "2025-08-19T00:00:00Z"
+lastmod: "2026-03-02T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
@@ -19,7 +19,7 @@ editor_options:
 
 A intencionalidade pedagógica deste curso é fazer com que os estudantes possam desenvolver seu aprendizado sobre elementos e suas interações nos sistemas logísticos de maneira mais dinâmica e com protagonismo do estudante. Serão apresentadas bases teóricas e desenvolvidas atividades de entendimento prático do conteúdo proposto.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
+A proposta pedagógica para o desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projetos Integradores (PI)` para consolidação e perspectiva integrada da disciplina. 
 
 ## Ementa da disciplina
 
@@ -45,37 +45,36 @@ Os encontros acontecerão nas **sextas-feiras**, de **20:50 às 22:30**.
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 29/08              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 05/09              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 12/09              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 19/09              |2h|Nível de serviço logístico, desempenho e ICT.
-| 26/09              |2h|KPIs em gestão de processos de produção e suprimento
-| 03/10              |2h|Logística urbana.
-| 10/10              |2h|Logística urbana.
-| 17/10              |2h|Transportes e distribuição física.
-| 24/10              |2h|Transportes e distribuição física.
-| 31/10              |2h|Gestão de estoques e armazenagem.
-| 07/11              |2h|Localizações logísticas.
-| 14/11              |2h|Localizações logísticas.
-| 28/11              |2h|Custos logísticos.
-| 05/12              |2h|Custos logísticos.
-| 12/12              |2h|Logística reversa, verde e sustentável.
-| 19/12              |2h|Logística reversa, verde e sustentável.
-| 09/01              |2h|Exame especial
+| 09/03              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 16/03              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 30/03              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 06/04              |2h|Nível de serviço logístico, desempenho e ICT.
+| 13/04              |2h|KPIs em gestão de processos de produção e suprimento
+| 27/04              |2h|Logística urbana.
+| 04/05              |2h|Logística urbana.
+| 11/05              |2h|Transportes e distribuição física.
+| 18/05              |2h|Transportes e distribuição física.
+| 25/05              |2h|Gestão de estoques e armazenagem.
+| 01/06              |2h|Localizações logísticas.
+| 08/06              |2h|Localizações logísticas.
+| 15/06              |2h|Custos logísticos.
+| 22/06              |2h|Custos logísticos.
+| 29/06              |2h|Logística reversa, verde e sustentável.
+| 06/07              |2h|Logística reversa, verde e sustentável.
+| 09/07              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
 
-Pontos|	Atividade | Prazo
-------|------------ | ---
+Pontos|	Atividade 
+------|------------
 10|  Atividade de aprendizagem 1 - Conceitualizar e contextualizar a Logística
 10|  Atividade de aprendizagem 2 - Nivel de serviço logístico, TICs e KPIs
 10|  Atividade de aprendizagem 3 – Logística Urbana
-10|  Atividade de aprendizagem 4 - Gestão de Transportes 
-10|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
-10|  Atividade de aprendizagem 6 - Localização e custos logísticos
-15|  Projeto integrador 1 - Vídeo | 
-25|  Projeto integrador 2 - Revista | 
+15|  Atividade de aprendizagem 4 - Gestão de Transportes 
+15|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
+15|  Atividade de aprendizagem 6 - Localização e custos logísticos
+25|  Projeto integrador - Revista 
 TOTAL:| 	100 pontos
 
 ## Recursos necessários

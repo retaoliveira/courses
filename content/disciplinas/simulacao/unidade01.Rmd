@@ -1,0 +1,477 @@
+---
+draft: true
+menu:
+  simulacao:
+    parent: Atividades de aprendizagem
+    weight: 40
+title: "Unidade 01 - Revisão de estatística e probabilidade"
+author: "Disciplina de Simulação de Eventos Discretos"
+date: "2026"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 10
+---
+# ATIVIDADE AVALIATIVA INDIVIDUAL
+## Disciplina: Simulação de Eventos Discretos
+### Revisão de Estatística e Probabilidade
+
+---
+
+## INFORMAÇÕES GERAIS
+
+**Data de Entrega:** Próximo encontro  
+**Valor:** [definir pontuação]  
+**Formato:** Documento escrito (PDF ou Word) + Código R comentado (.R ou .Rmd)  
+**Tipo:** Individual  
+
+---
+
+## OBJETIVOS DA ATIVIDADE
+
+- Aplicar conceitos de probabilidade e estatística em simulação de eventos discretos
+- Desenvolver habilidades de geração e análise de variáveis aleatórias
+- Interpretar resultados estatísticos em contexto de simulação
+- Validar modelos de simulação usando técnicas estatísticas
+
+---
+
+## ENUNCIADO
+
+Você foi contratado(a) como analista para estudar o sistema de atendimento de uma clínica médica. A clínica opera com 2 médicos e precisa avaliar seu desempenho atual e propor melhorias.
+
+### DADOS DO SISTEMA:
+
+**Chegada de Pacientes:**
+- Os pacientes chegam seguindo um processo de Poisson com taxa média de **5 pacientes por hora**
+- A clínica funciona 8 horas por dia
+
+**Atendimento:**
+- O tempo de consulta segue uma distribuição **triangular** com:
+  - Tempo mínimo: 8 minutos
+  - Tempo mais provável (moda): 15 minutos
+  - Tempo máximo: 35 minutos
+
+**Configuração:**
+- 2 médicos atendendo
+- Fila única (FIFO - First In, First Out)
+- Sem limite de capacidade da fila
+
+---
+
+## PARTE 1: GERAÇÃO DE DADOS (3,0 pontos)
+
+### 1.1 Geração de Chegadas (1,0 ponto)
+
+Crie uma função em R para simular as chegadas de pacientes:
+
+a) Gere os **tempos entre chegadas** de 100 pacientes usando a distribuição apropriada.
+
+b) Calcule os **tempos de chegada absolutos** (momento em que cada paciente chega).
+
+c) Apresente uma tabela com os 10 primeiros pacientes mostrando:
+   - Número do paciente
+   - Tempo entre chegadas
+   - Tempo de chegada absoluto
+
+**Dica:** Lembre-se da relação entre distribuição de Poisson e Exponencial.
+
+### 1.2 Geração de Tempos de Atendimento (1,0 ponto)
+
+a) Implemente uma função para gerar tempos de atendimento usando a distribuição triangular especificada. Você pode usar o pacote `triangle` ou implementar manualmente usando o método da transformação inversa.
+
+b) Gere 100 tempos de atendimento.
+
+c) Calcule e apresente:
+   - Média amostral
+   - Desvio padrão amostral
+   - Tempo mínimo e máximo observados
+
+d) Compare a média amostral com a média teórica da distribuição triangular.
+
+### 1.3 Visualização (1,0 ponto)
+
+Crie os seguintes gráficos:
+
+a) Histograma dos tempos entre chegadas com a curva teórica da distribuição exponencial sobreposta.
+
+b) Histograma dos tempos de atendimento.
+
+c) Gráfico de chegadas acumuladas ao longo do tempo (número de pacientes vs. tempo).
+
+---
+
+## PARTE 2: SIMULAÇÃO DO SISTEMA (4,0 pontos)
+
+### 2.1 Implementação da Lógica de Fila (2,5 pontos)
+
+Desenvolva um código de simulação que:
+
+a) Processe os 100 pacientes considerando 2 médicos.
+
+b) Para cada paciente, calcule:
+   - Tempo de início de atendimento
+   - Médico que realizou o atendimento (médico 1 ou 2)
+   - Tempo de fim de atendimento
+   - Tempo de espera na fila
+   - Tempo total no sistema
+
+c) Apresente uma tabela com os dados completos dos pacientes 1, 20, 40, 60, 80 e 100.
+
+**Lógica esperada:**
+- Quando um paciente chega, ele é atendido pelo primeiro médico disponível
+- Se ambos médicos estão ocupados, o paciente entra na fila
+- O próximo paciente da fila é atendido assim que um médico fica livre
+
+### 2.2 Cálculo de Métricas de Desempenho (1,5 pontos)
+
+Calcule as seguintes métricas do sistema:
+
+**Métricas de Tempo:**
+- Tempo médio de espera na fila
+- Tempo médio no sistema (espera + atendimento)
+- Tempo máximo de espera
+
+**Métricas de Utilização:**
+- Taxa de utilização de cada médico (% do tempo ocupado)
+- Taxa de utilização média dos médicos
+
+**Métricas de Fila:**
+- Comprimento médio da fila
+- Comprimento máximo da fila
+- Proporção de pacientes que não esperaram (foram atendidos imediatamente)
+
+---
+
+## PARTE 3: ANÁLISE ESTATÍSTICA (2,0 pontos)
+
+### 3.1 Validação dos Dados Gerados (1,0 ponto)
+
+Realize testes estatísticos para validar suas gerações:
+
+a) **Teste de Kolmogorov-Smirnov** para verificar se os tempos entre chegadas seguem realmente uma distribuição exponencial com o parâmetro correto.
+
+b) Apresente:
+   - Estatística do teste
+   - p-valor
+   - Conclusão (com nível de significância α = 0.05)
+
+c) Crie um **gráfico Q-Q plot** comparando os quantis teóricos da exponencial com os quantis amostrais.
+
+### 3.2 Intervalo de Confiança (1,0 ponto)
+
+Para avaliar a precisão da simulação:
+
+a) Execute **30 replicações** da simulação completa (cada uma com 100 pacientes).
+
+b) Para cada replicação, registre o **tempo médio de espera na fila**.
+
+c) Calcule o **intervalo de confiança de 95%** para o tempo médio de espera.
+
+d) Apresente:
+   - Média das 30 replicações
+   - Desvio padrão das replicações
+   - Intervalo de confiança [limite inferior, limite superior]
+
+e) Crie um **gráfico** mostrando:
+   - Histograma das 30 médias
+   - Linha vertical indicando a média geral
+   - Linhas verticais indicando os limites do IC 95%
+
+---
+
+## PARTE 4: INTERPRETAÇÃO E RECOMENDAÇÕES (1,0 ponto)
+
+Com base nos resultados obtidos, responda:
+
+### 4.1 Análise do Sistema Atual (0,5 pontos)
+
+a) O sistema com 2 médicos está adequado? Justifique com base nas métricas calculadas.
+
+b) Qual é o principal gargalo do sistema? (chegadas, atendimento, número de médicos?)
+
+c) Os pacientes estão esperando muito tempo? O que seria considerado aceitável?
+
+### 4.2 Cenário Alternativo (0,5 pontos)
+
+a) Se a clínica contratar um 3º médico, o que você espera que aconteça com:
+   - Tempo médio de espera
+   - Utilização dos médicos
+   - Comprimento da fila
+
+b) Sem fazer nova simulação, estime se valeria a pena contratar o 3º médico considerando que o custo é de R$ 5.000/dia e cada paciente gera receita de R$ 150. Cada paciente perdido por insatisfação com espera longa (>30 min) representa perda de receita.
+
+---
+
+## CRITÉRIOS DE AVALIAÇÃO
+
+| Critério | Pontos | Descrição |
+|----------|--------|-----------|
+| **Parte 1** | 3,0 | Geração correta de dados, cálculos precisos, visualizações adequadas |
+| **Parte 2** | 4,0 | Lógica de simulação correta, métricas calculadas adequadamente |
+| **Parte 3** | 2,0 | Testes estatísticos apropriados, interpretação correta |
+| **Parte 4** | 1,0 | Análise crítica, recomendações fundamentadas |
+| **Código R** | +0,5 | Código limpo, comentado e organizado (bônus) |
+| **Apresentação** | +0,5 | Documento bem formatado, gráficos legíveis (bônus) |
+
+**Total:** 10,0 pontos (+ 1,0 de bônus possível)
+
+---
+
+## ORIENTAÇÕES PARA ENTREGA
+
+### Documento Escrito (PDF ou Word)
+
+Deve conter:
+1. Capa com nome, matrícula, disciplina
+2. Todas as respostas às questões das Partes 1 a 4
+3. Tabelas formatadas
+4. Gráficos com título, eixos identificados e legenda quando necessário
+5. Interpretação dos resultados
+6. Conclusões
+
+### Código R (.R ou .Rmd)
+
+Deve conter:
+- Código completo e funcional
+- Comentários explicando cada seção
+- Definição de seed para reprodutibilidade: `set.seed([sua matrícula])`
+- Carregamento de pacotes no início
+- Código organizado em seções
+
+### Exemplo de Estrutura do Código:
+
+```r
+# ============================================
+# ATIVIDADE AVALIATIVA - SIMULAÇÃO DE FILAS
+# Nome: [Seu Nome]
+# Matrícula: [Sua Matrícula]
+# Data: [Data]
+# ============================================
+
+# Carregamento de pacotes
+library(tidyverse)
+library(triangle)  # Se usar
+
+# Definir seed para reprodutibilidade
+set.seed([sua_matricula])
+
+# ============================================
+# PARTE 1: GERAÇÃO DE DADOS
+# ============================================
+
+# 1.1 Geração de Chegadas
+gerar_chegadas <- function(n, lambda) {
+  # Código aqui
+}
+
+# ... restante do código ...
+```
+
+---
+
+## DICAS IMPORTANTES
+
+1. **Reprodutibilidade:** Use `set.seed()` para garantir que seus resultados possam ser reproduzidos.
+
+2. **Distribuição Triangular:** Pode usar o pacote `triangle` (`rtriangle()`) ou implementar manualmente:
+   ```r
+   # FDA inversa da triangular
+   rtri <- function(n, a, b, c) {
+     u <- runif(n)
+     ifelse(u < (c-a)/(b-a),
+            a + sqrt(u * (b-a) * (c-a)),
+            b - sqrt((1-u) * (b-a) * (b-c)))
+   }
+   ```
+
+3. **Lógica de 2 Servidores:** Use vetores para rastrear quando cada médico ficará livre:
+   ```r
+   medico_livre <- c(0, 0)  # Tempo em que cada médico ficará livre
+   ```
+
+4. **Visualização:** Use `ggplot2` para gráficos mais profissionais.
+
+5. **Testes Estatísticos:** Use funções do R como `ks.test()` e `t.test()`.
+
+6. **Organização:** Crie funções para tarefas repetitivas (DRY - Don't Repeat Yourself).
+
+7. **Validação:** Teste seu código com casos simples primeiro (ex: 10 pacientes, 1 médico).
+
+---
+
+## RECURSOS ÚTEIS
+
+### Pacotes R Recomendados:
+```r
+install.packages("tidyverse")
+install.packages("triangle")
+install.packages("knitr")
+install.packages("kableExtra")  # Para tabelas bonitas
+```
+
+### Funções R Úteis:
+- `rexp()` - gera exponencial
+- `rtriangle()` - gera triangular (pacote triangle)
+- `ks.test()` - teste Kolmogorov-Smirnov
+- `t.test()` - teste t
+- `quantile()` - quantis
+- `qqplot()` - gráfico Q-Q
+
+### Fórmulas Úteis:
+
+**Média da Triangular:**
+$$E[X] = \frac{a + b + c}{3}$$
+
+**Tempo entre chegadas de Poisson:**
+$$\text{Se } N(t) \sim \text{Poisson}(\lambda), \text{ então } T \sim \text{Exp}(\lambda)$$
+
+**Intervalo de Confiança:**
+$$IC_{95\%} = \bar{x} \pm t_{0.025, n-1} \cdot \frac{s}{\sqrt{n}}$$
+
+---
+
+## CRITÉRIOS DE CORREÇÃO DETALHADOS
+
+### O que será valorizado:
+✅ Correção matemática e estatística  
+✅ Código funcional e bem estruturado  
+✅ Análise crítica e interpretação adequada  
+✅ Gráficos informativos e bem formatados  
+✅ Documentação clara e organizada  
+✅ Uso apropriado de conceitos da disciplina  
+
+### O que será penalizado:
+❌ Código que não executa ou gera erros  
+❌ Resultados sem interpretação  
+❌ Falta de comentários no código  
+❌ Gráficos sem título ou eixos não identificados  
+❌ Cópia de código sem compreensão  
+❌ Entrega incompleta  
+
+---
+
+## PERGUNTAS FREQUENTES (FAQ)
+
+**P: Posso usar pacotes de simulação prontos como `simmer`?**  
+R: Não. O objetivo é implementar a lógica manualmente para demonstrar compreensão dos conceitos.
+
+**P: E se meus resultados ficarem muito diferentes dos esperados?**  
+R: Variabilidade é natural em simulação. O importante é interpretar corretamente e validar estatisticamente.
+
+**P: Devo fazer análise de warm-up ou período transiente?**  
+R: Não é necessário para esta atividade. Considere a simulação em estado transiente.
+
+**P: Posso trabalhar em dupla?**  
+R: Não. A atividade é individual.
+
+**P: Como sei se minha simulação está correta?**  
+R: Teste com casos simples, verifique se as métricas fazem sentido lógico, valide estatisticamente.
+
+---
+
+## RUBRICA DE AVALIAÇÃO DETALHADA
+
+### Parte 1 - Geração de Dados (3,0 pontos)
+
+| Critério | Excelente (1,0) | Bom (0,7) | Satisfatório (0,5) | Insuficiente (0,0-0,3) |
+|----------|-----------------|-----------|-------------------|------------------------|
+| **1.1 Chegadas** | Geração correta, tabela completa, cálculos precisos | Pequenos erros de formatação | Lógica correta mas implementação com falhas | Erros conceituais graves |
+| **1.2 Atendimento** | Distribuição implementada corretamente, análise completa | Análise incompleta | Implementação com erros menores | Distribuição incorreta |
+| **1.3 Visualização** | Gráficos profissionais, informativos, com todos elementos | Faltam alguns elementos visuais | Gráficos básicos mas funcionais | Gráficos ausentes ou incorretos |
+
+### Parte 2 - Simulação (4,0 pontos)
+
+| Critério | Excelente | Bom | Satisfatório | Insuficiente |
+|----------|-----------|-----|--------------|--------------|
+| **2.1 Lógica (2,5)** | Simulação perfeita, 2 servidores corretos, fila FIFO | Pequenos erros lógicos | Lógica parcial | Simulação incorreta |
+| **2.2 Métricas (1,5)** | Todas métricas corretas e bem apresentadas | 1-2 métricas incorretas | Várias métricas incorretas | Maioria incorreta |
+
+### Parte 3 - Análise Estatística (2,0 pontos)
+
+| Critério | Excelente | Bom | Satisfatório | Insuficiente |
+|----------|-----------|-----|--------------|--------------|
+| **3.1 Validação (1,0)** | Teste correto, interpretação adequada, gráfico Q-Q | Interpretação superficial | Teste correto mas sem interpretação | Teste incorreto |
+| **3.2 IC (1,0)** | 30 replicações, IC correto, gráfico informativo | Cálculo correto, gráfico simples | Erros menores no cálculo | IC incorreto |
+
+### Parte 4 - Interpretação (1,0 ponto)
+
+| Critério | Excelente | Bom | Satisfatório | Insuficiente |
+|----------|-----------|-----|--------------|--------------|
+| **Análise crítica** | Análise profunda, recomendações fundamentadas | Análise superficial | Interpretação básica | Sem interpretação |
+
+---
+
+## EXEMPLOS DE SAÍDA ESPERADA
+
+### Exemplo de Tabela para Parte 1.1:
+
+```
+Paciente | Tempo Entre Chegadas | Tempo de Chegada
+---------|---------------------|------------------
+    1    |         0.00        |       0.00
+    2    |         8.45        |       8.45
+    3    |        15.23        |      23.68
+    4    |         3.12        |      26.80
+   ...   |        ...          |      ...
+```
+
+### Exemplo de Métricas para Parte 2.2:
+
+```
+MÉTRICAS DE DESEMPENHO DO SISTEMA
+=====================================
+
+Métricas de Tempo:
+- Tempo médio de espera: 12.5 minutos
+- Tempo médio no sistema: 27.8 minutos
+- Tempo máximo de espera: 45.2 minutos
+
+Utilização dos Recursos:
+- Utilização Médico 1: 78.5%
+- Utilização Médico 2: 76.3%
+- Utilização média: 77.4%
+
+Métricas de Fila:
+- Comprimento médio: 2.3 pacientes
+- Comprimento máximo: 8 pacientes
+- Pacientes sem espera: 35.0%
+```
+
+---
+
+## BOA SORTE!
+
+Lembre-se: o objetivo desta atividade é consolidar seus conhecimentos de estatística e probabilidade aplicados à simulação. Demonstre seu raciocínio, documente bem seu código e interprete criticamente os resultados.
+
+**Em caso de dúvidas:** Procure o professor no horário de atendimento ou envie email.
+
+**Prazo de entrega:** [Definir data específica]
+
+**Forma de entrega:** [Definir plataforma - Moodle, email, etc.]
+
+---
+
+*Disciplina: Simulação de Eventos Discretos*  
+*Instituição: [Nome da Instituição]*  
+*Professor: [Nome do Professor]*  
+*Período: 2026*
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+

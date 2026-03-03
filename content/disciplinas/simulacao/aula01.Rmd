@@ -1,0 +1,27 @@
+---
+date: "2025-09-09T00:00:00+01:00"
+draft: true
+menu:
+  simulacao:
+    parent: Aulas
+    weight: 5
+title: "Unidade 01 - Revisão de estatística e probabilidade"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+## Apresentação
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://adm-producao.github.io/aula01/', height = "400px")
+```
+
+[LINK](https://adm-producao.github.io/aula01/)
+
