@@ -1,7 +1,7 @@
 ---
 date: "2024-01-03T00:00:00Z"
 draft: false
-lastmod: "2025-08-19T00:00:00Z"
+lastmod: "2026-03-02T00:00:00Z"
 menu:
   adm_prod_mec:
     name: Organização do curso
@@ -46,30 +46,30 @@ Os encontros acontecerão nas **quintas-feiras**, de **20:50 às 22:30**.
 
 **Unidade** | **Data**           | **CH** | **Assunto** |
 ------------|--------------------|--------|-------------|
-Unidade 01 - Introdução  | 28/08              |2h|Funções e planejamento e controle da produção. Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
-Unidade 01 - Introdução  | 04/09              |2h|Atividade em sala 1
-Unidade 02 - Demanda     | 11/09              |2h|Previsão e informação de vendas
-Unidade 02 - Demanda     | 18/09             |2h|Atividade em sala 2
-Unidade 03 - Planejamento e controle de materiais | 25/09              |2h|Tipos de estoques e custos de estoques. Lote econômico de compras.
-Unidade 03 - Planejamento e controle de materiais | 02/10              |2h|Atividade em sala 3
-Unidade 04 - Planejamento da capacidade  |  09/10                |2h|Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio. 
-Unidade 04 - Planejamento da capacidade  |  16/10                |2h|Atividade em sala 4
-Avaliacão - Prova individual  |  23/10                |2h|Avaliação 1
-Unidade 05 - Planejamento da produção  | 30/10            |2h|Fluxograma do produto e do processo. Atividade em sala 5
-Unidade 05 - Planejamento da produção  | 06/11             |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.Atividade em sala 6. 
-Unidade 05 - Planejamento da produção  | 13/11             |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção. Atividade em sala 7.
-Unidade 05 - Planejamento da produção  | 27/11              |2h|Planejamento das necessidades de materiais. Atividade em sala 8.
-Unidade 05 - Planejamento da produção  | 04/12              |2h|Planejamento dos recursos de manufatura. Atividade em sala 9. 
-Unidade 05 - Planejamento da produção  | 11/12              |2h|Programação da produção: roteiro da produção. Atividade em sala 10. Atividade em sala 11.
-Avaliacão - Prova individual  |  18/12                |2h|Avaliação 2
-Exame especial  | 08/01             |2h|Exame especial
+Unidade 01 - Introdução  | 05/03              |2h|Funções e planejamento e controle da produção. Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
+Unidade 01 - Introdução  | 12/03              |2h|Atividade em sala 1
+Unidade 02 - Demanda     | 19/03              |2h|Previsão e informação de vendas
+Unidade 02 - Demanda     | 26/03             |2h|Atividade em sala 2
+Unidade 03 - Planejamento e controle de materiais | 02/04              |2h|Tipos de estoques e custos de estoques. Lote econômico de compras.
+Unidade 03 - Planejamento e controle de materiais | 09/04              |2h|Atividade em sala 3
+Unidade 04 - Planejamento da capacidade  |  16/04                |2h|Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio. 
+Unidade 04 - Planejamento da capacidade  |  23/04                |2h|Atividade em sala 4
+Avaliacão - Prova individual  |  30/04                |2h|Avaliação 1
+Unidade 05 - Planejamento da produção  | 07/05            |2h|Fluxograma do produto e do processo. Atividade em sala 5
+Unidade 05 - Planejamento da produção  | 14/05             |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.Atividade em sala 6. 
+Unidade 05 - Planejamento da produção  | 21/05             |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção. Atividade em sala 7.
+Unidade 05 - Planejamento da produção  | 28/05              |2h|Planejamento das necessidades de materiais. Atividade em sala 8.
+Unidade 05 - Planejamento da produção  | 11/06              |2h|Planejamento dos recursos de manufatura. Atividade em sala 9. 
+Unidade 05 - Planejamento da produção  | 18/06              |2h|Programação da produção: roteiro da produção. Atividade em sala 10.
+Avaliacão - Prova individual  |  25/06                |2h|Avaliação 2
+Exame especial  | 09/07             |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio de atividades avaliativas individuais transversais aos objetivos. 
 
 Pontos|	Atividade
 ------|----------
-60| 11 (atividades) atividade de aprendizagem em grupos
+60| 10 (atividades) atividade de aprendizagem em grupos
 40| 2 (duas) atividades avaliativas individuais
 TOTAL:| 	100 pontos
 

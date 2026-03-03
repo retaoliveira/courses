@@ -41,7 +41,7 @@ cadeias de suprimentos.
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **sextas-feiras**, de **20:50 às 22:30**. 
+Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|

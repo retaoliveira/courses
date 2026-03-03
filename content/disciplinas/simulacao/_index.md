@@ -64,16 +64,7 @@ Os encontros acontecerão nas **quintas-feiras**, de **18:50 às 20:30**.
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
 
-Pontos|	Atividade | Prazo
-------|------------ | ---
-10|  Atividade de aprendizagem 1 - Modos de transporte para movimentação de mercadorias.
-10|  Atividade de aprendizagem 2 - Nivel de serviço operacional, TICs e KPIs.
-10|  Atividade de aprendizagem 3 – Dimensionamento de recursos.
-10|  Atividade de aprendizagem 4 - Elementos geradores de custos no transporte de cargas.
-10|  Atividade de aprendizagem 5 - Roteirização e Problemas de transportes (pesquisa operacional).
-10|  Atividade de aprendizagem 6 - Simulação e análise de capacidade de terminais.
-40|  Projeto integrador - Revista | 
-TOTAL:| 	100 pontos
+
 
 ## Recursos necessários
 

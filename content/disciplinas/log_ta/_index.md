@@ -51,42 +51,42 @@ Por meio desta disciplina, os estudantes desenvolverão competências para:
 
 ## Planejamento de encontros síncronos
 
-Os encontros acontecerão nas **terças e quintas-feiras**, de **16:40 às 18:30**. 
+Os encontros acontecerão nas **segundas e quintas-feiras**, de **16:40 às 18:30**. 
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 26/08              |2h|Elementos fundamentais para análise de transportes.
-| 28/08              |2h|Elementos fundamentais para análise de transportes.
-| 02/09              |2h|Elementos fundamentais para análise de transportes.
-| 04/09              |2h|Caracterização dos modos de transporte.
-| 09/09              |2h|Caracterização dos modos de transporte.
-| 11/09              |2h|Caracterização dos modos de transporte.
-| 16/09              |2h|Movimentação de cargas no Brasil e no mundo.
-| 18/09              |2h|Movimentação de cargas no Brasil e no mundo.
-| 23/09              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
-| 25/09              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
-| 30/09              |2h|Indicadores de desempenho operacional e nível de serviço.
-| 02/10              |2h|Indicadores de desempenho operacional e nível de serviço.
-| 07/10              |2h|Indicadores de desempenho operacional e nível de serviço.
-| 09/10              |2h|Planejamento e Programas de Manutenção de Frotas.
-| 14/10              |2h|Análise de Confiabilidade. 
-| 16/10              |2h|Dimensionamento de recursos.
-| 21/10              |2h|Dimensionamento de recursos.
-| 23/10              |2h|Dimensionamento de recursos.
-| 28/10              |2h|Dimensionamento de recursos.
-| 30/10              |2h|Dimensionamento de recursos.
-| 04/11              |2h|Dimensionamento de recursos.
-| 06/11              |2h|Elementos geradores de custos no transporte de cargas.
-| 11/11              |2h|Elementos geradores de custos no transporte de cargas.
-| 13/11              |2h|Elementos geradores de custos no transporte de cargas.
-| 18/11              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
-| 25/11              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
-| 27/11              |2h|Políticas de estoques e armazenagem.
-| 02/12              |2h|Políticas de estoques e armazenagem.
-| 04/12              |2h|Simulação e análise de capacidade de terminais.
-| 09/12              |2h|Simulação e análise de capacidade de terminais.
-| 11/12              |2h|Simulação e análise de capacidade de terminais.
-| 09/01              |2h|Exame especial
+| 05/03              |2h|Elementos fundamentais para análise de transportes.
+| 09/03              |2h|Elementos fundamentais para análise de transportes.
+| 12/03              |2h|Elementos fundamentais para análise de transportes.
+| 16/03              |2h|Caracterização dos modos de transporte.
+| 19/03              |2h|Caracterização dos modos de transporte.
+| 26/03              |2h|Caracterização dos modos de transporte.
+| 30/03              |2h|Movimentação de cargas no Brasil e no mundo.
+| 02/04              |2h|Movimentação de cargas no Brasil e no mundo.
+| 06/04              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
+| 09/04              |2h|Unitização de cargas e análise da capacidade unitária de transportes.
+| 13/04              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 16/04              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 23/04              |2h|Indicadores de desempenho operacional e nível de serviço.
+| 27/04              |2h|Planejamento e Programas de Manutenção de Frotas.
+| 30/04              |2h|Análise de Confiabilidade. 
+| 04/05              |2h|Dimensionamento de recursos.
+| 07/05              |2h|Dimensionamento de recursos.
+| 11/05              |2h|Dimensionamento de recursos.
+| 14/05              |2h|Dimensionamento de recursos.
+| 18/05              |2h|Dimensionamento de recursos.
+| 21/05              |2h|Dimensionamento de recursos.
+| 25/05              |2h|Elementos geradores de custos no transporte de cargas.
+| 28/05              |2h|Elementos geradores de custos no transporte de cargas.
+| 01/06              |2h|Elementos geradores de custos no transporte de cargas.
+| 08/06              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
+| 11/06              |2h|Roteirização e Problemas de transportes (pesquisa operacional).
+| 15/06              |2h|Políticas de estoques e armazenagem.
+| 18/06              |2h|Políticas de estoques e armazenagem.
+| 22/06              |2h|Simulação e análise de capacidade de terminais.
+| 25/06              |2h|Simulação e análise de capacidade de terminais.
+| 29/06              |2h|Simulação e análise de capacidade de terminais.
+| 09/07              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
