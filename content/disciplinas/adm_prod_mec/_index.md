@@ -6,7 +6,7 @@ menu:
   adm_prod_mec:
     name: Organização do curso
     weight: 1
-title: Administração da Produção
+title: Planejamento e controle da produção
 toc: true
 type: docs
 weight: 1
