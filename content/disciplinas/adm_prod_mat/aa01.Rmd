@@ -43,8 +43,8 @@ Vocês são os novos empreendedores de 'A Fábrica do Futuro'. Sua missão é:
     - **Nome da Empresa:** (Ex: "ZoomBurger", "PetTalk App", "SkyCars Ltd")
     - **Nosso Produto/Serviço é:** (Descreva brevemente O QUE é)
     - **Classificação:**
-        - **Natureza:** Bem Serviço
-        - **Volume de Produção:** Alto (Massa) Médio (Lotes) Baixo (Sob Encomenda/Projeto)
+        - **Natureza:** [ ] Bem  [ ] Serviço
+        - **Volume de Produção:** [ ] Alto (Massa) Médio (Lotes) Baixo (Sob Encomenda/Projeto)
         - **Variedade de Produtos:** Baixa (Pouca customização) Alta (Muita customização)
         - **Tipo de produção:** [ ] Contínua  [ ] Massa  [ ] lotes  [ ] Projeto
         - **Layout:** [ ] Processo  [ ] Produto  [ ] Célula  [ ] Posicional
