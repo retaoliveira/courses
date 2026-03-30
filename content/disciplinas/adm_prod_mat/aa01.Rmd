@@ -16,10 +16,6 @@ type: docs
 weight: 10
 ---
 
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividadeindividualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 26/09/2025. Peço que a justificativa das classificações sejam bem fundamentadas! 
-
-
 ## **Atividade: A Fábrica do Futuro**
 
 **Objetivo de Aprendizagem:** Os estudantes serão capazes de classificar diferentes tipos de produção com base na natureza do produto (bens ou serviços), no volume (produção em massa, em lotes ou sob encomenda) e na variedade (baixa ou alta).
