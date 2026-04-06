@@ -1,6 +1,6 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_epc:
     parent: Atividades de aprendizagem
@@ -20,55 +20,21 @@ weight: 15
 
 ### 2. Estudo de caso
 
-Você trabalha na empresa Entrega Rápida que atua no mercado como
-operador logístico para e-commerce. Você tem três clientes
-majoritários, a saber: (i) portoriquenhos.com; (ii)
-submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes
-você, como analista de transporte, deve gerenciar a cadeia de
-suprimentos e, em especial, a distribuição no último quilômetro a fim
-de obter a melhor relação custo/benefício da operação (os menores
-custos possíveis com o maior nível de serviço, adequado às
-expectativas dos varejistas e dos consumidores finais). Entretanto,
-você trabalhará sozinho no controle da entrega de última milha para os
-clientes destes três varejistas, havendo escassez de mão de obra
-alocada para este processo gerencial.
+Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de última milha para os clientes destes três varejistas, havendo escassez de mão de obra alocada para este processo gerencial.
 
-Assim, será possível escolher apenas dois indicadores de desempenho
-(KPI) para cada classe de atributos a serem monitorados:
+Assim, será possível escolher apenas dois indicadores de desempenho (KPI) para cada classe de atributos a serem monitorados. Quais você escolheria? Por quê?
 
 (i) desempenho no atendimento ao cliente
 
-(ii) desempenho na gestão de estoques
+(ii) desempenho na gestão dos estoques
 
 (iii) produtividade do armazém
 
 (iv) desempenho em transportes
 
-Destaca-se a importância do trade-off (custo operacional x nível de
-serviço). Você poderá escolher, dentre os indicadores apresentados na
-tabela a seguir, mais três KPIs de forma a completar a visão gerencial
-do seu processo.
+Cite e explique um indicador que você recomendaria como **indicador para mensurar o nível de serviço percebido pelo cliente**? Por quê?
 
-### 3. Após escolher os indicadores, crie uma planilha com as variáveis coletadas, as métricas de cálculo, os desafios, os acompanhamentos dos indicadores para cada varejista e as respectivas metas (para os que você determinou conforme questão 2).
-
-a.  refere-se a custo/produtividade ou nível de serviço;
-
-b.  métrica de cálculo;
-
-c.  variáveis a serem acompanhadas para êxito nos processos de
-    avaliação histórica dos indicadores (citar, descrever e
-    identificar quais seriam as variáveis referentes à operação ou
-    referentes a questões financeiras);
-
-d.  desafios para acompanhamento dos indicadores (precisão no
-    apontamento, insatisfação da equipe, controle do processo)
-    relativos à operacionalização do acompanhamento, ao custo da
-    coleta de dados e à precisão da informação);
-
-e.  determine metas para dois indicadores à luz de benchmarkings
-    identificados na literatura (fazer pesquisas e identificar
-    patamares adequados para que os indicadores sejam utilizados como
-    instrumento de gestão);
+### KPIs
 
 | Indicador de Desempenho (Key Performance Indicator - KPI) | Descrição | Cálculo | Melhores Práticas |
 |------------------|------------------|------------------|------------------|
@@ -101,3 +67,47 @@ Expedida ou Freight Cost per Unit Shipped | Revela o custo do frete por unidade 
 | Não Conformidades em Transportes | Mede a participação do custo extra de frete decorrente de re-entregas, devoluções, atrasos, etc por motivos diversos no custo total de transporte. | Custo Adicional de Frete com Não Conformidades (R\$) / Custo Total de Transporte (R\$) | Variável. |
 | Acuracidade no Conhecimento de Frete ou Freight Bill Accuracy | Mede a participação dos erros verificados no conhecimento de frete em relação aos custos totais de transportes. | Erros na Cobrança (R\$) / Custo Total de Transporte (R\$) | Mínimo de 98,5 %. | 
 
+### Satisfação do consumidor
+
+O principal KPI de satisfação do consumidor é o CSAT (Customer Satisfaction Score), que mede diretamente o quanto o cliente ficou satisfeito com um produto, serviço ou atendimento. Ele costuma ser calculado como a proporção de respostas satisfeitas sobre o total de respostas, multiplicada por 100.
+
+
+**KPIs mais usados**
+
+CSAT: mede satisfação imediata após uma interação ou compra.
+
+NPS: mede lealdade e probabilidade de recomendação.
+
+CES: mede o esforço do cliente para resolver algo com a empresa.
+
+Taxa de retenção: mostra quantos clientes continuam comprando ou usando o serviço.
+
+Tempo médio de resolução: ajuda a avaliar a qualidade da experiência de atendimento.
+
+
+| KPI                        | O que mede                                   | Pergunta típica                                         | Fórmula / cálculo                                                                            | Interpretação                                                              |
+| -------------------------- | -------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| CSAT                       | Satisfação imediata após uma interação       | “Quão satisfeito você ficou com o atendimento/produto?” | CSAT = (nº de respostas satisfeitas / total de respostas) × 100                              | Quanto maior, melhor; ótimo para pós-atendimento, entrega ou compra        |
+| NPS                        | Lealdade e chance de recomendação            | “De 0 a 10, quanto você recomendaria a empresa?”        | NPS = % de promotores − % de detratores                                                      | Mede relacionamento de longo prazo; valores positivos já indicam bom nível |
+| CES                        | Esforço do cliente para resolver uma demanda | “Foi fácil resolver seu problema?”                      | Média das notas de esforço, ou percentual de clientes que avaliaram a experiência como fácil | Quanto menor o esforço, melhor a experiência                               |
+| Taxa de retenção           | Permanência dos clientes ao longo do tempo   | “Quantos clientes continuaram ativos?”                  | Retenção = ((clientes finais − novos clientes) / clientes iniciais) × 100                    | Ajuda a validar se a satisfação está sustentando fidelização               |
+| Taxa de churn              | Perda de clientes em um período              | “Quantos clientes deixaram a empresa?”                  | Churn = (clientes perdidos / clientes no início do período) × 100                            | Quanto menor, melhor; costuma ser lido junto com retenção                  |
+| Tempo médio de resolução   | Eficiência no fechamento de demandas         | “Quanto tempo a empresa leva para resolver?”            | Soma do tempo de resolução / total de casos                                                  | Tempos menores tendem a melhorar a percepção do atendimento                |
+| Tempo de primeira resposta | Rapidez no primeiro contato com o cliente    | “Em quanto tempo o cliente recebeu retorno?”            | Soma do tempo até a primeira resposta / total de atendimentos                                | Muito útil em canais de suporte e atendimento digital                      |                                |
+
+
+**Como usar na prática**
+
+
+Se você quer monitorar satisfação de forma simples, comece com o CSAT após atendimento, entrega ou suporte. Se o objetivo for entender fidelidade e indicação, adicione NPS; se quiser avaliar atrito na jornada, inclua CES.
+
+| KPI                                                    | Ruim                           | Razoável / ok                                         | Bom                                    | Excelente / classe mundial                                                      |
+| ------------------------------------------------------ | ------------------------------ | ----------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------- |
+| NPS                                                    | -100 a -1        | 0 a 19 (algumas fontes ampliam até 49)| 20 a 49 (ou 50+)       | 50 a 74 muito bom, 75+ excelente / “world class”                  |
+| CSAT                                                   | < 60% (alerta)        | 60% a 74%                                  | 75% a 80% (sólido)          | > 80–85% (excelente)                                                |
+| CES (escala 1 a 5, 1 = muito difícil, 5 = muito fácil) | ≤ 3,0 (alto esforço) | 3,1 a 3,4                                 | ≥ 3,5 (esforço satisfatório) | Quanto mais perto de 5, melhor; algumas fontes consideram ≥ 4 ótimo |
+
+
+Em NPS, muitas fontes reforçam que acima de 0 já é “bom”, acima de 50 é excelente, e acima de 70–80 é nível mundial, mas a barra realista depende muito do mercado e do tipo de experiência medida.
+
+Em CSAT, a recomendação prática é acompanhar a tendência e cruzar com indicadores operacionais (tempo de resposta, churn etc.), mais do que buscar um número mágico fixo.
