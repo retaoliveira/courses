@@ -1,6 +1,6 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   adm_prod_mec:
     parent: Atividades de aprendizagem
@@ -16,14 +16,9 @@ type: docs
 weight: 20
 ---
 
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 20/10/2025. 
-
 ## **Atividade de aprendizagem**
 
 **Título:** Previsão de Demanda
-
-**Duração Total:** 90min
 
 ### **Formação dos Grupos** 
 
