@@ -1,6 +1,6 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
@@ -16,8 +16,6 @@ type: docs
 weight: 10
 ---
 
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 15/10/2025. 
 
 ## **Atividade de aprendizagem**
 
@@ -84,13 +82,5 @@ Formar os grupos de trabalho. Cada grupo será a "Equipe de PCP da sua empresa".
 *   **Passo 4 (Escolha do Modelo):** Com base no MAPE e na análise qualitativa, escolher o modelo mais adequado para a previsão futura.   
 *   **Passo 5 (Plotar as previsões):** Criar um gráfico comparando as demandas reais e as previsões dos três modelos ao longo dos meses 1 a 12, incluindo a previsão para o Mês 13.
 
-### **Síntese e Apresentação**
-
-1.  **Preparação da Síntese:** Cada grupo prepara uma mini-apresentação (3 minutos) para o "gerente" (o professor e a turma) contendo:
-*   a) Síntese da discussão qualitativa   
-*   b) A técnica quantitativa escolhida e o porquê.   
-*   c) O valor da previsão para o Mês 13.   
-
-2.  **Apresentações e Debate:** Cada grupo apresentará rapidamente suas conclusões. 
 
 
