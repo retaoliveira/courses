@@ -5,7 +5,7 @@ menu:
   log_ta:
     parent: Atividades de Aprendizagem
     weight: 20
-title: '02 - Planejamento e programação de manutenção'
+title: '03 - Planejamento e programação de manutenção'
 editor_options: 
   markdown: 
     wrap: 70
