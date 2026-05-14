@@ -1,6 +1,6 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   adm_prod_mec:
     parent: Atividades de aprendizagem
@@ -28,8 +28,6 @@ MathJax.Hub.Config({
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Essa atividade deve ser resolvida individualmente e encaminhada por e-mail (renataoliveira@gmail.com), com <ADM-MEC> no início do assunto, até o dia 20/11/2025. 
 
 ## **Atividade de aprendizagem**
 
