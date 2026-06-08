@@ -16,12 +16,12 @@ type: docs
 weight: 21
 ---
 
-Uma empresa de transporte ferroviário recebeu uma proposta de um potencial cliente para transportar 100.000 toneladas por mês de soja de um ponto de origem A, a um ponto de destino B, cuja distância é 500 km. Para oferecer o transporte desse produto, a empresa precisa saber quantos vagões, locomotivas e maquinistas (assume-se que a condução do veículo será feita com apenas um maquinista) precisará alocar nesse fluxo de transporte. 
+Uma empresa de transporte ferroviário recebeu uma proposta de um potencial cliente para transportar 100.000 toneladas por mês de soja de um ponto de origem A, a um ponto de destino B, cuja distância é 500 km. Para oferecer o transporte desse produto, a empresa precisa saber quantos vagões e locomotivas precisará alocar nesse fluxo de transporte. 
 
 Assume-se que o período de dimensionamento é equivalente a um mês (30 dias).
 
 Sabe-se ainda que a capacidade nominal de cada vagão, adequado ao transporte de soja, é equivalente a 80 toneladas-úteis. Entretanto, devido à acomodação da carga no veículo, apenas 70% dessa capacidade é aproveitada. 
-Sabe-se ainda que o tempo de deslocamento entre os pontos A e B é 8 horas, igual nos sentidos vazio e carregado. Sabe-se que o maquinista tem jornada de trabalho de oito horas diárias. O regime de trabalho dos maquinistas conta com 15 horas de descanso na sede e 10 horas fora da sede, entre viagens. A cada 7 dias, os maquinistas tiram dois dias de folga, contando com férias de 30 dias por ano. Estima-se ainda que cada maquinista não está disponível 5 dias por ano devido a afastamento por doença e a treinamentos eventuais. 
+Sabe-se ainda que o tempo de deslocamento entre os pontos A e B é 8 horas, igual nos sentidos vazio e carregado.
 
 Os vagões permanecem juntos aos clientes, em atividade de carga e descarga, por 5 horas em cada terminal. Sabe-se ainda que cada trem é configurado com 2 locomotivas e 35 vagões.
 
@@ -29,7 +29,7 @@ A manutenção dos vagões tem apresentado um excelente desempenho, indicado pel
 
 1.	Dimensione as frotas de veículos e as equipes necessárias para a movimentação de soja. 
 
-2.	Considerando que há 90 vagões, 3 locomotivas e 10 maquinistas contratados que podem ser alocados nesse fluxo, onde está o gargalo operacional? 
+2.	Considerando que há 90 vagões e 3 locomotivas que podem ser alocados nesse fluxo, onde está o gargalo operacional? 
 
 3.	Sugira um investimento que pode viabilizar a execução desse fluxo. Sugira ainda uma ação que pode gerar redução de custo operacional da empresa. 
 
