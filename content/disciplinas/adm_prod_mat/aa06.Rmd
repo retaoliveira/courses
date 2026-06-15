@@ -1,11 +1,11 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
     weight: 45
-title: 6.0 MRP e MRPII
+title: 6 MRP e MRPII
 editor_options: 
   markdown: 
     wrap: 70
@@ -28,8 +28,6 @@ MathJax.Hub.Config({
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 30/11/2025. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE) 

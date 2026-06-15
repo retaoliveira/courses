@@ -1,11 +1,11 @@
 ---
 date: "2023-03-235T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   adm_prod_mat:
     parent: Atividades de aprendizagem
     weight: 45
-title: 7.0 Programação da produção
+title: 7. Programação da produção
 editor_options: 
   markdown: 
     wrap: 70
@@ -27,9 +27,6 @@ MathJax.Hub.Config({
 <script async type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-
-**PARA QUEM NÃO COMPARECEU AO ENCONTRO:**
-Poderá realizar oa atividade individualmente, por escrito, e enviar por e-mail (renataoliveira@gmail.com), com <ADM-MAT> no início do assunto, até o dia 10/12/2025. 
 
 
 # Atividade: Roteiro de Produção, Sequenciamento e Carga de Máquinas
