@@ -1,11 +1,11 @@
 ---
 date: "2023-08-07T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   log_ta:
     parent: Atividades de Aprendizagem
     weight: 25
-title: '04 - Custos em transportes'
+title: '06 - Custos em transportes'
 editor_options: 
   markdown: 
     wrap: 70
