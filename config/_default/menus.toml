@@ -107,11 +107,11 @@
   url = "disciplinas/adm_prod_mec/"
   weight = 20
 
-#[[main]]
-#  parent = "Disciplinas"
-#  name = "Logística de Transportes e ar"
-#  url = "disciplinas/log_adm/"
-#  weight = 20
+[[main]]
+  parent = "Disciplinas"
+  name = "Geomarketing - 2026/2"
+  url = "disciplinas/geomarketing/"
+  weight = 30
  
 #[[main]]
 #  parent = "Disciplinas"
@@ -155,11 +155,11 @@
   url = "disciplinas/log_ta/"
   weight = 40
 
-[[main]]
-  parent = "Disciplinas"
-  name = "Introdução à modelagem e simulação de processos - 2026/1"
-  url = "disciplinas/simulacao/"
-  weight = 50
+#[[main]]
+#  parent = "Disciplinas"
+#  name = "Introdução à modelagem e simulação de processos - 2026/1"
+#  url = "disciplinas/simulacao/"
+#  weight = 50
 
 
 #[[main]]
