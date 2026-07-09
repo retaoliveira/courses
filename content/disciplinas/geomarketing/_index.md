@@ -1,13 +1,13 @@
 ---
-title: Geomarketing
+title: "Geomarketing"
 date: "2026-08-03"
 lastmod: "2026-07-08"
 draft: false
 toc: true
 type: docs
 menu:
-  disciplinas:
-    name: Geomarketing
+  geomarketing:
+    name: Organização do Curso
     weight: 1
 ---
 
