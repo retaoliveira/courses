@@ -5,6 +5,10 @@ lastmod: "2026-07-08"
 draft: false
 toc: true
 type: docs
+weight: 1
+editor_options: 
+  markdown: 
+    wrap: sentence
 menu:
   geomarketing:
     name: Organização do Curso
