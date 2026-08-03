@@ -44,34 +44,33 @@ Por meio desta disciplina, os estudantes desenvolverão competências para reali
 
 Os encontros acontecerão nas **segundas-feiras**, de **18:50 às 20:30**. 
 
-**Unidade** | **Data**           | **CH** | **Assunto** |
-------------|--------------------|--------|-------------|
-Unidade 01 - Introdução  | 09/03              |2h|Funções e planejamento e controle da produção. Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização 
-Unidade 01 - Introdução  | 16/03              |2h|Atividade em sala 1
-Unidade 02 - Demanda     | 30/03              |2h|Previsão e informação de vendas
-Unidade 02 - Demanda     | 06/04             |2h|Atividade em sala 2
-Unidade 03 - Planejamento e controle de materiais | 13/04              |2h|Tipos de estoques e custos de estoques. Lote econômico de compras.
-Unidade 03 - Planejamento e controle de materiais | 27/04              |2h|Atividade em sala 3
-Unidade 04 - Planejamento da capacidade  |  04/05                |2h|Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio. 
-Unidade 04 - Planejamento da capacidade  |  11/05                |2h|Atividade em sala 4
-Avaliacão - Prova individual  |  18/05                |2h|Avaliação 1
-Unidade 05 - Planejamento da produção  | 25/05            |2h|Fluxograma do produto e do processo. Atividade em sala 5
-Unidade 05 - Planejamento da produção  | 01/06             |2h|Gestão da Capacidade Produtiva: Plano agregado da produção.Atividade em sala 6. 
-Unidade 05 - Planejamento da produção  | 08/06             |2h|Planejamento-Mestre da Produção: plano-mestre de produção; Montagem do plano-mestre de produção. Atividade em sala 7.
-Unidade 05 - Planejamento da produção  | 15/06              |2h|Planejamento das necessidades de materiais. Atividade em sala 8.
-Unidade 05 - Planejamento da produção  | 22/06              |2h|Planejamento dos recursos de manufatura. Atividade em sala 9. 
-Unidade 05 - Planejamento da produção  | 29/06              |2h|Programação da produção: roteiro da produção. Atividade em sala 10.
-Avaliacão - Prova individual  |  06/07                |2h|Avaliação 2
-Exame especial  | 13/07             |2h|Exame especial
+**Unidade** | **Data** | **CH** | **Assunto** |
+------------|----------|--------|-------------|
+Unidade 01 - Introdução | 10/08/2026 | 2h | Funções e planejamento e controle da produção. Classificação, caracterização e objetivos da produção, fluxo de informações e materiais e sistemas de controle e sua operacionalização
+Unidade 01 - Introdução | 17/08/2026 | 2h | Atividade em sala 1
+Unidade 02 - Demanda | 24/08/2026 | 2h | Previsão e informação de vendas
+Unidade 02 - Demanda | 31/08/2026 | 2h | Atividade em sala 2
+Unidade 03 - Planejamento e controle de materiais | 14/09/2026 | 2h | Tipos de estoques e custos de estoques. Lote econômico de compras.
+Unidade 03 - Planejamento e controle de materiais | 21/09/2026 | 2h | Atividade em sala 3
+Unidade 04 - Planejamento da capacidade | 28/09/2026 | 2h | Tipos de capacidade e dimensão econômica. Lote mínimo de produção e ponto de equilíbrio.
+Unidade 04 - Planejamento da capacidade | 05/10/2026 | 2h | Atividade em sala 4
+Unidade 05 - Planejamento da produção | 19/10/2026 | 2h | Fluxograma do produto e do processo. Atividade em sala 5
+Unidade 05 - Planejamento da produção | 26/10/2026 | 2h | Plano agregado da produção. Atividade em sala 6.
+Unidade 05 - Planejamento da produção | 09/11/2026 | 2h | Planejamento-Mestre da Produção: plano-mestre de produção e montagem do plano-mestre de produção. 
+Unidade 05 - Planejamento da produção | 16/11/2026 | 2h | Atividade em sala 7.
+Unidade 05 - Planejamento da produção | 23/11/2026 | 2h | Planejamento das necessidades de materiais e planejamento dos recursos de manufatura. Atividade em sala 8.
+Unidade 05 - Planejamento da produção | 30/11/2026 | 2h | Programação da produção: roteiro da produção. 
+Unidade 05 - Planejamento da produção | 07/12/2026 | 2h | Atividade em sala 9.
+Exame especial | 14/12/2026 | 2h | Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio de atividades avaliativas individuais transversais aos objetivos. 
 
 Pontos|	Atividade
 ------|----------
-60| 10 (atividades) atividade de aprendizagem em grupos
-40| 2 (duas) atividades avaliativas individuais
-TOTAL:| 	100 pontos
+90| 09 (nove atividades) atividades de aprendizagem em trios
+10 | Participação na disciplina
+TOTAL:| 100 pontos
 
 ## Recursos necessários
 

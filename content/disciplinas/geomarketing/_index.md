@@ -51,7 +51,6 @@ Os encontros acontecerão nas **terças e quintas-feiras**, de **18:50 às 20:30
 
 | **Unidade** | **Data** | **CH** | **Assunto** |
 | --- | --- | --- | --- |
-| Unidade 01 - Fundamentos de geomarketing | 04/08 | 2h | Conceito, evolução e aplicações do geomarketing. Relação entre território, mercado e estratégia |
 | Unidade 01 - Fundamentos de geomarketing | 06/08 | 2h | Geomarketing em empresas, setor público e organizações sociais. Atividade em sala 1 |
 | Unidade 02 - Espaço geográfico, consumo e localização | 11/08 | 2h | Distribuição espacial da população, renda, infraestrutura e atividades econômicas |
 | Unidade 02 - Espaço geográfico, consumo e localização | 13/08 | 2h | Centralidade, acessibilidade e mobilidade |
@@ -64,28 +63,25 @@ Os encontros acontecerão nas **terças e quintas-feiras**, de **18:50 às 20:30
 | Unidade 04 - Introdução aos Sistemas de Informação Geográfica | 08/09 | 2h | Conceitos de SIG. Dados vetoriais e matriciais |
 | Unidade 04 - Introdução aos Sistemas de Informação Geográfica | 10/09 | 2h | Camadas, atributos, projeções cartográficas e sistemas de coordenadas |
 | Unidade 04 - Introdução aos Sistemas de Informação Geográfica | 15/09 | 2h | Representação espacial e prática com ferramentas SIG. Atividade em sala 4 |
-| Avaliação - Prova individual | 17/09 | 2h | Avaliação 1 |
-| Unidade 05 - Geocodificação e preparação de bases | 22/09 | 2h | Padronização de endereços e georreferenciamento |
-| Unidade 05 - Geocodificação e preparação de bases | 24/09 | 2h | Limpeza de dados, integração de tabelas e tratamento de inconsistências |
-| Unidade 05 - Geocodificação e preparação de bases | 29/09 | 2h | Atividade em sala 5 – geocodificação de bases reais |
-| Unidade 06 - Cartografia temática aplicada ao mercado | 01/10 | 2h | Mapas coropléticos, mapas de pontos e mapas de calor |
-| Unidade 06 - Cartografia temática aplicada ao mercado | 06/10 | 2h | Simbologia, classificação de dados e comunicação visual |
-| Unidade 06 - Cartografia temática aplicada ao mercado | 08/10 | 2h | Construção de narrativas cartográficas. Atividade em sala 6 |
-| Unidade 06 - Cartografia temática aplicada ao mercado | 13/10 | 2h | Atividade em sala 7 – elaboração de mapas temáticos |
+| Unidade 05 - Geocodificação e preparação de bases | 17/09 | 2h | Padronização de endereços e georreferenciamento |
+| Unidade 05 - Geocodificação e preparação de bases | 22/09 | 2h | Limpeza de dados, integração de tabelas e tratamento de inconsistências |
+| Unidade 05 - Geocodificação e preparação de bases | 24/09 | 2h | Atividade em sala 5 – geocodificação de bases reais |
+| Unidade 06 - Cartografia temática aplicada ao mercado | 29/09 | 2h | Mapas coropléticos, mapas de pontos e mapas de calor |
+| Unidade 06 - Cartografia temática aplicada ao mercado | 01/10 | 2h | Simbologia, classificação de dados e comunicação visual |
+| Unidade 06 - Cartografia temática aplicada ao mercado | 06/10 | 2h | Construção de narrativas cartográficas. Atividade em sala 6 |
+| Unidade 06 - Cartografia temática aplicada ao mercado | 08/10 | 2h | Atividade em sala 7 – elaboração de mapas temáticos |
 | Unidade 07 - Análise espacial de mercado | 15/10 | 2h | Densidade, concentração e clusters espaciais |
 | Unidade 07 - Análise espacial de mercado | 20/10 | 2h | Vizinhança, distância, buffers e isócronas |
 | Unidade 07 - Análise espacial de mercado | 22/10 | 2h | Áreas de influência e análise de cobertura territorial |
 | Unidade 07 - Análise espacial de mercado | 27/10 | 2h | Atividade em sala 8 – análise espacial de caso real |
-| Unidade 07 - Análise espacial de mercado | 29/10 | 2h | Atividade em sala 9 – análise de redes e acessibilidade |
-| Unidade 08 - Segmentação e potencial de mercado | 03/11 | 2h | Indicadores socioeconômicos e perfis territoriais |
-| Unidade 08 - Segmentação e potencial de mercado | 05/11 | 2h | Análise multicritério e definição de público-alvo por território |
-| Unidade 08 - Segmentação e potencial de mercado | 10/11 | 2h | Estimativa de demanda por território |
-| Unidade 08 - Segmentação e potencial de mercado | 12/11 | 2h | Atividade em sala 10 – segmentação territorial aplicada |
-| Unidade 08 - Segmentação e potencial de mercado | 17/11 | 2h | Projeto integrador: desenvolvimento e aplicação integrada |
-| Avaliação - Prova individual | 19/11 | 2h | Avaliação 2 |
+| Unidade 07 - Análise espacial de mercado | 03/11 | 2h | Atividade em sala 9 – análise de redes e acessibilidade |
+| Unidade 08 - Segmentação e potencial de mercado | 05/11 | 2h | Indicadores socioeconômicos e perfis territoriais |
+| Unidade 08 - Segmentação e potencial de mercado | 10/11 | 2h | Análise multicritério e definição de público-alvo por território |
+| Unidade 08 - Segmentação e potencial de mercado | 12/11 | 2h | Estimativa de demanda por território |
+| Unidade 08 - Segmentação e potencial de mercado | 17/11 | 2h | Atividade em sala 10 – segmentação territorial aplicada |
+| Unidade 08 - Segmentação e potencial de mercado | 19/11 | 2h | Projeto integrador: desenvolvimento e aplicação integrada |
 | Apresentações | 24/11 | 2h | Apresentações de projetos |
-| Apresentações | 26/11 | 2h | Apresentações de projetos |
-| Encerramento | 01/12 | 2h | Encerramento, consolidação e feedback |
+| Encerramento | 26/11 | 2h | Encerramento, consolidação e feedback |
 | Exame especial | 03/12 | 2h | Exame especial |
 
 

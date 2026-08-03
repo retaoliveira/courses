@@ -45,23 +45,22 @@ Os encontros acontecerão nas **segundas-feiras**, de **20:50 às 22:30**.
 
 | **Data**           | **CH** | **Assunto** |
 |--------------------|--------|-------------|
-| 09/03              |2h|Logística empresarial e a cadeia de suprimentos. 
-| 16/03              |2h|Planejamento e gestão da cadeia de suprimentos.
-| 30/03              |2h|Planejamento e gestão da cadeia de suprimentos.   
-| 06/04              |2h|Nível de serviço logístico, desempenho e ICT.
-| 13/04              |2h|KPIs em gestão de processos de produção e suprimento
-| 27/04              |2h|Logística urbana.
-| 04/05              |2h|Logística urbana.
-| 11/05              |2h|Transportes e distribuição física.
-| 18/05              |2h|Transportes e distribuição física.
-| 25/05              |2h|Gestão de estoques e armazenagem.
-| 01/06              |2h|Localizações logísticas.
-| 08/06              |2h|Localizações logísticas.
-| 15/06              |2h|Custos logísticos.
-| 22/06              |2h|Custos logísticos.
-| 29/06              |2h|Logística reversa, verde e sustentável.
-| 06/07              |2h|Logística reversa, verde e sustentável.
-| 09/07              |2h|Exame especial
+| 10/08              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 17/08              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 24/08              |2h|Planejamento e gestão da cadeia de suprimentos.   
+| 31/08              |2h|Nível de serviço logístico, desempenho e ICT.
+| 14/09             |2h|KPIs em gestão de processos de produção e suprimento
+| 21/09              |2h|Logística urbana.
+| 28/09              |2h|Logística urbana.
+| 05/10              |2h|Transportes e distribuição física.
+| 19/10              |2h|Transportes e distribuição física.
+| 26/10              |2h|Gestão de estoques e armazenagem.
+| 09/11              |2h|Localizações logísticas.
+| 16/11              |2h|Localizações logísticas.
+| 23/11              |2h|Custos logísticos.
+| 30/11              |2h|Custos logísticos.
+| 07/12              |2h|Logística reversa, verde e sustentável.
+| 14/12              |2h|Exame especial
 
 ## Proposta de avaliação da aprendizagem
 A aprendizagem na disciplina será avaliada por meio da consolidação de atividades alinhadas com os objetivos de aprendizagem e por meio da elaboração de projetos transversais aos objetivos. 
@@ -109,7 +108,7 @@ TOTAL:| 	100 pontos
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. 
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **trios**. Esses grupos devem se manter para realização de todos os projetos e atividades da disciplina. 
 
 ## Comunicação
 
