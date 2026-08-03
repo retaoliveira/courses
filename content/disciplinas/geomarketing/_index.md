@@ -112,7 +112,7 @@ Site da disciplina: <https://www.places.education/disciplinas/geomarketing/>
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todas as atividades de aprendizagem.
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **duplas**. Essas duplas devem se manter para realização de todas as atividades de aprendizagem.
 
 ## Comunicação
 
