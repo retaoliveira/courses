@@ -21,7 +21,7 @@ menu:
 
 A intencionalidade pedagógica deste curso é fazer com que os estudantes possam desenvolver seu aprendizado sobre geomarketing e inteligência territorial de maneira mais dinâmica e com protagonismo do estudante. Serão apresentadas bases teóricas e desenvolvidas atividades de entendimento prático do conteúdo proposto.
 
-A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Atividades avaliativas individuais (AI)` para consolidação e perspectiva integrada da disciplina.
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos` e `Sala de aula invertida`. São propostas `Atividades para aprendizagem (AA)` para apreensão do conhecimento e `Projeto integrador (PI)` para consolidação e perspectiva integrada da disciplina.
 
 ## Ementa da disciplina
 
@@ -91,8 +91,9 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 | Pontos | Atividade |
 | --- | --- |
-| 60 | 10 (atividades) atividade de aprendizagem em grupos |
-| 40 | 2 (duas) atividades avaliativas individuais |
+| 50 | 10 (atividades) atividade de aprendizagem em grupos |
+| 40 | Projeto integrador
+| 10 | Participação na disciplina
 | TOTAL: | 100 pontos |
 
 ## Recursos necessários
