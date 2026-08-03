@@ -1,7 +1,7 @@
 ---
 title: "Geomarketing"
 date: "2026-08-03"
-lastmod: "2026-07-08"
+lastmod: "2026-08-03"
 draft: false
 toc: true
 type: docs
@@ -116,7 +116,7 @@ Site da disciplina: <https://www.places.education/disciplinas/geomarketing/>
 
 ## Comunicação
 
-Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<GEOMARKETING>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@cefetmg.br> ou <renataoliveira@gmail.com>
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<GEOMARKETING>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: <renataoliveira@gmail.com>
 
 ## Políticas institucionais e da disciplina
 
