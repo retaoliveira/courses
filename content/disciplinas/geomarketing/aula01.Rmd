@@ -20,8 +20,8 @@ weight: 5
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://gradgeomarketing.github.io/01_fundamentos_geomarketing/slides', height = "400px")
+knitr::include_url('https://gradgeomarketing.github.io/01_fundamentos_geomarketing/#1', height = "400px")
 ```
 
-[LINK](https://gradgeomarketing.github.io/01_fundamentos_geomarketing/slides/)
+[LINK](https://gradgeomarketing.github.io/01_fundamentos_geomarketing/#1)
 
