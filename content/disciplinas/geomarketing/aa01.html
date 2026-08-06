@@ -1,0 +1,171 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  geomarketing:
+    parent: Atividades de aprendizagem
+    weight: 10
+title: Prática QGIS 01 — Mapeando o entorno do CEFET
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#pr%C3%A1tica-qgis-01-mapeando-o-entorno-do-cefet" id="toc-prática-qgis-01-mapeando-o-entorno-do-cefet">Prática QGIS 01 — Mapeando o entorno do CEFET</a>
+<ul>
+<li><a href="#objetivo" id="toc-objetivo">Objetivo</a></li>
+<li><a href="#requisitos" id="toc-requisitos">Requisitos</a></li>
+<li><a href="#produto-esperado" id="toc-produto-esperado">Produto esperado</a></li>
+<li><a href="#parte-1-preparar-o-projeto" id="toc-parte-1-preparar-o-projeto">Parte 1 — Preparar o projeto</a></li>
+<li><a href="#parte-2-consultar-estabelecimentos-no-qgis" id="toc-parte-2-consultar-estabelecimentos-no-qgis">Parte 2 — Consultar estabelecimentos no QGIS</a></li>
+<li><a href="#parte-3-ler-o-mapa-criticamente" id="toc-parte-3-ler-o-mapa-criticamente">Parte 3 — Ler o mapa criticamente</a></li>
+<li><a href="#parte-4-compor-a-evid%C3%AAncia" id="toc-parte-4-compor-a-evidência">Parte 4 — Compor a evidência</a>
+<ul>
+<li><a href="#entreg%C3%A1vel" id="toc-entregável">Entregável</a></li>
+<li><a href="#checklist" id="toc-checklist">Checklist</a></li>
+<li><a href="#fontes" id="toc-fontes">Fontes</a></li>
+</ul></li>
+<li><a href="#conting%C3%AAncia" id="toc-contingência">Contingência</a></li>
+<li><a href="#crit%C3%A9rios-de-conclus%C3%A3o" id="toc-critérios-de-conclusão">Critérios de conclusão</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="prática-qgis-01-mapeando-o-entorno-do-cefet" class="section level1">
+<h1>Prática QGIS 01 — Mapeando o entorno do CEFET</h1>
+<div id="objetivo" class="section level2">
+<h2>Objetivo</h2>
+<p>Criar o primeiro projeto QGIS da disciplina, localizar o Campus Nova Gameleira, consultar farmácias do OpenStreetMap e distinguir observação cartográfica de conclusão analítica.</p>
+</div>
+<div id="requisitos" class="section level2">
+<h2>Requisitos</h2>
+<ul>
+<li>QGIS 3.44 LTR.</li>
+<li>Plugin QuickOSM 2.5.3 ou versão compatível.</li>
+<li>Acesso à internet.</li>
+<li>Arquivo
+<code>../dados/02_processados/cefet_campus_nova_gameleira.geojson</code>.</li>
+</ul>
+</div>
+<div id="produto-esperado" class="section level2">
+<h2>Produto esperado</h2>
+<p>Três produtos intermediários:</p>
+<ul>
+<li>projeto <code>outputs/encontro_01.qgz</code>, salvo com caminhos relativos;</li>
+<li>camadas consultadas em <code>outputs/farmacias_entorno_cefet.gpkg</code>;</li>
+<li>mapa <code>outputs/mapa_entorno_cefet.png</code>, contendo campus, farmácias, título, legenda, escala e atribuição ao OpenStreetMap.</li>
+</ul>
+<p>Na atividade em sala, o grupo incorpora o mapa e as respostas analíticas em um único PDF ou página no ambiente da disciplina, conforme
+<code>../atividades_em_sala/atividade_01_mapeando_entorno_cefet.md</code>.</p>
+</div>
+<div id="parte-1-preparar-o-projeto" class="section level2">
+<h2>Parte 1 — Preparar o projeto</h2>
+<ol style="list-style-type: decimal">
+<li>Abra o QGIS e crie um projeto em branco.</li>
+<li>Em <strong>Projeto → Propriedades → Geral</strong>, marque a opção para salvar caminhos relativos.</li>
+<li>Salve o projeto como <code>outputs/encontro_01.qgz</code>.</li>
+<li>No painel <strong>Navegador</strong>, expanda <strong>XYZ Tiles</strong> e adicione <strong>OpenStreetMap</strong> ao mapa.</li>
+<li>Adicione a camada <code>dados/02_processados/cefet_campus_nova_gameleira.geojson</code>.</li>
+<li>Clique com o botão direito na camada e escolha <strong>Aproximar à camada</strong>.</li>
+<li>Defina uma escala aproximada de <code>1:35.000</code>. O enquadramento servirá como recorte operacional do “entorno”.</li>
+</ol>
+</div>
+<div id="parte-2-consultar-estabelecimentos-no-qgis" class="section level2">
+<h2>Parte 2 — Consultar estabelecimentos no QGIS</h2>
+<ol style="list-style-type: decimal">
+<li>Abra <strong>Vetor → QuickOSM → QuickOSM</strong>.</li>
+<li>Em <strong>Quick query</strong>, preencha:
+<ul>
+<li><strong>Key:</strong> <code>amenity</code></li>
+<li><strong>Value:</strong> <code>pharmacy</code></li>
+<li><strong>In:</strong> <code>Canvas extent</code></li>
+</ul></li>
+<li>Execute a consulta.</li>
+<li>Mantenha a camada pontual e, caso exista, a camada de polígonos. Registre quantas feições foram retornadas em cada camada.</li>
+<li>Salve os resultados em um GeoPackage: <code>outputs/farmacias_entorno_cefet.gpkg</code>.</li>
+<li>Renomeie as camadas de modo compreensível e aplique uma simbologia que diferencie campus e farmácias.</li>
+</ol>
+</div>
+<div id="parte-3-ler-o-mapa-criticamente" class="section level2">
+<h2>Parte 3 — Ler o mapa criticamente</h2>
+<p>Use a ferramenta <strong>Identificar Feições</strong> e a tabela de atributos para responder:</p>
+<ol style="list-style-type: decimal">
+<li>Quantas farmácias foram retornadas no recorte?</li>
+<li>Em quais direções, tomando o campus como referência, os pontos parecem se
+concentrar?</li>
+<li>Há trechos do mapa sem registros? Isso prova ausência de farmácias?</li>
+<li>Quais atributos estão completos e quais apresentam valores nulos?</li>
+<li>Que outros dados seriam necessários para recomendar a abertura de uma nova
+unidade?</li>
+</ol>
+</div>
+<div id="parte-4-compor-a-evidência" class="section level2">
+<h2>Parte 4 — Compor a evidência</h2>
+<ol style="list-style-type: decimal">
+<li>Abra <strong>Projeto → Novo Layout de Impressão</strong>.</li>
+<li>Insira mapa, título, legenda, escala e a nota
+<code>© OpenStreetMap contributors — consulta em 29/07/2026</code>.</li>
+<li>Exporte como <code>outputs/mapa_entorno_cefet.png</code>.</li>
+<li>Salve novamente o projeto.</li>
+</ol>
+<div id="entregável" class="section level3">
+<h3>Entregável</h3>
+<p>Envie um único arquivo PDF ou uma página no ambiente da disciplina contendo:</p>
+<ul>
+<li>mapa exportado pelo QGIS;</li>
+<li>identificação dos integrantes;</li>
+<li>respostas às seis perguntas;</li>
+<li>uma frase de recomendação provisória iniciada por:
+<strong>“Com os dados disponíveis, ainda não é possível concluir…, mas o mapa
+sugere investigar…”</strong></li>
+</ul>
+</div>
+<div id="checklist" class="section level3">
+<h3>Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />O mapa mostra o Campus Nova Gameleira.</label></li>
+<li><label><input type="checkbox" />O mapa apresenta título, legenda, escala e fonte.</label></li>
+<li><label><input type="checkbox" />O recorte espacial foi informado.</label></li>
+<li><label><input type="checkbox" />As respostas distinguem observação, hipótese e conclusão.</label></li>
+<li><label><input type="checkbox" />A limitação dos dados OSM foi explicitada.</label></li>
+</ul>
+</div>
+<div id="fontes" class="section level3">
+<h3>Fontes</h3>
+<ul>
+<li>CEFET-MG, endereço do Campus Nova Gameleira.</li>
+<li>OpenStreetMap e Nominatim, sob ODbL 1.0.</li>
+<li>QuickOSM, plugin utilizado para consulta à API Overpass.</li>
+</ul>
+</div>
+</div>
+<div id="contingência" class="section level2">
+<h2>Contingência</h2>
+<p>Se a API Overpass estiver indisponível, a turma deve:</p>
+<ol style="list-style-type: decimal">
+<li>manter o mapa-base e a camada do campus;</li>
+<li>observar estabelecimentos visíveis no mapa-base sem tratá-los como uma base
+completa;</li>
+<li>registrar a indisponibilidade como limitação;</li>
+<li>retomar a consulta QuickOSM quando o serviço voltar.</li>
+</ol>
+<p>Não substitua a falha por números presumidos.</p>
+</div>
+<div id="critérios-de-conclusão" class="section level2">
+<h2>Critérios de conclusão</h2>
+<ul>
+<li>Projeto QGIS salvo e reaberto sem caminhos quebrados.</li>
+<li>Campus e farmácias distinguíveis.</li>
+<li>Fonte OSM atribuída.</li>
+<li>Respostas separam achado, hipótese e limitação.</li>
+</ul>
+</div>
+</div>
