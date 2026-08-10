@@ -93,7 +93,7 @@ veículos, denominada empresa Beta. Exacta, v. 12, n. 2, p. 197-208, 2014.
 
 ## Organização das atividades em grupos
 
-**Composição dos grupos de trabalho:** A turma deverá ser dividida em **grupos**. Esses grupos devem se manter para realização de todas as atividades de aprendizagem.
+**Composição dos grupos de trabalho:** A turma deverá ser dividida em **trios**. Esses grupos devem se manter para realização de todas as atividades de aprendizagem.
 
 ## Comunicação
 

@@ -73,7 +73,7 @@ Pontos|	Atividade
 15|  Atividade de aprendizagem 4 - Gestão de Transportes 
 15|  Atividade de aprendizagem 5 - Gestão de estoques e armazenagem
 15|  Atividade de aprendizagem 6 - Localização e custos logísticos
-25|  Projeto integrador - Revista 
+25|  Projeto integrador - Revista ou Podcast
 TOTAL:| 	100 pontos
 
 ## Recursos necessários
