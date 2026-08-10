@@ -1,7 +1,7 @@
 ---
 date: "2024-01-03T00:00:00Z"
 draft: false
-lastmod: "2026-03-02T00:00:00Z"
+lastmod: "2026-08-10T00:00:00Z"
 menu:
   adm_prod_mat:
     name: Organização do curso

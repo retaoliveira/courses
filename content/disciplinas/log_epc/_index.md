@@ -1,7 +1,7 @@
 ---
 date: "2025-08-19T00:00:00Z"
 draft: false
-lastmod: "2026-03-02T00:00:00Z"
+lastmod: "2026-08-10T00:00:00Z"
 menu:
   log_epc:
     name: Organização do curso
