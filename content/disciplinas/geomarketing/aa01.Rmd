@@ -29,7 +29,7 @@ Criar o primeiro projeto QGIS da disciplina, localizar o Campus Nova Gameleira, 
 - Plugin QuickOSM 2.5.3 ou versão compatível.
 - Acesso à internet.
 - Arquivo
-  `../dados/02_processados/cefet_campus_nova_gameleira.geojson`.
+  [`../dados/02_processados/cefet_campus_nova_gameleira.geojson`](https://www.dropbox.com/scl/fi/1ca6lb8e970agvhbx6uaw/cefet_campus_nova_gameleira.geojson?rlkey=4g1ivjjzpu6lt5uazmwwfrvxl&st=i1g3vp4j&dl=0)
 
 ## Produto esperado
 
