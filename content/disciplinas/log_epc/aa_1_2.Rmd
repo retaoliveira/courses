@@ -1,0 +1,175 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  log_epc:
+    parent: Atividades de aprendizagem
+    weight: 10
+title: 1. Logística e cadeia de suprimentos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+# Atividade em sala: Da definição à decisão
+
+## Logística e cadeia de suprimentos
+
+### Informações gerais
+
+- **Duração total:** 30 minutos
+- **Organização:** grupos de 3 a 4 estudantes
+- **Objetivo:** reconhecer, explicar e aplicar os elementos centrais das definições de logística e cadeia de suprimentos.
+- **Materiais:** folha da atividade e caneta.
+
+## Definições orientadoras
+
+### Logística
+
+**Promover o acesso a bens de consumo e serviços, essenciais à vida humana e promovidos pelo consumo, destinados ao consumidor final da maneira mais eficiente e responsiva possível.**
+
+**“Logística é dispor a mercadoria ou o serviço certo, no lugar certo, no tempo certo e nas condições desejadas, ao mesmo tempo em que fornece a maior contribuição à empresa”. (Ballou, 2001)**
+
+### Cadeia de suprimentos
+
+**Cadeia de suprimentos é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o trade-off entre responsividade e eficiência, além de garantia de um contexto sustentável de desenvolvimento por ações socialmente responsáveis e resilientes.**
+
+## Roteiro de 30 minutos
+
+1. **Leitura ativa das definições - 5 min.**
+2. **Mapa conceitual aplicado ao caso - 8 min.**
+3. **Desafio de decisão e trade-off - 10 min.**
+4. **Síntese coletiva - 5 min.**
+5. **Bilhete de saída individual - 2 min.**
+
+## Caso: acesso durante a enchente
+
+Após fortes chuvas, bairros de uma cidade ficaram parcialmente isolados. A população precisa receber água potável, alimentos, medicamentos e atendimento básico de saúde. Participam da operação fabricantes, produtores, atacadistas, supermercados, farmácias, transportadoras, Defesa Civil, prefeitura, organizações comunitárias e moradores.
+
+A cidade dispõe de duas alternativas iniciais:
+
+- **Plano A - centralizado:** um grande centro de distribuição, cargas consolidadas e rotas fixas. Tem menor custo médio, mas pode demorar mais para alcançar bairros isolados e fica vulnerável se o centro for interrompido.
+- **Plano B - distribuído:** pequenos pontos de apoio próximos aos bairros, veículos menores e rotas adaptáveis. Responde mais rapidamente e oferece rotas alternativas, mas tem maior custo e exige mais coordenação.
+
+## Etapa 1 - Leitura ativa das definições (5 min)
+
+Registre:
+
+1. **Finalidade social da logística:** ______________________________________________
+2. **Os quatro “certos” de Ballou:** __________________; __________________; __________________; __________________
+3. **Resultados simultâneos buscados:** __________________ e __________________
+4. **Níveis de integração da cadeia:** __________________; __________________; __________________
+5. **Grupos de agentes:** __________________; __________________; __________________; __________________
+6. **Três compromissos de desenvolvimento:** __________________; __________________; __________________
+
+## Etapa 2 - Mapa conceitual aplicado ao caso (8 min)
+
+Preencha o quadro:
+
+| Elemento da definição | Evidência ou exemplo no caso |
+|---|---|
+| Acesso a bem ou serviço essencial | |
+| Consumidor final | |
+| Lugar, tempo e condições desejadas | |
+| Agente de produção | |
+| Agente mercadológico | |
+| Agente logístico | |
+| Sociedade | |
+| Ação sustentável, socialmente responsável ou resiliente | |
+
+## Etapa 3 - Desafio de decisão e trade-off (10 min)
+
+1. Dê uma nota de **1 (desfavorável) a 5 (muito favorável)** para cada plano.
+
+| Critério | Plano A | Plano B |
+|---|---:|---:|
+| Eficiência/custo | | |
+| Responsividade/tempo de resposta | | |
+| Resiliência diante de interrupções | | |
+| Sustentabilidade | | |
+| Responsabilidade social/equidade no acesso | | |
+
+2. Escolha uma solução: **Plano A ( ) | Plano B ( ) | Solução combinada ( )**
+
+3. Proponha uma decisão em cada nível:
+
+- **Estratégico:** __________________________________________________________________
+- **Tático:** ______________________________________________________________________
+- **Operacional:** __________________________________________________________________
+
+4. Explique o trade-off aceito pelo grupo: ____________________________________________
+
+5. Indique como a solução promove acesso e contribui para o resultado da organização: _____
+
+## Etapa 4 - Síntese coletiva (5 min)
+
+Complete com suas palavras:
+
+- **Logística promove acesso quando** _________________________________________________
+- **Uma cadeia de suprimentos não é apenas uma sequência de empresas porque** _____________
+- **Eficiência e responsividade precisam ser equilibradas porque** __________________________
+- **Uma operação resiliente e socialmente responsável** __________________________________
+
+## Bilhete de saída individual (2 min)
+
+Em até duas frases, explique a diferença e a relação entre logística e cadeia de suprimentos, utilizando pelo menos três termos: **acesso, consumidor final, integração, trade-off, responsividade, eficiência, sustentabilidade ou resiliência**.
+
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+
+## Orientação e gabarito docente
+
+### Condução
+
+- Forme grupos de 3 a 4 e apresente o cronômetro de 30 minutos.
+- Leia as definições com a turma, sem simplificá-las antecipadamente.
+- Na Etapa 2, cobre evidências concretas do caso, não apenas repetição de palavras.
+- Na Etapa 3, aceite diferentes notas e escolhas se houver coerência entre critérios, decisão e justificativa.
+- No fechamento, destaque que trade-off não significa escolher sempre um extremo, mas explicitar perdas, ganhos e prioridades.
+
+### Respostas esperadas - Etapa 1
+
+1. **Finalidade social:** promover o acesso a bens de consumo e serviços essenciais ao consumidor final.
+2. **Quatro certos:** mercadoria ou serviço certo; lugar certo; tempo certo; condições desejadas.
+3. **Resultados simultâneos:** eficiência e responsividade; com contribuição à empresa.
+4. **Níveis:** estratégico, tático e operacional.
+5. **Agentes:** produção, mercadológicos, logísticos e sociedade.
+6. **Compromissos:** sustentabilidade, responsabilidade social e resiliência.
+
+### Aplicação esperada ao caso
+
+- **Acesso:** entrega de água, alimentos, medicamentos e atendimento básico.
+- **Consumidor final:** moradores dos bairros, especialmente os isolados.
+- **Quatro certos:** itens adequados, no bairro necessário, no tempo da emergência e em condições seguras.
+- **Produção:** fabricantes e produtores; **mercadológicos:** atacadistas, supermercados e farmácias; **logísticos:** centros, transportadoras, veículos e operadores; **sociedade:** prefeitura, Defesa Civil, organizações comunitárias e moradores.
+- **Resiliência:** pontos distribuídos, rotas alternativas, estoques de contingência e comunicação redundante.
+- **Responsabilidade social:** priorização por vulnerabilidade e garantia de acesso, não apenas por rentabilidade.
+- **Sustentabilidade:** consolidar cargas quando viável, reduzir desperdício, escolher rotas e veículos adequados e tratar resíduos.
+
+### Leitura do trade-off
+
+O Plano A tende a favorecer eficiência e economia de escala, mas concentra riscos e pode reduzir a responsividade. O Plano B tende a favorecer tempo de resposta, acesso e resiliência, mas aumenta custos e complexidade. Uma solução combinada pode usar estoque central para escala e pontos avançados temporários para itens críticos e áreas isoladas.
+
+### Exemplos por nível decisório
+
+- **Estratégico:** definir uma rede híbrida, parceiros, prioridades sociais e nível de serviço para emergências.
+- **Tático:** posicionar estoques, dimensionar pontos de apoio, contratar capacidade e planejar rotas alternativas.
+- **Operacional:** separar pedidos, atualizar rotas, despachar veículos, confirmar entregas e realocar recursos diariamente.
+
+### Critério rápido de verificação
+
+- **2 pontos:** identifica finalidade e os quatro “certos” da logística.
+- **2 pontos:** reconhece níveis e grupos de agentes da cadeia.
+- **2 pontos:** aplica eficiência, responsividade e trade-off à decisão.
+- **2 pontos:** incorpora sustentabilidade, responsabilidade social e resiliência.
+- **2 pontos:** relaciona a decisão ao acesso do consumidor final e à contribuição organizacional.
+
+Total: **10 pontos**, para uso formativo.
+
+**Referência explicitada na definição:** Ballou (2001).
