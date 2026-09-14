@@ -1,0 +1,72 @@
+/* Controles de compatibilidade para apresentações externas no Safari. */
+.presentation-frame-wrapper {
+  display: inline-flex;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.presentation-frame-wrapper iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.presentation-frame-controls {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d9dee3;
+  border-top: 0;
+  background: #f7f8f9;
+  color: #4b5563;
+  font-size: 0.82rem;
+}
+
+.presentation-frame-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.presentation-frame-activate,
+.presentation-frame-open {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #e86b5b;
+  border-radius: 0.2rem;
+  font: inherit;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.presentation-frame-activate {
+  background: #e86b5b;
+  color: #fff;
+}
+
+.presentation-frame-open {
+  background: #fff;
+  color: #bd493d;
+}
+
+.presentation-frame-activate:hover,
+.presentation-frame-activate:focus {
+  background: #cf5548;
+}
+
+.presentation-frame-open:hover,
+.presentation-frame-open:focus {
+  background: #fff4f2;
+  color: #9e3c32;
+}
+
+.presentation-frame-active iframe {
+  outline: 3px solid rgba(232, 107, 91, 0.35);
+  outline-offset: 2px;
+}
+
+.presentation-frame-status {
+  display: block;
+}
