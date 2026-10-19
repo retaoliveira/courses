@@ -1,0 +1,225 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  log_epc:
+    parent: Atividades de aprendizagem
+    weight: 13
+title: "3. Logística Urbana: Desafios da última milha"
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 13
+---
+
+Em grupos, pesquisem uma prática contemporânea de logística urbana que já esteja sendo utilizada, testada ou implantada em alguma cidade do Brasil ou do exterior. A solução deverá trazer uma novidade ou aplicação recente relacionada à movimentação, armazenagem, distribuição, coleta ou entrega de mercadorias em áreas urbanas.
+
+A apresentação não deverá apenas descrever a tecnologia. O grupo deverá examinar evidências de aplicação, identificar benefícios e limitações, mostrar quem recebe os ganhos e quem assume custos ou riscos e discutir se a solução poderia ser utilizada na realidade local.
+
+## Organização da atividade
+
+- Trabalho em grupo, com um tema diferente para cada equipe.
+- Apresentação de 5 a 7 minutos.
+- Máximo de 6 slides, além do slide de referências quando necessário.
+- Utilização de um caso real, em operação comercial ou em projeto piloto.
+- Participação de todos os integrantes na pesquisa e na apresentação.
+
+<hr>
+
+## Estrutura da apresentação
+
+### Slide 1  A novidade
+
+- Nome da solução e breve descrição.
+- Cidade e país onde está sendo aplicada.
+- Empresa, governo ou organização responsável.
+- Data de implantação ou período do projeto.
+
+### Slide 2  O problema logístico
+
+- Problema urbano que motivou a solução, como congestionamento, demora, custo, emissões, dificuldade de acesso ou crescimento do comércio eletrônico.
+- Público, território ou tipo de operação afetado pelo problema.
+- Indicadores ou evidências que demonstrem a relevância do problema.
+
+### Slide 3  Como funciona
+
+- Fluxo da operação desde a origem até o consumidor.
+- Mercadorias, equipamentos e tecnologias utilizados.
+- Agentes participantes e responsabilidades.
+- Área atendida e integração com outros modos de transporte.
+
+### Slide 4  Aspectos positivos
+
+- Possíveis efeitos sobre tempo, custo, responsividade e confiabilidade.
+- Contribuições para congestionamentos, emissões, segurança e acessibilidade.
+- Benefícios para empresas, trabalhadores, consumidores e cidade.
+- Evidências que sustentem as vantagens apresentadas.
+
+### Slide 5  Aspectos negativos e desafios
+
+- Custos de implantação, infraestrutura e manutenção.
+- Limitações de capacidade, alcance ou escala.
+- Riscos relacionados a segurança, privacidade, trabalho, ruído e uso do espaço público.
+- Barreiras regulatórias, ambientais, sociais ou tecnológicas.
+
+### Slide 6  Avaliação do grupo
+
+- A solução melhora principalmente a eficiência, a responsividade ou ambas?
+- Quem recebe os benefícios e quem assume os custos ou riscos?
+- A solução é sustentável nas dimensões econômica, ambiental e social?
+- Ela poderia ser aplicada em nossa cidade ou região? Que adaptação seria necessária?
+- O grupo recomenda sua implantação? Justifique.
+
+## Requisitos da pesquisa
+
+A apresentação deverá utilizar pelo menos:
+
+- uma fonte institucional, acadêmica ou governamental;
+- uma fonte recente, preferencialmente publicada nos últimos dois anos;
+- uma evidência de aplicação concreta, como dados operacionais, resultados de projeto piloto, fotografias, mapas ou notícias verificáveis;
+- a identificação completa das fontes consultadas no final da apresentação.
+
+## Classificação do caso
+
+O grupo deverá informar claramente em qual estágio se encontra a solução:
+
+- operação comercial regular;
+- projeto piloto ou demonstração controlada;
+- proposta anunciada, mas ainda não implantada;
+- divulgação comercial sem resultados públicos comprovados.
+
+## Análise obrigatória
+
+Para evitar uma apresentação apenas promocional, o grupo deverá confrontar benefícios e limitações. Toda vantagem deverá ser acompanhada de uma evidência ou explicação, e toda limitação deverá indicar quem ou o que é afetado.
+
+| Dimensão | Aspectos positivos | Aspectos negativos ou riscos |
+|---|---|---|
+| Operacional | Tempo, confiabilidade, alcance e capacidade | Falhas, clima, manutenção e limites de carga |
+| Econômica | Produtividade e redução de custos | Investimento, escala e viabilidade financeira |
+| Ambiental | Energia, emissões e menor circulação de veículos | Baterias, descarte e efeitos indiretos |
+| Social | Acesso, segurança e qualidade do serviço | Emprego, exclusão territorial e desigualdade |
+| Institucional | Inovação e coordenação entre agentes | Regulação, privacidade e responsabilidade |
+
+<hr>
+
+## Temas de pesquisa
+
+### Tema 1  Entregas urbanas por drones
+
+**Foco da pesquisa:** uso de drones no transporte de alimentos, medicamentos, exames ou pequenas encomendas.
+
+**Questões específicas:**
+
+- Em quais trajetos o drone apresenta maior vantagem?
+- A entrega chega ao consumidor ou depende de outro entregador?
+- Quais são os riscos de acidente, ruído e privacidade?
+- A operação já alcançou escala comercial?
+
+### Tema 2  Robôs autônomos de entrega
+
+**Foco da pesquisa:** robôs que circulam em calçadas, condomínios, universidades ou áreas comerciais.
+
+**Questões específicas:**
+
+- Como o robô interage com pedestres e obstáculos?
+- Qual é sua capacidade de carga e autonomia?
+- Ele substitui ou complementa entregadores?
+- Funcionaria nas calçadas brasileiras?
+
+### Tema 3  Bicicletas e triciclos de carga
+
+**Foco da pesquisa:** bicicletas convencionais, elétricas e triciclos empregados na última milha.
+
+**Questões específicas:**
+
+- Quais mercadorias podem ser transportadas?
+- A solução reduz custos, congestionamentos e emissões?
+- Quais são as condições de segurança e trabalho?
+- A cidade possui infraestrutura adequada?
+
+### Tema 4  Microhubs e centros de distribuição urbanos
+
+**Foco da pesquisa:** pequenos centros próximos aos consumidores para consolidar e redistribuir mercadorias.
+
+**Questões específicas:**
+
+- Como o microhub modifica a última milha?
+- Como se integra a bicicletas, veículos elétricos ou entregadores?
+- Qual é o efeito sobre tempo e custo?
+- A instalação gera conflitos pelo uso do solo?
+
+### Tema 5  Armários inteligentes e pontos de retirada
+
+**Foco da pesquisa:** lockers, lojas parceiras e pontos para retirada ou devolução de encomendas.
+
+**Questões específicas:**
+
+- A solução reduz entregas malsucedidas?
+- Quem passa a realizar o deslocamento final?
+- O sistema é acessível para diferentes públicos?
+- Quais são os riscos de segurança e exclusão digital?
+
+
+### Tema 6 Inteligência artificial e roteirização
+
+**Foco da pesquisa:** uso de algoritmos para definir rotas, prever demanda e distribuir pedidos.
+
+**Questões específicas:**
+
+- A tecnologia reduz distâncias, custos e atrasos?
+- Quais dados são utilizados?
+- Como afeta o ritmo e as condições de trabalho?
+- Quem responde por decisões automatizadas incorretas?
+
+### Tema 7  Distribuição noturna e horários alternativos
+
+**Foco da pesquisa:** abastecimento realizado à noite ou fora dos horários de maior congestionamento.
+
+**Questões específicas:**
+
+- A prática reduz tempo de viagem e consumo de energia?
+- Quais impactos produz sobre ruído e vizinhança?
+- Como afeta a jornada dos trabalhadores?
+- Que regulamentação municipal é necessária?
+
+### Tema 8  Logística em periferias e áreas de difícil acesso
+
+**Foco da pesquisa:** soluções para favelas, periferias, comunidades isoladas ou locais com endereçamento incompleto.
+
+**Questões específicas:**
+
+- Quais barreiras impedem o atendimento convencional?
+- Qual é o papel de agentes locais e pontos comunitários?
+- A solução amplia o acesso a bens e serviços?
+- Ela valoriza a comunidade ou transfere riscos e custos?
+
+<hr>
+
+## Discussão em sala
+
+Ao final, o grupo deverá apresentar uma pergunta capaz de provocar comparação entre eficiência, responsividade e impactos sociais, ambientais e econômicos. A pergunta deverá admitir posições diferentes e estar diretamente relacionada ao caso pesquisado.
+
+Exemplos de perguntas para o debate:
+
+- A rapidez da entrega justifica os impactos e os custos da solução?
+- A tecnologia substitui trabalhadores ou transforma suas funções?
+- A prática beneficia toda a cidade ou apenas áreas de maior renda?
+- A solução reduz emissões quando todo o ciclo logístico é considerado?
+- Quem deve financiar a infraestrutura necessária?
+- Quais riscos não aparecem na divulgação da empresa?
+
+<hr>
+
+## Critérios de avaliação
+
+| Critério | O que será observado | Peso |
+|---|---|---:|
+| Atualidade e relevância | Pertinência da solução e qualidade do caso escolhido | 20% |
+| Funcionamento da solução | Clareza do fluxo, agentes, tecnologias e mercadorias | 20% |
+| Análise crítica | Equilíbrio entre aspectos positivos, negativos e evidências | 30% |
+| Fontes | Atualidade, diversidade e confiabilidade das informações | 15% |
+| Aplicação local | Capacidade de relacionar o caso com a realidade da cidade | 15% |
