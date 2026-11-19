@@ -1,0 +1,123 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mec:
+    parent: Atividades de aprendizagem
+    weight: 50
+title: 8. PERT-CPM
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 20
+---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+---
+title: "Atividade Avaliativa: Planejamento e Controle de Projetos (PERT/CPM)"
+subtitle: "Administração da Produção · Engenharia de Materiais (adm_prod_mat)"
+date: "Valor: 10,0 pontos · Duração estimada: 60 a 80 min"
+output:
+  word_document:
+    reference_docx: reference_clean.docx
+    toc: false
+    number_sections: false
+---
+
+### 1. Contexto do Projeto: Montagem do Protótipo EcoSprint
+
+A equipe de engenharia e operações foi encarregada de coordenar o projeto do **EcoSprint**, um veículo elétrico sustentável com data de entrega fixa e inegociável. O projeto foi desdobrado em **8 atividades** principais:
+
+| Ativ. | Descrição do Trabalho | Predecessoras | Duração Estimada |
+|:---:|:---|:---:|:---|
+| **A** | Desenho conceitual e especificações técnicas | — | Duração determinística: **2 dias** |
+| **B** | Projeto e cálculo estrutural do chassi | **A** | Duração determinística: **4 dias** |
+| **C** | Aquisição de células fotovoltaicas e baterias | **A** | **Incerteza (PERT)**: $o = 1\text{ d}$, $m = 3\text{ d}$, $p = 5\text{ d}$ |
+| **D** | Fabricação e montagem do chassi de alumínio | **B** | Duração determinística: **5 dias** |
+| **E** | Montagem do chicote elétrico e suportes | **C** | Duração determinística: **4 dias** |
+| **F** | Instalação da suspensão, eixos e rodas | **D** | Duração determinística: **3 dias** |
+| **G** | Integração do trem de força, inversor e sensores | **D**, **E** | Duração determinística: **3 dias** |
+| **H** | Calibração de pista, telemetria e entrega final | **F**, **G** | Duração determinística: **2 dias** |
+
+> **Formulário Básico de Apoio:**  
+> • **PERT (Média Ponderada):** $t_e = \frac{o + 4m + p}{6}$  
+> • **Caminhada para Frente (Ida):** $\text{ES} = \text{IMC}$ (em convergências: $\max$ dos $\text{EF}$ anteriores); $\text{EF} = \text{TMC} = \text{ES} + d$  
+> • **Caminhada para Trás (Volta):** $\text{LF} = \text{TMT}$ (em divergências na volta: $\min$ dos $\text{LS}$ posteriores); $\text{LS} = \text{IMT} = \text{LF} - d$  
+> • **Folga Total:** $\text{FT} = \text{LS} - \text{ES} = \text{LF} - \text{EF}$. O **Caminho Crítico** possui $\text{FT} = 0$.
+
+---
+
+### 2. Questões Avaliativas
+
+#### Questão 1 · Estimativa de Duração PERT [1,5 pontos]
+A **Atividade C** apresenta incerteza no fornecimento com estimativas $o = 1\text{ dia}$, $m = 3\text{ dias}$ e $p = 5\text{ dias}$.  
+**1.1** Calcule a duração esperada ($t_e$) aplicando a fórmula do PERT, explicitando a substituição dos valores:  
+Cálculo: $\underline{\hspace{10cm}}$  
+**Resultado:** $t_e =$ ________ dias *(adote este valor inteiro para as próximas etapas)*.
+
+#### Questão 2 · Diagrama de Rede AON e Análise de Caminhos [2,0 pontos]
+**2.1** No espaço abaixo, desenhe a rede de precedência nó-na-atividade (AON) com as atividades de **A** a **H**:
+
+\
+\
+\
+\
+\
+\
+\
+
+**2.2** Identifique os caminhos possíveis da rede (do Início ao Fim) e calcule suas extensões totais:  
+• **Caminho 1:** A $\to$ B $\to$ D $\to$ F $\to$ H = $2 + 4 + 5 + 3 + 2 =$ ________ dias.  
+• **Caminho 2:** A $\to$ B $\to$ D $\to$ G $\to$ H = $2 + 4 + 5 + 3 + 2 =$ ________ dias.  
+• **Caminho 3:** A $\to$ C $\to$ E $\to$ G $\to$ H = $2 + \underline{\hspace{0.8cm}} + 4 + 3 + 2 =$ ________ dias.  
+• **Qual é o caminho mais longo e o que sua extensão determina para o prazo final do projeto?**  
+$\underline{\hspace{15cm}}$
+
+#### Questão 3 · Cronograma Completo, Folgas e Caminho Crítico [3,5 pontos]
+Preencha o quadro com as datas mais cedo ($\text{ES}, \text{EF}$), datas mais tarde ($\text{LS}, \text{LF}$), folga total ($\text{FT}$) e status crítico:
+
+| Ativ. | Duração ($d$) | Início Cedo ($\text{ES}$) | Término Cedo ($\text{EF}$) | Início Tarde ($\text{LS}$) | Término Tarde ($\text{LF}$) | Folga Total ($\text{FT}$) | Crítica? (Sim/Não) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **A** | 2 dias | | | | | | |
+| **B** | 4 dias | | | | | | |
+| **C** | *(calc. PERT)* | | | | | | |
+| **D** | 5 dias | | | | | | |
+| **E** | 4 dias | | | | | | |
+| **F** | 3 dias | | | | | | |
+| **G** | 3 dias | | | | | | |
+| **H** | 2 dias | | | | | | |
+
+**3.1 Duração total mínima do projeto:** ________ dias.  
+**3.2 Caminho crítico identificado:** _________________________________________________________________
+
+#### Questão 4 · Análise de Cenários e Tomada de Decisão [3,0 pontos]
+
+**4.1 Cenário de Atraso no Fornecimento (1,5 pts):**  
+Se a entrega dos componentes da **Atividade C** atrasar 2 dias (duração real passa de 3 para 5 dias):  
+a) A data final de entrega do projeto será atrasada? [ &nbsp; ] **Sim** &nbsp;&nbsp;&nbsp; [ &nbsp; ] **Não**  
+b) Justifique tecnicamente utilizando o conceito e o valor de folga de C e E:  
+$\underline{\hspace{15cm}}$  
+$\underline{\hspace{15cm}}$
+
+**4.2 Cenário de Compressão de Prazo / *Crashing* (1,5 pts):**  
+A gestão ofereceu recurso para antecipar a **Atividade E** em 2 dias (reduzindo de 4 para 2 dias).  
+a) Vale a pena aceitar esse investimento para entregar o protótipo mais cedo? [ &nbsp; ] **Sim** &nbsp;&nbsp;&nbsp; [ &nbsp; ] **Não**  
+b) Justifique com base no caminho crítico e indique em quais atividades a equipe deveria investir se precisasse antecipar o projeto em 2 dias:  
+$\underline{\hspace{15cm}}$  
+$\underline{\hspace{15cm}}$

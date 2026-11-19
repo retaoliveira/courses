@@ -1,0 +1,270 @@
+---
+date: "2023-03-235T00:00:00+01:00"
+draft: false
+menu:
+  adm_prod_mec:
+    parent: Atividades de aprendizagem
+    weight: 50
+title: 8. PERT-CPM
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+    mathjax: default
+type: docs
+weight: 20
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#contexto-do-projeto-montagem-do-prot%C3%B3tipo-ecosprint" id="toc-contexto-do-projeto-montagem-do-protótipo-ecosprint">1. Contexto do Projeto: Montagem do Protótipo EcoSprint</a></li>
+<li><a href="#quest%C3%B5es-avaliativas" id="toc-questões-avaliativas">2. Questões Avaliativas</a></li>
+</ul>
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div id="contexto-do-projeto-montagem-do-protótipo-ecosprint" class="section level3">
+<h3>1. Contexto do Projeto: Montagem do Protótipo EcoSprint</h3>
+<p>A equipe de engenharia e operações foi encarregada de coordenar o projeto do <strong>EcoSprint</strong>, um veículo elétrico sustentável com data de entrega fixa e inegociável. O projeto foi desdobrado em <strong>8 atividades</strong> principais:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="22%" />
+<col width="27%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Ativ.</th>
+<th align="left">Descrição do Trabalho</th>
+<th align="center">Predecessoras</th>
+<th align="left">Duração Estimada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>A</strong></td>
+<td align="left">Desenho conceitual e especificações técnicas</td>
+<td align="center">—</td>
+<td align="left">Duração determinística: <strong>2 dias</strong></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>B</strong></td>
+<td align="left">Projeto e cálculo estrutural do chassi</td>
+<td align="center"><strong>A</strong></td>
+<td align="left">Duração determinística: <strong>4 dias</strong></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>C</strong></td>
+<td align="left">Aquisição de células fotovoltaicas e baterias</td>
+<td align="center"><strong>A</strong></td>
+<td align="left"><strong>Incerteza (PERT)</strong>: <span class="math inline">\(o = 1\text{ d}\)</span>, <span class="math inline">\(m = 3\text{ d}\)</span>, <span class="math inline">\(p = 5\text{ d}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>D</strong></td>
+<td align="left">Fabricação e montagem do chassi de alumínio</td>
+<td align="center"><strong>B</strong></td>
+<td align="left">Duração determinística: <strong>5 dias</strong></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>E</strong></td>
+<td align="left">Montagem do chicote elétrico e suportes</td>
+<td align="center"><strong>C</strong></td>
+<td align="left">Duração determinística: <strong>4 dias</strong></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>F</strong></td>
+<td align="left">Instalação da suspensão, eixos e rodas</td>
+<td align="center"><strong>D</strong></td>
+<td align="left">Duração determinística: <strong>3 dias</strong></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>G</strong></td>
+<td align="left">Integração do trem de força, inversor e sensores</td>
+<td align="center"><strong>D</strong>, <strong>E</strong></td>
+<td align="left">Duração determinística: <strong>3 dias</strong></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>H</strong></td>
+<td align="left">Calibração de pista, telemetria e entrega final</td>
+<td align="center"><strong>F</strong>, <strong>G</strong></td>
+<td align="left">Duração determinística: <strong>2 dias</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Formulário Básico de Apoio:</strong><br />
+• <strong>PERT (Média Ponderada):</strong> <span class="math inline">\(t_e = \frac{o + 4m + p}{6}\)</span><br />
+• <strong>Caminhada para Frente (Ida):</strong> <span class="math inline">\(\text{ES} = \text{IMC}\)</span> (em convergências: <span class="math inline">\(\max\)</span> dos <span class="math inline">\(\text{EF}\)</span> anteriores); <span class="math inline">\(\text{EF} = \text{TMC} = \text{ES} + d\)</span><br />
+• <strong>Caminhada para Trás (Volta):</strong> <span class="math inline">\(\text{LF} = \text{TMT}\)</span> (em divergências na volta: <span class="math inline">\(\min\)</span> dos <span class="math inline">\(\text{LS}\)</span> posteriores); <span class="math inline">\(\text{LS} = \text{IMT} = \text{LF} - d\)</span><br />
+• <strong>Folga Total:</strong> <span class="math inline">\(\text{FT} = \text{LS} - \text{ES} = \text{LF} - \text{EF}\)</span>. O <strong>Caminho Crítico</strong> possui <span class="math inline">\(\text{FT} = 0\)</span>.</p>
+</blockquote>
+<hr />
+</div>
+<div id="questões-avaliativas" class="section level3">
+<h3>2. Questões Avaliativas</h3>
+<div id="questão-1-estimativa-de-duração-pert-15-pontos" class="section level4">
+<h4>Questão 1 · Estimativa de Duração PERT [1,5 pontos]</h4>
+<p>A <strong>Atividade C</strong> apresenta incerteza no fornecimento com estimativas <span class="math inline">\(o = 1\text{ dia}\)</span>, <span class="math inline">\(m = 3\text{ dias}\)</span> e <span class="math inline">\(p = 5\text{ dias}\)</span>.<br />
+<strong>1.1</strong> Calcule a duração esperada (<span class="math inline">\(t_e\)</span>) aplicando a fórmula do PERT, explicitando a substituição dos valores:<br />
+Cálculo: <span class="math inline">\(\underline{\hspace{10cm}}\)</span><br />
+<strong>Resultado:</strong> <span class="math inline">\(t_e =\)</span> ________ dias <em>(adote este valor inteiro para as próximas etapas)</em>.</p>
+</div>
+<div id="questão-2-diagrama-de-rede-aon-e-análise-de-caminhos-20-pontos" class="section level4">
+<h4>Questão 2 · Diagrama de Rede AON e Análise de Caminhos [2,0 pontos]</h4>
+<p><strong>2.1</strong> No espaço abaixo, desenhe a rede de precedência nó-na-atividade (AON) com as atividades de <strong>A</strong> a <strong>H</strong>:</p>
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p><strong>2.2</strong> Identifique os caminhos possíveis da rede (do Início ao Fim) e calcule suas extensões totais:<br />
+• <strong>Caminho 1:</strong> A <span class="math inline">\(\to\)</span> B <span class="math inline">\(\to\)</span> D <span class="math inline">\(\to\)</span> F <span class="math inline">\(\to\)</span> H = <span class="math inline">\(2 + 4 + 5 + 3 + 2 =\)</span> ________ dias.<br />
+• <strong>Caminho 2:</strong> A <span class="math inline">\(\to\)</span> B <span class="math inline">\(\to\)</span> D <span class="math inline">\(\to\)</span> G <span class="math inline">\(\to\)</span> H = <span class="math inline">\(2 + 4 + 5 + 3 + 2 =\)</span> ________ dias.<br />
+• <strong>Caminho 3:</strong> A <span class="math inline">\(\to\)</span> C <span class="math inline">\(\to\)</span> E <span class="math inline">\(\to\)</span> G <span class="math inline">\(\to\)</span> H = <span class="math inline">\(2 + \underline{\hspace{0.8cm}} + 4 + 3 + 2 =\)</span> ________ dias.<br />
+• <strong>Qual é o caminho mais longo e o que sua extensão determina para o prazo final do projeto?</strong><br />
+<span class="math inline">\(\underline{\hspace{15cm}}\)</span></p>
+</div>
+<div id="questão-3-cronograma-completo-folgas-e-caminho-crítico-35-pontos" class="section level4">
+<h4>Questão 3 · Cronograma Completo, Folgas e Caminho Crítico [3,5 pontos]</h4>
+<p>Preencha o quadro com as datas mais cedo (<span class="math inline">\(\text{ES}, \text{EF}\)</span>), datas mais tarde (<span class="math inline">\(\text{LS}, \text{LF}\)</span>), folga total (<span class="math inline">\(\text{FT}\)</span>) e status crítico:</p>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Ativ.</th>
+<th align="center">Duração (<span class="math inline">\(d\)</span>)</th>
+<th align="center">Início Cedo (<span class="math inline">\(\text{ES}\)</span>)</th>
+<th align="center">Término Cedo (<span class="math inline">\(\text{EF}\)</span>)</th>
+<th align="center">Início Tarde (<span class="math inline">\(\text{LS}\)</span>)</th>
+<th align="center">Término Tarde (<span class="math inline">\(\text{LF}\)</span>)</th>
+<th align="center">Folga Total (<span class="math inline">\(\text{FT}\)</span>)</th>
+<th align="center">Crítica? (Sim/Não)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>A</strong></td>
+<td align="center">2 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>B</strong></td>
+<td align="center">4 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>C</strong></td>
+<td align="center"><em>(calc. PERT)</em></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>D</strong></td>
+<td align="center">5 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>E</strong></td>
+<td align="center">4 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>F</strong></td>
+<td align="center">3 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>G</strong></td>
+<td align="center">3 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>H</strong></td>
+<td align="center">2 dias</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3.1 Duração total mínima do projeto:</strong> ________ dias.<br />
+<strong>3.2 Caminho crítico identificado:</strong> _________________________________________________________________</p>
+</div>
+<div id="questão-4-análise-de-cenários-e-tomada-de-decisão-30-pontos" class="section level4">
+<h4>Questão 4 · Análise de Cenários e Tomada de Decisão [3,0 pontos]</h4>
+<p><strong>4.1 Cenário de Atraso no Fornecimento (1,5 pts):</strong><br />
+Se a entrega dos componentes da <strong>Atividade C</strong> atrasar 2 dias (duração real passa de 3 para 5 dias):<br />
+a) A data final de entrega do projeto será atrasada? [   ] <strong>Sim</strong>     [   ] <strong>Não</strong><br />
+b) Justifique tecnicamente utilizando o conceito e o valor de folga de C e E:<br />
+<span class="math inline">\(\underline{\hspace{15cm}}\)</span><br />
+<span class="math inline">\(\underline{\hspace{15cm}}\)</span></p>
+<p><strong>4.2 Cenário de Compressão de Prazo / <em>Crashing</em> (1,5 pts):</strong><br />
+A gestão ofereceu recurso para antecipar a <strong>Atividade E</strong> em 2 dias (reduzindo de 4 para 2 dias).<br />
+a) Vale a pena aceitar esse investimento para entregar o protótipo mais cedo? [   ] <strong>Sim</strong>     [   ] <strong>Não</strong><br />
+b) Justifique com base no caminho crítico e indique em quais atividades a equipe deveria investir se precisasse antecipar o projeto em 2 dias:<br />
+<span class="math inline">\(\underline{\hspace{15cm}}\)</span><br />
+<span class="math inline">\(\underline{\hspace{15cm}}\)</span></p>
+</div>
+</div>
